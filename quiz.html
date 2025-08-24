@@ -3,37 +3,51 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Quiz • ICAN Prep</title>
+  <title>Quiz — ICAN Prep</title>
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="./assets/app.css?v=5">
+  <!-- Prevent stale cache on iOS/Safari -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+  <meta http-equiv="Pragma" content="no-cache"/>
+  <meta http-equiv="Expires" content="0"/>
+
+  <link rel="stylesheet" href="./assets/app.css?v=15"/>
 </head>
 <body>
   <div class="wrap">
-    <header class="space-between">
-      <div>
-        <h1>Quiz</h1>
-        <p id="meta" class="muted small">Loading…</p>
-      </div>
-      <div id="timer" class="pill">—</div>
+    <header class="space-between" style="align-items:center">
+      <h1>Quiz</h1>
+      <a class="btn" href="./index.html">← Home</a>
     </header>
 
-    <section class="card" id="qwrap">
-      <div id="qstem"><p class="muted">Preparing questions…</p></div>
-      <div id="qopts" class="opts"></div>
+    <p id="meta" class="muted small">Loading…</p>
 
-      <div class="row">
-        <a class="btn" href="./">← Home</a>
+    <!-- Quiz card -->
+    <section id="qwrap" class="card">
+      <div id="qstem" style="min-height:80px">
+        <p class="muted">Preparing questions…</p>
+      </div>
+
+      <div id="qopts" style="margin-top:10px"></div>
+
+      <div class="row" style="margin-top:12px">
+        <a class="btn" href="./index.html">← Home</a>
         <button id="nextBtn" class="btn">Next</button>
         <button id="submitBtn" class="btn primary">Submit</button>
       </div>
     </section>
 
+    <!-- Result card (hidden until finish) -->
     <section id="result" class="card" style="display:none"></section>
   </div>
 
-  <!-- Quiz logic -->
-  <script type="module" src="./assets/quiz.js?v=13"></script>
+  <!-- Unregister any old service worker cache on this page -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(list => list.forEach(r => r.unregister()));
+    }
+  </script>
+
+  <!-- Load quiz logic as ES module (required for imports in quiz.js) -->
+  <script type="module" src="./assets/quiz.js?v=15"></script>
 </body>
 </html>
-
