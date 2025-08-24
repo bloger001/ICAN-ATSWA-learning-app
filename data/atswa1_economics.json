@@ -1,1602 +1,2602 @@
 [
   {
-    "id": "ATSWA1-ECON-BASIC-0001",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Economics & Choice",
-    "subtopic": "Scarcity",
-    "stem": "The central economic problem that gives rise to choice is:",
+    "id": "ECO-AT1-Q001",
+    "topic": "Demand & Supply",
+    "subtopic": "Law of Demand",
+    "stem": "If price falls and total revenue rises, demand over that range is ____.",
     "options": [
-      "Inflation",
-      "Scarcity",
-      "Unemployment",
-      "Growth"
+      "elastic",
+      "inelastic",
+      "unit elastic",
+      "perfectly inelastic"
     ],
-    "answer_index": 1,
-    "explanation": "Limited resources vs unlimited wants create scarcity and necessitate choice."
+    "answer_index": 0
   },
   {
-    "id": "ATSWA1-ECON-BASIC-0002",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Economics & Choice",
-    "subtopic": "Opportunity Cost",
-    "stem": "The next best alternative forgone when a choice is made is:",
+    "id": "ECO-AT1-Q002",
+    "topic": "Demand & Supply",
+    "subtopic": "Law of Supply",
+    "stem": "A rightward shift of the demand curve for a normal good can be caused by ____.",
     "options": [
-      "Trade-off",
-      "Opportunity cost",
-      "Explicit cost",
-      "Sunk cost"
+      "an increase in income",
+      "a fall in the price of the good",
+      "a rise in input costs",
+      "a technological setback"
     ],
-    "answer_index": 1,
-    "explanation": "Opportunity cost measures the value of the next best alternative."
+    "answer_index": 0
   },
   {
-    "id": "ATSWA1-ECON-BASIC-0003",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "PPF",
-    "subtopic": "Efficiency",
-    "stem": "A point inside the production possibility frontier (PPF) represents:",
+    "id": "ECO-AT1-Q003",
+    "topic": "Demand & Supply",
+    "subtopic": "Elasticity",
+    "stem": "If price falls and total revenue rises, demand over that range is ____.",
     "options": [
-      "Efficient use of resources",
-      "Unattainable output",
-      "Unemployment/inefficiency",
-      "Future growth"
+      "elastic",
+      "inelastic",
+      "unit elastic",
+      "perfectly inelastic"
     ],
-    "answer_index": 2,
-    "explanation": "Inside the PPF indicates underutilization of resources or inefficiency."
+    "answer_index": 0
   },
   {
-    "id": "ATSWA1-ECON-BASIC-0004",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "PPF",
+    "id": "ECO-AT1-Q004",
+    "topic": "Demand & Supply",
+    "subtopic": "Equilibrium",
+    "stem": "Which event shifts the supply curve leftward?",
+    "options": [
+      "Higher input prices",
+      "A subsidy to producers",
+      "A technological improvement",
+      "An increase in number of sellers"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q005",
+    "topic": "Demand & Supply",
     "subtopic": "Shifts",
-    "stem": "An outward shift of the PPF can be caused by:",
+    "stem": "A rightward shift of the demand curve for a normal good can be caused by ____.",
     "options": [
-      "Lower productivity",
-      "War destroying capital",
-      "Technological progress",
-      "Higher prices"
+      "an increase in income",
+      "a fall in the price of the good",
+      "a rise in input costs",
+      "a technological setback"
     ],
-    "answer_index": 2,
-    "explanation": "Tech progress or more resources increase productive capacity."
+    "answer_index": 0
   },
   {
-    "id": "ATSWA1-ECON-BASIC-0005",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Micro vs Macro",
-    "subtopic": "Scope",
-    "stem": "Which topic is MACROeconomics?",
+    "id": "ECO-AT1-Q006",
+    "topic": "Demand & Supply",
+    "subtopic": "Consumer/Producer Surplus",
+    "stem": "The law of demand states that, ceteris paribus, as price rises the quantity demanded ____.",
     "options": [
-      "Price of rice",
-      "Profit maximization",
-      "National unemployment rate",
-      "Market for shoes"
+      "falls",
+      "rises",
+      "is unchanged",
+      "becomes perfectly elastic"
     ],
-    "answer_index": 2,
-    "explanation": "Macro deals with aggregates like unemployment, inflation, GDP."
+    "answer_index": 0
   },
   {
-    "id": "ATSWA1-ECON-BASIC-0006",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Systems",
-    "subtopic": "Types",
-    "stem": "In a command economy, key decisions are made by:",
-    "options": [
-      "The price mechanism",
-      "Consumer sovereignty",
-      "Government/central planners",
-      "Stock market"
-    ],
-    "answer_index": 2,
-    "explanation": "Command economies rely on central planning not market prices."
-  },
-  {
-    "id": "ATSWA1-ECON-BASIC-0007",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Positive vs Normative",
-    "subtopic": "Statements",
-    "stem": "âInflation hurts the poor mostâ is best classified as:",
-    "options": [
-      "Positive statement",
-      "Normative statement",
-      "Identity",
-      "Tautology"
-    ],
-    "answer_index": 1,
-    "explanation": "It expresses a value judgment â normative."
-  },
-  {
-    "id": "ATSWA1-ECON-BASIC-0008",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Ceteris Paribus",
-    "subtopic": "Assumptions",
-    "stem": "Ceteris paribus means:",
-    "options": [
-      "After this therefore because of this",
-      "Holding other factors constant",
-      "Increase at a decreasing rate",
-      "By the fact itself"
-    ],
-    "answer_index": 1,
-    "explanation": "Economists hold other things constant to isolate effects."
-  },
-  {
-    "id": "ATSWA1-ECON-BASIC-0009",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Specialization",
-    "subtopic": "Benefits",
-    "stem": "A main advantage of specialization is:",
-    "options": [
-      "Lower productivity",
-      "Higher unit costs",
-      "Trade and efficiency gains",
-      "Less interdependence"
-    ],
-    "answer_index": 2,
-    "explanation": "Specialization raises efficiency and encourages trade."
-  },
-  {
-    "id": "ATSWA1-ECON-BASIC-0010",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Specialization",
-    "subtopic": "Costs",
-    "stem": "A potential disadvantage of specialization is:",
-    "options": [
-      "Higher variety of skills",
-      "Worker boredom and risk of structural unemployment",
-      "Lower interdependence",
-      "Reduced trade"
-    ],
-    "answer_index": 1,
-    "explanation": "Narrow tasks can cause monotony; economies become interdependent."
-  },
-  {
-    "id": "ATSWA1-ECON-DS-0011",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Demand",
-    "subtopic": "Law",
-    "stem": "The law of demand states that, ceteris paribus, as price falls:",
-    "options": [
-      "Quantity demanded falls",
-      "Quantity demanded rises",
-      "Demand rises",
-      "Demand falls"
-    ],
-    "answer_index": 1,
-    "explanation": "A price decrease leads to a movement along the demand curve to a higher quantity demanded."
-  },
-  {
-    "id": "ATSWA1-ECON-DS-0012",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Demand",
-    "subtopic": "Shifts",
-    "stem": "Which will shift the demand curve for beef to the RIGHT?",
-    "options": [
-      "Fall in income for a normal good",
-      "Rise in price of chicken (substitute)",
-      "Rise in beef price",
-      "Expectation of lower future prices"
-    ],
-    "answer_index": 1,
-    "explanation": "A higher price of substitutes raises demand for the good."
-  },
-  {
-    "id": "ATSWA1-ECON-DS-0013",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Supply",
-    "subtopic": "Law",
-    "stem": "The law of supply states that as price rises:",
-    "options": [
-      "Quantity supplied rises",
-      "Supply falls",
-      "Demand rises",
-      "Quantity demanded falls"
-    ],
-    "answer_index": 0,
-    "explanation": "Higher prices incentivize producers to supply more (movement along supply)."
-  },
-  {
-    "id": "ATSWA1-ECON-DS-0014",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Supply",
-    "subtopic": "Shifts",
-    "stem": "Which shifts the supply of wheat LEFT?",
-    "options": [
-      "Technological improvement",
-      "Lower input costs",
-      "Adverse weather",
-      "Subsidy"
-    ],
-    "answer_index": 2,
-    "explanation": "Bad weather reduces yields; supply shifts left."
-  },
-  {
-    "id": "ATSWA1-ECON-DS-0015",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Equilibrium",
-    "subtopic": "Market",
-    "stem": "Market equilibrium is where:",
-    "options": [
-      "Excess supply = excess demand",
-      "Quantity demanded equals quantity supplied",
-      "Price is minimum",
-      "Government sets price"
-    ],
-    "answer_index": 1,
-    "explanation": "Equilibrium clears the market: Qd=Qs."
-  },
-  {
-    "id": "ATSWA1-ECON-DS-0016",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Equilibrium",
-    "subtopic": "Disequilibrium",
-    "stem": "At a price above equilibrium there is:",
-    "options": [
-      "Shortage",
-      "Surplus",
-      "No excess",
-      "Excess demand"
-    ],
-    "answer_index": 1,
-    "explanation": "Price too high â quantity supplied exceeds quantity demanded."
-  },
-  {
-    "id": "ATSWA1-ECON-DS-0017",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Price Controls",
-    "subtopic": "Ceiling",
-    "stem": "A binding price ceiling will likely cause:",
-    "options": [
-      "Surplus",
-      "Shortage",
-      "Higher quality",
-      "Excess supply"
-    ],
-    "answer_index": 1,
-    "explanation": "A ceiling below equilibrium creates excess demand (shortage)."
-  },
-  {
-    "id": "ATSWA1-ECON-DS-0018",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Price Controls",
-    "subtopic": "Floor",
-    "stem": "A binding minimum wage is an example of a price:",
-    "options": [
-      "Ceiling causing shortage",
-      "Floor potentially causing unemployment",
-      "Ceiling causing surplus",
-      "Support price eliminating surplus"
-    ],
-    "answer_index": 1,
-    "explanation": "If set above equilibrium, a wage floor can create labour surplus (unemployment)."
-  },
-  {
-    "id": "ATSWA1-ECON-DS-0019",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Elasticity",
-    "subtopic": "Meaning",
-    "stem": "Price elasticity of demand measures the responsiveness of:",
-    "options": [
-      "Demand to income",
-      "Supply to price",
-      "Quantity demanded to price",
-      "Demand to advertising"
-    ],
-    "answer_index": 2,
-    "explanation": "Itâs the % change in Qd divided by % change in price."
-  },
-  {
-    "id": "ATSWA1-ECON-DS-0020",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Elasticity",
-    "subtopic": "Types",
-    "stem": "If |PED| > 1, demand is:",
-    "options": [
-      "Unit elastic",
-      "Inelastic",
-      "Elastic",
-      "Perfectly inelastic"
-    ],
-    "answer_index": 2,
-    "explanation": "Elastic means quantity responds more than proportionally to price."
-  },
-  {
-    "id": "ATSWA1-ECON-DS-0021",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Elasticity",
-    "subtopic": "Revenue",
-    "stem": "If demand is elastic and price rises, total revenue will:",
-    "options": [
-      "Increase",
-      "Decrease",
-      "Stay the same",
-      "Double"
-    ],
-    "answer_index": 1,
-    "explanation": "With elastic demand, %ÎQ > %ÎP so revenue falls when price rises."
-  },
-  {
-    "id": "ATSWA1-ECON-DS-0022",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Cross Elasticity",
-    "subtopic": "Substitute/Complement",
-    "stem": "Cross elasticity of demand (XED) for close substitutes is typically:",
-    "options": [
-      "Positive and large",
-      "Negative and large",
-      "Zero",
-      "Always one"
-    ],
-    "answer_index": 0,
-    "explanation": "XED>0 for substitutes; larger means closer substitutes."
-  },
-  {
-    "id": "ATSWA1-ECON-DS-0023",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Income Elasticity",
-    "subtopic": "Normal/Inferior",
-    "stem": "For an inferior good, income elasticity of demand (YED) is:",
-    "options": [
-      "Positive",
-      "Negative",
-      "Zero",
-      "Undefined"
-    ],
-    "answer_index": 1,
-    "explanation": "YED<0 because demand falls when income rises."
-  },
-  {
-    "id": "ATSWA1-ECON-DS-0024",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Elasticity",
-    "subtopic": "Supply",
-    "stem": "Supply tends to be more elastic in the long run because:",
-    "options": [
-      "Firms have more time to adjust capacity",
-      "Consumers get used to prices",
-      "Government fixes prices",
-      "Resources become scarcer"
-    ],
-    "answer_index": 0,
-    "explanation": "Time allows factor mobility and capacity changes."
-  },
-  {
-    "id": "ATSWA1-ECON-CP-0025",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Utility",
-    "subtopic": "Law of Diminishing MU",
-    "stem": "The law of diminishing marginal utility implies that as a consumer consumes more of a good:",
-    "options": [
-      "Total utility must fall",
-      "Marginal utility eventually falls",
-      "Marginal utility rises",
-      "Total utility stays constant"
-    ],
-    "answer_index": 1,
-    "explanation": "Beyond some point, extra units add less additional satisfaction."
-  },
-  {
-    "id": "ATSWA1-ECON-CP-0026",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Indifference Curves",
-    "subtopic": "Properties",
-    "stem": "Indifference curves are typically:",
-    "options": [
-      "Upward sloping",
-      "Concave to origin",
-      "Convex to origin and downward sloping",
-      "Linear"
-    ],
-    "answer_index": 2,
-    "explanation": "They slope down and are convex due to diminishing MRS."
-  },
-  {
-    "id": "ATSWA1-ECON-CP-0027",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Budget Constraint",
-    "subtopic": "Shift",
-    "stem": "A fall in the price of good X causes the budget line to:",
-    "options": [
-      "Pivot outward on the Y-intercept",
-      "Shift inward parallel",
-      "Pivot inward on the Y-intercept",
-      "Remain unchanged"
-    ],
-    "answer_index": 0,
-    "explanation": "With income fixed, a price fall allows more X, pivoting out around the Y-axis intercept."
-  },
-  {
-    "id": "ATSWA1-ECON-CP-0028",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Costs",
-    "subtopic": "Short run vs Long run",
-    "stem": "In the short run, at least one factor is:",
-    "options": [
-      "Variable",
-      "Fixed",
-      "Non-existent",
-      "Homogeneous"
-    ],
-    "answer_index": 1,
-    "explanation": "Short run: at least one input (e.g., capital) is fixed."
-  },
-  {
-    "id": "ATSWA1-ECON-CP-0029",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Production",
-    "subtopic": "Law of Diminishing Returns",
-    "stem": "Diminishing marginal returns occur when additional units of a variable input:",
-    "options": [
-      "Increase total output at an increasing rate",
-      "Cause total output to fall immediately",
-      "Add less to total output than previous units",
-      "Have no effect on output"
-    ],
-    "answer_index": 2,
-    "explanation": "After a point, extra variable input raises output by smaller increments."
-  },
-  {
-    "id": "ATSWA1-ECON-CP-0030",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Costs",
-    "subtopic": "Relationships",
-    "stem": "When marginal cost (MC) is below average cost (AC), AC will:",
-    "options": [
-      "Rise",
-      "Fall",
-      "Be at minimum",
-      "Be undefined"
-    ],
-    "answer_index": 1,
-    "explanation": "MC pulls AC down when MC<AC; AC rises when MC>AC."
-  },
-  {
-    "id": "ATSWA1-ECON-CP-0031",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Revenue",
-    "subtopic": "Perfect Competition",
-    "stem": "For a perfectly competitive firm, marginal revenue (MR) equals:",
-    "options": [
-      "Price",
-      "Average variable cost",
-      "Average total cost",
-      "Zero"
-    ],
-    "answer_index": 0,
-    "explanation": "Price-takers face perfectly elastic demand: P=MR=AR."
-  },
-  {
-    "id": "ATSWA1-ECON-CP-0032",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Profit",
-    "subtopic": "Maximization",
-    "stem": "Profit is maximized when:",
-    "options": [
-      "MC = MR",
-      "AC = AR",
-      "MC = AC",
-      "MR = 0"
-    ],
-    "answer_index": 0,
-    "explanation": "The key rule for all firms is MC=MR at optimum output."
-  },
-  {
-    "id": "ATSWA1-ECON-MS-0033",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Perfect Competition",
-    "subtopic": "Characteristics",
-    "stem": "Which is NOT a feature of perfect competition?",
-    "options": [
-      "Many buyers and sellers",
-      "Product differentiation",
-      "Free entry and exit",
-      "Perfect information"
-    ],
-    "answer_index": 1,
-    "explanation": "PC assumes identical products; differentiation is for monopolistic competition."
-  },
-  {
-    "id": "ATSWA1-ECON-MS-0034",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Monopoly",
-    "subtopic": "Sources",
-    "stem": "A key source of monopoly power is:",
-    "options": [
-      "Many firms",
-      "Identical products",
-      "Patents and barriers to entry",
-      "Perfect information"
-    ],
-    "answer_index": 2,
-    "explanation": "Legal barriers like patents restrict entry."
-  },
-  {
-    "id": "ATSWA1-ECON-MS-0035",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Monopolistic Competition",
-    "subtopic": "Feature",
-    "stem": "Monopolistic competition is characterized by:",
-    "options": [
-      "Homogeneous products",
-      "Few sellers",
-      "Product differentiation and many firms",
-      "Price taking"
-    ],
-    "answer_index": 2,
-    "explanation": "Many firms produce differentiated but close substitutes."
-  },
-  {
-    "id": "ATSWA1-ECON-MS-0036",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Oligopoly",
-    "subtopic": "Interdependence",
-    "stem": "In oligopoly, firms are:",
-    "options": [
-      "Price takers",
-      "Mutually interdependent",
-      "Unable to collude",
-      "Always maximizing revenue"
-    ],
-    "answer_index": 1,
-    "explanation": "Each firmâs actions affect rivals; strategic behavior matters."
-  },
-  {
-    "id": "ATSWA1-ECON-MS-0037",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Oligopoly",
-    "subtopic": "Kinked Demand",
-    "stem": "The kinked demand curve suggests prices may be:",
-    "options": [
-      "Highly unstable",
-      "Rigid/sticky",
-      "Always falling",
-      "Always rising"
-    ],
-    "answer_index": 1,
-    "explanation": "Firms may match price cuts but not rises â price rigidity."
-  },
-  {
-    "id": "ATSWA1-ECON-MS-0038",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Monopoly",
-    "subtopic": "Efficiency",
-    "stem": "Relative to perfect competition, a monopolist produces:",
-    "options": [
-      "Higher output at lower price",
-      "Lower output at higher price",
-      "Same output and price",
-      "Higher output at higher price"
-    ],
-    "answer_index": 1,
-    "explanation": "Monopoly restricts output and elevates price, causing deadweight loss."
-  },
-  {
-    "id": "ATSWA1-ECON-MS-0039",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Market Failure",
-    "subtopic": "Externalities",
-    "stem": "A negative externality implies:",
-    "options": [
-      "Private cost < Social cost",
-      "Private cost > Social cost",
-      "Private benefit > Social benefit",
-      "No divergence"
-    ],
-    "answer_index": 0,
-    "explanation": "Social cost exceeds private cost; unpriced harm to third parties."
-  },
-  {
-    "id": "ATSWA1-ECON-MS-0040",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Public Goods",
-    "subtopic": "Features",
-    "stem": "Public goods are:",
-    "options": [
-      "Rival and excludable",
-      "Non-rival and non-excludable",
-      "Rival but non-excludable",
-      "Non-rival but excludable"
-    ],
-    "answer_index": 1,
-    "explanation": "Classic public goods like national defense are non-rival, non-excludable."
-  },
-  {
-    "id": "ATSWA1-ECON-MS-0041",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Government",
-    "subtopic": "Policies",
-    "stem": "A Pigouvian tax is designed to:",
-    "options": [
-      "Subsidize negative externalities",
-      "Internalize external costs",
-      "Control money supply",
-      "Fix exchange rates"
-    ],
-    "answer_index": 1,
-    "explanation": "Tax equals marginal external cost to align private with social cost."
-  },
-  {
-    "id": "ATSWA1-ECON-MS-0042",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Competition Policy",
-    "subtopic": "Goals",
-    "stem": "Competition policy primarily aims to:",
-    "options": [
-      "Protect inefficient firms",
-      "Promote consumer welfare and fair competition",
-      "Fix prices",
-      "Maximize government revenue"
-    ],
-    "answer_index": 1,
-    "explanation": "It curbs anti-competitive practices to benefit consumers."
-  },
-  {
-    "id": "ATSWA1-ECON-MAC-0043",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "GDP",
-    "subtopic": "Definition",
-    "stem": "Gross Domestic Product (GDP) measures the value of:",
-    "options": [
-      "All final goods and services produced within a country",
-      "All sales by domestic firms worldwide",
-      "All intermediate goods produced",
-      "All incomes received by citizens only"
-    ],
-    "answer_index": 0,
-    "explanation": "GDP is output produced within domestic territory, regardless of ownership."
-  },
-  {
-    "id": "ATSWA1-ECON-MAC-0044",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "GDP/GNP",
-    "subtopic": "Difference",
-    "stem": "Gross National Product (GNP) equals GDP plus:",
-    "options": [
-      "Depreciation",
-      "Net factor income from abroad",
-      "Indirect taxes",
-      "Subsidies"
-    ],
-    "answer_index": 1,
-    "explanation": "GNP adds net primary income from the rest of the world."
-  },
-  {
-    "id": "ATSWA1-ECON-MAC-0045",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Real vs Nominal",
-    "subtopic": "Adjustment",
-    "stem": "Real GDP differs from nominal GDP because it:",
-    "options": [
-      "Uses current prices",
-      "Includes imports",
-      "Excludes government spending",
-      "Is adjusted for inflation"
-    ],
-    "answer_index": 3,
-    "explanation": "Real GDP removes price effects using a base-year or chain index."
-  },
-  {
-    "id": "ATSWA1-ECON-MAC-0046",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Multiplier",
-    "subtopic": "Concept",
-    "stem": "If MPC=0.75, the simple Keynesian multiplier is:",
-    "options": [
-      "1.33",
-      "2",
-      "3",
-      "4"
-    ],
-    "answer_index": 3,
-    "explanation": "k = 1/(1âMPC) = 1/0.25 = 4."
-  },
-  {
-    "id": "ATSWA1-ECON-MAC-0047",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "CPI/Inflation",
-    "subtopic": "Index",
-    "stem": "The Consumer Price Index (CPI) measures changes in:",
-    "options": [
-      "Relative incomes",
-      "Average prices of a basket of goods/services",
-      "Exports",
-      "Government spending"
-    ],
-    "answer_index": 1,
-    "explanation": "CPI tracks cost of a representative consumption basket."
-  },
-  {
-    "id": "ATSWA1-ECON-MAC-0048",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Inflation",
-    "subtopic": "Types",
-    "stem": "Demand-pull inflation is most likely caused by:",
-    "options": [
-      "Falling aggregate demand",
-      "Excess aggregate demand relative to capacity",
-      "Productivity growth",
-      "Lower input prices"
-    ],
-    "answer_index": 1,
-    "explanation": "Too much money chasing too few goods."
-  },
-  {
-    "id": "ATSWA1-ECON-MAC-0049",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Unemployment",
-    "subtopic": "Types",
-    "stem": "Unemployment from a mismatch of skills and jobs is:",
-    "options": [
-      "Frictional",
-      "Seasonal",
-      "Structural",
-      "Cyclical"
-    ],
-    "answer_index": 2,
-    "explanation": "Structural arises from technology/trade shifts changing skill demand."
-  },
-  {
-    "id": "ATSWA1-ECON-MAC-0050",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Unemployment",
-    "subtopic": "Rates",
-    "stem": "The labour force consists of:",
-    "options": [
-      "Employed only",
-      "Employed + unemployed actively seeking work",
-      "Adult population",
-      "Unemployed only"
-    ],
-    "answer_index": 1,
-    "explanation": "Labour force = employed + those actively seeking work."
-  },
-  {
-    "id": "ATSWA1-ECON-MAC-0051",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Monetary Policy",
-    "subtopic": "Tools",
-    "stem": "Which is a monetary policy tool?",
-    "options": [
-      "Open market operations",
-      "Government spending",
-      "Taxation",
-      "Import tariffs"
-    ],
-    "answer_index": 0,
-    "explanation": "Central banks buy/sell securities to influence money supply and rates."
-  },
-  {
-    "id": "ATSWA1-ECON-MAC-0052",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Fiscal Policy",
-    "subtopic": "Tools",
-    "stem": "Which is fiscal policy?",
-    "options": [
-      "Changing reserve ratio",
-      "Altering government expenditure",
-      "Setting base interest rate",
-      "Printing money"
-    ],
-    "answer_index": 1,
-    "explanation": "Fiscal policy uses government spending and taxation."
-  },
-  {
-    "id": "ATSWA1-ECON-MAC-0053",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Money",
-    "subtopic": "Functions",
-    "stem": "Which is NOT a function of money?",
-    "options": [
-      "Medium of exchange",
-      "Store of value",
-      "Unit of account",
-      "Production input"
-    ],
-    "answer_index": 3,
-    "explanation": "Money facilitates exchange, measures value, and stores value."
-  },
-  {
-    "id": "ATSWA1-ECON-MAC-0054",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Banking",
-    "subtopic": "Reserves",
-    "stem": "With a required reserve ratio of 10%, the theoretical deposit multiplier is:",
-    "options": [
-      "5",
-      "10",
-      "2",
-      "0.1"
-    ],
-    "answer_index": 1,
-    "explanation": "Money multiplier â 1/rr = 1/0.1 = 10 (simplified)."
-  },
-  {
-    "id": "ATSWA1-ECON-MAC-0055",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "BoP",
-    "subtopic": "Accounts",
-    "stem": "A country's balance of payments (BoP) records:",
-    "options": [
-      "Only trade in goods",
-      "All economic transactions with the rest of the world",
-      "Government budgets",
-      "Domestic transfers"
-    ],
-    "answer_index": 1,
-    "explanation": "BoP = current + capital/financial accounts."
-  },
-  {
-    "id": "ATSWA1-ECON-MAC-0056",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Exchange Rates",
-    "subtopic": "Appreciation",
-    "stem": "An appreciation of the domestic currency tends to:",
-    "options": [
-      "Make exports cheaper abroad",
-      "Make imports cheaper to residents",
-      "Worsen trade balance always",
-      "Reduce purchasing power"
-    ],
-    "answer_index": 1,
-    "explanation": "Appreciation lowers domestic currency price of imports; exports become dearer abroad."
-  },
-  {
-    "id": "ATSWA1-ECON-MAC-0057",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Growth",
-    "subtopic": "Determinants",
-    "stem": "Which best promotes long-run economic growth?",
-    "options": [
-      "Higher consumption today",
-      "Investment in human and physical capital",
-      "Import restrictions",
-      "Price controls"
-    ],
-    "answer_index": 1,
-    "explanation": "Capital accumulation and technology drive long-run growth."
-  },
-  {
-    "id": "ATSWA1-ECON-MAC-0058",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Development",
-    "subtopic": "Indicators",
-    "stem": "Which is a composite indicator of development?",
-    "options": [
-      "HDI",
-      "Inflation rate",
-      "Unemployment rate",
-      "GDP deflator"
-    ],
-    "answer_index": 0,
-    "explanation": "Human Development Index includes income, education, life expectancy."
-  },
-  {
-    "id": "ATSWA1-ECON-PF-0059",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Taxation",
-    "subtopic": "Direct vs Indirect",
-    "stem": "Which is an indirect tax?",
-    "options": [
-      "Personal income tax",
-      "Company income tax",
-      "Value-added tax (VAT)",
-      "Property tax"
-    ],
-    "answer_index": 2,
-    "explanation": "VAT is levied on spending and can be shifted forward to consumers."
-  },
-  {
-    "id": "ATSWA1-ECON-PF-0060",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Taxation",
-    "subtopic": "Principles",
-    "stem": "Equity in taxation often refers to:",
-    "options": [
-      "Equal absolute amounts paid",
-      "Ability to pay and fairness",
-      "Only benefits received",
-      "Only efficiency"
-    ],
-    "answer_index": 1,
-    "explanation": "Vertical and horizontal equity consider fairness in tax burdens."
-  },
-  {
-    "id": "ATSWA1-ECON-PF-0061",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Taxation",
-    "subtopic": "Incidence",
-    "stem": "Tax incidence depends largely on:",
-    "options": [
-      "Elasticities of demand and supply",
-      "Legal assignment of tax",
-      "Government size",
-      "Import levels"
-    ],
-    "answer_index": 0,
-    "explanation": "The side with less elastic response bears more of the burden."
-  },
-  {
-    "id": "ATSWA1-ECON-PF-0062",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Public Goods",
-    "subtopic": "Free Rider",
-    "stem": "Free rider problem arises because public goods are:",
-    "options": [
-      "Excludable",
-      "Rival",
-      "Non-excludable",
-      "Private"
-    ],
-    "answer_index": 2,
-    "explanation": "Non-excludability prevents charging non-payers easily."
-  },
-  {
-    "id": "ATSWA1-ECON-PF-0063",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Government Budget",
-    "subtopic": "Deficit",
-    "stem": "A budget deficit occurs when:",
-    "options": [
-      "G < T",
-      "G = T",
-      "G > T",
-      "T > G"
-    ],
-    "answer_index": 2,
-    "explanation": "Government spending (G) exceeds tax revenue (T)."
-  },
-  {
-    "id": "ATSWA1-ECON-PF-0064",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Subsidies",
-    "subtopic": "Effect",
-    "stem": "A per-unit subsidy to producers will:",
-    "options": [
-      "Shift supply left",
-      "Shift supply right",
-      "Shift demand left",
-      "Raise equilibrium price only"
-    ],
-    "answer_index": 1,
-    "explanation": "Subsidy lowers producers' costs, increasing supply."
-  },
-  {
-    "id": "ATSWA1-ECON-PF-0065",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Price Stabilization",
-    "subtopic": "Buffer Stocks",
-    "stem": "A buffer stock scheme aims to:",
-    "options": [
-      "Fix prices permanently",
-      "Stabilize prices around a target band",
-      "Eliminate supply",
-      "Nationalize firms"
-    ],
-    "answer_index": 1,
-    "explanation": "Authorities buy/sell to keep prices within a range."
-  },
-  {
-    "id": "ATSWA1-ECON-PF-0066",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Privatization",
-    "subtopic": "Effect",
-    "stem": "Privatization is the transfer of:",
-    "options": [
-      "Public ownership to private sector",
-      "Private ownership to government",
-      "Income to the poor",
-      "Taxes to firms"
-    ],
-    "answer_index": 0,
-    "explanation": "Ownership/control moves from state to private entities."
-  },
-  {
-    "id": "ATSWA1-ECON-TR-0067",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Comparative Advantage",
-    "subtopic": "Principle",
-    "stem": "According to comparative advantage, a country should specialize in goods it can produce:",
-    "options": [
-      "At the lowest absolute cost",
-      "At the highest price",
-      "At the lowest opportunity cost",
-      "With the least labour"
-    ],
-    "answer_index": 2,
-    "explanation": "Trade gains arise from differences in opportunity costs."
-  },
-  {
-    "id": "ATSWA1-ECON-TR-0068",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Protectionism",
-    "subtopic": "Tariff",
-    "stem": "A tariff is a tax on:",
-    "options": [
-      "Exports",
-      "Imports",
-      "Domestic production",
-      "Foreign investment"
-    ],
-    "answer_index": 1,
-    "explanation": "Tariffs raise import prices to protect domestic industries or raise revenue."
-  },
-  {
-    "id": "ATSWA1-ECON-TR-0069",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Protectionism",
-    "subtopic": "Quota",
-    "stem": "An import quota:",
-    "options": [
-      "Taxes imports per unit",
-      "Limits the quantity of imports",
-      "Subsidizes exporters",
-      "Fixes exchange rates"
-    ],
-    "answer_index": 1,
-    "explanation": "Quotas set a maximum quantity allowed to be imported."
-  },
-  {
-    "id": "ATSWA1-ECON-TR-0070",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Trade",
-    "subtopic": "Terms of Trade",
-    "stem": "An improvement in the terms of trade occurs when:",
-    "options": [
-      "Export prices rise relative to import prices",
-      "Import prices rise relative to export prices",
-      "Both rise equally",
-      "Both fall"
-    ],
-    "answer_index": 0,
-    "explanation": "TOT = Px/Pm; a higher ratio benefits the exporter."
-  },
-  {
-    "id": "ATSWA1-ECON-TR-0071",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Regional Trade",
-    "subtopic": "Unions",
-    "stem": "A customs union features:",
-    "options": [
-      "Free trade area + common external tariff",
-      "Single currency",
-      "No internal migration",
-      "Fixed exchange rates"
-    ],
-    "answer_index": 0,
-    "explanation": "Members remove internal tariffs and adopt a common tariff externally."
-  },
-  {
-    "id": "ATSWA1-ECON-TR-0072",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Balance of Payments",
-    "subtopic": "Deficit",
-    "stem": "A persistent current account deficit may be financed by:",
-    "options": [
-      "Export subsidies only",
-      "Foreign borrowing or asset sales",
-      "Printing money",
-      "Lowering VAT"
-    ],
-    "answer_index": 1,
-    "explanation": "Capital inflows/borrowing cover current account gaps."
-  },
-  {
-    "id": "ATSWA1-ECON-TR-0073",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Exchange Rate Systems",
-    "subtopic": "Types",
-    "stem": "Under a fixed exchange rate, the central bank must:",
-    "options": [
-      "Let currency float",
-      "Intervene to maintain the peg",
-      "Ban imports",
-      "Target inflation only"
-    ],
-    "answer_index": 1,
-    "explanation": "It buys/sells currency and adjusts rates to hold the peg."
-  },
-  {
-    "id": "ATSWA1-ECON-TR-0074",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Globalization",
-    "subtopic": "Effects",
-    "stem": "A benefit of globalization is often:",
-    "options": [
-      "Lower competition",
-      "Reduced technology transfer",
-      "Larger markets and scale economies",
-      "Higher autarky"
-    ],
-    "answer_index": 2,
-    "explanation": "Integration opens markets and diffuses technology."
-  },
-  {
-    "id": "ATSWA1-ECON-TR-0075",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Trade Policy",
-    "subtopic": "Export Subsidy",
-    "stem": "Export subsidies tend to:",
-    "options": [
-      "Discourage exporting",
-      "Make domestic goods cheaper abroad",
-      "Raise import prices",
-      "Lower domestic production"
-    ],
-    "answer_index": 1,
-    "explanation": "They reduce exportersâ costs, making exports more competitive."
-  },
-  {
-    "id": "ATSWA1-ECON-TR-0076",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Trade",
-    "subtopic": "Non-tariff Barriers",
-    "stem": "Which is a non-tariff barrier?",
-    "options": [
-      "Excise duty",
-      "Voluntary export restraint",
-      "Income tax",
-      "Interest rate"
-    ],
-    "answer_index": 1,
-    "explanation": "NTBs include quotas, VERs, standards, licensing."
-  },
-  {
-    "id": "ATSWA1-ECON-ELAS-0077",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Elasticity",
-    "subtopic": "Midpoint",
-    "stem": "Price changes from â¦100 to â¦90 and quantity from 100 to 120. Using the midpoint method, demand is:",
-    "options": [
-      "Elastic",
-      "Inelastic",
-      "Unit elastic",
-      "Perfectly inelastic"
-    ],
-    "answer_index": 0,
-    "explanation": "PED = 0.182/-0.105 â -1.73; therefore demand is elastic."
-  },
-  {
-    "id": "ATSWA1-ECON-ELAS-0078",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Elasticity",
-    "subtopic": "Midpoint",
-    "stem": "Price changes from â¦50 to â¦55 and quantity from 200 to 180. Using the midpoint method, demand is:",
-    "options": [
-      "Elastic",
-      "Inelastic",
-      "Unit elastic",
-      "Perfectly inelastic"
-    ],
-    "answer_index": 0,
-    "explanation": "PED = -0.105/0.095 â -1.11; therefore demand is elastic."
-  },
-  {
-    "id": "ATSWA1-ECON-ELAS-0079",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Elasticity",
-    "subtopic": "Midpoint",
-    "stem": "Price changes from â¦80 to â¦72 and quantity from 160 to 200. Using the midpoint method, demand is:",
-    "options": [
-      "Elastic",
-      "Inelastic",
-      "Unit elastic",
-      "Perfectly inelastic"
-    ],
-    "answer_index": 0,
-    "explanation": "PED = 0.222/-0.105 â -2.11; therefore demand is elastic."
-  },
-  {
-    "id": "ATSWA1-ECON-ELAS-0080",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Elasticity",
-    "subtopic": "Midpoint",
-    "stem": "Price changes from â¦120 to â¦132 and quantity from 150 to 135. Using the midpoint method, demand is:",
-    "options": [
-      "Elastic",
-      "Inelastic",
-      "Unit elastic",
-      "Perfectly inelastic"
-    ],
-    "answer_index": 0,
-    "explanation": "PED = -0.105/0.095 â -1.11; therefore demand is elastic."
-  },
-  {
-    "id": "ATSWA1-ECON-CPI-0081",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Inflation",
-    "subtopic": "CPI",
-    "stem": "A CPI basket has: Food 40% â10%, Housing 30% â5%, Others 30% â0%. Approximate overall inflation is:",
-    "options": [
-      "6%",
-      "8%",
-      "4%",
-      "Cannot be determined"
-    ],
-    "answer_index": 0,
-    "explanation": "Weighted average of item inflation using expenditure shares."
-  },
-  {
-    "id": "ATSWA1-ECON-CPI-0082",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Inflation",
-    "subtopic": "CPI",
-    "stem": "A CPI basket has: Food 50% â8%, Transport 20% â12%, Others 30% â4%. Approximate overall inflation is:",
-    "options": [
-      "8%",
-      "10%",
-      "6%",
-      "Cannot be determined"
-    ],
-    "answer_index": 0,
-    "explanation": "Weighted average of item inflation using expenditure shares."
-  },
-  {
-    "id": "ATSWA1-ECON-GDP-0083",
-    "level": "ATSWA1",
-    "subject": "Economics",
+    "id": "ECO-AT1-Q007",
     "topic": "National Income",
-    "subtopic": "Expenditure Approach",
-    "stem": "Using the expenditure approach, GDP is calculated as:",
+    "subtopic": "Measurement",
+    "stem": "In the expenditure approach, GDP equals ____.",
     "options": [
-      "C + I + G + (X â M)",
+      "C + I + G + (X \u2212 M)",
       "W + R + I + P",
-      "C + S + T",
-      "M1 + M2 + M3"
+      "Output \u00d7 Price",
+      "C + S + T"
     ],
-    "answer_index": 0,
-    "explanation": "GDP (expenditure) sums consumption, investment, government spending, and net exports."
+    "answer_index": 0
   },
   {
-    "id": "ATSWA1-ECON-MM-0084",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Banking",
-    "subtopic": "Multiplier",
-    "stem": "If the required reserve ratio is 20%, the simple deposit multiplier equals:",
+    "id": "ECO-AT1-Q008",
+    "topic": "National Income",
+    "subtopic": "Real vs Nominal",
+    "stem": "The GDP deflator is defined as ____.",
     "options": [
-      "2",
+      "(Nominal GDP / Real GDP) \u00d7 100",
+      "(Real GDP / Nominal GDP) \u00d7 100",
+      "(C + I)/GDP \u00d7 100",
+      "(X \u2212 M)/GDP \u00d7 100"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q009",
+    "topic": "National Income",
+    "subtopic": "Adjustments",
+    "stem": "Which is a limitation of GDP as a welfare measure?",
+    "options": [
+      "Excludes non\u2011market production",
+      "Counts only final goods",
+      "Includes government spending",
+      "Uses a base year"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q010",
+    "topic": "National Income",
+    "subtopic": "Limitations",
+    "stem": "Which is a limitation of GDP as a welfare measure?",
+    "options": [
+      "Excludes non\u2011market production",
+      "Counts only final goods",
+      "Includes government spending",
+      "Uses a base year"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q011",
+    "topic": "National Income",
+    "subtopic": "Multiplier",
+    "stem": "Which measure adjusts GDP for inflation to reflect changes in output volume?",
+    "options": [
+      "Real GDP",
+      "Nominal GDP",
+      "GNP at market prices",
+      "NNP at factor cost"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q012",
+    "topic": "National Income",
+    "subtopic": "Circular Flow",
+    "stem": "Which is a limitation of GDP as a welfare measure?",
+    "options": [
+      "Excludes non\u2011market production",
+      "Counts only final goods",
+      "Includes government spending",
+      "Uses a base year"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q013",
+    "topic": "Demand & Supply",
+    "subtopic": "Law of Demand",
+    "stem": "Consumer surplus is best described as the area ____ the demand curve and ____ the market price.",
+    "options": [
+      "under; above",
+      "above; under",
+      "to the right of; to the left of",
+      "equal to"
+    ],
+    "answer_index": 1
+  },
+  {
+    "id": "ECO-AT1-Q014",
+    "topic": "Demand & Supply",
+    "subtopic": "Law of Supply",
+    "stem": "A rightward shift of the demand curve for a normal good can be caused by ____.",
+    "options": [
+      "an increase in income",
+      "a fall in the price of the good",
+      "a rise in input costs",
+      "a technological setback"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q015",
+    "topic": "Demand & Supply",
+    "subtopic": "Elasticity",
+    "stem": "Consumer surplus is best described as the area ____ the demand curve and ____ the market price.",
+    "options": [
+      "under; above",
+      "above; under",
+      "to the right of; to the left of",
+      "equal to"
+    ],
+    "answer_index": 1
+  },
+  {
+    "id": "ECO-AT1-Q016",
+    "topic": "Demand & Supply",
+    "subtopic": "Equilibrium",
+    "stem": "Consumer surplus is best described as the area ____ the demand curve and ____ the market price.",
+    "options": [
+      "under; above",
+      "above; under",
+      "to the right of; to the left of",
+      "equal to"
+    ],
+    "answer_index": 1
+  },
+  {
+    "id": "ECO-AT1-Q017",
+    "topic": "Demand & Supply",
+    "subtopic": "Shifts",
+    "stem": "A rightward shift of the demand curve for a normal good can be caused by ____.",
+    "options": [
+      "an increase in income",
+      "a fall in the price of the good",
+      "a rise in input costs",
+      "a technological setback"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q018",
+    "topic": "Demand & Supply",
+    "subtopic": "Consumer/Producer Surplus",
+    "stem": "Which event shifts the supply curve leftward?",
+    "options": [
+      "Higher input prices",
+      "A subsidy to producers",
+      "A technological improvement",
+      "An increase in number of sellers"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q019",
+    "topic": "National Income",
+    "subtopic": "Measurement",
+    "stem": "Which measure adjusts GDP for inflation to reflect changes in output volume?",
+    "options": [
+      "Real GDP",
+      "Nominal GDP",
+      "GNP at market prices",
+      "NNP at factor cost"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q020",
+    "topic": "National Income",
+    "subtopic": "Real vs Nominal",
+    "stem": "The GDP deflator is defined as ____.",
+    "options": [
+      "(Nominal GDP / Real GDP) \u00d7 100",
+      "(Real GDP / Nominal GDP) \u00d7 100",
+      "(C + I)/GDP \u00d7 100",
+      "(X \u2212 M)/GDP \u00d7 100"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q021",
+    "topic": "National Income",
+    "subtopic": "Adjustments",
+    "stem": "In the expenditure approach, GDP equals ____.",
+    "options": [
+      "C + I + G + (X \u2212 M)",
+      "W + R + I + P",
+      "Output \u00d7 Price",
+      "C + S + T"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q022",
+    "topic": "National Income",
+    "subtopic": "Limitations",
+    "stem": "If MPC = 0.75, the simple multiplier (k) equals ____.",
+    "options": [
       "4",
-      "5",
-      "10"
+      "3",
+      "2.5",
+      "1.33"
     ],
-    "answer_index": 2,
-    "explanation": "k â 1/rr = 1/0.20 = 5 (simplified model)."
+    "answer_index": 0
   },
   {
-    "id": "ATSWA1-ECON-UNEMP-0085",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Labour Market",
-    "subtopic": "Rates",
-    "stem": "If the adult population is 80m, labour force 50m, and employed 47m, unemployment rate is:",
-    "options": [
-      "3.0%",
-      "6.0%",
-      "8.0%",
-      "10.0%"
-    ],
-    "answer_index": 1,
-    "explanation": "Unemployment = (LF â employed)/LF = (50â47)/50 = 6%."
-  },
-  {
-    "id": "ATSWA1-ECON-FISC-0086",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Fiscal Policy",
+    "id": "ECO-AT1-Q023",
+    "topic": "National Income",
     "subtopic": "Multiplier",
-    "stem": "With MPC=0.6, an autonomous increase in government spending of â¦100b raises equilibrium income by approximately:",
+    "stem": "The GDP deflator is defined as ____.",
     "options": [
-      "â¦60b",
-      "â¦100b",
-      "â¦150b",
-      "â¦250b"
+      "(Nominal GDP / Real GDP) \u00d7 100",
+      "(Real GDP / Nominal GDP) \u00d7 100",
+      "(C + I)/GDP \u00d7 100",
+      "(X \u2212 M)/GDP \u00d7 100"
     ],
-    "answer_index": 3,
-    "explanation": "Multiplier k=1/(1â0.6)=2.5; ÎY â 2.5Ã100=â¦250b."
+    "answer_index": 0
   },
   {
-    "id": "ATSWA1-ECON-TOT-0087",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Trade",
-    "subtopic": "Terms of Trade",
-    "stem": "If export price index rises from 100 to 110 and import price index from 100 to 105, the terms of trade change by about:",
+    "id": "ECO-AT1-Q024",
+    "topic": "National Income",
+    "subtopic": "Circular Flow",
+    "stem": "In the expenditure approach, GDP equals ____.",
     "options": [
-      "+4.8%",
-      "+5.0%",
-      "+10.0%",
-      "â5.0%"
+      "C + I + G + (X \u2212 M)",
+      "W + R + I + P",
+      "Output \u00d7 Price",
+      "C + S + T"
     ],
-    "answer_index": 0,
-    "explanation": "TOT â (110/105â1) â 4.76% improvement."
+    "answer_index": 0
   },
   {
-    "id": "ATSWA1-ECON-BOP-0088",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Balance of Payments",
-    "subtopic": "Identity",
-    "stem": "In BoP accounting, a current account deficit is typically offset by:",
+    "id": "ECO-AT1-Q025",
+    "topic": "Demand & Supply",
+    "subtopic": "Law of Demand",
+    "stem": "If price falls and total revenue rises, demand over that range is ____.",
     "options": [
-      "A capital/financial account deficit",
-      "A capital/financial account surplus",
-      "A fiscal surplus",
-      "A fall in GDP"
+      "elastic",
+      "inelastic",
+      "unit elastic",
+      "perfectly inelastic"
     ],
-    "answer_index": 1,
-    "explanation": "By identity, CA + KA/FA + errors = 0; CA<0 implies KA/FA>0 (net inflows)."
+    "answer_index": 0
   },
   {
-    "id": "ATSWA1-ECON-MD-0089",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Money",
-    "subtopic": "Demand",
-    "stem": "According to the liquidity preference theory, the demand for money is inversely related to:",
+    "id": "ECO-AT1-Q026",
+    "topic": "Demand & Supply",
+    "subtopic": "Law of Supply",
+    "stem": "Consumer surplus is best described as the area ____ the demand curve and ____ the market price.",
     "options": [
-      "Income",
-      "Interest rate",
-      "Prices",
-      "Wealth"
+      "under; above",
+      "above; under",
+      "to the right of; to the left of",
+      "equal to"
     ],
-    "answer_index": 1,
-    "explanation": "Higher rates increase the opportunity cost of holding money, reducing money demand."
+    "answer_index": 1
   },
   {
-    "id": "ATSWA1-ECON-PHIL-0090",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Inflation & Unemployment",
-    "subtopic": "Trade-off",
-    "stem": "In the short run, the Phillips curve suggests a trade-off between:",
+    "id": "ECO-AT1-Q027",
+    "topic": "Demand & Supply",
+    "subtopic": "Elasticity",
+    "stem": "Which event shifts the supply curve leftward?",
     "options": [
-      "Inflation and GDP",
-      "Inflation and unemployment",
-      "Unemployment and growth",
-      "Taxes and spending"
+      "Higher input prices",
+      "A subsidy to producers",
+      "A technological improvement",
+      "An increase in number of sellers"
     ],
-    "answer_index": 1,
-    "explanation": "Lower unemployment can be associated with higher inflation in the short run."
+    "answer_index": 0
   },
   {
-    "id": "ATSWA1-ECON-DEV-0091",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Development",
-    "subtopic": "Finance",
-    "stem": "Microfinance primarily aims to:",
+    "id": "ECO-AT1-Q028",
+    "topic": "Demand & Supply",
+    "subtopic": "Equilibrium",
+    "stem": "If price falls and total revenue rises, demand over that range is ____.",
     "options": [
-      "Provide small loans to low-income entrepreneurs",
-      "Finance government deficits",
-      "Stabilize exchange rates",
-      "Fund large infrastructure"
+      "elastic",
+      "inelastic",
+      "unit elastic",
+      "perfectly inelastic"
     ],
-    "answer_index": 0,
-    "explanation": "It expands access to credit for the poor to support small-scale enterprise."
+    "answer_index": 0
   },
   {
-    "id": "ATSWA1-ECON-SME-0092",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Development",
-    "subtopic": "SMEs",
-    "stem": "A common constraint facing SMEs in developing economies is:",
+    "id": "ECO-AT1-Q029",
+    "topic": "Demand & Supply",
+    "subtopic": "Shifts",
+    "stem": "If PED = 1.6 in absolute terms, a 10% price increase will cause quantity demanded to ____ by about ____.",
     "options": [
-      "Excess foreign exchange",
-      "Too much skilled labour",
-      "Limited access to finance",
-      "Negative interest rates"
+      "fall; 16%",
+      "rise; 16%",
+      "fall; 6%",
+      "rise; 6%"
     ],
-    "answer_index": 2,
-    "explanation": "Credit constraints hinder SME growth."
+    "answer_index": 0
   },
   {
-    "id": "ATSWA1-ECON-POV-0093",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Development",
-    "subtopic": "Poverty",
-    "stem": "The headcount ratio measures:",
+    "id": "ECO-AT1-Q030",
+    "topic": "Demand & Supply",
+    "subtopic": "Consumer/Producer Surplus",
+    "stem": "Which event shifts the supply curve leftward?",
     "options": [
-      "Depth of poverty",
-      "Inequality",
-      "Proportion of population below the poverty line",
-      "GDP per capita"
+      "Higher input prices",
+      "A subsidy to producers",
+      "A technological improvement",
+      "An increase in number of sellers"
     ],
-    "answer_index": 2,
-    "explanation": "It counts the share of people under the poverty threshold."
+    "answer_index": 0
   },
   {
-    "id": "ATSWA1-ECON-GINI-0094",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Inequality",
-    "subtopic": "Gini",
-    "stem": "A Gini coefficient of 0.55 indicates:",
+    "id": "ECO-AT1-Q031",
+    "topic": "National Income",
+    "subtopic": "Measurement",
+    "stem": "Which is a limitation of GDP as a welfare measure?",
     "options": [
-      "Perfect equality",
-      "High inequality",
-      "No information",
-      "Perfect inequality"
+      "Excludes non\u2011market production",
+      "Counts only final goods",
+      "Includes government spending",
+      "Uses a base year"
     ],
-    "answer_index": 1,
-    "explanation": "Gini closer to 1 implies greater inequality."
+    "answer_index": 0
   },
   {
-    "id": "ATSWA1-ECON-DEBT-0095",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Public Finance",
-    "subtopic": "Debt",
-    "stem": "A high debt-to-GDP ratio can be problematic mainly because it may lead to:",
+    "id": "ECO-AT1-Q032",
+    "topic": "National Income",
+    "subtopic": "Real vs Nominal",
+    "stem": "Which is a limitation of GDP as a welfare measure?",
     "options": [
-      "Lower interest payments",
-      "Crowding out of private investment",
-      "Lower taxes",
-      "Higher productivity"
+      "Excludes non\u2011market production",
+      "Counts only final goods",
+      "Includes government spending",
+      "Uses a base year"
     ],
-    "answer_index": 1,
-    "explanation": "Government borrowing can raise interest rates and crowd out private investment."
+    "answer_index": 0
   },
   {
-    "id": "ATSWA1-ECON-EXT-0096",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Externalities",
-    "subtopic": "Remedies",
-    "stem": "A subsidy for positive externalities (e.g., vaccines) is intended to:",
+    "id": "ECO-AT1-Q033",
+    "topic": "National Income",
+    "subtopic": "Adjustments",
+    "stem": "In the expenditure approach, GDP equals ____.",
     "options": [
-      "Reduce consumption",
-      "Internalize external benefits and raise consumption",
-      "Eliminate the good",
-      "Raise private costs"
+      "C + I + G + (X \u2212 M)",
+      "W + R + I + P",
+      "Output \u00d7 Price",
+      "C + S + T"
     ],
-    "answer_index": 1,
-    "explanation": "It aligns private and social benefits by lowering private cost/price."
+    "answer_index": 0
   },
   {
-    "id": "ATSWA1-ECON-PD-0097",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Monopoly",
-    "subtopic": "Price Discrimination",
-    "stem": "Third-degree price discrimination involves charging different prices based on:",
+    "id": "ECO-AT1-Q034",
+    "topic": "National Income",
+    "subtopic": "Limitations",
+    "stem": "Which measure adjusts GDP for inflation to reflect changes in output volume?",
     "options": [
-      "Individual units consumed",
-      "Customer groups/segments",
-      "Time of purchase only",
-      "Cost-plus mark-up"
+      "Real GDP",
+      "Nominal GDP",
+      "GNP at market prices",
+      "NNP at factor cost"
     ],
-    "answer_index": 1,
-    "explanation": "Firms segment markets (e.g., student vs adult pricing) with different elasticities."
+    "answer_index": 0
   },
   {
-    "id": "ATSWA1-ECON-NAT-0098",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Market Structure",
-    "subtopic": "Natural Monopoly",
-    "stem": "Natural monopoly typically arises when:",
+    "id": "ECO-AT1-Q035",
+    "topic": "National Income",
+    "subtopic": "Multiplier",
+    "stem": "Which measure adjusts GDP for inflation to reflect changes in output volume?",
     "options": [
-      "Average cost falls over a large range of output",
-      "Fixed costs are low",
-      "There are many small firms",
-      "Products are differentiated"
+      "Real GDP",
+      "Nominal GDP",
+      "GNP at market prices",
+      "NNP at factor cost"
     ],
-    "answer_index": 0,
-    "explanation": "High fixed costs and economies of scale make one firm most efficient."
+    "answer_index": 0
   },
   {
-    "id": "ATSWA1-ECON-CO-0099",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Fiscal Policy",
-    "subtopic": "Crowding Out",
-    "stem": "Increased government borrowing that raises interest rates and reduces private investment is called:",
+    "id": "ECO-AT1-Q036",
+    "topic": "National Income",
+    "subtopic": "Circular Flow",
+    "stem": "If MPC = 0.75, the simple multiplier (k) equals ____.",
     "options": [
-      "Monetary easing",
-      "Crowding out",
-      "Ricardian equivalence",
-      "Open market operations"
+      "4",
+      "3",
+      "2.5",
+      "1.33"
     ],
-    "answer_index": 1,
-    "explanation": "Higher interest rates from deficits can depress private investment."
+    "answer_index": 0
   },
   {
-    "id": "ATSWA1-ECON-DEF-0100",
-    "level": "ATSWA1",
-    "subject": "Economics",
-    "topic": "Price Indices",
-    "subtopic": "GDP Deflator",
-    "stem": "Compared to CPI, the GDP deflator:",
+    "id": "ECO-AT1-Q037",
+    "topic": "Demand & Supply",
+    "subtopic": "Law of Demand",
+    "stem": "A rightward shift of the demand curve for a normal good can be caused by ____.",
     "options": [
-      "Includes only imported consumer goods",
-      "Covers all domestically produced final goods and services",
-      "Is fixed-weight by construction",
-      "Always equals CPI"
+      "an increase in income",
+      "a fall in the price of the good",
+      "a rise in input costs",
+      "a technological setback"
     ],
-    "answer_index": 1,
-    "explanation": "The GDP deflator reflects prices of all domestically produced final goods/services and uses changing weights; CPI focuses on a fixed consumer basket including imports."
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q038",
+    "topic": "Demand & Supply",
+    "subtopic": "Law of Supply",
+    "stem": "A rightward shift of the demand curve for a normal good can be caused by ____.",
+    "options": [
+      "an increase in income",
+      "a fall in the price of the good",
+      "a rise in input costs",
+      "a technological setback"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q039",
+    "topic": "Demand & Supply",
+    "subtopic": "Elasticity",
+    "stem": "A rightward shift of the demand curve for a normal good can be caused by ____.",
+    "options": [
+      "an increase in income",
+      "a fall in the price of the good",
+      "a rise in input costs",
+      "a technological setback"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q040",
+    "topic": "Demand & Supply",
+    "subtopic": "Equilibrium",
+    "stem": "The law of demand states that, ceteris paribus, as price rises the quantity demanded ____.",
+    "options": [
+      "falls",
+      "rises",
+      "is unchanged",
+      "becomes perfectly elastic"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q041",
+    "topic": "Demand & Supply",
+    "subtopic": "Shifts",
+    "stem": "At equilibrium in a competitive market, which is true?",
+    "options": [
+      "Qd = Qs",
+      "Excess demand exists",
+      "Excess supply exists",
+      "Price is zero"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q042",
+    "topic": "Demand & Supply",
+    "subtopic": "Consumer/Producer Surplus",
+    "stem": "At equilibrium in a competitive market, which is true?",
+    "options": [
+      "Qd = Qs",
+      "Excess demand exists",
+      "Excess supply exists",
+      "Price is zero"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q043",
+    "topic": "National Income",
+    "subtopic": "Measurement",
+    "stem": "If MPC = 0.75, the simple multiplier (k) equals ____.",
+    "options": [
+      "4",
+      "3",
+      "2.5",
+      "1.33"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q044",
+    "topic": "National Income",
+    "subtopic": "Real vs Nominal",
+    "stem": "Which measure adjusts GDP for inflation to reflect changes in output volume?",
+    "options": [
+      "Real GDP",
+      "Nominal GDP",
+      "GNP at market prices",
+      "NNP at factor cost"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q045",
+    "topic": "National Income",
+    "subtopic": "Adjustments",
+    "stem": "Which measure adjusts GDP for inflation to reflect changes in output volume?",
+    "options": [
+      "Real GDP",
+      "Nominal GDP",
+      "GNP at market prices",
+      "NNP at factor cost"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q046",
+    "topic": "National Income",
+    "subtopic": "Limitations",
+    "stem": "Net factor income from abroad added to GDP at market prices gives ____.",
+    "options": [
+      "GNP at market prices",
+      "NNP at factor cost",
+      "Disposable income",
+      "Personal income"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q047",
+    "topic": "National Income",
+    "subtopic": "Multiplier",
+    "stem": "If MPC = 0.75, the simple multiplier (k) equals ____.",
+    "options": [
+      "4",
+      "3",
+      "2.5",
+      "1.33"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q048",
+    "topic": "National Income",
+    "subtopic": "Circular Flow",
+    "stem": "The GDP deflator is defined as ____.",
+    "options": [
+      "(Nominal GDP / Real GDP) \u00d7 100",
+      "(Real GDP / Nominal GDP) \u00d7 100",
+      "(C + I)/GDP \u00d7 100",
+      "(X \u2212 M)/GDP \u00d7 100"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q049",
+    "topic": "Demand & Supply",
+    "subtopic": "Law of Demand",
+    "stem": "If PED = 1.6 in absolute terms, a 10% price increase will cause quantity demanded to ____ by about ____.",
+    "options": [
+      "fall; 16%",
+      "rise; 16%",
+      "fall; 6%",
+      "rise; 6%"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q050",
+    "topic": "Demand & Supply",
+    "subtopic": "Law of Supply",
+    "stem": "If price falls and total revenue rises, demand over that range is ____.",
+    "options": [
+      "elastic",
+      "inelastic",
+      "unit elastic",
+      "perfectly inelastic"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q051",
+    "topic": "Demand & Supply",
+    "subtopic": "Elasticity",
+    "stem": "Which event shifts the supply curve leftward?",
+    "options": [
+      "Higher input prices",
+      "A subsidy to producers",
+      "A technological improvement",
+      "An increase in number of sellers"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q052",
+    "topic": "Demand & Supply",
+    "subtopic": "Equilibrium",
+    "stem": "A rightward shift of the demand curve for a normal good can be caused by ____.",
+    "options": [
+      "an increase in income",
+      "a fall in the price of the good",
+      "a rise in input costs",
+      "a technological setback"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q053",
+    "topic": "Demand & Supply",
+    "subtopic": "Shifts",
+    "stem": "At equilibrium in a competitive market, which is true?",
+    "options": [
+      "Qd = Qs",
+      "Excess demand exists",
+      "Excess supply exists",
+      "Price is zero"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q054",
+    "topic": "Demand & Supply",
+    "subtopic": "Consumer/Producer Surplus",
+    "stem": "A rightward shift of the demand curve for a normal good can be caused by ____.",
+    "options": [
+      "an increase in income",
+      "a fall in the price of the good",
+      "a rise in input costs",
+      "a technological setback"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q055",
+    "topic": "National Income",
+    "subtopic": "Measurement",
+    "stem": "The GDP deflator is defined as ____.",
+    "options": [
+      "(Nominal GDP / Real GDP) \u00d7 100",
+      "(Real GDP / Nominal GDP) \u00d7 100",
+      "(C + I)/GDP \u00d7 100",
+      "(X \u2212 M)/GDP \u00d7 100"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q056",
+    "topic": "National Income",
+    "subtopic": "Real vs Nominal",
+    "stem": "Which measure adjusts GDP for inflation to reflect changes in output volume?",
+    "options": [
+      "Real GDP",
+      "Nominal GDP",
+      "GNP at market prices",
+      "NNP at factor cost"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q057",
+    "topic": "National Income",
+    "subtopic": "Adjustments",
+    "stem": "If MPC = 0.75, the simple multiplier (k) equals ____.",
+    "options": [
+      "4",
+      "3",
+      "2.5",
+      "1.33"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q058",
+    "topic": "National Income",
+    "subtopic": "Limitations",
+    "stem": "If MPC = 0.75, the simple multiplier (k) equals ____.",
+    "options": [
+      "4",
+      "3",
+      "2.5",
+      "1.33"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q059",
+    "topic": "National Income",
+    "subtopic": "Multiplier",
+    "stem": "Which is a limitation of GDP as a welfare measure?",
+    "options": [
+      "Excludes non\u2011market production",
+      "Counts only final goods",
+      "Includes government spending",
+      "Uses a base year"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q060",
+    "topic": "National Income",
+    "subtopic": "Circular Flow",
+    "stem": "Net factor income from abroad added to GDP at market prices gives ____.",
+    "options": [
+      "GNP at market prices",
+      "NNP at factor cost",
+      "Disposable income",
+      "Personal income"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q061",
+    "topic": "Demand & Supply",
+    "subtopic": "Law of Demand",
+    "stem": "The law of demand states that, ceteris paribus, as price rises the quantity demanded ____.",
+    "options": [
+      "falls",
+      "rises",
+      "is unchanged",
+      "becomes perfectly elastic"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q062",
+    "topic": "Demand & Supply",
+    "subtopic": "Law of Supply",
+    "stem": "Which event shifts the supply curve leftward?",
+    "options": [
+      "Higher input prices",
+      "A subsidy to producers",
+      "A technological improvement",
+      "An increase in number of sellers"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q063",
+    "topic": "Demand & Supply",
+    "subtopic": "Elasticity",
+    "stem": "Consumer surplus is best described as the area ____ the demand curve and ____ the market price.",
+    "options": [
+      "under; above",
+      "above; under",
+      "to the right of; to the left of",
+      "equal to"
+    ],
+    "answer_index": 1
+  },
+  {
+    "id": "ECO-AT1-Q064",
+    "topic": "Demand & Supply",
+    "subtopic": "Equilibrium",
+    "stem": "If PED = 1.6 in absolute terms, a 10% price increase will cause quantity demanded to ____ by about ____.",
+    "options": [
+      "fall; 16%",
+      "rise; 16%",
+      "fall; 6%",
+      "rise; 6%"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q065",
+    "topic": "Demand & Supply",
+    "subtopic": "Shifts",
+    "stem": "If PED = 1.6 in absolute terms, a 10% price increase will cause quantity demanded to ____ by about ____.",
+    "options": [
+      "fall; 16%",
+      "rise; 16%",
+      "fall; 6%",
+      "rise; 6%"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q066",
+    "topic": "Demand & Supply",
+    "subtopic": "Consumer/Producer Surplus",
+    "stem": "The law of demand states that, ceteris paribus, as price rises the quantity demanded ____.",
+    "options": [
+      "falls",
+      "rises",
+      "is unchanged",
+      "becomes perfectly elastic"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q067",
+    "topic": "National Income",
+    "subtopic": "Measurement",
+    "stem": "Which measure adjusts GDP for inflation to reflect changes in output volume?",
+    "options": [
+      "Real GDP",
+      "Nominal GDP",
+      "GNP at market prices",
+      "NNP at factor cost"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q068",
+    "topic": "National Income",
+    "subtopic": "Real vs Nominal",
+    "stem": "Which is a limitation of GDP as a welfare measure?",
+    "options": [
+      "Excludes non\u2011market production",
+      "Counts only final goods",
+      "Includes government spending",
+      "Uses a base year"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q069",
+    "topic": "National Income",
+    "subtopic": "Adjustments",
+    "stem": "Which is a limitation of GDP as a welfare measure?",
+    "options": [
+      "Excludes non\u2011market production",
+      "Counts only final goods",
+      "Includes government spending",
+      "Uses a base year"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q070",
+    "topic": "National Income",
+    "subtopic": "Limitations",
+    "stem": "If MPC = 0.75, the simple multiplier (k) equals ____.",
+    "options": [
+      "4",
+      "3",
+      "2.5",
+      "1.33"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q071",
+    "topic": "National Income",
+    "subtopic": "Multiplier",
+    "stem": "Which measure adjusts GDP for inflation to reflect changes in output volume?",
+    "options": [
+      "Real GDP",
+      "Nominal GDP",
+      "GNP at market prices",
+      "NNP at factor cost"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q072",
+    "topic": "National Income",
+    "subtopic": "Circular Flow",
+    "stem": "The GDP deflator is defined as ____.",
+    "options": [
+      "(Nominal GDP / Real GDP) \u00d7 100",
+      "(Real GDP / Nominal GDP) \u00d7 100",
+      "(C + I)/GDP \u00d7 100",
+      "(X \u2212 M)/GDP \u00d7 100"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q073",
+    "topic": "Demand & Supply",
+    "subtopic": "Law of Demand",
+    "stem": "Which event shifts the supply curve leftward?",
+    "options": [
+      "Higher input prices",
+      "A subsidy to producers",
+      "A technological improvement",
+      "An increase in number of sellers"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q074",
+    "topic": "Demand & Supply",
+    "subtopic": "Law of Supply",
+    "stem": "Consumer surplus is best described as the area ____ the demand curve and ____ the market price.",
+    "options": [
+      "under; above",
+      "above; under",
+      "to the right of; to the left of",
+      "equal to"
+    ],
+    "answer_index": 1
+  },
+  {
+    "id": "ECO-AT1-Q075",
+    "topic": "Demand & Supply",
+    "subtopic": "Elasticity",
+    "stem": "If PED = 1.6 in absolute terms, a 10% price increase will cause quantity demanded to ____ by about ____.",
+    "options": [
+      "fall; 16%",
+      "rise; 16%",
+      "fall; 6%",
+      "rise; 6%"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q076",
+    "topic": "Demand & Supply",
+    "subtopic": "Equilibrium",
+    "stem": "If price falls and total revenue rises, demand over that range is ____.",
+    "options": [
+      "elastic",
+      "inelastic",
+      "unit elastic",
+      "perfectly inelastic"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q077",
+    "topic": "Demand & Supply",
+    "subtopic": "Shifts",
+    "stem": "Consumer surplus is best described as the area ____ the demand curve and ____ the market price.",
+    "options": [
+      "under; above",
+      "above; under",
+      "to the right of; to the left of",
+      "equal to"
+    ],
+    "answer_index": 1
+  },
+  {
+    "id": "ECO-AT1-Q078",
+    "topic": "Demand & Supply",
+    "subtopic": "Consumer/Producer Surplus",
+    "stem": "If price falls and total revenue rises, demand over that range is ____.",
+    "options": [
+      "elastic",
+      "inelastic",
+      "unit elastic",
+      "perfectly inelastic"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q079",
+    "topic": "National Income",
+    "subtopic": "Measurement",
+    "stem": "The GDP deflator is defined as ____.",
+    "options": [
+      "(Nominal GDP / Real GDP) \u00d7 100",
+      "(Real GDP / Nominal GDP) \u00d7 100",
+      "(C + I)/GDP \u00d7 100",
+      "(X \u2212 M)/GDP \u00d7 100"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q080",
+    "topic": "National Income",
+    "subtopic": "Real vs Nominal",
+    "stem": "Net factor income from abroad added to GDP at market prices gives ____.",
+    "options": [
+      "GNP at market prices",
+      "NNP at factor cost",
+      "Disposable income",
+      "Personal income"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q081",
+    "topic": "National Income",
+    "subtopic": "Adjustments",
+    "stem": "In the expenditure approach, GDP equals ____.",
+    "options": [
+      "C + I + G + (X \u2212 M)",
+      "W + R + I + P",
+      "Output \u00d7 Price",
+      "C + S + T"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q082",
+    "topic": "National Income",
+    "subtopic": "Limitations",
+    "stem": "In the expenditure approach, GDP equals ____.",
+    "options": [
+      "C + I + G + (X \u2212 M)",
+      "W + R + I + P",
+      "Output \u00d7 Price",
+      "C + S + T"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q083",
+    "topic": "National Income",
+    "subtopic": "Multiplier",
+    "stem": "Net factor income from abroad added to GDP at market prices gives ____.",
+    "options": [
+      "GNP at market prices",
+      "NNP at factor cost",
+      "Disposable income",
+      "Personal income"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q084",
+    "topic": "National Income",
+    "subtopic": "Circular Flow",
+    "stem": "Which measure adjusts GDP for inflation to reflect changes in output volume?",
+    "options": [
+      "Real GDP",
+      "Nominal GDP",
+      "GNP at market prices",
+      "NNP at factor cost"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q085",
+    "topic": "Demand & Supply",
+    "subtopic": "Law of Demand",
+    "stem": "If price falls and total revenue rises, demand over that range is ____.",
+    "options": [
+      "elastic",
+      "inelastic",
+      "unit elastic",
+      "perfectly inelastic"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q086",
+    "topic": "Demand & Supply",
+    "subtopic": "Law of Supply",
+    "stem": "If price falls and total revenue rises, demand over that range is ____.",
+    "options": [
+      "elastic",
+      "inelastic",
+      "unit elastic",
+      "perfectly inelastic"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q087",
+    "topic": "Demand & Supply",
+    "subtopic": "Elasticity",
+    "stem": "Consumer surplus is best described as the area ____ the demand curve and ____ the market price.",
+    "options": [
+      "under; above",
+      "above; under",
+      "to the right of; to the left of",
+      "equal to"
+    ],
+    "answer_index": 1
+  },
+  {
+    "id": "ECO-AT1-Q088",
+    "topic": "Demand & Supply",
+    "subtopic": "Equilibrium",
+    "stem": "If PED = 1.6 in absolute terms, a 10% price increase will cause quantity demanded to ____ by about ____.",
+    "options": [
+      "fall; 16%",
+      "rise; 16%",
+      "fall; 6%",
+      "rise; 6%"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q089",
+    "topic": "Demand & Supply",
+    "subtopic": "Shifts",
+    "stem": "A rightward shift of the demand curve for a normal good can be caused by ____.",
+    "options": [
+      "an increase in income",
+      "a fall in the price of the good",
+      "a rise in input costs",
+      "a technological setback"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q090",
+    "topic": "Demand & Supply",
+    "subtopic": "Consumer/Producer Surplus",
+    "stem": "Which event shifts the supply curve leftward?",
+    "options": [
+      "Higher input prices",
+      "A subsidy to producers",
+      "A technological improvement",
+      "An increase in number of sellers"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q091",
+    "topic": "National Income",
+    "subtopic": "Measurement",
+    "stem": "The GDP deflator is defined as ____.",
+    "options": [
+      "(Nominal GDP / Real GDP) \u00d7 100",
+      "(Real GDP / Nominal GDP) \u00d7 100",
+      "(C + I)/GDP \u00d7 100",
+      "(X \u2212 M)/GDP \u00d7 100"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q092",
+    "topic": "National Income",
+    "subtopic": "Real vs Nominal",
+    "stem": "Which is a limitation of GDP as a welfare measure?",
+    "options": [
+      "Excludes non\u2011market production",
+      "Counts only final goods",
+      "Includes government spending",
+      "Uses a base year"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q093",
+    "topic": "National Income",
+    "subtopic": "Adjustments",
+    "stem": "If MPC = 0.75, the simple multiplier (k) equals ____.",
+    "options": [
+      "4",
+      "3",
+      "2.5",
+      "1.33"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q094",
+    "topic": "National Income",
+    "subtopic": "Limitations",
+    "stem": "If MPC = 0.75, the simple multiplier (k) equals ____.",
+    "options": [
+      "4",
+      "3",
+      "2.5",
+      "1.33"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q095",
+    "topic": "National Income",
+    "subtopic": "Multiplier",
+    "stem": "Which measure adjusts GDP for inflation to reflect changes in output volume?",
+    "options": [
+      "Real GDP",
+      "Nominal GDP",
+      "GNP at market prices",
+      "NNP at factor cost"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q096",
+    "topic": "National Income",
+    "subtopic": "Circular Flow",
+    "stem": "The GDP deflator is defined as ____.",
+    "options": [
+      "(Nominal GDP / Real GDP) \u00d7 100",
+      "(Real GDP / Nominal GDP) \u00d7 100",
+      "(C + I)/GDP \u00d7 100",
+      "(X \u2212 M)/GDP \u00d7 100"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q097",
+    "topic": "Demand & Supply",
+    "subtopic": "Law of Demand",
+    "stem": "The law of demand states that, ceteris paribus, as price rises the quantity demanded ____.",
+    "options": [
+      "falls",
+      "rises",
+      "is unchanged",
+      "becomes perfectly elastic"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q098",
+    "topic": "Demand & Supply",
+    "subtopic": "Law of Supply",
+    "stem": "At equilibrium in a competitive market, which is true?",
+    "options": [
+      "Qd = Qs",
+      "Excess demand exists",
+      "Excess supply exists",
+      "Price is zero"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q099",
+    "topic": "Demand & Supply",
+    "subtopic": "Elasticity",
+    "stem": "Which event shifts the supply curve leftward?",
+    "options": [
+      "Higher input prices",
+      "A subsidy to producers",
+      "A technological improvement",
+      "An increase in number of sellers"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q100",
+    "topic": "Demand & Supply",
+    "subtopic": "Equilibrium",
+    "stem": "The law of demand states that, ceteris paribus, as price rises the quantity demanded ____.",
+    "options": [
+      "falls",
+      "rises",
+      "is unchanged",
+      "becomes perfectly elastic"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q101",
+    "topic": "Demand & Supply",
+    "subtopic": "Shifts",
+    "stem": "Which event shifts the supply curve leftward?",
+    "options": [
+      "Higher input prices",
+      "A subsidy to producers",
+      "A technological improvement",
+      "An increase in number of sellers"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q102",
+    "topic": "Demand & Supply",
+    "subtopic": "Consumer/Producer Surplus",
+    "stem": "Which event shifts the supply curve leftward?",
+    "options": [
+      "Higher input prices",
+      "A subsidy to producers",
+      "A technological improvement",
+      "An increase in number of sellers"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q103",
+    "topic": "National Income",
+    "subtopic": "Measurement",
+    "stem": "If MPC = 0.75, the simple multiplier (k) equals ____.",
+    "options": [
+      "4",
+      "3",
+      "2.5",
+      "1.33"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q104",
+    "topic": "National Income",
+    "subtopic": "Real vs Nominal",
+    "stem": "If MPC = 0.75, the simple multiplier (k) equals ____.",
+    "options": [
+      "4",
+      "3",
+      "2.5",
+      "1.33"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q105",
+    "topic": "National Income",
+    "subtopic": "Adjustments",
+    "stem": "The GDP deflator is defined as ____.",
+    "options": [
+      "(Nominal GDP / Real GDP) \u00d7 100",
+      "(Real GDP / Nominal GDP) \u00d7 100",
+      "(C + I)/GDP \u00d7 100",
+      "(X \u2212 M)/GDP \u00d7 100"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q106",
+    "topic": "National Income",
+    "subtopic": "Limitations",
+    "stem": "Net factor income from abroad added to GDP at market prices gives ____.",
+    "options": [
+      "GNP at market prices",
+      "NNP at factor cost",
+      "Disposable income",
+      "Personal income"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q107",
+    "topic": "National Income",
+    "subtopic": "Multiplier",
+    "stem": "The GDP deflator is defined as ____.",
+    "options": [
+      "(Nominal GDP / Real GDP) \u00d7 100",
+      "(Real GDP / Nominal GDP) \u00d7 100",
+      "(C + I)/GDP \u00d7 100",
+      "(X \u2212 M)/GDP \u00d7 100"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q108",
+    "topic": "National Income",
+    "subtopic": "Circular Flow",
+    "stem": "If MPC = 0.75, the simple multiplier (k) equals ____.",
+    "options": [
+      "4",
+      "3",
+      "2.5",
+      "1.33"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q109",
+    "topic": "Demand & Supply",
+    "subtopic": "Law of Demand",
+    "stem": "A rightward shift of the demand curve for a normal good can be caused by ____.",
+    "options": [
+      "an increase in income",
+      "a fall in the price of the good",
+      "a rise in input costs",
+      "a technological setback"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q110",
+    "topic": "Demand & Supply",
+    "subtopic": "Law of Supply",
+    "stem": "The law of demand states that, ceteris paribus, as price rises the quantity demanded ____.",
+    "options": [
+      "falls",
+      "rises",
+      "is unchanged",
+      "becomes perfectly elastic"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q111",
+    "topic": "Demand & Supply",
+    "subtopic": "Elasticity",
+    "stem": "Consumer surplus is best described as the area ____ the demand curve and ____ the market price.",
+    "options": [
+      "under; above",
+      "above; under",
+      "to the right of; to the left of",
+      "equal to"
+    ],
+    "answer_index": 1
+  },
+  {
+    "id": "ECO-AT1-Q112",
+    "topic": "Demand & Supply",
+    "subtopic": "Equilibrium",
+    "stem": "The law of demand states that, ceteris paribus, as price rises the quantity demanded ____.",
+    "options": [
+      "falls",
+      "rises",
+      "is unchanged",
+      "becomes perfectly elastic"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q113",
+    "topic": "Demand & Supply",
+    "subtopic": "Shifts",
+    "stem": "Which event shifts the supply curve leftward?",
+    "options": [
+      "Higher input prices",
+      "A subsidy to producers",
+      "A technological improvement",
+      "An increase in number of sellers"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q114",
+    "topic": "Demand & Supply",
+    "subtopic": "Consumer/Producer Surplus",
+    "stem": "If PED = 1.6 in absolute terms, a 10% price increase will cause quantity demanded to ____ by about ____.",
+    "options": [
+      "fall; 16%",
+      "rise; 16%",
+      "fall; 6%",
+      "rise; 6%"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q115",
+    "topic": "National Income",
+    "subtopic": "Measurement",
+    "stem": "In the expenditure approach, GDP equals ____.",
+    "options": [
+      "C + I + G + (X \u2212 M)",
+      "W + R + I + P",
+      "Output \u00d7 Price",
+      "C + S + T"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q116",
+    "topic": "National Income",
+    "subtopic": "Real vs Nominal",
+    "stem": "In the expenditure approach, GDP equals ____.",
+    "options": [
+      "C + I + G + (X \u2212 M)",
+      "W + R + I + P",
+      "Output \u00d7 Price",
+      "C + S + T"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q117",
+    "topic": "National Income",
+    "subtopic": "Adjustments",
+    "stem": "Which is a limitation of GDP as a welfare measure?",
+    "options": [
+      "Excludes non\u2011market production",
+      "Counts only final goods",
+      "Includes government spending",
+      "Uses a base year"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q118",
+    "topic": "National Income",
+    "subtopic": "Limitations",
+    "stem": "Which measure adjusts GDP for inflation to reflect changes in output volume?",
+    "options": [
+      "Real GDP",
+      "Nominal GDP",
+      "GNP at market prices",
+      "NNP at factor cost"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q119",
+    "topic": "National Income",
+    "subtopic": "Multiplier",
+    "stem": "Net factor income from abroad added to GDP at market prices gives ____.",
+    "options": [
+      "GNP at market prices",
+      "NNP at factor cost",
+      "Disposable income",
+      "Personal income"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q120",
+    "topic": "National Income",
+    "subtopic": "Circular Flow",
+    "stem": "Which is a limitation of GDP as a welfare measure?",
+    "options": [
+      "Excludes non\u2011market production",
+      "Counts only final goods",
+      "Includes government spending",
+      "Uses a base year"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q121",
+    "topic": "Demand & Supply",
+    "subtopic": "Law of Demand",
+    "stem": "If price falls and total revenue rises, demand over that range is ____.",
+    "options": [
+      "elastic",
+      "inelastic",
+      "unit elastic",
+      "perfectly inelastic"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q122",
+    "topic": "Demand & Supply",
+    "subtopic": "Law of Supply",
+    "stem": "Which event shifts the supply curve leftward?",
+    "options": [
+      "Higher input prices",
+      "A subsidy to producers",
+      "A technological improvement",
+      "An increase in number of sellers"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q123",
+    "topic": "Demand & Supply",
+    "subtopic": "Elasticity",
+    "stem": "Which event shifts the supply curve leftward?",
+    "options": [
+      "Higher input prices",
+      "A subsidy to producers",
+      "A technological improvement",
+      "An increase in number of sellers"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q124",
+    "topic": "Demand & Supply",
+    "subtopic": "Equilibrium",
+    "stem": "A rightward shift of the demand curve for a normal good can be caused by ____.",
+    "options": [
+      "an increase in income",
+      "a fall in the price of the good",
+      "a rise in input costs",
+      "a technological setback"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q125",
+    "topic": "Demand & Supply",
+    "subtopic": "Shifts",
+    "stem": "The law of demand states that, ceteris paribus, as price rises the quantity demanded ____.",
+    "options": [
+      "falls",
+      "rises",
+      "is unchanged",
+      "becomes perfectly elastic"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q126",
+    "topic": "Demand & Supply",
+    "subtopic": "Consumer/Producer Surplus",
+    "stem": "Consumer surplus is best described as the area ____ the demand curve and ____ the market price.",
+    "options": [
+      "under; above",
+      "above; under",
+      "to the right of; to the left of",
+      "equal to"
+    ],
+    "answer_index": 1
+  },
+  {
+    "id": "ECO-AT1-Q127",
+    "topic": "National Income",
+    "subtopic": "Measurement",
+    "stem": "If MPC = 0.75, the simple multiplier (k) equals ____.",
+    "options": [
+      "4",
+      "3",
+      "2.5",
+      "1.33"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q128",
+    "topic": "National Income",
+    "subtopic": "Real vs Nominal",
+    "stem": "The GDP deflator is defined as ____.",
+    "options": [
+      "(Nominal GDP / Real GDP) \u00d7 100",
+      "(Real GDP / Nominal GDP) \u00d7 100",
+      "(C + I)/GDP \u00d7 100",
+      "(X \u2212 M)/GDP \u00d7 100"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q129",
+    "topic": "National Income",
+    "subtopic": "Adjustments",
+    "stem": "The GDP deflator is defined as ____.",
+    "options": [
+      "(Nominal GDP / Real GDP) \u00d7 100",
+      "(Real GDP / Nominal GDP) \u00d7 100",
+      "(C + I)/GDP \u00d7 100",
+      "(X \u2212 M)/GDP \u00d7 100"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q130",
+    "topic": "National Income",
+    "subtopic": "Limitations",
+    "stem": "Which measure adjusts GDP for inflation to reflect changes in output volume?",
+    "options": [
+      "Real GDP",
+      "Nominal GDP",
+      "GNP at market prices",
+      "NNP at factor cost"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q131",
+    "topic": "National Income",
+    "subtopic": "Multiplier",
+    "stem": "Which is a limitation of GDP as a welfare measure?",
+    "options": [
+      "Excludes non\u2011market production",
+      "Counts only final goods",
+      "Includes government spending",
+      "Uses a base year"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q132",
+    "topic": "National Income",
+    "subtopic": "Circular Flow",
+    "stem": "The GDP deflator is defined as ____.",
+    "options": [
+      "(Nominal GDP / Real GDP) \u00d7 100",
+      "(Real GDP / Nominal GDP) \u00d7 100",
+      "(C + I)/GDP \u00d7 100",
+      "(X \u2212 M)/GDP \u00d7 100"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q133",
+    "topic": "Demand & Supply",
+    "subtopic": "Law of Demand",
+    "stem": "The law of demand states that, ceteris paribus, as price rises the quantity demanded ____.",
+    "options": [
+      "falls",
+      "rises",
+      "is unchanged",
+      "becomes perfectly elastic"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q134",
+    "topic": "Demand & Supply",
+    "subtopic": "Law of Supply",
+    "stem": "A rightward shift of the demand curve for a normal good can be caused by ____.",
+    "options": [
+      "an increase in income",
+      "a fall in the price of the good",
+      "a rise in input costs",
+      "a technological setback"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q135",
+    "topic": "Demand & Supply",
+    "subtopic": "Elasticity",
+    "stem": "Which event shifts the supply curve leftward?",
+    "options": [
+      "Higher input prices",
+      "A subsidy to producers",
+      "A technological improvement",
+      "An increase in number of sellers"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q136",
+    "topic": "Demand & Supply",
+    "subtopic": "Equilibrium",
+    "stem": "Which event shifts the supply curve leftward?",
+    "options": [
+      "Higher input prices",
+      "A subsidy to producers",
+      "A technological improvement",
+      "An increase in number of sellers"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q137",
+    "topic": "Demand & Supply",
+    "subtopic": "Shifts",
+    "stem": "If price falls and total revenue rises, demand over that range is ____.",
+    "options": [
+      "elastic",
+      "inelastic",
+      "unit elastic",
+      "perfectly inelastic"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q138",
+    "topic": "Demand & Supply",
+    "subtopic": "Consumer/Producer Surplus",
+    "stem": "The law of demand states that, ceteris paribus, as price rises the quantity demanded ____.",
+    "options": [
+      "falls",
+      "rises",
+      "is unchanged",
+      "becomes perfectly elastic"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q139",
+    "topic": "National Income",
+    "subtopic": "Measurement",
+    "stem": "If MPC = 0.75, the simple multiplier (k) equals ____.",
+    "options": [
+      "4",
+      "3",
+      "2.5",
+      "1.33"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q140",
+    "topic": "National Income",
+    "subtopic": "Real vs Nominal",
+    "stem": "In the expenditure approach, GDP equals ____.",
+    "options": [
+      "C + I + G + (X \u2212 M)",
+      "W + R + I + P",
+      "Output \u00d7 Price",
+      "C + S + T"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q141",
+    "topic": "National Income",
+    "subtopic": "Adjustments",
+    "stem": "Which measure adjusts GDP for inflation to reflect changes in output volume?",
+    "options": [
+      "Real GDP",
+      "Nominal GDP",
+      "GNP at market prices",
+      "NNP at factor cost"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q142",
+    "topic": "National Income",
+    "subtopic": "Limitations",
+    "stem": "Which measure adjusts GDP for inflation to reflect changes in output volume?",
+    "options": [
+      "Real GDP",
+      "Nominal GDP",
+      "GNP at market prices",
+      "NNP at factor cost"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q143",
+    "topic": "National Income",
+    "subtopic": "Multiplier",
+    "stem": "Which measure adjusts GDP for inflation to reflect changes in output volume?",
+    "options": [
+      "Real GDP",
+      "Nominal GDP",
+      "GNP at market prices",
+      "NNP at factor cost"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q144",
+    "topic": "National Income",
+    "subtopic": "Circular Flow",
+    "stem": "The GDP deflator is defined as ____.",
+    "options": [
+      "(Nominal GDP / Real GDP) \u00d7 100",
+      "(Real GDP / Nominal GDP) \u00d7 100",
+      "(C + I)/GDP \u00d7 100",
+      "(X \u2212 M)/GDP \u00d7 100"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q145",
+    "topic": "Demand & Supply",
+    "subtopic": "Law of Demand",
+    "stem": "A rightward shift of the demand curve for a normal good can be caused by ____.",
+    "options": [
+      "an increase in income",
+      "a fall in the price of the good",
+      "a rise in input costs",
+      "a technological setback"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q146",
+    "topic": "Demand & Supply",
+    "subtopic": "Law of Supply",
+    "stem": "At equilibrium in a competitive market, which is true?",
+    "options": [
+      "Qd = Qs",
+      "Excess demand exists",
+      "Excess supply exists",
+      "Price is zero"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q147",
+    "topic": "Demand & Supply",
+    "subtopic": "Elasticity",
+    "stem": "Consumer surplus is best described as the area ____ the demand curve and ____ the market price.",
+    "options": [
+      "under; above",
+      "above; under",
+      "to the right of; to the left of",
+      "equal to"
+    ],
+    "answer_index": 1
+  },
+  {
+    "id": "ECO-AT1-Q148",
+    "topic": "Demand & Supply",
+    "subtopic": "Equilibrium",
+    "stem": "If price falls and total revenue rises, demand over that range is ____.",
+    "options": [
+      "elastic",
+      "inelastic",
+      "unit elastic",
+      "perfectly inelastic"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q149",
+    "topic": "Demand & Supply",
+    "subtopic": "Shifts",
+    "stem": "A rightward shift of the demand curve for a normal good can be caused by ____.",
+    "options": [
+      "an increase in income",
+      "a fall in the price of the good",
+      "a rise in input costs",
+      "a technological setback"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q150",
+    "topic": "Demand & Supply",
+    "subtopic": "Consumer/Producer Surplus",
+    "stem": "At equilibrium in a competitive market, which is true?",
+    "options": [
+      "Qd = Qs",
+      "Excess demand exists",
+      "Excess supply exists",
+      "Price is zero"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q151",
+    "topic": "National Income",
+    "subtopic": "Measurement",
+    "stem": "If MPC = 0.75, the simple multiplier (k) equals ____.",
+    "options": [
+      "4",
+      "3",
+      "2.5",
+      "1.33"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q152",
+    "topic": "National Income",
+    "subtopic": "Real vs Nominal",
+    "stem": "If MPC = 0.75, the simple multiplier (k) equals ____.",
+    "options": [
+      "4",
+      "3",
+      "2.5",
+      "1.33"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q153",
+    "topic": "National Income",
+    "subtopic": "Adjustments",
+    "stem": "Which measure adjusts GDP for inflation to reflect changes in output volume?",
+    "options": [
+      "Real GDP",
+      "Nominal GDP",
+      "GNP at market prices",
+      "NNP at factor cost"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q154",
+    "topic": "National Income",
+    "subtopic": "Limitations",
+    "stem": "In the expenditure approach, GDP equals ____.",
+    "options": [
+      "C + I + G + (X \u2212 M)",
+      "W + R + I + P",
+      "Output \u00d7 Price",
+      "C + S + T"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q155",
+    "topic": "National Income",
+    "subtopic": "Multiplier",
+    "stem": "Which is a limitation of GDP as a welfare measure?",
+    "options": [
+      "Excludes non\u2011market production",
+      "Counts only final goods",
+      "Includes government spending",
+      "Uses a base year"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q156",
+    "topic": "National Income",
+    "subtopic": "Circular Flow",
+    "stem": "Net factor income from abroad added to GDP at market prices gives ____.",
+    "options": [
+      "GNP at market prices",
+      "NNP at factor cost",
+      "Disposable income",
+      "Personal income"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q157",
+    "topic": "Demand & Supply",
+    "subtopic": "Law of Demand",
+    "stem": "Which event shifts the supply curve leftward?",
+    "options": [
+      "Higher input prices",
+      "A subsidy to producers",
+      "A technological improvement",
+      "An increase in number of sellers"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q158",
+    "topic": "Demand & Supply",
+    "subtopic": "Law of Supply",
+    "stem": "If PED = 1.6 in absolute terms, a 10% price increase will cause quantity demanded to ____ by about ____.",
+    "options": [
+      "fall; 16%",
+      "rise; 16%",
+      "fall; 6%",
+      "rise; 6%"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q159",
+    "topic": "Demand & Supply",
+    "subtopic": "Elasticity",
+    "stem": "Consumer surplus is best described as the area ____ the demand curve and ____ the market price.",
+    "options": [
+      "under; above",
+      "above; under",
+      "to the right of; to the left of",
+      "equal to"
+    ],
+    "answer_index": 1
+  },
+  {
+    "id": "ECO-AT1-Q160",
+    "topic": "Demand & Supply",
+    "subtopic": "Equilibrium",
+    "stem": "If price falls and total revenue rises, demand over that range is ____.",
+    "options": [
+      "elastic",
+      "inelastic",
+      "unit elastic",
+      "perfectly inelastic"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q161",
+    "topic": "Demand & Supply",
+    "subtopic": "Shifts",
+    "stem": "Which event shifts the supply curve leftward?",
+    "options": [
+      "Higher input prices",
+      "A subsidy to producers",
+      "A technological improvement",
+      "An increase in number of sellers"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q162",
+    "topic": "Demand & Supply",
+    "subtopic": "Consumer/Producer Surplus",
+    "stem": "Which event shifts the supply curve leftward?",
+    "options": [
+      "Higher input prices",
+      "A subsidy to producers",
+      "A technological improvement",
+      "An increase in number of sellers"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q163",
+    "topic": "National Income",
+    "subtopic": "Measurement",
+    "stem": "Which measure adjusts GDP for inflation to reflect changes in output volume?",
+    "options": [
+      "Real GDP",
+      "Nominal GDP",
+      "GNP at market prices",
+      "NNP at factor cost"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q164",
+    "topic": "National Income",
+    "subtopic": "Real vs Nominal",
+    "stem": "Net factor income from abroad added to GDP at market prices gives ____.",
+    "options": [
+      "GNP at market prices",
+      "NNP at factor cost",
+      "Disposable income",
+      "Personal income"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q165",
+    "topic": "National Income",
+    "subtopic": "Adjustments",
+    "stem": "Which measure adjusts GDP for inflation to reflect changes in output volume?",
+    "options": [
+      "Real GDP",
+      "Nominal GDP",
+      "GNP at market prices",
+      "NNP at factor cost"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q166",
+    "topic": "National Income",
+    "subtopic": "Limitations",
+    "stem": "Net factor income from abroad added to GDP at market prices gives ____.",
+    "options": [
+      "GNP at market prices",
+      "NNP at factor cost",
+      "Disposable income",
+      "Personal income"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q167",
+    "topic": "National Income",
+    "subtopic": "Multiplier",
+    "stem": "The GDP deflator is defined as ____.",
+    "options": [
+      "(Nominal GDP / Real GDP) \u00d7 100",
+      "(Real GDP / Nominal GDP) \u00d7 100",
+      "(C + I)/GDP \u00d7 100",
+      "(X \u2212 M)/GDP \u00d7 100"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q168",
+    "topic": "National Income",
+    "subtopic": "Circular Flow",
+    "stem": "Net factor income from abroad added to GDP at market prices gives ____.",
+    "options": [
+      "GNP at market prices",
+      "NNP at factor cost",
+      "Disposable income",
+      "Personal income"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q169",
+    "topic": "Demand & Supply",
+    "subtopic": "Law of Demand",
+    "stem": "Which event shifts the supply curve leftward?",
+    "options": [
+      "Higher input prices",
+      "A subsidy to producers",
+      "A technological improvement",
+      "An increase in number of sellers"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q170",
+    "topic": "Demand & Supply",
+    "subtopic": "Law of Supply",
+    "stem": "At equilibrium in a competitive market, which is true?",
+    "options": [
+      "Qd = Qs",
+      "Excess demand exists",
+      "Excess supply exists",
+      "Price is zero"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q171",
+    "topic": "Demand & Supply",
+    "subtopic": "Elasticity",
+    "stem": "The law of demand states that, ceteris paribus, as price rises the quantity demanded ____.",
+    "options": [
+      "falls",
+      "rises",
+      "is unchanged",
+      "becomes perfectly elastic"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q172",
+    "topic": "Demand & Supply",
+    "subtopic": "Equilibrium",
+    "stem": "The law of demand states that, ceteris paribus, as price rises the quantity demanded ____.",
+    "options": [
+      "falls",
+      "rises",
+      "is unchanged",
+      "becomes perfectly elastic"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q173",
+    "topic": "Demand & Supply",
+    "subtopic": "Shifts",
+    "stem": "If PED = 1.6 in absolute terms, a 10% price increase will cause quantity demanded to ____ by about ____.",
+    "options": [
+      "fall; 16%",
+      "rise; 16%",
+      "fall; 6%",
+      "rise; 6%"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q174",
+    "topic": "Demand & Supply",
+    "subtopic": "Consumer/Producer Surplus",
+    "stem": "Which event shifts the supply curve leftward?",
+    "options": [
+      "Higher input prices",
+      "A subsidy to producers",
+      "A technological improvement",
+      "An increase in number of sellers"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q175",
+    "topic": "National Income",
+    "subtopic": "Measurement",
+    "stem": "The GDP deflator is defined as ____.",
+    "options": [
+      "(Nominal GDP / Real GDP) \u00d7 100",
+      "(Real GDP / Nominal GDP) \u00d7 100",
+      "(C + I)/GDP \u00d7 100",
+      "(X \u2212 M)/GDP \u00d7 100"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q176",
+    "topic": "National Income",
+    "subtopic": "Real vs Nominal",
+    "stem": "Which is a limitation of GDP as a welfare measure?",
+    "options": [
+      "Excludes non\u2011market production",
+      "Counts only final goods",
+      "Includes government spending",
+      "Uses a base year"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q177",
+    "topic": "National Income",
+    "subtopic": "Adjustments",
+    "stem": "In the expenditure approach, GDP equals ____.",
+    "options": [
+      "C + I + G + (X \u2212 M)",
+      "W + R + I + P",
+      "Output \u00d7 Price",
+      "C + S + T"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q178",
+    "topic": "National Income",
+    "subtopic": "Limitations",
+    "stem": "Net factor income from abroad added to GDP at market prices gives ____.",
+    "options": [
+      "GNP at market prices",
+      "NNP at factor cost",
+      "Disposable income",
+      "Personal income"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q179",
+    "topic": "National Income",
+    "subtopic": "Multiplier",
+    "stem": "Which measure adjusts GDP for inflation to reflect changes in output volume?",
+    "options": [
+      "Real GDP",
+      "Nominal GDP",
+      "GNP at market prices",
+      "NNP at factor cost"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q180",
+    "topic": "National Income",
+    "subtopic": "Circular Flow",
+    "stem": "If MPC = 0.75, the simple multiplier (k) equals ____.",
+    "options": [
+      "4",
+      "3",
+      "2.5",
+      "1.33"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q181",
+    "topic": "Demand & Supply",
+    "subtopic": "Law of Demand",
+    "stem": "A rightward shift of the demand curve for a normal good can be caused by ____.",
+    "options": [
+      "an increase in income",
+      "a fall in the price of the good",
+      "a rise in input costs",
+      "a technological setback"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q182",
+    "topic": "Demand & Supply",
+    "subtopic": "Law of Supply",
+    "stem": "The law of demand states that, ceteris paribus, as price rises the quantity demanded ____.",
+    "options": [
+      "falls",
+      "rises",
+      "is unchanged",
+      "becomes perfectly elastic"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q183",
+    "topic": "Demand & Supply",
+    "subtopic": "Elasticity",
+    "stem": "If PED = 1.6 in absolute terms, a 10% price increase will cause quantity demanded to ____ by about ____.",
+    "options": [
+      "fall; 16%",
+      "rise; 16%",
+      "fall; 6%",
+      "rise; 6%"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q184",
+    "topic": "Demand & Supply",
+    "subtopic": "Equilibrium",
+    "stem": "A rightward shift of the demand curve for a normal good can be caused by ____.",
+    "options": [
+      "an increase in income",
+      "a fall in the price of the good",
+      "a rise in input costs",
+      "a technological setback"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q185",
+    "topic": "Demand & Supply",
+    "subtopic": "Shifts",
+    "stem": "Consumer surplus is best described as the area ____ the demand curve and ____ the market price.",
+    "options": [
+      "under; above",
+      "above; under",
+      "to the right of; to the left of",
+      "equal to"
+    ],
+    "answer_index": 1
+  },
+  {
+    "id": "ECO-AT1-Q186",
+    "topic": "Demand & Supply",
+    "subtopic": "Consumer/Producer Surplus",
+    "stem": "A rightward shift of the demand curve for a normal good can be caused by ____.",
+    "options": [
+      "an increase in income",
+      "a fall in the price of the good",
+      "a rise in input costs",
+      "a technological setback"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q187",
+    "topic": "National Income",
+    "subtopic": "Measurement",
+    "stem": "Which measure adjusts GDP for inflation to reflect changes in output volume?",
+    "options": [
+      "Real GDP",
+      "Nominal GDP",
+      "GNP at market prices",
+      "NNP at factor cost"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q188",
+    "topic": "National Income",
+    "subtopic": "Real vs Nominal",
+    "stem": "In the expenditure approach, GDP equals ____.",
+    "options": [
+      "C + I + G + (X \u2212 M)",
+      "W + R + I + P",
+      "Output \u00d7 Price",
+      "C + S + T"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q189",
+    "topic": "National Income",
+    "subtopic": "Adjustments",
+    "stem": "Which measure adjusts GDP for inflation to reflect changes in output volume?",
+    "options": [
+      "Real GDP",
+      "Nominal GDP",
+      "GNP at market prices",
+      "NNP at factor cost"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q190",
+    "topic": "National Income",
+    "subtopic": "Limitations",
+    "stem": "Net factor income from abroad added to GDP at market prices gives ____.",
+    "options": [
+      "GNP at market prices",
+      "NNP at factor cost",
+      "Disposable income",
+      "Personal income"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q191",
+    "topic": "National Income",
+    "subtopic": "Multiplier",
+    "stem": "Which is a limitation of GDP as a welfare measure?",
+    "options": [
+      "Excludes non\u2011market production",
+      "Counts only final goods",
+      "Includes government spending",
+      "Uses a base year"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q192",
+    "topic": "National Income",
+    "subtopic": "Circular Flow",
+    "stem": "In the expenditure approach, GDP equals ____.",
+    "options": [
+      "C + I + G + (X \u2212 M)",
+      "W + R + I + P",
+      "Output \u00d7 Price",
+      "C + S + T"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q193",
+    "topic": "Demand & Supply",
+    "subtopic": "Law of Demand",
+    "stem": "If PED = 1.6 in absolute terms, a 10% price increase will cause quantity demanded to ____ by about ____.",
+    "options": [
+      "fall; 16%",
+      "rise; 16%",
+      "fall; 6%",
+      "rise; 6%"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q194",
+    "topic": "Demand & Supply",
+    "subtopic": "Law of Supply",
+    "stem": "If PED = 1.6 in absolute terms, a 10% price increase will cause quantity demanded to ____ by about ____.",
+    "options": [
+      "fall; 16%",
+      "rise; 16%",
+      "fall; 6%",
+      "rise; 6%"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q195",
+    "topic": "Demand & Supply",
+    "subtopic": "Elasticity",
+    "stem": "If price falls and total revenue rises, demand over that range is ____.",
+    "options": [
+      "elastic",
+      "inelastic",
+      "unit elastic",
+      "perfectly inelastic"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q196",
+    "topic": "Demand & Supply",
+    "subtopic": "Equilibrium",
+    "stem": "Consumer surplus is best described as the area ____ the demand curve and ____ the market price.",
+    "options": [
+      "under; above",
+      "above; under",
+      "to the right of; to the left of",
+      "equal to"
+    ],
+    "answer_index": 1
+  },
+  {
+    "id": "ECO-AT1-Q197",
+    "topic": "Demand & Supply",
+    "subtopic": "Shifts",
+    "stem": "Consumer surplus is best described as the area ____ the demand curve and ____ the market price.",
+    "options": [
+      "under; above",
+      "above; under",
+      "to the right of; to the left of",
+      "equal to"
+    ],
+    "answer_index": 1
+  },
+  {
+    "id": "ECO-AT1-Q198",
+    "topic": "Demand & Supply",
+    "subtopic": "Consumer/Producer Surplus",
+    "stem": "The law of demand states that, ceteris paribus, as price rises the quantity demanded ____.",
+    "options": [
+      "falls",
+      "rises",
+      "is unchanged",
+      "becomes perfectly elastic"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q199",
+    "topic": "National Income",
+    "subtopic": "Measurement",
+    "stem": "Net factor income from abroad added to GDP at market prices gives ____.",
+    "options": [
+      "GNP at market prices",
+      "NNP at factor cost",
+      "Disposable income",
+      "Personal income"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "ECO-AT1-Q200",
+    "topic": "National Income",
+    "subtopic": "Real vs Nominal",
+    "stem": "In the expenditure approach, GDP equals ____.",
+    "options": [
+      "C + I + G + (X \u2212 M)",
+      "W + R + I + P",
+      "Output \u00d7 Price",
+      "C + S + T"
+    ],
+    "answer_index": 0
   }
 ]
