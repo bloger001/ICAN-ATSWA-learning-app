@@ -5,12 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Quiz — ICAN Prep</title>
 
-  <!-- Prevent stale cache on iOS/Safari -->
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
   <meta http-equiv="Pragma" content="no-cache"/>
   <meta http-equiv="Expires" content="0"/>
 
-  <link rel="stylesheet" href="./assets/app.css?v=15"/>
+  <link rel="stylesheet" href="./assets/app.css?v=16"/>
 </head>
 <body>
   <div class="wrap">
@@ -21,7 +20,6 @@
 
     <p id="meta" class="muted small">Loading…</p>
 
-    <!-- Quiz card -->
     <section id="qwrap" class="card">
       <div id="qstem" style="min-height:80px">
         <p class="muted">Preparing questions…</p>
@@ -36,18 +34,17 @@
       </div>
     </section>
 
-    <!-- Result card (hidden until finish) -->
     <section id="result" class="card" style="display:none"></section>
   </div>
 
-  <!-- Unregister any old service worker cache on this page -->
+  <!-- Clear any old SW cache -->
   <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.getRegistrations().then(list => list.forEach(r => r.unregister()));
     }
   </script>
 
-  <!-- Load quiz logic as ES module (required for imports in quiz.js) -->
-  <script type="module" src="./assets/quiz.js?v=15"></script>
+  <!-- IMPORTANT: load as ES module -->
+  <script type="module" src="./assets/quiz.js?v=16"></script>
 </body>
 </html>
