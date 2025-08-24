@@ -4,26 +4,22 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Review Mistakes — ICAN Prep</title>
-  <link rel="stylesheet" href="./assets/app.css?v=12"/>
+  <link rel="stylesheet" href="./assets/app.css?v=19"/>
 </head>
 <body>
   <div class="wrap">
     <header class="space-between" style="align-items:center">
       <h1>Review Mistakes</h1>
-      <div class="row">
-        <a class="btn" href="index.html">← Home</a>
-        <a class="btn" href="status.html?v=1">My Status</a>
-      </div>
+      <a class="btn" href="status.html">← Back to Status</a>
     </header>
 
     <section class="card">
-      <p class="muted small">
-        Below are your most recent missed questions (latest first). Correct answers are highlighted.
-      </p>
-      <div id="list"></div>
+      <div id="mistakes">
+        <p class="muted">Loading your missed questions...</p>
+      </div>
     </section>
   </div>
 
-  <script type="module" src="./assets/review.js?v=12"></script>
+  <script type="module" src="./assets/review.js?v=19"></script>
 </body>
 </html>
