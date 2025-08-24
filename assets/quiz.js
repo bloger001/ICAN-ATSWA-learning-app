@@ -1,9 +1,15 @@
-// assets/quiz.js — multi-subject with shuffle
+// assets/quiz.js — multi-subject with shuffle + analytics logging
 
 const qs = new URLSearchParams(location.search);
 const level   = qs.get('level')   || 'ATSWA1';
 const subject = qs.get('subject') || 'Basic Accounting';
 const mode    = qs.get('mode')    || 'practice';
+
+// Optional: filter by topics (comma-separated), e.g. topics=Elasticity,Inflation
+const topicsFilter = (qs.get('topics') || '')
+  .split(',')
+  .map(s => s.trim())
+  .filter(Boolean);
 
 const FILES = {
   'Basic Accounting'    : 'data/atswa1_basic_accounting.json',
@@ -12,7 +18,7 @@ const FILES = {
   'Communication Skills': 'data/atswa1_comm_skills.json'
 };
 
-// DOM hooks
+// DOM
 const meta   = document.getElementById('meta');
 const qwrap  = document.getElementById('qwrap');
 const qstem  = document.getElementById('qstem');
@@ -21,23 +27,68 @@ const nextBtn   = document.getElementById('nextBtn');
 const submitBtn = document.getElementById('submitBtn');
 const result    = document.getElementById('result');
 
-meta.textContent = `Level: ${level} — Subject: ${subject} — Mode: ${mode}`;
+meta.textContent = `Level: ${level} — Subject: ${subject} — Mode: ${mode}${topicsFilter.length ? ' — Focus: ' + topicsFilter.join(', ') : ''}`;
 
-let questions = []; 
-let idx = 0; 
-let selected = null; 
+let questions = [];
+let idx = 0;
+let selected = null;
 let score = 0;
+let busy = false;
 
-// ----------------- shuffle helper -----------------
-function shuffle(arr) {
-  for (let i = arr.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [arr[i], arr[j]] = [arr[j], arr[i]];
-  }
-  return arr;
+// ------ utils ------
+function shuffle(arr){ for(let i=arr.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [arr[i],arr[j]]=[arr[j],arr[i]] } return arr; }
+function lock(ms=300){ busy=true; setTimeout(()=>busy=false, ms); }
+
+// ------ analytics store ------
+function getUserKey(){
+  try {
+    const u = JSON.parse(localStorage.getItem('ican.user') || 'null');
+    return u && u.uid ? u.uid : 'guest';
+  } catch { return 'guest'; }
+}
+const RESULTS_KEY = (function(){
+  const uid = getUserKey();
+  return `ican.results:${uid}`;
+})();
+
+function logAttempt(q, chosenIndex){
+  const rec = {
+    ts: Date.now(),
+    level,
+    subject,
+    topic: q.topic || '',
+    subtopic: q.subtopic || '',
+    id: q.id || '',
+    correct_index: q.answer_index,
+    chosen_index: chosenIndex,
+    correct: chosenIndex === q.answer_index
+  };
+  try {
+    const arr = JSON.parse(localStorage.getItem(RESULTS_KEY) || '[]');
+    arr.push(rec);
+    localStorage.setItem(RESULTS_KEY, JSON.stringify(arr));
+  } catch {}
 }
 
-// ----------------- load data -----------------
+// ---- save/restore quiz progress per subject+filter ----
+const SAVE_KEY = `ican.progress:${subject}:${topicsFilter.join('|')}`;
+function saveProgress(){
+  const state = { idx, score, selected, questions_ids: questions.map(q=>q.id) };
+  try { localStorage.setItem(SAVE_KEY, JSON.stringify(state)); } catch {}
+}
+function loadProgress(){
+  try {
+    const s = JSON.parse(localStorage.getItem(SAVE_KEY) || 'null');
+    if (s && Number.isInteger(s.idx) && Array.isArray(s.questions_ids)) {
+      idx = s.idx; score = s.score||0; selected = s.selected??null;
+      // If ids mismatch due to updated bank, we ignore restore
+      const same = s.questions_ids.length && s.questions_ids.every((id, i)=>questions[i] && questions[i].id === id);
+      if (!same){ idx = 0; score = 0; selected = null; }
+    }
+  } catch {}
+}
+
+// ------ load data ------
 async function loadData(){
   const file = FILES[subject];
   if(!file){
@@ -48,9 +99,17 @@ async function loadData(){
   try{
     const res = await fetch(`${file}?v=${Date.now()}`, {cache:'no-store'});
     if(!res.ok) throw new Error(`HTTP ${res.status}`);
-    const data = await res.json();
+    let data = await res.json();
     if(!Array.isArray(data) || data.length === 0) throw new Error('Empty set');
-    questions = shuffle(data.slice());   // shuffle question order
+
+    // optional topic filter
+    if (topicsFilter.length){
+      data = data.filter(q => topicsFilter.includes(q.topic));
+      if (data.length === 0) throw new Error('No questions for selected topic(s).');
+    }
+
+    questions = shuffle(data.slice());
+    loadProgress();
     render();
   }catch(err){
     qstem.innerHTML = `
@@ -63,7 +122,7 @@ async function loadData(){
   }
 }
 
-// ----------------- render a question -----------------
+// ------ render ------
 function render(){
   const q = questions[idx];
   if(!q){ return finish(); }
@@ -75,13 +134,12 @@ function render(){
   `;
   qopts.innerHTML = '';
 
-  // shuffle options
-  const opts = shuffle(q.options.map((text, i)=>({text, i})));
+  const opts = shuffle(q.options.map((text,i)=>({text,i})));
   opts.forEach(({text,i})=>{
     const d = document.createElement('div');
     d.className = 'opt';
     d.textContent = text;
-    d.onclick = ()=> select(i, d);
+    d.onclick = ()=> select(i,d);
     qopts.appendChild(d);
   });
 
@@ -95,28 +153,38 @@ function select(i, el){
 }
 
 nextBtn.onclick = ()=>{
-  if(selected == null) return alert('Select an option first');
-  if(selected === questions[idx].answer_index) score++;
-  idx++;
+  if (busy) return;
+  if (selected == null) return alert('Select an option first');
+  const q = questions[idx];
+  logAttempt(q, selected);          // ← record this attempt
+  if (selected === q.answer_index) score++;
+  idx++; lock();
+  saveProgress();
   if(idx < questions.length) render(); else finish();
 };
 
-submitBtn.onclick = finish;
+submitBtn.onclick = ()=>{
+  if (busy) return; lock();
+  // If user hits Finish without answering current, do nothing extra
+  finish();
+};
 
 function finish(){
   qwrap.style.display = 'none';
+  localStorage.removeItem(SAVE_KEY);
   const pct = Math.round((score/questions.length)*100);
   result.style.display = '';
   result.innerHTML = `
     <h2>Result: ${pct}%</h2>
     <p>Score: ${score} / ${questions.length}</p>
-    <div class="muted small">Subject: ${subject}</div>
+    <div class="muted small">Subject: ${subject}${topicsFilter.length ? ' — Focus: ' + topicsFilter.join(', ') : ''}</div>
     <div class="row" style="margin-top:10px">
       <a class="btn" href="index.html">← Back Home</a>
-      <a class="btn" href="quiz.html?level=${encodeURIComponent(level)}&subject=${encodeURIComponent(subject)}&mode=${encodeURIComponent(mode)}">Retry</a>
+      <a class="btn" href="quiz.html?level=${encodeURIComponent(level)}&subject=${encodeURIComponent(subject)}&mode=${encodeURIComponent(mode)}${topicsFilter.length ? '&topics='+encodeURIComponent(topicsFilter.join(',')) : ''}">Retry</a>
+      <a class="btn" href="status.html">View Status</a>
     </div>
   `;
 }
 
-// ----------------- start -----------------
+// start
 loadData();
