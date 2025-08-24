@@ -69,3 +69,6 @@ h1,h2{margin:0 0 6px}
   border:1px solid var(--border); border-radius:12px; padding:12px; margin:8px 0; cursor:pointer; background:#15181c;
 }
 #qwrap .opt.selected{outline:2px solid var(--accent); background:#0f1412}
+/* Review highlight */
+.opt.correct{ outline:2px solid #39d98a; background:#0f1412; }
+.opt.chosen{ outline:2px solid #d9730d; background:#18120a; }
