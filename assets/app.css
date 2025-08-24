@@ -19,3 +19,53 @@ h1{margin:8px 0}h2{margin:0 0 10px}.muted{color:var(--muted)}.small{font-size:12
 .opt{background:#1b1b20;border:1px solid var(--border);padding:10px;border-radius:10px;cursor:pointer}
 .opt.selected{outline:2px solid var(--brand)}
 .correct{border-color:#2dbf7f}.wrong{border-color:#f66}
+/* ====== GLOBAL FIX PACK v2 ====== */
+:root{
+  --bg:#0b0b0c; --card:#131317; --text:#e9f1ee; --muted:#9ab4ab;
+  --accent:#7be0b5; --border:#22232a;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0; font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;
+  color:var(--text);
+  background:
+    radial-gradient(1200px 800px at 80% -10%, rgba(123,224,181,.18), transparent 60%),
+    radial-gradient(1000px 700px at -10% 90%, rgba(123,224,181,.12), transparent 60%),
+    linear-gradient(#0b0b0c, #0a0a0b);
+}
+.wrap{max-width:980px;margin:0 auto;padding:18px}
+h1,h2{margin:0 0 6px}
+.muted{color:var(--muted)}
+.small{font-size:12px}
+.mono{font-family: ui-monospace,SFMono-Regular,Consolas,Menlo,monospace}
+.card{
+  background:var(--card); border:1px solid var(--border);
+  border-radius:14px; padding:16px; box-shadow: 0 8px 30px rgba(0,0,0,.25);
+}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.space-between{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+
+.btn{
+  border:1px solid var(--border); background:#181a1f; color:var(--text);
+  padding:10px 14px; border-radius:10px; cursor:pointer; text-decoration:none; display:inline-flex; align-items:center; gap:8px;
+}
+.btn.primary{background:linear-gradient(180deg, #87f1c9, #4cc89a); color:#0b0b0c; border-color:transparent; font-weight:700;}
+.btn:hover{transform:translateY(-1px); transition:.15s}
+.pill{display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border:1px solid var(--border);border-radius:999px;background:#14161a}
+
+.grid{
+  display:grid; gap:12px;
+  grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+}
+.tile{
+  display:block; padding:16px; border:1px solid var(--border); border-radius:12px;
+  background:linear-gradient(180deg,#14161a,#111318);
+  text-decoration:none; color:var(--text); font-weight:600;
+}
+.tile:hover{outline:2px solid rgba(123,224,181,.5)}
+
+#qwrap .opt{
+  border:1px solid var(--border); border-radius:12px; padding:12px; margin:8px 0; cursor:pointer; background:#15181c;
+}
+#qwrap .opt.selected{outline:2px solid var(--accent); background:#0f1412}
