@@ -72,3 +72,39 @@ h1,h2{margin:0 0 6px}
 /* Review highlight */
 .opt.correct{ outline:2px solid #39d98a; background:#0f1412; }
 .opt.chosen{ outline:2px solid #d9730d; background:#18120a; }
+
+/* ==== Review styling (correct/incorrect) ==== */
+.opt {
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 12px;
+  padding: 10px 12px;
+  margin: 6px 0;
+}
+
+/* Correct option (green) */
+.opt.good {
+  border-color: #22c55e;              /* green-500 */
+  box-shadow: inset 0 0 0 2px #22c55e;
+  background: rgba(34,197,94,.06);
+}
+
+/* Your wrong answer (red) */
+.opt.bad {
+  border-color: #ef4444;              /* red-500 */
+  box-shadow: inset 0 0 0 2px #ef4444;
+  background: rgba(239,68,68,.06);
+}
+
+/* If both .selected and .bad apply, keep the red emphasis */
+.opt.selected.bad {
+  border-color: #ef4444;
+  box-shadow: inset 0 0 0 2px #ef4444;
+}
+
+/* Small badges already in the markup */
+.pill.small {
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.08);
+}
