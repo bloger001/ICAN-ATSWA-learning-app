@@ -3,22 +3,148 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Resources • ICAN Prep</title>
-  <link rel="stylesheet" href="assets/app.css">
+  <title>Resources — ICAN Prep</title>
+  <link rel="stylesheet" href="./assets/app.css?v=23"/>
+  <style>
+    .pdfgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}
+    .pdfcard{border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:12px}
+    .pdfcard h3{margin:6px 0;font-size:1rem}
+    .pdfcard .muted{font-size:.85rem}
+  </style>
 </head>
 <body>
   <div class="wrap">
-    <header class="space-between">
+    <header class="space-between" style="align-items:center">
       <h1>Resources</h1>
-      <a class="btn" href="./">← Home</a>
+      <a class="btn" href="./index.html">← Home</a>
     </header>
+
     <section class="card">
-      <h2>Quick Notes & Flashcards (coming)</h2>
-      <ul>
-        <li>ATSWA 1 — Basic Accounting: Trial Balance, Errors, Depreciation…</li>
-        <li>ATSWA 1 — Economics: Demand & Supply, Elasticity, Market structures…</li>
+      <p class="muted">Study straight from INSIGHT papers and topic notes. “Read this” buttons from Status/Review will jump to these anchors.</p>
+    </section>
+
+    <!-- BASIC ACCOUNTING -->
+    <section class="card" id="ba">
+      <h2>Basic Accounting</h2>
+      <div class="pdfgrid">
+        <div class="pdfcard" id="ba-concepts">
+          <h3>Concepts & Principles</h3>
+          <p class="muted small">Entity, accrual, prudence, consistency, duality, etc.</p>
+          <div class="row">
+            <a class="btn" href="./resources/pdfs/BA_Concepts.pdf">Open PDF</a>
+          </div>
+        </div>
+        <div class="pdfcard" id="ba-double-entry">
+          <h3>Double Entry & Ledger</h3>
+          <p class="muted small">Debits/credits, books of prime entry, ledgers.</p>
+          <div class="row">
+            <a class="btn" href="./resources/pdfs/BA_DoubleEntry.pdf">Open PDF</a>
+          </div>
+        </div>
+        <div class="pdfcard" id="ba-trial-balance">
+          <h3>Trial Balance & Errors</h3>
+          <p class="muted small">TB extraction, error types, suspense.</p>
+          <div class="row">
+            <a class="btn" href="./resources/pdfs/BA_TrialBalance.pdf">Open PDF</a>
+          </div>
+        </div>
+        <div class="pdfcard" id="ba-fin-stmts">
+          <h3>Financial Statements</h3>
+          <p class="muted small">SFP, SPL, period-end adjustments.</p>
+          <div class="row">
+            <a class="btn" href="./resources/pdfs/BA_FinancialStatements.pdf">Open PDF</a>
+          </div>
+        </div>
+        <div class="pdfcard" id="ba-cash-book">
+          <h3>Cash Book & Bank Rec</h3>
+          <p class="muted small">Cash book, petty cash, bank reconciliation.</p>
+          <div class="row">
+            <a class="btn" href="./resources/pdfs/BA_CashBook.pdf">Open PDF</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ECONOMICS -->
+    <section class="card" id="econ">
+      <h2>Economics</h2>
+      <div class="pdfgrid">
+        <div class="pdfcard" id="econ-demand-supply">
+          <h3>Demand & Supply</h3>
+          <p class="muted small">Equilibrium, elasticity, shifts.</p>
+          <div class="row">
+            <a class="btn" href="./resources/pdfs/ECON_DemandSupply.pdf">Open PDF</a>
+          </div>
+        </div>
+        <div class="pdfcard" id="econ-national-income">
+          <h3>National Income</h3>
+          <p class="muted small">GDP/GNP, circular flow, measurement.</p>
+          <div class="row">
+            <a class="btn" href="./resources/pdfs/ECON_NationalIncome.pdf">Open PDF</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BUSINESS LAW -->
+    <section class="card" id="blaw">
+      <h2>Business Law</h2>
+      <div class="pdfgrid">
+        <div class="pdfcard" id="blaw-ethics">
+          <h3>Ethics & Legal System</h3>
+          <p class="muted small">Sources of law, courts, professional ethics.</p>
+          <div class="row">
+            <a class="btn" href="./resources/pdfs/BLaw_Ethics.pdf">Open PDF</a>
+          </div>
+        </div>
+        <div class="pdfcard" id="blaw-contracts">
+          <h3>Law of Contract</h3>
+          <p class="muted small">Formation, terms, breach, remedies.</p>
+          <div class="row">
+            <a class="btn" href="./resources/pdfs/BLaw_Contracts.pdf">Open PDF</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMUNICATION SKILLS -->
+    <section class="card" id="cs">
+      <h2>Communication Skills</h2>
+      <div class="pdfgrid">
+        <div class="pdfcard" id="cs-basics">
+          <h3>Communication Basics</h3>
+          <p class="muted small">Process, barriers, audience analysis.</p>
+          <div class="row">
+            <a class="btn" href="./resources/pdfs/CS_Basics.pdf">Open PDF</a>
+          </div>
+        </div>
+        <div class="pdfcard" id="cs-writing">
+          <h3>Listening & Business Writing</h3>
+          <p class="muted small">Emails, memos, reports, listening skills.</p>
+          <div class="row">
+            <a class="btn" href="./resources/pdfs/CS_Writing.pdf">Open PDF</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INSIGHT MASTER LIST (for transparency) -->
+    <section class="card" id="insight">
+      <h2>INSIGHT Papers (Part I)</h2>
+      <p class="muted small">We use these official-style materials to build quizzes and notes.</p>
+      <ul class="muted small">
+        <li><a href="./resources/insight/PART-I-MAR-2022-INSIGHT.pdf">March 2022 (Part I)</a></li>
+        <li><a href="./resources/insight/PART_I_MARCH_2021_INSIGHT.pdf">March 2021 (Part I)</a></li>
+        <li><a href="./resources/insight/SEPTEMBER_2024_PART_I_INSIGHT.pdf">September 2024 (Part I)</a></li>
+        <li><a href="./resources/insight/SEPT-2021-INSIGHT-PARTI.pdf">September 2021 (Part I)</a></li>
+        <li><a href="./resources/insight/PART-I-SEPT-2020-INSIGHT.pdf">September 2020 (Part I)</a></li>
+        <li><a href="./resources/insight/MARCH_2024_PART_I_INSIGHT.pdf">March 2024 (Part I)</a></li>
+        <li><a href="./resources/insight/MARCH_2025_PART_I_INSIGHT.pdf">March 2025 (Part I)</a></li>
+        <li><a href="./resources/insight/MARCH-2019-PART-I-INSIGHT.pdf">March 2019 (Part I)</a></li>
+        <!-- Add the rest of your 13 here; duplicates optional -->
       </ul>
     </section>
+
   </div>
 </body>
 </html>
