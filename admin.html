@@ -4,37 +4,61 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Admin • ICAN Prep</title>
-  <link rel="stylesheet" href="assets/app.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./assets/app.css?v=5">
+
+  <!-- Firebase SDKs -->
   <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
 </head>
 <body>
   <div class="wrap">
     <header class="space-between">
-      <h1>ICAN Prep Admin</h1>
-      <div id="who"></div>
+      <div>
+        <h1>ICAN Prep Admin</h1>
+        <p class="muted small">Only <strong>offixcialbloger@gmail.com</strong> has access.</p>
+      </div>
+      <div id="who" class="pill">Not signed in</div>
     </header>
 
-    <div id="gate" class="card center">
-      <p>Admin access — enter code</p>
+    <!-- Admin code gate -->
+    <section id="gate" class="card center">
+      <h2>Enter Admin Code</h2>
+      <p class="muted small">You must be signed in with your admin Google account first.</p>
       <input id="adminCode" class="input" placeholder="Access code" />
-      <button id="verifyBtn" class="btn">Verify</button>
-      <p class="muted small">If you’re not Silva, please return to the dashboard.</p>
-    </div>
+      <div class="row" style="margin-top:10px">
+        <button id="verifyBtn" class="btn primary">Verify</button>
+        <a class="btn" href="./">← Back to Home</a>
+      </div>
+    </section>
 
-    <div id="adminApp" style="display:none">
-      <section class="card">
-        <h2>Quick stats (placeholder)</h2>
-        <p>Only you can see this page. 🎯</p>
-        <p class="muted small">We’ll add Question Bank & Bulk Upload next.</p>
-      </section>
-      <section class="card">
-        <h2>Starter data</h2>
-        <a class="btn" href="data/atswa1_basic_accounting.sample.json" target="_blank">Download ATSWA1 sample JSON</a>
-      </section>
-    </div>
+    <!-- Admin app area -->
+    <section id="adminApp" class="card" style="display:none">
+      <h2>Welcome, Admin 🎯</h2>
+      <p class="muted">Quick actions (coming soon): manage question bank, bulk upload, leaderboards, announcements.</p>
+      <div class="row" style="margin-top:10px">
+        <a class="btn" href="./data/atswa1_basic_accounting.sample.json" target="_blank">Download sample JSON</a>
+        <a class="btn" href="./">← Back Home</a>
+      </div>
+    </section>
   </div>
 
-  <script src="assets/admin.js"></script>
+  <!-- Admin logic (email whitelist + code gate) -->
+  <script src="./assets/admin.js?v=5"></script>
+
+  <!-- Minimal Firebase init re-use from index -->
+  <script>
+    // If index already initialized firebase, this is fine. If not, init here too:
+    if (!firebase.apps.length) {
+      const firebaseConfig = {
+        apiKey: "AIzaSyBRGM431CHZ3UMUHIc4Q-S1aGDMfrbu7Gs",
+        authDomain: "ican-kit-prep.firebaseapp.com",
+        projectId: "ican-kit-prep",
+        appId: "1:354385037521:web:f3a7265f66983942581df0"
+      };
+      firebase.initializeApp(firebaseConfig);
+    }
+  </script>
 </body>
 </html>
