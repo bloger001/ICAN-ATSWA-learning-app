@@ -1,0 +1,1602 @@
+[
+  {
+    "id": "ATSWA1-COMS-GR-0001",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Grammar",
+    "subtopic": "Subject–Verb Agreement",
+    "stem": "Choose the correct option: The set of financial statements ___ on my desk.",
+    "options": [
+      "are",
+      "is",
+      "were",
+      "have been"
+    ],
+    "answer_index": 1,
+    "explanation": "‘Set’ is the head noun (singular), so ‘is’ is correct."
+  },
+  {
+    "id": "ATSWA1-COMS-GR-0002",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Grammar",
+    "subtopic": "Subject–Verb Agreement",
+    "stem": "Choose the correct option: Neither the directors nor the CEO ___ present.",
+    "options": [
+      "are",
+      "were",
+      "is",
+      "be"
+    ],
+    "answer_index": 2,
+    "explanation": "With ‘neither…nor’, the verb agrees with the nearer subject (CEO → singular)."
+  },
+  {
+    "id": "ATSWA1-COMS-GR-0003",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Grammar",
+    "subtopic": "Pronouns",
+    "stem": "Choose the correct pronoun: Each candidate must submit ___ application.",
+    "options": [
+      "their",
+      "his or her",
+      "our",
+      "they"
+    ],
+    "answer_index": 1,
+    "explanation": "‘Each’ is singular; use ‘his or her’ in formal writing."
+  },
+  {
+    "id": "ATSWA1-COMS-GR-0004",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Grammar",
+    "subtopic": "Tense Consistency",
+    "stem": "Select the best sentence:",
+    "options": [
+      "By the time the auditor arrived, we complete the stock count.",
+      "By the time the auditor arrived, we had completed the stock count.",
+      "By the time the auditor arrived, we have completed the stock count.",
+      "By the time the auditor arrived, we will complete the stock count."
+    ],
+    "answer_index": 1,
+    "explanation": "Past perfect (‘had completed’) is correct before a past action."
+  },
+  {
+    "id": "ATSWA1-COMS-GR-0005",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Grammar",
+    "subtopic": "Conditional",
+    "stem": "Which completes the sentence correctly? If the figures had been verified, we ___ the memo.",
+    "options": [
+      "send",
+      "would send",
+      "will have sent",
+      "would have sent"
+    ],
+    "answer_index": 3,
+    "explanation": "Third conditional: ‘would have sent.’"
+  },
+  {
+    "id": "ATSWA1-COMS-GR-0006",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Grammar",
+    "subtopic": "Modifiers",
+    "stem": "Identify the best sentence:",
+    "options": [
+      "We almost prepared every schedule for the auditor.",
+      "We prepared almost every schedule for the auditor.",
+      "Almost we prepared every schedule for the auditor.",
+      "We prepared every schedule almost for the auditor."
+    ],
+    "answer_index": 1,
+    "explanation": "Place ‘almost’ before the word it modifies (‘every’)."
+  },
+  {
+    "id": "ATSWA1-COMS-GR-0007",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Grammar",
+    "subtopic": "Parallelism",
+    "stem": "Choose the parallel construction:",
+    "options": [
+      "The job requires accuracy, being fast, and attention to detail.",
+      "The job requires accuracy, speed, and attention to detail.",
+      "The job requires to be accurate, fast, and paying attention to detail.",
+      "The job requires accuracy, to be fast, and attention to detail."
+    ],
+    "answer_index": 1,
+    "explanation": "Use the same grammatical form across the list."
+  },
+  {
+    "id": "ATSWA1-COMS-GR-0008",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Grammar",
+    "subtopic": "Active vs Passive",
+    "stem": "Select the clearer sentence for reports:",
+    "options": [
+      "Errors were discovered by the team during the review.",
+      "The team discovered errors during the review.",
+      "During the review, errors were discovered by the team.",
+      "During the review, by the team errors were discovered."
+    ],
+    "answer_index": 1,
+    "explanation": "Active voice is usually clearer: ‘The team discovered…’"
+  },
+  {
+    "id": "ATSWA1-COMS-GR-0009",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Grammar",
+    "subtopic": "Concord with Quantifiers",
+    "stem": "Choose the correct option: Ten percent of the inventory ___ missing.",
+    "options": [
+      "are",
+      "is",
+      "were",
+      "have"
+    ],
+    "answer_index": 1,
+    "explanation": "Percentage with a mass noun takes singular verb: ‘is.’"
+  },
+  {
+    "id": "ATSWA1-COMS-GR-0010",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Grammar",
+    "subtopic": "Gerunds & Infinitives",
+    "stem": "Select the correct usage: The manager advised ___ early.",
+    "options": [
+      "to arrive",
+      "arrive",
+      "arriving",
+      "arrived"
+    ],
+    "answer_index": 2,
+    "explanation": "‘Advise’ is followed by a gerund: ‘advised arriving early.’"
+  },
+  {
+    "id": "ATSWA1-COMS-GR-0011",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Grammar",
+    "subtopic": "Comparatives",
+    "stem": "Choose the correct form: This year’s deficit is ___ than last year’s.",
+    "options": [
+      "more small",
+      "smaller",
+      "most small",
+      "more smaller"
+    ],
+    "answer_index": 1,
+    "explanation": "Use ‘smaller’ for a two-syllable adjective (‘small’)."
+  },
+  {
+    "id": "ATSWA1-COMS-GR-0012",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Grammar",
+    "subtopic": "Articles",
+    "stem": "Choose the correct article: He is ___ honest accountant.",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "answer_index": 1,
+    "explanation": "Use ‘an’ before vowel sounds: ‘an honest…’"
+  },
+  {
+    "id": "ATSWA1-COMS-GR-0013",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Grammar",
+    "subtopic": "Prepositions",
+    "stem": "Fill the gap: The meeting is scheduled ___ Monday ___ 10 a.m.",
+    "options": [
+      "in / at",
+      "at / in",
+      "on / at",
+      "on / in"
+    ],
+    "answer_index": 2,
+    "explanation": "Use ‘on Monday’ and ‘at 10 a.m.’"
+  },
+  {
+    "id": "ATSWA1-COMS-GR-0014",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Grammar",
+    "subtopic": "Reported Speech",
+    "stem": "Change to reported speech: “We will submit today,” she said.",
+    "options": [
+      "She said they will submit today.",
+      "She said they would submit that day.",
+      "She said they submit today.",
+      "She said they submitted that day."
+    ],
+    "answer_index": 1,
+    "explanation": "Backshift: ‘will’ → ‘would’; ‘today’ → ‘that day’."
+  },
+  {
+    "id": "ATSWA1-COMS-GR-0015",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Grammar",
+    "subtopic": "Conjunctions",
+    "stem": "Select the best connector: He missed the deadline ___ he started early.",
+    "options": [
+      "although",
+      "because",
+      "so",
+      "and"
+    ],
+    "answer_index": 0,
+    "explanation": "‘Although’ shows contrast: missed deadline despite starting early."
+  },
+  {
+    "id": "ATSWA1-COMS-GR-0016",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Grammar",
+    "subtopic": "Fragments",
+    "stem": "Which is a complete sentence?",
+    "options": [
+      "Because the CFO requested it.",
+      "When the audit finished.",
+      "The CFO requested an extension.",
+      "Although the errors were corrected."
+    ],
+    "answer_index": 2,
+    "explanation": "Only (C) is independent and complete."
+  },
+  {
+    "id": "ATSWA1-COMS-GR-0017",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Grammar",
+    "subtopic": "Dangling Modifier",
+    "stem": "Identify the correct sentence:",
+    "options": [
+      "Walking to the office, the rain started suddenly.",
+      "Walking to the office, I noticed it started to rain.",
+      "Walking to the office, there was sudden rain.",
+      "Walking to the office, the rain caught us off-guard."
+    ],
+    "answer_index": 1,
+    "explanation": "Modifier must attach to the subject (‘I’)."
+  },
+  {
+    "id": "ATSWA1-COMS-GR-0018",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Grammar",
+    "subtopic": "Pronoun Case",
+    "stem": "Choose the correct option: The assignment was prepared by Clara and ___.",
+    "options": [
+      "I",
+      "me",
+      "myself",
+      "mine"
+    ],
+    "answer_index": 1,
+    "explanation": "After a preposition (‘by’), use objective case ‘me’."
+  },
+  {
+    "id": "ATSWA1-COMS-GR-0019",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Grammar",
+    "subtopic": "Ellipsis",
+    "stem": "Complete the parallel sentence: Our internal controls are stronger than ___.",
+    "options": [
+      "the competitor",
+      "our competitors",
+      "those of our competitors",
+      "they are"
+    ],
+    "answer_index": 2,
+    "explanation": "Use ‘those of our competitors’ to avoid repetition."
+  },
+  {
+    "id": "ATSWA1-COMS-GR-0020",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Grammar",
+    "subtopic": "Clause Type",
+    "stem": "Which contains a non-restrictive clause?",
+    "options": [
+      "The staff who arrived late were fined.",
+      "Our auditor, who arrived late, apologised.",
+      "The client who complained was compensated.",
+      "Employees who perform well get bonuses."
+    ],
+    "answer_index": 1,
+    "explanation": "Non-restrictive clauses are set off by commas; they add extra info."
+  },
+  {
+    "id": "ATSWA1-COMS-VB-0021",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Vocabulary",
+    "subtopic": "Word Choice",
+    "stem": "Choose the best word: The policy will ___ all departments.",
+    "options": [
+      "affect",
+      "effect",
+      "defect",
+      "infect"
+    ],
+    "answer_index": 0,
+    "explanation": "‘Affect’ is a verb meaning ‘influence’; ‘effect’ is usually a noun."
+  },
+  {
+    "id": "ATSWA1-COMS-VB-0022",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Vocabulary",
+    "subtopic": "Commonly Confused",
+    "stem": "Pick the correct pair: The auditor will ___ the accounts to ensure they ___ standards.",
+    "options": [
+      "ensure / meet",
+      "insure / meat",
+      "assure / mete",
+      "ensure / mete"
+    ],
+    "answer_index": 0,
+    "explanation": "‘Ensure’ (make certain) and ‘meet’ (satisfy) are correct."
+  },
+  {
+    "id": "ATSWA1-COMS-VB-0023",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Vocabulary",
+    "subtopic": "Formal Diction",
+    "stem": "Choose the most formal: The committee will ___ the proposal.",
+    "options": [
+      "look at",
+      "scrutinise",
+      "have a look at",
+      "check out"
+    ],
+    "answer_index": 1,
+    "explanation": "‘Scrutinise’ suits formal reports."
+  },
+  {
+    "id": "ATSWA1-COMS-VB-0024",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Vocabulary",
+    "subtopic": "Conciseness",
+    "stem": "Best concise phrase for reports:",
+    "options": [
+      "due to the fact that",
+      "owing to",
+      "because",
+      "for the reason that"
+    ],
+    "answer_index": 2,
+    "explanation": "‘Because’ is concise and clear."
+  },
+  {
+    "id": "ATSWA1-COMS-VB-0025",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Vocabulary",
+    "subtopic": "Collocation",
+    "stem": "Pick the natural collocation: ___ a meeting.",
+    "options": [
+      "Do",
+      "Make",
+      "Hold",
+      "Create"
+    ],
+    "answer_index": 2,
+    "explanation": "We ‘hold’ a meeting."
+  },
+  {
+    "id": "ATSWA1-COMS-VB-0026",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Vocabulary",
+    "subtopic": "Tone",
+    "stem": "Best closing for a formal email requesting documents:",
+    "options": [
+      "Send it ASAP!",
+      "Kindly provide the documents at your earliest convenience.",
+      "Send now.",
+      "Where are they?"
+    ],
+    "answer_index": 1,
+    "explanation": "Polite, professional tone is essential."
+  },
+  {
+    "id": "ATSWA1-COMS-VB-0027",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Vocabulary",
+    "subtopic": "Business Term",
+    "stem": "Choose the correct term: Payment was made ___ transfer.",
+    "options": [
+      "through wire",
+      "by wire",
+      "via wired",
+      "on wire"
+    ],
+    "answer_index": 1,
+    "explanation": "‘By wire transfer’ or ‘by wire’ is standard."
+  },
+  {
+    "id": "ATSWA1-COMS-VB-0028",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Vocabulary",
+    "subtopic": "Word Form",
+    "stem": "Select the correct word form: The report must be ___ and accurate.",
+    "options": [
+      "clarify",
+      "clarity",
+      "clear",
+      "clearly"
+    ],
+    "answer_index": 2,
+    "explanation": "Adjective ‘clear’ matches ‘accurate’."
+  },
+  {
+    "id": "ATSWA1-COMS-VB-0029",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Vocabulary",
+    "subtopic": "Register",
+    "stem": "Choose the appropriate register for management:",
+    "options": [
+      "Yo, the figures are off.",
+      "The figures appear misstated by 3%.",
+      "The figs are kinda wrong.",
+      "These numbers suck."
+    ],
+    "answer_index": 1,
+    "explanation": "Neutral-professional style fits management communication."
+  },
+  {
+    "id": "ATSWA1-COMS-VB-0030",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Vocabulary",
+    "subtopic": "Jargon",
+    "stem": "Which sentence avoids unnecessary jargon?",
+    "options": [
+      "Please deploy a synergistic paradigm shift.",
+      "Please send the signed bank reconciliation for June.",
+      "Kindly leverage our core competencies to ideate.",
+      "We must operationalise the deliverables across silos."
+    ],
+    "answer_index": 1,
+    "explanation": "Plain language improves clarity."
+  },
+  {
+    "id": "ATSWA1-COMS-PU-0031",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Punctuation",
+    "subtopic": "Comma",
+    "stem": "Choose the correctly punctuated sentence:",
+    "options": [
+      "We audited the cashbook and the bank statements, and the vouchers.",
+      "We audited the cashbook, the bank statements, and the vouchers.",
+      "We audited, the cashbook, the bank statements, and the vouchers.",
+      "We audited the cashbook the bank statements, and the vouchers."
+    ],
+    "answer_index": 1,
+    "explanation": "Use commas in a simple series."
+  },
+  {
+    "id": "ATSWA1-COMS-PU-0032",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Punctuation",
+    "subtopic": "Semicolon",
+    "stem": "Select the best use of a semicolon:",
+    "options": [
+      "The variance is material; therefore, we extended testing.",
+      "The variance is material; because we extended testing.",
+      "The variance is material; and we extended testing.",
+      "The variance is material; which means we extended testing."
+    ],
+    "answer_index": 0,
+    "explanation": "Semicolon can link closely related clauses; conjunctive adverb follows."
+  },
+  {
+    "id": "ATSWA1-COMS-PU-0033",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Punctuation",
+    "subtopic": "Colon",
+    "stem": "Correct use of a colon:",
+    "options": [
+      "We need: bank statements, ledgers and invoices.",
+      "We need the following: bank statements, ledgers, and invoices.",
+      "We need, bank statements: ledgers and invoices.",
+      "We: need bank statements, ledgers and invoices."
+    ],
+    "answer_index": 1,
+    "explanation": "Use a complete clause before a colon."
+  },
+  {
+    "id": "ATSWA1-COMS-PU-0034",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Punctuation",
+    "subtopic": "Dash",
+    "stem": "Best sentence with an em dash:",
+    "options": [
+      "The risk—though reduced—remains significant.",
+      "The risk—, though reduced— remains significant.",
+      "The risk, though reduced—remains significant.",
+      "The risk—though reduced, remains significant."
+    ],
+    "answer_index": 0,
+    "explanation": "Dashes set off interrupting phrases cleanly."
+  },
+  {
+    "id": "ATSWA1-COMS-PU-0035",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Punctuation",
+    "subtopic": "Apostrophe",
+    "stem": "Choose the correct possessive:",
+    "options": [
+      "The companies' policy was revised.",
+      "The company's policy was revised.",
+      "The companies policy was revised.",
+      "The company's' policy was revised."
+    ],
+    "answer_index": 1,
+    "explanation": "One company → singular possessive ‘company’s’."
+  },
+  {
+    "id": "ATSWA1-COMS-PU-0036",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Punctuation",
+    "subtopic": "Quotation",
+    "stem": "Correct punctuation with quotes:",
+    "options": [
+      "She said, \"Submit the file\".",
+      "She said \"Submit the file\".",
+      "She said, \"Submit the file\".",
+      "(A) and (C) are correct"
+    ],
+    "answer_index": 3,
+    "explanation": "Both A and C are acceptable depending on style; comma before quote is common."
+  },
+  {
+    "id": "ATSWA1-COMS-PU-0037",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Punctuation",
+    "subtopic": "Hyphenation",
+    "stem": "Choose the correctly hyphenated compound:",
+    "options": [
+      "well known policy",
+      "well-known policy",
+      "well known-policy",
+      "well-known- policy"
+    ],
+    "answer_index": 1,
+    "explanation": "Compound adjective before a noun is hyphenated: ‘well-known policy’."
+  },
+  {
+    "id": "ATSWA1-COMS-PU-0038",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Punctuation",
+    "subtopic": "Capitalisation",
+    "stem": "Which is correct?",
+    "options": [
+      "the Managing Director approved",
+      "The Managing Director approved",
+      "The managing director approved",
+      "the managing Director approved"
+    ],
+    "answer_index": 2,
+    "explanation": "Use lower case generically: ‘the managing director’; capitalize only with names/titles."
+  },
+  {
+    "id": "ATSWA1-COMS-PU-0039",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Punctuation",
+    "subtopic": "Numbers",
+    "stem": "Formal writing prefers:",
+    "options": [
+      "2%",
+      "two percent",
+      "2 percent",
+      "two %"
+    ],
+    "answer_index": 1,
+    "explanation": "Spell out small numbers in running text: ‘two percent’ (house style may vary)."
+  },
+  {
+    "id": "ATSWA1-COMS-PU-0040",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Punctuation",
+    "subtopic": "Abbreviations",
+    "stem": "Best practice for first mention:",
+    "options": [
+      "Use the abbreviation only",
+      "Spell out the term with abbreviation in brackets",
+      "Use slang",
+      "Skip definition"
+    ],
+    "answer_index": 1,
+    "explanation": "Spell out once, then use the abbreviation (e.g., International Financial Reporting Standards (IFRS))."
+  },
+  {
+    "id": "ATSWA1-COMS-RC-0041",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Comprehension",
+    "subtopic": "Skimming",
+    "stem": "Skimming is primarily used to:",
+    "options": [
+      "Read every word carefully",
+      "Get the main idea quickly",
+      "Memorise details",
+      "Analyse figurative language"
+    ],
+    "answer_index": 1,
+    "explanation": "Skimming seeks gist/overall idea."
+  },
+  {
+    "id": "ATSWA1-COMS-RC-0042",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Comprehension",
+    "subtopic": "Scanning",
+    "stem": "Scanning helps you:",
+    "options": [
+      "Understand tone",
+      "Find specific information fast (e.g., a date)",
+      "Infer theme",
+      "Evaluate argument"
+    ],
+    "answer_index": 1,
+    "explanation": "Scanning locates details quickly."
+  },
+  {
+    "id": "ATSWA1-COMS-RC-0043",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Comprehension",
+    "subtopic": "Inference",
+    "stem": "Inference means:",
+    "options": [
+      "Copying text",
+      "Reading between the lines to deduce meaning",
+      "Summarising",
+      "Quoting"
+    ],
+    "answer_index": 1,
+    "explanation": "You infer unstated meaning from clues."
+  },
+  {
+    "id": "ATSWA1-COMS-RC-0044",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Comprehension",
+    "subtopic": "Main Idea",
+    "stem": "A paragraph’s topic sentence usually:",
+    "options": [
+      "Comes last",
+      "States the main point",
+      "Is a quote",
+      "Contains only examples"
+    ],
+    "answer_index": 1,
+    "explanation": "Topic sentence states the key idea (often first)."
+  },
+  {
+    "id": "ATSWA1-COMS-RC-0045",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Comprehension",
+    "subtopic": "Coherence",
+    "stem": "Textual coherence is improved by:",
+    "options": [
+      "Random ideas",
+      "Logical order and transitions",
+      "Excessive jargon",
+      "Long sentences"
+    ],
+    "answer_index": 1,
+    "explanation": "Transitions and logical progression create coherence."
+  },
+  {
+    "id": "ATSWA1-COMS-RC-0046",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Comprehension",
+    "subtopic": "Summarising",
+    "stem": "A good summary should:",
+    "options": [
+      "Include minor details",
+      "Use the author’s phrases verbatim",
+      "Be brief and capture key points",
+      "Add opinions"
+    ],
+    "answer_index": 2,
+    "explanation": "Summaries are concise and objective."
+  },
+  {
+    "id": "ATSWA1-COMS-RC-0047",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Comprehension",
+    "subtopic": "Bias",
+    "stem": "A biased text is one that:",
+    "options": [
+      "Presents balanced evidence",
+      "Prejudices the argument with selective facts",
+      "Is purely descriptive",
+      "Is academic"
+    ],
+    "answer_index": 1,
+    "explanation": "Bias distorts fairness/objectivity."
+  },
+  {
+    "id": "ATSWA1-COMS-RC-0048",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Comprehension",
+    "subtopic": "Tone",
+    "stem": "The tone of a report refers to its:",
+    "options": [
+      "Typeface",
+      "Attitude or feeling conveyed",
+      "Length",
+      "Footnotes"
+    ],
+    "answer_index": 1,
+    "explanation": "Tone can be formal, neutral, persuasive, etc."
+  },
+  {
+    "id": "ATSWA1-COMS-RC-0049",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Comprehension",
+    "subtopic": "Paraphrase",
+    "stem": "To paraphrase is to:",
+    "options": [
+      "Rewrite in your own words while preserving meaning",
+      "Copy exactly with quotation marks",
+      "Summarise with omissions",
+      "List bullet points only"
+    ],
+    "answer_index": 0,
+    "explanation": "Paraphrase restates meaning accurately in new wording."
+  },
+  {
+    "id": "ATSWA1-COMS-RC-0050",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Comprehension",
+    "subtopic": "Logical Fallacies",
+    "stem": "Which is a logical fallacy?",
+    "options": [
+      "Ad hominem",
+      "Causal reasoning",
+      "Inductive reasoning",
+      "Deductive reasoning"
+    ],
+    "answer_index": 0,
+    "explanation": "Ad hominem attacks the person rather than the argument."
+  },
+  {
+    "id": "ATSWA1-COMS-BC-0051",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Business Communication",
+    "subtopic": "Channels",
+    "stem": "Downward communication flows from:",
+    "options": [
+      "Subordinates to managers",
+      "Managers to subordinates",
+      "Peers to peers",
+      "Customers to firms"
+    ],
+    "answer_index": 1,
+    "explanation": "Direction indicates manager → subordinate."
+  },
+  {
+    "id": "ATSWA1-COMS-BC-0052",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Business Communication",
+    "subtopic": "Barriers",
+    "stem": "A common barrier to effective communication is:",
+    "options": [
+      "Feedback",
+      "Noise",
+      "Clarity",
+      "Empathy"
+    ],
+    "answer_index": 1,
+    "explanation": "Noise distorts the message (physical, psychological, semantic)."
+  },
+  {
+    "id": "ATSWA1-COMS-BC-0053",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Business Communication",
+    "subtopic": "Feedback",
+    "stem": "Feedback helps a sender to:",
+    "options": [
+      "Ignore receiver’s response",
+      "Confirm understanding and improve clarity",
+      "Avoid responsibility",
+      "Lengthen messages"
+    ],
+    "answer_index": 1,
+    "explanation": "Feedback closes the loop and checks understanding."
+  },
+  {
+    "id": "ATSWA1-COMS-BC-0054",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Business Communication",
+    "subtopic": "Nonverbal",
+    "stem": "Nonverbal communication includes:",
+    "options": [
+      "Tone of voice, facial expression, posture",
+      "Only emails",
+      "Only written notes",
+      "Only memos"
+    ],
+    "answer_index": 0,
+    "explanation": "Nonverbal cues carry significant meaning."
+  },
+  {
+    "id": "ATSWA1-COMS-BC-0055",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Business Communication",
+    "subtopic": "Formal vs Informal",
+    "stem": "The ‘grapevine’ is an example of:",
+    "options": [
+      "Formal chain",
+      "Informal communication network",
+      "Official memo",
+      "Upward channel only"
+    ],
+    "answer_index": 1,
+    "explanation": "Grapevine spreads unofficial information informally."
+  },
+  {
+    "id": "ATSWA1-COMS-BC-0056",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Business Communication",
+    "subtopic": "Clarity",
+    "stem": "Clarity in business writing is improved by:",
+    "options": [
+      "Long sentences with many clauses",
+      "Nominalisations",
+      "Concrete verbs and short sentences",
+      "Unexplained abbreviations"
+    ],
+    "answer_index": 2,
+    "explanation": "Use concrete verbs and concise sentences."
+  },
+  {
+    "id": "ATSWA1-COMS-BC-0057",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Business Communication",
+    "subtopic": "Audience",
+    "stem": "Audience analysis mainly considers:",
+    "options": [
+      "Receiver’s knowledge, needs, and expectations",
+      "Sender’s mood",
+      "Paper colour",
+      "Printer speed"
+    ],
+    "answer_index": 0,
+    "explanation": "Tailor content to audience profile."
+  },
+  {
+    "id": "ATSWA1-COMS-BC-0058",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Business Communication",
+    "subtopic": "Memo",
+    "stem": "A memo is typically used for:",
+    "options": [
+      "External persuasive sales",
+      "Internal brief communication",
+      "Press release",
+      "Legal notices"
+    ],
+    "answer_index": 1,
+    "explanation": "Memos are short internal messages."
+  },
+  {
+    "id": "ATSWA1-COMS-BC-0059",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Business Communication",
+    "subtopic": "Report Types",
+    "stem": "An analytical report primarily:",
+    "options": [
+      "Presents facts only",
+      "Contains analysis, findings, and recommendations",
+      "Is informal",
+      "Uses no headings"
+    ],
+    "answer_index": 1,
+    "explanation": "Analytical reports evaluate and recommend."
+  },
+  {
+    "id": "ATSWA1-COMS-BC-0060",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Business Communication",
+    "subtopic": "Meetings",
+    "stem": "An agenda is:",
+    "options": [
+      "Minutes of the last meeting",
+      "A list of items to be discussed",
+      "A financial statement",
+      "A speech outline"
+    ],
+    "answer_index": 1,
+    "explanation": "Agenda organises topics/time for meetings."
+  },
+  {
+    "id": "ATSWA1-COMS-BC-0061",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Business Communication",
+    "subtopic": "Minutes",
+    "stem": "Minutes should record:",
+    "options": [
+      "Who shouted the loudest",
+      "Decisions and action items",
+      "Jokes told",
+      "Irrelevant chatter"
+    ],
+    "answer_index": 1,
+    "explanation": "Minutes capture decisions, responsibilities, deadlines."
+  },
+  {
+    "id": "ATSWA1-COMS-BC-0062",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Business Communication",
+    "subtopic": "Email Etiquette",
+    "stem": "Best subject line for requesting data:",
+    "options": [
+      "Data",
+      "URGENT!!!!!",
+      "Request: April Sales Data by 3 p.m.",
+      "Hey"
+    ],
+    "answer_index": 2,
+    "explanation": "Clear and specific subject improves response."
+  },
+  {
+    "id": "ATSWA1-COMS-BC-0063",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Business Communication",
+    "subtopic": "Persuasion",
+    "stem": "A persuasive message should start with:",
+    "options": [
+      "Hostile remarks",
+      "A clear benefit or attention-getter",
+      "Blame",
+      "Vague claims"
+    ],
+    "answer_index": 1,
+    "explanation": "Hook attention by highlighting benefits or needs."
+  },
+  {
+    "id": "ATSWA1-COMS-BC-0064",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Business Communication",
+    "subtopic": "Bad-News Message",
+    "stem": "When conveying bad news, a recommended approach is to:",
+    "options": [
+      "Be vague and hope for the best",
+      "Use a buffer, explain reasons, state decision, and end positively",
+      "Blame the reader",
+      "Announce abruptly"
+    ],
+    "answer_index": 1,
+    "explanation": "Indirect strategy softens impact while staying clear."
+  },
+  {
+    "id": "ATSWA1-COMS-BC-0065",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Business Communication",
+    "subtopic": "Visual Aids",
+    "stem": "The main purpose of charts and tables in reports is to:",
+    "options": [
+      "Decorate the pages",
+      "Clarify and support key points",
+      "Replace all text",
+      "Confuse readers"
+    ],
+    "answer_index": 1,
+    "explanation": "Visuals support comprehension and analysis."
+  },
+  {
+    "id": "ATSWA1-COMS-WR-0066",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Writing",
+    "subtopic": "Letter Format",
+    "stem": "A formal business letter typically ends with:",
+    "options": [
+      "Cheers",
+      "Yours faithfully/ sincerely (as appropriate)",
+      "Take care",
+      "Bye"
+    ],
+    "answer_index": 1,
+    "explanation": "Use ‘Yours faithfully’ (unknown recipient) or ‘Yours sincerely’ (known)."
+  },
+  {
+    "id": "ATSWA1-COMS-WR-0067",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Writing",
+    "subtopic": "Report Structure",
+    "stem": "A standard long report order is:",
+    "options": [
+      "Findings → Title → Abstract → Appendix",
+      "Title → Abstract/Executive Summary → Body → Conclusion → Recommendations → Appendix",
+      "Body → Title → Conclusion → Abstract",
+      "Title → References → Abstract → Findings"
+    ],
+    "answer_index": 1,
+    "explanation": "Start with title and summary, then body and back matter."
+  },
+  {
+    "id": "ATSWA1-COMS-WR-0068",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Writing",
+    "subtopic": "Executive Summary",
+    "stem": "An executive summary should:",
+    "options": [
+      "Be very detailed",
+      "Be a concise standalone overview",
+      "Contain jokes",
+      "Be optional in long reports"
+    ],
+    "answer_index": 1,
+    "explanation": "Summarise key points for quick decision-making."
+  },
+  {
+    "id": "ATSWA1-COMS-WR-0069",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Writing",
+    "subtopic": "Coherence Devices",
+    "stem": "Which transition best shows contrast?",
+    "options": [
+      "Furthermore",
+      "However",
+      "Therefore",
+      "In addition"
+    ],
+    "answer_index": 1,
+    "explanation": "‘However’ signals contrast."
+  },
+  {
+    "id": "ATSWA1-COMS-WR-0070",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Writing",
+    "subtopic": "Plain Language",
+    "stem": "Plain language recommends:",
+    "options": [
+      "Active voice and concrete verbs",
+      "Overly technical jargon",
+      "Long complex sentences",
+      "Unnecessary nominalisations"
+    ],
+    "answer_index": 0,
+    "explanation": "Write clearly for the intended audience."
+  },
+  {
+    "id": "ATSWA1-COMS-WR-0071",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Writing",
+    "subtopic": "Referencing",
+    "stem": "In academic writing, citations are used to:",
+    "options": [
+      "Decorate the text",
+      "Give credit and support claims",
+      "Avoid accountability",
+      "Increase word count"
+    ],
+    "answer_index": 1,
+    "explanation": "Citations acknowledge sources and strengthen arguments."
+  },
+  {
+    "id": "ATSWA1-COMS-WR-0072",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Writing",
+    "subtopic": "Paragraphing",
+    "stem": "A good paragraph usually contains:",
+    "options": [
+      "One unified idea with support",
+      "Many unrelated ideas",
+      "Only quotes",
+      "Only figures"
+    ],
+    "answer_index": 0,
+    "explanation": "Unity and development are key."
+  },
+  {
+    "id": "ATSWA1-COMS-WR-0073",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Writing",
+    "subtopic": "Tone & Style",
+    "stem": "Which is most appropriate for a board report?",
+    "options": [
+      "Highly emotive language",
+      "Neutral, evidence-based style",
+      "Slang and jokes",
+      "Second-person informal tone"
+    ],
+    "answer_index": 1,
+    "explanation": "Use neutral, objective style for boards."
+  },
+  {
+    "id": "ATSWA1-COMS-WR-0074",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Writing",
+    "subtopic": "Email Format",
+    "stem": "Best opening for a formal email to a new supplier:",
+    "options": [
+      "Hi guys,",
+      "Dear Sir/Madam,",
+      "Yo fam,",
+      "Hey you,"
+    ],
+    "answer_index": 1,
+    "explanation": "‘Dear Sir/Madam’ is safe when you don’t know the name."
+  },
+  {
+    "id": "ATSWA1-COMS-WR-0075",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Writing",
+    "subtopic": "CV/Resume",
+    "stem": "Which is best practice on a CV?",
+    "options": [
+      "Include false achievements",
+      "Quantify results where possible",
+      "Use long paragraphs",
+      "List every course since primary school"
+    ],
+    "answer_index": 1,
+    "explanation": "Quantifying impact increases credibility."
+  },
+  {
+    "id": "ATSWA1-COMS-WR-0076",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Writing",
+    "subtopic": "Proposals",
+    "stem": "A business proposal should clearly state:",
+    "options": [
+      "Scope, timeline, deliverables, and pricing",
+      "Jokes and memes",
+      "Only history of the company",
+      "Only pictures"
+    ],
+    "answer_index": 0,
+    "explanation": "Clarity about scope and value is critical."
+  },
+  {
+    "id": "ATSWA1-COMS-WR-0077",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Writing",
+    "subtopic": "Report Graphics",
+    "stem": "When inserting a table, include:",
+    "options": [
+      "Random colours",
+      "A clear title and source note",
+      "No captions",
+      "Excessive shading"
+    ],
+    "answer_index": 1,
+    "explanation": "Titles and sources aid interpretation."
+  },
+  {
+    "id": "ATSWA1-COMS-WR-0078",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Writing",
+    "subtopic": "Headings",
+    "stem": "Effective headings should be:",
+    "options": [
+      "Vague",
+      "Descriptive and parallel in structure",
+      "All caps always",
+      "Funny"
+    ],
+    "answer_index": 1,
+    "explanation": "Parallel, descriptive headings guide readers."
+  },
+  {
+    "id": "ATSWA1-COMS-WR-0079",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Writing",
+    "subtopic": "Proofreading",
+    "stem": "Final proofreading should check for:",
+    "options": [
+      "Grammar, numbers, names, formatting consistency",
+      "Only jokes",
+      "Only page count",
+      "Only references"
+    ],
+    "answer_index": 0,
+    "explanation": "Consistency and accuracy reduce errors."
+  },
+  {
+    "id": "ATSWA1-COMS-WR-0080",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Writing",
+    "subtopic": "Cohesion",
+    "stem": "Cohesion in writing is improved by:",
+    "options": [
+      "Pronoun references, repetition of key terms, transitions",
+      "Random synonyms",
+      "Irrelevant digressions",
+      "Acronyms everywhere"
+    ],
+    "answer_index": 0,
+    "explanation": "Cohesive ties link ideas smoothly."
+  },
+  {
+    "id": "ATSWA1-COMS-LS-0081",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Listening",
+    "subtopic": "Active Listening",
+    "stem": "Active listening involves:",
+    "options": [
+      "Interrupting often",
+      "Paraphrasing and asking clarifying questions",
+      "Avoiding eye contact",
+      "Finishing the speaker’s sentences"
+    ],
+    "answer_index": 1,
+    "explanation": "Active listening reflects understanding and invites clarification."
+  },
+  {
+    "id": "ATSWA1-COMS-LS-0082",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Listening",
+    "subtopic": "Barriers",
+    "stem": "A barrier to effective listening is:",
+    "options": [
+      "Noise and distractions",
+      "Note-taking",
+      "Eye contact",
+      "Open posture"
+    ],
+    "answer_index": 0,
+    "explanation": "Noise and distractions reduce attention."
+  },
+  {
+    "id": "ATSWA1-COMS-LS-0083",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Speaking",
+    "subtopic": "Presentation",
+    "stem": "A strong presentation opening should:",
+    "options": [
+      "Apologise for being unprepared",
+      "State purpose and hook attention",
+      "Read slides verbatim",
+      "Speak too fast"
+    ],
+    "answer_index": 1,
+    "explanation": "Start with a hook and clear purpose."
+  },
+  {
+    "id": "ATSWA1-COMS-LS-0084",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Speaking",
+    "subtopic": "Pace & Pauses",
+    "stem": "Effective presenters use pauses to:",
+    "options": [
+      "Confuse the audience",
+      "Emphasise key points and allow processing",
+      "Fill time",
+      "Signal boredom"
+    ],
+    "answer_index": 1,
+    "explanation": "Pauses aid emphasis and comprehension."
+  },
+  {
+    "id": "ATSWA1-COMS-LS-0085",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Speaking",
+    "subtopic": "Visuals",
+    "stem": "When using slides, best practice is to:",
+    "options": [
+      "Use tiny fonts",
+      "Use clear charts with minimal text",
+      "Read every word on the slide",
+      "Add distracting animations"
+    ],
+    "answer_index": 1,
+    "explanation": "Visuals should support the message, not overwhelm."
+  },
+  {
+    "id": "ATSWA1-COMS-LS-0086",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Listening",
+    "subtopic": "Questioning",
+    "stem": "Open questions are useful because they:",
+    "options": [
+      "Elicit yes/no answers",
+      "Encourage fuller responses and insights",
+      "Close discussion",
+      "Limit ideas"
+    ],
+    "answer_index": 1,
+    "explanation": "Open questions explore ideas and feelings."
+  },
+  {
+    "id": "ATSWA1-COMS-LS-0087",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Speaking",
+    "subtopic": "Nonverbal",
+    "stem": "During an interview, avoid:",
+    "options": [
+      "Leaning slightly forward",
+      "Maintaining eye contact",
+      "Crossing arms defensively",
+      "Sitting upright"
+    ],
+    "answer_index": 2,
+    "explanation": "Defensive posture can signal resistance."
+  },
+  {
+    "id": "ATSWA1-COMS-LS-0088",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Listening",
+    "subtopic": "Note-taking",
+    "stem": "A good note-taking method is:",
+    "options": [
+      "Writing every word",
+      "Using headings, bullets, and key phrases",
+      "Skipping dates and names",
+      "Avoiding structure"
+    ],
+    "answer_index": 1,
+    "explanation": "Structured notes improve recall."
+  },
+  {
+    "id": "ATSWA1-COMS-LS-0089",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Speaking",
+    "subtopic": "Q&A Handling",
+    "stem": "If you don’t know an answer during Q&A, you should:",
+    "options": [
+      "Guess confidently",
+      "Admit it and promise to revert with facts",
+      "Ignore the question",
+      "Change the subject"
+    ],
+    "answer_index": 1,
+    "explanation": "Honesty and follow-up build trust."
+  },
+  {
+    "id": "ATSWA1-COMS-LS-0090",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Speaking",
+    "subtopic": "Vocal Variety",
+    "stem": "Vocal variety refers to changes in:",
+    "options": [
+      "Font size",
+      "Pitch, pace, and volume",
+      "Slide colour",
+      "Microphone type"
+    ],
+    "answer_index": 1,
+    "explanation": "Variety helps maintain audience attention."
+  },
+  {
+    "id": "ATSWA1-COMS-TH-0091",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Theory",
+    "subtopic": "Shannon–Weaver Model",
+    "stem": "In the Shannon–Weaver model, ‘noise’ refers to:",
+    "options": [
+      "Background music only",
+      "Any interference that distorts the message",
+      "Receiver’s emotions only",
+      "Network speed only"
+    ],
+    "answer_index": 1,
+    "explanation": "Noise is any interference—physical, semantic, or psychological."
+  },
+  {
+    "id": "ATSWA1-COMS-TH-0092",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Theory",
+    "subtopic": "Encoding/Decoding",
+    "stem": "Encoding in communication is the process of:",
+    "options": [
+      "Interpreting the message",
+      "Translating ideas into symbols for transmission",
+      "Blocking the message",
+      "Providing feedback only"
+    ],
+    "answer_index": 1,
+    "explanation": "Sender encodes; receiver decodes."
+  },
+  {
+    "id": "ATSWA1-COMS-TH-0093",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Theory",
+    "subtopic": "Channels",
+    "stem": "A ‘channel’ in communication is:",
+    "options": [
+      "The medium used to transmit the message",
+      "The person who sends the message",
+      "The message itself",
+      "Noise"
+    ],
+    "answer_index": 0,
+    "explanation": "Channels include spoken, written, electronic, etc."
+  },
+  {
+    "id": "ATSWA1-COMS-TH-0094",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Theory",
+    "subtopic": "Context",
+    "stem": "Context in communication includes:",
+    "options": [
+      "Physical setting, culture, and relationship of participants",
+      "Only room size",
+      "Only nationality",
+      "Only time"
+    ],
+    "answer_index": 0,
+    "explanation": "Context shapes meaning and interpretation."
+  },
+  {
+    "id": "ATSWA1-COMS-TH-0095",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Theory",
+    "subtopic": "Ethics",
+    "stem": "An ethical communicator should:",
+    "options": [
+      "Distort data to persuade",
+      "Cite sources accurately",
+      "Plagiarise when busy",
+      "Hide conflicts of interest"
+    ],
+    "answer_index": 1,
+    "explanation": "Ethical practice includes honesty and proper attribution."
+  },
+  {
+    "id": "ATSWA1-COMS-TH-0096",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Theory",
+    "subtopic": "Intercultural",
+    "stem": "To communicate across cultures effectively, you should:",
+    "options": [
+      "Assume your style fits all",
+      "Develop cultural awareness and sensitivity",
+      "Use slang freely",
+      "Ignore nonverbal norms"
+    ],
+    "answer_index": 1,
+    "explanation": "Cultural competence reduces misunderstanding."
+  },
+  {
+    "id": "ATSWA1-COMS-TH-0097",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Theory",
+    "subtopic": "Barriers",
+    "stem": "Semantic barriers arise from:",
+    "options": [
+      "Noise from machines",
+      "Differences in word meanings and interpretation",
+      "Poor lighting",
+      "Distance"
+    ],
+    "answer_index": 1,
+    "explanation": "Semantics concerns meaning of words/symbols."
+  },
+  {
+    "id": "ATSWA1-COMS-TH-0098",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Theory",
+    "subtopic": "Persuasion",
+    "stem": "Ethos in persuasion refers to:",
+    "options": [
+      "Logic of arguments",
+      "Emotional appeal",
+      "Credibility/character of the speaker",
+      "Use of visuals"
+    ],
+    "answer_index": 2,
+    "explanation": "Ethos = credibility; logos = logic; pathos = emotion."
+  },
+  {
+    "id": "ATSWA1-COMS-TH-0099",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Theory",
+    "subtopic": "Group Communication",
+    "stem": "Groupthink is more likely when:",
+    "options": [
+      "Teams encourage dissent",
+      "Leaders invite criticism",
+      "There is pressure for unanimity and conformity",
+      "Data are rigorously tested"
+    ],
+    "answer_index": 2,
+    "explanation": "Conformity pressure suppresses critical evaluation."
+  },
+  {
+    "id": "ATSWA1-COMS-TH-0100",
+    "level": "ATSWA1",
+    "subject": "Communication Skills",
+    "topic": "Theory",
+    "subtopic": "Netiquette",
+    "stem": "Good ‘netiquette’ recommends:",
+    "options": [
+      "ALL CAPS for emphasis",
+      "Clear subject lines and polite tone",
+      "No greetings",
+      "Vague requests"
+    ],
+    "answer_index": 1,
+    "explanation": "Polite, clear, specific emails improve results."
+  }
+]
