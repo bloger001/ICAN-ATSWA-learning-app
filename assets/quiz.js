@@ -1,4 +1,4 @@
-// assets/quiz.js — multi-subject + topic filter + shuffle + analytics + safe status link
+// assets/quiz.js — multi-subject + topic filter + shuffle + analytics + review link
 
 const qs = new URLSearchParams(location.search);
 const level   = qs.get('level')   || 'ATSWA1';
@@ -47,8 +47,8 @@ function getUserKey(){
 }
 const RESULTS_KEY = `ican.results:${getUserKey()}`;
 
-/* ---------- analytics logging ---------- */
-function logAttempt(q, chosenIndex){
+/* ---------- analytics logging (with snapshot) ---------- */
+function logAttemptSnapshot(q, chosenIndex){
   const rec = {
     ts: Date.now(),
     level,
@@ -56,6 +56,8 @@ function logAttempt(q, chosenIndex){
     topic: q.topic || '',
     subtopic: q.subtopic || '',
     id: q.id || '',
+    stem: q.stem,                 // snapshot
+    options: q.options,           // snapshot
     correct_index: q.answer_index,
     chosen_index: chosenIndex,
     correct: chosenIndex === q.answer_index
@@ -78,7 +80,6 @@ function loadProgress(){
     const s = JSON.parse(localStorage.getItem(SAVE_KEY) || 'null');
     if (s && Number.isInteger(s.idx) && Array.isArray(s.questions_ids)) {
       idx = s.idx; score = s.score||0; selected = s.selected??null;
-      // verify same order/ids, otherwise reset
       const same = s.questions_ids.length && s.questions_ids.every((id,i)=>questions[i] && questions[i].id === id);
       if (!same){ idx = 0; score = 0; selected = null; }
     }
@@ -101,13 +102,12 @@ async function loadData(){
     let data = await res.json();
     if(!Array.isArray(data) || data.length === 0) throw new Error('Empty set');
 
-    // Optional filter by topic(s)
     if (topicsFilter.length){
       data = data.filter(q => topicsFilter.includes(q.topic));
       if (data.length === 0) throw new Error('No questions for selected topic(s).');
     }
 
-    questions = shuffle(data.slice()); // clone + shuffle
+    questions = shuffle(data.slice());
     loadProgress();
     render();
   }catch(err){
@@ -133,7 +133,6 @@ function render(){
   `;
   qopts.innerHTML = '';
 
-  // Shuffle options each time
   const opts = shuffle(q.options.map((text,i)=>({text,i})));
   opts.forEach(({text,i})=>{
     const d = document.createElement('div');
@@ -156,7 +155,7 @@ nextBtn.onclick = ()=>{
   if (busy) return;
   if (selected == null) return alert('Select an option first');
   const q = questions[idx];
-  logAttempt(q, selected);
+  logAttemptSnapshot(q, selected);
   if (selected === q.answer_index) score++;
   idx++; lock();
   saveProgress();
@@ -175,10 +174,11 @@ function finish(){
     <h2>Result: ${pct}%</h2>
     <p>Score: ${score} / ${questions.length}</p>
     <div class="muted small">Subject: ${subject}${topicsFilter.length ? ' — Focus: ' + topicsFilter.join(', ') : ''}</div>
-    <div class="row" style="margin-top:10px">
+    <div class="row" style="margin-top:10px; flex-wrap:wrap">
       <a class="btn" href="index.html">← Back Home</a>
       <a class="btn" href="quiz.html?level=${encodeURIComponent(level)}&subject=${encodeURIComponent(subject)}&mode=${encodeURIComponent(mode)}${topicsFilter.length ? '&topics='+encodeURIComponent(topicsFilter.join(',')) : ''}">Retry</a>
       <a class="btn" href="./status.html?v=1">View Status</a>
+      <a class="btn primary" href="./review.html?v=1">Review mistakes</a>
     </div>
   `;
 }
