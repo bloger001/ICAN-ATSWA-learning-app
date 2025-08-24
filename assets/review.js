@@ -1,6 +1,5 @@
-// assets/review.js — shows missed questions with correct answers + quick practice links
+// assets/review.js — Review missed questions with green (correct) / red (your wrong choice)
 
-// ---------- helpers ----------
 function getUserSlim(){
   try { return JSON.parse(localStorage.getItem('ican.user') || 'null'); }
   catch { return null; }
@@ -8,7 +7,6 @@ function getUserSlim(){
 const u   = getUserSlim();
 const KEY = `ican.results:${(u && u.uid) || 'guest'}`;
 
-// Map topic names to anchors in resources.html (edit as your resources page grows)
 const RESOURCE_MAP = {
   'Accounting Concepts': 'resources.html#ba-concepts',
   'Double Entry': 'resources.html#ba-double-entry',
@@ -33,25 +31,22 @@ function saveAll(rows){
 
 const root = document.getElementById('mistakes');
 
-// ---------- render ----------
 function render(){
   const rows = loadAll();
-  const mistakes = rows.filter(r => r && r.correct === false).reverse(); // latest first
+  const mistakes = rows.filter(r => r && r.correct === false).reverse(); // newest first
 
   if (!mistakes.length){
     root.innerHTML = `
       <p class="muted">No mistakes to review 🎉</p>
-      <p class="small muted">Take a quiz, then come back here to see the ones you missed.</p>
       <div class="row" style="margin-top:10px">
         <a class="btn primary" href="index.html">Start a quiz</a>
-      </div>
-    `;
+      </div>`;
     return;
   }
 
-  // Header with actions
   const clearBtn = `<button id="clearBtn" class="btn danger">Clear review</button>`;
   const count    = `<span class="pill mono">Total to review: ${mistakes.length}</span>`;
+
   let html = `
     <div class="space-between" style="align-items:center;margin-bottom:8px">
       <div>${count}</div>
@@ -59,20 +54,19 @@ function render(){
     </div>
   `;
 
-  // Cards
-  html += mistakes.map((m, i) => {
+  html += mistakes.map(m => {
     const when = new Date(m.ts || Date.now()).toLocaleString();
     const practiceUrl = `quiz.html?level=${encodeURIComponent(m.level||'ATSWA1')}` +
                         `&subject=${encodeURIComponent(m.subject||'Basic Accounting')}` +
                         `&mode=practice` +
                         (m.topic ? `&topics=${encodeURIComponent(m.topic)}` : '');
-
     const readUrl = RESOURCE_MAP[m.topic] || 'resources.html';
 
     const opts = (m.options || []).map((txt, idx) => {
       const isCorrect = idx === m.correct_index;
       const isChosen  = idx === m.chosen_index;
-      // style classes; your CSS already makes .opt pretty — we just hint correctness
+
+      // classes to match CSS (green = good, red = bad)
       const cls = [
         'opt',
         isCorrect ? 'good' : '',
@@ -80,11 +74,12 @@ function render(){
         isChosen ? 'selected' : ''
       ].join(' ').trim();
 
-      return `<div class="${cls}">
-                ${txt}
-                ${isCorrect ? `<span class="pill small mono" style="margin-left:8px">Correct</span>` : ``}
-                ${isChosen && !isCorrect ? `<span class="pill small mono" style="margin-left:8px">Your answer</span>` : ``}
-              </div>`;
+      return `
+        <div class="${cls}">
+          ${txt}
+          ${isCorrect ? `<span class="pill small mono" style="margin-left:8px">Correct</span>` : ``}
+          ${isChosen && !isCorrect ? `<span class="pill small mono" style="margin-left:8px">Your answer</span>` : ``}
+        </div>`;
     }).join('');
 
     return `
@@ -97,20 +92,16 @@ function render(){
           <a class="btn primary" href="${readUrl}">Read this</a>
           <button class="btn" data-remove="${m.ts}" title="Remove this from review">Mark as learned</button>
         </div>
-      </div>
-    `;
+      </div>`;
   }).join('');
 
   root.innerHTML = html;
 
-  // Hook up actions
   document.getElementById('clearBtn').onclick = () => {
-    // Keep only correct answers; drop mistakes
-    const kept = rows.filter(r => r && r.correct === true);
+    const kept = rows.filter(r => r && r.correct === true); // drop mistakes only
     saveAll(kept);
     render();
   };
-
   root.querySelectorAll('button[data-remove]').forEach(btn => {
     btn.onclick = () => {
       const ts = Number(btn.getAttribute('data-remove'));
