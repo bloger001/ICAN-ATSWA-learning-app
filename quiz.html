@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Quiz • ICAN Prep</title>
+  <link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="space-between">
+      <div>
+        <h1 id="title">Quiz</h1>
+        <p id="meta" class="muted small"></p>
+      </div>
+      <div id="timer" class="pill">--:--</div>
+    </header>
+
+    <section class="card" id="qwrap">
+      <div id="qstem"></div>
+      <div id="qopts" class="opts"></div>
+      <div class="row">
+        <button id="nextBtn" class="btn">Next</button>
+        <button id="submitBtn" class="btn primary">Submit</button>
+      </div>
+    </section>
+
+    <section id="result" class="card" style="display:none"></section>
+  </div>
+
+  <script src="assets/quiz.js"></script>
+</body>
+</html>
