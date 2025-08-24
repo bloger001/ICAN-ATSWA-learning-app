@@ -3,120 +3,53 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>ICAN Prep Journey</title>
-  <link rel="stylesheet" href="./assets/app.css?v=19"/>
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
-  <meta http-equiv="Pragma" content="no-cache"/>
-  <meta http-equiv="Expires" content="0"/>
+  <title>ICAN Prep — Home</title>
+  <link rel="stylesheet" href="./assets/app.css?v=25"/>
 </head>
 <body>
   <div class="wrap">
-    <header>
-      <h1>ICAN Prep Journey</h1>
-      <p class="muted">Your path from ATSWA to Final — study smart, pass with confidence.</p>
+    <header class="space-between" style="align-items:center">
+      <h1>ICAN Prep</h1>
+      <div class="row" style="gap:8px">
+        <button id="loginBtn" class="btn primary">Continue with Google</button>
+        <button id="logoutBtn" class="btn" style="display:none">Logout</button>
+        <div id="profile"></div>
+      </div>
     </header>
 
-    <!-- Auth panel -->
-    <section class="card" id="authCard">
-      <div id="authArea">
-        <button id="loginBtn" class="btn primary">Continue with Google</button>
-      </div>
+    <section class="card">
+      <h2>Welcome</h2>
+      <p class="muted small">Practice ATSWA & ICAN exams. Login saves your progress & syncs to leaderboard.</p>
     </section>
 
-    <!-- Quick access tiles -->
-    <section class="tiles" style="margin-top:16px">
-      <a class="tile" href="./resources.html?v=19">
-        <div class="muted small">Study</div>
-        <div>Resources</div>
+    <!-- tiles for quiz subjects -->
+    <section class="grid">
+      <a class="tile" href="quiz.html?level=ATSWA1&subject=Basic%20Accounting&mode=practice">
+        <div class="muted small">ATSWA I</div>
+        <div>Basic Accounting</div>
       </a>
-
-      <a class="tile" href="./status.html?v=19">
-        <div class="muted small">Progress</div>
-        <div>Status</div>
+      <a class="tile" href="quiz.html?level=ATSWA1&subject=Economics&mode=practice">
+        <div class="muted small">ATSWA I</div>
+        <div>Economics</div>
       </a>
-
-      <a class="tile" href="./leaderbored.html?v=19">
-        <div class="muted small">Community</div>
-        <div>Leaderboard</div>
+      <a class="tile" href="quiz.html?level=ATSWA1&subject=Business%20Law&mode=practice">
+        <div class="muted small">ATSWA I</div>
+        <div>Business Law</div>
       </a>
-
-      <a class="tile" href="./admin.html?v=19">
-        <div class="muted small">Admin</div>
-        <div>Dashboard</div>
+      <a class="tile" href="quiz.html?level=ATSWA1&subject=Communication%20Skills&mode=practice">
+        <div class="muted small">ATSWA I</div>
+        <div>Communication Skills</div>
       </a>
     </section>
 
-    <!-- ATSWA 1 SUBJECTS (THIS IS THE PART YOU WERE MISSING) -->
-    <section class="card" style="margin-top:18px">
-      <h2>ATSWA 1 — Start a quiz</h2>
-      <div class="tiles">
-        <a class="tile" href="./quiz.html?level=ATSWA1&subject=Basic%20Accounting&mode=practice">
-          <div class="muted small">ATSWA 1</div>
-          <div>Basic Accounting</div>
-        </a>
-
-        <a class="tile" href="./quiz.html?level=ATSWA1&subject=Economics&mode=practice">
-          <div class="muted small">ATSWA 1</div>
-          <div>Economics</div>
-        </a>
-
-        <a class="tile" href="./quiz.html?level=ATSWA1&subject=Business%20Law&mode=practice">
-          <div class="muted small">ATSWA 1</div>
-          <div>Business Law</div>
-        </a>
-
-        <a class="tile" href="./quiz.html?level=ATSWA1&subject=Communication%20Skills&mode=practice">
-          <div class="muted small">ATSWA 1</div>
-          <div>Communication Skills</div>
-        </a>
-      </div>
-      <p class="small muted" style="margin-top:8px">
-        Tip: Your attempts are saved for analysis in <b>Status</b>. Use <i>Review mistakes</i> to practice weak topics.
-      </p>
+    <section class="card">
+      <a class="btn" href="status.html">View Status</a>
+      <a class="btn" href="resources.html">Study Resources</a>
+      <a class="btn" href="leaderboard.html">Leaderboard</a>
     </section>
-
-    <footer style="margin-top:32px">
-      <p class="muted small">
-        Built by your fellow accounting students for practice —
-        created by <b>Silva Brutus</b>, student of <b>NSUK</b>.<br/>
-        Contact: <a href="mailto:offixcialbloger@gmail.com">offixcialbloger@gmail.com</a>
-      </p>
-    </footer>
   </div>
 
-  <!-- Firebase auth: show profile when signed in -->
-  <script type="module">
-    import { auth } from './assets/firebase.js';
-    import {
-      GoogleAuthProvider, signInWithPopup, onAuthStateChanged, signOut
-    } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-auth.js";
-
-    const authArea = document.getElementById('authArea');
-
-    function renderSignedOut(){
-      authArea.innerHTML = `<button id="loginBtn" class="btn primary">Continue with Google</button>`;
-      document.getElementById('loginBtn').onclick = async ()=>{
-        try { await signInWithPopup(auth, new GoogleAuthProvider()); }
-        catch(e){ alert('Login failed: ' + e.message); }
-      };
-    }
-
-    function renderSignedIn(user){
-      authArea.innerHTML = `
-        <div class="row space-between" style="align-items:center">
-          <div>
-            <p><b>${user.displayName || user.email}</b></p>
-            <p class="muted small">${user.email}</p>
-          </div>
-          <button id="logoutBtn" class="btn">Sign out</button>
-        </div>`;
-      document.getElementById('logoutBtn').onclick = ()=> signOut(auth);
-      try { localStorage.setItem('ican.user', JSON.stringify({
-        uid: user.uid, email: user.email, displayName: user.displayName
-      })); } catch {}
-    }
-
-    onAuthStateChanged(auth, (user)=> user ? renderSignedIn(user) : renderSignedOut());
-  </script>
+  <script type="module" src="./assets/firebase.js?v=25"></script>
+  <script type="module" src="./assets/app.js?v=25"></script>
 </body>
 </html>
