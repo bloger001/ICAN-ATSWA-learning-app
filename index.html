@@ -1,188 +1,111 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>ICAN Prep Journey</title>
-  <meta name="theme-color" content="#0b0b0c">
+  <meta name="description" content="Your path from ATSWA to Final — study smart, pass with confidence." />
 
-  <!-- Site styles -->
-  <link rel="stylesheet" href="./assets/app.css?v=6">
+  <!-- Prevent stale cached HTML on iOS/Safari -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
 
-  <!-- Firebase SDKs (compat for simplicity) -->
-  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+  <link rel="stylesheet" href="./assets/app.css?v=9" />
 </head>
 <body>
   <div class="wrap">
-    <!-- Header -->
-    <header class="space-between">
+
+    <!-- Top bar -->
+    <header class="space-between" style="align-items:center">
       <div>
         <h1>ICAN Prep Journey</h1>
         <p class="muted">Your path from ATSWA to Final — study smart, pass with confidence.</p>
       </div>
 
-      <!-- Right side: auth area -->
-      <div class="row" id="authArea">
-        <!-- Logged OUT -->
-        <button id="googleBtn" class="btn primary">Continue with Google</button>
-
-        <!-- Logged IN (hidden by default) -->
-        <div id="userBadge" class="row" style="display:none; align-items:center; gap:10px">
-          <div id="avatar" style="
-            width:36px;height:36px;border-radius:50%;
-            background:#1b1b20;display:flex;align-items:center;justify-content:center;
-            font-weight:700;color:#8bd8b4;border:1px solid var(--border);
-          ">U</div>
-          <div style="display:flex;flex-direction:column;line-height:1.1">
-            <span id="displayName" style="font-weight:600">User</span>
-            <span id="displayEmail" class="muted small"></span>
-          </div>
-          <button id="signOutBtn" class="btn">Sign out</button>
-        </div>
+      <!-- User badge + Sign out (shown when logged in) -->
+      <div class="row" style="justify-content:flex-end;gap:8px">
+        <span id="userBadge" class="pill" style="display:none">👋</span>
+        <button id="signOutBtn" class="btn" style="display:none">Sign out</button>
       </div>
     </header>
 
-    <!-- Logged-out welcome -->
-    <section id="welcome" class="card">
+    <!-- Welcome card (shown when LOGGED OUT) -->
+    <section id="welcomeCard" class="card" style="margin-top:12px">
       <h2>Welcome</h2>
       <p class="muted">Log in with Google to see levels, start quizzes, and track your progress.</p>
       <div class="row" style="margin-top:8px">
-        <button class="btn primary" id="googleBtn2">Continue with Google</button>
+        <button id="googleBtn" class="btn primary">Continue with Google</button>
         <a class="btn" href="resources.html">Browse resources</a>
       </div>
-      <div class="muted small" style="margin-top:10px">
-        Built by your fellow accounting students — created by <strong>Silva Brutus</strong>, student of <strong>NSUK</strong>.<br/>
+      <p class="small muted" style="margin-top:10px">
+        Built by your fellow accounting students — created by <b>Silva Brutus</b>, student of <b>NSUK</b>.<br/>
         Contact: <a href="mailto:offixcialbloger@gmail.com">offixcialbloger@gmail.com</a>
-      </div>
+      </p>
     </section>
 
-    <!-- Home (visible after login) -->
-    <section id="home" class="card" style="display:none">
-      <h2>Start Learning</h2>
-      <p class="muted small">Choose a subject to practice. The quiz will load questions for that subject automatically.</p>
+    <!-- Tiles (shown when LOGGED IN) -->
+    <section id="tiles" class="grid" style="display:none; margin-top:12px">
+      <!-- ATSWA 1 subjects -->
+      <a class="tile" href="quiz.html?level=ATSWA1&subject=Basic%20Accounting&mode=practice">
+        <div class="muted small">ATSWA 1</div>
+        <div>Basic Accounting</div>
+      </a>
 
-      <div class="grid" style="margin-top:12px">
-        <a class="tile" href="quiz.html?level=ATSWA1&subject=Basic%20Accounting&mode=practice">
-          ATSWA 1 — Basic Accounting
-        </a>
-        <a class="tile" href="quiz.html?level=ATSWA1&subject=Economics&mode=practice">
-          ATSWA 1 — Economics
-        </a>
-        <a class="tile" href="quiz.html?level=ATSWA1&subject=Business%20Law&mode=practice">
-          ATSWA 1 — Business Law
-        </a>
-        <a class="tile" href="quiz.html?level=ATSWA1&subject=Communication%20Skills&mode=practice">
-          ATSWA 1 — Communication Skills
-        </a>
-      </div>
+      <a class="tile" href="quiz.html?level=ATSWA1&subject=Economics&mode=practice">
+        <div class="muted small">ATSWA 1</div>
+        <div>Economics</div>
+      </a>
 
-      <div class="row" style="margin-top:14px">
-        <a class="btn" href="leaderboard.html">Leaderboard</a>
-        <a class="btn" href="resources.html">Resources & Flashcards</a>
-        <a class="btn" href="admin.html">Admin</a>
-      </div>
+      <a class="tile" href="quiz.html?level=ATSWA1&subject=Business%20Law&mode=practice">
+        <div class="muted small">ATSWA 1</div>
+        <div>Business Law</div>
+      </a>
 
-      <div id="who" class="pill" style="margin-top:12px"></div>
+      <a class="tile" href="quiz.html?level=ATSWA1&subject=Communication%20Skills&mode=practice">
+        <div class="muted small">ATSWA 1</div>
+        <div>Communication Skills</div>
+      </a>
 
-      <div class="muted small" style="margin-top:10px">
-        Not affiliated with ICAN — for practice & learning only.
-      </div>
+      <!-- More pages -->
+      <a class="tile" href="leaderbored.html">
+        <div class="muted small">Community</div>
+        <div>Leaderboard</div>
+      </a>
+      <a class="tile" href="admin.html">
+        <div class="muted small">Admin</div>
+        <div>Admin Panel</div>
+      </a>
+      <a class="tile" href="resources.html">
+        <div class="muted small">Study</div>
+        <div>Resources</div>
+      </a>
     </section>
+
+    <!-- Info card -->
+    <section class="card" style="margin-top:12px">
+      <h2>How it works</h2>
+      <ul>
+        <li>Pick a subject → answer MCQs → see score instantly.</li>
+        <li>Practice mode today; timed exams & leaderboard coming next.</li>
+        <li>Works offline after first load (full PWA coming later).</li>
+      </ul>
+      <p class="small muted">
+        P.S. If you ever see the login button after you’ve already signed in, just wait a second — we optimised this page to remember your session instantly.
+      </p>
+    </section>
+
   </div>
 
-  <!-- Auth + UI logic -->
+  <!-- Optional: unregister any old service worker while we stabilise -->
   <script>
-    // Firebase config (your project)
-    const firebaseConfig = {
-      apiKey: "AIzaSyBRGM431CHZ3UMUHIc4Q-S1aGDMfrbu7Gs",
-      authDomain: "ican-kit-prep.firebaseapp.com",
-      projectId: "ican-kit-prep",
-      appId: "1:354385037521:web:f3a7265f66983942581df0"
-    };
-
-    // Initialize (safe to call once)
-    if (!firebase.apps.length) firebase.initializeApp(firebaseConfig);
-    const auth = firebase.auth();
-    const provider = new firebase.auth.GoogleAuthProvider();
-
-    // UI refs
-    const welcome = document.getElementById('welcome');
-    const home = document.getElementById('home');
-    const googleBtn = document.getElementById('googleBtn');
-    const googleBtn2 = document.getElementById('googleBtn2');
-    const userBadge = document.getElementById('userBadge');
-    const signOutBtn = document.getElementById('signOutBtn');
-    const displayNameEl = document.getElementById('displayName');
-    const displayEmailEl = document.getElementById('displayEmail');
-    const avatarEl = document.getElementById('avatar');
-    const who = document.getElementById('who');
-
-    function toInitials(nameOrEmail){
-      let base = (nameOrEmail || '').trim();
-      if (!base) return 'U';
-      if (base.includes('@')) base = base.split('@')[0];
-      const parts = base.replace(/[_\.]+/g,' ').split(' ').filter(Boolean);
-      const first = parts[0]?.[0] || 'U';
-      const second = parts[1]?.[0] || '';
-      return (first + second).toUpperCase();
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(list => list.forEach(r => r.unregister()));
     }
-
-    function setAvatar(user){
-      const photo = user.photoURL;
-      if (photo){
-        avatarEl.style.backgroundImage = `url(${photo})`;
-        avatarEl.style.backgroundSize = 'cover';
-        avatarEl.style.backgroundPosition = 'center';
-        avatarEl.textContent = '';
-      } else {
-        avatarEl.style.backgroundImage = '';
-        avatarEl.textContent = toInitials(user.displayName || user.email);
-      }
-    }
-
-    function showHome(user){
-      // swap header controls
-      if (googleBtn) googleBtn.style.display = 'none';
-      if (googleBtn2) googleBtn2.style.display = 'none';
-      userBadge.style.display = 'flex';
-
-      // fill badge
-      const name = user.displayName || (user.email ? user.email.split('@')[0] : 'User');
-      displayNameEl.textContent = name;
-      displayEmailEl.textContent = user.email || '';
-      setAvatar(user);
-
-      // show main tiles
-      if (welcome) welcome.style.display = 'none';
-      if (home) home.style.display = '';
-      if (who) who.textContent = user.email || '';
-    }
-
-    function showWelcome(){
-      userBadge.style.display = 'none';
-      if (googleBtn) googleBtn.style.display = '';
-      if (googleBtn2) googleBtn2.style.display = '';
-      if (home) home.style.display = 'none';
-      if (welcome) welcome.style.display = '';
-      if (who) who.textContent = '';
-    }
-
-    async function signIn(){
-      try {
-        await auth.signInWithPopup(provider);
-      } catch (e) {
-        // iOS/Safari popup may be blocked → fallback to redirect
-        try { await auth.signInWithRedirect(provider); }
-        catch (err){ alert("Google sign-in failed. Check Authorized domains in Firebase."); }
-      }
-    }
-
-    if (googleBtn) googleBtn.onclick = signIn;
-    if (googleBtn2) googleBtn2.onclick = signIn;
-    signOutBtn.onclick = ()=>auth.signOut();
-
-    auth.onAuthStateChanged(u => u ? showHome(u) : showWelcome());
   </script>
+
+  <!-- App logic (auth, UI) -->
+  <script type="module" src="./assets/app.js?v=9"></script>
 </body>
 </html>
