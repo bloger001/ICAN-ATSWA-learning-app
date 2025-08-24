@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>My Status — ICAN Prep</title>
+  <link rel="stylesheet" href="./assets/app.css?v=11"/>
+</head>
+<body>
+  <div class="wrap">
+    <header class="space-between" style="align-items:center">
+      <h1>Your Status</h1>
+      <div class="row">
+        <a class="btn" href="index.html">← Home</a>
+        <button id="resetBtn" class="btn">Reset stats</button>
+      </div>
+    </header>
+
+    <section class="card" id="summary">Loading…</section>
+
+    <section class="card" id="bySubject" style="margin-top:12px">
+      <h2>By Subject</h2>
+      <div id="subjectGrid" class="grid"></div>
+    </section>
+
+    <section class="card" id="focus" style="margin-top:12px">
+      <h2>Focus Areas (Weak Topics)</h2>
+      <div id="focusList"></div>
+    </section>
+
+    <section class="card" id="missed" style="margin-top:12px">
+      <h2>Most Missed Questions</h2>
+      <div id="missedList"></div>
+    </section>
+
+    <section class="card" id="resources" style="margin-top:12px">
+      <h2>Suggested Reading</h2>
+      <div id="resourceList"></div>
+      <p class="muted small" style="margin-top:8px">
+        We’ll keep enriching these mappings. You can add your own links in <code>assets/status.js</code>.
+      </p>
+    </section>
+  </div>
+
+  <script type="module" src="./assets/status.js?v=11"></script>
+</body>
+</html>
