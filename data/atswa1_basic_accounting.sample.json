@@ -1,0 +1,29 @@
+[
+  {
+    "id": "ATSWA1-BA-TRBAL-0001",
+    "level": "ATSWA1",
+    "subject": "Basic Accounting",
+    "topic": "Trial Balance",
+    "subtopic": "Errors & Suspense A/c",
+    "stem": "Which error would NOT affect the agreement of a trial balance?",
+    "options": [
+      "Omitting a purchase invoice",
+      "Posting cash to a wrong customer account",
+      "Recording ₦5,000 as ₦500",
+      "Debiting wages instead of salaries"
+    ],
+    "answer_index": 3,
+    "explanation": "Classification error keeps Dr/Cr totals equal; TB still agrees."
+  },
+  {
+    "id": "ATSWA1-BA-DEP-0002",
+    "level": "ATSWA1",
+    "subject": "Basic Accounting",
+    "topic": "Depreciation",
+    "subtopic": "Straight-line",
+    "stem": "Asset cost ₦120,000; residual ₦0; life 5 years. Annual depreciation is:",
+    "options": ["₦20,000","₦24,000","₦12,000","₦30,000"],
+    "answer_index": 0,
+    "explanation": "Straight-line = (Cost − Residual)/Life = ₦120,000/5."
+  }
+]
