@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>ICAN Prep Journey</title>
-  <link rel="stylesheet" href="./assets/app.css?v=17"/>
+  <link rel="stylesheet" href="./assets/app.css?v=18"/>
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
   <meta http-equiv="Pragma" content="no-cache"/>
   <meta http-equiv="Expires" content="0"/>
@@ -23,32 +23,59 @@
       </div>
     </section>
 
-    <!-- Tiles (dashboard) -->
-    <section class="tiles" style="margin-top:20px">
+    <!-- QUICK ACCESS -->
+    <section class="tiles" style="margin-top:16px">
+      <a class="tile" href="./status.html?v=18">
+        <div class="muted small">Analytics</div>
+        <div>My Status</div>
+      </a>
 
-      <a class="tile" href="./resources.html">
+      <a class="tile" href="./resources.html?v=18">
         <div class="muted small">Study</div>
         <div>Resources</div>
       </a>
 
-      <a class="tile" href="./status.html?v=17">
-        <div class="muted small">Progress</div>
-        <div>Status</div>
-      </a>
-
-      <a class="tile" href="./leaderbored.html?v=17">
+      <a class="tile" href="./leaderbored.html?v=18">
         <div class="muted small">Community</div>
         <div>Leaderboard</div>
       </a>
 
-      <a class="tile" href="./admin.html">
+      <a class="tile" href="./admin.html?v=18">
         <div class="muted small">Admin</div>
         <div>Dashboard</div>
       </a>
-
     </section>
 
-    <footer style="margin-top:40px">
+    <!-- ATSWA 1 SUBJECTS -->
+    <section class="card" style="margin-top:18px">
+      <h2>ATSWA 1 — Start a quiz</h2>
+      <div class="tiles">
+        <a class="tile" href="./quiz.html?level=ATSWA1&subject=Basic%20Accounting&mode=practice">
+          <div class="muted small">ATSWA 1</div>
+          <div>Basic Accounting</div>
+        </a>
+
+        <a class="tile" href="./quiz.html?level=ATSWA1&subject=Economics&mode=practice">
+          <div class="muted small">ATSWA 1</div>
+          <div>Economics</div>
+        </a>
+
+        <a class="tile" href="./quiz.html?level=ATSWA1&subject=Business%20Law&mode=practice">
+          <div class="muted small">ATSWA 1</div>
+          <div>Business Law</div>
+        </a>
+
+        <a class="tile" href="./quiz.html?level=ATSWA1&subject=Communication%20Skills&mode=practice">
+          <div class="muted small">ATSWA 1</div>
+          <div>Communication Skills</div>
+        </a>
+      </div>
+      <p class="small muted" style="margin-top:8px">
+        Tip: Your attempts are saved for analysis in <b>My Status</b>. Use <i>Review mistakes</i> to practice weak topics.
+      </p>
+    </section>
+
+    <footer style="margin-top:32px">
       <p class="muted small">
         Built by your fellow accounting students for practice —
         created by <b>Silva Brutus</b>, student of <b>NSUK</b>.<br/>
@@ -70,9 +97,8 @@
       authArea.innerHTML = `<button id="loginBtn" class="btn primary">Continue with Google</button>`;
       document.getElementById('loginBtn').onclick = async ()=>{
         const provider = new GoogleAuthProvider();
-        try {
-          await signInWithPopup(auth, provider);
-        } catch(e){ alert('Login failed: '+e.message); }
+        try { await signInWithPopup(auth, provider); }
+        catch(e){ alert('Login failed: ' + e.message); }
       };
     }
 
@@ -87,6 +113,10 @@
         </div>
       `;
       document.getElementById('logoutBtn').onclick = ()=> signOut(auth);
+      // cache for local status/review keys
+      try { localStorage.setItem('ican.user', JSON.stringify({
+        uid: user.uid, email: user.email, displayName: user.displayName
+      })); } catch {}
     }
 
     onAuthStateChanged(auth, (user)=>{
