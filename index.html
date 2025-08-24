@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>ICAN Prep Journey</title>
+  <link rel="manifest" href="assets/manifest.json">
+  <link rel="stylesheet" href="assets/app.css">
+  <meta name="theme-color" content="#0b0b0c">
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <header class="center">
+      <h1>ICAN Prep Journey</h1>
+      <p>Your path from ATSWA to Final</p>
+    </header>
+
+    <section id="login-view" class="card center">
+      <button id="googleBtn" class="btn primary">Continue with Google</button>
+      <p class="muted" style="margin-top:12px">
+        Built by your fellow accounting students for practice — created by
+        <strong>Silva Brutus</strong>, a proud student of <strong>NSUK</strong>.<br/>
+        Contact: <a href="mailto:offixcialbloger@gmail.com">offixcialbloger@gmail.com</a>
+      </p>
+    </section>
+
+    <section id="home-view" class="card" style="display:none">
+      <h2>Choose your level</h2>
+      <div class="grid">
+        <a class="tile" href="quiz.html?level=ATSWA1&subject=Basic%20Accounting&mode=practice">ATSWA 1 — Basic Accounting</a>
+        <a class="tile disabled">ATSWA 1 — Economics (coming)</a>
+        <a class="tile disabled">ATSWA 2 (soon)</a>
+        <a class="tile disabled">ATSWA 3 (soon)</a>
+        <a class="tile disabled">Professional (soon)</a>
+        <a class="tile disabled">Final (soon)</a>
+      </div>
+
+      <div class="row">
+        <a class="btn" href="leaderboard.html">View Leaderboard</a>
+        <a class="btn" href="resources.html">Resources</a>
+        <a class="btn" href="admin.html">Admin</a>
+        <button id="signOutBtn" class="btn danger">Sign out</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
