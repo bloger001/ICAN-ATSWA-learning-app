@@ -12,7 +12,7 @@
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
 
-  <link rel="stylesheet" href="./assets/app.css?v=9" />
+  <link rel="stylesheet" href="./assets/app.css?v=10" />
 </head>
 <body>
   <div class="wrap">
@@ -34,7 +34,7 @@
     <!-- Welcome card (shown when LOGGED OUT) -->
     <section id="welcomeCard" class="card" style="margin-top:12px">
       <h2>Welcome</h2>
-      <p class="muted">Log in with Google to see levels, start quizzes, and track your progress.</p>
+      <p class="muted">Log in with Google to see levels, start quizzes, track progress, and view your status analytics.</p>
       <div class="row" style="margin-top:8px">
         <button id="googleBtn" class="btn primary">Continue with Google</button>
         <a class="btn" href="resources.html">Browse resources</a>
@@ -47,6 +47,12 @@
 
     <!-- Tiles (shown when LOGGED IN) -->
     <section id="tiles" class="grid" style="display:none; margin-top:12px">
+      <!-- Quick access: Status -->
+      <a class="tile" href="status.html?v=1">
+        <div class="muted small">Analytics</div>
+        <div>My Status</div>
+      </a>
+
       <!-- ATSWA 1 subjects -->
       <a class="tile" href="quiz.html?level=ATSWA1&subject=Basic%20Accounting&mode=practice">
         <div class="muted small">ATSWA 1</div>
@@ -88,11 +94,11 @@
       <h2>How it works</h2>
       <ul>
         <li>Pick a subject → answer MCQs → see score instantly.</li>
+        <li><b>My Status</b> shows your strengths, weak topics, and targeted practice links.</li>
         <li>Practice mode today; timed exams & leaderboard coming next.</li>
-        <li>Works offline after first load (full PWA coming later).</li>
       </ul>
       <p class="small muted">
-        P.S. If you ever see the login button after you’ve already signed in, just wait a second — we optimised this page to remember your session instantly.
+        P.S. If you ever see the login button after you’ve already signed in, just wait a moment — the page restores your session automatically.
       </p>
     </section>
 
@@ -106,6 +112,6 @@
   </script>
 
   <!-- App logic (auth, UI) -->
-  <script type="module" src="./assets/app.js?v=9"></script>
+  <script type="module" src="./assets/app.js?v=10"></script>
 </body>
 </html>
