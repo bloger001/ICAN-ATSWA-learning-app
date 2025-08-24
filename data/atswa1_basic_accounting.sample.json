@@ -6,9 +6,14 @@
     "topic": "Accounting Concepts",
     "subtopic": "Business Entity",
     "stem": "Which accounting concept states that the owner’s personal transactions must be kept separate from the business?",
-    "options": ["Going Concern", "Business Entity", "Consistency", "Accrual Basis"],
+    "options": [
+      "Prudence",
+      "Business Entity",
+      "Consistency",
+      "Materiality"
+    ],
     "answer_index": 1,
-    "explanation": "The business entity concept separates business affairs from those of the owner."
+    "explanation": "The business entity concept separates the affairs of the owner from those of the business."
   },
   {
     "id": "ATSWA1-BA-CONCEPT-0002",
@@ -17,7 +22,12 @@
     "topic": "Accounting Concepts",
     "subtopic": "Going Concern",
     "stem": "The assumption that a business will continue to operate for the foreseeable future refers to which concept?",
-    "options": ["Materiality", "Going Concern", "Accrual Basis", "Prudence"],
+    "options": [
+      "Materiality",
+      "Going Concern",
+      "Accrual Basis",
+      "Prudence"
+    ],
     "answer_index": 1,
     "explanation": "Going concern assumes the business will not liquidate soon."
   },
@@ -92,7 +102,12 @@
     "topic": "Depreciation",
     "subtopic": "Straight-line",
     "stem": "A machine costs ₦100,000, has residual value ₦10,000, and life 9 years. Annual depreciation is:",
-    "options": ["₦9,000", "₦10,000", "₦11,000", "₦12,000"],
+    "options": [
+      "₦9,000",
+      "₦10,000",
+      "₦11,000",
+      "₦12,000"
+    ],
     "answer_index": 2,
     "explanation": "(100,000 − 10,000)/9 = ₦10,000 per year."
   },
@@ -103,7 +118,12 @@
     "topic": "Incomplete Records",
     "subtopic": "Single Entry",
     "stem": "Incomplete records are usually converted to double entry by preparing:",
-    "options": ["Bank Reconciliation", "Control Accounts", "Statement of Affairs", "Cash Flow Statement"],
+    "options": [
+      "Bank Reconciliation",
+      "Control Accounts",
+      "Statement of Affairs",
+      "Cash Flow Statement"
+    ],
     "answer_index": 2,
     "explanation": "Statement of Affairs helps to ascertain opening capital."
   },
@@ -130,7 +150,12 @@
     "topic": "Final Accounts",
     "subtopic": "Accruals",
     "stem": "Accrued expenses are shown in the financial statements as:",
-    "options": ["Asset in balance sheet", "Liability in balance sheet", "Deducted from capital", "Ignored"],
+    "options": [
+      "Asset in balance sheet",
+      "Liability in balance sheet",
+      "Deducted from capital",
+      "Ignored"
+    ],
     "answer_index": 1,
     "explanation": "Accrued expenses are current liabilities."
   },
@@ -141,7 +166,12 @@
     "topic": "Costing",
     "subtopic": "Classification",
     "stem": "Rent of factory building is classified as:",
-    "options": ["Direct cost", "Indirect cost", "Prime cost", "Selling cost"],
+    "options": [
+      "Direct cost",
+      "Indirect cost",
+      "Prime cost",
+      "Selling cost"
+    ],
     "answer_index": 1,
     "explanation": "Factory rent is part of indirect overheads."
   },
@@ -152,7 +182,12 @@
     "topic": "Journals",
     "subtopic": "Correction of Errors",
     "stem": "Which book is used to correct errors in the ledger?",
-    "options": ["Cash Book", "Petty Cash Book", "Journal Proper", "Trial Balance"],
+    "options": [
+      "Cash Book",
+      "Petty Cash Book",
+      "Journal Proper",
+      "Trial Balance"
+    ],
     "answer_index": 2,
     "explanation": "The journal proper records adjusting/correcting entries."
   },
@@ -195,7 +230,12 @@
     "topic": "Ledger",
     "subtopic": "Classification",
     "stem": "A ledger that contains accounts of trade receivables is:",
-    "options": ["Nominal Ledger", "Receivables Ledger", "Payables Ledger", "General Ledger"],
+    "options": [
+      "Nominal Ledger",
+      "Receivables Ledger",
+      "Payables Ledger",
+      "General Ledger"
+    ],
     "answer_index": 1,
     "explanation": "Receivables ledger keeps records of customers owing the business."
   },
@@ -222,7 +262,12 @@
     "topic": "Profit and Loss",
     "subtopic": "Classification",
     "stem": "Carriage outwards is treated as:",
-    "options": ["Selling expense", "Direct cost", "Factory overhead", "Capital expenditure"],
+    "options": [
+      "Selling expense",
+      "Direct cost",
+      "Factory overhead",
+      "Capital expenditure"
+    ],
     "answer_index": 0,
     "explanation": "Carriage outwards is a selling/distribution expense."
   },
@@ -233,7 +278,12 @@
     "topic": "Profit and Loss",
     "subtopic": "Classification",
     "stem": "Carriage inwards is classified as:",
-    "options": ["Direct cost added to purchases", "Selling expense", "Indirect expense", "Administrative expense"],
+    "options": [
+      "Direct cost added to purchases",
+      "Selling expense",
+      "Indirect expense",
+      "Administrative expense"
+    ],
     "answer_index": 0,
     "explanation": "Carriage inwards increases the cost of goods purchased."
   },
@@ -260,8 +310,653 @@
     "topic": "Discounts",
     "subtopic": "Types",
     "stem": "Discount received is classified as:",
-    "options": ["Income", "Expense", "Asset", "Liability"],
+    "options": [
+      "Income",
+      "Expense",
+      "Asset",
+      "Liability"
+    ],
     "answer_index": 0,
     "explanation": "Discount received reduces payments to suppliers and is income."
+  },
+  {
+    "id": "ATSWA1-BA-DE-0021",
+    "level": "ATSWA1",
+    "subject": "Basic Accounting",
+    "topic": "Double Entry",
+    "subtopic": "Rules",
+    "stem": "Paid supplier ₦150,000 by bank. The correct entry is:",
+    "options": [
+      "Dr Payables Cr Bank",
+      "Dr Purchases Cr Bank",
+      "Dr Bank Cr Payables",
+      "Dr Payables Cr Cash"
+    ],
+    "answer_index": 0,
+    "explanation": "Settlement of liability reduces payables (debit) and reduces bank (credit)."
+  },
+  {
+    "id": "ATSWA1-BA-DE-0022",
+    "level": "ATSWA1",
+    "subject": "Basic Accounting",
+    "topic": "Books of Prime Entry",
+    "subtopic": "Sales Day Book",
+    "stem": "Credit sales are first recorded in the:",
+    "options": [
+      "Sales Day Book",
+      "Cash Book",
+      "Journal Proper",
+      "Purchases Day Book"
+    ],
+    "answer_index": 0,
+    "explanation": "Books of prime entry capture source transactions before posting to ledgers."
+  },
+  {
+    "id": "ATSWA1-BA-DE-0023",
+    "level": "ATSWA1",
+    "subject": "Basic Accounting",
+    "topic": "Ledger",
+    "subtopic": "Classification",
+    "stem": "Where are expense accounts kept?",
+    "options": [
+      "Receivables Ledger",
+      "Payables Ledger",
+      "General (Nominal) Ledger",
+      "Cash Book"
+    ],
+    "answer_index": 2,
+    "explanation": "Nominal/general ledger holds income and expense accounts."
+  },
+  {
+    "id": "ATSWA1-BA-DE-0024",
+    "level": "ATSWA1",
+    "subject": "Basic Accounting",
+    "topic": "Cash Book",
+    "subtopic": "Three‑Column",
+    "stem": "In a three‑column cash book, bank charges are recorded on the ______ side of the bank column.",
+    "options": [
+      "Debit",
+      "Credit",
+      "Either",
+      "Memorandum only"
+    ],
+    "answer_index": 1,
+    "explanation": "Bank charges reduce bank balance: credit side of bank column."
+  },
+  {
+    "id": "ATSWA1-BA-DE-0025",
+    "level": "ATSWA1",
+    "subject": "Basic Accounting",
+    "topic": "Petty Cash",
+    "subtopic": "Imprest System",
+    "stem": "Under an imprest system, petty cashier is reimbursed with:",
+    "options": [
+      "The amount spent to restore float",
+      "A fixed monthly sum",
+      "Any surplus",
+      "An amount decided by auditor"
+    ],
+    "answer_index": 0,
+    "explanation": "Imprest restores cash to the pre‑set float each period."
+  },
+  {
+    "id": "ATSWA1-BA-TRB-0026",
+    "level": "ATSWA1",
+    "subject": "Basic Accounting",
+    "topic": "Errors",
+    "subtopic": "Types",
+    "stem": "Which error does NOT affect the trial balance?",
+    "options": [
+      "Error of omission",
+      "Error of addition",
+      "Transposition error",
+      "Single‑sided entry"
+    ],
+    "answer_index": 0,
+    "explanation": "Complete omission leaves both dr/cr totals unchanged; TB still agrees."
+  },
+  {
+    "id": "ATSWA1-BA-CTRL-0027",
+    "level": "ATSWA1",
+    "subject": "Basic Accounting",
+    "topic": "Control Accounts",
+    "subtopic": "Receivables",
+    "stem": "A general journal credit to the receivables control account most likely represents:",
+    "options": [
+      "Sales returns total",
+      "Discount allowed total",
+      "Bad debts written off",
+      "All of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "These items reduce receivables, thus credits to the control account."
+  },
+  {
+    "id": "ATSWA1-BA-CTRL-0028",
+    "level": "ATSWA1",
+    "subject": "Basic Accounting",
+    "topic": "Control Accounts",
+    "subtopic": "Reconciliation",
+    "stem": "Which item would cause a difference between the receivables control account and the list of balances?",
+    "options": [
+      "A sales invoice posted twice to a customer ledger",
+      "Cash discount allowed total posted",
+      "Credit note journalized",
+      "A contra entry between receivables and payables"
+    ],
+    "answer_index": 0,
+    "explanation": "An error in a subsidiary account can cause disagreement with the control total."
+  },
+  {
+    "id": "ATSWA1-BA-TB-0029",
+    "level": "ATSWA1",
+    "subject": "Basic Accounting",
+    "topic": "Trial Balance",
+    "subtopic": "Purpose",
+    "stem": "The trial balance primarily checks:",
+    "options": [
+      "Arithmetic agreement of ledgers",
+      "Fraud prevention",
+      "Asset valuation",
+      "Compliance with IFRS"
+    ],
+    "answer_index": 0,
+    "explanation": "It tests arithmetic accuracy (equal debits and credits), not full correctness."
+  },
+  {
+    "id": "ATSWA1-BA-TB-0030",
+    "level": "ATSWA1",
+    "subject": "Basic Accounting",
+    "topic": "Trial Balance",
+    "subtopic": "Suspense",
+    "stem": "A suspense account is opened when:",
+    "options": [
+      "Cash is short",
+      "Trial balance does not agree",
+      "Inventory is undervalued",
+      "Depreciation is omitted"
+    ],
+    "answer_index": 1,
+    "explanation": "Suspense temporarily holds the difference pending investigation."
+  },
+  {
+    "id": "ATSWA1-BA-TB-0031",
+    "level": "ATSWA1",
+    "subject": "Basic Accounting",
+    "topic": "Errors",
+    "subtopic": "Affect TB",
+    "stem": "Which pair of errors will both cause the trial balance to disagree?",
+    "options": [
+      "Complete omission & principle error",
+      "Transposition & single‑sided posting",
+      "Compensating errors",
+      "Commission errors equal & opposite"
+    ],
+    "answer_index": 1,
+    "explanation": "Transposition and single‑sided entries create unequal dr/cr totals."
+  },
+  {
+    "id": "ATSWA1-BA-TB-0032",
+    "level": "ATSWA1",
+    "subject": "Basic Accounting",
+    "topic": "Errors",
+    "subtopic": "Correction",
+    "stem": "An invoice of ₦84,000 was posted to the ledger as ₦48,000. This is a:",
+    "options": [
+      "Error of omission",
+      "Error of principle",
+      "Transposition error",
+      "Error of original entry"
+    ],
+    "answer_index": 3,
+    "explanation": "The original figure was recorded wrongly; that's an error of original entry."
+  },
+  {
+    "id": "ATSWA1-BA-TB-0033",
+    "level": "ATSWA1",
+    "subject": "Basic Accounting",
+    "topic": "Suspense",
+    "subtopic": "Clearance",
+    "stem": "To clear a suspense balance arising from an undercast sales day book, you would:",
+    "options": [
+      "Debit Sales, Credit Suspense",
+      "Debit Suspense, Credit Sales",
+      "Debit Bank, Credit Suspense",
+      "Debit Suspense, Credit Bank"
+    ],
+    "answer_index": 1,
+    "explanation": "Sales was understated; credit Sales and debit Suspense to clear the difference."
+  },
+  {
+    "id": "ATSWA1-BA-BR-0034",
+    "level": "ATSWA1",
+    "subject": "Basic Accounting",
+    "topic": "Bank Reconciliation",
+    "subtopic": "Reasons",
+    "stem": "Which would make the cash book higher than the bank statement?",
+    "options": [
+      "Direct debit by bank not recorded",
+      "Unpresented cheques",
+      "Bank charges recorded",
+      "Dishonoured cheques recorded"
+    ],
+    "answer_index": 1,
+    "explanation": "Unpresented cheques reduce bank statement but are still in cash book."
+  },
+  {
+    "id": "ATSWA1-BA-BR-0035",
+    "level": "ATSWA1",
+    "subject": "Basic Accounting",
+    "topic": "Bank Reconciliation",
+    "subtopic": "Adjustments",
+    "stem": "To update the cash book for bank charges discovered from the statement, you:",
+    "options": [
+      "Debit Bank, Credit Bank Charges",
+      "Debit Bank Charges, Credit Bank",
+      "No entry",
+      "Debit Suspense, Credit Bank"
+    ],
+    "answer_index": 1,
+    "explanation": "Record expense: Dr Bank Charges; reduce bank: Cr Bank."
+  },
+  {
+    "id": "ATSWA1-BA-DEP-0036",
+    "level": "ATSWA1",
+    "subject": "Basic Accounting",
+    "topic": "Depreciation",
+    "subtopic": "Straight‑line",
+    "stem": "Cost ₦120,000; residual ₦0; life 5 years. Annual charge is:",
+    "options": [
+      "₦24,000",
+      "₦20,000",
+      "₦12,000",
+      "₦30,000"
+    ],
+    "answer_index": 0,
+    "explanation": "(120,000 − 0)/5 = ₦24,000."
+  },
+  {
+    "id": "ATSWA1-BA-DEP-0037",
+    "level": "ATSWA1",
+    "subject": "Basic Accounting",
+    "topic": "Depreciation",
+    "subtopic": "Reducing Balance",
+    "stem": "Cost ₦200,000, rate 20% reducing balance. Year‑1 depreciation:",
+    "options": [
+      "₦20,000",
+      "₦40,000",
+      "₦60,000",
+      "₦80,000"
+    ],
+    "answer_index": 1,
+    "explanation": "20% × ₦200,000 = ₦40,000."
+  },
+  {
+    "id": "ATSWA1-BA-DEP-0038",
+    "level": "ATSWA1",
+    "subject": "Basic Accounting",
+    "topic": "Depreciation",
+    "subtopic": "Change in Estimate",
+    "stem": "Asset cost ₦150,000; life 10y; after 3y remaining life revised to 5y; residual ₦0. New annual depreciation is:",
+    "options": [
+      "₦10,500",
+      "₦15,000",
+      "₦21,000",
+      "₦30,000"
+    ],
+    "answer_index": 2,
+    "explanation": "CV after 3y = 150 − 3×15 = 105; over 5y ⇒ ₦21,000/y."
+  },
+  {
+    "id": "ATSWA1-BA-DEP-0039",
+    "level": "ATSWA1",
+    "subject": "Basic Accounting",
+    "topic": "Non‑current Assets",
+    "subtopic": "Disposal",
+    "stem": "Sold equipment cost ₦80,000; accum depn ₦50,000; proceeds ₦35,000. Profit/loss is:",
+    "options": [
+      "₦5,000 profit",
+      "₦5,000 loss",
+      "₦15,000 profit",
+      "₦15,000 loss"
+    ],
+    "answer_index": 0,
+    "explanation": "Carrying amount 30,000; proceeds 35,000 ⇒ ₦5,000 profit."
+  },
+  {
+    "id": "ATSWA1-BA-NCA-0040",
+    "level": "ATSWA1",
+    "subject": "Basic Accounting",
+    "topic": "Non‑current Assets",
+    "subtopic": "Capital vs Revenue",
+    "stem": "Which is capital expenditure?",
+    "options": [
+      "Engine overhaul extending useful life",
+      "Annual insurance",
+      "Routine servicing",
+      "Fuel"
+    ],
+    "answer_index": 0,
+    "explanation": "Extension of useful life is capital expenditure."
+  },
+  {
+    "id": "ATSWA1-BA-NCA-0041",
+    "level": "ATSWA1",
+    "subject": "Basic Accounting",
+    "topic": "Non‑current Assets",
+    "subtopic": "Revaluation",
+    "stem": "Under revaluation model, increases in value are generally:",
+    "options": [
+      "Recognized in profit or loss",
+      "Ignored",
+      "Recognized in other comprehensive income",
+      "Deferred until sale"
+    ],
+    "answer_index": 2,
+    "explanation": "Upward revaluations go to revaluation surplus (OCI)."
+  },
+  {
+    "id": "ATSWA1-BA-INT-0042",
+    "level": "ATSWA1",
+    "subject": "Basic Accounting",
+    "topic": "Intangibles",
+    "subtopic": "Recognition",
+    "stem": "Which is most likely recognized as an intangible asset?",
+    "options": [
+      "Internally generated brand",
+      "Purchased patent",
+      "Advertising campaign",
+      "Staff training"
+    ],
+    "answer_index": 1,
+    "explanation": "Purchased patent meets identifiability and control."
+  },
+  {
+    "id": "ATSWA1-BA-IMP-0043",
+    "level": "ATSWA1",
+    "subject": "Basic Accounting",
+    "topic": "Impairment",
+    "subtopic": "Indicators",
+    "stem": "Which is an indicator of impairment?",
+    "options": [
+      "Increase in market interest rates",
+      "Higher demand for product",
+      "Lower input costs",
+      "Improved cash flows"
+    ],
+    "answer_index": 0,
+    "explanation": "Higher discount rates can reduce recoverable amount."
+  },
+  {
+    "id": "ATSWA1-BA-INV-0044",
+    "level": "ATSWA1",
+    "subject": "Basic Accounting",
+    "topic": "Inventory",
+    "subtopic": "Valuation",
+    "stem": "Inventory is valued at:",
+    "options": [
+      "Cost",
+      "Net realizable value",
+      "Lower of cost and NRV",
+      "Market value"
+    ],
+    "answer_index": 2,
+    "explanation": "Prudence requires lower of cost and NRV."
+  },
+  {
+    "id": "ATSWA1-BA-INV-0045",
+    "level": "ATSWA1",
+    "subject": "Basic Accounting",
+    "topic": "Inventory",
+    "subtopic": "FIFO/LIFO",
+    "stem": "Under FIFO during rising prices, ending inventory tends to be:",
+    "options": [
+      "Lower and newer costs",
+      "Higher and newer costs",
+      "Lower and older costs",
+      "Higher and older costs"
+    ],
+    "answer_index": 1,
+    "explanation": "FIFO leaves the most recent (higher) costs in ending inventory."
+  },
+  {
+    "id": "ATSWA1-BA-INV-0046",
+    "level": "ATSWA1",
+    "subject": "Basic Accounting",
+    "topic": "Inventory",
+    "subtopic": "Perpetual vs Periodic",
+    "stem": "A key feature of a perpetual inventory system is:",
+    "options": [
+      "No need for stocktake",
+      "Continuous update of inventory records",
+      "Only periodic valuation",
+      "Use of purchases account"
+    ],
+    "answer_index": 1,
+    "explanation": "Perpetual updates quantities after each movement."
+  },
+  {
+    "id": "ATSWA1-BA-COGS-0047",
+    "level": "ATSWA1",
+    "subject": "Basic Accounting",
+    "topic": "COGS",
+    "subtopic": "Formula",
+    "stem": "COGS equals:",
+    "options": [
+      "Opening inv + purchases − closing inv",
+      "Opening inv − purchases + closing inv",
+      "Purchases − closing inv",
+      "Opening inv + closing inv − purchases"
+    ],
+    "answer_index": 0,
+    "explanation": "COGS = Opening + Purchases − Closing."
+  },
+  {
+    "id": "ATSWA1-BA-INV-0048",
+    "level": "ATSWA1",
+    "subject": "Basic Accounting",
+    "topic": "Inventory",
+    "subtopic": "Write‑downs",
+    "stem": "If NRV falls below cost, you should:",
+    "options": [
+      "Increase inventory value",
+      "Leave unchanged",
+      "Write down to NRV",
+      "Capitalize the loss"
+    ],
+    "answer_index": 2,
+    "explanation": "Write down to NRV per prudence."
+  },
+  {
+    "id": "ATSWA1-BA-INV-0049",
+    "level": "ATSWA1",
+    "subject": "Basic Accounting",
+    "topic": "Inventory",
+    "subtopic": "Overstatement Impact",
+    "stem": "Overstated closing inventory will cause:",
+    "options": [
+      "Overstated COGS and understated profit",
+      "Understated COGS and overstated profit",
+      "No effect",
+      "Understated assets"
+    ],
+    "answer_index": 1,
+    "explanation": "Higher closing inventory lowers COGS and inflates profit; assets overstated."
+  },
+  {
+    "id": "ATSWA1-BA-ADJ-0050",
+    "level": "ATSWA1",
+    "subject": "Basic Accounting",
+    "topic": "Adjustments",
+    "subtopic": "Accruals/Prepayments",
+    "stem": "Insurance paid ₦120,000 for 12 months on 1 April; year end 31 Dec. Prepayment at year‑end is:",
+    "options": [
+      "₦30,000",
+      "₦90,000",
+      "₦120,000",
+      "₦0"
+    ],
+    "answer_index": 0,
+    "explanation": "Prepaid Jan–Mar (3/12 × 120,000) = ₦30,000."
+  },
+  {
+    "id": "ATSWA1-BA-ADJ-0051",
+    "level": "ATSWA1",
+    "subject": "Basic Accounting",
+    "topic": "Adjustments",
+    "subtopic": "Bad Debts",
+    "stem": "Write off ₦8,000 as bad; create allowance 2% on remaining receivables ₦400,000. Allowance expense is:",
+    "options": [
+      "₦8,000",
+      "₦16,000",
+      "₦8,000 write‑off + ₦8,000 allowance = ₦16,000",
+      "₦8,000 write‑off only"
+    ],
+    "answer_index": 2,
+    "explanation": "Bad debt expense ₦8k plus allowance expense ₦8k."
+  },
+  {
+    "id": "ATSWA1-BA-FA-0052",
+    "level": "ATSWA1",
+    "subject": "Basic Accounting",
+    "topic": "Final Accounts",
+    "subtopic": "Trading Account",
+    "stem": "Which item appears in the Trading section?",
+    "options": [
+      "Administrative salaries",
+      "Sales returns",
+      "Depreciation",
+      "Rent of office"
+    ],
+    "answer_index": 1,
+    "explanation": "Trading = sales, returns, opening/closing inventory, purchases, carriage inwards."
+  },
+  {
+    "id": "ATSWA1-BA-FA-0053",
+    "level": "ATSWA1",
+    "subject": "Basic Accounting",
+    "topic": "Final Accounts",
+    "subtopic": "P&L",
+    "stem": "Which is a selling and distribution expense?",
+    "options": [
+      "Carriage inwards",
+      "Carriage outwards",
+      "Purchases returns",
+      "Discount received"
+    ],
+    "answer_index": 1,
+    "explanation": "Carriage outwards relates to delivery to customers."
+  },
+  {
+    "id": "ATSWA1-BA-FA-0054",
+    "level": "ATSWA1",
+    "subject": "Basic Accounting",
+    "topic": "Final Accounts",
+    "subtopic": "Balance Sheet",
+    "stem": "Accrued wages at year‑end are classified as:",
+    "options": [
+      "Current asset",
+      "Current liability",
+      "Non‑current liability",
+      "Equity"
+    ],
+    "answer_index": 1,
+    "explanation": "They are obligations due within one year."
+  },
+  {
+    "id": "ATSWA1-BA-FA-0055",
+    "level": "ATSWA1",
+    "subject": "Basic Accounting",
+    "topic": "Final Accounts",
+    "subtopic": "Bank Overdraft",
+    "stem": "A bank overdraft is presented as:",
+    "options": [
+      "Cash and cash equivalents (negative) under current liabilities",
+      "Non‑current liability",
+      "Current asset",
+      "Other reserves"
+    ],
+    "answer_index": 0,
+    "explanation": "Short‑term overdrafts are current liabilities."
+  },
+  {
+    "id": "ATSWA1-BA-REV-0056",
+    "level": "ATSWA1",
+    "subject": "Basic Accounting",
+    "topic": "Revenue",
+    "subtopic": "Recognition",
+    "stem": "A customer pays in advance for a 12‑month service. At receipt date you recognize:",
+    "options": [
+      "Revenue",
+      "Unearned revenue (liability)",
+      "Trade receivable",
+      "Other income"
+    ],
+    "answer_index": 1,
+    "explanation": "Record a contract liability until performance obligations are satisfied."
+  },
+  {
+    "id": "ATSWA1-BA-PROV-0057",
+    "level": "ATSWA1",
+    "subject": "Basic Accounting",
+    "topic": "Provision",
+    "subtopic": "Warranty",
+    "stem": "A constructive obligation for warranties requires recognizing:",
+    "options": [
+      "Contingent liability only",
+      "Provision if a reliable estimate exists",
+      "No entry",
+      "Equity reserve"
+    ],
+    "answer_index": 1,
+    "explanation": "Present obligation with probable outflow and reliable estimate ⇒ provision."
+  },
+  {
+    "id": "ATSWA1-BA-NPO-0058",
+    "level": "ATSWA1",
+    "subject": "Basic Accounting",
+    "topic": "NPO",
+    "subtopic": "Receipts & Payments",
+    "stem": "Subscriptions received include ₦40,000 arrears b/f and ₦20,000 in advance c/f. Income & Expenditure account should recognize:",
+    "options": [
+      "Cash received only",
+      "Cash received − advance c/f + arrears b/f",
+      "Cash received + advance c/f − arrears b/f",
+      "Arrears only"
+    ],
+    "answer_index": 1,
+    "explanation": "Adjust cash to accrual basis by removing advances and adding arrears relevant to the year."
+  },
+  {
+    "id": "ATSWA1-BA-MFG-0059",
+    "level": "ATSWA1",
+    "subject": "Basic Accounting",
+    "topic": "Manufacturing",
+    "subtopic": "Prime Cost",
+    "stem": "Prime cost consists of:",
+    "options": [
+      "Direct materials + direct labour + factory overheads",
+      "Direct materials + direct labour",
+      "Direct labour + FOH",
+      "Direct materials + FOH"
+    ],
+    "answer_index": 1,
+    "explanation": "Prime cost = DM + DL only."
+  },
+  {
+    "id": "ATSWA1-BA-PART-0060",
+    "level": "ATSWA1",
+    "subject": "Basic Accounting",
+    "topic": "Partnerships",
+    "subtopic": "Appropriation",
+    "stem": "In the appropriation account, which is debited?",
+    "options": [
+      "Interest on drawings",
+      "Interest on capital",
+      "Partner salaries",
+      "Profit share"
+    ],
+    "answer_index": 0,
+    "explanation": "Interest on drawings decreases partners' current accounts."
   }
 ]
