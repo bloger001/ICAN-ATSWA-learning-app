@@ -7,12 +7,12 @@
   <title>ICAN Prep Journey</title>
   <meta name="description" content="Your path from ATSWA to Final — study smart, pass with confidence." />
 
-  <!-- Prevent stale cached HTML on iOS/Safari -->
+  <!-- Prevent stale cache -->
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
 
-  <link rel="stylesheet" href="./assets/app.css?v=10" />
+  <link rel="stylesheet" href="./assets/app.css?v=14" />
 </head>
 <body>
   <div class="wrap">
@@ -23,21 +23,19 @@
         <h1>ICAN Prep Journey</h1>
         <p class="muted">Your path from ATSWA to Final — study smart, pass with confidence.</p>
       </div>
-
-      <!-- User badge + Sign out (shown when logged in) -->
       <div class="row" style="justify-content:flex-end;gap:8px">
         <span id="userBadge" class="pill" style="display:none">👋</span>
         <button id="signOutBtn" class="btn" style="display:none">Sign out</button>
       </div>
     </header>
 
-    <!-- Welcome card (shown when LOGGED OUT) -->
+    <!-- Welcome (logged out) -->
     <section id="welcomeCard" class="card" style="margin-top:12px">
       <h2>Welcome</h2>
       <p class="muted">Log in with Google to see levels, start quizzes, track progress, and view your status analytics.</p>
       <div class="row" style="margin-top:8px">
         <button id="googleBtn" class="btn primary">Continue with Google</button>
-        <a class="btn" href="resources.html">Browse resources</a>
+        <a class="btn" href="./resources.html">Browse resources</a>
       </div>
       <p class="small muted" style="margin-top:10px">
         Built by your fellow accounting students — created by <b>Silva Brutus</b>, student of <b>NSUK</b>.<br/>
@@ -45,45 +43,47 @@
       </p>
     </section>
 
-    <!-- Tiles (shown when LOGGED IN) -->
+    <!-- Tiles (logged in) -->
     <section id="tiles" class="grid" style="display:none; margin-top:12px">
-      <!-- Quick access: Status -->
-      <a class="tile" href="status.html?v=1">
+      <!-- Quick access -->
+      <a class="tile" href="./status.html?v=14">
         <div class="muted small">Analytics</div>
         <div>My Status</div>
       </a>
 
       <!-- ATSWA 1 subjects -->
-      <a class="tile" href="quiz.html?level=ATSWA1&subject=Basic%20Accounting&mode=practice">
+      <a class="tile" href="./quiz.html?level=ATSWA1&subject=Basic%20Accounting&mode=practice">
         <div class="muted small">ATSWA 1</div>
         <div>Basic Accounting</div>
       </a>
 
-      <a class="tile" href="quiz.html?level=ATSWA1&subject=Economics&mode=practice">
+      <a class="tile" href="./quiz.html?level=ATSWA1&subject=Economics&mode=practice">
         <div class="muted small">ATSWA 1</div>
         <div>Economics</div>
       </a>
 
-      <a class="tile" href="quiz.html?level=ATSWA1&subject=Business%20Law&mode=practice">
+      <a class="tile" href="./quiz.html?level=ATSWA1&subject=Business%20Law&mode=practice">
         <div class="muted small">ATSWA 1</div>
         <div>Business Law</div>
       </a>
 
-      <a class="tile" href="quiz.html?level=ATSWA1&subject=Communication%20Skills&mode=practice">
+      <a class="tile" href="./quiz.html?level=ATSWA1&subject=Communication%20Skills&mode=practice">
         <div class="muted small">ATSWA 1</div>
         <div>Communication Skills</div>
       </a>
 
       <!-- More pages -->
-      <a class="tile" href="leaderbored.html">
+      <a class="tile" href="./leaderbored.html?v=14">
         <div class="muted small">Community</div>
         <div>Leaderboard</div>
       </a>
-      <a class="tile" href="admin.html">
+
+      <a class="tile" href="./admin.html?v=14">
         <div class="muted small">Admin</div>
         <div>Admin Panel</div>
       </a>
-      <a class="tile" href="resources.html">
+
+      <a class="tile" href="./resources.html?v=14">
         <div class="muted small">Study</div>
         <div>Resources</div>
       </a>
@@ -104,14 +104,11 @@
 
   </div>
 
-  <!-- Optional: unregister any old service worker while we stabilise -->
   <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.getRegistrations().then(list => list.forEach(r => r.unregister()));
     }
   </script>
-
-  <!-- App logic (auth, UI) -->
-  <script type="module" src="./assets/app.js?v=10"></script>
+  <script type="module" src="./assets/app.js?v=14"></script>
 </body>
 </html>
