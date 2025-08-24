@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -7,45 +6,204 @@
   <title>ICAN Prep Journey</title>
   <meta name="theme-color" content="#0b0b0c">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="./assets/app.css">
+  <!-- Fonts (optional, falls back to system if blocked) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 
-  <!-- Firebase SDKs -->
+  <style>
+    :root{
+      --bg1:#0B0C10; --bg2:#14161c;
+      --card:#14161cE6; /* glass */
+      --border: #2a2e38;
+      --text:#EDEFF5; --muted:#B9BECA;
+      --brand:#21b66f; --brand-2:#1b8d57;
+      --danger:#ff4d4d;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius: 16px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--text);
+      background: radial-gradient(1200px 600px at 10% 10%, #0d1320 0, transparent 55%),
+                  radial-gradient(900px 500px at 90% 0%, #002a1c 0, transparent 55%),
+                  linear-gradient(180deg, var(--bg1), var(--bg2));
+    }
+    .wrap{max-width:1000px; margin:0 auto; padding:28px 20px 60px}
+    header.top{
+      display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:24px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:12px;
+    }
+    .logo{
+      width:42px;height:42px;border-radius:12px;
+      background: linear-gradient(135deg,#21b66f 0%, #1a8a57 100%);
+      box-shadow: var(--shadow);
+    }
+    h1{font-size:34px; line-height:1.15; margin:0}
+    .sub{color:var(--muted); margin-top:6px; font-size:15px}
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      backdrop-filter: blur(6px);
+      box-shadow: var(--shadow);
+    }
+    .hero{
+      display:grid; grid-template-columns: 1.2fr 1fr; gap:20px; padding:22px;
+    }
+    @media (max-width:900px){ .hero{ grid-template-columns: 1fr; } }
+    .panel{padding:22px}
+    .panel h2{margin:0 0 10px; font-size:22px}
+    .grid{
+      display:grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+      gap:12px;
+    }
+    .tile{
+      display:block; padding:14px 14px; border-radius:14px;
+      background:#0f1117; border:1px solid #262a35; color:var(--text); text-decoration:none;
+      transition:.2s transform, .2s border-color;
+    }
+    .tile:hover{ transform: translateY(-2px); border-color:#334056; }
+    .row{display:flex; gap:10px; flex-wrap:wrap; align-items:center}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center; gap:10px;
+      padding:12px 16px; border-radius:12px; border:1px solid #2a2e38; color:var(--text);
+      background:#191c23; cursor:pointer; text-decoration:none; font-weight:600;
+    }
+    .btn.primary{ background: linear-gradient(180deg, var(--brand), var(--brand-2)); border-color: transparent; color:#03180e; }
+    .btn.ghost{ background: transparent; }
+    .btn.danger{ background:#341c1c; border-color:#553232; }
+    .pill{display:inline-block; padding:6px 10px; border-radius:999px; border:1px solid #2a2e38; background:#0f1117; color:var(--muted); font-size:12px}
+    footer{
+      margin-top:22px; color:var(--muted); font-size:13px; text-align:center;
+    }
+    a{ color:#8bd8b4 } a:hover{ opacity:.9 }
+    .credit{font-size:13px; color:var(--muted); margin-top:14px}
+    .hide{display:none !important;}
+  </style>
+
+  <!-- Firebase SDKs (compat for simple inline usage) -->
   <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
 </head>
+
 <body>
   <div class="wrap">
-    <header class="center">
-      <h1>ICAN Prep Journey</h1>
-      <p>Your path from ATSWA to Final</p>
-    </header>
-
-    <section id="login-view" class="card center">
-      <button id="googleBtn" class="btn primary">Continue with Google</button>
-      <p class="muted" style="margin-top:12px">
-        Built by your fellow accounting students for practice — created by
-        <strong>Silva Brutus</strong>, a proud student of <strong>NSUK</strong>.<br/>
-        Contact: <a href="mailto:offixcialbloger@gmail.com">offixcialbloger@gmail.com</a>
-      </p>
-    </section>
-
-    <section id="home-view" class="card" style="display:none">
-      <h2>Choose your level</h2>
-      <div class="grid">
-        <a class="tile" href="quiz.html?level=ATSWA1&subject=Basic%20Accounting&mode=practice">ATSWA 1 — Basic Accounting</a>
+    <header class="top">
+      <div class="brand">
+        <div class="logo"></div>
+        <div>
+          <h1>ICAN Prep Journey</h1>
+          <div class="sub">Your path from ATSWA to Final — study smart, pass with confidence.</div>
+        </div>
       </div>
 
       <div class="row">
-        <a class="btn" href="leaderboard.html">View Leaderboard</a>
-        <a class="btn" href="resources.html">Resources</a>
-        <a class="btn" href="admin.html">Admin</a>
-        <button id="signOutBtn" class="btn danger">Sign out</button>
+        <button id="googleBtn" class="btn primary">Continue with Google</button>
+        <button id="signOutBtn" class="btn ghost hide">Sign out</button>
+      </div>
+    </header>
+
+    <!-- Auth-gated content -->
+    <section id="home" class="card hero hide">
+      <div class="panel">
+        <h2>Start Learning</h2>
+        <p class="sub" style="margin-bottom:12px">Choose a level to practice. Remedial drills unlock automatically for weak topics.</p>
+        <div class="grid">
+          <a class="tile" href="quiz.html?level=ATSWA1&subject=Basic%20Accounting&mode=practice">ATSWA 1 — Basic Accounting</a>
+          <a class="tile" href="leaderboard.html">Leaderboard</a>
+          <a class="tile" href="resources.html">Resources & Flashcards</a>
+          <a class="tile" href="admin.html">Admin</a>
+        </div>
+        <div style="margin-top:12px" class="pill" id="who"></div>
+      </div>
+
+      <div class="panel">
+        <h2>What you’ll get</h2>
+        <ul class="sub" style="line-height:1.7">
+          <li>Exam-style questions (ATSWA → Final) with concise explanations</li>
+          <li>Adaptive practice: focus on **your** weak topics</li>
+          <li>Progress tracking, streaks, and weekly leaderboards</li>
+          <li>Works offline after first load (PWA-ready)</li>
+        </ul>
+        <div class="credit">
+          Built by your fellow accounting students — created by <strong>Silva Brutus</strong>, student of <strong>NSUK</strong>.<br/>
+          Contact: <a href="mailto:offixcialbloger@gmail.com">offixcialbloger@gmail.com</a>
+        </div>
       </div>
     </section>
+
+    <!-- Logged-out view -->
+    <section id="welcome" class="card panel">
+      <h2>Welcome</h2>
+      <p class="sub">Log in with Google to see levels, start quizzes, and track your progress.</p>
+      <div class="row" style="margin-top:8px">
+        <button class="btn primary" id="googleBtn2">Continue with Google</button>
+        <a class="btn" href="resources.html">Browse resources</a>
+      </div>
+      <div class="credit">
+        Built by your fellow accounting students — created by <strong>Silva Brutus</strong>, student of <strong>NSUK</strong>.
+        Contact: <a href="mailto:offixcialbloger@gmail.com">offixcialbloger@gmail.com</a>
+      </div>
+    </section>
+
+    <footer>
+      <span class="pill">Not affiliated with ICAN — for practice & learning only.</span>
+    </footer>
   </div>
 
-  <!-- Load app JS last so the DOM exists -->
-  <script defer src="./assets/app.js"></script>
+  <script>
+    // 🔑 Your Firebase config (from your message)
+    const firebaseConfig = {
+      apiKey: "AIzaSyBRGM431CHZ3UMUHIc4Q-S1aGDMfrbu7Gs",
+      authDomain: "ican-kit-prep.firebaseapp.com",
+      projectId: "ican-kit-prep",
+      appId: "1:354385037521:web:f3a7265f66983942581df0"
+    };
+    firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+    const provider = new firebase.auth.GoogleAuthProvider();
+
+    // UI elements
+    const $ = id => document.getElementById(id);
+    const welcome = $("welcome");
+    const home = $("home");
+    const who = $("who");
+    const signOutBtn = $("signOutBtn");
+
+    function showHome(user){
+      welcome.classList.add("hide");
+      home.classList.remove("hide");
+      signOutBtn.classList.remove("hide");
+      who.textContent = user?.email || "";
+    }
+    function showWelcome(){
+      home.classList.add("hide");
+      welcome.classList.remove("hide");
+      signOutBtn.classList.add("hide");
+      who.textContent = "";
+    }
+
+    async function signIn(){
+      try {
+        await auth.signInWithPopup(provider);
+      } catch (e) {
+        // Popup may be blocked on iOS → use redirect
+        try { await auth.signInWithRedirect(provider); }
+        catch (err){ alert("Google sign-in failed. Check Authorized domains in Firebase."); }
+      }
+    }
+
+    document.getElementById("googleBtn").onclick = signIn;
+    document.getElementById("googleBtn2").onclick = signIn;
+    signOutBtn.onclick = ()=>auth.signOut();
+
+    auth.onAuthStateChanged(u => u ? showHome(u) : showWelcome());
+  </script>
 </body>
 </html>
+
