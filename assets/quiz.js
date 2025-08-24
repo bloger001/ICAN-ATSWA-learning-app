@@ -17,7 +17,7 @@ const qwrap = document.getElementById('qwrap');
 
 async function loadData(){
   try {
-    const res = await fetch('data/atswa1_basic_accounting.json');
+    const res = await fetch('data/atswa1_basic_accounting.sample.json');
     questions = await res.json();
     render();
   } catch(e){
