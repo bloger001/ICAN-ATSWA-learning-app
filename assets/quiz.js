@@ -1,4 +1,4 @@
-// assets/quiz.js — module version with Firestore sync + local analytics + shuffle
+// quiz.js — loads subject JSON, shuffles Qs/options, logs attempts locally + Firestore, writes run on finish
 
 import { auth, db } from './firebase.js';
 import { collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore.js";
@@ -17,7 +17,7 @@ const FILES = {
 };
 
 // DOM
-const meta      = document.getElementById('meta');
+const meta      = document.getElementById('meta') || (()=>{ const p=document.createElement('p'); p.id='meta'; document.body.prepend(p); return p; })();
 const qwrap     = document.getElementById('qwrap');
 const qstem     = document.getElementById('qstem');
 const qopts     = document.getElementById('qopts');
@@ -27,31 +27,19 @@ const result    = document.getElementById('result');
 
 meta.textContent = `Level: ${level} — Subject: ${subject} — Mode: ${mode}${topicsFilter.length ? ' — Focus: ' + topicsFilter.join(', ') : ''}`;
 
+// Helpers
+function shuffle(a){ for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]];} return a; }
+function lock(ms=250){ busy=true; setTimeout(()=>busy=false, ms); }
+function getUserSlim(){ try{ return JSON.parse(localStorage.getItem('ican.user')||'null'); }catch{return null;} }
+
+// Local attempts key
+const RESULTS_KEY = `ican.results:${(getUserSlim()&&getUserSlim().uid)||'guest'}`;
+
+// State
 let questions = [];
 let idx = 0, selected = null, score = 0, busy = false;
 
-/* helpers */
-function shuffle(a){ for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]];} return a; }
-function lock(ms=300){ busy=true; setTimeout(()=>busy=false, ms); }
-function getUserSlim(){ try{ return JSON.parse(localStorage.getItem('ican.user')||'null'); }catch{return null;} }
-
-/* local analytics for Status/Review */
-const RESULTS_KEY = `ican.results:${(getUserSlim()&&getUserSlim().uid)||'guest'}`;
-function logAttemptSnapshot(q, chosenIndex){
-  const rec = {
-    ts: Date.now(), level, subject, topic: q.topic||'', subtopic: q.subtopic||'',
-    id: q.id||'', stem: q.stem, options: q.options,
-    correct_index: q.answer_index, chosen_index: chosenIndex,
-    correct: chosenIndex === q.answer_index
-  };
-  try {
-    const arr = JSON.parse(localStorage.getItem(RESULTS_KEY) || '[]');
-    arr.push(rec);
-    localStorage.setItem(RESULTS_KEY, JSON.stringify(arr));
-  } catch {}
-}
-
-/* progress save/restore */
+// Save/restore progress (per subject + topics selection)
 const SAVE_KEY = `ican.progress:${subject}:${topicsFilter.join('|')}`;
 function saveProgress(){ try { localStorage.setItem(SAVE_KEY, JSON.stringify({ idx, score, selected, ids: questions.map(q=>q.id) })); } catch {} }
 function loadProgress(){ try {
@@ -64,12 +52,49 @@ function loadProgress(){ try {
 window.addEventListener('beforeunload', saveProgress);
 document.addEventListener('visibilitychange', ()=>{ if (document.hidden) saveProgress(); });
 
-/* load questions */
+// Local + cloud attempt log
+async function logAttemptSnapshot(q, chosenIndex){
+  const rec = {
+    ts: Date.now(), level, subject, topic: q.topic||'', subtopic: q.subtopic||'',
+    id: q.id||'', stem: q.stem, options: q.options,
+    correct_index: q.answer_index, chosen_index: chosenIndex,
+    correct: chosenIndex === q.answer_index
+  };
+  // local
+  try {
+    const arr = JSON.parse(localStorage.getItem(RESULTS_KEY) || '[]');
+    arr.push(rec);
+    localStorage.setItem(RESULTS_KEY, JSON.stringify(arr));
+  } catch {}
+  // cloud
+  try {
+    const u = auth.currentUser;
+    if (u && u.uid) {
+      await addDoc(collection(db, 'attempts'), {
+        uid: u.uid,
+        email: u.email || null,
+        level, subject,
+        topic: rec.topic, subtopic: rec.subtopic,
+        qid: rec.id || null,
+        stem: rec.stem,
+        options: rec.options,
+        correct_index: rec.correct_index,
+        chosen_index: rec.chosen_index,
+        correct: rec.correct,
+        ts: serverTimestamp()
+      });
+    }
+  } catch (e) {
+    console.warn('Attempt cloud log failed:', e?.message || e);
+  }
+}
+
+// Load questions
 async function loadData(){
   const file = FILES[subject];
   if(!file){
     qstem.innerHTML = `<div class="card muted">Unknown subject.</div>`;
-    qwrap.querySelector('.row').style.display='none';
+    qwrap?.querySelector('.row')?.style && (qwrap.querySelector('.row').style.display='none');
     return;
   }
   try{
@@ -83,6 +108,7 @@ async function loadData(){
       if (!data.length) throw new Error('No questions for selected topic(s).');
     }
 
+    // randomize question order + option order
     questions = shuffle(data.slice());
     loadProgress();
     render();
@@ -92,7 +118,7 @@ async function loadData(){
   }
 }
 
-/* render one question */
+// Render one question
 function render(){
   const q = questions[idx]; if(!q){ return finish(); }
   qstem.innerHTML = `
@@ -101,6 +127,7 @@ function render(){
     ${q.topic ? `<p class="muted small">${q.topic}${q.subtopic? ' • ' + q.subtopic : ''}</p>`:''}
   `;
   qopts.innerHTML = '';
+  // important: keep chosenIndex = original index (so answer_index stays valid)
   shuffle(q.options.map((text,i)=>({text,i}))).forEach(({text,i})=>{
     const d=document.createElement('div');
     d.className='opt';
@@ -114,7 +141,7 @@ function render(){
   selected=null;
 }
 
-/* handlers */
+// Handlers
 nextBtn.onclick = ()=>{
   if (busy) return;
   if (selected==null) return alert('Select an option first');
@@ -124,9 +151,10 @@ nextBtn.onclick = ()=>{
   idx++; lock(); saveProgress();
   if (idx<questions.length) render(); else finish();
 };
+
 submitBtn.onclick = ()=>{ if (!busy){ lock(); finish(); } };
 
-/* finish + Firestore sync */
+// Finish + Firestore 'runs'
 async function finish(){
   qwrap.style.display='none'; localStorage.removeItem(SAVE_KEY);
   const total = questions.length; const pct = Math.round((score/total)*100);
@@ -137,12 +165,11 @@ async function finish(){
     <div class="row" style="margin-top:10px;flex-wrap:wrap">
       <a class="btn" href="index.html">← Back Home</a>
       <a class="btn" href="quiz.html?level=${encodeURIComponent(level)}&subject=${encodeURIComponent(subject)}&mode=${encodeURIComponent(mode)}${topicsFilter.length ? '&topics='+encodeURIComponent(topicsFilter.join(',')) : ''}">Retry</a>
-      <a class="btn" href="./status.html?v=16">View Status</a>
-      <a class="btn primary" href="./review.html?v=16">Review mistakes</a>
+      <a class="btn" href="./status.html?v=24">View Status</a>
+      <a class="btn primary" href="./review.html?v=24">Review mistakes</a>
     </div>
   `;
 
-  // best-effort Firestore run
   try {
     const u = auth.currentUser || getUserSlim();
     if (u && (u.uid || u.email)) {
@@ -157,9 +184,9 @@ async function finish(){
       });
     }
   } catch (e) {
-    console.warn('Sync failed:', e?.message || e);
+    console.warn('Run sync failed:', e?.message || e);
   }
 }
 
-/* go */
+// Go
 loadData();
