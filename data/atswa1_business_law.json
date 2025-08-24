@@ -1,0 +1,1602 @@
+[
+  {
+    "id": "ATSWA1-BLAW-C-0001",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Contract",
+    "subtopic": "Consideration",
+    "stem": "For a valid contract, consideration must be:",
+    "options": [
+      "Adequate",
+      "Sufficient",
+      "Past only",
+      "Unnecessary"
+    ],
+    "answer_index": 1,
+    "explanation": "Consideration must be sufficient (of some value) but need not be adequate."
+  },
+  {
+    "id": "ATSWA1-BLAW-C-0002",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Contract",
+    "subtopic": "Offer",
+    "stem": "An offer is terminated by:",
+    "options": [
+      "Acceptance",
+      "Counter-offer",
+      "Silence",
+      "Inquiry"
+    ],
+    "answer_index": 1,
+    "explanation": "A counter-offer destroys the original offer (Hyde v Wrench)."
+  },
+  {
+    "id": "ATSWA1-BLAW-C-0003",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Contract",
+    "subtopic": "Invitation to Treat",
+    "stem": "Which is an invitation to treat?",
+    "options": [
+      "Display of goods in a shop window",
+      "Signed written offer",
+      "Acceptance communicated",
+      "Promise to pay reward"
+    ],
+    "answer_index": 0,
+    "explanation": "Shop displays and advertisements are invitations to treat (Fisher v Bell)."
+  },
+  {
+    "id": "ATSWA1-BLAW-C-0004",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Contract",
+    "subtopic": "Acceptance",
+    "stem": "Acceptance must generally be:",
+    "options": [
+      "Conditional",
+      "Communicated to the offeror",
+      "By silence",
+      "Implied only"
+    ],
+    "answer_index": 1,
+    "explanation": "Acceptance must be communicated unless waived (e.g., unilateral offers)."
+  },
+  {
+    "id": "ATSWA1-BLAW-C-0005",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Contract",
+    "subtopic": "Capacity",
+    "stem": "Which person generally lacks full contractual capacity?",
+    "options": [
+      "Adult of sound mind",
+      "A company",
+      "A minor",
+      "A partnership"
+    ],
+    "answer_index": 2,
+    "explanation": "Minors usually lack capacity; contracts are voidable except for necessaries."
+  },
+  {
+    "id": "ATSWA1-BLAW-C-0006",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Contract",
+    "subtopic": "Intention",
+    "stem": "Social/domestic agreements are presumed:",
+    "options": [
+      "Legally binding",
+      "Not intended to create legal relations",
+      "Always enforceable",
+      "Void"
+    ],
+    "answer_index": 1,
+    "explanation": "Rebuttable presumption against legal intention in domestic settings."
+  },
+  {
+    "id": "ATSWA1-BLAW-C-0007",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Contract",
+    "subtopic": "Consideration",
+    "stem": "Past consideration is:",
+    "options": [
+      "Good consideration",
+      "Not good consideration",
+      "Always valid",
+      "Required"
+    ],
+    "answer_index": 1,
+    "explanation": "Past consideration is not sufficient for a new promise (Re McArdle)."
+  },
+  {
+    "id": "ATSWA1-BLAW-C-0008",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Contract",
+    "subtopic": "Privity",
+    "stem": "The doctrine of privity states that:",
+    "options": [
+      "Only parties to a contract can sue/enforce it",
+      "Third parties can always enforce",
+      "Anyone affected can sue",
+      "Contract binds the world"
+    ],
+    "answer_index": 0,
+    "explanation": "Only parties may enforce, subject to statutory exceptions."
+  },
+  {
+    "id": "ATSWA1-BLAW-C-0009",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Contract",
+    "subtopic": "Misrepresentation",
+    "stem": "A contract induced by misrepresentation is:",
+    "options": [
+      "Void",
+      "Voidable at the instance of the misled party",
+      "Enforceable",
+      "Illegal"
+    ],
+    "answer_index": 1,
+    "explanation": "Misrepresentation renders a contract voidable."
+  },
+  {
+    "id": "ATSWA1-BLAW-C-0010",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Contract",
+    "subtopic": "Illegality",
+    "stem": "A contract to commit a crime is:",
+    "options": [
+      "Voidable",
+      "Valid",
+      "Illegal and void",
+      "Unenforceable only"
+    ],
+    "answer_index": 2,
+    "explanation": "Illegal contracts are void ab initio."
+  },
+  {
+    "id": "ATSWA1-BLAW-C-0011",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Contract",
+    "subtopic": "Mistake",
+    "stem": "A mutual mistake as to subject matter renders a contract:",
+    "options": [
+      "Void",
+      "Voidable",
+      "Valid",
+      "Illegal"
+    ],
+    "answer_index": 0,
+    "explanation": "If mistake goes to the root, contract is void (Couturier v Hastie)."
+  },
+  {
+    "id": "ATSWA1-BLAW-C-0012",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Contract",
+    "subtopic": "Duress",
+    "stem": "A contract signed under duress is:",
+    "options": [
+      "Valid",
+      "Void",
+      "Voidable",
+      "Illegal"
+    ],
+    "answer_index": 2,
+    "explanation": "Duress makes the contract voidable at the option of the coerced party."
+  },
+  {
+    "id": "ATSWA1-BLAW-C-0013",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Contract",
+    "subtopic": "Undue Influence",
+    "stem": "Undue influence makes a contract:",
+    "options": [
+      "Void",
+      "Voidable",
+      "Illegal",
+      "Unenforceable"
+    ],
+    "answer_index": 1,
+    "explanation": "Equitable doctrine renders contract voidable."
+  },
+  {
+    "id": "ATSWA1-BLAW-C-0014",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Contract",
+    "subtopic": "Discharge",
+    "stem": "A contract may be discharged by:",
+    "options": [
+      "Performance",
+      "Breach",
+      "Frustration",
+      "All of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "Performance, breach, agreement, frustration are classic modes of discharge."
+  },
+  {
+    "id": "ATSWA1-BLAW-C-0015",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Contract",
+    "subtopic": "Remedies",
+    "stem": "Expectation damages in contract seek to:",
+    "options": [
+      "Punish the wrongdoer",
+      "Restore the status quo ante",
+      "Put the claimant as if the contract was performed",
+      "Award nominal damages only"
+    ],
+    "answer_index": 2,
+    "explanation": "Aim is to protect the expectation interest."
+  },
+  {
+    "id": "ATSWA1-BLAW-C-0016",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Contract",
+    "subtopic": "Specific Performance",
+    "stem": "Specific performance is:",
+    "options": [
+      "Available for personal service contracts",
+      "An equitable order compelling performance",
+      "Automatic",
+      "A criminal sanction"
+    ],
+    "answer_index": 1,
+    "explanation": "Granted at courtâs discretion for unique subject matter (e.g., land)."
+  },
+  {
+    "id": "ATSWA1-BLAW-C-0017",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Contract",
+    "subtopic": "Injunction",
+    "stem": "An injunction is:",
+    "options": [
+      "A criminal penalty",
+      "A court order to do or refrain from doing an act",
+      "A statutory right",
+      "Liquidated damages"
+    ],
+    "answer_index": 1,
+    "explanation": "Courts restrain breaches or compel acts via injunctions."
+  },
+  {
+    "id": "ATSWA1-BLAW-C-0018",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Contract",
+    "subtopic": "Quantum Meruit",
+    "stem": "âQuantum meruitâ most nearly means:",
+    "options": [
+      "As much as is deserved",
+      "Nothing more",
+      "Penalty",
+      "Exemplary damages"
+    ],
+    "answer_index": 0,
+    "explanation": "Reasonable payment for services where no sum is agreed/contract fails."
+  },
+  {
+    "id": "ATSWA1-BLAW-C-0019",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Contract",
+    "subtopic": "Conditions/Warranties",
+    "stem": "If a term is a condition, breach allows:",
+    "options": [
+      "Damages only",
+      "Repudiation and/or damages",
+      "No remedy",
+      "Rectification only"
+    ],
+    "answer_index": 1,
+    "explanation": "Breach of condition allows rejection/repudiation."
+  },
+  {
+    "id": "ATSWA1-BLAW-C-0020",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Contract",
+    "subtopic": "Promissory Estoppel",
+    "stem": "Promissory estoppel may operate to:",
+    "options": [
+      "Create a contract automatically",
+      "Prevent a party from insisting on strict legal rights",
+      "Award punitive damages",
+      "Remove consideration entirely"
+    ],
+    "answer_index": 1,
+    "explanation": "Equitable shield preventing inequitable enforcement of strict rights."
+  },
+  {
+    "id": "ATSWA1-BLAW-A-0021",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Agency",
+    "subtopic": "Creation",
+    "stem": "Agency can be created by:",
+    "options": [
+      "Agreement",
+      "Ratification",
+      "Necessity",
+      "All of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "Agency arises by agreement, ratification, estoppel or necessity."
+  },
+  {
+    "id": "ATSWA1-BLAW-A-0022",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Agency",
+    "subtopic": "Authority",
+    "stem": "Actual authority may be:",
+    "options": [
+      "Express or implied",
+      "Only express",
+      "Apparent",
+      "Always written"
+    ],
+    "answer_index": 0,
+    "explanation": "Actual authority can be express or implied from circumstances."
+  },
+  {
+    "id": "ATSWA1-BLAW-A-0023",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Agency",
+    "subtopic": "Ratification",
+    "stem": "For valid ratification, the principal must:",
+    "options": [
+      "Lack capacity",
+      "Be undisclosed permanently",
+      "Have capacity and knowledge of material facts",
+      "Act before contract"
+    ],
+    "answer_index": 2,
+    "explanation": "Principal must have capacity at time of act and ratify with knowledge."
+  },
+  {
+    "id": "ATSWA1-BLAW-A-0024",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Agency",
+    "subtopic": "Duties of Agent",
+    "stem": "An agent owes duties of:",
+    "options": [
+      "Accounting",
+      "Avoiding conflict of interest",
+      "Care and skill",
+      "All of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "Core fiduciary and care duties apply."
+  },
+  {
+    "id": "ATSWA1-BLAW-A-0025",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Agency",
+    "subtopic": "Duties of Principal",
+    "stem": "The principal must:",
+    "options": [
+      "Pay agreed remuneration",
+      "Indemnify the agent",
+      "Perform the contract",
+      "All of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "Principal must remunerate and indemnify the agent."
+  },
+  {
+    "id": "ATSWA1-BLAW-A-0026",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Agency",
+    "subtopic": "Termination",
+    "stem": "Agency terminates by:",
+    "options": [
+      "Agreement",
+      "Operation of law (e.g., death/insanity)",
+      "Breach",
+      "All of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "Multiple modes of termination exist."
+  },
+  {
+    "id": "ATSWA1-BLAW-A-0027",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Agency",
+    "subtopic": "Undisclosed Principal",
+    "stem": "An undisclosed principal:",
+    "options": [
+      "Cannot sue or be sued",
+      "Can sue and be sued on the contract",
+      "Is illegal",
+      "Has no rights"
+    ],
+    "answer_index": 1,
+    "explanation": "Once disclosed, the principal can enforce and be liable."
+  },
+  {
+    "id": "ATSWA1-BLAW-A-0028",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Agency",
+    "subtopic": "Apparent Authority",
+    "stem": "Apparent authority arises when:",
+    "options": [
+      "Agent believes he has power",
+      "Principal holds the agent out as having authority",
+      "Contract requires writing",
+      "Ratification occurs"
+    ],
+    "answer_index": 1,
+    "explanation": "Representation by principal leads third parties to rely on it."
+  },
+  {
+    "id": "ATSWA1-BLAW-A-0029",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Agency",
+    "subtopic": "Notice",
+    "stem": "Termination of agency is effective against third parties when:",
+    "options": [
+      "Agent is told privately",
+      "No one is told",
+      "Reasonable notice is given to third parties",
+      "Only court order is made"
+    ],
+    "answer_index": 2,
+    "explanation": "Notice protects third parties who previously relied on agentâs authority."
+  },
+  {
+    "id": "ATSWA1-BLAW-A-0030",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Agency",
+    "subtopic": "Agentâs Rights",
+    "stem": "An agent is entitled to:",
+    "options": [
+      "Remuneration",
+      "Lien on principalâs property for sums due",
+      "Indemnity",
+      "All of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "Agents enjoy remuneration, lien, and indemnity where applicable."
+  },
+  {
+    "id": "ATSWA1-BLAW-S-0031",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Sale of Goods",
+    "subtopic": "Definition",
+    "stem": "A contract of sale of goods is one where the seller transfers or agrees to transfer property in goods to the buyer for:",
+    "options": [
+      "Consideration (price)",
+      "Gratitude",
+      "Gift",
+      "Loan"
+    ],
+    "answer_index": 0,
+    "explanation": "Consideration (money price) is essential."
+  },
+  {
+    "id": "ATSWA1-BLAW-S-0032",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Sale of Goods",
+    "subtopic": "Ownership",
+    "stem": "Property in unascertained goods passes when:",
+    "options": [
+      "Contract is made",
+      "Payment is made",
+      "Goods are ascertained and appropriated",
+      "Delivery occurs"
+    ],
+    "answer_index": 2,
+    "explanation": "Ownership passes when goods are ascertained/appropriated to the contract."
+  },
+  {
+    "id": "ATSWA1-BLAW-S-0033",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Sale of Goods",
+    "subtopic": "Nemo Dat",
+    "stem": "Nemo dat quod non habet means:",
+    "options": [
+      "No one gives what he does not have",
+      "Owner always prevails",
+      "Buyer beware",
+      "Seller owns all"
+    ],
+    "answer_index": 0,
+    "explanation": "Seller cannot transfer a better title than he has, subject to exceptions."
+  },
+  {
+    "id": "ATSWA1-BLAW-S-0034",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Sale of Goods",
+    "subtopic": "Caveat Emptor",
+    "stem": "Caveat emptor most nearly means:",
+    "options": [
+      "Let the buyer beware",
+      "Let the seller beware",
+      "Goods of any quality",
+      "No implied terms"
+    ],
+    "answer_index": 0,
+    "explanation": "Buyer must examine goods, subject to implied term exceptions."
+  },
+  {
+    "id": "ATSWA1-BLAW-S-0035",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Sale of Goods",
+    "subtopic": "Conditions",
+    "stem": "Breach of a condition generally entitles the buyer to:",
+    "options": [
+      "Damages only",
+      "Reject the goods and/or claim damages",
+      "Specific performance only",
+      "No remedy"
+    ],
+    "answer_index": 1,
+    "explanation": "Condition breach allows rejection/repudiation."
+  },
+  {
+    "id": "ATSWA1-BLAW-S-0036",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Sale of Goods",
+    "subtopic": "Warranties",
+    "stem": "Breach of warranty entitles the buyer to:",
+    "options": [
+      "Repudiate the contract",
+      "Claim damages only",
+      "Reject goods always",
+      "Void the agreement"
+    ],
+    "answer_index": 1,
+    "explanation": "Warranty breach yields damages, not rejection."
+  },
+  {
+    "id": "ATSWA1-BLAW-S-0037",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Sale of Goods",
+    "subtopic": "Implied Terms",
+    "stem": "Unless excluded, goods must be of:",
+    "options": [
+      "Any quality",
+      "Merchantable (satisfactory) quality",
+      "Inferior quality",
+      "Nominal quality"
+    ],
+    "answer_index": 1,
+    "explanation": "There is an implied condition as to merchantable/satisfactory quality."
+  },
+  {
+    "id": "ATSWA1-BLAW-S-0038",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Sale of Goods",
+    "subtopic": "Fitness",
+    "stem": "Where a buyer makes known the purpose and relies on the sellerâs skill, there is an implied term of:",
+    "options": [
+      "Fitness for purpose",
+      "No warranty",
+      "Title only",
+      "Quiet possession only"
+    ],
+    "answer_index": 0,
+    "explanation": "Implied condition of fitness for disclosed purpose."
+  },
+  {
+    "id": "ATSWA1-BLAW-S-0039",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Sale of Goods",
+    "subtopic": "Title",
+    "stem": "There is an implied condition that the seller has:",
+    "options": [
+      "Good title",
+      "No title",
+      "Partial title",
+      "No obligations"
+    ],
+    "answer_index": 0,
+    "explanation": "Seller must have the right to sell (good title)."
+  },
+  {
+    "id": "ATSWA1-BLAW-S-0040",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Sale of Goods",
+    "subtopic": "Place of Delivery",
+    "stem": "Unless otherwise agreed, the place of delivery is:",
+    "options": [
+      "Buyerâs residence",
+      "Sellerâs place of business",
+      "Post office",
+      "Any convenient place"
+    ],
+    "answer_index": 1,
+    "explanation": "Default is sellerâs place of business/residence."
+  },
+  {
+    "id": "ATSWA1-BLAW-S-0041",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Sale of Goods",
+    "subtopic": "Risk",
+    "stem": "Generally, risk passes with:",
+    "options": [
+      "Ownership (property)",
+      "Payment",
+      "Contract date",
+      "Inspection"
+    ],
+    "answer_index": 0,
+    "explanation": "Risk usually passes when property passes, unless otherwise agreed."
+  },
+  {
+    "id": "ATSWA1-BLAW-S-0042",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Sale of Goods",
+    "subtopic": "Sale vs Agreement to Sell",
+    "stem": "If property is to pass at a future time or upon a condition, the contract is:",
+    "options": [
+      "A sale",
+      "An agreement to sell",
+      "A gift",
+      "A bailment"
+    ],
+    "answer_index": 1,
+    "explanation": "Agreement to sell becomes a sale when conditions are met."
+  },
+  {
+    "id": "ATSWA1-BLAW-HP-0043",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Hire Purchase",
+    "subtopic": "Ownership",
+    "stem": "In hire purchase, ownership passes:",
+    "options": [
+      "Immediately at contract",
+      "On delivery",
+      "On payment of last installment",
+      "Never"
+    ],
+    "answer_index": 2,
+    "explanation": "Ownership remains with the owner until the final installment is paid."
+  },
+  {
+    "id": "ATSWA1-BLAW-HP-0044",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Hire Purchase",
+    "subtopic": "Nature",
+    "stem": "Hire purchase is best described as:",
+    "options": [
+      "Sale",
+      "Bailment with option to buy",
+      "Gift",
+      "Lease without option"
+    ],
+    "answer_index": 1,
+    "explanation": "HP is bailment with an option to purchase."
+  },
+  {
+    "id": "ATSWA1-BLAW-HP-0045",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Hire Purchase",
+    "subtopic": "Termination",
+    "stem": "The hirer may terminate the agreement:",
+    "options": [
+      "Never",
+      "Anytime before completing payments (subject to terms)",
+      "Only with court order",
+      "Only by owner"
+    ],
+    "answer_index": 1,
+    "explanation": "Hirer can terminate before completion, usually paying prescribed sums."
+  },
+  {
+    "id": "ATSWA1-BLAW-HP-0046",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Hire Purchase",
+    "subtopic": "Repossession",
+    "stem": "On default, the owner may:",
+    "options": [
+      "Do nothing",
+      "Repossess subject to statutory restrictions",
+      "Only sue for debt",
+      "Always seize without notice"
+    ],
+    "answer_index": 1,
+    "explanation": "Repossession is regulated to protect the hirer."
+  },
+  {
+    "id": "ATSWA1-BLAW-HP-0047",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Hire Purchase",
+    "subtopic": "Statute",
+    "stem": "Hire Purchase agreements are governed by:",
+    "options": [
+      "Company law",
+      "Hire Purchase Act",
+      "Partnership Act",
+      "Sale of Goods Act"
+    ],
+    "answer_index": 1,
+    "explanation": "A specific statute governs HP agreements."
+  },
+  {
+    "id": "ATSWA1-BLAW-HP-0048",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Hire Purchase",
+    "subtopic": "Terms",
+    "stem": "Under HP, risk of accidental loss before ownership passes is generally on:",
+    "options": [
+      "Owner always",
+      "Hirer (subject to agreement/insurance)",
+      "Third party",
+      "No one"
+    ],
+    "answer_index": 1,
+    "explanation": "Risk allocation is commonly borne by hirer per contract/insurance."
+  },
+  {
+    "id": "ATSWA1-BLAW-NI-0049",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Negotiable Instruments",
+    "subtopic": "Types",
+    "stem": "Which of the following are negotiable instruments?",
+    "options": [
+      "Bills of exchange only",
+      "Promissory notes only",
+      "Cheques only",
+      "All of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "Bills, notes and cheques are classic negotiable instruments."
+  },
+  {
+    "id": "ATSWA1-BLAW-NI-0050",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Negotiable Instruments",
+    "subtopic": "Holder in Due Course",
+    "stem": "A holder in due course is one who takes the instrument:",
+    "options": [
+      "For value, in good faith, without notice of defects",
+      "For free",
+      "After maturity knowingly",
+      "Without indorsement"
+    ],
+    "answer_index": 0,
+    "explanation": "HDC obtains better title and special rights."
+  },
+  {
+    "id": "ATSWA1-BLAW-NI-0051",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Negotiable Instruments",
+    "subtopic": "Bill of Exchange",
+    "stem": "A bill of exchange is an unconditional order in writing addressed by one person to another to pay:",
+    "options": [
+      "The drawer",
+      "The payee or bearer",
+      "The acceptor",
+      "The endorser"
+    ],
+    "answer_index": 1,
+    "explanation": "It orders payment to the payee or to bearer."
+  },
+  {
+    "id": "ATSWA1-BLAW-NI-0052",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Negotiable Instruments",
+    "subtopic": "Cheques",
+    "stem": "A cheque is a bill of exchange drawn on:",
+    "options": [
+      "A company",
+      "A bank and payable on demand",
+      "A director",
+      "The payee"
+    ],
+    "answer_index": 1,
+    "explanation": "Cheques are payable on demand and drawn on a bank."
+  },
+  {
+    "id": "ATSWA1-BLAW-NI-0053",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Negotiable Instruments",
+    "subtopic": "Crossing",
+    "stem": "Crossing a cheque generally means:",
+    "options": [
+      "It is invalid",
+      "It must be paid through a bank account",
+      "It must be paid in cash",
+      "It is post-dated"
+    ],
+    "answer_index": 1,
+    "explanation": "Crossed cheques are collected through a bank, not encashed over the counter."
+  },
+  {
+    "id": "ATSWA1-BLAW-NI-0054",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Negotiable Instruments",
+    "subtopic": "Dishonour",
+    "stem": "A bill is dishonoured by non-acceptance when:",
+    "options": [
+      "Drawer refuses to sign",
+      "Acceptor refuses or cannot accept",
+      "Payee refuses to present",
+      "Endorser cancels"
+    ],
+    "answer_index": 1,
+    "explanation": "Refusal to accept constitutes dishonour by non-acceptance."
+  },
+  {
+    "id": "ATSWA1-BLAW-NI-0055",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Negotiable Instruments",
+    "subtopic": "Indorsement",
+    "stem": "A blank (general) indorsement:",
+    "options": [
+      "Specifies a particular indorsee",
+      "Converts instrument to order",
+      "Converts instrument to bearer",
+      "Cancels the instrument"
+    ],
+    "answer_index": 2,
+    "explanation": "Blank indorsement makes it payable to bearer and transferable by delivery."
+  },
+  {
+    "id": "ATSWA1-BLAW-NI-0056",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Negotiable Instruments",
+    "subtopic": "Maturity",
+    "stem": "Days of grace on bills have largely been:",
+    "options": [
+      "Abolished by modern statutes",
+      "Extended to 7 days",
+      "Always 3 days in all cases",
+      "Unlimited"
+    ],
+    "answer_index": 0,
+    "explanation": "Modern law often abolishes or modifies days of grace rules."
+  },
+  {
+    "id": "ATSWA1-BLAW-CO-0057",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Company Law",
+    "subtopic": "Incorporation",
+    "stem": "A company comes into existence upon:",
+    "options": [
+      "Promotersâ agreement",
+      "Registration/incorporation with the CAC",
+      "Government gazette",
+      "First AGM"
+    ],
+    "answer_index": 1,
+    "explanation": "Registration creates a separate legal person."
+  },
+  {
+    "id": "ATSWA1-BLAW-CO-0058",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Company Law",
+    "subtopic": "Separate Personality",
+    "stem": "Salomon v. Salomon established:",
+    "options": [
+      "Members are personally liable always",
+      "Company is a separate legal person",
+      "Directors are not fiduciaries",
+      "Shares have no value"
+    ],
+    "answer_index": 1,
+    "explanation": "Company has separate personality distinct from members."
+  },
+  {
+    "id": "ATSWA1-BLAW-CO-0059",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Company Law",
+    "subtopic": "Types",
+    "stem": "A private company must:",
+    "options": [
+      "Restrict transfer of shares",
+      "Invite the public to subscribe",
+      "Have 7 members minimum",
+      "Publish a prospectus"
+    ],
+    "answer_index": 0,
+    "explanation": "Private companies restrict share transfer and limit members."
+  },
+  {
+    "id": "ATSWA1-BLAW-CO-0060",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Company Law",
+    "subtopic": "Membership",
+    "stem": "Minimum members in a public company is:",
+    "options": [
+      "1",
+      "2",
+      "7",
+      "10"
+    ],
+    "answer_index": 2,
+    "explanation": "At least seven persons are required for a public company."
+  },
+  {
+    "id": "ATSWA1-BLAW-CO-0061",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Company Law",
+    "subtopic": "Constitution",
+    "stem": "Articles of association primarily regulate:",
+    "options": [
+      "External relations with public",
+      "Internal management of the company",
+      "Criminal liability",
+      "Tax rates"
+    ],
+    "answer_index": 1,
+    "explanation": "Articles govern internal rules and management."
+  },
+  {
+    "id": "ATSWA1-BLAW-CO-0062",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Company Law",
+    "subtopic": "Objects",
+    "stem": "The memorandum of association traditionally sets out:",
+    "options": [
+      "Directorsâ salaries",
+      "Objects and powers",
+      "AGM minutes",
+      "Dividend policy"
+    ],
+    "answer_index": 1,
+    "explanation": "Memorandum states the objects/powers of the company."
+  },
+  {
+    "id": "ATSWA1-BLAW-CO-0063",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Company Law",
+    "subtopic": "Directorsâ Duties",
+    "stem": "Directors owe duties of:",
+    "options": [
+      "Good faith",
+      "Care and skill",
+      "Avoiding conflicts of interest",
+      "All of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "Core fiduciary and statutory duties apply."
+  },
+  {
+    "id": "ATSWA1-BLAW-CO-0064",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Company Law",
+    "subtopic": "AGM",
+    "stem": "Public companies must hold annual general meetings:",
+    "options": [
+      "Every 6 months",
+      "Every calendar year",
+      "Only on demand",
+      "Never"
+    ],
+    "answer_index": 1,
+    "explanation": "AGM must be held annually."
+  },
+  {
+    "id": "ATSWA1-BLAW-CO-0065",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Company Law",
+    "subtopic": "Auditors",
+    "stem": "Auditors of a public company are appointed by:",
+    "options": [
+      "Directors",
+      "Shareholders at the AGM",
+      "Creditors",
+      "Court only"
+    ],
+    "answer_index": 1,
+    "explanation": "Shareholders appoint auditors, often on board recommendation."
+  },
+  {
+    "id": "ATSWA1-BLAW-CO-0066",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Company Law",
+    "subtopic": "Dividends",
+    "stem": "Dividends are declared by:",
+    "options": [
+      "Directors alone",
+      "Shareholders in general meeting (often on directorsâ recommendation)",
+      "Auditors",
+      "Registrar"
+    ],
+    "answer_index": 1,
+    "explanation": "Shareholders approve dividends; directors recommend."
+  },
+  {
+    "id": "ATSWA1-BLAW-CO-0067",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Company Law",
+    "subtopic": "Prospectus",
+    "stem": "A prospectus is issued by:",
+    "options": [
+      "Private companies only",
+      "Public companies inviting the public to subscribe",
+      "Government",
+      "Partnerships"
+    ],
+    "answer_index": 1,
+    "explanation": "Public offerings require a prospectus."
+  },
+  {
+    "id": "ATSWA1-BLAW-CO-0068",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Company Law",
+    "subtopic": "Share Capital",
+    "stem": "Authorised share capital is:",
+    "options": [
+      "Paid-up capital",
+      "Issued capital",
+      "Maximum nominal capital a company can issue",
+      "Market value of shares"
+    ],
+    "answer_index": 2,
+    "explanation": "Authorised capital is the ceiling set in the constitution."
+  },
+  {
+    "id": "ATSWA1-BLAW-CO-0069",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Company Law",
+    "subtopic": "Ultra Vires",
+    "stem": "Ultra vires acts are those:",
+    "options": [
+      "Within companyâs powers",
+      "Beyond companyâs objects/powers",
+      "Minor irregularities",
+      "Approved by directors"
+    ],
+    "answer_index": 1,
+    "explanation": "Acts beyond objects were historically void; modern statutes may soften this."
+  },
+  {
+    "id": "ATSWA1-BLAW-CO-0070",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Company Law",
+    "subtopic": "Minority Protection",
+    "stem": "Minority shareholders may bring a:",
+    "options": [
+      "Derivative action",
+      "Criminal suit",
+      "Tax appeal",
+      "Judicial review"
+    ],
+    "answer_index": 0,
+    "explanation": "Derivative actions protect the company from wrongs by controllers."
+  },
+  {
+    "id": "ATSWA1-BLAW-CO-0071",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Company Law",
+    "subtopic": "Winding Up",
+    "stem": "A company may be wound up:",
+    "options": [
+      "Only by court",
+      "Voluntarily or by court",
+      "Only by regulators",
+      "Only by shareholdersâ petition"
+    ],
+    "answer_index": 1,
+    "explanation": "Voluntary or compulsory winding up is possible."
+  },
+  {
+    "id": "ATSWA1-BLAW-CO-0072",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Company Law",
+    "subtopic": "Liquidator",
+    "stem": "A liquidatorâs role is to:",
+    "options": [
+      "Manage day-to-day operations indefinitely",
+      "Realise assets and distribute to creditors/members",
+      "Set tax rates",
+      "Appoint directors"
+    ],
+    "answer_index": 1,
+    "explanation": "Liquidator collects assets, pays creditors, and winds up affairs."
+  },
+  {
+    "id": "ATSWA1-BLAW-CO-0073",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Company Law",
+    "subtopic": "Corporate Veil",
+    "stem": "Courts may lift the corporate veil where there is:",
+    "options": [
+      "Proper compliance",
+      "Fraud/sham/evasion of obligations",
+      "Large workforce",
+      "High profits"
+    ],
+    "answer_index": 1,
+    "explanation": "Veil is pierced in cases of fraud or evasion."
+  },
+  {
+    "id": "ATSWA1-BLAW-CO-0074",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Company Law",
+    "subtopic": "Prospectus Liability",
+    "stem": "Misstatements in a prospectus may render liable:",
+    "options": [
+      "Only the company",
+      "Directors, promoters, and experts responsible",
+      "Only auditors",
+      "Only subscribers"
+    ],
+    "answer_index": 1,
+    "explanation": "Those who authorized the document can be liable."
+  },
+  {
+    "id": "ATSWA1-BLAW-CO-0075",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Company Law",
+    "subtopic": "Company Secretary",
+    "stem": "A company secretary is appointed by:",
+    "options": [
+      "Shareholders in AGM",
+      "Board of directors",
+      "Auditors",
+      "Court"
+    ],
+    "answer_index": 1,
+    "explanation": "The board appoints the secretary."
+  },
+  {
+    "id": "ATSWA1-BLAW-CO-0076",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Company Law",
+    "subtopic": "Corporate Governance",
+    "stem": "Core principles of corporate governance include:",
+    "options": [
+      "Opacity and control",
+      "Transparency, accountability, fairness",
+      "Secrecy and dominance",
+      "None"
+    ],
+    "answer_index": 1,
+    "explanation": "Good governance emphasizes transparency, accountability, fairness."
+  },
+  {
+    "id": "ATSWA1-BLAW-P-0077",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Partnership",
+    "subtopic": "Definition",
+    "stem": "Partnership is the relation between persons:",
+    "options": [
+      "Owning property jointly",
+      "Carrying on business in common with a view of profit",
+      "Being family members",
+      "Sharing gross returns only"
+    ],
+    "answer_index": 1,
+    "explanation": "Statutory definition: business in common with a view of profit."
+  },
+  {
+    "id": "ATSWA1-BLAW-P-0078",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Partnership",
+    "subtopic": "Cap on Numbers",
+    "stem": "Maximum number of partners for ordinary partnerships (non-professional) is typically:",
+    "options": [
+      "10",
+      "20",
+      "50",
+      "Unlimited"
+    ],
+    "answer_index": 1,
+    "explanation": "General cap is 20 except for certain professional firms."
+  },
+  {
+    "id": "ATSWA1-BLAW-P-0079",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Partnership",
+    "subtopic": "Good Faith",
+    "stem": "Partners owe a duty of:",
+    "options": [
+      "Minimal disclosure",
+      "Utmost good faith (uberrima fides)",
+      "Competition",
+      "No duty"
+    ],
+    "answer_index": 1,
+    "explanation": "Partners must act in utmost good faith."
+  },
+  {
+    "id": "ATSWA1-BLAW-P-0080",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Partnership",
+    "subtopic": "Liability",
+    "stem": "Partners are liable for firm debts:",
+    "options": [
+      "Only up to capital contributed",
+      "Jointly and severally",
+      "Not at all",
+      "Only for own acts"
+    ],
+    "answer_index": 1,
+    "explanation": "Partners are jointly and severally liable for firm obligations."
+  },
+  {
+    "id": "ATSWA1-BLAW-P-0081",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Partnership",
+    "subtopic": "Implied Authority",
+    "stem": "A partnerâs implied authority covers:",
+    "options": [
+      "Changing the firm name",
+      "Selling firmâs goods in ordinary course",
+      "Admitting new partner",
+      "Altering constitution"
+    ],
+    "answer_index": 1,
+    "explanation": "Implied authority is limited to ordinary business acts."
+  },
+  {
+    "id": "ATSWA1-BLAW-P-0082",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Partnership",
+    "subtopic": "Incoming Partner",
+    "stem": "An incoming partner is liable for debts:",
+    "options": [
+      "Before joining",
+      "After joining only",
+      "Never",
+      "Always"
+    ],
+    "answer_index": 1,
+    "explanation": "Incoming partner is not liable for prior debts."
+  },
+  {
+    "id": "ATSWA1-BLAW-P-0083",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Partnership",
+    "subtopic": "Outgoing Partner",
+    "stem": "An outgoing partner remains liable to third parties until:",
+    "options": [
+      "He leaves the premises",
+      "He gives public/actual notice of retirement",
+      "He sells his interest",
+      "He writes to the registrar"
+    ],
+    "answer_index": 1,
+    "explanation": "Notice must be given to discharge liability to third parties."
+  },
+  {
+    "id": "ATSWA1-BLAW-P-0084",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Partnership",
+    "subtopic": "Default Sharing",
+    "stem": "If agreement is silent, profits/losses are shared:",
+    "options": [
+      "According to capital",
+      "Equally",
+      "By seniority",
+      "By effort"
+    ],
+    "answer_index": 1,
+    "explanation": "Default rule is equal sharing."
+  },
+  {
+    "id": "ATSWA1-BLAW-E-0085",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Employment",
+    "subtopic": "Contract",
+    "stem": "A contract of employment is primarily a contract of:",
+    "options": [
+      "Sale",
+      "Service",
+      "Agency",
+      "Gift"
+    ],
+    "answer_index": 1,
+    "explanation": "Employment is a contract of service (not for services)."
+  },
+  {
+    "id": "ATSWA1-BLAW-E-0086",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Employment",
+    "subtopic": "Duties",
+    "stem": "An employee owes duties of:",
+    "options": [
+      "Fidelity and obedience",
+      "Setting wages",
+      "Auditing",
+      "Legislating"
+    ],
+    "answer_index": 0,
+    "explanation": "Employee must obey lawful orders and act faithfully."
+  },
+  {
+    "id": "ATSWA1-BLAW-E-0087",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Employment",
+    "subtopic": "Wages",
+    "stem": "Minimum wage levels are set by:",
+    "options": [
+      "Private agreements only",
+      "Statute/regulation (subject to jurisdiction)",
+      "Courts always",
+      "Unions only"
+    ],
+    "answer_index": 1,
+    "explanation": "Minimum wage is typically statutory."
+  },
+  {
+    "id": "ATSWA1-BLAW-E-0088",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Employment",
+    "subtopic": "Termination",
+    "stem": "Wrongful dismissal occurs when:",
+    "options": [
+      "Employer terminates with cause",
+      "Proper notice is given",
+      "Employer breaches contract/terminates without due notice",
+      "Employee resigns"
+    ],
+    "answer_index": 2,
+    "explanation": "Dismissal without due notice or in breach is wrongful."
+  },
+  {
+    "id": "ATSWA1-BLAW-E-0089",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Employment",
+    "subtopic": "Redundancy",
+    "stem": "Redundancy refers to termination due to:",
+    "options": [
+      "Employee misconduct",
+      "Business closure/reduced need for work",
+      "Criminal acts",
+      "Illness only"
+    ],
+    "answer_index": 1,
+    "explanation": "Job no longer required due to business needs."
+  },
+  {
+    "id": "ATSWA1-BLAW-E-0090",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Employment",
+    "subtopic": "Health & Safety",
+    "stem": "Employersâ duty regarding workplace safety is:",
+    "options": [
+      "Minimal",
+      "To provide a safe system of work and equipment",
+      "None",
+      "On employees only"
+    ],
+    "answer_index": 1,
+    "explanation": "Employers must ensure reasonable safety and systems."
+  },
+  {
+    "id": "ATSWA1-BLAW-IN-0091",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Insurance",
+    "subtopic": "Insurable Interest",
+    "stem": "For a valid insurance contract, the insured must have:",
+    "options": [
+      "No interest",
+      "Insurable interest",
+      "Moral support",
+      "Third-party consent"
+    ],
+    "answer_index": 1,
+    "explanation": "Insurable interest must exist (at inception; and at loss for indemnity policies)."
+  },
+  {
+    "id": "ATSWA1-BLAW-IN-0092",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Insurance",
+    "subtopic": "Utmost Good Faith",
+    "stem": "Insurance contracts are contracts of:",
+    "options": [
+      "Caveat emptor",
+      "Utmost good faith (uberrimae fidei)",
+      "Mere silence",
+      "Gaming"
+    ],
+    "answer_index": 1,
+    "explanation": "All material facts must be disclosed."
+  },
+  {
+    "id": "ATSWA1-BLAW-IN-0093",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Insurance",
+    "subtopic": "Indemnity",
+    "stem": "Contracts of indemnity aim to:",
+    "options": [
+      "Enrich the insured",
+      "Restore to pre-loss position",
+      "Punish the insurer",
+      "Fix premiums"
+    ],
+    "answer_index": 1,
+    "explanation": "Indemnity restores the insuredâs financial position (no profit)."
+  },
+  {
+    "id": "ATSWA1-BLAW-IN-0094",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Insurance",
+    "subtopic": "Subrogation",
+    "stem": "Subrogation allows the insurer to:",
+    "options": [
+      "Cancel policy at will",
+      "Step into the shoes of the insured to recover from third parties",
+      "Ignore claims",
+      "Double recover"
+    ],
+    "answer_index": 1,
+    "explanation": "After indemnifying, insurer can pursue liable third parties."
+  },
+  {
+    "id": "ATSWA1-BLAW-IN-0095",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Insurance",
+    "subtopic": "Contribution",
+    "stem": "Where two policies cover the same risk, contribution ensures:",
+    "options": [
+      "Multiple full recoveries",
+      "Proportionate sharing between insurers",
+      "Denial of claims",
+      "Criminal sanction"
+    ],
+    "answer_index": 1,
+    "explanation": "Insurers share the loss proportionately to prevent overcompensation."
+  },
+  {
+    "id": "ATSWA1-BLAW-LS-0096",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Legal System",
+    "subtopic": "Sources of Law",
+    "stem": "Primary sources of Nigerian law include:",
+    "options": [
+      "Customary law",
+      "Legislation (statutes)",
+      "Case law (judicial precedent)",
+      "All of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "The legal system draws from multiple primary sources."
+  },
+  {
+    "id": "ATSWA1-BLAW-LS-0097",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Legal System",
+    "subtopic": "Hierarchy of Courts",
+    "stem": "In the Nigerian court hierarchy, the highest court is:",
+    "options": [
+      "Court of Appeal",
+      "High Court",
+      "Supreme Court",
+      "Magistrate Court"
+    ],
+    "answer_index": 2,
+    "explanation": "The Supreme Court is the apex court."
+  },
+  {
+    "id": "ATSWA1-BLAW-LS-0098",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Legal System",
+    "subtopic": "Precedent",
+    "stem": "The doctrine of stare decisis requires courts to:",
+    "options": [
+      "Ignore past decisions",
+      "Follow binding precedent from higher courts",
+      "Follow only foreign cases",
+      "Legislate"
+    ],
+    "answer_index": 1,
+    "explanation": "Lower courts follow ratio decidendi of higher courts."
+  },
+  {
+    "id": "ATSWA1-BLAW-LS-0099",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Legal System",
+    "subtopic": "ADR",
+    "stem": "Alternative dispute resolution (ADR) methods include:",
+    "options": [
+      "Arbitration",
+      "Mediation",
+      "Negotiation",
+      "All of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "ADR offers alternatives to litigation."
+  },
+  {
+    "id": "ATSWA1-BLAW-LS-0100",
+    "level": "ATSWA1",
+    "subject": "Business Law",
+    "topic": "Legal System",
+    "subtopic": "Limitation",
+    "stem": "Limitation statutes primarily:",
+    "options": [
+      "Create crimes",
+      "Bar actions after set periods",
+      "Award damages",
+      "Create contracts"
+    ],
+    "answer_index": 1,
+    "explanation": "They bar stale claims after specified time limits."
+  }
+]
