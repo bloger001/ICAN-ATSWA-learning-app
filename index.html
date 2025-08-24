@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>ICAN Prep Journey</title>
-  <link rel="stylesheet" href="./assets/app.css?v=18"/>
+  <link rel="stylesheet" href="./assets/app.css?v=19"/>
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
   <meta http-equiv="Pragma" content="no-cache"/>
   <meta http-equiv="Expires" content="0"/>
@@ -23,30 +23,30 @@
       </div>
     </section>
 
-    <!-- QUICK ACCESS -->
+    <!-- Quick access tiles -->
     <section class="tiles" style="margin-top:16px">
-      <a class="tile" href="./status.html?v=18">
-        <div class="muted small">Analytics</div>
-        <div>My Status</div>
-      </a>
-
-      <a class="tile" href="./resources.html?v=18">
+      <a class="tile" href="./resources.html?v=19">
         <div class="muted small">Study</div>
         <div>Resources</div>
       </a>
 
-      <a class="tile" href="./leaderbored.html?v=18">
+      <a class="tile" href="./status.html?v=19">
+        <div class="muted small">Progress</div>
+        <div>Status</div>
+      </a>
+
+      <a class="tile" href="./leaderbored.html?v=19">
         <div class="muted small">Community</div>
         <div>Leaderboard</div>
       </a>
 
-      <a class="tile" href="./admin.html?v=18">
+      <a class="tile" href="./admin.html?v=19">
         <div class="muted small">Admin</div>
         <div>Dashboard</div>
       </a>
     </section>
 
-    <!-- ATSWA 1 SUBJECTS -->
+    <!-- ATSWA 1 SUBJECTS (THIS IS THE PART YOU WERE MISSING) -->
     <section class="card" style="margin-top:18px">
       <h2>ATSWA 1 — Start a quiz</h2>
       <div class="tiles">
@@ -71,7 +71,7 @@
         </a>
       </div>
       <p class="small muted" style="margin-top:8px">
-        Tip: Your attempts are saved for analysis in <b>My Status</b>. Use <i>Review mistakes</i> to practice weak topics.
+        Tip: Your attempts are saved for analysis in <b>Status</b>. Use <i>Review mistakes</i> to practice weak topics.
       </p>
     </section>
 
@@ -84,7 +84,7 @@
     </footer>
   </div>
 
-  <!-- Firebase + auth -->
+  <!-- Firebase auth: show profile when signed in -->
   <script type="module">
     import { auth } from './assets/firebase.js';
     import {
@@ -96,8 +96,7 @@
     function renderSignedOut(){
       authArea.innerHTML = `<button id="loginBtn" class="btn primary">Continue with Google</button>`;
       document.getElementById('loginBtn').onclick = async ()=>{
-        const provider = new GoogleAuthProvider();
-        try { await signInWithPopup(auth, provider); }
+        try { await signInWithPopup(auth, new GoogleAuthProvider()); }
         catch(e){ alert('Login failed: ' + e.message); }
       };
     }
@@ -110,19 +109,14 @@
             <p class="muted small">${user.email}</p>
           </div>
           <button id="logoutBtn" class="btn">Sign out</button>
-        </div>
-      `;
+        </div>`;
       document.getElementById('logoutBtn').onclick = ()=> signOut(auth);
-      // cache for local status/review keys
       try { localStorage.setItem('ican.user', JSON.stringify({
         uid: user.uid, email: user.email, displayName: user.displayName
       })); } catch {}
     }
 
-    onAuthStateChanged(auth, (user)=>{
-      if (user) renderSignedIn(user);
-      else renderSignedOut();
-    });
+    onAuthStateChanged(auth, (user)=> user ? renderSignedIn(user) : renderSignedOut());
   </script>
 </body>
 </html>
