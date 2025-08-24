@@ -4,21 +4,25 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Leaderboard — ICAN Prep</title>
-  <link rel="stylesheet" href="./assets/app.css?v=13"/>
+  <link rel="stylesheet" href="./assets/app.css?v=16"/>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+  <meta http-equiv="Pragma" content="no-cache"/>
+  <meta http-equiv="Expires" content="0"/>
 </head>
 <body>
   <div class="wrap">
     <header class="space-between" style="align-items:center">
       <h1>Leaderboard</h1>
-      <a class="btn" href="index.html">← Home</a>
+      <a class="btn" href="./index.html">← Home</a>
     </header>
 
     <section class="card">
       <p class="muted">Ranking by total correct answers in the last 7 days (all subjects).</p>
-      <div id="board"></div>
+      <div id="board">Loading…</div>
     </section>
   </div>
 
-  <script type="module" src="./assets/leaderboard.js?v=13"></script>
+  <!-- Load as ES module -->
+  <script type="module" src="./assets/leaderboard.js?v=16"></script>
 </body>
 </html>
