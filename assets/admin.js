@@ -1,45 +1,74 @@
+// assets/admin.js
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js";
+import {
+  getAuth, onAuthStateChanged
+} from "https://www.gstatic.com/firebasejs/10.13.2/firebase-auth.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBRGM431CHZ3UMUHIc4Q-S1aGDMfrbu7Gs",
+  authDomain: "ican-kit-prep.firebaseapp.com",
+  projectId: "ican-kit-prep",
+  storageBucket: "ican-kit-prep.firebasestorage.app",
+  messagingSenderId: "354385037521",
+  appId: "1:354385037521:web:f3a7265f66983942581df0",
+  measurementId: "G-LN8E2R4B7X"
+};
+
+const app  = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+
+// Config
 const ADMIN_EMAIL = "offixcialbloger@gmail.com";
-const KEY = "admin_gate_ok";
-// SHA-256("FT24ACC245")
-const STORED_HASH = "f7c93bce4fbefe718d8672e7fb9a2d8c28d8a3c3d4c13b32f0357baaec70422f";
+const ADMIN_CODE  = "FT24ACC245";
 
-const who = document.getElementById('who');
-const gate = document.getElementById('gate');
-const adminApp = document.getElementById('adminApp');
-const verifyBtn = document.getElementById('verifyBtn');
-const adminCodeInput = document.getElementById('adminCode');
+// DOM
+const statusBadge = document.getElementById("statusBadge");
+const codeBox     = document.getElementById("codeBox");
+const verifyBtn   = document.getElementById("verifyBtn");
+const codeInput   = document.getElementById("adminCode");
+const adminArea   = document.getElementById("adminArea");
+const adminName   = document.getElementById("adminName");
+const errMsg      = document.getElementById("errMsg");
 
-const auth2 = firebase.auth();
+let user = null;
 
-auth2.onAuthStateChanged((user)=>{
-  if(!user){
-    who.textContent = "Not signed in";
-    gate.innerHTML = `<p>Please sign in on the home page first.</p><a class="btn" href="./">Go to Home</a>`;
-    return;
-  }
-  who.textContent = user.email;
-  if(user.email !== ADMIN_EMAIL){
-    gate.innerHTML = `<p>Access denied. Use <strong>${ADMIN_EMAIL}</strong>.</p><a class="btn" href="./">Back</a>`;
-    return;
-  }
-  if(sessionStorage.getItem(KEY)==="1"){
-    gate.style.display='none'; adminApp.style.display='';
-  }
-});
-
-verifyBtn?.addEventListener('click', async ()=>{
-  const code = adminCodeInput.value.trim();
-  const hash = await sha256(code);
-  if(hash===STORED_HASH){
-    sessionStorage.setItem(KEY,"1");
-    gate.style.display='none';
-    adminApp.style.display='';
+// Watch login state
+onAuthStateChanged(auth, (u) => {
+  if (u) {
+    user = u;
+    if (u.email === ADMIN_EMAIL) {
+      statusBadge.textContent = "Signed in as Admin Gmail";
+      statusBadge.className = "pill";
+      codeBox.style.display = "block"; // show code entry
+    } else {
+      statusBadge.textContent = `Signed in as ${u.email}`;
+      statusBadge.className = "pill muted";
+      codeBox.style.display = "none";
+      errMsg.style.display = "block";
+      errMsg.textContent = "This account is not allowed.";
+    }
   } else {
-    alert("Wrong code");
+    statusBadge.textContent = "Not signed in";
+    statusBadge.className = "pill muted";
+    codeBox.style.display = "none";
   }
 });
 
-async function sha256(str){
-  const buf=await crypto.subtle.digest("SHA-256", new TextEncoder().encode(str));
-  return [...new Uint8Array(buf)].map(x=>x.toString(16).padStart(2,'0')).join('');
-}
+// Verify code
+verifyBtn?.addEventListener("click", () => {
+  if (!user || user.email !== ADMIN_EMAIL) {
+    errMsg.style.display = "block";
+    errMsg.textContent = "Sign in with the admin Gmail first.";
+    return;
+  }
+  if (codeInput.value.trim() !== ADMIN_CODE) {
+    errMsg.style.display = "block";
+    errMsg.textContent = "Invalid access code.";
+    return;
+  }
+
+  // Success
+  codeBox.style.display = "none";
+  adminArea.style.display = "block";
+  adminName.textContent = user.displayName || user.email;
+});
