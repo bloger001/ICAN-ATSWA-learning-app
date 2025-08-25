@@ -1,121 +1,130 @@
-// assets/app.js  v50  — popup first auth, redirect fallback, quiz gate, error logging
+// ICAN ATSWA - minimal app shell (safe update)
+// Assumes firebaseConfig is defined in /assets/firebase.js and loaded before this file.
 
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-import {
-  getAuth, GoogleAuthProvider, signInWithPopup, signInWithRedirect,
-  getRedirectResult, onAuthStateChanged, signOut as fbSignOut
-} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-import {
-  getFirestore, addDoc, collection, serverTimestamp
-} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+(function () {
+  // -------- utilities --------
+  const $ = (q, el = document) => el.querySelector(q);
+  const params = new URLSearchParams(location.search);
+  const vBust = () => `v=${Date.now()}`;
 
-const $ = (id)=>document.getElementById(id);
-function logErr(msg){
-  try {
-    const arr = JSON.parse(localStorage.getItem('ican_error_log')||"[]");
-    arr.unshift({t: Date.now(), msg: String(msg)});
-    localStorage.setItem('ican_error_log', JSON.stringify(arr).slice(0, 10000));
-  } catch {}
-  console.error(msg);
-}
-function showError(msg){
-  logErr(msg);
-  const box = $('authError');
-  if (box){ box.textContent = String(msg); box.style.display='block'; }
-}
+  // -------- firebase bootstrap --------
+  let app, auth, db, provider;
 
-const firebaseConfig = window.firebaseConfig;
-if (!firebaseConfig) {
-  showError('Script error: firebaseConfig missing');
-  throw new Error('firebaseConfig missing');
-}
+  function bootFirebase() {
+    if (!window.firebaseConfig) throw new Error('firebaseConfig missing');
 
-const app  = initializeApp(firebaseConfig);
-const auth = getAuth(app);
-const db   = getFirestore(app);
+    const {
+      initializeApp
+    } = window.firebase;
+    app = initializeApp(window.firebaseConfig);
 
-// ------- auth UI actions -------
-const provider = new GoogleAuthProvider();
-provider.setCustomParameters({ prompt: "select_account" });
+    const {
+      getAuth,
+      GoogleAuthProvider,
+      signInWithPopup,
+      onAuthStateChanged,
+      signOut
+    } = window.firebaseAuth;
 
-async function startGoogle(){
-  try {
-    await signInWithPopup(auth, provider);
-  } catch (e) {
-    const fallback = new Set([
-      "auth/popup-blocked", "auth/popup-closed-by-user",
-      "auth/operation-not-supported-in-this-environment", "auth/unauthorized-domain"
-    ]);
-    if (fallback.has(e.code)) {
-      try { await signInWithRedirect(auth, provider); return; }
-      catch (e2){ showError(`Redirect failed: ${e2.code||""} ${e2.message||e2}`); }
-    } else {
-      showError(`Popup failed: ${e.code||""} ${e.message||e}`);
-    }
-  }
-}
+    const { getFirestore } = window.firebaseFirestore;
 
-window.ICAN_AUTH = {
-  startGoogle,
-  signOut: ()=> fbSignOut(auth)
-};
+    auth = getAuth(app);
+    provider = new GoogleAuthProvider();
+    db = getFirestore(app);
 
-const btnIn  = $('btnSignIn');
-const btnOut = $('btnSignOut');
-if (btnIn)  btnIn.addEventListener('click', startGoogle);
-if (btnOut) btnOut.addEventListener('click', ()=> fbSignOut(auth));
-
-// Complete redirect if returning from Google
-getRedirectResult(auth).catch(e=>{
-  if (e && e.code !== 'auth/no-auth-event') showError(`Redirect result error: ${e.code||""} ${e.message||e}`);
-});
-
-// Keep simple profile locally (for quiz gate / greetings)
-onAuthStateChanged(auth, (user)=>{
-  const isAuthed = !!user;
-  try {
-    if (isAuthed) localStorage.setItem('ican_user', JSON.stringify({uid:user.uid, email:user.email||"", name:user.displayName||""}));
-    else localStorage.removeItem('ican_user');
-  } catch {}
-
-  if (typeof window._icanToggleHome === 'function') {
-    window._icanToggleHome(isAuthed, user?.email||"", user?.displayName||"");
-  } else {
-    const badge = $('signedBadge');
-    if (badge) badge.textContent = isAuthed ? 'Signed in' : 'Not signed in';
-    if (btnIn)  btnIn.style.display  = isAuthed ? 'none' : '';
-    if (btnOut) btnOut.style.display = isAuthed ? '' : 'none';
+    // expose small api
+    window.ICAN = window.ICAN || {};
+    window.ICAN.firebase = { app, auth, db, provider, signInWithPopup, onAuthStateChanged, signOut };
   }
 
-  // Hard-gate quiz page
-  const p = (location.pathname||"").toLowerCase();
-  const isQuiz = p.endsWith("/quiz.html") || p.endsWith("quiz.html");
-  if (isQuiz && !isAuthed) {
-    try { history.replaceState({}, "", "index.html?v=auth"); } catch {}
-    location.href = "index.html?v=auth";
-  }
-});
+  // -------- auth button wiring on home page --------
+  function wireHome() {
+    const signBtn = $('#googleSignIn');
+    const signOutBtn = $('#googleSignOut');
+    const statusEl = $('#signStatus');
 
-// helper for other pages
-window.icanGetUser = ()=>{ try { return JSON.parse(localStorage.getItem('ican_user')||"null"); } catch { return null; } };
+    if (!signBtn) return; // not on home
 
-// Optional: leaderboard write hook (safe to call from quiz.js)
-window.icanReportScore = async (payload)=>{
-  try {
-    const user = auth.currentUser;
-    if (!user) return;
-    // expected payload: {subject, mode, score, total}
-    await addDoc(collection(db, "scores"), {
-      uid: user.uid,
-      email: user.email || "",
-      subject: payload.subject || "",
-      mode: payload.mode || "practice",
-      score: Number(payload.score||0),
-      total: Number(payload.total||0),
-      pct: Math.round(100 * Number(payload.score||0) / Math.max(1, Number(payload.total||0))),
-      ts: serverTimestamp()
+    const { auth, provider, signInWithPopup, onAuthStateChanged, signOut } = window.ICAN.firebase;
+
+    signBtn.addEventListener('click', async () => {
+      try { await signInWithPopup(auth, provider); } catch (e) { console.error(e); }
     });
-  } catch(e){ logErr(`score write failed: ${e.code||""} ${e.message||e}`); }
-};
 
-window.icanDb = db;
+    if (signOutBtn) {
+      signOutBtn.addEventListener('click', async () => {
+        try { await signOut(auth); } catch (e) { console.error(e); }
+      });
+    }
+
+    onAuthStateChanged(auth, (user) => {
+      if (statusEl) statusEl.textContent = user ? 'Signed in' : 'Not signed in';
+      if (user) {
+        signBtn.style.display = 'none';
+        if (signOutBtn) signOutBtn.style.display = 'inline-flex';
+        // reveal locked tiles
+        document.querySelectorAll('[data-locked]').forEach(x => x.removeAttribute('data-locked'));
+      } else {
+        if (signOutBtn) signOutBtn.style.display = 'none';
+        signBtn.style.display = 'inline-flex';
+        // keep tiles locked until sign-in
+        document.querySelectorAll('.tile.lockable').forEach(x => x.setAttribute('data-locked',''));
+      }
+    });
+  }
+
+  // -------- quiz page: load JSON first; firestore is optional --------
+  async function wireQuiz() {
+    const quizRoot = $('#quizRoot');
+    if (!quizRoot) return; // not on quiz
+
+    const level = params.get('level') || 'ATSWA1';
+    const subject = params.get('subject') || 'Basic Accounting';
+    const fileMap = {
+      'Basic Accounting': './data/atswa1_basic_accounting.json',
+      'Business Law': './data/atswa1_business_law.json',
+      'Economics': './data/atswa1_economics.json',
+      'Communication Skills': './data/atswa1_comm_skills.json'
+    };
+    const url = fileMap[subject];
+
+    const showMsg = (m) => { $('#quizStatus').textContent = m; };
+
+    try {
+      showMsg('Loading...');
+      // Fetch questions immediately (don’t wait for Firestore)
+      const res = await fetch(url + `?${vBust()}`);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const payload = await res.json();
+      if (!Array.isArray(payload) || payload.length === 0) throw new Error('Empty or bad JSON');
+
+      window.ICAN_QUESTIONS = payload; // your existing renderer uses this
+      showMsg('');
+      document.dispatchEvent(new CustomEvent('ican:questionsReady'));
+    } catch (e) {
+      console.error(e);
+      showMsg(`Load error: ${e.message}`);
+    }
+
+    // Optional: init Firestore listeners AFTER rendering questions
+    try {
+      const { auth, onAuthStateChanged } = window.ICAN.firebase;
+      onAuthStateChanged(auth, () => {/* no-op here; existing quiz saving can use ICAN.firebase later */});
+    } catch {}
+  }
+
+  // -------- leaderboard page (reads require new rules) --------
+  function wireLeaderboard() {
+    const pane = $('#leaderPane');
+    if (!pane) return;
+    // your existing leaderboard.js does the heavy lifting; nothing to do here
+  }
+
+  // -------- boot --------
+  window.addEventListener('DOMContentLoaded', () => {
+    try { bootFirebase(); } catch (e) { console.error(e); }
+    wireHome();
+    wireQuiz();
+    wireLeaderboard();
+  });
+})();
