@@ -2,45 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Admin — ICAN Prep</title>
-  <link rel="stylesheet" href="./assets/app.css?v=50"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Admin — ICAN ATSWA</title>
+  <link rel="stylesheet" href="./assets/app.css?v=2025-08-26a"/>
 </head>
 <body>
   <div class="wrap">
     <header class="space-between" style="align-items:center">
       <h1>ICAN Prep Admin</h1>
-      <a class="btn" href="index.html">← Home</a>
+      <a class="btn" href="./index.html">← Home</a>
     </header>
 
+    <div class="muted small">Only <b>offixcialbloger@gmail.com</b> may access.</div>
+
     <section class="card">
-      <div class="muted small">
-        Only <strong>offixcialbloger@gmail.com</strong> may access.
-        Status: <span id="adminSigned">Not signed in</span>
+      <h2>Access</h2>
+      <div class="row" style="gap:8px;align-items:center">
+        <input id="adminCode" class="input" placeholder="Access code"/>
+        <button id="btnVerify" class="btn">Verify</button>
+        <button id="btnAdminSignIn" class="btn">Sign in</button>
+        <button id="btnAdminSignOut" class="btn" style="display:none">Sign out</button>
       </div>
-      <div style="margin-top:10px;">
-        <input id="adminCode" placeholder="Access code"/>
-        <button class="btn" id="btnVerify">Verify</button>
-        <button class="btn" id="btnAdminSignIn">Sign in</button>
-        <button class="btn" id="btnAdminSignOut" style="display:none">Sign out</button>
-      </div>
-      <div id="adminMsg" class="error" style="display:none;margin-top:10px;"></div>
+      <div id="adminState" class="muted small" style="margin-top:8px"></div>
     </section>
 
     <section class="card" id="diagCard" style="display:none">
       <h2>Diagnostics</h2>
-      <button class="btn" id="btnRun">Run health checks</button>
-      <button class="btn" id="btnClearLog">Clear local error log</button>
-      <pre id="diagOut" class="small" style="white-space:pre-wrap;margin-top:10px;"></pre>
-    </section>
-
-    <section class="card">
-      <h2>Local Error Log</h2>
-      <pre id="errLog" class="small" style="white-space:pre-wrap"></pre>
+      <div class="row" style="gap:8px;margin-bottom:8px">
+        <button id="btnRunHealth" class="btn">Run health checks</button>
+        <button id="btnClearLocal" class="btn">Clear local error log</button>
+        <button id="btnForceUpdate" class="btn">Check for app update</button>
+      </div>
+      <pre id="diagLog" style="white-space:pre-wrap"></pre>
+      <h3>Local Error Log</h3>
+      <pre id="localLog" style="white-space:pre-wrap"></pre>
     </section>
   </div>
 
-  <script src="./assets/firebase.js?v=50"></script>
-  <script type="module" src="./assets/admin.js?v=50"></script>
+  <script src="./assets/firebase.js?v=2025-08-26a"></script>
+  <script src="./assets/app.js?v=2025-08-26a"></script>
+  <script src="./assets/admin.js?v=2025-08-26a"></script>
 </body>
 </html>
