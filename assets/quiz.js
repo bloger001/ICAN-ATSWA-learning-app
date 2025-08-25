@@ -1,192 +1,312 @@
-// quiz.js — loads subject JSON, shuffles Qs/options, logs attempts locally + Firestore, writes run on finish
-
+/* /assets/quiz.js — v35 (safe replacement: loads questions, shuffles, saves leaderboard & mistakes) */
 import { auth, db } from './firebase.js';
-import { collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore.js";
+import {
+  collection, addDoc, serverTimestamp
+} from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 
-const qs = new URLSearchParams(location.search);
-const level   = qs.get('level')   || 'ATSWA1';
-const subject = qs.get('subject') || 'Basic Accounting';
-const mode    = qs.get('mode')    || 'practice';
-const topicsFilter = (qs.get('topics') || '').split(',').map(s=>s.trim()).filter(Boolean);
+/* -----------------------------
+   URL params and data mapping
+------------------------------*/
+const params = new URLSearchParams(location.search);
+const level = params.get('level') || 'ATSWA1';
+const subject = decodeURIComponent(params.get('subject') || 'Basic Accounting');
 
-const FILES = {
-  'Basic Accounting'    : 'data/atswa1_basic_accounting.json',
-  'Economics'           : 'data/atswa1_economics.json',
-  'Business Law'        : 'data/atswa1_business_law.json',
-  'Communication Skills': 'data/atswa1_comm_skills.json'
+const DATA_MAP = {
+  ATSWA1: {
+    'Basic Accounting': 'data/atswa1_basic_accounting.json',
+    'Business Law': 'data/atswa1_business_law.json',
+    'Economics': 'data/atswa1_economics.json',
+    'Communication Skills': 'data/atswa1_comm_skills.json'
+  }
 };
 
-// DOM
-const meta      = document.getElementById('meta') || (()=>{ const p=document.createElement('p'); p.id='meta'; document.body.prepend(p); return p; })();
-const qwrap     = document.getElementById('qwrap');
-const qstem     = document.getElementById('qstem');
-const qopts     = document.getElementById('qopts');
-const nextBtn   = document.getElementById('nextBtn');
-const submitBtn = document.getElementById('submitBtn');
-const result    = document.getElementById('result');
+// fallback if name variants appear
+function resolveDataPath(level, subject) {
+  const map = DATA_MAP[level] || {};
+  // try exact
+  if (map[subject]) return map[subject];
+  // try loose keys
+  const key = Object.keys(map).find(k => k.toLowerCase() === subject.toLowerCase());
+  return key ? map[key] : null;
+}
 
-meta.textContent = `Level: ${level} — Subject: ${subject} — Mode: ${mode}${topicsFilter.length ? ' — Focus: ' + topicsFilter.join(', ') : ''}`;
-
-// Helpers
-function shuffle(a){ for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]];} return a; }
-function lock(ms=250){ busy=true; setTimeout(()=>busy=false, ms); }
-function getUserSlim(){ try{ return JSON.parse(localStorage.getItem('ican.user')||'null'); }catch{return null;} }
-
-// Local attempts key
-const RESULTS_KEY = `ican.results:${(getUserSlim()&&getUserSlim().uid)||'guest'}`;
-
-// State
-let questions = [];
-let idx = 0, selected = null, score = 0, busy = false;
-
-// Save/restore progress (per subject + topics selection)
-const SAVE_KEY = `ican.progress:${subject}:${topicsFilter.join('|')}`;
-function saveProgress(){ try { localStorage.setItem(SAVE_KEY, JSON.stringify({ idx, score, selected, ids: questions.map(q=>q.id) })); } catch {} }
-function loadProgress(){ try {
-  const s = JSON.parse(localStorage.getItem(SAVE_KEY)||'null');
-  if (s && Number.isInteger(s.idx) && Array.isArray(s.ids)) {
-    const same = s.ids.length && s.ids.every((id,i)=> questions[i] && questions[i].id === id);
-    if (same){ idx=s.idx; score=s.score||0; selected=s.selected??null; }
+/* -----------------------------
+   Small helpers
+------------------------------*/
+const sleep = (ms) => new Promise(r => setTimeout(r, ms));
+const randInt = (n) => Math.floor(Math.random() * n);
+function shuffleInPlace(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = randInt(i + 1);
+    [arr[i], arr[j]] = [arr[j], arr[i]];
   }
-} catch{} }
-window.addEventListener('beforeunload', saveProgress);
-document.addEventListener('visibilitychange', ()=>{ if (document.hidden) saveProgress(); });
+  return arr;
+}
 
-// Local + cloud attempt log
-async function logAttemptSnapshot(q, chosenIndex){
-  const rec = {
-    ts: Date.now(), level, subject, topic: q.topic||'', subtopic: q.subtopic||'',
-    id: q.id||'', stem: q.stem, options: q.options,
-    correct_index: q.answer_index, chosen_index: chosenIndex,
-    correct: chosenIndex === q.answer_index
+function el(sel) { return document.querySelector(sel); }
+function create(tag, attrs = {}, children = []) {
+  const n = document.createElement(tag);
+  Object.entries(attrs).forEach(([k, v]) => {
+    if (k === 'class') n.className = v;
+    else if (k === 'html') n.innerHTML = v;
+    else n.setAttribute(k, v);
+  });
+  children.forEach(c => n.appendChild(typeof c === 'string' ? document.createTextNode(c) : c));
+  return n;
+}
+
+/* -----------------------------
+   Safe default UI (if none exists)
+------------------------------*/
+function ensureUI() {
+  let root = el('#quiz-root');
+  if (!root) {
+    root = create('div', { id: 'quiz-root', class: 'wrap' });
+    document.body.appendChild(root);
+  }
+  if (!root.dataset.built) {
+    root.innerHTML = `
+      <header class="space-between" style="align-items:center;margin:10px 0 16px">
+        <h1 id="quizTitle">Quiz</h1>
+        <a class="btn" href="index.html">← Home</a>
+      </header>
+      <section class="card" id="quizCard">
+        <div id="progress" class="muted small">Loading…</div>
+        <h2 id="questionText" style="margin:10px 0 8px"></h2>
+        <div id="options" class="col"></div>
+        <div class="row" style="margin-top:12px;gap:8px">
+          <button id="nextBtn" class="btn">Next</button>
+        </div>
+      </section>
+      <section class="card" id="resultCard" style="display:none">
+        <h2>Result</h2>
+        <p id="resultSummary" class="muted"></p>
+        <div class="row" style="gap:8px;margin-top:10px">
+          <a class="btn" href="review.html?v=35">Review Mistakes</a>
+          <a class="btn ghost" href="status.html?v=35">View Status</a>
+        </div>
+      </section>
+    `;
+    root.dataset.built = '1';
+  }
+  return {
+    title: el('#quizTitle'),
+    progress: el('#progress'),
+    qText: el('#questionText'),
+    options: el('#options'),
+    nextBtn: el('#nextBtn'),
+    quizCard: el('#quizCard'),
+    resultCard: el('#resultCard'),
+    resultSummary: el('#resultSummary')
   };
-  // local
+}
+
+/* -----------------------------
+   Leaderboard: save a row
+------------------------------*/
+async function saveScoreToLeaderboard({ subject, level, total, correct, durationMs }) {
+  const user = auth.currentUser;
+  if (!user) return; // quiz page is gated by app.js, but keep guard
   try {
-    const arr = JSON.parse(localStorage.getItem(RESULTS_KEY) || '[]');
-    arr.push(rec);
-    localStorage.setItem(RESULTS_KEY, JSON.stringify(arr));
-  } catch {}
-  // cloud
-  try {
-    const u = auth.currentUser;
-    if (u && u.uid) {
-      await addDoc(collection(db, 'attempts'), {
-        uid: u.uid,
-        email: u.email || null,
-        level, subject,
-        topic: rec.topic, subtopic: rec.subtopic,
-        qid: rec.id || null,
-        stem: rec.stem,
-        options: rec.options,
-        correct_index: rec.correct_index,
-        chosen_index: rec.chosen_index,
-        correct: rec.correct,
-        ts: serverTimestamp()
-      });
-    }
+    await addDoc(collection(db, "leaderboard"), {
+      uid: user.uid,
+      name: user.displayName || user.email || "Anonymous",
+      subject,
+      level,
+      total,
+      correct,
+      percent: Math.round((correct / Math.max(1,total)) * 100),
+      durationMs: durationMs ?? null,
+      createdAt: serverTimestamp()
+    });
   } catch (e) {
-    console.warn('Attempt cloud log failed:', e?.message || e);
+    console.warn("Leaderboard write failed:", e);
   }
 }
 
-// Load questions
-async function loadData(){
-  const file = FILES[subject];
-  if(!file){
-    qstem.innerHTML = `<div class="card muted">Unknown subject.</div>`;
-    qwrap?.querySelector('.row')?.style && (qwrap.querySelector('.row').style.display='none');
+/* -----------------------------
+   Mistakes & status storage
+------------------------------*/
+function getUserKeyPrefix() {
+  const user = auth.currentUser;
+  const uid = user?.uid || 'guest';
+  return `ican.${uid}`;
+}
+
+function saveMistakes(subject, mistakes) {
+  // mistakes: [{id, question, options, correctAnswer, userAnswer, topic}]
+  const key = `${getUserKeyPrefix()}.mistakes.${subject}`;
+  localStorage.setItem(key, JSON.stringify(mistakes.slice(0, 300))); // cap
+}
+
+function addSessionToHistory(subject, stats) {
+  // stats: {total, correct, percent, ts, weakTopics: {topic: missCount}}
+  const key = `${getUserKeyPrefix()}.history.${subject}`;
+  const arr = JSON.parse(localStorage.getItem(key) || '[]');
+  arr.unshift(stats);
+  localStorage.setItem(key, JSON.stringify(arr.slice(0, 100))); // cap
+}
+
+/* -----------------------------
+   Main quiz flow
+------------------------------*/
+let ui;
+let QUESTIONS = [];
+let order = [];
+let current = 0;
+let score = 0;
+let startTimeMs = Date.now();
+let mistakes = [];
+
+function renderQuestion() {
+  const q = QUESTIONS[order[current]];
+  // Title/progress
+  ui.title.textContent = `${subject} — ${level}`;
+  ui.progress.textContent = `Question ${current + 1} of ${QUESTIONS.length}`;
+
+  // Stem
+  ui.qText.textContent = q.question;
+
+  // Options (shuffle copy)
+  const opts = q.options.map((text, i) => ({ text, i }));
+  shuffleInPlace(opts);
+
+  ui.options.innerHTML = '';
+  opts.forEach(({ text, i }) => {
+    const btn = create('button', { class: 'btn ghost', type: 'button' }, [text]);
+    btn.addEventListener('click', () => {
+      // disable all
+      [...ui.options.querySelectorAll('button')].forEach(b => b.disabled = true);
+      const correctText = q.answer;
+      const chosenText = text;
+
+      // mark colors
+      [...ui.options.children].forEach(b => {
+        const t = b.textContent;
+        if (t === correctText) b.style.background = '#14532d'; // green
+        if (t === chosenText && t !== correctText) b.style.background = '#5a1a1a'; // red
+      });
+
+      // score/mistakes
+      if (chosenText === correctText) {
+        score++;
+      } else {
+        mistakes.push({
+          id: q.id ?? order[current] + 1,
+          question: q.question,
+          options: q.options,
+          correctAnswer: correctText,
+          userAnswer: chosenText,
+          topic: q.topic || 'General'
+        });
+      }
+    });
+    ui.options.appendChild(btn);
+  });
+}
+
+async function finishQuiz() {
+  const total = QUESTIONS.length;
+  const percent = Math.round((score / Math.max(1, total)) * 100);
+  const durationMs = Date.now() - startTimeMs;
+
+  // save mistakes locally (for review page)
+  saveMistakes(subject, mistakes);
+
+  // build weak topics summary
+  const weak = {};
+  mistakes.forEach(m => {
+    const t = (m.topic || 'General').split('•')[0].trim();
+    weak[t] = (weak[t] || 0) + 1;
+  });
+
+  // add to history (for status page)
+  addSessionToHistory(subject, {
+    total, correct: score, percent,
+    ts: Date.now(),
+    weakTopics: weak
+  });
+
+  // Leaderboard write
+  await saveScoreToLeaderboard({ subject, level, total, correct: score, durationMs });
+
+  // show result
+  ui.quizCard.style.display = 'none';
+  ui.resultCard.style.display = '';
+  ui.resultSummary.textContent = `You scored ${score} / ${total} (${percent}%).`;
+}
+
+async function nextOrFinish() {
+  // if no option was clicked, gently nudge
+  const disabledCount = [...ui.options.querySelectorAll('button')].filter(b => b.disabled).length;
+  if (disabledCount === 0) {
+    ui.nextBtn.classList.add('shake');
+    await sleep(120);
+    ui.nextBtn.classList.remove('shake');
     return;
   }
-  try{
-    const res = await fetch(`${file}?v=${Date.now()}`, {cache:'no-store'});
-    if(!res.ok) throw new Error(`HTTP ${res.status}`);
-    let data = await res.json();
-    if(!Array.isArray(data)||!data.length) throw new Error('Empty set');
-
-    if (topicsFilter.length){
-      data = data.filter(q => topicsFilter.includes(q.topic));
-      if (!data.length) throw new Error('No questions for selected topic(s).');
-    }
-
-    // randomize question order + option order
-    questions = shuffle(data.slice());
-    loadProgress();
-    render();
-  }catch(err){
-    qstem.innerHTML = `<div class="card"><b>Load error:</b> ${err.message}<br><span class="muted small">Expected: ${file}</span></div>`;
-    console.error(err);
+  current++;
+  if (current >= QUESTIONS.length) {
+    await finishQuiz();
+  } else {
+    renderQuestion();
   }
 }
 
-// Render one question
-function render(){
-  const q = questions[idx]; if(!q){ return finish(); }
-  qstem.innerHTML = `
-    <div class="pill mono">${idx+1}/${questions.length}</div>
-    <h2>${q.stem}</h2>
-    ${q.topic ? `<p class="muted small">${q.topic}${q.subtopic? ' • ' + q.subtopic : ''}</p>`:''}
-  `;
-  qopts.innerHTML = '';
-  // important: keep chosenIndex = original index (so answer_index stays valid)
-  shuffle(q.options.map((text,i)=>({text,i}))).forEach(({text,i})=>{
-    const d=document.createElement('div');
-    d.className='opt';
-    d.textContent=text;
-    d.onclick=()=>{
-      [...document.querySelectorAll('.opt')].forEach(o=>o.classList.remove('selected'));
-      d.classList.add('selected'); selected=i;
-    };
-    qopts.appendChild(d);
-  });
-  selected=null;
+/* -----------------------------
+   Load questions
+------------------------------*/
+async function loadQuestions() {
+  const path = resolveDataPath(level, subject);
+  if (!path) throw new Error(`No data path for ${level} / ${subject}`);
+
+  const url = `${path}?v=35`;
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`Failed to load: ${url}`);
+  const data = await res.json();
+  if (!Array.isArray(data)) throw new Error('Data is not an array');
+
+  // normalize & basic checks
+  const normalized = data.map((q, idx) => ({
+    id: q.id ?? (idx + 1),
+    question: String(q.question || '').trim(),
+    options: Array.isArray(q.options) ? q.options.map(String) : [],
+    answer: String(q.answer || '').trim(),
+    topic: String(q.topic || 'General')
+  })).filter(q =>
+    q.question && q.options.length === 4 && q.options.includes(q.answer)
+  );
+
+  return normalized;
 }
 
-// Handlers
-nextBtn.onclick = ()=>{
-  if (busy) return;
-  if (selected==null) return alert('Select an option first');
-  const q=questions[idx];
-  logAttemptSnapshot(q, selected);
-  if (selected===q.answer_index) score++;
-  idx++; lock(); saveProgress();
-  if (idx<questions.length) render(); else finish();
-};
-
-submitBtn.onclick = ()=>{ if (!busy){ lock(); finish(); } };
-
-// Finish + Firestore 'runs'
-async function finish(){
-  qwrap.style.display='none'; localStorage.removeItem(SAVE_KEY);
-  const total = questions.length; const pct = Math.round((score/total)*100);
-  result.style.display=''; result.innerHTML = `
-    <h2>Result: ${pct}%</h2>
-    <p>Score: ${score} / ${total}</p>
-    <div class="muted small">Subject: ${subject}${topicsFilter.length ? ' — Focus: ' + topicsFilter.join(', ') : ''}</div>
-    <div class="row" style="margin-top:10px;flex-wrap:wrap">
-      <a class="btn" href="index.html">← Back Home</a>
-      <a class="btn" href="quiz.html?level=${encodeURIComponent(level)}&subject=${encodeURIComponent(subject)}&mode=${encodeURIComponent(mode)}${topicsFilter.length ? '&topics='+encodeURIComponent(topicsFilter.join(',')) : ''}">Retry</a>
-      <a class="btn" href="./status.html?v=24">View Status</a>
-      <a class="btn primary" href="./review.html?v=24">Review mistakes</a>
-    </div>
-  `;
+/* -----------------------------
+   Init
+------------------------------*/
+async function init() {
+  ui = ensureUI();
 
   try {
-    const u = auth.currentUser || getUserSlim();
-    if (u && (u.uid || u.email)) {
-      await addDoc(collection(db, 'runs'), {
-        uid: u.uid || 'unknown',
-        email: u.email || null,
-        displayName: u.displayName || null,
-        level, subject,
-        score, total, pct,
-        topics: topicsFilter,
-        ts: serverTimestamp()
-      });
-    }
+    QUESTIONS = await loadQuestions();
+
+    // Shuffle questions and also shuffle options per question (for fairness)
+    order = [...Array(QUESTIONS.length).keys()];
+    shuffleInPlace(order);
+
+    // first render
+    current = 0;
+    score = 0;
+    mistakes = [];
+    startTimeMs = Date.now();
+    renderQuestion();
+
+    ui.nextBtn.onclick = () => nextOrFinish();
   } catch (e) {
-    console.warn('Run sync failed:', e?.message || e);
+    console.error(e);
+    if (ui.progress) ui.progress.textContent = `Load error: ${e.message}`;
+    if (ui.qText) ui.qText.textContent = '';
+    if (ui.options) ui.options.innerHTML = '';
   }
 }
 
-// Go
-loadData();
+init();
