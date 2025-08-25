@@ -1,32 +1,33 @@
-// assets/leaderboard.js  v50
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-import {
-  getFirestore, collection, query, orderBy, limit, getDocs
-} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+(function(){
+  const $ = (q,el=document)=>el.querySelector(q);
+  const { db } = window.ICAN.firebase;
 
-const cfg = window.firebaseConfig;
-const app = initializeApp(cfg);
-const db  = getFirestore(app);
-
-const list = document.getElementById('lbList');
-const err  = document.getElementById('lbError');
-
-function row(i, d){
-  const pct = (d.pct ?? Math.round(100 * (d.score||0)/Math.max(1, d.total||0)));
-  return `${String(i).padStart(2,"0")}. ${d.email||"anonymous"} — ${d.subject||""} — ${d.score||0}/${d.total||0} (${pct}%)`;
-}
-
-(async ()=>{
-  try {
-    const q = query(collection(db, "scores"), orderBy("pct","desc"), limit(100));
-    const snap = await getDocs(q);
-    if (snap.empty){ list.textContent = "(no cloud scores yet)"; return; }
-    const lines = [];
-    let i=1;
-    snap.forEach(doc=> lines.push(row(i++, doc.data())));
-    list.textContent = lines.join("\n");
-  } catch(e){
-    err.style.display='block';
-    err.textContent = `Could not load leaderboard (rules or network): ${e.code||e}`;
+  async function loadBoard(){
+    const msg = $('#boardMsg'); const pane = $('#board');
+    pane.innerHTML = ''; msg.textContent = 'Loading…';
+    try{
+      const snap = await db.collection('leaderboard')
+        .orderBy('createdAt','desc').limit(50).get();
+      if (snap.empty){ msg.textContent = 'No scores yet.'; return; }
+      msg.textContent = '';
+      const rows = [];
+      snap.forEach(doc=>{
+        const d = doc.data();
+        const when = d.createdAt ? d.createdAt.toDate().toLocaleString() : '';
+        rows.push(`<div class="card" style="margin:8px 0">
+          <div class="row" style="justify-content:space-between">
+            <div><b>${d.displayName||d.email||'User'}</b> • ${d.subject} (${d.level})</div>
+            <div>${d.score}/${d.total}</div>
+          </div>
+          <div class="muted small">${when}</div>
+        </div>`);
+      });
+      pane.innerHTML = rows.join('');
+    }catch(e){
+      console.error(e);
+      msg.innerHTML = `<div class="bad">Could not load leaderboard (rules or network): ${e.code||e.message}</div>`;
+    }
   }
+  document.addEventListener('ican:firebaseReady', loadBoard);
+  if (window.ICAN && window.ICAN.firebase) loadBoard();
 })();
