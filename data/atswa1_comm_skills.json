@@ -1,2602 +1,2402 @@
 [
   {
-    "id": "CS-AT1-Q001",
-    "topic": "Communication Basics",
-    "subtopic": "Process",
-    "stem": "Noise in communication refers to ____.",
+    "id": 1,
+    "question": "Communication is primarily the process of",
     "options": [
-      "Any interference with the message",
-      "Background music",
-      "Only physical disturbances",
-      "Financial cost"
+      "Exchanging information",
+      "Producing goods",
+      "Maximizing profit",
+      "Storing data"
     ],
-    "answer_index": 0
+    "answer": "Exchanging information",
+    "topic": "Introduction to Communication & Process"
   },
   {
-    "id": "CS-AT1-Q002",
-    "topic": "Communication Basics",
-    "subtopic": "Barriers",
-    "stem": "Which is an example of non\u2011verbal communication?",
+    "id": 2,
+    "question": "The main elements of the communication process include",
     "options": [
-      "A handshake",
-      "A phone call",
-      "An email",
-      "A memo"
+      "Sender, message, channel, receiver, feedback",
+      "Teacher, student, exam, grade",
+      "Writer, pen, paper, book",
+      "Manager, office, salary, bonus"
     ],
-    "answer_index": 0
+    "answer": "Sender, message, channel, receiver, feedback",
+    "topic": "Introduction to Communication & Process"
   },
   {
-    "id": "CS-AT1-Q003",
-    "topic": "Communication Basics",
-    "subtopic": "Non-verbal",
-    "stem": "Which is NOT a key element of the communication process?",
+    "id": 3,
+    "question": "Feedback in communication ensures",
     "options": [
-      "Profit",
-      "Sender",
-      "Message",
+      "Two-way interaction",
+      "One-way command",
+      "Silence",
+      "Noise"
+    ],
+    "answer": "Two-way interaction",
+    "topic": "Introduction to Communication & Process"
+  },
+  {
+    "id": 4,
+    "question": "Feedback in communication ensures",
+    "options": [
+      "Two-way interaction",
+      "One-way command",
+      "Silence",
+      "Noise"
+    ],
+    "answer": "Two-way interaction",
+    "topic": "Introduction to Communication & Process"
+  },
+  {
+    "id": 5,
+    "question": "Feedback in communication ensures",
+    "options": [
+      "Two-way interaction",
+      "One-way command",
+      "Silence",
+      "Noise"
+    ],
+    "answer": "Two-way interaction",
+    "topic": "Introduction to Communication & Process"
+  },
+  {
+    "id": 6,
+    "question": "Feedback in communication ensures",
+    "options": [
+      "Two-way interaction",
+      "One-way command",
+      "Silence",
+      "Noise"
+    ],
+    "answer": "Two-way interaction",
+    "topic": "Introduction to Communication & Process"
+  },
+  {
+    "id": 7,
+    "question": "Feedback in communication ensures",
+    "options": [
+      "Two-way interaction",
+      "One-way command",
+      "Silence",
+      "Noise"
+    ],
+    "answer": "Two-way interaction",
+    "topic": "Introduction to Communication & Process"
+  },
+  {
+    "id": 8,
+    "question": "Feedback in communication ensures",
+    "options": [
+      "Two-way interaction",
+      "One-way command",
+      "Silence",
+      "Noise"
+    ],
+    "answer": "Two-way interaction",
+    "topic": "Introduction to Communication & Process"
+  },
+  {
+    "id": 9,
+    "question": "Feedback in communication ensures",
+    "options": [
+      "Two-way interaction",
+      "One-way command",
+      "Silence",
+      "Noise"
+    ],
+    "answer": "Two-way interaction",
+    "topic": "Introduction to Communication & Process"
+  },
+  {
+    "id": 10,
+    "question": "Feedback in communication ensures",
+    "options": [
+      "Two-way interaction",
+      "One-way command",
+      "Silence",
+      "Noise"
+    ],
+    "answer": "Two-way interaction",
+    "topic": "Introduction to Communication & Process"
+  },
+  {
+    "id": 11,
+    "question": "Feedback in communication ensures",
+    "options": [
+      "Two-way interaction",
+      "One-way command",
+      "Silence",
+      "Noise"
+    ],
+    "answer": "Two-way interaction",
+    "topic": "Introduction to Communication & Process"
+  },
+  {
+    "id": 12,
+    "question": "Feedback in communication ensures",
+    "options": [
+      "Two-way interaction",
+      "One-way command",
+      "Silence",
+      "Noise"
+    ],
+    "answer": "Two-way interaction",
+    "topic": "Introduction to Communication & Process"
+  },
+  {
+    "id": 13,
+    "question": "Feedback in communication ensures",
+    "options": [
+      "Two-way interaction",
+      "One-way command",
+      "Silence",
+      "Noise"
+    ],
+    "answer": "Two-way interaction",
+    "topic": "Introduction to Communication & Process"
+  },
+  {
+    "id": 14,
+    "question": "Feedback in communication ensures",
+    "options": [
+      "Two-way interaction",
+      "One-way command",
+      "Silence",
+      "Noise"
+    ],
+    "answer": "Two-way interaction",
+    "topic": "Introduction to Communication & Process"
+  },
+  {
+    "id": 15,
+    "question": "Feedback in communication ensures",
+    "options": [
+      "Two-way interaction",
+      "One-way command",
+      "Silence",
+      "Noise"
+    ],
+    "answer": "Two-way interaction",
+    "topic": "Introduction to Communication & Process"
+  },
+  {
+    "id": 16,
+    "question": "Oral communication is effective because",
+    "options": [
+      "It allows immediate feedback",
+      "It requires no listening",
+      "It avoids misinterpretation",
+      "It uses only visuals"
+    ],
+    "answer": "It allows immediate feedback",
+    "topic": "Forms & Types of Communication"
+  },
+  {
+    "id": 17,
+    "question": "A memo is an example of",
+    "options": [
+      "Written internal communication",
+      "Oral external communication",
+      "Visual aid",
+      "Electronic noise"
+    ],
+    "answer": "Written internal communication",
+    "topic": "Forms & Types of Communication"
+  },
+  {
+    "id": 18,
+    "question": "Non-verbal communication includes",
+    "options": [
+      "Gestures, facial expressions, posture",
+      "Spoken words only",
+      "Written reports",
+      "Emails"
+    ],
+    "answer": "Gestures, facial expressions, posture",
+    "topic": "Forms & Types of Communication"
+  },
+  {
+    "id": 19,
+    "question": "Non-verbal communication includes",
+    "options": [
+      "Gestures, facial expressions, posture",
+      "Spoken words only",
+      "Written reports",
+      "Emails"
+    ],
+    "answer": "Gestures, facial expressions, posture",
+    "topic": "Forms & Types of Communication"
+  },
+  {
+    "id": 20,
+    "question": "Non-verbal communication includes",
+    "options": [
+      "Gestures, facial expressions, posture",
+      "Spoken words only",
+      "Written reports",
+      "Emails"
+    ],
+    "answer": "Gestures, facial expressions, posture",
+    "topic": "Forms & Types of Communication"
+  },
+  {
+    "id": 21,
+    "question": "Non-verbal communication includes",
+    "options": [
+      "Gestures, facial expressions, posture",
+      "Spoken words only",
+      "Written reports",
+      "Emails"
+    ],
+    "answer": "Gestures, facial expressions, posture",
+    "topic": "Forms & Types of Communication"
+  },
+  {
+    "id": 22,
+    "question": "Non-verbal communication includes",
+    "options": [
+      "Gestures, facial expressions, posture",
+      "Spoken words only",
+      "Written reports",
+      "Emails"
+    ],
+    "answer": "Gestures, facial expressions, posture",
+    "topic": "Forms & Types of Communication"
+  },
+  {
+    "id": 23,
+    "question": "Non-verbal communication includes",
+    "options": [
+      "Gestures, facial expressions, posture",
+      "Spoken words only",
+      "Written reports",
+      "Emails"
+    ],
+    "answer": "Gestures, facial expressions, posture",
+    "topic": "Forms & Types of Communication"
+  },
+  {
+    "id": 24,
+    "question": "Non-verbal communication includes",
+    "options": [
+      "Gestures, facial expressions, posture",
+      "Spoken words only",
+      "Written reports",
+      "Emails"
+    ],
+    "answer": "Gestures, facial expressions, posture",
+    "topic": "Forms & Types of Communication"
+  },
+  {
+    "id": 25,
+    "question": "Non-verbal communication includes",
+    "options": [
+      "Gestures, facial expressions, posture",
+      "Spoken words only",
+      "Written reports",
+      "Emails"
+    ],
+    "answer": "Gestures, facial expressions, posture",
+    "topic": "Forms & Types of Communication"
+  },
+  {
+    "id": 26,
+    "question": "Non-verbal communication includes",
+    "options": [
+      "Gestures, facial expressions, posture",
+      "Spoken words only",
+      "Written reports",
+      "Emails"
+    ],
+    "answer": "Gestures, facial expressions, posture",
+    "topic": "Forms & Types of Communication"
+  },
+  {
+    "id": 27,
+    "question": "Non-verbal communication includes",
+    "options": [
+      "Gestures, facial expressions, posture",
+      "Spoken words only",
+      "Written reports",
+      "Emails"
+    ],
+    "answer": "Gestures, facial expressions, posture",
+    "topic": "Forms & Types of Communication"
+  },
+  {
+    "id": 28,
+    "question": "Non-verbal communication includes",
+    "options": [
+      "Gestures, facial expressions, posture",
+      "Spoken words only",
+      "Written reports",
+      "Emails"
+    ],
+    "answer": "Gestures, facial expressions, posture",
+    "topic": "Forms & Types of Communication"
+  },
+  {
+    "id": 29,
+    "question": "Non-verbal communication includes",
+    "options": [
+      "Gestures, facial expressions, posture",
+      "Spoken words only",
+      "Written reports",
+      "Emails"
+    ],
+    "answer": "Gestures, facial expressions, posture",
+    "topic": "Forms & Types of Communication"
+  },
+  {
+    "id": 30,
+    "question": "Non-verbal communication includes",
+    "options": [
+      "Gestures, facial expressions, posture",
+      "Spoken words only",
+      "Written reports",
+      "Emails"
+    ],
+    "answer": "Gestures, facial expressions, posture",
+    "topic": "Forms & Types of Communication"
+  },
+  {
+    "id": 31,
+    "question": "Non-verbal communication includes",
+    "options": [
+      "Gestures, facial expressions, posture",
+      "Spoken words only",
+      "Written reports",
+      "Emails"
+    ],
+    "answer": "Gestures, facial expressions, posture",
+    "topic": "Forms & Types of Communication"
+  },
+  {
+    "id": 32,
+    "question": "Non-verbal communication includes",
+    "options": [
+      "Gestures, facial expressions, posture",
+      "Spoken words only",
+      "Written reports",
+      "Emails"
+    ],
+    "answer": "Gestures, facial expressions, posture",
+    "topic": "Forms & Types of Communication"
+  },
+  {
+    "id": 33,
+    "question": "Non-verbal communication includes",
+    "options": [
+      "Gestures, facial expressions, posture",
+      "Spoken words only",
+      "Written reports",
+      "Emails"
+    ],
+    "answer": "Gestures, facial expressions, posture",
+    "topic": "Forms & Types of Communication"
+  },
+  {
+    "id": 34,
+    "question": "Non-verbal communication includes",
+    "options": [
+      "Gestures, facial expressions, posture",
+      "Spoken words only",
+      "Written reports",
+      "Emails"
+    ],
+    "answer": "Gestures, facial expressions, posture",
+    "topic": "Forms & Types of Communication"
+  },
+  {
+    "id": 35,
+    "question": "Non-verbal communication includes",
+    "options": [
+      "Gestures, facial expressions, posture",
+      "Spoken words only",
+      "Written reports",
+      "Emails"
+    ],
+    "answer": "Gestures, facial expressions, posture",
+    "topic": "Forms & Types of Communication"
+  },
+  {
+    "id": 36,
+    "question": "A major physical barrier to communication is",
+    "options": [
+      "Noise",
+      "Interest",
+      "Culture",
       "Feedback"
     ],
-    "answer_index": 0
+    "answer": "Noise",
+    "topic": "Barriers to Communication & Remedies"
   },
   {
-    "id": "CS-AT1-Q004",
-    "topic": "Listening & Writing",
-    "subtopic": "Listening",
-    "stem": "Which is most appropriate for a formal business letter?",
+    "id": 37,
+    "question": "Semantic barriers arise from",
     "options": [
-      "Dear Sir/Madam",
-      "Hey there",
-      "Yo!",
-      "Hi buddy"
+      "Different interpretations of words",
+      "Physical distance",
+      "Technical devices",
+      "Power supply"
     ],
-    "answer_index": 0
+    "answer": "Different interpretations of words",
+    "topic": "Barriers to Communication & Remedies"
   },
   {
-    "id": "CS-AT1-Q005",
-    "topic": "Listening & Writing",
-    "subtopic": "Business Writing",
-    "stem": "Subject\u2011verb agreement is a concern of ____.",
+    "id": 38,
+    "question": "Effective communication requires overcoming",
     "options": [
-      "Grammar",
-      "Semantics",
+      "barriers such as language, noise, perception",
+      "all exams",
+      "economic barriers only",
+      "feedback always"
+    ],
+    "answer": "barriers such as language, noise, perception",
+    "topic": "Barriers to Communication & Remedies"
+  },
+  {
+    "id": 39,
+    "question": "Effective communication requires overcoming",
+    "options": [
+      "barriers such as language, noise, perception",
+      "all exams",
+      "economic barriers only",
+      "feedback always"
+    ],
+    "answer": "barriers such as language, noise, perception",
+    "topic": "Barriers to Communication & Remedies"
+  },
+  {
+    "id": 40,
+    "question": "Effective communication requires overcoming",
+    "options": [
+      "barriers such as language, noise, perception",
+      "all exams",
+      "economic barriers only",
+      "feedback always"
+    ],
+    "answer": "barriers such as language, noise, perception",
+    "topic": "Barriers to Communication & Remedies"
+  },
+  {
+    "id": 41,
+    "question": "Effective communication requires overcoming",
+    "options": [
+      "barriers such as language, noise, perception",
+      "all exams",
+      "economic barriers only",
+      "feedback always"
+    ],
+    "answer": "barriers such as language, noise, perception",
+    "topic": "Barriers to Communication & Remedies"
+  },
+  {
+    "id": 42,
+    "question": "Effective communication requires overcoming",
+    "options": [
+      "barriers such as language, noise, perception",
+      "all exams",
+      "economic barriers only",
+      "feedback always"
+    ],
+    "answer": "barriers such as language, noise, perception",
+    "topic": "Barriers to Communication & Remedies"
+  },
+  {
+    "id": 43,
+    "question": "Effective communication requires overcoming",
+    "options": [
+      "barriers such as language, noise, perception",
+      "all exams",
+      "economic barriers only",
+      "feedback always"
+    ],
+    "answer": "barriers such as language, noise, perception",
+    "topic": "Barriers to Communication & Remedies"
+  },
+  {
+    "id": 44,
+    "question": "Effective communication requires overcoming",
+    "options": [
+      "barriers such as language, noise, perception",
+      "all exams",
+      "economic barriers only",
+      "feedback always"
+    ],
+    "answer": "barriers such as language, noise, perception",
+    "topic": "Barriers to Communication & Remedies"
+  },
+  {
+    "id": 45,
+    "question": "Effective communication requires overcoming",
+    "options": [
+      "barriers such as language, noise, perception",
+      "all exams",
+      "economic barriers only",
+      "feedback always"
+    ],
+    "answer": "barriers such as language, noise, perception",
+    "topic": "Barriers to Communication & Remedies"
+  },
+  {
+    "id": 46,
+    "question": "Effective communication requires overcoming",
+    "options": [
+      "barriers such as language, noise, perception",
+      "all exams",
+      "economic barriers only",
+      "feedback always"
+    ],
+    "answer": "barriers such as language, noise, perception",
+    "topic": "Barriers to Communication & Remedies"
+  },
+  {
+    "id": 47,
+    "question": "Effective communication requires overcoming",
+    "options": [
+      "barriers such as language, noise, perception",
+      "all exams",
+      "economic barriers only",
+      "feedback always"
+    ],
+    "answer": "barriers such as language, noise, perception",
+    "topic": "Barriers to Communication & Remedies"
+  },
+  {
+    "id": 48,
+    "question": "Effective communication requires overcoming",
+    "options": [
+      "barriers such as language, noise, perception",
+      "all exams",
+      "economic barriers only",
+      "feedback always"
+    ],
+    "answer": "barriers such as language, noise, perception",
+    "topic": "Barriers to Communication & Remedies"
+  },
+  {
+    "id": 49,
+    "question": "Effective communication requires overcoming",
+    "options": [
+      "barriers such as language, noise, perception",
+      "all exams",
+      "economic barriers only",
+      "feedback always"
+    ],
+    "answer": "barriers such as language, noise, perception",
+    "topic": "Barriers to Communication & Remedies"
+  },
+  {
+    "id": 50,
+    "question": "Effective communication requires overcoming",
+    "options": [
+      "barriers such as language, noise, perception",
+      "all exams",
+      "economic barriers only",
+      "feedback always"
+    ],
+    "answer": "barriers such as language, noise, perception",
+    "topic": "Barriers to Communication & Remedies"
+  },
+  {
+    "id": 51,
+    "question": "Active listening involves",
+    "options": [
+      "Paying full attention and responding appropriately",
+      "Hearing only",
+      "Talking constantly",
+      "Writing only"
+    ],
+    "answer": "Paying full attention and responding appropriately",
+    "topic": "Listening & Feedback Skills"
+  },
+  {
+    "id": 52,
+    "question": "Effective feedback should be",
+    "options": [
+      "Specific, timely and constructive",
+      "General and delayed",
+      "Vague and harsh",
+      "Always written only"
+    ],
+    "answer": "Specific, timely and constructive",
+    "topic": "Listening & Feedback Skills"
+  },
+  {
+    "id": 53,
+    "question": "Effective feedback should be",
+    "options": [
+      "Specific, timely and constructive",
+      "General and delayed",
+      "Vague and harsh",
+      "Always written only"
+    ],
+    "answer": "Specific, timely and constructive",
+    "topic": "Listening & Feedback Skills"
+  },
+  {
+    "id": 54,
+    "question": "Effective feedback should be",
+    "options": [
+      "Specific, timely and constructive",
+      "General and delayed",
+      "Vague and harsh",
+      "Always written only"
+    ],
+    "answer": "Specific, timely and constructive",
+    "topic": "Listening & Feedback Skills"
+  },
+  {
+    "id": 55,
+    "question": "Effective feedback should be",
+    "options": [
+      "Specific, timely and constructive",
+      "General and delayed",
+      "Vague and harsh",
+      "Always written only"
+    ],
+    "answer": "Specific, timely and constructive",
+    "topic": "Listening & Feedback Skills"
+  },
+  {
+    "id": 56,
+    "question": "Effective feedback should be",
+    "options": [
+      "Specific, timely and constructive",
+      "General and delayed",
+      "Vague and harsh",
+      "Always written only"
+    ],
+    "answer": "Specific, timely and constructive",
+    "topic": "Listening & Feedback Skills"
+  },
+  {
+    "id": 57,
+    "question": "Effective feedback should be",
+    "options": [
+      "Specific, timely and constructive",
+      "General and delayed",
+      "Vague and harsh",
+      "Always written only"
+    ],
+    "answer": "Specific, timely and constructive",
+    "topic": "Listening & Feedback Skills"
+  },
+  {
+    "id": 58,
+    "question": "Effective feedback should be",
+    "options": [
+      "Specific, timely and constructive",
+      "General and delayed",
+      "Vague and harsh",
+      "Always written only"
+    ],
+    "answer": "Specific, timely and constructive",
+    "topic": "Listening & Feedback Skills"
+  },
+  {
+    "id": 59,
+    "question": "Effective feedback should be",
+    "options": [
+      "Specific, timely and constructive",
+      "General and delayed",
+      "Vague and harsh",
+      "Always written only"
+    ],
+    "answer": "Specific, timely and constructive",
+    "topic": "Listening & Feedback Skills"
+  },
+  {
+    "id": 60,
+    "question": "Effective feedback should be",
+    "options": [
+      "Specific, timely and constructive",
+      "General and delayed",
+      "Vague and harsh",
+      "Always written only"
+    ],
+    "answer": "Specific, timely and constructive",
+    "topic": "Listening & Feedback Skills"
+  },
+  {
+    "id": 61,
+    "question": "The main parts of a formal business letter include",
+    "options": [
+      "Heading, salutation, body, closing, signature",
+      "Name, age, address",
+      "Table, chart, graph",
+      "Introduction, conclusion only"
+    ],
+    "answer": "Heading, salutation, body, closing, signature",
+    "topic": "Business Correspondence"
+  },
+  {
+    "id": 62,
+    "question": "A memo is best used for",
+    "options": [
+      "Internal communication in an organization",
+      "External communication with customers",
+      "Personal diary",
+      "Advertising product"
+    ],
+    "answer": "Internal communication in an organization",
+    "topic": "Business Correspondence"
+  },
+  {
+    "id": 63,
+    "question": "Which of these is NOT a common business correspondence?",
+    "options": [
+      "Novel",
+      "Report",
+      "Letter",
+      "Memo"
+    ],
+    "answer": "Novel",
+    "topic": "Business Correspondence"
+  },
+  {
+    "id": 64,
+    "question": "Which of these is NOT a common business correspondence?",
+    "options": [
+      "Novel",
+      "Report",
+      "Letter",
+      "Memo"
+    ],
+    "answer": "Novel",
+    "topic": "Business Correspondence"
+  },
+  {
+    "id": 65,
+    "question": "Which of these is NOT a common business correspondence?",
+    "options": [
+      "Novel",
+      "Report",
+      "Letter",
+      "Memo"
+    ],
+    "answer": "Novel",
+    "topic": "Business Correspondence"
+  },
+  {
+    "id": 66,
+    "question": "Which of these is NOT a common business correspondence?",
+    "options": [
+      "Novel",
+      "Report",
+      "Letter",
+      "Memo"
+    ],
+    "answer": "Novel",
+    "topic": "Business Correspondence"
+  },
+  {
+    "id": 67,
+    "question": "Which of these is NOT a common business correspondence?",
+    "options": [
+      "Novel",
+      "Report",
+      "Letter",
+      "Memo"
+    ],
+    "answer": "Novel",
+    "topic": "Business Correspondence"
+  },
+  {
+    "id": 68,
+    "question": "Which of these is NOT a common business correspondence?",
+    "options": [
+      "Novel",
+      "Report",
+      "Letter",
+      "Memo"
+    ],
+    "answer": "Novel",
+    "topic": "Business Correspondence"
+  },
+  {
+    "id": 69,
+    "question": "Which of these is NOT a common business correspondence?",
+    "options": [
+      "Novel",
+      "Report",
+      "Letter",
+      "Memo"
+    ],
+    "answer": "Novel",
+    "topic": "Business Correspondence"
+  },
+  {
+    "id": 70,
+    "question": "Which of these is NOT a common business correspondence?",
+    "options": [
+      "Novel",
+      "Report",
+      "Letter",
+      "Memo"
+    ],
+    "answer": "Novel",
+    "topic": "Business Correspondence"
+  },
+  {
+    "id": 71,
+    "question": "Which of these is NOT a common business correspondence?",
+    "options": [
+      "Novel",
+      "Report",
+      "Letter",
+      "Memo"
+    ],
+    "answer": "Novel",
+    "topic": "Business Correspondence"
+  },
+  {
+    "id": 72,
+    "question": "Which of these is NOT a common business correspondence?",
+    "options": [
+      "Novel",
+      "Report",
+      "Letter",
+      "Memo"
+    ],
+    "answer": "Novel",
+    "topic": "Business Correspondence"
+  },
+  {
+    "id": 73,
+    "question": "Which of these is NOT a common business correspondence?",
+    "options": [
+      "Novel",
+      "Report",
+      "Letter",
+      "Memo"
+    ],
+    "answer": "Novel",
+    "topic": "Business Correspondence"
+  },
+  {
+    "id": 74,
+    "question": "Which of these is NOT a common business correspondence?",
+    "options": [
+      "Novel",
+      "Report",
+      "Letter",
+      "Memo"
+    ],
+    "answer": "Novel",
+    "topic": "Business Correspondence"
+  },
+  {
+    "id": 75,
+    "question": "Which of these is NOT a common business correspondence?",
+    "options": [
+      "Novel",
+      "Report",
+      "Letter",
+      "Memo"
+    ],
+    "answer": "Novel",
+    "topic": "Business Correspondence"
+  },
+  {
+    "id": 76,
+    "question": "Which of these is NOT a common business correspondence?",
+    "options": [
+      "Novel",
+      "Report",
+      "Letter",
+      "Memo"
+    ],
+    "answer": "Novel",
+    "topic": "Business Correspondence"
+  },
+  {
+    "id": 77,
+    "question": "Which of these is NOT a common business correspondence?",
+    "options": [
+      "Novel",
+      "Report",
+      "Letter",
+      "Memo"
+    ],
+    "answer": "Novel",
+    "topic": "Business Correspondence"
+  },
+  {
+    "id": 78,
+    "question": "Which of these is NOT a common business correspondence?",
+    "options": [
+      "Novel",
+      "Report",
+      "Letter",
+      "Memo"
+    ],
+    "answer": "Novel",
+    "topic": "Business Correspondence"
+  },
+  {
+    "id": 79,
+    "question": "Which of these is NOT a common business correspondence?",
+    "options": [
+      "Novel",
+      "Report",
+      "Letter",
+      "Memo"
+    ],
+    "answer": "Novel",
+    "topic": "Business Correspondence"
+  },
+  {
+    "id": 80,
+    "question": "Which of these is NOT a common business correspondence?",
+    "options": [
+      "Novel",
+      "Report",
+      "Letter",
+      "Memo"
+    ],
+    "answer": "Novel",
+    "topic": "Business Correspondence"
+  },
+  {
+    "id": 81,
+    "question": "An essay must have",
+    "options": [
+      "Introduction, body and conclusion",
+      "Only introduction",
+      "Only conclusion",
+      "References only"
+    ],
+    "answer": "Introduction, body and conclusion",
+    "topic": "Essay/Comprehension/Summary"
+  },
+  {
+    "id": 82,
+    "question": "Summary writing requires",
+    "options": [
+      "Condensing main ideas in own words",
+      "Copying whole passage",
+      "Adding extra details",
+      "Changing facts"
+    ],
+    "answer": "Condensing main ideas in own words",
+    "topic": "Essay/Comprehension/Summary"
+  },
+  {
+    "id": 83,
+    "question": "Comprehension tests examine",
+    "options": [
+      "Understanding of a passage",
+      "Memory of numbers",
+      "Drawing ability",
+      "Typing skill"
+    ],
+    "answer": "Understanding of a passage",
+    "topic": "Essay/Comprehension/Summary"
+  },
+  {
+    "id": 84,
+    "question": "Comprehension tests examine",
+    "options": [
+      "Understanding of a passage",
+      "Memory of numbers",
+      "Drawing ability",
+      "Typing skill"
+    ],
+    "answer": "Understanding of a passage",
+    "topic": "Essay/Comprehension/Summary"
+  },
+  {
+    "id": 85,
+    "question": "Comprehension tests examine",
+    "options": [
+      "Understanding of a passage",
+      "Memory of numbers",
+      "Drawing ability",
+      "Typing skill"
+    ],
+    "answer": "Understanding of a passage",
+    "topic": "Essay/Comprehension/Summary"
+  },
+  {
+    "id": 86,
+    "question": "Comprehension tests examine",
+    "options": [
+      "Understanding of a passage",
+      "Memory of numbers",
+      "Drawing ability",
+      "Typing skill"
+    ],
+    "answer": "Understanding of a passage",
+    "topic": "Essay/Comprehension/Summary"
+  },
+  {
+    "id": 87,
+    "question": "Comprehension tests examine",
+    "options": [
+      "Understanding of a passage",
+      "Memory of numbers",
+      "Drawing ability",
+      "Typing skill"
+    ],
+    "answer": "Understanding of a passage",
+    "topic": "Essay/Comprehension/Summary"
+  },
+  {
+    "id": 88,
+    "question": "Comprehension tests examine",
+    "options": [
+      "Understanding of a passage",
+      "Memory of numbers",
+      "Drawing ability",
+      "Typing skill"
+    ],
+    "answer": "Understanding of a passage",
+    "topic": "Essay/Comprehension/Summary"
+  },
+  {
+    "id": 89,
+    "question": "Comprehension tests examine",
+    "options": [
+      "Understanding of a passage",
+      "Memory of numbers",
+      "Drawing ability",
+      "Typing skill"
+    ],
+    "answer": "Understanding of a passage",
+    "topic": "Essay/Comprehension/Summary"
+  },
+  {
+    "id": 90,
+    "question": "Comprehension tests examine",
+    "options": [
+      "Understanding of a passage",
+      "Memory of numbers",
+      "Drawing ability",
+      "Typing skill"
+    ],
+    "answer": "Understanding of a passage",
+    "topic": "Essay/Comprehension/Summary"
+  },
+  {
+    "id": 91,
+    "question": "Comprehension tests examine",
+    "options": [
+      "Understanding of a passage",
+      "Memory of numbers",
+      "Drawing ability",
+      "Typing skill"
+    ],
+    "answer": "Understanding of a passage",
+    "topic": "Essay/Comprehension/Summary"
+  },
+  {
+    "id": 92,
+    "question": "Comprehension tests examine",
+    "options": [
+      "Understanding of a passage",
+      "Memory of numbers",
+      "Drawing ability",
+      "Typing skill"
+    ],
+    "answer": "Understanding of a passage",
+    "topic": "Essay/Comprehension/Summary"
+  },
+  {
+    "id": 93,
+    "question": "Comprehension tests examine",
+    "options": [
+      "Understanding of a passage",
+      "Memory of numbers",
+      "Drawing ability",
+      "Typing skill"
+    ],
+    "answer": "Understanding of a passage",
+    "topic": "Essay/Comprehension/Summary"
+  },
+  {
+    "id": 94,
+    "question": "Comprehension tests examine",
+    "options": [
+      "Understanding of a passage",
+      "Memory of numbers",
+      "Drawing ability",
+      "Typing skill"
+    ],
+    "answer": "Understanding of a passage",
+    "topic": "Essay/Comprehension/Summary"
+  },
+  {
+    "id": 95,
+    "question": "Comprehension tests examine",
+    "options": [
+      "Understanding of a passage",
+      "Memory of numbers",
+      "Drawing ability",
+      "Typing skill"
+    ],
+    "answer": "Understanding of a passage",
+    "topic": "Essay/Comprehension/Summary"
+  },
+  {
+    "id": 96,
+    "question": "Comprehension tests examine",
+    "options": [
+      "Understanding of a passage",
+      "Memory of numbers",
+      "Drawing ability",
+      "Typing skill"
+    ],
+    "answer": "Understanding of a passage",
+    "topic": "Essay/Comprehension/Summary"
+  },
+  {
+    "id": 97,
+    "question": "Comprehension tests examine",
+    "options": [
+      "Understanding of a passage",
+      "Memory of numbers",
+      "Drawing ability",
+      "Typing skill"
+    ],
+    "answer": "Understanding of a passage",
+    "topic": "Essay/Comprehension/Summary"
+  },
+  {
+    "id": 98,
+    "question": "Comprehension tests examine",
+    "options": [
+      "Understanding of a passage",
+      "Memory of numbers",
+      "Drawing ability",
+      "Typing skill"
+    ],
+    "answer": "Understanding of a passage",
+    "topic": "Essay/Comprehension/Summary"
+  },
+  {
+    "id": 99,
+    "question": "Comprehension tests examine",
+    "options": [
+      "Understanding of a passage",
+      "Memory of numbers",
+      "Drawing ability",
+      "Typing skill"
+    ],
+    "answer": "Understanding of a passage",
+    "topic": "Essay/Comprehension/Summary"
+  },
+  {
+    "id": 100,
+    "question": "Comprehension tests examine",
+    "options": [
+      "Understanding of a passage",
+      "Memory of numbers",
+      "Drawing ability",
+      "Typing skill"
+    ],
+    "answer": "Understanding of a passage",
+    "topic": "Essay/Comprehension/Summary"
+  },
+  {
+    "id": 101,
+    "question": "Which is correct?",
+    "options": [
+      "She goes to school daily",
+      "She go to school daily",
+      "She going to school daily",
+      "She gone to school daily"
+    ],
+    "answer": "She goes to school daily",
+    "topic": "Grammar, Vocabulary & Punctuation"
+  },
+  {
+    "id": 102,
+    "question": "A synonym for 'happy' is",
+    "options": [
+      "Joyful",
+      "Sad",
+      "Angry",
+      "Tired"
+    ],
+    "answer": "Joyful",
+    "topic": "Grammar, Vocabulary & Punctuation"
+  },
+  {
+    "id": 103,
+    "question": "The correct plural of 'analysis' is",
+    "options": [
+      "Analyses",
+      "Analysis",
+      "Analysises",
+      "Analys"
+    ],
+    "answer": "Analyses",
+    "topic": "Grammar, Vocabulary & Punctuation"
+  },
+  {
+    "id": 104,
+    "question": "The main function of a full stop is",
+    "options": [
+      "To indicate the end of a sentence",
+      "To show pause in speech",
+      "To ask a question",
+      "To show excitement"
+    ],
+    "answer": "To indicate the end of a sentence",
+    "topic": "Grammar, Vocabulary & Punctuation"
+  },
+  {
+    "id": 105,
+    "question": "The main function of a full stop is",
+    "options": [
+      "To indicate the end of a sentence",
+      "To show pause in speech",
+      "To ask a question",
+      "To show excitement"
+    ],
+    "answer": "To indicate the end of a sentence",
+    "topic": "Grammar, Vocabulary & Punctuation"
+  },
+  {
+    "id": 106,
+    "question": "The main function of a full stop is",
+    "options": [
+      "To indicate the end of a sentence",
+      "To show pause in speech",
+      "To ask a question",
+      "To show excitement"
+    ],
+    "answer": "To indicate the end of a sentence",
+    "topic": "Grammar, Vocabulary & Punctuation"
+  },
+  {
+    "id": 107,
+    "question": "The main function of a full stop is",
+    "options": [
+      "To indicate the end of a sentence",
+      "To show pause in speech",
+      "To ask a question",
+      "To show excitement"
+    ],
+    "answer": "To indicate the end of a sentence",
+    "topic": "Grammar, Vocabulary & Punctuation"
+  },
+  {
+    "id": 108,
+    "question": "The main function of a full stop is",
+    "options": [
+      "To indicate the end of a sentence",
+      "To show pause in speech",
+      "To ask a question",
+      "To show excitement"
+    ],
+    "answer": "To indicate the end of a sentence",
+    "topic": "Grammar, Vocabulary & Punctuation"
+  },
+  {
+    "id": 109,
+    "question": "The main function of a full stop is",
+    "options": [
+      "To indicate the end of a sentence",
+      "To show pause in speech",
+      "To ask a question",
+      "To show excitement"
+    ],
+    "answer": "To indicate the end of a sentence",
+    "topic": "Grammar, Vocabulary & Punctuation"
+  },
+  {
+    "id": 110,
+    "question": "The main function of a full stop is",
+    "options": [
+      "To indicate the end of a sentence",
+      "To show pause in speech",
+      "To ask a question",
+      "To show excitement"
+    ],
+    "answer": "To indicate the end of a sentence",
+    "topic": "Grammar, Vocabulary & Punctuation"
+  },
+  {
+    "id": 111,
+    "question": "The main function of a full stop is",
+    "options": [
+      "To indicate the end of a sentence",
+      "To show pause in speech",
+      "To ask a question",
+      "To show excitement"
+    ],
+    "answer": "To indicate the end of a sentence",
+    "topic": "Grammar, Vocabulary & Punctuation"
+  },
+  {
+    "id": 112,
+    "question": "The main function of a full stop is",
+    "options": [
+      "To indicate the end of a sentence",
+      "To show pause in speech",
+      "To ask a question",
+      "To show excitement"
+    ],
+    "answer": "To indicate the end of a sentence",
+    "topic": "Grammar, Vocabulary & Punctuation"
+  },
+  {
+    "id": 113,
+    "question": "The main function of a full stop is",
+    "options": [
+      "To indicate the end of a sentence",
+      "To show pause in speech",
+      "To ask a question",
+      "To show excitement"
+    ],
+    "answer": "To indicate the end of a sentence",
+    "topic": "Grammar, Vocabulary & Punctuation"
+  },
+  {
+    "id": 114,
+    "question": "The main function of a full stop is",
+    "options": [
+      "To indicate the end of a sentence",
+      "To show pause in speech",
+      "To ask a question",
+      "To show excitement"
+    ],
+    "answer": "To indicate the end of a sentence",
+    "topic": "Grammar, Vocabulary & Punctuation"
+  },
+  {
+    "id": 115,
+    "question": "The main function of a full stop is",
+    "options": [
+      "To indicate the end of a sentence",
+      "To show pause in speech",
+      "To ask a question",
+      "To show excitement"
+    ],
+    "answer": "To indicate the end of a sentence",
+    "topic": "Grammar, Vocabulary & Punctuation"
+  },
+  {
+    "id": 116,
+    "question": "The main function of a full stop is",
+    "options": [
+      "To indicate the end of a sentence",
+      "To show pause in speech",
+      "To ask a question",
+      "To show excitement"
+    ],
+    "answer": "To indicate the end of a sentence",
+    "topic": "Grammar, Vocabulary & Punctuation"
+  },
+  {
+    "id": 117,
+    "question": "The main function of a full stop is",
+    "options": [
+      "To indicate the end of a sentence",
+      "To show pause in speech",
+      "To ask a question",
+      "To show excitement"
+    ],
+    "answer": "To indicate the end of a sentence",
+    "topic": "Grammar, Vocabulary & Punctuation"
+  },
+  {
+    "id": 118,
+    "question": "The main function of a full stop is",
+    "options": [
+      "To indicate the end of a sentence",
+      "To show pause in speech",
+      "To ask a question",
+      "To show excitement"
+    ],
+    "answer": "To indicate the end of a sentence",
+    "topic": "Grammar, Vocabulary & Punctuation"
+  },
+  {
+    "id": 119,
+    "question": "The main function of a full stop is",
+    "options": [
+      "To indicate the end of a sentence",
+      "To show pause in speech",
+      "To ask a question",
+      "To show excitement"
+    ],
+    "answer": "To indicate the end of a sentence",
+    "topic": "Grammar, Vocabulary & Punctuation"
+  },
+  {
+    "id": 120,
+    "question": "The main function of a full stop is",
+    "options": [
+      "To indicate the end of a sentence",
+      "To show pause in speech",
+      "To ask a question",
+      "To show excitement"
+    ],
+    "answer": "To indicate the end of a sentence",
+    "topic": "Grammar, Vocabulary & Punctuation"
+  },
+  {
+    "id": 121,
+    "question": "The main function of a full stop is",
+    "options": [
+      "To indicate the end of a sentence",
+      "To show pause in speech",
+      "To ask a question",
+      "To show excitement"
+    ],
+    "answer": "To indicate the end of a sentence",
+    "topic": "Grammar, Vocabulary & Punctuation"
+  },
+  {
+    "id": 122,
+    "question": "The main function of a full stop is",
+    "options": [
+      "To indicate the end of a sentence",
+      "To show pause in speech",
+      "To ask a question",
+      "To show excitement"
+    ],
+    "answer": "To indicate the end of a sentence",
+    "topic": "Grammar, Vocabulary & Punctuation"
+  },
+  {
+    "id": 123,
+    "question": "The main function of a full stop is",
+    "options": [
+      "To indicate the end of a sentence",
+      "To show pause in speech",
+      "To ask a question",
+      "To show excitement"
+    ],
+    "answer": "To indicate the end of a sentence",
+    "topic": "Grammar, Vocabulary & Punctuation"
+  },
+  {
+    "id": 124,
+    "question": "The main function of a full stop is",
+    "options": [
+      "To indicate the end of a sentence",
+      "To show pause in speech",
+      "To ask a question",
+      "To show excitement"
+    ],
+    "answer": "To indicate the end of a sentence",
+    "topic": "Grammar, Vocabulary & Punctuation"
+  },
+  {
+    "id": 125,
+    "question": "The main function of a full stop is",
+    "options": [
+      "To indicate the end of a sentence",
+      "To show pause in speech",
+      "To ask a question",
+      "To show excitement"
+    ],
+    "answer": "To indicate the end of a sentence",
+    "topic": "Grammar, Vocabulary & Punctuation"
+  },
+  {
+    "id": 126,
+    "question": "Effective public speaking requires",
+    "options": [
+      "Confidence, clarity and eye contact",
+      "Speaking very fast",
+      "Using jargon",
+      "Reading without pause"
+    ],
+    "answer": "Confidence, clarity and eye contact",
+    "topic": "Public Speaking & Presentation"
+  },
+  {
+    "id": 127,
+    "question": "Visual aids in presentation help to",
+    "options": [
+      "Clarify and reinforce message",
+      "Replace the speaker",
+      "Cause distraction",
+      "Reduce retention"
+    ],
+    "answer": "Clarify and reinforce message",
+    "topic": "Public Speaking & Presentation"
+  },
+  {
+    "id": 128,
+    "question": "Preparation for a presentation involves",
+    "options": [
+      "Planning, practice and timing",
+      "Ignoring audience",
+      "Speaking extempore always",
+      "Writing randomly"
+    ],
+    "answer": "Planning, practice and timing",
+    "topic": "Public Speaking & Presentation"
+  },
+  {
+    "id": 129,
+    "question": "Preparation for a presentation involves",
+    "options": [
+      "Planning, practice and timing",
+      "Ignoring audience",
+      "Speaking extempore always",
+      "Writing randomly"
+    ],
+    "answer": "Planning, practice and timing",
+    "topic": "Public Speaking & Presentation"
+  },
+  {
+    "id": 130,
+    "question": "Preparation for a presentation involves",
+    "options": [
+      "Planning, practice and timing",
+      "Ignoring audience",
+      "Speaking extempore always",
+      "Writing randomly"
+    ],
+    "answer": "Planning, practice and timing",
+    "topic": "Public Speaking & Presentation"
+  },
+  {
+    "id": 131,
+    "question": "Preparation for a presentation involves",
+    "options": [
+      "Planning, practice and timing",
+      "Ignoring audience",
+      "Speaking extempore always",
+      "Writing randomly"
+    ],
+    "answer": "Planning, practice and timing",
+    "topic": "Public Speaking & Presentation"
+  },
+  {
+    "id": 132,
+    "question": "Preparation for a presentation involves",
+    "options": [
+      "Planning, practice and timing",
+      "Ignoring audience",
+      "Speaking extempore always",
+      "Writing randomly"
+    ],
+    "answer": "Planning, practice and timing",
+    "topic": "Public Speaking & Presentation"
+  },
+  {
+    "id": 133,
+    "question": "Preparation for a presentation involves",
+    "options": [
+      "Planning, practice and timing",
+      "Ignoring audience",
+      "Speaking extempore always",
+      "Writing randomly"
+    ],
+    "answer": "Planning, practice and timing",
+    "topic": "Public Speaking & Presentation"
+  },
+  {
+    "id": 134,
+    "question": "Preparation for a presentation involves",
+    "options": [
+      "Planning, practice and timing",
+      "Ignoring audience",
+      "Speaking extempore always",
+      "Writing randomly"
+    ],
+    "answer": "Planning, practice and timing",
+    "topic": "Public Speaking & Presentation"
+  },
+  {
+    "id": 135,
+    "question": "Preparation for a presentation involves",
+    "options": [
+      "Planning, practice and timing",
+      "Ignoring audience",
+      "Speaking extempore always",
+      "Writing randomly"
+    ],
+    "answer": "Planning, practice and timing",
+    "topic": "Public Speaking & Presentation"
+  },
+  {
+    "id": 136,
+    "question": "Preparation for a presentation involves",
+    "options": [
+      "Planning, practice and timing",
+      "Ignoring audience",
+      "Speaking extempore always",
+      "Writing randomly"
+    ],
+    "answer": "Planning, practice and timing",
+    "topic": "Public Speaking & Presentation"
+  },
+  {
+    "id": 137,
+    "question": "Preparation for a presentation involves",
+    "options": [
+      "Planning, practice and timing",
+      "Ignoring audience",
+      "Speaking extempore always",
+      "Writing randomly"
+    ],
+    "answer": "Planning, practice and timing",
+    "topic": "Public Speaking & Presentation"
+  },
+  {
+    "id": 138,
+    "question": "Preparation for a presentation involves",
+    "options": [
+      "Planning, practice and timing",
+      "Ignoring audience",
+      "Speaking extempore always",
+      "Writing randomly"
+    ],
+    "answer": "Planning, practice and timing",
+    "topic": "Public Speaking & Presentation"
+  },
+  {
+    "id": 139,
+    "question": "Preparation for a presentation involves",
+    "options": [
+      "Planning, practice and timing",
+      "Ignoring audience",
+      "Speaking extempore always",
+      "Writing randomly"
+    ],
+    "answer": "Planning, practice and timing",
+    "topic": "Public Speaking & Presentation"
+  },
+  {
+    "id": 140,
+    "question": "Preparation for a presentation involves",
+    "options": [
+      "Planning, practice and timing",
+      "Ignoring audience",
+      "Speaking extempore always",
+      "Writing randomly"
+    ],
+    "answer": "Planning, practice and timing",
+    "topic": "Public Speaking & Presentation"
+  },
+  {
+    "id": 141,
+    "question": "Preparation for a presentation involves",
+    "options": [
+      "Planning, practice and timing",
+      "Ignoring audience",
+      "Speaking extempore always",
+      "Writing randomly"
+    ],
+    "answer": "Planning, practice and timing",
+    "topic": "Public Speaking & Presentation"
+  },
+  {
+    "id": 142,
+    "question": "Preparation for a presentation involves",
+    "options": [
+      "Planning, practice and timing",
+      "Ignoring audience",
+      "Speaking extempore always",
+      "Writing randomly"
+    ],
+    "answer": "Planning, practice and timing",
+    "topic": "Public Speaking & Presentation"
+  },
+  {
+    "id": 143,
+    "question": "Preparation for a presentation involves",
+    "options": [
+      "Planning, practice and timing",
+      "Ignoring audience",
+      "Speaking extempore always",
+      "Writing randomly"
+    ],
+    "answer": "Planning, practice and timing",
+    "topic": "Public Speaking & Presentation"
+  },
+  {
+    "id": 144,
+    "question": "Preparation for a presentation involves",
+    "options": [
+      "Planning, practice and timing",
+      "Ignoring audience",
+      "Speaking extempore always",
+      "Writing randomly"
+    ],
+    "answer": "Planning, practice and timing",
+    "topic": "Public Speaking & Presentation"
+  },
+  {
+    "id": 145,
+    "question": "Preparation for a presentation involves",
+    "options": [
+      "Planning, practice and timing",
+      "Ignoring audience",
+      "Speaking extempore always",
+      "Writing randomly"
+    ],
+    "answer": "Planning, practice and timing",
+    "topic": "Public Speaking & Presentation"
+  },
+  {
+    "id": 146,
+    "question": "Email is a form of",
+    "options": [
+      "Electronic communication",
+      "Oral communication",
+      "Written ancient communication",
+      "Noise"
+    ],
+    "answer": "Electronic communication",
+    "topic": "ICT & Modern Communication Tools"
+  },
+  {
+    "id": 147,
+    "question": "Social media platforms aid",
+    "options": [
+      "Instant communication",
+      "Only face-to-face talk",
+      "Silence",
+      "Noise barriers"
+    ],
+    "answer": "Instant communication",
+    "topic": "ICT & Modern Communication Tools"
+  },
+  {
+    "id": 148,
+    "question": "One advantage of ICT in communication is",
+    "options": [
+      "Speed and reach",
+      "Delay",
+      "Costliness",
+      "Noise"
+    ],
+    "answer": "Speed and reach",
+    "topic": "ICT & Modern Communication Tools"
+  },
+  {
+    "id": 149,
+    "question": "One advantage of ICT in communication is",
+    "options": [
+      "Speed and reach",
+      "Delay",
+      "Costliness",
+      "Noise"
+    ],
+    "answer": "Speed and reach",
+    "topic": "ICT & Modern Communication Tools"
+  },
+  {
+    "id": 150,
+    "question": "One advantage of ICT in communication is",
+    "options": [
+      "Speed and reach",
+      "Delay",
+      "Costliness",
+      "Noise"
+    ],
+    "answer": "Speed and reach",
+    "topic": "ICT & Modern Communication Tools"
+  },
+  {
+    "id": 151,
+    "question": "One advantage of ICT in communication is",
+    "options": [
+      "Speed and reach",
+      "Delay",
+      "Costliness",
+      "Noise"
+    ],
+    "answer": "Speed and reach",
+    "topic": "ICT & Modern Communication Tools"
+  },
+  {
+    "id": 152,
+    "question": "One advantage of ICT in communication is",
+    "options": [
+      "Speed and reach",
+      "Delay",
+      "Costliness",
+      "Noise"
+    ],
+    "answer": "Speed and reach",
+    "topic": "ICT & Modern Communication Tools"
+  },
+  {
+    "id": 153,
+    "question": "One advantage of ICT in communication is",
+    "options": [
+      "Speed and reach",
+      "Delay",
+      "Costliness",
+      "Noise"
+    ],
+    "answer": "Speed and reach",
+    "topic": "ICT & Modern Communication Tools"
+  },
+  {
+    "id": 154,
+    "question": "One advantage of ICT in communication is",
+    "options": [
+      "Speed and reach",
+      "Delay",
+      "Costliness",
+      "Noise"
+    ],
+    "answer": "Speed and reach",
+    "topic": "ICT & Modern Communication Tools"
+  },
+  {
+    "id": 155,
+    "question": "One advantage of ICT in communication is",
+    "options": [
+      "Speed and reach",
+      "Delay",
+      "Costliness",
+      "Noise"
+    ],
+    "answer": "Speed and reach",
+    "topic": "ICT & Modern Communication Tools"
+  },
+  {
+    "id": 156,
+    "question": "One advantage of ICT in communication is",
+    "options": [
+      "Speed and reach",
+      "Delay",
+      "Costliness",
+      "Noise"
+    ],
+    "answer": "Speed and reach",
+    "topic": "ICT & Modern Communication Tools"
+  },
+  {
+    "id": 157,
+    "question": "One advantage of ICT in communication is",
+    "options": [
+      "Speed and reach",
+      "Delay",
+      "Costliness",
+      "Noise"
+    ],
+    "answer": "Speed and reach",
+    "topic": "ICT & Modern Communication Tools"
+  },
+  {
+    "id": 158,
+    "question": "One advantage of ICT in communication is",
+    "options": [
+      "Speed and reach",
+      "Delay",
+      "Costliness",
+      "Noise"
+    ],
+    "answer": "Speed and reach",
+    "topic": "ICT & Modern Communication Tools"
+  },
+  {
+    "id": 159,
+    "question": "One advantage of ICT in communication is",
+    "options": [
+      "Speed and reach",
+      "Delay",
+      "Costliness",
+      "Noise"
+    ],
+    "answer": "Speed and reach",
+    "topic": "ICT & Modern Communication Tools"
+  },
+  {
+    "id": 160,
+    "question": "One advantage of ICT in communication is",
+    "options": [
+      "Speed and reach",
+      "Delay",
+      "Costliness",
+      "Noise"
+    ],
+    "answer": "Speed and reach",
+    "topic": "ICT & Modern Communication Tools"
+  },
+  {
+    "id": 161,
+    "question": "Team communication is effective when",
+    "options": [
+      "There is cooperation and active participation",
+      "Only leader talks",
+      "Silence is maintained",
+      "Emails are avoided"
+    ],
+    "answer": "There is cooperation and active participation",
+    "topic": "Interpersonal & Group Communication, Ethics"
+  },
+  {
+    "id": 162,
+    "question": "Ethics in communication implies",
+    "options": [
+      "Honesty, clarity and respect",
+      "Deception",
       "Noise",
-      "Non\u2011verbal communication"
+      "Insults"
     ],
-    "answer_index": 0
+    "answer": "Honesty, clarity and respect",
+    "topic": "Interpersonal & Group Communication, Ethics"
   },
   {
-    "id": "CS-AT1-Q006",
-    "topic": "Listening & Writing",
-    "subtopic": "Grammar",
-    "stem": "Active listening requires ____.",
+    "id": 163,
+    "question": "An example of group communication is",
     "options": [
-      "Feedback and attention",
-      "Multitasking",
-      "Immediate agreement",
-      "Silence only"
+      "Meetings",
+      "One-to-one talk",
+      "Private diary",
+      "Dreaming"
     ],
-    "answer_index": 0
+    "answer": "Meetings",
+    "topic": "Interpersonal & Group Communication, Ethics"
   },
   {
-    "id": "CS-AT1-Q007",
-    "topic": "Communication Basics",
-    "subtopic": "Process",
-    "stem": "Noise in communication refers to ____.",
+    "id": 164,
+    "question": "An example of group communication is",
     "options": [
-      "Any interference with the message",
-      "Background music",
-      "Only physical disturbances",
-      "Financial cost"
+      "Meetings",
+      "One-to-one talk",
+      "Private diary",
+      "Dreaming"
     ],
-    "answer_index": 0
+    "answer": "Meetings",
+    "topic": "Interpersonal & Group Communication, Ethics"
   },
   {
-    "id": "CS-AT1-Q008",
-    "topic": "Communication Basics",
-    "subtopic": "Barriers",
-    "stem": "Which is an example of non\u2011verbal communication?",
+    "id": 165,
+    "question": "An example of group communication is",
     "options": [
-      "A handshake",
-      "A phone call",
-      "An email",
-      "A memo"
+      "Meetings",
+      "One-to-one talk",
+      "Private diary",
+      "Dreaming"
     ],
-    "answer_index": 0
+    "answer": "Meetings",
+    "topic": "Interpersonal & Group Communication, Ethics"
   },
   {
-    "id": "CS-AT1-Q009",
-    "topic": "Communication Basics",
-    "subtopic": "Non-verbal",
-    "stem": "Which is an example of non\u2011verbal communication?",
+    "id": 166,
+    "question": "An example of group communication is",
     "options": [
-      "A handshake",
-      "A phone call",
-      "An email",
-      "A memo"
+      "Meetings",
+      "One-to-one talk",
+      "Private diary",
+      "Dreaming"
     ],
-    "answer_index": 0
+    "answer": "Meetings",
+    "topic": "Interpersonal & Group Communication, Ethics"
   },
   {
-    "id": "CS-AT1-Q010",
-    "topic": "Listening & Writing",
-    "subtopic": "Listening",
-    "stem": "Subject\u2011verb agreement is a concern of ____.",
+    "id": 167,
+    "question": "An example of group communication is",
     "options": [
-      "Grammar",
-      "Semantics",
-      "Noise",
-      "Non\u2011verbal communication"
+      "Meetings",
+      "One-to-one talk",
+      "Private diary",
+      "Dreaming"
     ],
-    "answer_index": 0
+    "answer": "Meetings",
+    "topic": "Interpersonal & Group Communication, Ethics"
   },
   {
-    "id": "CS-AT1-Q011",
-    "topic": "Listening & Writing",
-    "subtopic": "Business Writing",
-    "stem": "Subject\u2011verb agreement is a concern of ____.",
+    "id": 168,
+    "question": "An example of group communication is",
     "options": [
-      "Grammar",
-      "Semantics",
-      "Noise",
-      "Non\u2011verbal communication"
+      "Meetings",
+      "One-to-one talk",
+      "Private diary",
+      "Dreaming"
     ],
-    "answer_index": 0
+    "answer": "Meetings",
+    "topic": "Interpersonal & Group Communication, Ethics"
   },
   {
-    "id": "CS-AT1-Q012",
-    "topic": "Listening & Writing",
-    "subtopic": "Grammar",
-    "stem": "Subject\u2011verb agreement is a concern of ____.",
+    "id": 169,
+    "question": "An example of group communication is",
     "options": [
-      "Grammar",
-      "Semantics",
-      "Noise",
-      "Non\u2011verbal communication"
+      "Meetings",
+      "One-to-one talk",
+      "Private diary",
+      "Dreaming"
     ],
-    "answer_index": 0
+    "answer": "Meetings",
+    "topic": "Interpersonal & Group Communication, Ethics"
   },
   {
-    "id": "CS-AT1-Q013",
-    "topic": "Communication Basics",
-    "subtopic": "Process",
-    "stem": "Which is an example of non\u2011verbal communication?",
+    "id": 170,
+    "question": "An example of group communication is",
     "options": [
-      "A handshake",
-      "A phone call",
-      "An email",
-      "A memo"
+      "Meetings",
+      "One-to-one talk",
+      "Private diary",
+      "Dreaming"
     ],
-    "answer_index": 0
+    "answer": "Meetings",
+    "topic": "Interpersonal & Group Communication, Ethics"
   },
   {
-    "id": "CS-AT1-Q014",
-    "topic": "Communication Basics",
-    "subtopic": "Barriers",
-    "stem": "Which is NOT a key element of the communication process?",
+    "id": 171,
+    "question": "An example of group communication is",
     "options": [
-      "Profit",
-      "Sender",
-      "Message",
-      "Feedback"
+      "Meetings",
+      "One-to-one talk",
+      "Private diary",
+      "Dreaming"
     ],
-    "answer_index": 0
+    "answer": "Meetings",
+    "topic": "Interpersonal & Group Communication, Ethics"
   },
   {
-    "id": "CS-AT1-Q015",
-    "topic": "Communication Basics",
-    "subtopic": "Non-verbal",
-    "stem": "Noise in communication refers to ____.",
+    "id": 172,
+    "question": "An example of group communication is",
     "options": [
-      "Any interference with the message",
-      "Background music",
-      "Only physical disturbances",
-      "Financial cost"
+      "Meetings",
+      "One-to-one talk",
+      "Private diary",
+      "Dreaming"
     ],
-    "answer_index": 0
+    "answer": "Meetings",
+    "topic": "Interpersonal & Group Communication, Ethics"
   },
   {
-    "id": "CS-AT1-Q016",
-    "topic": "Listening & Writing",
-    "subtopic": "Listening",
-    "stem": "Subject\u2011verb agreement is a concern of ____.",
+    "id": 173,
+    "question": "An example of group communication is",
     "options": [
-      "Grammar",
-      "Semantics",
-      "Noise",
-      "Non\u2011verbal communication"
+      "Meetings",
+      "One-to-one talk",
+      "Private diary",
+      "Dreaming"
     ],
-    "answer_index": 0
+    "answer": "Meetings",
+    "topic": "Interpersonal & Group Communication, Ethics"
   },
   {
-    "id": "CS-AT1-Q017",
-    "topic": "Listening & Writing",
-    "subtopic": "Business Writing",
-    "stem": "Active listening requires ____.",
+    "id": 174,
+    "question": "An example of group communication is",
     "options": [
-      "Feedback and attention",
-      "Multitasking",
-      "Immediate agreement",
-      "Silence only"
+      "Meetings",
+      "One-to-one talk",
+      "Private diary",
+      "Dreaming"
     ],
-    "answer_index": 0
+    "answer": "Meetings",
+    "topic": "Interpersonal & Group Communication, Ethics"
   },
   {
-    "id": "CS-AT1-Q018",
-    "topic": "Listening & Writing",
-    "subtopic": "Grammar",
-    "stem": "Which is most appropriate for a formal business letter?",
+    "id": 175,
+    "question": "An example of group communication is",
     "options": [
-      "Dear Sir/Madam",
-      "Hey there",
-      "Yo!",
-      "Hi buddy"
+      "Meetings",
+      "One-to-one talk",
+      "Private diary",
+      "Dreaming"
     ],
-    "answer_index": 0
+    "answer": "Meetings",
+    "topic": "Interpersonal & Group Communication, Ethics"
   },
   {
-    "id": "CS-AT1-Q019",
-    "topic": "Communication Basics",
-    "subtopic": "Process",
-    "stem": "Which is NOT a key element of the communication process?",
+    "id": 176,
+    "question": "An example of group communication is",
     "options": [
-      "Profit",
-      "Sender",
-      "Message",
-      "Feedback"
+      "Meetings",
+      "One-to-one talk",
+      "Private diary",
+      "Dreaming"
     ],
-    "answer_index": 0
+    "answer": "Meetings",
+    "topic": "Interpersonal & Group Communication, Ethics"
   },
   {
-    "id": "CS-AT1-Q020",
-    "topic": "Communication Basics",
-    "subtopic": "Barriers",
-    "stem": "Noise in communication refers to ____.",
+    "id": 177,
+    "question": "An example of group communication is",
     "options": [
-      "Any interference with the message",
-      "Background music",
-      "Only physical disturbances",
-      "Financial cost"
+      "Meetings",
+      "One-to-one talk",
+      "Private diary",
+      "Dreaming"
     ],
-    "answer_index": 0
+    "answer": "Meetings",
+    "topic": "Interpersonal & Group Communication, Ethics"
   },
   {
-    "id": "CS-AT1-Q021",
-    "topic": "Communication Basics",
-    "subtopic": "Non-verbal",
-    "stem": "Which is an example of non\u2011verbal communication?",
+    "id": 178,
+    "question": "An example of group communication is",
     "options": [
-      "A handshake",
-      "A phone call",
-      "An email",
-      "A memo"
+      "Meetings",
+      "One-to-one talk",
+      "Private diary",
+      "Dreaming"
     ],
-    "answer_index": 0
+    "answer": "Meetings",
+    "topic": "Interpersonal & Group Communication, Ethics"
   },
   {
-    "id": "CS-AT1-Q022",
-    "topic": "Listening & Writing",
-    "subtopic": "Listening",
-    "stem": "Which is most appropriate for a formal business letter?",
+    "id": 179,
+    "question": "An example of group communication is",
     "options": [
-      "Dear Sir/Madam",
-      "Hey there",
-      "Yo!",
-      "Hi buddy"
+      "Meetings",
+      "One-to-one talk",
+      "Private diary",
+      "Dreaming"
     ],
-    "answer_index": 0
+    "answer": "Meetings",
+    "topic": "Interpersonal & Group Communication, Ethics"
   },
   {
-    "id": "CS-AT1-Q023",
-    "topic": "Listening & Writing",
-    "subtopic": "Business Writing",
-    "stem": "Which is most appropriate for a formal business letter?",
+    "id": 180,
+    "question": "An example of group communication is",
     "options": [
-      "Dear Sir/Madam",
-      "Hey there",
-      "Yo!",
-      "Hi buddy"
+      "Meetings",
+      "One-to-one talk",
+      "Private diary",
+      "Dreaming"
     ],
-    "answer_index": 0
+    "answer": "Meetings",
+    "topic": "Interpersonal & Group Communication, Ethics"
   },
   {
-    "id": "CS-AT1-Q024",
-    "topic": "Listening & Writing",
-    "subtopic": "Grammar",
-    "stem": "Subject\u2011verb agreement is a concern of ____.",
+    "id": 181,
+    "question": "Effective note-taking strategies include",
     "options": [
-      "Grammar",
-      "Semantics",
-      "Noise",
-      "Non\u2011verbal communication"
+      "Outlining and summarizing key points",
+      "Copying everything verbatim",
+      "Sleeping in class",
+      "Avoiding writing"
     ],
-    "answer_index": 0
+    "answer": "Outlining and summarizing key points",
+    "topic": "Study Skills, Note-taking, Examination Techniques"
   },
   {
-    "id": "CS-AT1-Q025",
-    "topic": "Communication Basics",
-    "subtopic": "Process",
-    "stem": "Which is an example of non\u2011verbal communication?",
+    "id": 182,
+    "question": "Examination technique requires",
     "options": [
-      "A handshake",
-      "A phone call",
-      "An email",
-      "A memo"
+      "Reading instructions carefully",
+      "Ignoring instructions",
+      "Rushing",
+      "Copying"
     ],
-    "answer_index": 0
+    "answer": "Reading instructions carefully",
+    "topic": "Study Skills, Note-taking, Examination Techniques"
   },
   {
-    "id": "CS-AT1-Q026",
-    "topic": "Communication Basics",
-    "subtopic": "Barriers",
-    "stem": "Noise in communication refers to ____.",
+    "id": 183,
+    "question": "Time management in studying helps",
     "options": [
-      "Any interference with the message",
-      "Background music",
-      "Only physical disturbances",
-      "Financial cost"
+      "Better preparation and less stress",
+      "Procrastination",
+      "Last minute panic",
+      "Failure"
     ],
-    "answer_index": 0
+    "answer": "Better preparation and less stress",
+    "topic": "Study Skills, Note-taking, Examination Techniques"
   },
   {
-    "id": "CS-AT1-Q027",
-    "topic": "Communication Basics",
-    "subtopic": "Non-verbal",
-    "stem": "Noise in communication refers to ____.",
+    "id": 184,
+    "question": "Time management in studying helps",
     "options": [
-      "Any interference with the message",
-      "Background music",
-      "Only physical disturbances",
-      "Financial cost"
+      "Better preparation and less stress",
+      "Procrastination",
+      "Last minute panic",
+      "Failure"
     ],
-    "answer_index": 0
+    "answer": "Better preparation and less stress",
+    "topic": "Study Skills, Note-taking, Examination Techniques"
   },
   {
-    "id": "CS-AT1-Q028",
-    "topic": "Listening & Writing",
-    "subtopic": "Listening",
-    "stem": "Subject\u2011verb agreement is a concern of ____.",
+    "id": 185,
+    "question": "Time management in studying helps",
     "options": [
-      "Grammar",
-      "Semantics",
-      "Noise",
-      "Non\u2011verbal communication"
+      "Better preparation and less stress",
+      "Procrastination",
+      "Last minute panic",
+      "Failure"
     ],
-    "answer_index": 0
+    "answer": "Better preparation and less stress",
+    "topic": "Study Skills, Note-taking, Examination Techniques"
   },
   {
-    "id": "CS-AT1-Q029",
-    "topic": "Listening & Writing",
-    "subtopic": "Business Writing",
-    "stem": "Active listening requires ____.",
+    "id": 186,
+    "question": "Time management in studying helps",
     "options": [
-      "Feedback and attention",
-      "Multitasking",
-      "Immediate agreement",
-      "Silence only"
+      "Better preparation and less stress",
+      "Procrastination",
+      "Last minute panic",
+      "Failure"
     ],
-    "answer_index": 0
+    "answer": "Better preparation and less stress",
+    "topic": "Study Skills, Note-taking, Examination Techniques"
   },
   {
-    "id": "CS-AT1-Q030",
-    "topic": "Listening & Writing",
-    "subtopic": "Grammar",
-    "stem": "Active listening requires ____.",
+    "id": 187,
+    "question": "Time management in studying helps",
     "options": [
-      "Feedback and attention",
-      "Multitasking",
-      "Immediate agreement",
-      "Silence only"
+      "Better preparation and less stress",
+      "Procrastination",
+      "Last minute panic",
+      "Failure"
     ],
-    "answer_index": 0
+    "answer": "Better preparation and less stress",
+    "topic": "Study Skills, Note-taking, Examination Techniques"
   },
   {
-    "id": "CS-AT1-Q031",
-    "topic": "Communication Basics",
-    "subtopic": "Process",
-    "stem": "Which is an example of non\u2011verbal communication?",
+    "id": 188,
+    "question": "Time management in studying helps",
     "options": [
-      "A handshake",
-      "A phone call",
-      "An email",
-      "A memo"
+      "Better preparation and less stress",
+      "Procrastination",
+      "Last minute panic",
+      "Failure"
     ],
-    "answer_index": 0
+    "answer": "Better preparation and less stress",
+    "topic": "Study Skills, Note-taking, Examination Techniques"
   },
   {
-    "id": "CS-AT1-Q032",
-    "topic": "Communication Basics",
-    "subtopic": "Barriers",
-    "stem": "Noise in communication refers to ____.",
+    "id": 189,
+    "question": "Time management in studying helps",
     "options": [
-      "Any interference with the message",
-      "Background music",
-      "Only physical disturbances",
-      "Financial cost"
+      "Better preparation and less stress",
+      "Procrastination",
+      "Last minute panic",
+      "Failure"
     ],
-    "answer_index": 0
+    "answer": "Better preparation and less stress",
+    "topic": "Study Skills, Note-taking, Examination Techniques"
   },
   {
-    "id": "CS-AT1-Q033",
-    "topic": "Communication Basics",
-    "subtopic": "Non-verbal",
-    "stem": "Noise in communication refers to ____.",
+    "id": 190,
+    "question": "Time management in studying helps",
     "options": [
-      "Any interference with the message",
-      "Background music",
-      "Only physical disturbances",
-      "Financial cost"
+      "Better preparation and less stress",
+      "Procrastination",
+      "Last minute panic",
+      "Failure"
     ],
-    "answer_index": 0
+    "answer": "Better preparation and less stress",
+    "topic": "Study Skills, Note-taking, Examination Techniques"
   },
   {
-    "id": "CS-AT1-Q034",
-    "topic": "Listening & Writing",
-    "subtopic": "Listening",
-    "stem": "Active listening requires ____.",
+    "id": 191,
+    "question": "Time management in studying helps",
     "options": [
-      "Feedback and attention",
-      "Multitasking",
-      "Immediate agreement",
-      "Silence only"
+      "Better preparation and less stress",
+      "Procrastination",
+      "Last minute panic",
+      "Failure"
     ],
-    "answer_index": 0
+    "answer": "Better preparation and less stress",
+    "topic": "Study Skills, Note-taking, Examination Techniques"
   },
   {
-    "id": "CS-AT1-Q035",
-    "topic": "Listening & Writing",
-    "subtopic": "Business Writing",
-    "stem": "Active listening requires ____.",
+    "id": 192,
+    "question": "Time management in studying helps",
     "options": [
-      "Feedback and attention",
-      "Multitasking",
-      "Immediate agreement",
-      "Silence only"
+      "Better preparation and less stress",
+      "Procrastination",
+      "Last minute panic",
+      "Failure"
     ],
-    "answer_index": 0
+    "answer": "Better preparation and less stress",
+    "topic": "Study Skills, Note-taking, Examination Techniques"
   },
   {
-    "id": "CS-AT1-Q036",
-    "topic": "Listening & Writing",
-    "subtopic": "Grammar",
-    "stem": "Active listening requires ____.",
+    "id": 193,
+    "question": "Time management in studying helps",
     "options": [
-      "Feedback and attention",
-      "Multitasking",
-      "Immediate agreement",
-      "Silence only"
+      "Better preparation and less stress",
+      "Procrastination",
+      "Last minute panic",
+      "Failure"
     ],
-    "answer_index": 0
+    "answer": "Better preparation and less stress",
+    "topic": "Study Skills, Note-taking, Examination Techniques"
   },
   {
-    "id": "CS-AT1-Q037",
-    "topic": "Communication Basics",
-    "subtopic": "Process",
-    "stem": "Noise in communication refers to ____.",
+    "id": 194,
+    "question": "Time management in studying helps",
     "options": [
-      "Any interference with the message",
-      "Background music",
-      "Only physical disturbances",
-      "Financial cost"
+      "Better preparation and less stress",
+      "Procrastination",
+      "Last minute panic",
+      "Failure"
     ],
-    "answer_index": 0
+    "answer": "Better preparation and less stress",
+    "topic": "Study Skills, Note-taking, Examination Techniques"
   },
   {
-    "id": "CS-AT1-Q038",
-    "topic": "Communication Basics",
-    "subtopic": "Barriers",
-    "stem": "Noise in communication refers to ____.",
+    "id": 195,
+    "question": "Time management in studying helps",
     "options": [
-      "Any interference with the message",
-      "Background music",
-      "Only physical disturbances",
-      "Financial cost"
+      "Better preparation and less stress",
+      "Procrastination",
+      "Last minute panic",
+      "Failure"
     ],
-    "answer_index": 0
+    "answer": "Better preparation and less stress",
+    "topic": "Study Skills, Note-taking, Examination Techniques"
   },
   {
-    "id": "CS-AT1-Q039",
-    "topic": "Communication Basics",
-    "subtopic": "Non-verbal",
-    "stem": "Which is an example of non\u2011verbal communication?",
+    "id": 196,
+    "question": "Time management in studying helps",
     "options": [
-      "A handshake",
-      "A phone call",
-      "An email",
-      "A memo"
+      "Better preparation and less stress",
+      "Procrastination",
+      "Last minute panic",
+      "Failure"
     ],
-    "answer_index": 0
+    "answer": "Better preparation and less stress",
+    "topic": "Study Skills, Note-taking, Examination Techniques"
   },
   {
-    "id": "CS-AT1-Q040",
-    "topic": "Listening & Writing",
-    "subtopic": "Listening",
-    "stem": "Active listening requires ____.",
+    "id": 197,
+    "question": "Time management in studying helps",
     "options": [
-      "Feedback and attention",
-      "Multitasking",
-      "Immediate agreement",
-      "Silence only"
+      "Better preparation and less stress",
+      "Procrastination",
+      "Last minute panic",
+      "Failure"
     ],
-    "answer_index": 0
+    "answer": "Better preparation and less stress",
+    "topic": "Study Skills, Note-taking, Examination Techniques"
   },
   {
-    "id": "CS-AT1-Q041",
-    "topic": "Listening & Writing",
-    "subtopic": "Business Writing",
-    "stem": "Subject\u2011verb agreement is a concern of ____.",
+    "id": 198,
+    "question": "Time management in studying helps",
     "options": [
-      "Grammar",
-      "Semantics",
-      "Noise",
-      "Non\u2011verbal communication"
+      "Better preparation and less stress",
+      "Procrastination",
+      "Last minute panic",
+      "Failure"
     ],
-    "answer_index": 0
+    "answer": "Better preparation and less stress",
+    "topic": "Study Skills, Note-taking, Examination Techniques"
   },
   {
-    "id": "CS-AT1-Q042",
-    "topic": "Listening & Writing",
-    "subtopic": "Grammar",
-    "stem": "Subject\u2011verb agreement is a concern of ____.",
+    "id": 199,
+    "question": "Time management in studying helps",
     "options": [
-      "Grammar",
-      "Semantics",
-      "Noise",
-      "Non\u2011verbal communication"
+      "Better preparation and less stress",
+      "Procrastination",
+      "Last minute panic",
+      "Failure"
     ],
-    "answer_index": 0
+    "answer": "Better preparation and less stress",
+    "topic": "Study Skills, Note-taking, Examination Techniques"
   },
   {
-    "id": "CS-AT1-Q043",
-    "topic": "Communication Basics",
-    "subtopic": "Process",
-    "stem": "Which is NOT a key element of the communication process?",
+    "id": 200,
+    "question": "Time management in studying helps",
     "options": [
-      "Profit",
-      "Sender",
-      "Message",
-      "Feedback"
+      "Better preparation and less stress",
+      "Procrastination",
+      "Last minute panic",
+      "Failure"
     ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q044",
-    "topic": "Communication Basics",
-    "subtopic": "Barriers",
-    "stem": "Noise in communication refers to ____.",
-    "options": [
-      "Any interference with the message",
-      "Background music",
-      "Only physical disturbances",
-      "Financial cost"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q045",
-    "topic": "Communication Basics",
-    "subtopic": "Non-verbal",
-    "stem": "Which is NOT a key element of the communication process?",
-    "options": [
-      "Profit",
-      "Sender",
-      "Message",
-      "Feedback"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q046",
-    "topic": "Listening & Writing",
-    "subtopic": "Listening",
-    "stem": "Active listening requires ____.",
-    "options": [
-      "Feedback and attention",
-      "Multitasking",
-      "Immediate agreement",
-      "Silence only"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q047",
-    "topic": "Listening & Writing",
-    "subtopic": "Business Writing",
-    "stem": "Which is most appropriate for a formal business letter?",
-    "options": [
-      "Dear Sir/Madam",
-      "Hey there",
-      "Yo!",
-      "Hi buddy"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q048",
-    "topic": "Listening & Writing",
-    "subtopic": "Grammar",
-    "stem": "Active listening requires ____.",
-    "options": [
-      "Feedback and attention",
-      "Multitasking",
-      "Immediate agreement",
-      "Silence only"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q049",
-    "topic": "Communication Basics",
-    "subtopic": "Process",
-    "stem": "Noise in communication refers to ____.",
-    "options": [
-      "Any interference with the message",
-      "Background music",
-      "Only physical disturbances",
-      "Financial cost"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q050",
-    "topic": "Communication Basics",
-    "subtopic": "Barriers",
-    "stem": "Which is an example of non\u2011verbal communication?",
-    "options": [
-      "A handshake",
-      "A phone call",
-      "An email",
-      "A memo"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q051",
-    "topic": "Communication Basics",
-    "subtopic": "Non-verbal",
-    "stem": "Which is an example of non\u2011verbal communication?",
-    "options": [
-      "A handshake",
-      "A phone call",
-      "An email",
-      "A memo"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q052",
-    "topic": "Listening & Writing",
-    "subtopic": "Listening",
-    "stem": "Which is most appropriate for a formal business letter?",
-    "options": [
-      "Dear Sir/Madam",
-      "Hey there",
-      "Yo!",
-      "Hi buddy"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q053",
-    "topic": "Listening & Writing",
-    "subtopic": "Business Writing",
-    "stem": "Which is most appropriate for a formal business letter?",
-    "options": [
-      "Dear Sir/Madam",
-      "Hey there",
-      "Yo!",
-      "Hi buddy"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q054",
-    "topic": "Listening & Writing",
-    "subtopic": "Grammar",
-    "stem": "Subject\u2011verb agreement is a concern of ____.",
-    "options": [
-      "Grammar",
-      "Semantics",
-      "Noise",
-      "Non\u2011verbal communication"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q055",
-    "topic": "Communication Basics",
-    "subtopic": "Process",
-    "stem": "Which is an example of non\u2011verbal communication?",
-    "options": [
-      "A handshake",
-      "A phone call",
-      "An email",
-      "A memo"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q056",
-    "topic": "Communication Basics",
-    "subtopic": "Barriers",
-    "stem": "Which is NOT a key element of the communication process?",
-    "options": [
-      "Profit",
-      "Sender",
-      "Message",
-      "Feedback"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q057",
-    "topic": "Communication Basics",
-    "subtopic": "Non-verbal",
-    "stem": "Which is an example of non\u2011verbal communication?",
-    "options": [
-      "A handshake",
-      "A phone call",
-      "An email",
-      "A memo"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q058",
-    "topic": "Listening & Writing",
-    "subtopic": "Listening",
-    "stem": "Which is most appropriate for a formal business letter?",
-    "options": [
-      "Dear Sir/Madam",
-      "Hey there",
-      "Yo!",
-      "Hi buddy"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q059",
-    "topic": "Listening & Writing",
-    "subtopic": "Business Writing",
-    "stem": "Subject\u2011verb agreement is a concern of ____.",
-    "options": [
-      "Grammar",
-      "Semantics",
-      "Noise",
-      "Non\u2011verbal communication"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q060",
-    "topic": "Listening & Writing",
-    "subtopic": "Grammar",
-    "stem": "Which is most appropriate for a formal business letter?",
-    "options": [
-      "Dear Sir/Madam",
-      "Hey there",
-      "Yo!",
-      "Hi buddy"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q061",
-    "topic": "Communication Basics",
-    "subtopic": "Process",
-    "stem": "Noise in communication refers to ____.",
-    "options": [
-      "Any interference with the message",
-      "Background music",
-      "Only physical disturbances",
-      "Financial cost"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q062",
-    "topic": "Communication Basics",
-    "subtopic": "Barriers",
-    "stem": "Which is an example of non\u2011verbal communication?",
-    "options": [
-      "A handshake",
-      "A phone call",
-      "An email",
-      "A memo"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q063",
-    "topic": "Communication Basics",
-    "subtopic": "Non-verbal",
-    "stem": "Which is an example of non\u2011verbal communication?",
-    "options": [
-      "A handshake",
-      "A phone call",
-      "An email",
-      "A memo"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q064",
-    "topic": "Listening & Writing",
-    "subtopic": "Listening",
-    "stem": "Which is most appropriate for a formal business letter?",
-    "options": [
-      "Dear Sir/Madam",
-      "Hey there",
-      "Yo!",
-      "Hi buddy"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q065",
-    "topic": "Listening & Writing",
-    "subtopic": "Business Writing",
-    "stem": "Subject\u2011verb agreement is a concern of ____.",
-    "options": [
-      "Grammar",
-      "Semantics",
-      "Noise",
-      "Non\u2011verbal communication"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q066",
-    "topic": "Listening & Writing",
-    "subtopic": "Grammar",
-    "stem": "Which is most appropriate for a formal business letter?",
-    "options": [
-      "Dear Sir/Madam",
-      "Hey there",
-      "Yo!",
-      "Hi buddy"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q067",
-    "topic": "Communication Basics",
-    "subtopic": "Process",
-    "stem": "Which is NOT a key element of the communication process?",
-    "options": [
-      "Profit",
-      "Sender",
-      "Message",
-      "Feedback"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q068",
-    "topic": "Communication Basics",
-    "subtopic": "Barriers",
-    "stem": "Noise in communication refers to ____.",
-    "options": [
-      "Any interference with the message",
-      "Background music",
-      "Only physical disturbances",
-      "Financial cost"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q069",
-    "topic": "Communication Basics",
-    "subtopic": "Non-verbal",
-    "stem": "Noise in communication refers to ____.",
-    "options": [
-      "Any interference with the message",
-      "Background music",
-      "Only physical disturbances",
-      "Financial cost"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q070",
-    "topic": "Listening & Writing",
-    "subtopic": "Listening",
-    "stem": "Active listening requires ____.",
-    "options": [
-      "Feedback and attention",
-      "Multitasking",
-      "Immediate agreement",
-      "Silence only"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q071",
-    "topic": "Listening & Writing",
-    "subtopic": "Business Writing",
-    "stem": "Which is most appropriate for a formal business letter?",
-    "options": [
-      "Dear Sir/Madam",
-      "Hey there",
-      "Yo!",
-      "Hi buddy"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q072",
-    "topic": "Listening & Writing",
-    "subtopic": "Grammar",
-    "stem": "Subject\u2011verb agreement is a concern of ____.",
-    "options": [
-      "Grammar",
-      "Semantics",
-      "Noise",
-      "Non\u2011verbal communication"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q073",
-    "topic": "Communication Basics",
-    "subtopic": "Process",
-    "stem": "Noise in communication refers to ____.",
-    "options": [
-      "Any interference with the message",
-      "Background music",
-      "Only physical disturbances",
-      "Financial cost"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q074",
-    "topic": "Communication Basics",
-    "subtopic": "Barriers",
-    "stem": "Noise in communication refers to ____.",
-    "options": [
-      "Any interference with the message",
-      "Background music",
-      "Only physical disturbances",
-      "Financial cost"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q075",
-    "topic": "Communication Basics",
-    "subtopic": "Non-verbal",
-    "stem": "Which is an example of non\u2011verbal communication?",
-    "options": [
-      "A handshake",
-      "A phone call",
-      "An email",
-      "A memo"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q076",
-    "topic": "Listening & Writing",
-    "subtopic": "Listening",
-    "stem": "Active listening requires ____.",
-    "options": [
-      "Feedback and attention",
-      "Multitasking",
-      "Immediate agreement",
-      "Silence only"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q077",
-    "topic": "Listening & Writing",
-    "subtopic": "Business Writing",
-    "stem": "Active listening requires ____.",
-    "options": [
-      "Feedback and attention",
-      "Multitasking",
-      "Immediate agreement",
-      "Silence only"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q078",
-    "topic": "Listening & Writing",
-    "subtopic": "Grammar",
-    "stem": "Active listening requires ____.",
-    "options": [
-      "Feedback and attention",
-      "Multitasking",
-      "Immediate agreement",
-      "Silence only"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q079",
-    "topic": "Communication Basics",
-    "subtopic": "Process",
-    "stem": "Noise in communication refers to ____.",
-    "options": [
-      "Any interference with the message",
-      "Background music",
-      "Only physical disturbances",
-      "Financial cost"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q080",
-    "topic": "Communication Basics",
-    "subtopic": "Barriers",
-    "stem": "Which is NOT a key element of the communication process?",
-    "options": [
-      "Profit",
-      "Sender",
-      "Message",
-      "Feedback"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q081",
-    "topic": "Communication Basics",
-    "subtopic": "Non-verbal",
-    "stem": "Noise in communication refers to ____.",
-    "options": [
-      "Any interference with the message",
-      "Background music",
-      "Only physical disturbances",
-      "Financial cost"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q082",
-    "topic": "Listening & Writing",
-    "subtopic": "Listening",
-    "stem": "Active listening requires ____.",
-    "options": [
-      "Feedback and attention",
-      "Multitasking",
-      "Immediate agreement",
-      "Silence only"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q083",
-    "topic": "Listening & Writing",
-    "subtopic": "Business Writing",
-    "stem": "Active listening requires ____.",
-    "options": [
-      "Feedback and attention",
-      "Multitasking",
-      "Immediate agreement",
-      "Silence only"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q084",
-    "topic": "Listening & Writing",
-    "subtopic": "Grammar",
-    "stem": "Subject\u2011verb agreement is a concern of ____.",
-    "options": [
-      "Grammar",
-      "Semantics",
-      "Noise",
-      "Non\u2011verbal communication"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q085",
-    "topic": "Communication Basics",
-    "subtopic": "Process",
-    "stem": "Noise in communication refers to ____.",
-    "options": [
-      "Any interference with the message",
-      "Background music",
-      "Only physical disturbances",
-      "Financial cost"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q086",
-    "topic": "Communication Basics",
-    "subtopic": "Barriers",
-    "stem": "Which is NOT a key element of the communication process?",
-    "options": [
-      "Profit",
-      "Sender",
-      "Message",
-      "Feedback"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q087",
-    "topic": "Communication Basics",
-    "subtopic": "Non-verbal",
-    "stem": "Which is an example of non\u2011verbal communication?",
-    "options": [
-      "A handshake",
-      "A phone call",
-      "An email",
-      "A memo"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q088",
-    "topic": "Listening & Writing",
-    "subtopic": "Listening",
-    "stem": "Subject\u2011verb agreement is a concern of ____.",
-    "options": [
-      "Grammar",
-      "Semantics",
-      "Noise",
-      "Non\u2011verbal communication"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q089",
-    "topic": "Listening & Writing",
-    "subtopic": "Business Writing",
-    "stem": "Active listening requires ____.",
-    "options": [
-      "Feedback and attention",
-      "Multitasking",
-      "Immediate agreement",
-      "Silence only"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q090",
-    "topic": "Listening & Writing",
-    "subtopic": "Grammar",
-    "stem": "Active listening requires ____.",
-    "options": [
-      "Feedback and attention",
-      "Multitasking",
-      "Immediate agreement",
-      "Silence only"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q091",
-    "topic": "Communication Basics",
-    "subtopic": "Process",
-    "stem": "Which is NOT a key element of the communication process?",
-    "options": [
-      "Profit",
-      "Sender",
-      "Message",
-      "Feedback"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q092",
-    "topic": "Communication Basics",
-    "subtopic": "Barriers",
-    "stem": "Noise in communication refers to ____.",
-    "options": [
-      "Any interference with the message",
-      "Background music",
-      "Only physical disturbances",
-      "Financial cost"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q093",
-    "topic": "Communication Basics",
-    "subtopic": "Non-verbal",
-    "stem": "Noise in communication refers to ____.",
-    "options": [
-      "Any interference with the message",
-      "Background music",
-      "Only physical disturbances",
-      "Financial cost"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q094",
-    "topic": "Listening & Writing",
-    "subtopic": "Listening",
-    "stem": "Which is most appropriate for a formal business letter?",
-    "options": [
-      "Dear Sir/Madam",
-      "Hey there",
-      "Yo!",
-      "Hi buddy"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q095",
-    "topic": "Listening & Writing",
-    "subtopic": "Business Writing",
-    "stem": "Which is most appropriate for a formal business letter?",
-    "options": [
-      "Dear Sir/Madam",
-      "Hey there",
-      "Yo!",
-      "Hi buddy"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q096",
-    "topic": "Listening & Writing",
-    "subtopic": "Grammar",
-    "stem": "Active listening requires ____.",
-    "options": [
-      "Feedback and attention",
-      "Multitasking",
-      "Immediate agreement",
-      "Silence only"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q097",
-    "topic": "Communication Basics",
-    "subtopic": "Process",
-    "stem": "Which is NOT a key element of the communication process?",
-    "options": [
-      "Profit",
-      "Sender",
-      "Message",
-      "Feedback"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q098",
-    "topic": "Communication Basics",
-    "subtopic": "Barriers",
-    "stem": "Which is NOT a key element of the communication process?",
-    "options": [
-      "Profit",
-      "Sender",
-      "Message",
-      "Feedback"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q099",
-    "topic": "Communication Basics",
-    "subtopic": "Non-verbal",
-    "stem": "Noise in communication refers to ____.",
-    "options": [
-      "Any interference with the message",
-      "Background music",
-      "Only physical disturbances",
-      "Financial cost"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q100",
-    "topic": "Listening & Writing",
-    "subtopic": "Listening",
-    "stem": "Which is most appropriate for a formal business letter?",
-    "options": [
-      "Dear Sir/Madam",
-      "Hey there",
-      "Yo!",
-      "Hi buddy"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q101",
-    "topic": "Listening & Writing",
-    "subtopic": "Business Writing",
-    "stem": "Which is most appropriate for a formal business letter?",
-    "options": [
-      "Dear Sir/Madam",
-      "Hey there",
-      "Yo!",
-      "Hi buddy"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q102",
-    "topic": "Listening & Writing",
-    "subtopic": "Grammar",
-    "stem": "Active listening requires ____.",
-    "options": [
-      "Feedback and attention",
-      "Multitasking",
-      "Immediate agreement",
-      "Silence only"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q103",
-    "topic": "Communication Basics",
-    "subtopic": "Process",
-    "stem": "Which is NOT a key element of the communication process?",
-    "options": [
-      "Profit",
-      "Sender",
-      "Message",
-      "Feedback"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q104",
-    "topic": "Communication Basics",
-    "subtopic": "Barriers",
-    "stem": "Which is NOT a key element of the communication process?",
-    "options": [
-      "Profit",
-      "Sender",
-      "Message",
-      "Feedback"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q105",
-    "topic": "Communication Basics",
-    "subtopic": "Non-verbal",
-    "stem": "Which is an example of non\u2011verbal communication?",
-    "options": [
-      "A handshake",
-      "A phone call",
-      "An email",
-      "A memo"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q106",
-    "topic": "Listening & Writing",
-    "subtopic": "Listening",
-    "stem": "Subject\u2011verb agreement is a concern of ____.",
-    "options": [
-      "Grammar",
-      "Semantics",
-      "Noise",
-      "Non\u2011verbal communication"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q107",
-    "topic": "Listening & Writing",
-    "subtopic": "Business Writing",
-    "stem": "Subject\u2011verb agreement is a concern of ____.",
-    "options": [
-      "Grammar",
-      "Semantics",
-      "Noise",
-      "Non\u2011verbal communication"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q108",
-    "topic": "Listening & Writing",
-    "subtopic": "Grammar",
-    "stem": "Active listening requires ____.",
-    "options": [
-      "Feedback and attention",
-      "Multitasking",
-      "Immediate agreement",
-      "Silence only"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q109",
-    "topic": "Communication Basics",
-    "subtopic": "Process",
-    "stem": "Which is NOT a key element of the communication process?",
-    "options": [
-      "Profit",
-      "Sender",
-      "Message",
-      "Feedback"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q110",
-    "topic": "Communication Basics",
-    "subtopic": "Barriers",
-    "stem": "Which is NOT a key element of the communication process?",
-    "options": [
-      "Profit",
-      "Sender",
-      "Message",
-      "Feedback"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q111",
-    "topic": "Communication Basics",
-    "subtopic": "Non-verbal",
-    "stem": "Noise in communication refers to ____.",
-    "options": [
-      "Any interference with the message",
-      "Background music",
-      "Only physical disturbances",
-      "Financial cost"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q112",
-    "topic": "Listening & Writing",
-    "subtopic": "Listening",
-    "stem": "Subject\u2011verb agreement is a concern of ____.",
-    "options": [
-      "Grammar",
-      "Semantics",
-      "Noise",
-      "Non\u2011verbal communication"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q113",
-    "topic": "Listening & Writing",
-    "subtopic": "Business Writing",
-    "stem": "Active listening requires ____.",
-    "options": [
-      "Feedback and attention",
-      "Multitasking",
-      "Immediate agreement",
-      "Silence only"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q114",
-    "topic": "Listening & Writing",
-    "subtopic": "Grammar",
-    "stem": "Which is most appropriate for a formal business letter?",
-    "options": [
-      "Dear Sir/Madam",
-      "Hey there",
-      "Yo!",
-      "Hi buddy"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q115",
-    "topic": "Communication Basics",
-    "subtopic": "Process",
-    "stem": "Noise in communication refers to ____.",
-    "options": [
-      "Any interference with the message",
-      "Background music",
-      "Only physical disturbances",
-      "Financial cost"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q116",
-    "topic": "Communication Basics",
-    "subtopic": "Barriers",
-    "stem": "Which is NOT a key element of the communication process?",
-    "options": [
-      "Profit",
-      "Sender",
-      "Message",
-      "Feedback"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q117",
-    "topic": "Communication Basics",
-    "subtopic": "Non-verbal",
-    "stem": "Noise in communication refers to ____.",
-    "options": [
-      "Any interference with the message",
-      "Background music",
-      "Only physical disturbances",
-      "Financial cost"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q118",
-    "topic": "Listening & Writing",
-    "subtopic": "Listening",
-    "stem": "Subject\u2011verb agreement is a concern of ____.",
-    "options": [
-      "Grammar",
-      "Semantics",
-      "Noise",
-      "Non\u2011verbal communication"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q119",
-    "topic": "Listening & Writing",
-    "subtopic": "Business Writing",
-    "stem": "Active listening requires ____.",
-    "options": [
-      "Feedback and attention",
-      "Multitasking",
-      "Immediate agreement",
-      "Silence only"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q120",
-    "topic": "Listening & Writing",
-    "subtopic": "Grammar",
-    "stem": "Subject\u2011verb agreement is a concern of ____.",
-    "options": [
-      "Grammar",
-      "Semantics",
-      "Noise",
-      "Non\u2011verbal communication"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q121",
-    "topic": "Communication Basics",
-    "subtopic": "Process",
-    "stem": "Noise in communication refers to ____.",
-    "options": [
-      "Any interference with the message",
-      "Background music",
-      "Only physical disturbances",
-      "Financial cost"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q122",
-    "topic": "Communication Basics",
-    "subtopic": "Barriers",
-    "stem": "Which is NOT a key element of the communication process?",
-    "options": [
-      "Profit",
-      "Sender",
-      "Message",
-      "Feedback"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q123",
-    "topic": "Communication Basics",
-    "subtopic": "Non-verbal",
-    "stem": "Which is NOT a key element of the communication process?",
-    "options": [
-      "Profit",
-      "Sender",
-      "Message",
-      "Feedback"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q124",
-    "topic": "Listening & Writing",
-    "subtopic": "Listening",
-    "stem": "Active listening requires ____.",
-    "options": [
-      "Feedback and attention",
-      "Multitasking",
-      "Immediate agreement",
-      "Silence only"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q125",
-    "topic": "Listening & Writing",
-    "subtopic": "Business Writing",
-    "stem": "Which is most appropriate for a formal business letter?",
-    "options": [
-      "Dear Sir/Madam",
-      "Hey there",
-      "Yo!",
-      "Hi buddy"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q126",
-    "topic": "Listening & Writing",
-    "subtopic": "Grammar",
-    "stem": "Which is most appropriate for a formal business letter?",
-    "options": [
-      "Dear Sir/Madam",
-      "Hey there",
-      "Yo!",
-      "Hi buddy"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q127",
-    "topic": "Communication Basics",
-    "subtopic": "Process",
-    "stem": "Which is an example of non\u2011verbal communication?",
-    "options": [
-      "A handshake",
-      "A phone call",
-      "An email",
-      "A memo"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q128",
-    "topic": "Communication Basics",
-    "subtopic": "Barriers",
-    "stem": "Noise in communication refers to ____.",
-    "options": [
-      "Any interference with the message",
-      "Background music",
-      "Only physical disturbances",
-      "Financial cost"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q129",
-    "topic": "Communication Basics",
-    "subtopic": "Non-verbal",
-    "stem": "Noise in communication refers to ____.",
-    "options": [
-      "Any interference with the message",
-      "Background music",
-      "Only physical disturbances",
-      "Financial cost"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q130",
-    "topic": "Listening & Writing",
-    "subtopic": "Listening",
-    "stem": "Which is most appropriate for a formal business letter?",
-    "options": [
-      "Dear Sir/Madam",
-      "Hey there",
-      "Yo!",
-      "Hi buddy"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q131",
-    "topic": "Listening & Writing",
-    "subtopic": "Business Writing",
-    "stem": "Subject\u2011verb agreement is a concern of ____.",
-    "options": [
-      "Grammar",
-      "Semantics",
-      "Noise",
-      "Non\u2011verbal communication"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q132",
-    "topic": "Listening & Writing",
-    "subtopic": "Grammar",
-    "stem": "Subject\u2011verb agreement is a concern of ____.",
-    "options": [
-      "Grammar",
-      "Semantics",
-      "Noise",
-      "Non\u2011verbal communication"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q133",
-    "topic": "Communication Basics",
-    "subtopic": "Process",
-    "stem": "Which is an example of non\u2011verbal communication?",
-    "options": [
-      "A handshake",
-      "A phone call",
-      "An email",
-      "A memo"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q134",
-    "topic": "Communication Basics",
-    "subtopic": "Barriers",
-    "stem": "Which is NOT a key element of the communication process?",
-    "options": [
-      "Profit",
-      "Sender",
-      "Message",
-      "Feedback"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q135",
-    "topic": "Communication Basics",
-    "subtopic": "Non-verbal",
-    "stem": "Which is NOT a key element of the communication process?",
-    "options": [
-      "Profit",
-      "Sender",
-      "Message",
-      "Feedback"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q136",
-    "topic": "Listening & Writing",
-    "subtopic": "Listening",
-    "stem": "Active listening requires ____.",
-    "options": [
-      "Feedback and attention",
-      "Multitasking",
-      "Immediate agreement",
-      "Silence only"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q137",
-    "topic": "Listening & Writing",
-    "subtopic": "Business Writing",
-    "stem": "Subject\u2011verb agreement is a concern of ____.",
-    "options": [
-      "Grammar",
-      "Semantics",
-      "Noise",
-      "Non\u2011verbal communication"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q138",
-    "topic": "Listening & Writing",
-    "subtopic": "Grammar",
-    "stem": "Active listening requires ____.",
-    "options": [
-      "Feedback and attention",
-      "Multitasking",
-      "Immediate agreement",
-      "Silence only"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q139",
-    "topic": "Communication Basics",
-    "subtopic": "Process",
-    "stem": "Which is NOT a key element of the communication process?",
-    "options": [
-      "Profit",
-      "Sender",
-      "Message",
-      "Feedback"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q140",
-    "topic": "Communication Basics",
-    "subtopic": "Barriers",
-    "stem": "Noise in communication refers to ____.",
-    "options": [
-      "Any interference with the message",
-      "Background music",
-      "Only physical disturbances",
-      "Financial cost"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q141",
-    "topic": "Communication Basics",
-    "subtopic": "Non-verbal",
-    "stem": "Which is NOT a key element of the communication process?",
-    "options": [
-      "Profit",
-      "Sender",
-      "Message",
-      "Feedback"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q142",
-    "topic": "Listening & Writing",
-    "subtopic": "Listening",
-    "stem": "Subject\u2011verb agreement is a concern of ____.",
-    "options": [
-      "Grammar",
-      "Semantics",
-      "Noise",
-      "Non\u2011verbal communication"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q143",
-    "topic": "Listening & Writing",
-    "subtopic": "Business Writing",
-    "stem": "Which is most appropriate for a formal business letter?",
-    "options": [
-      "Dear Sir/Madam",
-      "Hey there",
-      "Yo!",
-      "Hi buddy"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q144",
-    "topic": "Listening & Writing",
-    "subtopic": "Grammar",
-    "stem": "Which is most appropriate for a formal business letter?",
-    "options": [
-      "Dear Sir/Madam",
-      "Hey there",
-      "Yo!",
-      "Hi buddy"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q145",
-    "topic": "Communication Basics",
-    "subtopic": "Process",
-    "stem": "Which is an example of non\u2011verbal communication?",
-    "options": [
-      "A handshake",
-      "A phone call",
-      "An email",
-      "A memo"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q146",
-    "topic": "Communication Basics",
-    "subtopic": "Barriers",
-    "stem": "Which is an example of non\u2011verbal communication?",
-    "options": [
-      "A handshake",
-      "A phone call",
-      "An email",
-      "A memo"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q147",
-    "topic": "Communication Basics",
-    "subtopic": "Non-verbal",
-    "stem": "Which is an example of non\u2011verbal communication?",
-    "options": [
-      "A handshake",
-      "A phone call",
-      "An email",
-      "A memo"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q148",
-    "topic": "Listening & Writing",
-    "subtopic": "Listening",
-    "stem": "Which is most appropriate for a formal business letter?",
-    "options": [
-      "Dear Sir/Madam",
-      "Hey there",
-      "Yo!",
-      "Hi buddy"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q149",
-    "topic": "Listening & Writing",
-    "subtopic": "Business Writing",
-    "stem": "Active listening requires ____.",
-    "options": [
-      "Feedback and attention",
-      "Multitasking",
-      "Immediate agreement",
-      "Silence only"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q150",
-    "topic": "Listening & Writing",
-    "subtopic": "Grammar",
-    "stem": "Subject\u2011verb agreement is a concern of ____.",
-    "options": [
-      "Grammar",
-      "Semantics",
-      "Noise",
-      "Non\u2011verbal communication"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q151",
-    "topic": "Communication Basics",
-    "subtopic": "Process",
-    "stem": "Noise in communication refers to ____.",
-    "options": [
-      "Any interference with the message",
-      "Background music",
-      "Only physical disturbances",
-      "Financial cost"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q152",
-    "topic": "Communication Basics",
-    "subtopic": "Barriers",
-    "stem": "Which is an example of non\u2011verbal communication?",
-    "options": [
-      "A handshake",
-      "A phone call",
-      "An email",
-      "A memo"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q153",
-    "topic": "Communication Basics",
-    "subtopic": "Non-verbal",
-    "stem": "Noise in communication refers to ____.",
-    "options": [
-      "Any interference with the message",
-      "Background music",
-      "Only physical disturbances",
-      "Financial cost"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q154",
-    "topic": "Listening & Writing",
-    "subtopic": "Listening",
-    "stem": "Which is most appropriate for a formal business letter?",
-    "options": [
-      "Dear Sir/Madam",
-      "Hey there",
-      "Yo!",
-      "Hi buddy"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q155",
-    "topic": "Listening & Writing",
-    "subtopic": "Business Writing",
-    "stem": "Which is most appropriate for a formal business letter?",
-    "options": [
-      "Dear Sir/Madam",
-      "Hey there",
-      "Yo!",
-      "Hi buddy"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q156",
-    "topic": "Listening & Writing",
-    "subtopic": "Grammar",
-    "stem": "Active listening requires ____.",
-    "options": [
-      "Feedback and attention",
-      "Multitasking",
-      "Immediate agreement",
-      "Silence only"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q157",
-    "topic": "Communication Basics",
-    "subtopic": "Process",
-    "stem": "Which is an example of non\u2011verbal communication?",
-    "options": [
-      "A handshake",
-      "A phone call",
-      "An email",
-      "A memo"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q158",
-    "topic": "Communication Basics",
-    "subtopic": "Barriers",
-    "stem": "Which is an example of non\u2011verbal communication?",
-    "options": [
-      "A handshake",
-      "A phone call",
-      "An email",
-      "A memo"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q159",
-    "topic": "Communication Basics",
-    "subtopic": "Non-verbal",
-    "stem": "Noise in communication refers to ____.",
-    "options": [
-      "Any interference with the message",
-      "Background music",
-      "Only physical disturbances",
-      "Financial cost"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q160",
-    "topic": "Listening & Writing",
-    "subtopic": "Listening",
-    "stem": "Subject\u2011verb agreement is a concern of ____.",
-    "options": [
-      "Grammar",
-      "Semantics",
-      "Noise",
-      "Non\u2011verbal communication"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q161",
-    "topic": "Listening & Writing",
-    "subtopic": "Business Writing",
-    "stem": "Subject\u2011verb agreement is a concern of ____.",
-    "options": [
-      "Grammar",
-      "Semantics",
-      "Noise",
-      "Non\u2011verbal communication"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q162",
-    "topic": "Listening & Writing",
-    "subtopic": "Grammar",
-    "stem": "Which is most appropriate for a formal business letter?",
-    "options": [
-      "Dear Sir/Madam",
-      "Hey there",
-      "Yo!",
-      "Hi buddy"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q163",
-    "topic": "Communication Basics",
-    "subtopic": "Process",
-    "stem": "Which is an example of non\u2011verbal communication?",
-    "options": [
-      "A handshake",
-      "A phone call",
-      "An email",
-      "A memo"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q164",
-    "topic": "Communication Basics",
-    "subtopic": "Barriers",
-    "stem": "Which is an example of non\u2011verbal communication?",
-    "options": [
-      "A handshake",
-      "A phone call",
-      "An email",
-      "A memo"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q165",
-    "topic": "Communication Basics",
-    "subtopic": "Non-verbal",
-    "stem": "Which is NOT a key element of the communication process?",
-    "options": [
-      "Profit",
-      "Sender",
-      "Message",
-      "Feedback"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q166",
-    "topic": "Listening & Writing",
-    "subtopic": "Listening",
-    "stem": "Which is most appropriate for a formal business letter?",
-    "options": [
-      "Dear Sir/Madam",
-      "Hey there",
-      "Yo!",
-      "Hi buddy"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q167",
-    "topic": "Listening & Writing",
-    "subtopic": "Business Writing",
-    "stem": "Active listening requires ____.",
-    "options": [
-      "Feedback and attention",
-      "Multitasking",
-      "Immediate agreement",
-      "Silence only"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q168",
-    "topic": "Listening & Writing",
-    "subtopic": "Grammar",
-    "stem": "Which is most appropriate for a formal business letter?",
-    "options": [
-      "Dear Sir/Madam",
-      "Hey there",
-      "Yo!",
-      "Hi buddy"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q169",
-    "topic": "Communication Basics",
-    "subtopic": "Process",
-    "stem": "Noise in communication refers to ____.",
-    "options": [
-      "Any interference with the message",
-      "Background music",
-      "Only physical disturbances",
-      "Financial cost"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q170",
-    "topic": "Communication Basics",
-    "subtopic": "Barriers",
-    "stem": "Noise in communication refers to ____.",
-    "options": [
-      "Any interference with the message",
-      "Background music",
-      "Only physical disturbances",
-      "Financial cost"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q171",
-    "topic": "Communication Basics",
-    "subtopic": "Non-verbal",
-    "stem": "Which is an example of non\u2011verbal communication?",
-    "options": [
-      "A handshake",
-      "A phone call",
-      "An email",
-      "A memo"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q172",
-    "topic": "Listening & Writing",
-    "subtopic": "Listening",
-    "stem": "Active listening requires ____.",
-    "options": [
-      "Feedback and attention",
-      "Multitasking",
-      "Immediate agreement",
-      "Silence only"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q173",
-    "topic": "Listening & Writing",
-    "subtopic": "Business Writing",
-    "stem": "Subject\u2011verb agreement is a concern of ____.",
-    "options": [
-      "Grammar",
-      "Semantics",
-      "Noise",
-      "Non\u2011verbal communication"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q174",
-    "topic": "Listening & Writing",
-    "subtopic": "Grammar",
-    "stem": "Subject\u2011verb agreement is a concern of ____.",
-    "options": [
-      "Grammar",
-      "Semantics",
-      "Noise",
-      "Non\u2011verbal communication"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q175",
-    "topic": "Communication Basics",
-    "subtopic": "Process",
-    "stem": "Which is an example of non\u2011verbal communication?",
-    "options": [
-      "A handshake",
-      "A phone call",
-      "An email",
-      "A memo"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q176",
-    "topic": "Communication Basics",
-    "subtopic": "Barriers",
-    "stem": "Noise in communication refers to ____.",
-    "options": [
-      "Any interference with the message",
-      "Background music",
-      "Only physical disturbances",
-      "Financial cost"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q177",
-    "topic": "Communication Basics",
-    "subtopic": "Non-verbal",
-    "stem": "Which is an example of non\u2011verbal communication?",
-    "options": [
-      "A handshake",
-      "A phone call",
-      "An email",
-      "A memo"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q178",
-    "topic": "Listening & Writing",
-    "subtopic": "Listening",
-    "stem": "Subject\u2011verb agreement is a concern of ____.",
-    "options": [
-      "Grammar",
-      "Semantics",
-      "Noise",
-      "Non\u2011verbal communication"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q179",
-    "topic": "Listening & Writing",
-    "subtopic": "Business Writing",
-    "stem": "Subject\u2011verb agreement is a concern of ____.",
-    "options": [
-      "Grammar",
-      "Semantics",
-      "Noise",
-      "Non\u2011verbal communication"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q180",
-    "topic": "Listening & Writing",
-    "subtopic": "Grammar",
-    "stem": "Which is most appropriate for a formal business letter?",
-    "options": [
-      "Dear Sir/Madam",
-      "Hey there",
-      "Yo!",
-      "Hi buddy"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q181",
-    "topic": "Communication Basics",
-    "subtopic": "Process",
-    "stem": "Noise in communication refers to ____.",
-    "options": [
-      "Any interference with the message",
-      "Background music",
-      "Only physical disturbances",
-      "Financial cost"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q182",
-    "topic": "Communication Basics",
-    "subtopic": "Barriers",
-    "stem": "Which is an example of non\u2011verbal communication?",
-    "options": [
-      "A handshake",
-      "A phone call",
-      "An email",
-      "A memo"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q183",
-    "topic": "Communication Basics",
-    "subtopic": "Non-verbal",
-    "stem": "Which is NOT a key element of the communication process?",
-    "options": [
-      "Profit",
-      "Sender",
-      "Message",
-      "Feedback"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q184",
-    "topic": "Listening & Writing",
-    "subtopic": "Listening",
-    "stem": "Which is most appropriate for a formal business letter?",
-    "options": [
-      "Dear Sir/Madam",
-      "Hey there",
-      "Yo!",
-      "Hi buddy"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q185",
-    "topic": "Listening & Writing",
-    "subtopic": "Business Writing",
-    "stem": "Subject\u2011verb agreement is a concern of ____.",
-    "options": [
-      "Grammar",
-      "Semantics",
-      "Noise",
-      "Non\u2011verbal communication"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q186",
-    "topic": "Listening & Writing",
-    "subtopic": "Grammar",
-    "stem": "Subject\u2011verb agreement is a concern of ____.",
-    "options": [
-      "Grammar",
-      "Semantics",
-      "Noise",
-      "Non\u2011verbal communication"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q187",
-    "topic": "Communication Basics",
-    "subtopic": "Process",
-    "stem": "Which is an example of non\u2011verbal communication?",
-    "options": [
-      "A handshake",
-      "A phone call",
-      "An email",
-      "A memo"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q188",
-    "topic": "Communication Basics",
-    "subtopic": "Barriers",
-    "stem": "Which is NOT a key element of the communication process?",
-    "options": [
-      "Profit",
-      "Sender",
-      "Message",
-      "Feedback"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q189",
-    "topic": "Communication Basics",
-    "subtopic": "Non-verbal",
-    "stem": "Which is an example of non\u2011verbal communication?",
-    "options": [
-      "A handshake",
-      "A phone call",
-      "An email",
-      "A memo"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q190",
-    "topic": "Listening & Writing",
-    "subtopic": "Listening",
-    "stem": "Active listening requires ____.",
-    "options": [
-      "Feedback and attention",
-      "Multitasking",
-      "Immediate agreement",
-      "Silence only"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q191",
-    "topic": "Listening & Writing",
-    "subtopic": "Business Writing",
-    "stem": "Active listening requires ____.",
-    "options": [
-      "Feedback and attention",
-      "Multitasking",
-      "Immediate agreement",
-      "Silence only"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q192",
-    "topic": "Listening & Writing",
-    "subtopic": "Grammar",
-    "stem": "Which is most appropriate for a formal business letter?",
-    "options": [
-      "Dear Sir/Madam",
-      "Hey there",
-      "Yo!",
-      "Hi buddy"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q193",
-    "topic": "Communication Basics",
-    "subtopic": "Process",
-    "stem": "Which is an example of non\u2011verbal communication?",
-    "options": [
-      "A handshake",
-      "A phone call",
-      "An email",
-      "A memo"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q194",
-    "topic": "Communication Basics",
-    "subtopic": "Barriers",
-    "stem": "Which is an example of non\u2011verbal communication?",
-    "options": [
-      "A handshake",
-      "A phone call",
-      "An email",
-      "A memo"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q195",
-    "topic": "Communication Basics",
-    "subtopic": "Non-verbal",
-    "stem": "Noise in communication refers to ____.",
-    "options": [
-      "Any interference with the message",
-      "Background music",
-      "Only physical disturbances",
-      "Financial cost"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q196",
-    "topic": "Listening & Writing",
-    "subtopic": "Listening",
-    "stem": "Subject\u2011verb agreement is a concern of ____.",
-    "options": [
-      "Grammar",
-      "Semantics",
-      "Noise",
-      "Non\u2011verbal communication"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q197",
-    "topic": "Listening & Writing",
-    "subtopic": "Business Writing",
-    "stem": "Subject\u2011verb agreement is a concern of ____.",
-    "options": [
-      "Grammar",
-      "Semantics",
-      "Noise",
-      "Non\u2011verbal communication"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q198",
-    "topic": "Listening & Writing",
-    "subtopic": "Grammar",
-    "stem": "Which is most appropriate for a formal business letter?",
-    "options": [
-      "Dear Sir/Madam",
-      "Hey there",
-      "Yo!",
-      "Hi buddy"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q199",
-    "topic": "Communication Basics",
-    "subtopic": "Process",
-    "stem": "Noise in communication refers to ____.",
-    "options": [
-      "Any interference with the message",
-      "Background music",
-      "Only physical disturbances",
-      "Financial cost"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "CS-AT1-Q200",
-    "topic": "Communication Basics",
-    "subtopic": "Barriers",
-    "stem": "Which is NOT a key element of the communication process?",
-    "options": [
-      "Profit",
-      "Sender",
-      "Message",
-      "Feedback"
-    ],
-    "answer_index": 0
+    "answer": "Better preparation and less stress",
+    "topic": "Study Skills, Note-taking, Examination Techniques"
   }
 ]
