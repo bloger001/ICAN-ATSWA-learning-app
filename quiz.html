@@ -2,14 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Quiz — ICAN Prep</title>
-
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
-  <meta http-equiv="Pragma" content="no-cache"/>
-  <meta http-equiv="Expires" content="0"/>
-
-  <link rel="stylesheet" href="./assets/app.css?v=16"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Quiz — ICAN ATSWA</title>
+  <link rel="stylesheet" href="./assets/app.css?v=2025-08-26a"/>
 </head>
 <body>
   <div class="wrap">
@@ -18,33 +13,21 @@
       <a class="btn" href="./index.html">← Home</a>
     </header>
 
-    <p id="meta" class="muted small">Loading…</p>
+    <div class="muted small" id="quizMeta"></div>
 
-    <section id="qwrap" class="card">
-      <div id="qstem" style="min-height:80px">
-        <p class="muted">Preparing questions…</p>
-      </div>
-
-      <div id="qopts" style="margin-top:10px"></div>
-
-      <div class="row" style="margin-top:12px">
+    <section id="quizRoot" class="card">
+      <div id="quizStatus">Loading...</div>
+      <div id="qWrap" style="display:none"></div>
+      <div class="row" style="gap:8px;margin-top:12px">
         <a class="btn" href="./index.html">← Home</a>
-        <button id="nextBtn" class="btn">Next</button>
-        <button id="submitBtn" class="btn primary">Submit</button>
+        <button class="btn" id="btnNext">Next</button>
+        <button class="btn primary" id="btnSubmit">Submit</button>
       </div>
     </section>
-
-    <section id="result" class="card" style="display:none"></section>
   </div>
 
-  <!-- Clear any old SW cache -->
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.getRegistrations().then(list => list.forEach(r => r.unregister()));
-    }
-  </script>
-
-  <!-- IMPORTANT: load as ES module -->
-  <script type="module" src="./assets/quiz.js?v=16"></script>
+  <script src="./assets/firebase.js?v=2025-08-26a"></script>
+  <script src="./assets/app.js?v=2025-08-26a"></script>
+  <script src="./assets/quiz.js?v=2025-08-26a"></script>
 </body>
 </html>
