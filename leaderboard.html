@@ -4,25 +4,73 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Leaderboard — ICAN Prep</title>
-  <link rel="stylesheet" href="./assets/app.css?v=16"/>
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
-  <meta http-equiv="Pragma" content="no-cache"/>
-  <meta http-equiv="Expires" content="0"/>
+  <link rel="stylesheet" href="./assets/app.css?v=34"/>
+  <style>
+    .card{background:#101316;border:1px solid #20252b;border-radius:12px;padding:16px;margin:12px 0}
+    .row{display:flex;gap:8px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+    .muted{opacity:.85}
+    ul#lb{list-style:none;padding:0;margin:0}
+    ul#lb li{display:flex;justify-content:space-between;gap:8px;padding:10px;border-bottom:1px solid #1d2329}
+    .pill{padding:2px 8px;border-radius:999px;background:#1e2630;color:#bcd3ff}
+  </style>
 </head>
 <body>
   <div class="wrap">
-    <header class="space-between" style="align-items:center">
+    <header class="row">
       <h1>Leaderboard</h1>
-      <a class="btn" href="./index.html">← Home</a>
+      <a class="btn" href="index.html">← Home</a>
     </header>
 
     <section class="card">
-      <p class="muted">Ranking by total correct answers in the last 7 days (all subjects).</p>
-      <div id="board">Loading…</div>
+      <p class="muted small">Top recent scores (sorted by % then latest). Updates live.</p>
+      <ul id="lb"><li class="muted">Loading…</li></ul>
     </section>
   </div>
 
-  <!-- Load as ES module -->
-  <script type="module" src="./assets/leaderboard.js?v=16"></script>
+  <!-- Auth gating + UI toggles -->
+  <script type="module" src="./assets/app.js?v=34"></script>
+
+  <script type="module">
+    import { db } from './assets/firebase.js';
+    import {
+      collection, query, orderBy, limit, onSnapshot
+    } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+
+    const list = document.getElementById('lb');
+
+    // Top 50 by percent then newest
+    const q = query(
+      collection(db, "leaderboard"),
+      orderBy("percent","desc"),
+      orderBy("createdAt","desc"),
+      limit(50)
+    );
+
+    onSnapshot(q, (snap) => {
+      list.innerHTML = "";
+      if (snap.empty) {
+        list.innerHTML = '<li class="muted">No scores yet. Be the first!</li>';
+        return;
+      }
+      snap.forEach(doc => {
+        const d = doc.data();
+        const li = document.createElement('li');
+
+        const who = document.createElement('span');
+        who.textContent = d.name || "Anonymous";
+
+        const right = document.createElement('span');
+        right.innerHTML = `
+          <span class="pill">${d.subject || ''}</span>
+          <span class="pill">${d.level || ''}</span>
+          <strong>${d.percent || 0}%</strong>
+        `;
+
+        li.appendChild(who);
+        li.appendChild(right);
+        list.appendChild(li);
+      });
+    });
+  </script>
 </body>
 </html>
