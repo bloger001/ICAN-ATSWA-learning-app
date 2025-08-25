@@ -1,9 +1,9 @@
-l// assets/firebase.js  (drop-in)
+// assets/firebase.js
 window.firebaseConfig = {
   apiKey: "AIzaSyBRGM431CHZ3UMUHIc4Q-S1aGDMfrbu7Gs",
   authDomain: "ican-kit-prep.firebaseapp.com",
   projectId: "ican-kit-prep",
-  storageBucket: "ican-kit-prep.appspot.com",   // <- appspot.com is correct
+  storageBucket: "ican-kit-prep.firebasestorage.app",
   messagingSenderId: "354385037521",
   appId: "1:354385037521:web:f3a7265f66983942581df0",
   measurementId: "G-LN8E2R4B7X"
