@@ -1,112 +1,104 @@
-/* assets/app.js  —  Auth + simple gating
+/* assets/app.js — v42 (redirect-only Google sign-in + gating + visible errors)
    Requires: <script type="module" src="./assets/firebase.js"></script> BEFORE this file
-   Make sure your Firebase project's Authorized Domains include:
-   - bloger001.github.io
-   - ican-kit-prep.firebaseapp.com
-   - localhost
 */
 
-// ---------------- Firebase imports (v10 modular) ----------------
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
 import {
   getAuth, setPersistence, browserLocalPersistence,
-  GoogleAuthProvider, signInWithPopup, signInWithRedirect,
-  getRedirectResult, onAuthStateChanged, signOut
+  GoogleAuthProvider, signInWithRedirect, getRedirectResult,
+  onAuthStateChanged, signOut
 } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
 
-// ---------------- Init using config from assets/firebase.js ----------------
-const _cfg =
-  (window.firebaseConfig || (typeof firebaseConfig !== "undefined" ? firebaseConfig : null));
-
-if (!_cfg) {
-  console.error("[ICAN Prep] Firebase config not found. Ensure assets/firebase.js loads first.");
+const cfg = (window.firebaseConfig || (typeof firebaseConfig !== "undefined" ? firebaseConfig : null));
+if (!cfg) {
+  console.error("[ICAN] firebaseConfig missing (check assets/firebase.js order)");
 }
-
-const fbApp = initializeApp(_cfg);
+const fbApp = initializeApp(cfg);
 const auth  = getAuth(fbApp);
-const provider = new GoogleAuthProvider();
-
-// Persist sessions locally so users stay signed in across refresh
 await setPersistence(auth, browserLocalPersistence);
 
-// ---------------- DOM refs (if they exist) ----------------
-const btnSignIn   = document.getElementById("btnSignIn");
-const btnSignOut  = document.getElementById("btnSignOut");
-const profileBox  = document.getElementById("profileBox");
-const signedBadge = document.getElementById("signedBadge");
+const provider = new GoogleAuthProvider();
+provider.setCustomParameters({ prompt: "select_account" });
+auth.useDeviceLanguage?.();
 
-// ---------------- UI helpers ----------------
-function updateAuthUI(user) {
-  if (user) {
-    if (btnSignIn)  btnSignIn.style.display  = "none";
-    if (btnSignOut) btnSignOut.style.display = "inline-flex";
-    if (profileBox) {
-      profileBox.innerHTML = `
-        <div class="small muted">${user.email}</div>
-        <div style="margin-top:4px">${user.displayName || ""}</div>
-      `;
-    }
-    if (signedBadge) signedBadge.textContent = "Signed in";
-  } else {
-    if (btnSignIn)  btnSignIn.style.display  = "inline-flex";
-    if (btnSignOut) btnSignOut.style.display = "none";
-    if (profileBox) {
-      profileBox.innerHTML = `<div class="small muted">Not signed in</div>`;
-    }
-    if (signedBadge) signedBadge.textContent = "Not signed in";
-  }
+// --- UI handles (if present) ---
+const $ = (id) => document.getElementById(id);
+const btnIn  = $("btnSignIn");
+const btnOut = $("btnSignOut");
+const badge  = $("signedBadge");
+const profile= $("profileBox");
+const notice = $("loginNotice");
+
+// visible error area
+let errBox = document.getElementById("authError");
+if (!errBox) {
+  errBox = document.createElement("div");
+  errBox.id = "authError";
+  errBox.style.cssText = "display:none;margin:10px 0;padding:10px;border-radius:8px;background:#2a1111;color:#ffdddd;border:1px solid #662222;";
+  const wrap = document.querySelector(".wrap") || document.body;
+  wrap.insertBefore(errBox, wrap.firstChild);
+}
+function showErr(msg) {
+  errBox.textContent = msg;
+  errBox.style.display = "block";
+  console.error("[ICAN Auth]", msg);
 }
 
-// ---------------- Sign-in / Sign-out handlers ----------------
-async function startGoogleLogin() {
+// --- Sign-in / Sign-out ---
+async function startGoogleRedirect() {
   try {
-    await signInWithPopup(auth, provider);
-  } catch (err) {
-    // Popup blockers (mobile Safari/iOS) -> fall back to redirect
-    if (err?.code === "auth/popup-blocked" || err?.code === "auth/cancelled-popup-request") {
-      await signInWithRedirect(auth, provider);
-      return;
-    }
-    alert("Sign-in error: " + (err?.message || err));
-    console.error("[ICAN Prep] Sign-in error", err);
+    await signInWithRedirect(auth, provider);
+  } catch (e) {
+    showErr(`Redirect start failed: ${e?.message || e}`);
   }
 }
+if (btnIn)  btnIn.onclick  = startGoogleRedirect;
+if (btnOut) btnOut.onclick = () => signOut(auth);
 
-if (btnSignIn)  btnSignIn.onclick  = startGoogleLogin;
-if (btnSignOut) btnSignOut.onclick = () => signOut(auth);
-
-// Complete redirect sign-in if used
+// Complete redirect if we’re returning from Google
 getRedirectResult(auth).catch(e => {
-  // harmless if there was no redirect flow
-  if (e?.code) console.debug("[ICAN Prep] Redirect result:", e.code);
+  // This is normal if user didn't come via redirect
+  if (e?.code) console.debug("[ICAN] getRedirectResult:", e.code, e.message);
 });
 
-// ---------------- Route gating ----------------
-function onProtectedRouteRequireLogin() {
-  // Gate quiz.html (and any others you want later)
-  const path = location.pathname.toLowerCase();
-  const isQuiz = /(^|\/)quiz\.html(\?|#|$)/i.test(path);
-  if (isQuiz && !auth.currentUser) {
-    location.href = "index.html?needLogin=1";
+// --- Gate routes ---
+function gateProtectedPages(user) {
+  const p = (location.pathname || "").toLowerCase();
+  const protectedPages = ["quiz.html","status.html","review.html","leaderbored.html","admin.html"];
+  const isProtected = protectedPages.some(x => p.endsWith("/"+x) || p.endsWith(x));
+  if (!user && isProtected) {
+    const next = encodeURIComponent(location.pathname + location.search);
+    location.replace(`index.html?needLogin=1&next=${next}`);
   }
 }
 
-onAuthStateChanged(auth, user => {
-  updateAuthUI(user);
-  onProtectedRouteRequireLogin();
+// --- Toggle home tiles (index.html has window._icanToggleHome hook) ---
+function toggleHome(user) {
+  if (typeof window._icanToggleHome === "function") {
+    window._icanToggleHome(!!user, user?.email || "", user?.displayName || "");
+  }
+  if (badge)  badge.textContent = user ? "Signed in" : "Not signed in";
+  if (profile) profile.innerHTML = user
+    ? `<div class="small muted">${user.email||""}</div><div>${user.displayName||""}</div>`
+    : "Not signed in";
+  if (btnIn)  btnIn.style.display  = user ? "none" : "inline-flex";
+  if (btnOut) btnOut.style.display = user ? "inline-flex" : "none";
+}
+
+// --- Auth listener ---
+onAuthStateChanged(auth, (user) => {
+  toggleHome(user);
+  gateProtectedPages(user);
 });
 
-// ---------------- Optional: show notice on index after redirect ----------------
-(function notifyIfLoginNeeded() {
-  const params = new URLSearchParams(location.search);
-  if (params.get("needLogin") === "1") {
-    const msg = document.getElementById("loginNotice");
-    if (msg) {
-      msg.textContent = "Please sign in with Google to unlock quizzes and save your progress.";
-      msg.style.display = "block";
-    }
+// --- Show notice if redirected back requiring login ---
+(function notifyIfNeeded() {
+  const ps = new URLSearchParams(location.search);
+  if (ps.get("needLogin") === "1" && notice) {
+    notice.textContent = "Please sign in with Google to unlock quizzes and save progress.";
+    notice.style.display = "block";
   }
 })();
 
-// Expose auth if other modules need it (optional)
-window.ICAN_AUTH = { auth, startGoogleLogin };
+// Expose (optional)
+window.ICAN_AUTH = { auth, startGoogleRedirect };
