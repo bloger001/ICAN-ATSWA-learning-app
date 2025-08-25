@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>ICAN ATSWA Prep</title>
-  <link rel="stylesheet" href="./assets/app.css?v=33"/>
+  <link rel="stylesheet" href="./assets/app.css?v=42"/>
   <style>
     .grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
     .hero{padding:16px;border-radius:12px;background:#101316;color:#fff;margin:12px 0}
@@ -20,64 +20,62 @@
 </head>
 <body>
   <div class="wrap">
+
     <header>
       <h1>ICAN ATSWA Prep</h1>
       <div class="row">
-        <span id="userChip" class="muted small">Not signed in</span>
-        <button class="btn guest-only" onclick="doGoogleSignIn()">Continue with Google</button>
-        <button class="btn ghost auth-only" onclick="doSignOut()">Sign out</button>
+        <span id="signedBadge" class="muted small">Not signed in</span>
+        <button id="btnSignIn"  class="btn">Continue with Google</button>
+        <button id="btnSignOut" class="btn ghost" style="display:none">Sign out</button>
       </div>
     </header>
 
-    <!-- Author attribution (always visible) -->
     <section class="hero">
       <p class="muted small">
-        Built by fellow accounting student <strong>Silva Brutus (NSUK)</strong>.  
+        Built by fellow accounting student <strong>Silva Brutus (NSUK)</strong>.
         Contact: <a href="mailto:offixcialbloger@gmail.com" style="color:#9ec4ff">offixcialbloger@gmail.com</a>
       </p>
-      <p class="muted small">Practice is aligned to ATSWA Part I syllabus. Use <strong>Status → Weak Topics</strong> to target your study and “Read this” for topic notes.</p>
+      <p id="loginNotice" class="muted small" style="display:none"></p>
+      <div id="profileBox" class="muted small">Not signed in</div>
     </section>
 
-    <!-- Guest message (no quizzes until login) -->
-    <section class="card guest-only">
+    <section id="guestCard" class="card">
       <h2>Welcome</h2>
       <p class="muted">Please sign in to unlock quizzes, leaderboard and your personalized status.</p>
     </section>
 
-    <!-- Signed-in tiles -->
-    <section class="auth-only">
+    <section id="authedSection" style="display:none">
       <h2 style="margin:14px 0 6px">Your tools</h2>
       <div class="grid" style="margin-bottom:12px">
-        <a class="tile" href="./status.html?v=33">
-          <div class="muted small">Your Data</div><div>View Status</div>
-        </a>
-        <a class="tile" href="./leaderbored.html?v=33">
-          <div class="muted small">Community</div><div>Leaderboard</div>
-        </a>
-        <a class="tile admin-only" href="./admin.html?v=33">
-          <div class="muted small">Owner</div><div>Admin Panel</div>
-        </a>
+        <a class="tile" href="./status.html?v=42"><div class="muted small">Your Data</div><div>View Status</div></a>
+        <a class="tile" href="./leaderbored.html?v=42"><div class="muted small">Community</div><div>Leaderboard</div></a>
+        <a class="tile" href="./admin.html?v=42"><div class="muted small">Owner</div><div>Admin Panel</div></a>
       </div>
-
       <h2 style="margin:14px 0 6px">ATSWA I Subjects</h2>
       <div class="grid">
-        <a class="tile" href="./quiz.html?level=ATSWA1&subject=Basic%20Accounting&mode=practice&v=33">
-          <div class="muted small">ATSWA I</div><div>Basic Accounting</div>
-        </a>
-        <a class="tile" href="./quiz.html?level=ATSWA1&subject=Business%20Law&mode=practice&v=33">
-          <div class="muted small">ATSWA I</div><div>Business Law</div>
-        </a>
-        <a class="tile" href="./quiz.html?level=ATSWA1&subject=Economics&mode=practice&v=33">
-          <div class="muted small">ATSWA I</div><div>Economics</div>
-        </a>
-        <a class="tile" href="./quiz.html?level=ATSWA1&subject=Communication%20Skills&mode=practice&v=33">
-          <div class="muted small">ATSWA I</div><div>Communication Skills</div>
-        </a>
+        <a class="tile" href="./quiz.html?level=ATSWA1&subject=Basic%20Accounting&mode=practice&v=42"><div class="muted small">ATSWA I</div><div>Basic Accounting</div></a>
+        <a class="tile" href="./quiz.html?level=ATSWA1&subject=Business%20Law&mode=practice&v=42"><div class="muted small">ATSWA I</div><div>Business Law</div></a>
+        <a class="tile" href="./quiz.html?level=ATSWA1&subject=Economics&mode=practice&v=42"><div class="muted small">ATSWA I</div><div>Economics</div></a>
+        <a class="tile" href="./quiz.html?level=ATSWA1&subject=Communication%20Skills&mode=practice&v=42"><div class="muted small">ATSWA I</div><div>Communication Skills</div></a>
       </div>
     </section>
+
   </div>
 
-  <!-- Login gating & UI toggles -->
-  <script type="module" src="./assets/app.js?v=33"></script>
+  <!-- Load order matters: firebase.js BEFORE app.js -->
+  <script type="module" src="./assets/firebase.js?v=42"></script>
+  <script>
+    // called by app.js to show/hide tiles
+    window._icanToggleHome = function(isAuthed, email, name){
+      const authed = document.getElementById('authedSection');
+      const guest  = document.getElementById('guestCard');
+      if (authed && guest) { authed.style.display = isAuthed ? '' : 'none'; guest.style.display = isAuthed ? 'none' : ''; }
+      const badge = document.getElementById('signedBadge');
+      if (badge) badge.textContent = isAuthed ? 'Signed in' : 'Not signed in';
+      const profile = document.getElementById('profileBox');
+      if (profile) profile.innerHTML = isAuthed ? `<div class="small muted">${email||''}</div><div>${name||''}</div>` : 'Not signed in';
+    };
+  </script>
+  <script type="module" src="./assets/app.js?v=42"></script>
 </body>
 </html>
