@@ -1,63 +1,32 @@
-// Weekly leaderboard from Firestore "runs"
-import { db } from './firebase.js';
+// assets/leaderboard.js  v50
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 import {
-  collection, query, orderBy, getDocs, Timestamp
-} from "https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore.js";
+  getFirestore, collection, query, orderBy, limit, getDocs
+} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
-const board = document.getElementById('board');
+const cfg = window.firebaseConfig;
+const app = initializeApp(cfg);
+const db  = getFirestore(app);
 
-function sevenDaysAgo(){
-  const d = new Date(); d.setDate(d.getDate() - 7);
-  return Timestamp.fromDate(d);
+const list = document.getElementById('lbList');
+const err  = document.getElementById('lbError');
+
+function row(i, d){
+  const pct = (d.pct ?? Math.round(100 * (d.score||0)/Math.max(1, d.total||0)));
+  return `${String(i).padStart(2,"0")}. ${d.email||"anonymous"} — ${d.subject||""} — ${d.score||0}/${d.total||0} (${pct}%)`;
 }
 
-async function loadBoard(){
+(async ()=>{
   try {
-    board.textContent = 'Loading…';
-    const q = query(collection(db,'runs'), orderBy('ts','desc'));
+    const q = query(collection(db, "scores"), orderBy("pct","desc"), limit(100));
     const snap = await getDocs(q);
-
-    const cutoff = sevenDaysAgo();
-    const rows = [];
-    snap.forEach(doc=>{
-      const d = doc.data();
-      if (!d || !d.ts) return;
-      if (d.ts.seconds < cutoff.seconds) return; // older than 7d
-      rows.push(d);
-    });
-
-    // Aggregate by user
-    const agg = new Map();
-    for (const r of rows){
-      const key = r.uid || r.email || 'unknown';
-      if (!agg.has(key)) agg.set(key, { name: r.displayName || r.email || 'Student', points:0, attempts:0, total:0 });
-      const a = agg.get(key);
-      a.points  += r.score || 0;
-      a.total   += r.total || 0;
-      a.attempts += 1;
-    }
-
-    const list = [...agg.values()].sort((a,b)=> b.points - a.points).slice(0, 20);
-
-    if (!list.length){
-      board.innerHTML = `<p class="muted">No runs yet this week. Finish a quiz to appear on the board.</p>`;
-      return;
-    }
-
-    board.innerHTML = list.map((r,i)=>`
-      <div class="space-between card" style="margin:8px 0; align-items:center">
-        <div><b>#${i+1}</b> ${r.name}</div>
-        <div class="row">
-          <span class="pill mono">Points: ${r.points}</span>
-          <span class="pill mono">Attempts: ${r.attempts}</span>
-          <span class="pill mono">Accuracy: ${r.total? Math.round((r.points/r.total)*100):0}%</span>
-        </div>
-      </div>
-    `).join('');
-  } catch (e) {
-    board.innerHTML = `<p class="muted">Error loading leaderboard: ${e.message}</p>`;
-    console.error(e);
+    if (snap.empty){ list.textContent = "(no cloud scores yet)"; return; }
+    const lines = [];
+    let i=1;
+    snap.forEach(doc=> lines.push(row(i++, doc.data())));
+    list.textContent = lines.join("\n");
+  } catch(e){
+    err.style.display='block';
+    err.textContent = `Could not load leaderboard (rules or network): ${e.code||e}`;
   }
-}
-
-loadBoard();
+})();
