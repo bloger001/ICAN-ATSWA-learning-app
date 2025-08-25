@@ -1,74 +1,86 @@
-// assets/admin.js
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js";
-import {
-  getAuth, onAuthStateChanged
-} from "https://www.gstatic.com/firebasejs/10.13.2/firebase-auth.js";
+// assets/admin.js  v50
+import { getAuth, signInWithPopup, GoogleAuthProvider, signOut } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 
-const firebaseConfig = {
-  apiKey: "AIzaSyBRGM431CHZ3UMUHIc4Q-S1aGDMfrbu7Gs",
-  authDomain: "ican-kit-prep.firebaseapp.com",
-  projectId: "ican-kit-prep",
-  storageBucket: "ican-kit-prep.firebasestorage.app",
-  messagingSenderId: "354385037521",
-  appId: "1:354385037521:web:f3a7265f66983942581df0",
-  measurementId: "G-LN8E2R4B7X"
-};
-
-const app  = initializeApp(firebaseConfig);
-const auth = getAuth(app);
-
-// Config
 const ADMIN_EMAIL = "offixcialbloger@gmail.com";
 const ADMIN_CODE  = "FT24ACC245";
 
-// DOM
-const statusBadge = document.getElementById("statusBadge");
-const codeBox     = document.getElementById("codeBox");
-const verifyBtn   = document.getElementById("verifyBtn");
-const codeInput   = document.getElementById("adminCode");
-const adminArea   = document.getElementById("adminArea");
-const adminName   = document.getElementById("adminName");
-const errMsg      = document.getElementById("errMsg");
+const cfg = window.firebaseConfig;
+const app  = initializeApp(cfg);
+const auth = getAuth(app);
+const db   = getFirestore(app);
+const provider = new GoogleAuthProvider();
 
-let user = null;
+const $ = (id)=>document.getElementById(id);
+const out = $('diagOut');
 
-// Watch login state
-onAuthStateChanged(auth, (u) => {
-  if (u) {
-    user = u;
-    if (u.email === ADMIN_EMAIL) {
-      statusBadge.textContent = "Signed in as Admin Gmail";
-      statusBadge.className = "pill";
-      codeBox.style.display = "block"; // show code entry
-    } else {
-      statusBadge.textContent = `Signed in as ${u.email}`;
-      statusBadge.className = "pill muted";
-      codeBox.style.display = "none";
-      errMsg.style.display = "block";
-      errMsg.textContent = "This account is not allowed.";
-    }
-  } else {
-    statusBadge.textContent = "Not signed in";
-    statusBadge.className = "pill muted";
-    codeBox.style.display = "none";
+function logLocal(text){
+  const prev = $('errLog');
+  try {
+    const arr = JSON.parse(localStorage.getItem('ican_error_log')||"[]");
+    prev.textContent = arr.map(e=>`${new Date(e.t).toLocaleString()} — ${e.msg}`).join("\n");
+  } catch { prev.textContent = "(none)"; }
+}
+
+function msg(txt){ const m=$('adminMsg'); m.style.display='block'; m.textContent=txt; }
+
+function gate(){
+  const u = auth.currentUser;
+  $('adminSigned').textContent = u ? `Signed in — ${u.email||""}` : "Not signed in";
+  const ok = !!u && u.email === ADMIN_EMAIL;
+  $('diagCard').style.display = ok ? '' : 'none';
+}
+
+$('btnAdminSignIn').onclick = ()=> signInWithPopup(auth, provider).then(gate);
+$('btnAdminSignOut').onclick = ()=> signOut(auth).then(gate);
+
+$('btnVerify').onclick = ()=>{
+  const u = auth.currentUser;
+  if (!u){ msg("Please sign in with the admin Google account first."); return; }
+  if (u.email !== ADMIN_EMAIL){ msg("This Google account is not allowed."); return; }
+  if (($('adminCode').value||"").trim() !== ADMIN_CODE){ msg("Invalid access code."); return; }
+  $('adminMsg').style.display='none';
+  $('btnAdminSignOut').style.display='';
+  gate();
+};
+
+$('btnRun').onclick = async ()=>{
+  const lines = [];
+  function ok(s){ lines.push('✅ '+s); }
+  function warn(s){ lines.push('⚠️ '+s); }
+  function err(s){ lines.push('❌ '+s); }
+
+  // Config
+  if (cfg && cfg.apiKey) ok("firebaseConfig present");
+  else err("firebaseConfig missing");
+
+  // Assets
+  const assets = [
+    "./assets/app.js","./assets/firebase.js","./assets/app.css",
+    "./data/atswa1_basic_accounting.json",
+    "./data/atswa1_business_law.json",
+    "./data/atswa1_economics.json",
+    "./data/atswa1_comm_skills.json"
+  ];
+  for (const url of assets){
+    try {
+      const r = await fetch(url, {cache:"no-store"});
+      if (r.ok) ok(`200 ${url}`);
+      else warn(`${r.status} ${url}`);
+    } catch(e){ err(`fetch failed ${url}: ${e}`); }
   }
-});
 
-// Verify code
-verifyBtn?.addEventListener("click", () => {
-  if (!user || user.email !== ADMIN_EMAIL) {
-    errMsg.style.display = "block";
-    errMsg.textContent = "Sign in with the admin Gmail first.";
-    return;
-  }
-  if (codeInput.value.trim() !== ADMIN_CODE) {
-    errMsg.style.display = "block";
-    errMsg.textContent = "Invalid access code.";
-    return;
-  }
+  // Firestore read test (may be denied by rules; report either way)
+  try {
+    const snap = await getDoc(doc(db, "meta", "version"));
+    if (snap.exists()) ok("Firestore read ok: meta/version found");
+    else warn("Firestore connected but meta/version not found (ok if not set)");
+  } catch(e){ warn(`Firestore read failed (rules or network): ${e.code||e}`); }
 
-  // Success
-  codeBox.style.display = "none";
-  adminArea.style.display = "block";
-  adminName.textContent = user.displayName || user.email;
-});
+  out.textContent = lines.join("\n");
+};
+
+$('btnClearLog').onclick = ()=>{ localStorage.removeItem('ican_error_log'); logLocal("(cleared)"); };
+logLocal();
+gate();
