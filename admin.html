@@ -3,46 +3,44 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>ICAN Prep Admin</title>
-  <link rel="stylesheet" href="./assets/app.css?v=10"/>
+  <title>Admin — ICAN Prep</title>
+  <link rel="stylesheet" href="./assets/app.css?v=50"/>
 </head>
 <body>
   <div class="wrap">
-    <header class="space-between">
+    <header class="space-between" style="align-items:center">
       <h1>ICAN Prep Admin</h1>
-      <span id="statusBadge" class="pill muted">Checking sign-in…</span>
+      <a class="btn" href="index.html">← Home</a>
     </header>
 
-    <section class="card" id="loginInfo">
-      <p class="muted small">
-        Only <b>offixcialbloger@gmail.com</b> has access.
-      </p>
-    </section>
-
-    <!-- Code entry -->
-    <section class="card" id="codeBox" style="display:none">
-      <h2>Enter Admin Code</h2>
-      <p class="muted small">You must be signed in with your admin Google account first.</p>
-      <input id="adminCode" class="input" placeholder="Access code" type="password"/>
-      <div class="row" style="margin-top:10px">
-        <button id="verifyBtn" class="btn primary">Verify</button>
-        <a href="index.html" class="btn">← Back to Home</a>
+    <section class="card">
+      <div class="muted small">
+        Only <strong>offixcialbloger@gmail.com</strong> may access.
+        Status: <span id="adminSigned">Not signed in</span>
       </div>
-      <div id="errMsg" class="muted small" style="color:#ffb3b3; display:none"></div>
+      <div style="margin-top:10px;">
+        <input id="adminCode" placeholder="Access code"/>
+        <button class="btn" id="btnVerify">Verify</button>
+        <button class="btn" id="btnAdminSignIn">Sign in</button>
+        <button class="btn" id="btnAdminSignOut" style="display:none">Sign out</button>
+      </div>
+      <div id="adminMsg" class="error" style="display:none;margin-top:10px;"></div>
     </section>
 
-    <!-- Admin panel -->
-    <section class="card" id="adminArea" style="display:none">
-      <h2>Admin Panel</h2>
-      <p class="muted">Welcome, <span id="adminName"></span> ✅</p>
-      <ul>
-        <li>Future: Upload quiz questions</li>
-        <li>Future: Manage leaderboard</li>
-      </ul>
-      <a class="btn" href="index.html">← Back Home</a>
+    <section class="card" id="diagCard" style="display:none">
+      <h2>Diagnostics</h2>
+      <button class="btn" id="btnRun">Run health checks</button>
+      <button class="btn" id="btnClearLog">Clear local error log</button>
+      <pre id="diagOut" class="small" style="white-space:pre-wrap;margin-top:10px;"></pre>
+    </section>
+
+    <section class="card">
+      <h2>Local Error Log</h2>
+      <pre id="errLog" class="small" style="white-space:pre-wrap"></pre>
     </section>
   </div>
 
-  <script type="module" src="./assets/admin.js?v=10"></script>
+  <script src="./assets/firebase.js?v=50"></script>
+  <script type="module" src="./assets/admin.js?v=50"></script>
 </body>
 </html>
