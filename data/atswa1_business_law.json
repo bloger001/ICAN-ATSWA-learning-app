@@ -1,2602 +1,2311 @@
-[
   {
-    "id": "BLAW-AT1-Q001",
-    "topic": "Ethics & Law",
-    "subtopic": "Sources",
-    "stem": "Judicial precedent relies on the doctrine of ____.",
+    "question": "Which of the following is a primary source of law in Nigeria?",
     "options": [
-      "stare decisis",
-      "caveat emptor",
-      "ultra vires",
-      "res ipsa loquitur"
+      "Case law (judicial precedent)",
+      "Company policy",
+      "Newspaper reports",
+      "Customs of foreign states"
     ],
-    "answer_index": 0
+    "answer": "Case law (judicial precedent)",
+    "topic": "Nigerian Legal System & Sources of Law \u2022 Sources"
   },
   {
-    "id": "BLAW-AT1-Q002",
-    "topic": "Ethics & Law",
-    "subtopic": "Courts",
-    "stem": "The highest court in Nigeria is the ____.",
+    "question": "The doctrine of stare decisis relates to:",
+    "options": [
+      "Binding precedent",
+      "Law reform",
+      "Criminal procedure",
+      "Equity of redemption"
+    ],
+    "answer": "Binding precedent",
+    "topic": "Nigerian Legal System & Sources of Law \u2022 Sources"
+  },
+  {
+    "question": "The supreme law of Nigeria is the:",
+    "options": [
+      "Constitution",
+      "Acts of the National Assembly",
+      "Common law",
+      "Customary law"
+    ],
+    "answer": "Constitution",
+    "topic": "Nigerian Legal System & Sources of Law \u2022 Constitution"
+  },
+  {
+    "question": "Subsidiary legislation is made by:",
+    "options": [
+      "Authorities under powers delegated by an enabling Act",
+      "Only the judiciary",
+      "Only the President",
+      "Foreign embassies"
+    ],
+    "answer": "Authorities under powers delegated by an enabling Act",
+    "topic": "Nigerian Legal System & Sources of Law \u2022 Legislation"
+  },
+  {
+    "question": "A valid custom must be:",
+    "options": [
+      "Certain, reasonable and not contrary to public policy",
+      "Known only to elders",
+      "In writing",
+      "Approved by the Attorney\u2011General"
+    ],
+    "answer": "Certain, reasonable and not contrary to public policy",
+    "topic": "Nigerian Legal System & Sources of Law \u2022 Customary"
+  },
+  {
+    "question": "Equity developed to:",
+    "options": [
+      "Mitigate the rigidity of common law",
+      "Replace statute law",
+      "Repeal customs",
+      "Try criminal cases"
+    ],
+    "answer": "Mitigate the rigidity of common law",
+    "topic": "Nigerian Legal System & Sources of Law \u2022 Equity"
+  },
+  {
+    "question": "An Act comes into force:",
+    "options": [
+      "On the commencement date stated in the Act",
+      "On the day of Royal assent in the UK",
+      "When published in newspapers",
+      "Only after court approval"
+    ],
+    "answer": "On the commencement date stated in the Act",
+    "topic": "Nigerian Legal System & Sources of Law \u2022 Interpretation"
+  },
+  {
+    "question": "A bill becomes law after:",
+    "options": [
+      "Passage by the legislature and assent by the President/Governor",
+      "Approval by the judiciary",
+      "Approval by the bar association",
+      "Signature by the Attorney\u2011General"
+    ],
+    "answer": "Passage by the legislature and assent by the President/Governor",
+    "topic": "Nigerian Legal System & Sources of Law \u2022 Legislation"
+  },
+  {
+    "question": "A decision of the Supreme Court is:",
+    "options": [
+      "Binding on all lower courts",
+      "Persuasive only",
+      "Binding on foreign courts",
+      "Not binding on Court of Appeal"
+    ],
+    "answer": "Binding on all lower courts",
+    "topic": "Nigerian Legal System & Sources of Law \u2022 Precedent"
+  },
+  {
+    "question": "The long title of an Act helps in:",
+    "options": [
+      "Determining the purpose of the legislation",
+      "Numbering the sections",
+      "Identifying courts",
+      "Setting penalties"
+    ],
+    "answer": "Determining the purpose of the legislation",
+    "topic": "Nigerian Legal System & Sources of Law \u2022 Interpretation"
+  },
+  {
+    "question": "Repugnancy test is used to:",
+    "options": [
+      "Strike down customs contrary to natural justice, equity and good conscience",
+      "Punish offenders",
+      "Interpret statutes",
+      "Grant injunctions"
+    ],
+    "answer": "Strike down customs contrary to natural justice, equity and good conscience",
+    "topic": "Nigerian Legal System & Sources of Law \u2022 Customary"
+  },
+  {
+    "question": "Which pair are superior courts of record in Nigeria?",
+    "options": [
+      "Supreme Court and Court of Appeal",
+      "Magistrate Court and Customary Court",
+      "Sharia Court and Area Court",
+      "Election Tribunal and Juvenile Court"
+    ],
+    "answer": "Supreme Court and Court of Appeal",
+    "topic": "Nigerian Legal System & Sources of Law \u2022 Legal System"
+  },
+  {
+    "question": "The highest court in Nigeria is the:",
     "options": [
       "Supreme Court",
-      "High Court",
       "Court of Appeal",
-      "Magistrates' Court"
+      "High Court",
+      "Federal High Court"
     ],
-    "answer_index": 0
+    "answer": "Supreme Court",
+    "topic": "Court Structure & ADR \u2022 Courts"
   },
   {
-    "id": "BLAW-AT1-Q003",
-    "topic": "Ethics & Law",
-    "subtopic": "Ethics",
-    "stem": "Which is NOT a fundamental ethical principle for accountants?",
+    "question": "The Federal High Court mainly has jurisdiction over:",
     "options": [
-      "Profit maximization",
-      "Integrity",
-      "Objectivity",
-      "Confidentiality"
+      "Revenue, customs, banking, companies and maritime matters",
+      "Landlord and tenant",
+      "Divorce under customary law",
+      "Criminal trials generally"
     ],
-    "answer_index": 0
+    "answer": "Revenue, customs, banking, companies and maritime matters",
+    "topic": "Court Structure & ADR \u2022 Jurisdiction"
   },
   {
-    "id": "BLAW-AT1-Q004",
-    "topic": "Contracts",
-    "subtopic": "Formation",
-    "stem": "If a party is forced into a contract under threat, the contract may be voidable for ____.",
+    "question": "Mediation involves:",
     "options": [
-      "duress",
-      "mistake",
-      "frustration",
-      "agreement"
+      "A neutral facilitating settlement without imposing a decision",
+      "A neutral giving a binding decision",
+      "Parties voting",
+      "Court imposing sanctions"
     ],
-    "answer_index": 0
+    "answer": "A neutral facilitating settlement without imposing a decision",
+    "topic": "Court Structure & ADR \u2022 ADR"
   },
   {
-    "id": "BLAW-AT1-Q005",
-    "topic": "Contracts",
-    "subtopic": "Terms",
-    "stem": "Which is a remedy for breach of contract?",
+    "question": "An arbitrator\u2019s award is:",
     "options": [
-      "Specific performance",
-      "Exemption clause",
-      "Misrepresentation",
-      "Illegality"
+      "Binding subject to limited court review",
+      "Non\u2011binding",
+      "Automatically criminal",
+      "A form of legislation"
     ],
-    "answer_index": 0
+    "answer": "Binding subject to limited court review",
+    "topic": "Court Structure & ADR \u2022 ADR"
   },
   {
-    "id": "BLAW-AT1-Q006",
-    "topic": "Contracts",
-    "subtopic": "Discharge",
-    "stem": "Which element is essential for a valid contract?",
+    "question": "Election petitions are heard by:",
     "options": [
-      "Consideration",
-      "Profit",
-      "Registration",
-      "Guarantee"
+      "Election Tribunals",
+      "Magistrate Courts",
+      "Sharia Courts",
+      "Area Courts"
     ],
-    "answer_index": 0
+    "answer": "Election Tribunals",
+    "topic": "Court Structure & ADR \u2022 Tribunals"
   },
   {
-    "id": "BLAW-AT1-Q007",
-    "topic": "Contracts",
-    "subtopic": "Remedies",
-    "stem": "Which element is essential for a valid contract?",
+    "question": "Which court is a court of first instance for most civil claims above lower thresholds?",
     "options": [
-      "Consideration",
-      "Profit",
-      "Registration",
-      "Guarantee"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "BLAW-AT1-Q008",
-    "topic": "Ethics & Law",
-    "subtopic": "Sources",
-    "stem": "Judicial precedent relies on the doctrine of ____.",
-    "options": [
-      "stare decisis",
-      "caveat emptor",
-      "ultra vires",
-      "res ipsa loquitur"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "BLAW-AT1-Q009",
-    "topic": "Ethics & Law",
-    "subtopic": "Courts",
-    "stem": "The highest court in Nigeria is the ____.",
-    "options": [
+      "High Court",
       "Supreme Court",
-      "High Court",
       "Court of Appeal",
-      "Magistrates' Court"
+      "Customary Court"
     ],
-    "answer_index": 0
+    "answer": "High Court",
+    "topic": "Court Structure & ADR \u2022 Courts"
   },
   {
-    "id": "BLAW-AT1-Q010",
-    "topic": "Ethics & Law",
-    "subtopic": "Ethics",
-    "stem": "Which of the following is a source of law in Nigeria?",
+    "question": "Advantages of ADR include:",
     "options": [
-      "Customary law",
-      "Company policy",
-      "Parliamentary conventions",
-      "Managerial decisions"
+      "Speed and confidentiality",
+      "Guaranteed appeal on merits",
+      "Publicity",
+      "Higher costs"
     ],
-    "answer_index": 0
+    "answer": "Speed and confidentiality",
+    "topic": "Court Structure & ADR \u2022 ADR"
   },
   {
-    "id": "BLAW-AT1-Q011",
-    "topic": "Contracts",
-    "subtopic": "Formation",
-    "stem": "If a party is forced into a contract under threat, the contract may be voidable for ____.",
+    "question": "Appeals from the Court of Appeal lie to:",
     "options": [
-      "duress",
-      "mistake",
-      "frustration",
-      "agreement"
+      "The Supreme Court",
+      "The High Court",
+      "Magistrate Court",
+      "Election Tribunal"
     ],
-    "answer_index": 0
+    "answer": "The Supreme Court",
+    "topic": "Court Structure & ADR \u2022 Appeals"
   },
   {
-    "id": "BLAW-AT1-Q012",
-    "topic": "Contracts",
-    "subtopic": "Terms",
-    "stem": "Which element is essential for a valid contract?",
+    "question": "Which court hears fundamental rights enforcement primarily?",
     "options": [
-      "Consideration",
-      "Profit",
-      "Registration",
-      "Guarantee"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "BLAW-AT1-Q013",
-    "topic": "Contracts",
-    "subtopic": "Discharge",
-    "stem": "If a party is forced into a contract under threat, the contract may be voidable for ____.",
-    "options": [
-      "duress",
-      "mistake",
-      "frustration",
-      "agreement"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "BLAW-AT1-Q014",
-    "topic": "Contracts",
-    "subtopic": "Remedies",
-    "stem": "Which element is essential for a valid contract?",
-    "options": [
-      "Consideration",
-      "Profit",
-      "Registration",
-      "Guarantee"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "BLAW-AT1-Q015",
-    "topic": "Ethics & Law",
-    "subtopic": "Sources",
-    "stem": "The highest court in Nigeria is the ____.",
-    "options": [
-      "Supreme Court",
       "High Court",
-      "Court of Appeal",
-      "Magistrates' Court"
+      "Magistrate Court",
+      "Customary Court",
+      "Area Court"
     ],
-    "answer_index": 0
+    "answer": "High Court",
+    "topic": "Court Structure & ADR \u2022 Jurisdiction"
   },
   {
-    "id": "BLAW-AT1-Q016",
-    "topic": "Ethics & Law",
-    "subtopic": "Courts",
-    "stem": "Judicial precedent relies on the doctrine of ____.",
+    "question": "Conciliation is similar to mediation but the neutral may:",
     "options": [
-      "stare decisis",
-      "caveat emptor",
-      "ultra vires",
-      "res ipsa loquitur"
+      "Propose terms of settlement",
+      "Deliver binding judgment",
+      "Impose fines",
+      "Issue warrants"
     ],
-    "answer_index": 0
+    "answer": "Propose terms of settlement",
+    "topic": "Court Structure & ADR \u2022 ADR"
   },
   {
-    "id": "BLAW-AT1-Q017",
-    "topic": "Ethics & Law",
-    "subtopic": "Ethics",
-    "stem": "Which is NOT a fundamental ethical principle for accountants?",
+    "question": "An offer is:",
     "options": [
-      "Profit maximization",
-      "Integrity",
-      "Objectivity",
-      "Confidentiality"
+      "A definite promise to be bound on acceptance",
+      "An invitation to treat",
+      "A mere enquiry",
+      "A counter\u2011offer"
     ],
-    "answer_index": 0
+    "answer": "A definite promise to be bound on acceptance",
+    "topic": "Law of Contract: Formation \u2022 Offer"
   },
   {
-    "id": "BLAW-AT1-Q018",
-    "topic": "Contracts",
-    "subtopic": "Formation",
-    "stem": "Which element is essential for a valid contract?",
+    "question": "Which is an invitation to treat?",
     "options": [
+      "Display of goods with price tags",
+      "Written offer with fixed terms",
+      "Signed acceptance",
+      "Payment of consideration"
+    ],
+    "answer": "Display of goods with price tags",
+    "topic": "Law of Contract: Formation \u2022 Invitation"
+  },
+  {
+    "question": "Acceptance must be:",
+    "options": [
+      "Unqualified and communicated",
+      "Conditional",
+      "Silent",
+      "By counter\u2011offer"
+    ],
+    "answer": "Unqualified and communicated",
+    "topic": "Law of Contract: Formation \u2022 Acceptance"
+  },
+  {
+    "question": "Under the postal rule, acceptance is effective when:",
+    "options": [
+      "Posted",
+      "Received",
+      "Read",
+      "Notified by phone"
+    ],
+    "answer": "Posted",
+    "topic": "Law of Contract: Formation \u2022 Postal rule"
+  },
+  {
+    "question": "Consideration must be:",
+    "options": [
+      "Something of value moving from the promisee",
+      "Adequate monetary amount",
+      "From a third party",
+      "Always in cash"
+    ],
+    "answer": "Something of value moving from the promisee",
+    "topic": "Law of Contract: Formation \u2022 Consideration"
+  },
+  {
+    "question": "Past consideration is:",
+    "options": [
+      "Generally not good consideration",
+      "Always sufficient",
+      "Better than present",
+      "Required in all contracts"
+    ],
+    "answer": "Generally not good consideration",
+    "topic": "Law of Contract: Formation \u2022 Consideration"
+  },
+  {
+    "question": "Social/domestic agreements are presumed:",
+    "options": [
+      "Not intended to create legal relations",
+      "To be legally binding",
+      "To be illegal",
+      "To be voidable"
+    ],
+    "answer": "Not intended to create legal relations",
+    "topic": "Law of Contract: Formation \u2022 Intention"
+  },
+  {
+    "question": "A minor\u2019s contract for necessaries is:",
+    "options": [
+      "Binding but at a reasonable price",
+      "Void ab initio",
+      "Illegal",
+      "Unenforceable against the supplier"
+    ],
+    "answer": "Binding but at a reasonable price",
+    "topic": "Law of Contract: Formation \u2022 Capacity"
+  },
+  {
+    "question": "The doctrine of privity means:",
+    "options": [
+      "Only parties to a contract can sue on it",
+      "Anyone can sue",
+      "Courts can add parties",
+      "Third parties always benefit"
+    ],
+    "answer": "Only parties to a contract can sue on it",
+    "topic": "Law of Contract: Formation \u2022 Privity"
+  },
+  {
+    "question": "A counter\u2011offer:",
+    "options": [
+      "Rejects and destroys the original offer",
+      "Leaves the original offer intact",
+      "Is the same as acceptance",
+      "Creates a collateral contract"
+    ],
+    "answer": "Rejects and destroys the original offer",
+    "topic": "Law of Contract: Formation \u2022 Counter\u2011offer"
+  },
+  {
+    "question": "An offer may be terminated by:",
+    "options": [
+      "Lapse of time",
+      "Acceptance",
+      "Performance",
+      "Consideration"
+    ],
+    "answer": "Lapse of time",
+    "topic": "Law of Contract: Formation \u2022 Termination"
+  },
+  {
+    "question": "Silence generally amounts to:",
+    "options": [
+      "No acceptance",
+      "Acceptance",
       "Consideration",
-      "Profit",
-      "Registration",
-      "Guarantee"
+      "Offer"
     ],
-    "answer_index": 0
+    "answer": "No acceptance",
+    "topic": "Law of Contract: Formation \u2022 Communication"
   },
   {
-    "id": "BLAW-AT1-Q019",
-    "topic": "Contracts",
-    "subtopic": "Terms",
-    "stem": "Which element is essential for a valid contract?",
+    "question": "A advert invites tenders; placing goods on shelves at \u20a6500 each is best described as:",
     "options": [
-      "Consideration",
-      "Profit",
-      "Registration",
-      "Guarantee"
+      "Invitation to treat",
+      "Offer",
+      "Acceptance",
+      "Consideration"
     ],
-    "answer_index": 0
+    "answer": "Invitation to treat",
+    "topic": "Law of Contract: Formation \u2022 Scenarios"
   },
   {
-    "id": "BLAW-AT1-Q020",
-    "topic": "Contracts",
-    "subtopic": "Discharge",
-    "stem": "If a party is forced into a contract under threat, the contract may be voidable for ____.",
+    "question": "A advert invites tenders; placing goods on shelves at \u20a6510 each is best described as:",
     "options": [
-      "duress",
-      "mistake",
-      "frustration",
-      "agreement"
+      "Invitation to treat",
+      "Offer",
+      "Acceptance",
+      "Consideration"
     ],
-    "answer_index": 0
+    "answer": "Invitation to treat",
+    "topic": "Law of Contract: Formation \u2022 Scenarios"
   },
   {
-    "id": "BLAW-AT1-Q021",
-    "topic": "Contracts",
-    "subtopic": "Remedies",
-    "stem": "Which element is essential for a valid contract?",
+    "question": "A advert invites tenders; placing goods on shelves at \u20a6520 each is best described as:",
     "options": [
-      "Consideration",
-      "Profit",
-      "Registration",
-      "Guarantee"
+      "Invitation to treat",
+      "Offer",
+      "Acceptance",
+      "Consideration"
     ],
-    "answer_index": 0
+    "answer": "Invitation to treat",
+    "topic": "Law of Contract: Formation \u2022 Scenarios"
   },
   {
-    "id": "BLAW-AT1-Q022",
-    "topic": "Ethics & Law",
-    "subtopic": "Sources",
-    "stem": "The highest court in Nigeria is the ____.",
+    "question": "A advert invites tenders; placing goods on shelves at \u20a6530 each is best described as:",
     "options": [
-      "Supreme Court",
-      "High Court",
-      "Court of Appeal",
-      "Magistrates' Court"
+      "Invitation to treat",
+      "Offer",
+      "Acceptance",
+      "Consideration"
     ],
-    "answer_index": 0
+    "answer": "Invitation to treat",
+    "topic": "Law of Contract: Formation \u2022 Scenarios"
   },
   {
-    "id": "BLAW-AT1-Q023",
-    "topic": "Ethics & Law",
-    "subtopic": "Courts",
-    "stem": "Which of the following is a source of law in Nigeria?",
+    "question": "A advert invites tenders; placing goods on shelves at \u20a6540 each is best described as:",
     "options": [
-      "Customary law",
-      "Company policy",
-      "Parliamentary conventions",
-      "Managerial decisions"
+      "Invitation to treat",
+      "Offer",
+      "Acceptance",
+      "Consideration"
     ],
-    "answer_index": 0
+    "answer": "Invitation to treat",
+    "topic": "Law of Contract: Formation \u2022 Scenarios"
   },
   {
-    "id": "BLAW-AT1-Q024",
-    "topic": "Ethics & Law",
-    "subtopic": "Ethics",
-    "stem": "Which of the following is a source of law in Nigeria?",
+    "question": "A advert invites tenders; placing goods on shelves at \u20a6550 each is best described as:",
     "options": [
-      "Customary law",
-      "Company policy",
-      "Parliamentary conventions",
-      "Managerial decisions"
+      "Invitation to treat",
+      "Offer",
+      "Acceptance",
+      "Consideration"
     ],
-    "answer_index": 0
+    "answer": "Invitation to treat",
+    "topic": "Law of Contract: Formation \u2022 Scenarios"
   },
   {
-    "id": "BLAW-AT1-Q025",
-    "topic": "Contracts",
-    "subtopic": "Formation",
-    "stem": "Which is a remedy for breach of contract?",
+    "question": "A advert invites tenders; placing goods on shelves at \u20a6560 each is best described as:",
     "options": [
-      "Specific performance",
-      "Exemption clause",
-      "Misrepresentation",
-      "Illegality"
+      "Invitation to treat",
+      "Offer",
+      "Acceptance",
+      "Consideration"
     ],
-    "answer_index": 0
+    "answer": "Invitation to treat",
+    "topic": "Law of Contract: Formation \u2022 Scenarios"
   },
   {
-    "id": "BLAW-AT1-Q026",
-    "topic": "Contracts",
-    "subtopic": "Terms",
-    "stem": "Which is a remedy for breach of contract?",
+    "question": "A advert invites tenders; placing goods on shelves at \u20a6570 each is best described as:",
     "options": [
-      "Specific performance",
-      "Exemption clause",
-      "Misrepresentation",
-      "Illegality"
+      "Invitation to treat",
+      "Offer",
+      "Acceptance",
+      "Consideration"
     ],
-    "answer_index": 0
+    "answer": "Invitation to treat",
+    "topic": "Law of Contract: Formation \u2022 Scenarios"
   },
   {
-    "id": "BLAW-AT1-Q027",
-    "topic": "Contracts",
-    "subtopic": "Discharge",
-    "stem": "Which element is essential for a valid contract?",
+    "question": "A advert invites tenders; placing goods on shelves at \u20a6580 each is best described as:",
     "options": [
-      "Consideration",
-      "Profit",
-      "Registration",
-      "Guarantee"
+      "Invitation to treat",
+      "Offer",
+      "Acceptance",
+      "Consideration"
     ],
-    "answer_index": 0
+    "answer": "Invitation to treat",
+    "topic": "Law of Contract: Formation \u2022 Scenarios"
   },
   {
-    "id": "BLAW-AT1-Q028",
-    "topic": "Contracts",
-    "subtopic": "Remedies",
-    "stem": "If a party is forced into a contract under threat, the contract may be voidable for ____.",
+    "question": "A advert invites tenders; placing goods on shelves at \u20a6590 each is best described as:",
     "options": [
-      "duress",
-      "mistake",
-      "frustration",
-      "agreement"
+      "Invitation to treat",
+      "Offer",
+      "Acceptance",
+      "Consideration"
     ],
-    "answer_index": 0
+    "answer": "Invitation to treat",
+    "topic": "Law of Contract: Formation \u2022 Scenarios"
   },
   {
-    "id": "BLAW-AT1-Q029",
-    "topic": "Ethics & Law",
-    "subtopic": "Sources",
-    "stem": "Judicial precedent relies on the doctrine of ____.",
+    "question": "A condition is:",
     "options": [
-      "stare decisis",
-      "caveat emptor",
-      "ultra vires",
-      "res ipsa loquitur"
+      "A major term going to the root of the contract",
+      "A minor warranty",
+      "A representation only",
+      "An exclusion clause"
     ],
-    "answer_index": 0
+    "answer": "A major term going to the root of the contract",
+    "topic": "Law of Contract: Terms & Vitiating Factors \u2022 Terms"
   },
   {
-    "id": "BLAW-AT1-Q030",
-    "topic": "Ethics & Law",
-    "subtopic": "Courts",
-    "stem": "Which of the following is a source of law in Nigeria?",
+    "question": "Fraudulent misrepresentation is:",
     "options": [
-      "Customary law",
-      "Company policy",
-      "Parliamentary conventions",
-      "Managerial decisions"
+      "A false statement made knowingly or recklessly",
+      "An honest mistake",
+      "A mere opinion",
+      "Silence always"
     ],
-    "answer_index": 0
+    "answer": "A false statement made knowingly or recklessly",
+    "topic": "Law of Contract: Terms & Vitiating Factors \u2022 Misrep"
   },
   {
-    "id": "BLAW-AT1-Q031",
-    "topic": "Ethics & Law",
-    "subtopic": "Ethics",
-    "stem": "Judicial precedent relies on the doctrine of ____.",
+    "question": "Common mistake occurs when:",
     "options": [
-      "stare decisis",
-      "caveat emptor",
-      "ultra vires",
-      "res ipsa loquitur"
+      "Both parties share the same fundamental mistake",
+      "Only one party is mistaken",
+      "A third party is mistaken",
+      "The judge is mistaken"
     ],
-    "answer_index": 0
+    "answer": "Both parties share the same fundamental mistake",
+    "topic": "Law of Contract: Terms & Vitiating Factors \u2022 Mistake"
   },
   {
-    "id": "BLAW-AT1-Q032",
-    "topic": "Contracts",
-    "subtopic": "Formation",
-    "stem": "Which is a remedy for breach of contract?",
+    "question": "Economic duress involves:",
     "options": [
-      "Specific performance",
-      "Exemption clause",
-      "Misrepresentation",
-      "Illegality"
+      "Illegitimate pressure vitiating consent",
+      "Hard bargaining",
+      "Lawful persuasion",
+      "Public interest"
     ],
-    "answer_index": 0
+    "answer": "Illegitimate pressure vitiating consent",
+    "topic": "Law of Contract: Terms & Vitiating Factors \u2022 Duress"
   },
   {
-    "id": "BLAW-AT1-Q033",
-    "topic": "Contracts",
-    "subtopic": "Terms",
-    "stem": "An invitation to treat is best illustrated by ____.",
+    "question": "Undue influence arises where:",
     "options": [
-      "Goods displayed on a shelf",
-      "A signed contract",
-      "A court judgement",
-      "Payment for services"
+      "One party dominates the will of another",
+      "Both are merchants",
+      "There is consideration",
+      "The contract is written"
     ],
-    "answer_index": 0
+    "answer": "One party dominates the will of another",
+    "topic": "Law of Contract: Terms & Vitiating Factors \u2022 Undue influence"
   },
   {
-    "id": "BLAW-AT1-Q034",
-    "topic": "Contracts",
-    "subtopic": "Discharge",
-    "stem": "A warranty in a contract is ____.",
+    "question": "An exclusion clause is construed:",
     "options": [
-      "A minor term breach gives damages only",
-      "A major term essential to contract",
-      "Always implied",
-      "Void"
+      "Contra proferentem (against the party relying on it)",
+      "Always in favour of business",
+      "Neutrally regardless of wording",
+      "As a penalty"
     ],
-    "answer_index": 0
+    "answer": "Contra proferentem (against the party relying on it)",
+    "topic": "Law of Contract: Terms & Vitiating Factors \u2022 Exemption"
   },
   {
-    "id": "BLAW-AT1-Q035",
-    "topic": "Contracts",
-    "subtopic": "Remedies",
-    "stem": "Which is a remedy for breach of contract?",
+    "question": "An illegal contract is:",
     "options": [
-      "Specific performance",
-      "Exemption clause",
-      "Misrepresentation",
-      "Illegality"
+      "Void and unenforceable",
+      "Voidable at the option of one party",
+      "Valid but unenforceable",
+      "Always criminal"
     ],
-    "answer_index": 0
+    "answer": "Void and unenforceable",
+    "topic": "Law of Contract: Terms & Vitiating Factors \u2022 Illegality"
   },
   {
-    "id": "BLAW-AT1-Q036",
-    "topic": "Ethics & Law",
-    "subtopic": "Sources",
-    "stem": "The highest court in Nigeria is the ____.",
+    "question": "The parol evidence rule generally:",
     "options": [
-      "Supreme Court",
-      "High Court",
-      "Court of Appeal",
-      "Magistrates' Court"
+      "Excludes extrinsic evidence to vary a written contract",
+      "Allows oral evidence freely",
+      "Applies only to tort",
+      "Applies only to land"
     ],
-    "answer_index": 0
+    "answer": "Excludes extrinsic evidence to vary a written contract",
+    "topic": "Law of Contract: Terms & Vitiating Factors \u2022 Parol"
   },
   {
-    "id": "BLAW-AT1-Q037",
-    "topic": "Ethics & Law",
-    "subtopic": "Courts",
-    "stem": "Judicial precedent relies on the doctrine of ____.",
+    "question": "A minor breach of a warranty entitles the innocent party to: (example 1)",
     "options": [
-      "stare decisis",
-      "caveat emptor",
-      "ultra vires",
-      "res ipsa loquitur"
+      "Damages only",
+      "Repudiate the contract",
+      "Specific performance automatically",
+      "Criminal sanctions"
     ],
-    "answer_index": 0
+    "answer": "Damages only",
+    "topic": "Law of Contract: Terms & Vitiating Factors \u2022 Examples"
   },
   {
-    "id": "BLAW-AT1-Q038",
-    "topic": "Ethics & Law",
-    "subtopic": "Ethics",
-    "stem": "Which is NOT a fundamental ethical principle for accountants?",
+    "question": "A minor breach of a warranty entitles the innocent party to: (example 2)",
     "options": [
-      "Profit maximization",
-      "Integrity",
-      "Objectivity",
-      "Confidentiality"
+      "Damages only",
+      "Repudiate the contract",
+      "Specific performance automatically",
+      "Criminal sanctions"
     ],
-    "answer_index": 0
+    "answer": "Damages only",
+    "topic": "Law of Contract: Terms & Vitiating Factors \u2022 Examples"
   },
   {
-    "id": "BLAW-AT1-Q039",
-    "topic": "Contracts",
-    "subtopic": "Formation",
-    "stem": "An invitation to treat is best illustrated by ____.",
+    "question": "A minor breach of a warranty entitles the innocent party to: (example 3)",
     "options": [
-      "Goods displayed on a shelf",
-      "A signed contract",
-      "A court judgement",
-      "Payment for services"
+      "Damages only",
+      "Repudiate the contract",
+      "Specific performance automatically",
+      "Criminal sanctions"
     ],
-    "answer_index": 0
+    "answer": "Damages only",
+    "topic": "Law of Contract: Terms & Vitiating Factors \u2022 Examples"
   },
   {
-    "id": "BLAW-AT1-Q040",
-    "topic": "Contracts",
-    "subtopic": "Terms",
-    "stem": "If a party is forced into a contract under threat, the contract may be voidable for ____.",
+    "question": "A minor breach of a warranty entitles the innocent party to: (example 4)",
     "options": [
-      "duress",
-      "mistake",
-      "frustration",
-      "agreement"
+      "Damages only",
+      "Repudiate the contract",
+      "Specific performance automatically",
+      "Criminal sanctions"
     ],
-    "answer_index": 0
+    "answer": "Damages only",
+    "topic": "Law of Contract: Terms & Vitiating Factors \u2022 Examples"
   },
   {
-    "id": "BLAW-AT1-Q041",
-    "topic": "Contracts",
-    "subtopic": "Discharge",
-    "stem": "A warranty in a contract is ____.",
+    "question": "A minor breach of a warranty entitles the innocent party to: (example 5)",
     "options": [
-      "A minor term breach gives damages only",
-      "A major term essential to contract",
-      "Always implied",
-      "Void"
+      "Damages only",
+      "Repudiate the contract",
+      "Specific performance automatically",
+      "Criminal sanctions"
     ],
-    "answer_index": 0
+    "answer": "Damages only",
+    "topic": "Law of Contract: Terms & Vitiating Factors \u2022 Examples"
   },
   {
-    "id": "BLAW-AT1-Q042",
-    "topic": "Contracts",
-    "subtopic": "Remedies",
-    "stem": "Which element is essential for a valid contract?",
+    "question": "A minor breach of a warranty entitles the innocent party to: (example 6)",
     "options": [
-      "Consideration",
-      "Profit",
-      "Registration",
-      "Guarantee"
+      "Damages only",
+      "Repudiate the contract",
+      "Specific performance automatically",
+      "Criminal sanctions"
     ],
-    "answer_index": 0
+    "answer": "Damages only",
+    "topic": "Law of Contract: Terms & Vitiating Factors \u2022 Examples"
   },
   {
-    "id": "BLAW-AT1-Q043",
-    "topic": "Ethics & Law",
-    "subtopic": "Sources",
-    "stem": "Which is NOT a fundamental ethical principle for accountants?",
+    "question": "A minor breach of a warranty entitles the innocent party to: (example 7)",
     "options": [
-      "Profit maximization",
-      "Integrity",
-      "Objectivity",
-      "Confidentiality"
+      "Damages only",
+      "Repudiate the contract",
+      "Specific performance automatically",
+      "Criminal sanctions"
     ],
-    "answer_index": 0
+    "answer": "Damages only",
+    "topic": "Law of Contract: Terms & Vitiating Factors \u2022 Examples"
   },
   {
-    "id": "BLAW-AT1-Q044",
-    "topic": "Ethics & Law",
-    "subtopic": "Courts",
-    "stem": "Which of the following is a source of law in Nigeria?",
+    "question": "A minor breach of a warranty entitles the innocent party to: (example 8)",
     "options": [
-      "Customary law",
-      "Company policy",
-      "Parliamentary conventions",
-      "Managerial decisions"
+      "Damages only",
+      "Repudiate the contract",
+      "Specific performance automatically",
+      "Criminal sanctions"
     ],
-    "answer_index": 0
+    "answer": "Damages only",
+    "topic": "Law of Contract: Terms & Vitiating Factors \u2022 Examples"
   },
   {
-    "id": "BLAW-AT1-Q045",
-    "topic": "Ethics & Law",
-    "subtopic": "Ethics",
-    "stem": "Which is NOT a fundamental ethical principle for accountants?",
+    "question": "A minor breach of a warranty entitles the innocent party to: (example 9)",
     "options": [
-      "Profit maximization",
-      "Integrity",
-      "Objectivity",
-      "Confidentiality"
+      "Damages only",
+      "Repudiate the contract",
+      "Specific performance automatically",
+      "Criminal sanctions"
     ],
-    "answer_index": 0
+    "answer": "Damages only",
+    "topic": "Law of Contract: Terms & Vitiating Factors \u2022 Examples"
   },
   {
-    "id": "BLAW-AT1-Q046",
-    "topic": "Contracts",
-    "subtopic": "Formation",
-    "stem": "An invitation to treat is best illustrated by ____.",
+    "question": "A minor breach of a warranty entitles the innocent party to: (example 10)",
     "options": [
-      "Goods displayed on a shelf",
-      "A signed contract",
-      "A court judgement",
-      "Payment for services"
+      "Damages only",
+      "Repudiate the contract",
+      "Specific performance automatically",
+      "Criminal sanctions"
     ],
-    "answer_index": 0
+    "answer": "Damages only",
+    "topic": "Law of Contract: Terms & Vitiating Factors \u2022 Examples"
   },
   {
-    "id": "BLAW-AT1-Q047",
-    "topic": "Contracts",
-    "subtopic": "Terms",
-    "stem": "A warranty in a contract is ____.",
+    "question": "A minor breach of a warranty entitles the innocent party to: (example 11)",
     "options": [
-      "A minor term breach gives damages only",
-      "A major term essential to contract",
-      "Always implied",
-      "Void"
+      "Damages only",
+      "Repudiate the contract",
+      "Specific performance automatically",
+      "Criminal sanctions"
     ],
-    "answer_index": 0
+    "answer": "Damages only",
+    "topic": "Law of Contract: Terms & Vitiating Factors \u2022 Examples"
   },
   {
-    "id": "BLAW-AT1-Q048",
-    "topic": "Contracts",
-    "subtopic": "Discharge",
-    "stem": "Which element is essential for a valid contract?",
+    "question": "A minor breach of a warranty entitles the innocent party to: (example 12)",
     "options": [
-      "Consideration",
-      "Profit",
-      "Registration",
-      "Guarantee"
+      "Damages only",
+      "Repudiate the contract",
+      "Specific performance automatically",
+      "Criminal sanctions"
     ],
-    "answer_index": 0
+    "answer": "Damages only",
+    "topic": "Law of Contract: Terms & Vitiating Factors \u2022 Examples"
   },
   {
-    "id": "BLAW-AT1-Q049",
-    "topic": "Contracts",
-    "subtopic": "Remedies",
-    "stem": "Which element is essential for a valid contract?",
+    "question": "A contract may be discharged by:",
     "options": [
-      "Consideration",
-      "Profit",
-      "Registration",
-      "Guarantee"
+      "Performance",
+      "Misrepresentation alone",
+      "Silence",
+      "Privity"
     ],
-    "answer_index": 0
+    "answer": "Performance",
+    "topic": "Law of Contract: Discharge & Remedies \u2022 Discharge"
   },
   {
-    "id": "BLAW-AT1-Q050",
-    "topic": "Ethics & Law",
-    "subtopic": "Sources",
-    "stem": "Judicial precedent relies on the doctrine of ____.",
+    "question": "Frustration occurs when:",
     "options": [
-      "stare decisis",
-      "caveat emptor",
-      "ultra vires",
-      "res ipsa loquitur"
+      "An unforeseen event makes performance impossible",
+      "A party changes mind",
+      "Price rises slightly",
+      "A mistake is discovered"
     ],
-    "answer_index": 0
+    "answer": "An unforeseen event makes performance impossible",
+    "topic": "Law of Contract: Discharge & Remedies \u2022 Frustration"
   },
   {
-    "id": "BLAW-AT1-Q051",
-    "topic": "Ethics & Law",
-    "subtopic": "Courts",
-    "stem": "The highest court in Nigeria is the ____.",
+    "question": "Repudiatory breach entitles the innocent party to:",
     "options": [
-      "Supreme Court",
-      "High Court",
-      "Court of Appeal",
-      "Magistrates' Court"
+      "Terminate and claim damages",
+      "Terminate only",
+      "Damages only",
+      "Do nothing"
     ],
-    "answer_index": 0
+    "answer": "Terminate and claim damages",
+    "topic": "Law of Contract: Discharge & Remedies \u2022 Breach"
   },
   {
-    "id": "BLAW-AT1-Q052",
-    "topic": "Ethics & Law",
-    "subtopic": "Ethics",
-    "stem": "Which of the following is a source of law in Nigeria?",
+    "question": "The main aim of damages is to:",
     "options": [
-      "Customary law",
-      "Company policy",
-      "Parliamentary conventions",
-      "Managerial decisions"
+      "Put the claimant in the position as if the contract had been performed",
+      "Punish the defendant",
+      "Reward the claimant",
+      "Deter future breaches"
     ],
-    "answer_index": 0
+    "answer": "Put the claimant in the position as if the contract had been performed",
+    "topic": "Law of Contract: Discharge & Remedies \u2022 Damages"
   },
   {
-    "id": "BLAW-AT1-Q053",
-    "topic": "Contracts",
-    "subtopic": "Formation",
-    "stem": "If a party is forced into a contract under threat, the contract may be voidable for ____.",
+    "question": "Specific performance is:",
     "options": [
-      "duress",
-      "mistake",
-      "frustration",
-      "agreement"
+      "An equitable remedy compelling performance",
+      "A legal remedy in all contracts",
+      "A criminal sanction",
+      "A penalty clause"
     ],
-    "answer_index": 0
+    "answer": "An equitable remedy compelling performance",
+    "topic": "Law of Contract: Discharge & Remedies \u2022 Remedies"
   },
   {
-    "id": "BLAW-AT1-Q054",
-    "topic": "Contracts",
-    "subtopic": "Terms",
-    "stem": "Which is a remedy for breach of contract?",
+    "question": "An injured party must:",
     "options": [
-      "Specific performance",
-      "Exemption clause",
-      "Misrepresentation",
-      "Illegality"
+      "Mitigate their loss",
+      "Exaggerate losses",
+      "Ignore alternatives",
+      "Refuse substitute performance"
     ],
-    "answer_index": 0
+    "answer": "Mitigate their loss",
+    "topic": "Law of Contract: Discharge & Remedies \u2022 Mitigation"
   },
   {
-    "id": "BLAW-AT1-Q055",
-    "topic": "Contracts",
-    "subtopic": "Discharge",
-    "stem": "If a party is forced into a contract under threat, the contract may be voidable for ____.",
+    "question": "An injured party must:",
     "options": [
-      "duress",
-      "mistake",
-      "frustration",
-      "agreement"
+      "Mitigate their loss",
+      "Exaggerate losses",
+      "Ignore alternatives",
+      "Refuse substitute performance"
     ],
-    "answer_index": 0
+    "answer": "Mitigate their loss",
+    "topic": "Law of Contract: Discharge & Remedies \u2022 Mitigation"
   },
   {
-    "id": "BLAW-AT1-Q056",
-    "topic": "Contracts",
-    "subtopic": "Remedies",
-    "stem": "A warranty in a contract is ____.",
+    "question": "An injured party must:",
     "options": [
-      "A minor term breach gives damages only",
-      "A major term essential to contract",
-      "Always implied",
-      "Void"
+      "Mitigate their loss",
+      "Exaggerate losses",
+      "Ignore alternatives",
+      "Refuse substitute performance"
     ],
-    "answer_index": 0
+    "answer": "Mitigate their loss",
+    "topic": "Law of Contract: Discharge & Remedies \u2022 Mitigation"
   },
   {
-    "id": "BLAW-AT1-Q057",
-    "topic": "Ethics & Law",
-    "subtopic": "Sources",
-    "stem": "Which of the following is a source of law in Nigeria?",
+    "question": "An injured party must:",
     "options": [
-      "Customary law",
-      "Company policy",
-      "Parliamentary conventions",
-      "Managerial decisions"
+      "Mitigate their loss",
+      "Exaggerate losses",
+      "Ignore alternatives",
+      "Refuse substitute performance"
     ],
-    "answer_index": 0
+    "answer": "Mitigate their loss",
+    "topic": "Law of Contract: Discharge & Remedies \u2022 Mitigation"
   },
   {
-    "id": "BLAW-AT1-Q058",
-    "topic": "Ethics & Law",
-    "subtopic": "Courts",
-    "stem": "Which of the following is a source of law in Nigeria?",
+    "question": "An injured party must:",
     "options": [
-      "Customary law",
-      "Company policy",
-      "Parliamentary conventions",
-      "Managerial decisions"
+      "Mitigate their loss",
+      "Exaggerate losses",
+      "Ignore alternatives",
+      "Refuse substitute performance"
     ],
-    "answer_index": 0
+    "answer": "Mitigate their loss",
+    "topic": "Law of Contract: Discharge & Remedies \u2022 Mitigation"
   },
   {
-    "id": "BLAW-AT1-Q059",
-    "topic": "Ethics & Law",
-    "subtopic": "Ethics",
-    "stem": "The highest court in Nigeria is the ____.",
+    "question": "An injured party must:",
     "options": [
-      "Supreme Court",
-      "High Court",
-      "Court of Appeal",
-      "Magistrates' Court"
+      "Mitigate their loss",
+      "Exaggerate losses",
+      "Ignore alternatives",
+      "Refuse substitute performance"
     ],
-    "answer_index": 0
+    "answer": "Mitigate their loss",
+    "topic": "Law of Contract: Discharge & Remedies \u2022 Mitigation"
   },
   {
-    "id": "BLAW-AT1-Q060",
-    "topic": "Contracts",
-    "subtopic": "Formation",
-    "stem": "Which element is essential for a valid contract?",
+    "question": "An injured party must:",
     "options": [
-      "Consideration",
-      "Profit",
-      "Registration",
-      "Guarantee"
+      "Mitigate their loss",
+      "Exaggerate losses",
+      "Ignore alternatives",
+      "Refuse substitute performance"
     ],
-    "answer_index": 0
+    "answer": "Mitigate their loss",
+    "topic": "Law of Contract: Discharge & Remedies \u2022 Mitigation"
   },
   {
-    "id": "BLAW-AT1-Q061",
-    "topic": "Contracts",
-    "subtopic": "Terms",
-    "stem": "Which element is essential for a valid contract?",
+    "question": "An injured party must:",
     "options": [
-      "Consideration",
-      "Profit",
-      "Registration",
-      "Guarantee"
+      "Mitigate their loss",
+      "Exaggerate losses",
+      "Ignore alternatives",
+      "Refuse substitute performance"
     ],
-    "answer_index": 0
+    "answer": "Mitigate their loss",
+    "topic": "Law of Contract: Discharge & Remedies \u2022 Mitigation"
   },
   {
-    "id": "BLAW-AT1-Q062",
-    "topic": "Contracts",
-    "subtopic": "Discharge",
-    "stem": "Which element is essential for a valid contract?",
+    "question": "An injured party must:",
     "options": [
-      "Consideration",
-      "Profit",
-      "Registration",
-      "Guarantee"
+      "Mitigate their loss",
+      "Exaggerate losses",
+      "Ignore alternatives",
+      "Refuse substitute performance"
     ],
-    "answer_index": 0
+    "answer": "Mitigate their loss",
+    "topic": "Law of Contract: Discharge & Remedies \u2022 Mitigation"
   },
   {
-    "id": "BLAW-AT1-Q063",
-    "topic": "Contracts",
-    "subtopic": "Remedies",
-    "stem": "A warranty in a contract is ____.",
+    "question": "Agency may be created by:",
     "options": [
-      "A minor term breach gives damages only",
-      "A major term essential to contract",
-      "Always implied",
-      "Void"
+      "Agreement, ratification or necessity",
+      "Marriage",
+      "Illegality",
+      "Minority alone"
     ],
-    "answer_index": 0
+    "answer": "Agreement, ratification or necessity",
+    "topic": "Agency \u2022 Creation"
   },
   {
-    "id": "BLAW-AT1-Q064",
-    "topic": "Ethics & Law",
-    "subtopic": "Sources",
-    "stem": "Which is NOT a fundamental ethical principle for accountants?",
+    "question": "Apparent (ostensible) authority arises where:",
     "options": [
-      "Profit maximization",
-      "Integrity",
-      "Objectivity",
-      "Confidentiality"
+      "The principal\u2019s conduct leads third parties to believe the agent is authorised",
+      "The agent believes he is authorised",
+      "The court appoints the agent",
+      "The agent appoints himself"
     ],
-    "answer_index": 0
+    "answer": "The principal\u2019s conduct leads third parties to believe the agent is authorised",
+    "topic": "Agency \u2022 Authority"
   },
   {
-    "id": "BLAW-AT1-Q065",
-    "topic": "Ethics & Law",
-    "subtopic": "Courts",
-    "stem": "Which is NOT a fundamental ethical principle for accountants?",
+    "question": "An agent owes a duty to:",
     "options": [
-      "Profit maximization",
-      "Integrity",
-      "Objectivity",
-      "Confidentiality"
+      "Avoid secret profit",
+      "Destroy records",
+      "Disclose all trade secrets publicly",
+      "Act for both sides without consent"
     ],
-    "answer_index": 0
+    "answer": "Avoid secret profit",
+    "topic": "Agency \u2022 Duties"
   },
   {
-    "id": "BLAW-AT1-Q066",
-    "topic": "Ethics & Law",
-    "subtopic": "Ethics",
-    "stem": "Which of the following is a source of law in Nigeria?",
+    "question": "Where the agent acts for an undisclosed principal:",
     "options": [
-      "Customary law",
-      "Company policy",
-      "Parliamentary conventions",
-      "Managerial decisions"
+      "The principal may sue and be sued",
+      "Only the agent is liable",
+      "Only the third party is liable",
+      "No one is liable"
     ],
-    "answer_index": 0
+    "answer": "The principal may sue and be sued",
+    "topic": "Agency \u2022 Liability"
   },
   {
-    "id": "BLAW-AT1-Q067",
-    "topic": "Contracts",
-    "subtopic": "Formation",
-    "stem": "A warranty in a contract is ____.",
+    "question": "Agency terminates by:",
     "options": [
-      "A minor term breach gives damages only",
-      "A major term essential to contract",
-      "Always implied",
-      "Void"
+      "Revocation, renunciation or death/insanity",
+      "Performance only",
+      "Breach by third party",
+      "Litigation"
     ],
-    "answer_index": 0
+    "answer": "Revocation, renunciation or death/insanity",
+    "topic": "Agency \u2022 Termination"
   },
   {
-    "id": "BLAW-AT1-Q068",
-    "topic": "Contracts",
-    "subtopic": "Terms",
-    "stem": "If a party is forced into a contract under threat, the contract may be voidable for ____.",
+    "question": "An agent is entitled to commission:",
     "options": [
-      "duress",
-      "mistake",
-      "frustration",
-      "agreement"
+      "According to the contract or custom",
+      "Only if he is a partner",
+      "Only if he is a company director",
+      "Never"
     ],
-    "answer_index": 0
+    "answer": "According to the contract or custom",
+    "topic": "Agency \u2022 Remuneration"
   },
   {
-    "id": "BLAW-AT1-Q069",
-    "topic": "Contracts",
-    "subtopic": "Discharge",
-    "stem": "If a party is forced into a contract under threat, the contract may be voidable for ____.",
+    "question": "An agent is entitled to commission:",
     "options": [
-      "duress",
-      "mistake",
-      "frustration",
-      "agreement"
+      "According to the contract or custom",
+      "Only if he is a partner",
+      "Only if he is a company director",
+      "Never"
     ],
-    "answer_index": 0
+    "answer": "According to the contract or custom",
+    "topic": "Agency \u2022 Remuneration"
   },
   {
-    "id": "BLAW-AT1-Q070",
-    "topic": "Contracts",
-    "subtopic": "Remedies",
-    "stem": "An invitation to treat is best illustrated by ____.",
+    "question": "An agent is entitled to commission:",
     "options": [
-      "Goods displayed on a shelf",
-      "A signed contract",
-      "A court judgement",
-      "Payment for services"
+      "According to the contract or custom",
+      "Only if he is a partner",
+      "Only if he is a company director",
+      "Never"
     ],
-    "answer_index": 0
+    "answer": "According to the contract or custom",
+    "topic": "Agency \u2022 Remuneration"
   },
   {
-    "id": "BLAW-AT1-Q071",
-    "topic": "Ethics & Law",
-    "subtopic": "Sources",
-    "stem": "Which of the following is a source of law in Nigeria?",
+    "question": "An agent is entitled to commission:",
     "options": [
-      "Customary law",
-      "Company policy",
-      "Parliamentary conventions",
-      "Managerial decisions"
+      "According to the contract or custom",
+      "Only if he is a partner",
+      "Only if he is a company director",
+      "Never"
     ],
-    "answer_index": 0
+    "answer": "According to the contract or custom",
+    "topic": "Agency \u2022 Remuneration"
   },
   {
-    "id": "BLAW-AT1-Q072",
-    "topic": "Ethics & Law",
-    "subtopic": "Courts",
-    "stem": "The highest court in Nigeria is the ____.",
+    "question": "An agent is entitled to commission:",
     "options": [
-      "Supreme Court",
-      "High Court",
-      "Court of Appeal",
-      "Magistrates' Court"
+      "According to the contract or custom",
+      "Only if he is a partner",
+      "Only if he is a company director",
+      "Never"
     ],
-    "answer_index": 0
+    "answer": "According to the contract or custom",
+    "topic": "Agency \u2022 Remuneration"
   },
   {
-    "id": "BLAW-AT1-Q073",
-    "topic": "Ethics & Law",
-    "subtopic": "Ethics",
-    "stem": "Judicial precedent relies on the doctrine of ____.",
+    "question": "An agent is entitled to commission:",
     "options": [
-      "stare decisis",
-      "caveat emptor",
-      "ultra vires",
-      "res ipsa loquitur"
+      "According to the contract or custom",
+      "Only if he is a partner",
+      "Only if he is a company director",
+      "Never"
     ],
-    "answer_index": 0
+    "answer": "According to the contract or custom",
+    "topic": "Agency \u2022 Remuneration"
   },
   {
-    "id": "BLAW-AT1-Q074",
-    "topic": "Contracts",
-    "subtopic": "Formation",
-    "stem": "Which element is essential for a valid contract?",
+    "question": "An agent is entitled to commission:",
     "options": [
-      "Consideration",
-      "Profit",
-      "Registration",
-      "Guarantee"
+      "According to the contract or custom",
+      "Only if he is a partner",
+      "Only if he is a company director",
+      "Never"
     ],
-    "answer_index": 0
+    "answer": "According to the contract or custom",
+    "topic": "Agency \u2022 Remuneration"
   },
   {
-    "id": "BLAW-AT1-Q075",
-    "topic": "Contracts",
-    "subtopic": "Terms",
-    "stem": "A warranty in a contract is ____.",
+    "question": "An agent is entitled to commission:",
     "options": [
-      "A minor term breach gives damages only",
-      "A major term essential to contract",
-      "Always implied",
-      "Void"
+      "According to the contract or custom",
+      "Only if he is a partner",
+      "Only if he is a company director",
+      "Never"
     ],
-    "answer_index": 0
+    "answer": "According to the contract or custom",
+    "topic": "Agency \u2022 Remuneration"
   },
   {
-    "id": "BLAW-AT1-Q076",
-    "topic": "Contracts",
-    "subtopic": "Discharge",
-    "stem": "An invitation to treat is best illustrated by ____.",
+    "question": "An agent is entitled to commission:",
     "options": [
-      "Goods displayed on a shelf",
-      "A signed contract",
-      "A court judgement",
-      "Payment for services"
+      "According to the contract or custom",
+      "Only if he is a partner",
+      "Only if he is a company director",
+      "Never"
     ],
-    "answer_index": 0
+    "answer": "According to the contract or custom",
+    "topic": "Agency \u2022 Remuneration"
   },
   {
-    "id": "BLAW-AT1-Q077",
-    "topic": "Contracts",
-    "subtopic": "Remedies",
-    "stem": "Which element is essential for a valid contract?",
+    "question": "\u2018Goods\u2019 under the Sale of Goods law means:",
     "options": [
-      "Consideration",
-      "Profit",
-      "Registration",
-      "Guarantee"
+      "All chattels personal other than things in action and money",
+      "Land and buildings",
+      "Services",
+      "Choses in action only"
     ],
-    "answer_index": 0
+    "answer": "All chattels personal other than things in action and money",
+    "topic": "Sale of Goods \u2022 Definition"
   },
   {
-    "id": "BLAW-AT1-Q078",
-    "topic": "Ethics & Law",
-    "subtopic": "Sources",
-    "stem": "Judicial precedent relies on the doctrine of ____.",
+    "question": "Property in unascertained goods passes:",
     "options": [
-      "stare decisis",
-      "caveat emptor",
-      "ultra vires",
-      "res ipsa loquitur"
+      "When the goods are ascertained and appropriated to the contract",
+      "On payment of price",
+      "On delivery to carrier always",
+      "On signing the contract"
     ],
-    "answer_index": 0
+    "answer": "When the goods are ascertained and appropriated to the contract",
+    "topic": "Sale of Goods \u2022 Transfer"
   },
   {
-    "id": "BLAW-AT1-Q079",
-    "topic": "Ethics & Law",
-    "subtopic": "Courts",
-    "stem": "The highest court in Nigeria is the ____.",
+    "question": "Implied condition as to title means:",
     "options": [
-      "Supreme Court",
-      "High Court",
-      "Court of Appeal",
-      "Magistrates' Court"
+      "Seller has the right to sell the goods",
+      "Goods are free from minor defects",
+      "Goods are fit for all purposes",
+      "Price is fixed"
     ],
-    "answer_index": 0
+    "answer": "Seller has the right to sell the goods",
+    "topic": "Sale of Goods \u2022 Conditions"
   },
   {
-    "id": "BLAW-AT1-Q080",
-    "topic": "Ethics & Law",
-    "subtopic": "Ethics",
-    "stem": "The highest court in Nigeria is the ____.",
+    "question": "Implied condition of merchantable quality applies where:",
     "options": [
-      "Supreme Court",
-      "High Court",
-      "Court of Appeal",
-      "Magistrates' Court"
+      "Goods are bought by description from a seller who deals in goods of that description",
+      "Price exceeds \u20a61m only",
+      "Goods are second\u2011hand",
+      "Buyer examines the goods fully"
     ],
-    "answer_index": 0
+    "answer": "Goods are bought by description from a seller who deals in goods of that description",
+    "topic": "Sale of Goods \u2022 Merchantable"
   },
   {
-    "id": "BLAW-AT1-Q081",
-    "topic": "Contracts",
-    "subtopic": "Formation",
-    "stem": "Which is a remedy for breach of contract?",
+    "question": "Where sale is by description, goods must:",
     "options": [
-      "Specific performance",
-      "Exemption clause",
-      "Misrepresentation",
-      "Illegality"
+      "Correspond with the description",
+      "Correspond with the sample only",
+      "Be cheapest",
+      "Be newest"
     ],
-    "answer_index": 0
+    "answer": "Correspond with the description",
+    "topic": "Sale of Goods \u2022 Sale by description"
   },
   {
-    "id": "BLAW-AT1-Q082",
-    "topic": "Contracts",
-    "subtopic": "Terms",
-    "stem": "Which element is essential for a valid contract?",
+    "question": "Unless otherwise agreed, risk passes:",
     "options": [
-      "Consideration",
-      "Profit",
-      "Registration",
-      "Guarantee"
+      "With property/ownership",
+      "On payment",
+      "On invoice",
+      "On order placement"
     ],
-    "answer_index": 0
+    "answer": "With property/ownership",
+    "topic": "Sale of Goods \u2022 Risk"
   },
   {
-    "id": "BLAW-AT1-Q083",
-    "topic": "Contracts",
-    "subtopic": "Discharge",
-    "stem": "Which element is essential for a valid contract?",
+    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 1)",
     "options": [
-      "Consideration",
-      "Profit",
-      "Registration",
-      "Guarantee"
+      "Sue for damages",
+      "Imprison the buyer",
+      "Rescind all sales ever made",
+      "Charge criminal fine"
     ],
-    "answer_index": 0
+    "answer": "Sue for damages",
+    "topic": "Sale of Goods \u2022 Remedies"
   },
   {
-    "id": "BLAW-AT1-Q084",
-    "topic": "Contracts",
-    "subtopic": "Remedies",
-    "stem": "Which is a remedy for breach of contract?",
+    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 2)",
     "options": [
-      "Specific performance",
-      "Exemption clause",
-      "Misrepresentation",
-      "Illegality"
+      "Sue for damages",
+      "Imprison the buyer",
+      "Rescind all sales ever made",
+      "Charge criminal fine"
     ],
-    "answer_index": 0
+    "answer": "Sue for damages",
+    "topic": "Sale of Goods \u2022 Remedies"
   },
   {
-    "id": "BLAW-AT1-Q085",
-    "topic": "Ethics & Law",
-    "subtopic": "Sources",
-    "stem": "Which of the following is a source of law in Nigeria?",
+    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 3)",
     "options": [
-      "Customary law",
-      "Company policy",
-      "Parliamentary conventions",
-      "Managerial decisions"
+      "Sue for damages",
+      "Imprison the buyer",
+      "Rescind all sales ever made",
+      "Charge criminal fine"
     ],
-    "answer_index": 0
+    "answer": "Sue for damages",
+    "topic": "Sale of Goods \u2022 Remedies"
   },
   {
-    "id": "BLAW-AT1-Q086",
-    "topic": "Ethics & Law",
-    "subtopic": "Courts",
-    "stem": "The highest court in Nigeria is the ____.",
+    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 4)",
     "options": [
-      "Supreme Court",
-      "High Court",
-      "Court of Appeal",
-      "Magistrates' Court"
+      "Sue for damages",
+      "Imprison the buyer",
+      "Rescind all sales ever made",
+      "Charge criminal fine"
     ],
-    "answer_index": 0
+    "answer": "Sue for damages",
+    "topic": "Sale of Goods \u2022 Remedies"
   },
   {
-    "id": "BLAW-AT1-Q087",
-    "topic": "Ethics & Law",
-    "subtopic": "Ethics",
-    "stem": "Which of the following is a source of law in Nigeria?",
+    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 5)",
     "options": [
-      "Customary law",
-      "Company policy",
-      "Parliamentary conventions",
-      "Managerial decisions"
+      "Sue for damages",
+      "Imprison the buyer",
+      "Rescind all sales ever made",
+      "Charge criminal fine"
     ],
-    "answer_index": 0
+    "answer": "Sue for damages",
+    "topic": "Sale of Goods \u2022 Remedies"
   },
   {
-    "id": "BLAW-AT1-Q088",
-    "topic": "Contracts",
-    "subtopic": "Formation",
-    "stem": "A warranty in a contract is ____.",
+    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 6)",
     "options": [
-      "A minor term breach gives damages only",
-      "A major term essential to contract",
-      "Always implied",
-      "Void"
+      "Sue for damages",
+      "Imprison the buyer",
+      "Rescind all sales ever made",
+      "Charge criminal fine"
     ],
-    "answer_index": 0
+    "answer": "Sue for damages",
+    "topic": "Sale of Goods \u2022 Remedies"
   },
   {
-    "id": "BLAW-AT1-Q089",
-    "topic": "Contracts",
-    "subtopic": "Terms",
-    "stem": "Which element is essential for a valid contract?",
+    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 7)",
     "options": [
-      "Consideration",
-      "Profit",
-      "Registration",
-      "Guarantee"
+      "Sue for damages",
+      "Imprison the buyer",
+      "Rescind all sales ever made",
+      "Charge criminal fine"
     ],
-    "answer_index": 0
+    "answer": "Sue for damages",
+    "topic": "Sale of Goods \u2022 Remedies"
   },
   {
-    "id": "BLAW-AT1-Q090",
-    "topic": "Contracts",
-    "subtopic": "Discharge",
-    "stem": "If a party is forced into a contract under threat, the contract may be voidable for ____.",
+    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 8)",
     "options": [
-      "duress",
-      "mistake",
-      "frustration",
-      "agreement"
+      "Sue for damages",
+      "Imprison the buyer",
+      "Rescind all sales ever made",
+      "Charge criminal fine"
     ],
-    "answer_index": 0
+    "answer": "Sue for damages",
+    "topic": "Sale of Goods \u2022 Remedies"
   },
   {
-    "id": "BLAW-AT1-Q091",
-    "topic": "Contracts",
-    "subtopic": "Remedies",
-    "stem": "If a party is forced into a contract under threat, the contract may be voidable for ____.",
+    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 9)",
     "options": [
-      "duress",
-      "mistake",
-      "frustration",
-      "agreement"
+      "Sue for damages",
+      "Imprison the buyer",
+      "Rescind all sales ever made",
+      "Charge criminal fine"
     ],
-    "answer_index": 0
+    "answer": "Sue for damages",
+    "topic": "Sale of Goods \u2022 Remedies"
   },
   {
-    "id": "BLAW-AT1-Q092",
-    "topic": "Ethics & Law",
-    "subtopic": "Sources",
-    "stem": "Which is NOT a fundamental ethical principle for accountants?",
+    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 10)",
     "options": [
-      "Profit maximization",
-      "Integrity",
-      "Objectivity",
-      "Confidentiality"
+      "Sue for damages",
+      "Imprison the buyer",
+      "Rescind all sales ever made",
+      "Charge criminal fine"
     ],
-    "answer_index": 0
+    "answer": "Sue for damages",
+    "topic": "Sale of Goods \u2022 Remedies"
   },
   {
-    "id": "BLAW-AT1-Q093",
-    "topic": "Ethics & Law",
-    "subtopic": "Courts",
-    "stem": "Which of the following is a source of law in Nigeria?",
+    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 11)",
     "options": [
-      "Customary law",
-      "Company policy",
-      "Parliamentary conventions",
-      "Managerial decisions"
+      "Sue for damages",
+      "Imprison the buyer",
+      "Rescind all sales ever made",
+      "Charge criminal fine"
     ],
-    "answer_index": 0
+    "answer": "Sue for damages",
+    "topic": "Sale of Goods \u2022 Remedies"
   },
   {
-    "id": "BLAW-AT1-Q094",
-    "topic": "Ethics & Law",
-    "subtopic": "Ethics",
-    "stem": "The highest court in Nigeria is the ____.",
+    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 12)",
     "options": [
-      "Supreme Court",
-      "High Court",
-      "Court of Appeal",
-      "Magistrates' Court"
+      "Sue for damages",
+      "Imprison the buyer",
+      "Rescind all sales ever made",
+      "Charge criminal fine"
     ],
-    "answer_index": 0
+    "answer": "Sue for damages",
+    "topic": "Sale of Goods \u2022 Remedies"
   },
   {
-    "id": "BLAW-AT1-Q095",
-    "topic": "Contracts",
-    "subtopic": "Formation",
-    "stem": "A warranty in a contract is ____.",
+    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 13)",
     "options": [
-      "A minor term breach gives damages only",
-      "A major term essential to contract",
-      "Always implied",
-      "Void"
+      "Sue for damages",
+      "Imprison the buyer",
+      "Rescind all sales ever made",
+      "Charge criminal fine"
     ],
-    "answer_index": 0
+    "answer": "Sue for damages",
+    "topic": "Sale of Goods \u2022 Remedies"
   },
   {
-    "id": "BLAW-AT1-Q096",
-    "topic": "Contracts",
-    "subtopic": "Terms",
-    "stem": "Which element is essential for a valid contract?",
+    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 14)",
     "options": [
-      "Consideration",
-      "Profit",
-      "Registration",
-      "Guarantee"
+      "Sue for damages",
+      "Imprison the buyer",
+      "Rescind all sales ever made",
+      "Charge criminal fine"
     ],
-    "answer_index": 0
+    "answer": "Sue for damages",
+    "topic": "Sale of Goods \u2022 Remedies"
   },
   {
-    "id": "BLAW-AT1-Q097",
-    "topic": "Contracts",
-    "subtopic": "Discharge",
-    "stem": "An invitation to treat is best illustrated by ____.",
+    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 15)",
     "options": [
-      "Goods displayed on a shelf",
-      "A signed contract",
-      "A court judgement",
-      "Payment for services"
+      "Sue for damages",
+      "Imprison the buyer",
+      "Rescind all sales ever made",
+      "Charge criminal fine"
     ],
-    "answer_index": 0
+    "answer": "Sue for damages",
+    "topic": "Sale of Goods \u2022 Remedies"
   },
   {
-    "id": "BLAW-AT1-Q098",
-    "topic": "Contracts",
-    "subtopic": "Remedies",
-    "stem": "Which is a remedy for breach of contract?",
+    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 16)",
     "options": [
-      "Specific performance",
-      "Exemption clause",
-      "Misrepresentation",
-      "Illegality"
+      "Sue for damages",
+      "Imprison the buyer",
+      "Rescind all sales ever made",
+      "Charge criminal fine"
     ],
-    "answer_index": 0
+    "answer": "Sue for damages",
+    "topic": "Sale of Goods \u2022 Remedies"
   },
   {
-    "id": "BLAW-AT1-Q099",
-    "topic": "Ethics & Law",
-    "subtopic": "Sources",
-    "stem": "The highest court in Nigeria is the ____.",
+    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 17)",
     "options": [
-      "Supreme Court",
-      "High Court",
-      "Court of Appeal",
-      "Magistrates' Court"
+      "Sue for damages",
+      "Imprison the buyer",
+      "Rescind all sales ever made",
+      "Charge criminal fine"
     ],
-    "answer_index": 0
+    "answer": "Sue for damages",
+    "topic": "Sale of Goods \u2022 Remedies"
   },
   {
-    "id": "BLAW-AT1-Q100",
-    "topic": "Ethics & Law",
-    "subtopic": "Courts",
-    "stem": "Which is NOT a fundamental ethical principle for accountants?",
+    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 18)",
     "options": [
-      "Profit maximization",
-      "Integrity",
-      "Objectivity",
-      "Confidentiality"
+      "Sue for damages",
+      "Imprison the buyer",
+      "Rescind all sales ever made",
+      "Charge criminal fine"
     ],
-    "answer_index": 0
+    "answer": "Sue for damages",
+    "topic": "Sale of Goods \u2022 Remedies"
   },
   {
-    "id": "BLAW-AT1-Q101",
-    "topic": "Ethics & Law",
-    "subtopic": "Ethics",
-    "stem": "Which is NOT a fundamental ethical principle for accountants?",
+    "question": "In hire purchase, ownership passes:",
     "options": [
-      "Profit maximization",
-      "Integrity",
-      "Objectivity",
-      "Confidentiality"
+      "On payment of the last instalment (or exercise of option to purchase)",
+      "On first payment",
+      "On delivery",
+      "On signing the form regardless"
     ],
-    "answer_index": 0
+    "answer": "On payment of the last instalment (or exercise of option to purchase)",
+    "topic": "Hire Purchase \u2022 Nature"
   },
   {
-    "id": "BLAW-AT1-Q102",
-    "topic": "Contracts",
-    "subtopic": "Formation",
-    "stem": "A warranty in a contract is ____.",
+    "question": "A hirer who has paid the statutory proportion may:",
     "options": [
-      "A minor term breach gives damages only",
-      "A major term essential to contract",
-      "Always implied",
-      "Void"
+      "Return goods and end the agreement",
+      "Be sued for theft",
+      "Be jailed without trial",
+      "Lose all payments automatically"
     ],
-    "answer_index": 0
+    "answer": "Return goods and end the agreement",
+    "topic": "Hire Purchase \u2022 Rights"
   },
   {
-    "id": "BLAW-AT1-Q103",
-    "topic": "Contracts",
-    "subtopic": "Terms",
-    "stem": "An invitation to treat is best illustrated by ____.",
+    "question": "HP law protects consumers by:",
     "options": [
-      "Goods displayed on a shelf",
-      "A signed contract",
-      "A court judgement",
-      "Payment for services"
+      "Requiring key information and limiting repossession",
+      "Banning instalments",
+      "Fixing interest by court",
+      "Forcing cash sales"
     ],
-    "answer_index": 0
+    "answer": "Requiring key information and limiting repossession",
+    "topic": "Hire Purchase \u2022 Protection"
   },
   {
-    "id": "BLAW-AT1-Q104",
-    "topic": "Contracts",
-    "subtopic": "Discharge",
-    "stem": "A warranty in a contract is ____.",
+    "question": "On hirer\u2019s default before statutory proportion is paid, the owner may: (item 1)",
     "options": [
-      "A minor term breach gives damages only",
-      "A major term essential to contract",
-      "Always implied",
-      "Void"
+      "Recover goods peacefully and sue for damages",
+      "Jail the hirer",
+      "Confiscate unrelated property",
+      "Report to company registry"
     ],
-    "answer_index": 0
+    "answer": "Recover goods peacefully and sue for damages",
+    "topic": "Hire Purchase \u2022 Default"
   },
   {
-    "id": "BLAW-AT1-Q105",
-    "topic": "Contracts",
-    "subtopic": "Remedies",
-    "stem": "Which element is essential for a valid contract?",
+    "question": "On hirer\u2019s default before statutory proportion is paid, the owner may: (item 2)",
     "options": [
-      "Consideration",
-      "Profit",
-      "Registration",
-      "Guarantee"
+      "Recover goods peacefully and sue for damages",
+      "Jail the hirer",
+      "Confiscate unrelated property",
+      "Report to company registry"
     ],
-    "answer_index": 0
+    "answer": "Recover goods peacefully and sue for damages",
+    "topic": "Hire Purchase \u2022 Default"
   },
   {
-    "id": "BLAW-AT1-Q106",
-    "topic": "Ethics & Law",
-    "subtopic": "Sources",
-    "stem": "Judicial precedent relies on the doctrine of ____.",
+    "question": "On hirer\u2019s default before statutory proportion is paid, the owner may: (item 3)",
     "options": [
-      "stare decisis",
-      "caveat emptor",
-      "ultra vires",
-      "res ipsa loquitur"
+      "Recover goods peacefully and sue for damages",
+      "Jail the hirer",
+      "Confiscate unrelated property",
+      "Report to company registry"
     ],
-    "answer_index": 0
+    "answer": "Recover goods peacefully and sue for damages",
+    "topic": "Hire Purchase \u2022 Default"
   },
   {
-    "id": "BLAW-AT1-Q107",
-    "topic": "Ethics & Law",
-    "subtopic": "Courts",
-    "stem": "Which of the following is a source of law in Nigeria?",
+    "question": "On hirer\u2019s default before statutory proportion is paid, the owner may: (item 4)",
     "options": [
-      "Customary law",
-      "Company policy",
-      "Parliamentary conventions",
-      "Managerial decisions"
+      "Recover goods peacefully and sue for damages",
+      "Jail the hirer",
+      "Confiscate unrelated property",
+      "Report to company registry"
     ],
-    "answer_index": 0
+    "answer": "Recover goods peacefully and sue for damages",
+    "topic": "Hire Purchase \u2022 Default"
   },
   {
-    "id": "BLAW-AT1-Q108",
-    "topic": "Ethics & Law",
-    "subtopic": "Ethics",
-    "stem": "Which is NOT a fundamental ethical principle for accountants?",
+    "question": "On hirer\u2019s default before statutory proportion is paid, the owner may: (item 5)",
     "options": [
-      "Profit maximization",
-      "Integrity",
-      "Objectivity",
-      "Confidentiality"
+      "Recover goods peacefully and sue for damages",
+      "Jail the hirer",
+      "Confiscate unrelated property",
+      "Report to company registry"
     ],
-    "answer_index": 0
+    "answer": "Recover goods peacefully and sue for damages",
+    "topic": "Hire Purchase \u2022 Default"
   },
   {
-    "id": "BLAW-AT1-Q109",
-    "topic": "Contracts",
-    "subtopic": "Formation",
-    "stem": "Which is a remedy for breach of contract?",
+    "question": "On hirer\u2019s default before statutory proportion is paid, the owner may: (item 6)",
     "options": [
-      "Specific performance",
-      "Exemption clause",
-      "Misrepresentation",
-      "Illegality"
+      "Recover goods peacefully and sue for damages",
+      "Jail the hirer",
+      "Confiscate unrelated property",
+      "Report to company registry"
     ],
-    "answer_index": 0
+    "answer": "Recover goods peacefully and sue for damages",
+    "topic": "Hire Purchase \u2022 Default"
   },
   {
-    "id": "BLAW-AT1-Q110",
-    "topic": "Contracts",
-    "subtopic": "Terms",
-    "stem": "An invitation to treat is best illustrated by ____.",
+    "question": "On hirer\u2019s default before statutory proportion is paid, the owner may: (item 7)",
     "options": [
-      "Goods displayed on a shelf",
-      "A signed contract",
-      "A court judgement",
-      "Payment for services"
+      "Recover goods peacefully and sue for damages",
+      "Jail the hirer",
+      "Confiscate unrelated property",
+      "Report to company registry"
     ],
-    "answer_index": 0
+    "answer": "Recover goods peacefully and sue for damages",
+    "topic": "Hire Purchase \u2022 Default"
   },
   {
-    "id": "BLAW-AT1-Q111",
-    "topic": "Contracts",
-    "subtopic": "Discharge",
-    "stem": "Which element is essential for a valid contract?",
+    "question": "On hirer\u2019s default before statutory proportion is paid, the owner may: (item 8)",
     "options": [
-      "Consideration",
-      "Profit",
-      "Registration",
-      "Guarantee"
+      "Recover goods peacefully and sue for damages",
+      "Jail the hirer",
+      "Confiscate unrelated property",
+      "Report to company registry"
     ],
-    "answer_index": 0
+    "answer": "Recover goods peacefully and sue for damages",
+    "topic": "Hire Purchase \u2022 Default"
   },
   {
-    "id": "BLAW-AT1-Q112",
-    "topic": "Contracts",
-    "subtopic": "Remedies",
-    "stem": "Which is a remedy for breach of contract?",
+    "question": "On hirer\u2019s default before statutory proportion is paid, the owner may: (item 9)",
     "options": [
-      "Specific performance",
-      "Exemption clause",
-      "Misrepresentation",
-      "Illegality"
+      "Recover goods peacefully and sue for damages",
+      "Jail the hirer",
+      "Confiscate unrelated property",
+      "Report to company registry"
     ],
-    "answer_index": 0
+    "answer": "Recover goods peacefully and sue for damages",
+    "topic": "Hire Purchase \u2022 Default"
   },
   {
-    "id": "BLAW-AT1-Q113",
-    "topic": "Ethics & Law",
-    "subtopic": "Sources",
-    "stem": "The highest court in Nigeria is the ____.",
+    "question": "A negotiable instrument is one which:",
     "options": [
-      "Supreme Court",
-      "High Court",
-      "Court of Appeal",
-      "Magistrates' Court"
+      "Is freely transferable and the transferee can acquire a better title",
+      "Cannot be transferred",
+      "Must be registered to transfer",
+      "Is always non\u2011cashable"
     ],
-    "answer_index": 0
+    "answer": "Is freely transferable and the transferee can acquire a better title",
+    "topic": "Negotiable Instruments \u2022 Definition"
   },
   {
-    "id": "BLAW-AT1-Q114",
-    "topic": "Ethics & Law",
-    "subtopic": "Courts",
-    "stem": "The highest court in Nigeria is the ____.",
+    "question": "A bill of exchange is:",
     "options": [
-      "Supreme Court",
-      "High Court",
-      "Court of Appeal",
-      "Magistrates' Court"
+      "An unconditional order in writing to pay a sum certain",
+      "An unconditional promise to pay",
+      "A receipt",
+      "A credit note"
     ],
-    "answer_index": 0
+    "answer": "An unconditional order in writing to pay a sum certain",
+    "topic": "Negotiable Instruments \u2022 Bills"
   },
   {
-    "id": "BLAW-AT1-Q115",
-    "topic": "Ethics & Law",
-    "subtopic": "Ethics",
-    "stem": "Judicial precedent relies on the doctrine of ____.",
+    "question": "A cheque is drawn on:",
     "options": [
-      "stare decisis",
-      "caveat emptor",
-      "ultra vires",
-      "res ipsa loquitur"
+      "A banker",
+      "A customer",
+      "A court",
+      "A broker"
     ],
-    "answer_index": 0
+    "answer": "A banker",
+    "topic": "Negotiable Instruments \u2022 Cheques"
   },
   {
-    "id": "BLAW-AT1-Q116",
-    "topic": "Contracts",
-    "subtopic": "Formation",
-    "stem": "An invitation to treat is best illustrated by ____.",
+    "question": "A holder in due course takes:",
     "options": [
-      "Goods displayed on a shelf",
-      "A signed contract",
-      "A court judgement",
-      "Payment for services"
+      "Free from many defects in title",
+      "Subject to all equities",
+      "Only with drawer\u2019s consent",
+      "Only after court order"
     ],
-    "answer_index": 0
+    "answer": "Free from many defects in title",
+    "topic": "Negotiable Instruments \u2022 Holder in due course"
   },
   {
-    "id": "BLAW-AT1-Q117",
-    "topic": "Contracts",
-    "subtopic": "Terms",
-    "stem": "An invitation to treat is best illustrated by ____.",
+    "question": "Blank endorsement makes the instrument:",
     "options": [
-      "Goods displayed on a shelf",
-      "A signed contract",
-      "A court judgement",
-      "Payment for services"
+      "Payable to bearer",
+      "Payable to order",
+      "Not negotiable",
+      "Illegal"
     ],
-    "answer_index": 0
+    "answer": "Payable to bearer",
+    "topic": "Negotiable Instruments \u2022 Endorsement"
   },
   {
-    "id": "BLAW-AT1-Q118",
-    "topic": "Contracts",
-    "subtopic": "Discharge",
-    "stem": "A warranty in a contract is ____.",
+    "question": "General crossing of a cheque consists of: (item 1)",
     "options": [
-      "A minor term breach gives damages only",
-      "A major term essential to contract",
-      "Always implied",
-      "Void"
+      "Two parallel lines with or without words",
+      "Drawer\u2019s full signature only",
+      "Stamp duty",
+      "Revenue stamp only"
     ],
-    "answer_index": 0
+    "answer": "Two parallel lines with or without words",
+    "topic": "Negotiable Instruments \u2022 Crossing"
   },
   {
-    "id": "BLAW-AT1-Q119",
-    "topic": "Contracts",
-    "subtopic": "Remedies",
-    "stem": "If a party is forced into a contract under threat, the contract may be voidable for ____.",
+    "question": "General crossing of a cheque consists of: (item 2)",
     "options": [
-      "duress",
-      "mistake",
-      "frustration",
-      "agreement"
+      "Two parallel lines with or without words",
+      "Drawer\u2019s full signature only",
+      "Stamp duty",
+      "Revenue stamp only"
     ],
-    "answer_index": 0
+    "answer": "Two parallel lines with or without words",
+    "topic": "Negotiable Instruments \u2022 Crossing"
   },
   {
-    "id": "BLAW-AT1-Q120",
-    "topic": "Ethics & Law",
-    "subtopic": "Sources",
-    "stem": "Judicial precedent relies on the doctrine of ____.",
+    "question": "General crossing of a cheque consists of: (item 3)",
     "options": [
-      "stare decisis",
-      "caveat emptor",
-      "ultra vires",
-      "res ipsa loquitur"
+      "Two parallel lines with or without words",
+      "Drawer\u2019s full signature only",
+      "Stamp duty",
+      "Revenue stamp only"
     ],
-    "answer_index": 0
+    "answer": "Two parallel lines with or without words",
+    "topic": "Negotiable Instruments \u2022 Crossing"
   },
   {
-    "id": "BLAW-AT1-Q121",
-    "topic": "Ethics & Law",
-    "subtopic": "Courts",
-    "stem": "Which of the following is a source of law in Nigeria?",
+    "question": "General crossing of a cheque consists of: (item 4)",
     "options": [
-      "Customary law",
-      "Company policy",
-      "Parliamentary conventions",
-      "Managerial decisions"
+      "Two parallel lines with or without words",
+      "Drawer\u2019s full signature only",
+      "Stamp duty",
+      "Revenue stamp only"
     ],
-    "answer_index": 0
+    "answer": "Two parallel lines with or without words",
+    "topic": "Negotiable Instruments \u2022 Crossing"
   },
   {
-    "id": "BLAW-AT1-Q122",
-    "topic": "Ethics & Law",
-    "subtopic": "Ethics",
-    "stem": "Which of the following is a source of law in Nigeria?",
+    "question": "General crossing of a cheque consists of: (item 5)",
     "options": [
-      "Customary law",
-      "Company policy",
-      "Parliamentary conventions",
-      "Managerial decisions"
+      "Two parallel lines with or without words",
+      "Drawer\u2019s full signature only",
+      "Stamp duty",
+      "Revenue stamp only"
     ],
-    "answer_index": 0
+    "answer": "Two parallel lines with or without words",
+    "topic": "Negotiable Instruments \u2022 Crossing"
   },
   {
-    "id": "BLAW-AT1-Q123",
-    "topic": "Contracts",
-    "subtopic": "Formation",
-    "stem": "An invitation to treat is best illustrated by ____.",
+    "question": "General crossing of a cheque consists of: (item 6)",
     "options": [
-      "Goods displayed on a shelf",
-      "A signed contract",
-      "A court judgement",
-      "Payment for services"
+      "Two parallel lines with or without words",
+      "Drawer\u2019s full signature only",
+      "Stamp duty",
+      "Revenue stamp only"
     ],
-    "answer_index": 0
+    "answer": "Two parallel lines with or without words",
+    "topic": "Negotiable Instruments \u2022 Crossing"
   },
   {
-    "id": "BLAW-AT1-Q124",
-    "topic": "Contracts",
-    "subtopic": "Terms",
-    "stem": "A warranty in a contract is ____.",
+    "question": "General crossing of a cheque consists of: (item 7)",
     "options": [
-      "A minor term breach gives damages only",
-      "A major term essential to contract",
-      "Always implied",
-      "Void"
+      "Two parallel lines with or without words",
+      "Drawer\u2019s full signature only",
+      "Stamp duty",
+      "Revenue stamp only"
     ],
-    "answer_index": 0
+    "answer": "Two parallel lines with or without words",
+    "topic": "Negotiable Instruments \u2022 Crossing"
   },
   {
-    "id": "BLAW-AT1-Q125",
-    "topic": "Contracts",
-    "subtopic": "Discharge",
-    "stem": "If a party is forced into a contract under threat, the contract may be voidable for ____.",
+    "question": "General crossing of a cheque consists of: (item 8)",
     "options": [
-      "duress",
-      "mistake",
-      "frustration",
-      "agreement"
+      "Two parallel lines with or without words",
+      "Drawer\u2019s full signature only",
+      "Stamp duty",
+      "Revenue stamp only"
     ],
-    "answer_index": 0
+    "answer": "Two parallel lines with or without words",
+    "topic": "Negotiable Instruments \u2022 Crossing"
   },
   {
-    "id": "BLAW-AT1-Q126",
-    "topic": "Contracts",
-    "subtopic": "Remedies",
-    "stem": "If a party is forced into a contract under threat, the contract may be voidable for ____.",
+    "question": "General crossing of a cheque consists of: (item 9)",
     "options": [
-      "duress",
-      "mistake",
-      "frustration",
-      "agreement"
+      "Two parallel lines with or without words",
+      "Drawer\u2019s full signature only",
+      "Stamp duty",
+      "Revenue stamp only"
     ],
-    "answer_index": 0
+    "answer": "Two parallel lines with or without words",
+    "topic": "Negotiable Instruments \u2022 Crossing"
   },
   {
-    "id": "BLAW-AT1-Q127",
-    "topic": "Ethics & Law",
-    "subtopic": "Sources",
-    "stem": "Judicial precedent relies on the doctrine of ____.",
+    "question": "To succeed in negligence, claimant must prove:",
     "options": [
-      "stare decisis",
-      "caveat emptor",
-      "ultra vires",
-      "res ipsa loquitur"
+      "Duty, breach, causation and damage",
+      "Contract, breach, intention",
+      "Crime, duty, loss",
+      "Intention, malice, motive"
     ],
-    "answer_index": 0
+    "answer": "Duty, breach, causation and damage",
+    "topic": "Law of Tort (Negligence & Others) \u2022 Negligence"
   },
   {
-    "id": "BLAW-AT1-Q128",
-    "topic": "Ethics & Law",
-    "subtopic": "Courts",
-    "stem": "Judicial precedent relies on the doctrine of ____.",
+    "question": "Damages in tort aim to:",
     "options": [
-      "stare decisis",
-      "caveat emptor",
-      "ultra vires",
-      "res ipsa loquitur"
+      "Put claimant in position before the tort",
+      "Punish the defendant",
+      "Award profits",
+      "Confiscate property"
     ],
-    "answer_index": 0
+    "answer": "Put claimant in position before the tort",
+    "topic": "Law of Tort (Negligence & Others) \u2022 Remedies"
   },
   {
-    "id": "BLAW-AT1-Q129",
-    "topic": "Ethics & Law",
-    "subtopic": "Ethics",
-    "stem": "Judicial precedent relies on the doctrine of ____.",
+    "question": "Defence of volenti means:",
     "options": [
-      "stare decisis",
-      "caveat emptor",
-      "ultra vires",
-      "res ipsa loquitur"
+      "Willing assumption of risk",
+      "Inevitable accident",
+      "Act of God",
+      "Contributory negligence"
     ],
-    "answer_index": 0
+    "answer": "Willing assumption of risk",
+    "topic": "Law of Tort (Negligence & Others) \u2022 Defences"
   },
   {
-    "id": "BLAW-AT1-Q130",
-    "topic": "Contracts",
-    "subtopic": "Formation",
-    "stem": "A warranty in a contract is ____.",
+    "question": "Private nuisance protects:",
     "options": [
-      "A minor term breach gives damages only",
-      "A major term essential to contract",
-      "Always implied",
-      "Void"
+      "Use and enjoyment of land",
+      "Reputation",
+      "Freedom of movement",
+      "Trade marks"
     ],
-    "answer_index": 0
+    "answer": "Use and enjoyment of land",
+    "topic": "Law of Tort (Negligence & Others) \u2022 Nuisance"
   },
   {
-    "id": "BLAW-AT1-Q131",
-    "topic": "Contracts",
-    "subtopic": "Terms",
-    "stem": "A warranty in a contract is ____.",
+    "question": "An employer is vicariously liable for torts of an employee committed: (item 1)",
     "options": [
-      "A minor term breach gives damages only",
-      "A major term essential to contract",
-      "Always implied",
-      "Void"
+      "In the course of employment",
+      "Outside all employment",
+      "As an independent contractor",
+      "Only with criminal intent"
     ],
-    "answer_index": 0
+    "answer": "In the course of employment",
+    "topic": "Law of Tort (Negligence & Others) \u2022 Vicarious liability"
   },
   {
-    "id": "BLAW-AT1-Q132",
-    "topic": "Contracts",
-    "subtopic": "Discharge",
-    "stem": "An invitation to treat is best illustrated by ____.",
+    "question": "An employer is vicariously liable for torts of an employee committed: (item 2)",
     "options": [
-      "Goods displayed on a shelf",
-      "A signed contract",
-      "A court judgement",
-      "Payment for services"
+      "In the course of employment",
+      "Outside all employment",
+      "As an independent contractor",
+      "Only with criminal intent"
     ],
-    "answer_index": 0
+    "answer": "In the course of employment",
+    "topic": "Law of Tort (Negligence & Others) \u2022 Vicarious liability"
   },
   {
-    "id": "BLAW-AT1-Q133",
-    "topic": "Contracts",
-    "subtopic": "Remedies",
-    "stem": "If a party is forced into a contract under threat, the contract may be voidable for ____.",
+    "question": "An employer is vicariously liable for torts of an employee committed: (item 3)",
     "options": [
-      "duress",
-      "mistake",
-      "frustration",
-      "agreement"
+      "In the course of employment",
+      "Outside all employment",
+      "As an independent contractor",
+      "Only with criminal intent"
     ],
-    "answer_index": 0
+    "answer": "In the course of employment",
+    "topic": "Law of Tort (Negligence & Others) \u2022 Vicarious liability"
   },
   {
-    "id": "BLAW-AT1-Q134",
-    "topic": "Ethics & Law",
-    "subtopic": "Sources",
-    "stem": "Which is NOT a fundamental ethical principle for accountants?",
+    "question": "An employer is vicariously liable for torts of an employee committed: (item 4)",
     "options": [
-      "Profit maximization",
-      "Integrity",
-      "Objectivity",
-      "Confidentiality"
+      "In the course of employment",
+      "Outside all employment",
+      "As an independent contractor",
+      "Only with criminal intent"
     ],
-    "answer_index": 0
+    "answer": "In the course of employment",
+    "topic": "Law of Tort (Negligence & Others) \u2022 Vicarious liability"
   },
   {
-    "id": "BLAW-AT1-Q135",
-    "topic": "Ethics & Law",
-    "subtopic": "Courts",
-    "stem": "Which of the following is a source of law in Nigeria?",
+    "question": "An employer is vicariously liable for torts of an employee committed: (item 5)",
     "options": [
-      "Customary law",
-      "Company policy",
-      "Parliamentary conventions",
-      "Managerial decisions"
+      "In the course of employment",
+      "Outside all employment",
+      "As an independent contractor",
+      "Only with criminal intent"
     ],
-    "answer_index": 0
+    "answer": "In the course of employment",
+    "topic": "Law of Tort (Negligence & Others) \u2022 Vicarious liability"
   },
   {
-    "id": "BLAW-AT1-Q136",
-    "topic": "Ethics & Law",
-    "subtopic": "Ethics",
-    "stem": "Which is NOT a fundamental ethical principle for accountants?",
+    "question": "An employer is vicariously liable for torts of an employee committed: (item 6)",
     "options": [
-      "Profit maximization",
-      "Integrity",
-      "Objectivity",
-      "Confidentiality"
+      "In the course of employment",
+      "Outside all employment",
+      "As an independent contractor",
+      "Only with criminal intent"
     ],
-    "answer_index": 0
+    "answer": "In the course of employment",
+    "topic": "Law of Tort (Negligence & Others) \u2022 Vicarious liability"
   },
   {
-    "id": "BLAW-AT1-Q137",
-    "topic": "Contracts",
-    "subtopic": "Formation",
-    "stem": "Which element is essential for a valid contract?",
+    "question": "An employer is vicariously liable for torts of an employee committed: (item 7)",
     "options": [
-      "Consideration",
-      "Profit",
-      "Registration",
-      "Guarantee"
+      "In the course of employment",
+      "Outside all employment",
+      "As an independent contractor",
+      "Only with criminal intent"
     ],
-    "answer_index": 0
+    "answer": "In the course of employment",
+    "topic": "Law of Tort (Negligence & Others) \u2022 Vicarious liability"
   },
   {
-    "id": "BLAW-AT1-Q138",
-    "topic": "Contracts",
-    "subtopic": "Terms",
-    "stem": "A warranty in a contract is ____.",
+    "question": "An employer is vicariously liable for torts of an employee committed: (item 8)",
     "options": [
-      "A minor term breach gives damages only",
-      "A major term essential to contract",
-      "Always implied",
-      "Void"
+      "In the course of employment",
+      "Outside all employment",
+      "As an independent contractor",
+      "Only with criminal intent"
     ],
-    "answer_index": 0
+    "answer": "In the course of employment",
+    "topic": "Law of Tort (Negligence & Others) \u2022 Vicarious liability"
   },
   {
-    "id": "BLAW-AT1-Q139",
-    "topic": "Contracts",
-    "subtopic": "Discharge",
-    "stem": "A warranty in a contract is ____.",
+    "question": "An employer is vicariously liable for torts of an employee committed: (item 9)",
     "options": [
-      "A minor term breach gives damages only",
-      "A major term essential to contract",
-      "Always implied",
-      "Void"
+      "In the course of employment",
+      "Outside all employment",
+      "As an independent contractor",
+      "Only with criminal intent"
     ],
-    "answer_index": 0
+    "answer": "In the course of employment",
+    "topic": "Law of Tort (Negligence & Others) \u2022 Vicarious liability"
   },
   {
-    "id": "BLAW-AT1-Q140",
-    "topic": "Contracts",
-    "subtopic": "Remedies",
-    "stem": "An invitation to treat is best illustrated by ____.",
+    "question": "An employer is vicariously liable for torts of an employee committed: (item 10)",
     "options": [
-      "Goods displayed on a shelf",
-      "A signed contract",
-      "A court judgement",
-      "Payment for services"
+      "In the course of employment",
+      "Outside all employment",
+      "As an independent contractor",
+      "Only with criminal intent"
     ],
-    "answer_index": 0
+    "answer": "In the course of employment",
+    "topic": "Law of Tort (Negligence & Others) \u2022 Vicarious liability"
   },
   {
-    "id": "BLAW-AT1-Q141",
-    "topic": "Ethics & Law",
-    "subtopic": "Sources",
-    "stem": "Which is NOT a fundamental ethical principle for accountants?",
+    "question": "Partnership is a relation between persons carrying on business:",
     "options": [
-      "Profit maximization",
-      "Integrity",
-      "Objectivity",
-      "Confidentiality"
+      "In common with a view of profit",
+      "As a charity",
+      "As employees only",
+      "Under incorporation"
     ],
-    "answer_index": 0
+    "answer": "In common with a view of profit",
+    "topic": "Partnership \u2022 Nature"
   },
   {
-    "id": "BLAW-AT1-Q142",
-    "topic": "Ethics & Law",
-    "subtopic": "Courts",
-    "stem": "Which of the following is a source of law in Nigeria?",
+    "question": "A partner\u2019s implied authority allows:",
     "options": [
-      "Customary law",
-      "Company policy",
-      "Parliamentary conventions",
-      "Managerial decisions"
+      "Ordinary transactions of the firm\u2019s business",
+      "All acts including selling the firm\u2019s building",
+      "Borrowing unlimited sums always",
+      "Criminal acts"
     ],
-    "answer_index": 0
+    "answer": "Ordinary transactions of the firm\u2019s business",
+    "topic": "Partnership \u2022 Authority"
   },
   {
-    "id": "BLAW-AT1-Q143",
-    "topic": "Ethics & Law",
-    "subtopic": "Ethics",
-    "stem": "Which of the following is a source of law in Nigeria?",
+    "question": "Partners are:",
     "options": [
-      "Customary law",
-      "Company policy",
-      "Parliamentary conventions",
-      "Managerial decisions"
+      "Jointly and severally liable for firm debts",
+      "Not liable",
+      "Criminally liable by default",
+      "Only liable up to capital"
     ],
-    "answer_index": 0
+    "answer": "Jointly and severally liable for firm debts",
+    "topic": "Partnership \u2022 Liability"
   },
   {
-    "id": "BLAW-AT1-Q144",
-    "topic": "Contracts",
-    "subtopic": "Formation",
-    "stem": "Which element is essential for a valid contract?",
+    "question": "On admission of a new partner, liability for prior debts is: (item 1)",
     "options": [
-      "Consideration",
-      "Profit",
-      "Registration",
-      "Guarantee"
+      "Generally not imposed unless agreed (novation)",
+      "Automatic and unlimited",
+      "Criminal",
+      "Transferred to bankers"
     ],
-    "answer_index": 0
+    "answer": "Generally not imposed unless agreed (novation)",
+    "topic": "Partnership \u2022 Admission/Retirement"
   },
   {
-    "id": "BLAW-AT1-Q145",
-    "topic": "Contracts",
-    "subtopic": "Terms",
-    "stem": "A warranty in a contract is ____.",
+    "question": "On admission of a new partner, liability for prior debts is: (item 2)",
     "options": [
-      "A minor term breach gives damages only",
-      "A major term essential to contract",
-      "Always implied",
-      "Void"
+      "Generally not imposed unless agreed (novation)",
+      "Automatic and unlimited",
+      "Criminal",
+      "Transferred to bankers"
     ],
-    "answer_index": 0
+    "answer": "Generally not imposed unless agreed (novation)",
+    "topic": "Partnership \u2022 Admission/Retirement"
   },
   {
-    "id": "BLAW-AT1-Q146",
-    "topic": "Contracts",
-    "subtopic": "Discharge",
-    "stem": "Which is a remedy for breach of contract?",
+    "question": "On admission of a new partner, liability for prior debts is: (item 3)",
     "options": [
-      "Specific performance",
-      "Exemption clause",
-      "Misrepresentation",
-      "Illegality"
+      "Generally not imposed unless agreed (novation)",
+      "Automatic and unlimited",
+      "Criminal",
+      "Transferred to bankers"
     ],
-    "answer_index": 0
+    "answer": "Generally not imposed unless agreed (novation)",
+    "topic": "Partnership \u2022 Admission/Retirement"
   },
   {
-    "id": "BLAW-AT1-Q147",
-    "topic": "Contracts",
-    "subtopic": "Remedies",
-    "stem": "An invitation to treat is best illustrated by ____.",
+    "question": "On admission of a new partner, liability for prior debts is: (item 4)",
     "options": [
-      "Goods displayed on a shelf",
-      "A signed contract",
-      "A court judgement",
-      "Payment for services"
+      "Generally not imposed unless agreed (novation)",
+      "Automatic and unlimited",
+      "Criminal",
+      "Transferred to bankers"
     ],
-    "answer_index": 0
+    "answer": "Generally not imposed unless agreed (novation)",
+    "topic": "Partnership \u2022 Admission/Retirement"
   },
   {
-    "id": "BLAW-AT1-Q148",
-    "topic": "Ethics & Law",
-    "subtopic": "Sources",
-    "stem": "Judicial precedent relies on the doctrine of ____.",
+    "question": "On admission of a new partner, liability for prior debts is: (item 5)",
     "options": [
-      "stare decisis",
-      "caveat emptor",
-      "ultra vires",
-      "res ipsa loquitur"
+      "Generally not imposed unless agreed (novation)",
+      "Automatic and unlimited",
+      "Criminal",
+      "Transferred to bankers"
     ],
-    "answer_index": 0
+    "answer": "Generally not imposed unless agreed (novation)",
+    "topic": "Partnership \u2022 Admission/Retirement"
   },
   {
-    "id": "BLAW-AT1-Q149",
-    "topic": "Ethics & Law",
-    "subtopic": "Courts",
-    "stem": "The highest court in Nigeria is the ____.",
+    "question": "On admission of a new partner, liability for prior debts is: (item 6)",
     "options": [
-      "Supreme Court",
-      "High Court",
-      "Court of Appeal",
-      "Magistrates' Court"
+      "Generally not imposed unless agreed (novation)",
+      "Automatic and unlimited",
+      "Criminal",
+      "Transferred to bankers"
     ],
-    "answer_index": 0
+    "answer": "Generally not imposed unless agreed (novation)",
+    "topic": "Partnership \u2022 Admission/Retirement"
   },
   {
-    "id": "BLAW-AT1-Q150",
-    "topic": "Ethics & Law",
-    "subtopic": "Ethics",
-    "stem": "Which of the following is a source of law in Nigeria?",
+    "question": "On admission of a new partner, liability for prior debts is: (item 7)",
     "options": [
-      "Customary law",
-      "Company policy",
-      "Parliamentary conventions",
-      "Managerial decisions"
+      "Generally not imposed unless agreed (novation)",
+      "Automatic and unlimited",
+      "Criminal",
+      "Transferred to bankers"
     ],
-    "answer_index": 0
+    "answer": "Generally not imposed unless agreed (novation)",
+    "topic": "Partnership \u2022 Admission/Retirement"
   },
   {
-    "id": "BLAW-AT1-Q151",
-    "topic": "Contracts",
-    "subtopic": "Formation",
-    "stem": "Which is a remedy for breach of contract?",
+    "question": "On admission of a new partner, liability for prior debts is: (item 8)",
     "options": [
-      "Specific performance",
-      "Exemption clause",
-      "Misrepresentation",
-      "Illegality"
+      "Generally not imposed unless agreed (novation)",
+      "Automatic and unlimited",
+      "Criminal",
+      "Transferred to bankers"
     ],
-    "answer_index": 0
+    "answer": "Generally not imposed unless agreed (novation)",
+    "topic": "Partnership \u2022 Admission/Retirement"
   },
   {
-    "id": "BLAW-AT1-Q152",
-    "topic": "Contracts",
-    "subtopic": "Terms",
-    "stem": "An invitation to treat is best illustrated by ____.",
+    "question": "On admission of a new partner, liability for prior debts is: (item 9)",
     "options": [
-      "Goods displayed on a shelf",
-      "A signed contract",
-      "A court judgement",
-      "Payment for services"
+      "Generally not imposed unless agreed (novation)",
+      "Automatic and unlimited",
+      "Criminal",
+      "Transferred to bankers"
     ],
-    "answer_index": 0
+    "answer": "Generally not imposed unless agreed (novation)",
+    "topic": "Partnership \u2022 Admission/Retirement"
   },
   {
-    "id": "BLAW-AT1-Q153",
-    "topic": "Contracts",
-    "subtopic": "Discharge",
-    "stem": "An invitation to treat is best illustrated by ____.",
+    "question": "A company is incorporated by:",
     "options": [
-      "Goods displayed on a shelf",
-      "A signed contract",
-      "A court judgement",
-      "Payment for services"
+      "Registration under CAMA with CAC",
+      "Royal charter",
+      "Customary appointment",
+      "Court declaration"
     ],
-    "answer_index": 0
+    "answer": "Registration under CAMA with CAC",
+    "topic": "Company Law (Basics) \u2022 Formation"
   },
   {
-    "id": "BLAW-AT1-Q154",
-    "topic": "Contracts",
-    "subtopic": "Remedies",
-    "stem": "If a party is forced into a contract under threat, the contract may be voidable for ____.",
+    "question": "A company on incorporation becomes:",
     "options": [
-      "duress",
-      "mistake",
-      "frustration",
-      "agreement"
+      "A separate legal person",
+      "An agency of shareholders",
+      "A partnership",
+      "A government department"
     ],
-    "answer_index": 0
+    "answer": "A separate legal person",
+    "topic": "Company Law (Basics) \u2022 Personality"
   },
   {
-    "id": "BLAW-AT1-Q155",
-    "topic": "Ethics & Law",
-    "subtopic": "Sources",
-    "stem": "Which is NOT a fundamental ethical principle for accountants?",
+    "question": "Directors owe duties of:",
     "options": [
-      "Profit maximization",
-      "Integrity",
-      "Objectivity",
-      "Confidentiality"
+      "Care, skill, diligence and fiduciary loyalty",
+      "Only to employees",
+      "Only to themselves",
+      "None"
     ],
-    "answer_index": 0
+    "answer": "Care, skill, diligence and fiduciary loyalty",
+    "topic": "Company Law (Basics) \u2022 Directors"
   },
   {
-    "id": "BLAW-AT1-Q156",
-    "topic": "Ethics & Law",
-    "subtopic": "Courts",
-    "stem": "Which of the following is a source of law in Nigeria?",
+    "question": "Ordinary business of an AGM includes:",
     "options": [
-      "Customary law",
-      "Company policy",
-      "Parliamentary conventions",
-      "Managerial decisions"
+      "Presentation of financial statements and declaration of dividend",
+      "Appointment of judges",
+      "Criminal trials",
+      "Approval of police budget"
     ],
-    "answer_index": 0
+    "answer": "Presentation of financial statements and declaration of dividend",
+    "topic": "Company Law (Basics) \u2022 Meetings"
   },
   {
-    "id": "BLAW-AT1-Q157",
-    "topic": "Ethics & Law",
-    "subtopic": "Ethics",
-    "stem": "Which of the following is a source of law in Nigeria?",
+    "question": "Share capital is:",
     "options": [
-      "Customary law",
-      "Company policy",
-      "Parliamentary conventions",
-      "Managerial decisions"
+      "The equity contributed by members",
+      "Total assets",
+      "Bank balance",
+      "Net profit"
     ],
-    "answer_index": 0
+    "answer": "The equity contributed by members",
+    "topic": "Company Law (Basics) \u2022 Capital"
   },
   {
-    "id": "BLAW-AT1-Q158",
-    "topic": "Contracts",
-    "subtopic": "Formation",
-    "stem": "A warranty in a contract is ____.",
+    "question": "The memorandum/articles of association primarily: (item 1)",
     "options": [
-      "A minor term breach gives damages only",
-      "A major term essential to contract",
-      "Always implied",
-      "Void"
+      "Regulate the company\u2019s internal management and objects",
+      "Serve as tax returns",
+      "Create criminal offences",
+      "Replace board resolutions"
     ],
-    "answer_index": 0
+    "answer": "Regulate the company\u2019s internal management and objects",
+    "topic": "Company Law (Basics) \u2022 Corporate acts"
   },
   {
-    "id": "BLAW-AT1-Q159",
-    "topic": "Contracts",
-    "subtopic": "Terms",
-    "stem": "An invitation to treat is best illustrated by ____.",
+    "question": "The memorandum/articles of association primarily: (item 2)",
     "options": [
-      "Goods displayed on a shelf",
-      "A signed contract",
-      "A court judgement",
-      "Payment for services"
+      "Regulate the company\u2019s internal management and objects",
+      "Serve as tax returns",
+      "Create criminal offences",
+      "Replace board resolutions"
     ],
-    "answer_index": 0
+    "answer": "Regulate the company\u2019s internal management and objects",
+    "topic": "Company Law (Basics) \u2022 Corporate acts"
   },
   {
-    "id": "BLAW-AT1-Q160",
-    "topic": "Contracts",
-    "subtopic": "Discharge",
-    "stem": "Which element is essential for a valid contract?",
+    "question": "The memorandum/articles of association primarily: (item 3)",
     "options": [
-      "Consideration",
-      "Profit",
-      "Registration",
-      "Guarantee"
+      "Regulate the company\u2019s internal management and objects",
+      "Serve as tax returns",
+      "Create criminal offences",
+      "Replace board resolutions"
     ],
-    "answer_index": 0
+    "answer": "Regulate the company\u2019s internal management and objects",
+    "topic": "Company Law (Basics) \u2022 Corporate acts"
   },
   {
-    "id": "BLAW-AT1-Q161",
-    "topic": "Contracts",
-    "subtopic": "Remedies",
-    "stem": "A warranty in a contract is ____.",
+    "question": "The memorandum/articles of association primarily: (item 4)",
     "options": [
-      "A minor term breach gives damages only",
-      "A major term essential to contract",
-      "Always implied",
-      "Void"
+      "Regulate the company\u2019s internal management and objects",
+      "Serve as tax returns",
+      "Create criminal offences",
+      "Replace board resolutions"
     ],
-    "answer_index": 0
+    "answer": "Regulate the company\u2019s internal management and objects",
+    "topic": "Company Law (Basics) \u2022 Corporate acts"
   },
   {
-    "id": "BLAW-AT1-Q162",
-    "topic": "Ethics & Law",
-    "subtopic": "Sources",
-    "stem": "Which of the following is a source of law in Nigeria?",
+    "question": "The memorandum/articles of association primarily: (item 5)",
     "options": [
-      "Customary law",
-      "Company policy",
-      "Parliamentary conventions",
-      "Managerial decisions"
+      "Regulate the company\u2019s internal management and objects",
+      "Serve as tax returns",
+      "Create criminal offences",
+      "Replace board resolutions"
     ],
-    "answer_index": 0
+    "answer": "Regulate the company\u2019s internal management and objects",
+    "topic": "Company Law (Basics) \u2022 Corporate acts"
   },
   {
-    "id": "BLAW-AT1-Q163",
-    "topic": "Ethics & Law",
-    "subtopic": "Courts",
-    "stem": "Judicial precedent relies on the doctrine of ____.",
+    "question": "The memorandum/articles of association primarily: (item 6)",
     "options": [
-      "stare decisis",
-      "caveat emptor",
-      "ultra vires",
-      "res ipsa loquitur"
+      "Regulate the company\u2019s internal management and objects",
+      "Serve as tax returns",
+      "Create criminal offences",
+      "Replace board resolutions"
     ],
-    "answer_index": 0
+    "answer": "Regulate the company\u2019s internal management and objects",
+    "topic": "Company Law (Basics) \u2022 Corporate acts"
   },
   {
-    "id": "BLAW-AT1-Q164",
-    "topic": "Ethics & Law",
-    "subtopic": "Ethics",
-    "stem": "Judicial precedent relies on the doctrine of ____.",
+    "question": "The memorandum/articles of association primarily: (item 7)",
     "options": [
-      "stare decisis",
-      "caveat emptor",
-      "ultra vires",
-      "res ipsa loquitur"
+      "Regulate the company\u2019s internal management and objects",
+      "Serve as tax returns",
+      "Create criminal offences",
+      "Replace board resolutions"
     ],
-    "answer_index": 0
+    "answer": "Regulate the company\u2019s internal management and objects",
+    "topic": "Company Law (Basics) \u2022 Corporate acts"
   },
   {
-    "id": "BLAW-AT1-Q165",
-    "topic": "Contracts",
-    "subtopic": "Formation",
-    "stem": "If a party is forced into a contract under threat, the contract may be voidable for ____.",
+    "question": "The memorandum/articles of association primarily: (item 8)",
     "options": [
-      "duress",
-      "mistake",
-      "frustration",
-      "agreement"
+      "Regulate the company\u2019s internal management and objects",
+      "Serve as tax returns",
+      "Create criminal offences",
+      "Replace board resolutions"
     ],
-    "answer_index": 0
+    "answer": "Regulate the company\u2019s internal management and objects",
+    "topic": "Company Law (Basics) \u2022 Corporate acts"
   },
   {
-    "id": "BLAW-AT1-Q166",
-    "topic": "Contracts",
-    "subtopic": "Terms",
-    "stem": "Which is a remedy for breach of contract?",
+    "question": "The memorandum/articles of association primarily: (item 9)",
     "options": [
-      "Specific performance",
-      "Exemption clause",
-      "Misrepresentation",
-      "Illegality"
+      "Regulate the company\u2019s internal management and objects",
+      "Serve as tax returns",
+      "Create criminal offences",
+      "Replace board resolutions"
     ],
-    "answer_index": 0
+    "answer": "Regulate the company\u2019s internal management and objects",
+    "topic": "Company Law (Basics) \u2022 Corporate acts"
   },
   {
-    "id": "BLAW-AT1-Q167",
-    "topic": "Contracts",
-    "subtopic": "Discharge",
-    "stem": "Which element is essential for a valid contract?",
+    "question": "The memorandum/articles of association primarily: (item 10)",
     "options": [
-      "Consideration",
-      "Profit",
-      "Registration",
-      "Guarantee"
+      "Regulate the company\u2019s internal management and objects",
+      "Serve as tax returns",
+      "Create criminal offences",
+      "Replace board resolutions"
     ],
-    "answer_index": 0
+    "answer": "Regulate the company\u2019s internal management and objects",
+    "topic": "Company Law (Basics) \u2022 Corporate acts"
   },
   {
-    "id": "BLAW-AT1-Q168",
-    "topic": "Contracts",
-    "subtopic": "Remedies",
-    "stem": "Which is a remedy for breach of contract?",
+    "question": "The memorandum/articles of association primarily: (item 11)",
     "options": [
-      "Specific performance",
-      "Exemption clause",
-      "Misrepresentation",
-      "Illegality"
+      "Regulate the company\u2019s internal management and objects",
+      "Serve as tax returns",
+      "Create criminal offences",
+      "Replace board resolutions"
     ],
-    "answer_index": 0
+    "answer": "Regulate the company\u2019s internal management and objects",
+    "topic": "Company Law (Basics) \u2022 Corporate acts"
   },
   {
-    "id": "BLAW-AT1-Q169",
-    "topic": "Ethics & Law",
-    "subtopic": "Sources",
-    "stem": "Which is NOT a fundamental ethical principle for accountants?",
+    "question": "A contract of employment is:",
     "options": [
-      "Profit maximization",
-      "Integrity",
-      "Objectivity",
-      "Confidentiality"
+      "A contract of service between employer and employee",
+      "A contract for services with independent contractor",
+      "A deed poll",
+      "A criminal bond"
     ],
-    "answer_index": 0
+    "answer": "A contract of service between employer and employee",
+    "topic": "Employment/Labour \u2022 Contract"
   },
   {
-    "id": "BLAW-AT1-Q170",
-    "topic": "Ethics & Law",
-    "subtopic": "Courts",
-    "stem": "Which is NOT a fundamental ethical principle for accountants?",
+    "question": "Wrongful dismissal occurs where:",
     "options": [
-      "Profit maximization",
-      "Integrity",
-      "Objectivity",
-      "Confidentiality"
+      "Termination breaches the employment contract",
+      "Employee resigns voluntarily",
+      "Employer pays salary",
+      "A crime is alleged"
     ],
-    "answer_index": 0
+    "answer": "Termination breaches the employment contract",
+    "topic": "Employment/Labour \u2022 Termination"
   },
   {
-    "id": "BLAW-AT1-Q171",
-    "topic": "Ethics & Law",
-    "subtopic": "Ethics",
-    "stem": "The highest court in Nigeria is the ____.",
+    "question": "Statutory deductions often include:",
     "options": [
-      "Supreme Court",
-      "High Court",
-      "Court of Appeal",
-      "Magistrates' Court"
+      "PAYE and pension contributions",
+      "Union donations",
+      "Voluntary tips",
+      "Transport allowance"
     ],
-    "answer_index": 0
+    "answer": "PAYE and pension contributions",
+    "topic": "Employment/Labour \u2022 Wages"
   },
   {
-    "id": "BLAW-AT1-Q172",
-    "topic": "Contracts",
-    "subtopic": "Formation",
-    "stem": "A warranty in a contract is ____.",
+    "question": "Employers owe a duty to:",
     "options": [
-      "A minor term breach gives damages only",
-      "A major term essential to contract",
-      "Always implied",
-      "Void"
+      "Provide safe system of work",
+      "Guarantee profits",
+      "Provide free lunch",
+      "Provide housing"
     ],
-    "answer_index": 0
+    "answer": "Provide safe system of work",
+    "topic": "Employment/Labour \u2022 Health & Safety"
   },
   {
-    "id": "BLAW-AT1-Q173",
-    "topic": "Contracts",
-    "subtopic": "Terms",
-    "stem": "An invitation to treat is best illustrated by ____.",
+    "question": "Which is typically a statutory employment right in Nigeria? (item 1)",
     "options": [
-      "Goods displayed on a shelf",
-      "A signed contract",
-      "A court judgement",
-      "Payment for services"
+      "Annual leave/holiday pay under labour laws",
+      "Company car for all staff",
+      "Stock options",
+      "Overtime bonus for all roles"
     ],
-    "answer_index": 0
+    "answer": "Annual leave/holiday pay under labour laws",
+    "topic": "Employment/Labour \u2022 Leave/Benefits"
   },
   {
-    "id": "BLAW-AT1-Q174",
-    "topic": "Contracts",
-    "subtopic": "Discharge",
-    "stem": "Which is a remedy for breach of contract?",
+    "question": "Which is typically a statutory employment right in Nigeria? (item 2)",
     "options": [
-      "Specific performance",
-      "Exemption clause",
-      "Misrepresentation",
-      "Illegality"
+      "Annual leave/holiday pay under labour laws",
+      "Company car for all staff",
+      "Stock options",
+      "Overtime bonus for all roles"
     ],
-    "answer_index": 0
+    "answer": "Annual leave/holiday pay under labour laws",
+    "topic": "Employment/Labour \u2022 Leave/Benefits"
   },
   {
-    "id": "BLAW-AT1-Q175",
-    "topic": "Contracts",
-    "subtopic": "Remedies",
-    "stem": "Which is a remedy for breach of contract?",
+    "question": "Which is typically a statutory employment right in Nigeria? (item 3)",
     "options": [
-      "Specific performance",
-      "Exemption clause",
-      "Misrepresentation",
-      "Illegality"
+      "Annual leave/holiday pay under labour laws",
+      "Company car for all staff",
+      "Stock options",
+      "Overtime bonus for all roles"
     ],
-    "answer_index": 0
+    "answer": "Annual leave/holiday pay under labour laws",
+    "topic": "Employment/Labour \u2022 Leave/Benefits"
   },
   {
-    "id": "BLAW-AT1-Q176",
-    "topic": "Ethics & Law",
-    "subtopic": "Sources",
-    "stem": "Which is NOT a fundamental ethical principle for accountants?",
+    "question": "Which is typically a statutory employment right in Nigeria? (item 4)",
     "options": [
-      "Profit maximization",
-      "Integrity",
-      "Objectivity",
-      "Confidentiality"
+      "Annual leave/holiday pay under labour laws",
+      "Company car for all staff",
+      "Stock options",
+      "Overtime bonus for all roles"
     ],
-    "answer_index": 0
+    "answer": "Annual leave/holiday pay under labour laws",
+    "topic": "Employment/Labour \u2022 Leave/Benefits"
   },
   {
-    "id": "BLAW-AT1-Q177",
-    "topic": "Ethics & Law",
-    "subtopic": "Courts",
-    "stem": "Which is NOT a fundamental ethical principle for accountants?",
+    "question": "Which is typically a statutory employment right in Nigeria? (item 5)",
     "options": [
-      "Profit maximization",
-      "Integrity",
-      "Objectivity",
-      "Confidentiality"
+      "Annual leave/holiday pay under labour laws",
+      "Company car for all staff",
+      "Stock options",
+      "Overtime bonus for all roles"
     ],
-    "answer_index": 0
+    "answer": "Annual leave/holiday pay under labour laws",
+    "topic": "Employment/Labour \u2022 Leave/Benefits"
   },
   {
-    "id": "BLAW-AT1-Q178",
-    "topic": "Ethics & Law",
-    "subtopic": "Ethics",
-    "stem": "Judicial precedent relies on the doctrine of ____.",
+    "question": "Which is typically a statutory employment right in Nigeria? (item 6)",
     "options": [
-      "stare decisis",
-      "caveat emptor",
-      "ultra vires",
-      "res ipsa loquitur"
+      "Annual leave/holiday pay under labour laws",
+      "Company car for all staff",
+      "Stock options",
+      "Overtime bonus for all roles"
     ],
-    "answer_index": 0
+    "answer": "Annual leave/holiday pay under labour laws",
+    "topic": "Employment/Labour \u2022 Leave/Benefits"
   },
   {
-    "id": "BLAW-AT1-Q179",
-    "topic": "Contracts",
-    "subtopic": "Formation",
-    "stem": "A warranty in a contract is ____.",
+    "question": "Utmost good faith (uberrimae fidei) requires:",
     "options": [
-      "A minor term breach gives damages only",
-      "A major term essential to contract",
-      "Always implied",
-      "Void"
+      "Full disclosure of material facts",
+      "Partial disclosure",
+      "No disclosure",
+      "Disclosure by insurer only"
     ],
-    "answer_index": 0
+    "answer": "Full disclosure of material facts",
+    "topic": "Insurance \u2022 Principles"
   },
   {
-    "id": "BLAW-AT1-Q180",
-    "topic": "Contracts",
-    "subtopic": "Terms",
-    "stem": "Which is a remedy for breach of contract?",
+    "question": "To insure, a party must have:",
     "options": [
-      "Specific performance",
-      "Exemption clause",
-      "Misrepresentation",
-      "Illegality"
+      "Insurable interest in the subject matter",
+      "A bank account",
+      "A partnership",
+      "A court order"
     ],
-    "answer_index": 0
+    "answer": "Insurable interest in the subject matter",
+    "topic": "Insurance \u2022 Insurable interest"
   },
   {
-    "id": "BLAW-AT1-Q181",
-    "topic": "Contracts",
-    "subtopic": "Discharge",
-    "stem": "Which element is essential for a valid contract?",
+    "question": "Principle of indemnity means:",
     "options": [
-      "Consideration",
-      "Profit",
-      "Registration",
-      "Guarantee"
+      "Restoration to pre\u2011loss position",
+      "Profit from loss",
+      "Punitive damages",
+      "Fixed payout always"
     ],
-    "answer_index": 0
+    "answer": "Restoration to pre\u2011loss position",
+    "topic": "Insurance \u2022 Indemnity"
   },
   {
-    "id": "BLAW-AT1-Q182",
-    "topic": "Contracts",
-    "subtopic": "Remedies",
-    "stem": "An invitation to treat is best illustrated by ____.",
+    "question": "After indemnifying the insured, the insurer\u2019s right to sue the wrongdoer is called: (item 1)",
     "options": [
-      "Goods displayed on a shelf",
-      "A signed contract",
-      "A court judgement",
-      "Payment for services"
+      "Subrogation",
+      "Contribution",
+      "Assignment",
+      "Novation"
     ],
-    "answer_index": 0
+    "answer": "Subrogation",
+    "topic": "Insurance \u2022 Subrogation/Contribution"
   },
   {
-    "id": "BLAW-AT1-Q183",
-    "topic": "Ethics & Law",
-    "subtopic": "Sources",
-    "stem": "The highest court in Nigeria is the ____.",
+    "question": "After indemnifying the insured, the insurer\u2019s right to sue the wrongdoer is called: (item 2)",
     "options": [
-      "Supreme Court",
-      "High Court",
-      "Court of Appeal",
-      "Magistrates' Court"
+      "Subrogation",
+      "Contribution",
+      "Assignment",
+      "Novation"
     ],
-    "answer_index": 0
+    "answer": "Subrogation",
+    "topic": "Insurance \u2022 Subrogation/Contribution"
   },
   {
-    "id": "BLAW-AT1-Q184",
-    "topic": "Ethics & Law",
-    "subtopic": "Courts",
-    "stem": "Which of the following is a source of law in Nigeria?",
+    "question": "After indemnifying the insured, the insurer\u2019s right to sue the wrongdoer is called: (item 3)",
     "options": [
-      "Customary law",
-      "Company policy",
-      "Parliamentary conventions",
-      "Managerial decisions"
+      "Subrogation",
+      "Contribution",
+      "Assignment",
+      "Novation"
     ],
-    "answer_index": 0
+    "answer": "Subrogation",
+    "topic": "Insurance \u2022 Subrogation/Contribution"
   },
   {
-    "id": "BLAW-AT1-Q185",
-    "topic": "Ethics & Law",
-    "subtopic": "Ethics",
-    "stem": "Which of the following is a source of law in Nigeria?",
+    "question": "After indemnifying the insured, the insurer\u2019s right to sue the wrongdoer is called: (item 4)",
     "options": [
-      "Customary law",
-      "Company policy",
-      "Parliamentary conventions",
-      "Managerial decisions"
+      "Subrogation",
+      "Contribution",
+      "Assignment",
+      "Novation"
     ],
-    "answer_index": 0
+    "answer": "Subrogation",
+    "topic": "Insurance \u2022 Subrogation/Contribution"
   },
   {
-    "id": "BLAW-AT1-Q186",
-    "topic": "Contracts",
-    "subtopic": "Formation",
-    "stem": "A warranty in a contract is ____.",
+    "question": "After indemnifying the insured, the insurer\u2019s right to sue the wrongdoer is called: (item 5)",
     "options": [
-      "A minor term breach gives damages only",
-      "A major term essential to contract",
-      "Always implied",
-      "Void"
+      "Subrogation",
+      "Contribution",
+      "Assignment",
+      "Novation"
     ],
-    "answer_index": 0
+    "answer": "Subrogation",
+    "topic": "Insurance \u2022 Subrogation/Contribution"
   },
   {
-    "id": "BLAW-AT1-Q187",
-    "topic": "Contracts",
-    "subtopic": "Terms",
-    "stem": "If a party is forced into a contract under threat, the contract may be voidable for ____.",
+    "question": "A debtor may be adjudged bankrupt when:",
     "options": [
-      "duress",
-      "mistake",
-      "frustration",
-      "agreement"
+      "Unable to pay debts as they fall due under the law",
+      "Business is unprofitable",
+      "Directors resign",
+      "Taxes increase"
     ],
-    "answer_index": 0
+    "answer": "Unable to pay debts as they fall due under the law",
+    "topic": "Insolvency/Bankruptcy \u2022 Bankruptcy"
   },
   {
-    "id": "BLAW-AT1-Q188",
-    "topic": "Contracts",
-    "subtopic": "Discharge",
-    "stem": "If a party is forced into a contract under threat, the contract may be voidable for ____.",
+    "question": "A company may be wound up by:",
     "options": [
-      "duress",
-      "mistake",
-      "frustration",
-      "agreement"
+      "The court, voluntarily by members/creditors, or under supervision",
+      "Only by the President",
+      "Auditors alone",
+      "Police"
     ],
-    "answer_index": 0
+    "answer": "The court, voluntarily by members/creditors, or under supervision",
+    "topic": "Insolvency/Bankruptcy \u2022 Winding up"
   },
   {
-    "id": "BLAW-AT1-Q189",
-    "topic": "Contracts",
-    "subtopic": "Remedies",
-    "stem": "A warranty in a contract is ____.",
+    "question": "A liquidator\u2019s duty is to:",
     "options": [
-      "A minor term breach gives damages only",
-      "A major term essential to contract",
-      "Always implied",
-      "Void"
+      "Collect and realise assets and distribute to creditors",
+      "Prosecute criminals",
+      "Run the company forever",
+      "Appoint judges"
     ],
-    "answer_index": 0
+    "answer": "Collect and realise assets and distribute to creditors",
+    "topic": "Insolvency/Bankruptcy \u2022 Liquidator"
   },
   {
-    "id": "BLAW-AT1-Q190",
-    "topic": "Ethics & Law",
-    "subtopic": "Sources",
-    "stem": "The highest court in Nigeria is the ____.",
+    "question": "Which claim ranks first on liquidation distributions? (item 1)",
     "options": [
-      "Supreme Court",
-      "High Court",
-      "Court of Appeal",
-      "Magistrates' Court"
+      "Secured creditors (subject to fixed charges and costs)",
+      "Ordinary shareholders",
+      "Trade creditors always",
+      "Directors\u2019 bonuses"
     ],
-    "answer_index": 0
+    "answer": "Secured creditors (subject to fixed charges and costs)",
+    "topic": "Insolvency/Bankruptcy \u2022 Priority"
   },
   {
-    "id": "BLAW-AT1-Q191",
-    "topic": "Ethics & Law",
-    "subtopic": "Courts",
-    "stem": "Which of the following is a source of law in Nigeria?",
+    "question": "Which claim ranks first on liquidation distributions? (item 2)",
     "options": [
-      "Customary law",
-      "Company policy",
-      "Parliamentary conventions",
-      "Managerial decisions"
+      "Secured creditors (subject to fixed charges and costs)",
+      "Ordinary shareholders",
+      "Trade creditors always",
+      "Directors\u2019 bonuses"
     ],
-    "answer_index": 0
+    "answer": "Secured creditors (subject to fixed charges and costs)",
+    "topic": "Insolvency/Bankruptcy \u2022 Priority"
   },
   {
-    "id": "BLAW-AT1-Q192",
-    "topic": "Ethics & Law",
-    "subtopic": "Ethics",
-    "stem": "Which of the following is a source of law in Nigeria?",
+    "question": "Which claim ranks first on liquidation distributions? (item 3)",
     "options": [
-      "Customary law",
-      "Company policy",
-      "Parliamentary conventions",
-      "Managerial decisions"
+      "Secured creditors (subject to fixed charges and costs)",
+      "Ordinary shareholders",
+      "Trade creditors always",
+      "Directors\u2019 bonuses"
     ],
-    "answer_index": 0
+    "answer": "Secured creditors (subject to fixed charges and costs)",
+    "topic": "Insolvency/Bankruptcy \u2022 Priority"
   },
   {
-    "id": "BLAW-AT1-Q193",
-    "topic": "Contracts",
-    "subtopic": "Formation",
-    "stem": "A warranty in a contract is ____.",
+    "question": "Which claim ranks first on liquidation distributions? (item 4)",
     "options": [
-      "A minor term breach gives damages only",
-      "A major term essential to contract",
-      "Always implied",
-      "Void"
+      "Secured creditors (subject to fixed charges and costs)",
+      "Ordinary shareholders",
+      "Trade creditors always",
+      "Directors\u2019 bonuses"
     ],
-    "answer_index": 0
+    "answer": "Secured creditors (subject to fixed charges and costs)",
+    "topic": "Insolvency/Bankruptcy \u2022 Priority"
   },
   {
-    "id": "BLAW-AT1-Q194",
-    "topic": "Contracts",
-    "subtopic": "Terms",
-    "stem": "Which element is essential for a valid contract?",
+    "question": "Which claim ranks first on liquidation distributions? (item 5)",
     "options": [
-      "Consideration",
-      "Profit",
-      "Registration",
-      "Guarantee"
+      "Secured creditors (subject to fixed charges and costs)",
+      "Ordinary shareholders",
+      "Trade creditors always",
+      "Directors\u2019 bonuses"
     ],
-    "answer_index": 0
-  },
-  {
-    "id": "BLAW-AT1-Q195",
-    "topic": "Contracts",
-    "subtopic": "Discharge",
-    "stem": "An invitation to treat is best illustrated by ____.",
-    "options": [
-      "Goods displayed on a shelf",
-      "A signed contract",
-      "A court judgement",
-      "Payment for services"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "BLAW-AT1-Q196",
-    "topic": "Contracts",
-    "subtopic": "Remedies",
-    "stem": "Which is a remedy for breach of contract?",
-    "options": [
-      "Specific performance",
-      "Exemption clause",
-      "Misrepresentation",
-      "Illegality"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "BLAW-AT1-Q197",
-    "topic": "Ethics & Law",
-    "subtopic": "Sources",
-    "stem": "Judicial precedent relies on the doctrine of ____.",
-    "options": [
-      "stare decisis",
-      "caveat emptor",
-      "ultra vires",
-      "res ipsa loquitur"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "BLAW-AT1-Q198",
-    "topic": "Ethics & Law",
-    "subtopic": "Courts",
-    "stem": "The highest court in Nigeria is the ____.",
-    "options": [
-      "Supreme Court",
-      "High Court",
-      "Court of Appeal",
-      "Magistrates' Court"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "BLAW-AT1-Q199",
-    "topic": "Ethics & Law",
-    "subtopic": "Ethics",
-    "stem": "Which is NOT a fundamental ethical principle for accountants?",
-    "options": [
-      "Profit maximization",
-      "Integrity",
-      "Objectivity",
-      "Confidentiality"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "BLAW-AT1-Q200",
-    "topic": "Contracts",
-    "subtopic": "Formation",
-    "stem": "If a party is forced into a contract under threat, the contract may be voidable for ____.",
-    "options": [
-      "duress",
-      "mistake",
-      "frustration",
-      "agreement"
-    ],
-    "answer_index": 0
+    "answer": "Secured creditors (subject to fixed charges and costs)",
+    "topic": "Insolvency/Bankruptcy \u2022 Priority"
   }
 ]
