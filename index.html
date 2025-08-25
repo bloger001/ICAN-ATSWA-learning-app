@@ -4,113 +4,72 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>ICAN ATSWA Prep</title>
-  <link rel="stylesheet" href="./assets/app.css?v=44"/>
-  <style>
-    .grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
-    .hero{padding:16px;border-radius:12px;background:#101316;color:#fff;margin:12px 0}
-    .muted{opacity:.85}
-    .tile{display:block;padding:16px;border-radius:12px;background:#151a1f;border:1px solid #20252b;color:#e9eef6;text-decoration:none}
-    .tile:hover{border-color:#2a6cff}
-    .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
-    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:#2a6cff;color:#fff;text-decoration:none;border:0;cursor:pointer}
-    .btn.ghost{background:#222}
-    .small{font-size:.9rem}
-    header{display:flex;justify-content:space-between;align-items:center;margin:10px 0 6px}
-  </style>
+  <link rel="stylesheet" href="./assets/app.css?v=50"/>
 </head>
 <body>
   <div class="wrap">
-
-    <header>
-      <h1>ICAN ATSWA Prep</h1>
-      <div class="row">
-        <span id="signedBadge" class="muted small">Not signed in</span>
-        <!-- Button ALWAYS works via fallback handler defined below -->
-        <button id="btnSignIn" class="btn" onclick="window.__fallbackSignIn && window.__fallbackSignIn()">Continue with Google</button>
-        <button id="btnSignOut" class="btn ghost" style="display:none">Sign out</button>
-      </div>
+    <header class="space-between" style="align-items:center">
+      <h1>ICAN ATSWA</h1>
+      <div class="muted" id="signedBadge">Not signed in</div>
     </header>
 
-    <!-- Author attribution -->
-    <section class="hero">
-      <p class="muted small">
-        Built by fellow accounting student <strong>Silva Brutus (NSUK)</strong>.
-        Contact: <a href="mailto:offixcialbloger@gmail.com" style="color:#9ec4ff">offixcialbloger@gmail.com</a>
+    <section class="card" id="aboutCard">
+      <p>
+        Built by fellow accounting student <strong>Silva Brutus</strong> (NSUK).
+        Contact: <a href="mailto:offixcialbloger@gmail.com">offixcialbloger@gmail.com</a>
       </p>
-      <p id="loginNotice" class="muted small" style="display:none"></p>
-      <div id="profileBox" class="muted small">Not signed in</div>
+      <div id="authRow" style="margin-top:10px;">
+        <button class="btn primary" id="btnSignIn">Continue with Google</button>
+        <button class="btn" id="btnSignOut" style="display:none">Sign out</button>
+      </div>
+      <div id="authError" class="error" style="display:none;margin-top:12px;"></div>
     </section>
 
-    <!-- Guest message -->
-    <section id="guestCard" class="card">
+    <section class="card" id="welcomeCard">
       <h2>Welcome</h2>
-      <p class="muted">Please sign in to unlock quizzes, leaderboard and your personalized status.</p>
+      <p>Please sign in to unlock quizzes, leaderboard and your personalized status.</p>
     </section>
 
-    <!-- Signed-in tools (hidden until auth) -->
-    <section id="authedSection" style="display:none">
-      <h2 style="margin:14px 0 6px">Your tools</h2>
-      <div class="grid" style="margin-bottom:12px">
-        <a class="tile" href="./status.html?v=44"><div class="muted small">Your Data</div><div>View Status</div></a>
-        <a class="tile" href="./leaderbored.html?v=44"><div class="muted small">Community</div><div>Leaderboard</div></a>
-        <a class="tile" href="./admin.html?v=44"><div class="muted small">Owner</div><div>Admin Panel</div></a>
-      </div>
-
-      <h2 style="margin:14px 0 6px">ATSWA I Subjects</h2>
-      <div class="grid">
-        <a class="tile" href="./quiz.html?level=ATSWA1&subject=Basic%20Accounting&mode=practice&v=44"><div class="muted small">ATSWA I</div><div>Basic Accounting</div></a>
-        <a class="tile" href="./quiz.html?level=ATSWA1&subject=Business%20Law&mode=practice&v=44"><div class="muted small">ATSWA I</div><div>Business Law</div></a>
-        <a class="tile" href="./quiz.html?level=ATSWA1&subject=Economics&mode=practice&v=44"><div class="muted small">ATSWA I</div><div>Economics</div></a>
-        <a class="tile" href="./quiz.html?level=ATSWA1&subject=Communication%20Skills&mode=practice&v=44"><div class="muted small">ATSWA I</div><div>Communication Skills</div></a>
+    <!-- Visible only when signed in -->
+    <section class="card" id="studyCard" style="display:none">
+      <h2>Start a quiz</h2>
+      <div class="tiles">
+        <a class="tile" href="quiz.html?level=ATSWA1&subject=Basic%20Accounting&mode=practice">Basic Accounting</a>
+        <a class="tile" href="quiz.html?level=ATSWA1&subject=Business%20Law&mode=practice">Business Law</a>
+        <a class="tile" href="quiz.html?level=ATSWA1&subject=Economics&mode=practice">Economics</a>
+        <a class="tile" href="quiz.html?level=ATSWA1&subject=Communication%20Skills&mode=practice">Communication Skills</a>
       </div>
     </section>
 
-    <!-- Error box (auto-filled if any script fails) -->
-    <div id="authError" style="display:none;margin:10px 0;padding:10px;border-radius:8px;background:#2a1111;color:#ffdddd;border:1px solid #662222;"></div>
+    <section class="card" id="linksCard" style="display:none">
+      <h2>Tools</h2>
+      <div class="tiles">
+        <a class="tile" href="status.html">Status</a>
+        <a class="tile" href="resources.html">Resources</a>
+        <a class="tile" href="leaderboard.html">Leaderboard</a>
+        <a class="tile" href="admin.html">Admin</a>
+      </div>
+    </section>
   </div>
 
-  <!-- Load order: firebase.js BEFORE app.js -->
-  <script type="module" src="./assets/firebase.js?v=44"></script>
+  <!-- Load config first, then app -->
+  <script src="./assets/firebase.js?v=50"></script>
+  <script type="module" src="./assets/app.js?v=50"></script>
 
-  <!-- Fallback Google redirect so the button ALWAYS works -->
-  <script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-    import { getAuth, GoogleAuthProvider, signInWithRedirect } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
-    const cfg = window.firebaseConfig;
-    try {
-      const app = initializeApp(cfg, "fallback-" + Math.random());
-      const auth = getAuth(app);
-      const provider = new GoogleAuthProvider();
-      provider.setCustomParameters({ prompt: "select_account" });
-      window.__fallbackSignIn = () => signInWithRedirect(auth, provider);
-    } catch (e) {
-      const box = document.getElementById("authError");
-      box.textContent = "Auth bootstrap failed: " + (e?.message || e);
-      box.style.display = "block";
-      console.error("Auth fallback error", e);
-    }
-  </script>
-
-  <!-- Hook used by app.js to toggle tiles on home -->
+  <!-- Home-page hook used by app.js to show/hide sections -->
   <script>
     window._icanToggleHome = function(isAuthed, email, name){
-      const authed = document.getElementById('authedSection');
-      const guest  = document.getElementById('guestCard');
-      if (authed && guest) { authed.style.display = isAuthed ? '' : 'none'; guest.style.display = isAuthed ? 'none' : ''; }
-      const badge = document.getElementById('signedBadge');
-      if (badge) badge.textContent = isAuthed ? 'Signed in' : 'Not signed in';
-      const profile = document.getElementById('profileBox');
-      if (profile) profile.innerHTML = isAuthed ? `<div class="small muted">${email||''}</div><div>${name||''}</div>` : 'Not signed in';
+      const W = (id)=>document.getElementById(id);
+      W('welcomeCard').style.display = isAuthed ? 'none' : '';
+      W('studyCard').style.display   = isAuthed ? '' : 'none';
+      W('linksCard').style.display   = isAuthed ? '' : 'none';
+      const badge = W('signedBadge');
+      if (badge) badge.textContent = isAuthed ? ('Signed in — ' + (name || email || '')) : 'Not signed in';
+      const btnIn  = document.getElementById('btnSignIn');
+      const btnOut = document.getElementById('btnSignOut');
+      if (btnIn)  btnIn.style.display  = isAuthed ? 'none' : '';
+      if (btnOut) btnOut.style.display = isAuthed ? '' : 'none';
     };
-    // Show any script errors clearly
-    window.addEventListener('error', e => {
-      const box = document.getElementById('authError');
-      box.textContent = 'Script error: ' + (e.message || e.filename || e.type);
-      box.style.display = "block";
-    }, true);
   </script>
-
-  <!-- Your main app logic (auth listener, gating, etc.) -->
-  <script type="module" src="./assets/app.js?v=44"></script>
 </body>
 </html>
