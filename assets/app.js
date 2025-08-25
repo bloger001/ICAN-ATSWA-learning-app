@@ -1,104 +1,109 @@
-/* assets/app.js — v42 (redirect-only Google sign-in + gating + visible errors)
-   Requires: <script type="module" src="./assets/firebase.js"></script> BEFORE this file
-*/
+// assets/app.js (FULL REPLACEMENT)
 
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+// ---- Firebase imports (modular v10) ----
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 import {
-  getAuth, setPersistence, browserLocalPersistence,
-  GoogleAuthProvider, signInWithRedirect, getRedirectResult,
-  onAuthStateChanged, signOut
-} from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
+  getAuth,
+  GoogleAuthProvider,
+  signInWithRedirect,
+  getRedirectResult,
+  onAuthStateChanged,
+  signOut as fbSignOut,
+} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
-const cfg = (window.firebaseConfig || (typeof firebaseConfig !== "undefined" ? firebaseConfig : null));
-if (!cfg) {
-  console.error("[ICAN] firebaseConfig missing (check assets/firebase.js order)");
+// ---- Helpers ----
+const $ = (id) => document.getElementById(id);
+const showError = (msg) => {
+  const box = $("authError");
+  if (!box) return console.error(msg);
+  box.textContent = msg;
+  box.style.display = "block";
+};
+
+// ---- Read config exposed by assets/firebase.js ----
+const firebaseConfig = window.firebaseConfig;
+if (!firebaseConfig) {
+  showError("Firebase config missing — make sure assets/firebase.js loads before app.js");
+  throw new Error("firebaseConfig missing");
 }
-const fbApp = initializeApp(cfg);
-const auth  = getAuth(fbApp);
-await setPersistence(auth, browserLocalPersistence);
 
+// ---- Init Firebase core ----
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const db = getFirestore(app);
+
+// Google provider
 const provider = new GoogleAuthProvider();
 provider.setCustomParameters({ prompt: "select_account" });
-auth.useDeviceLanguage?.();
 
-// --- UI handles (if present) ---
-const $ = (id) => document.getElementById(id);
-const btnIn  = $("btnSignIn");
-const btnOut = $("btnSignOut");
-const badge  = $("signedBadge");
-const profile= $("profileBox");
-const notice = $("loginNotice");
+// Expose minimal API for inline fallback in index.html
+window.ICAN_AUTH = {
+  startGoogleRedirect: () => signInWithRedirect(auth, provider),
+  signOut: () => fbSignOut(auth),
+};
 
-// visible error area
-let errBox = document.getElementById("authError");
-if (!errBox) {
-  errBox = document.createElement("div");
-  errBox.id = "authError";
-  errBox.style.cssText = "display:none;margin:10px 0;padding:10px;border-radius:8px;background:#2a1111;color:#ffdddd;border:1px solid #662222;";
-  const wrap = document.querySelector(".wrap") || document.body;
-  wrap.insertBefore(errBox, wrap.firstChild);
+// Wire buttons if present
+const btnSignIn = $("btnSignIn");
+if (btnSignIn) {
+  btnSignIn.addEventListener("click", () => window.ICAN_AUTH.startGoogleRedirect());
 }
-function showErr(msg) {
-  errBox.textContent = msg;
-  errBox.style.display = "block";
-  console.error("[ICAN Auth]", msg);
+const btnSignOut = $("btnSignOut");
+if (btnSignOut) {
+  btnSignOut.addEventListener("click", () => window.ICAN_AUTH.signOut());
 }
 
-// --- Sign-in / Sign-out ---
-async function startGoogleRedirect() {
-  try {
-    await signInWithRedirect(auth, provider);
-  } catch (e) {
-    showErr(`Redirect start failed: ${e?.message || e}`);
-  }
-}
-if (btnIn)  btnIn.onclick  = startGoogleRedirect;
-if (btnOut) btnOut.onclick = () => signOut(auth);
-
-// Complete redirect if we’re returning from Google
-getRedirectResult(auth).catch(e => {
-  // This is normal if user didn't come via redirect
-  if (e?.code) console.debug("[ICAN] getRedirectResult:", e.code, e.message);
+// Complete redirect sign-in if we just came back from Google
+getRedirectResult(auth).catch((e) => {
+  // Not fatal for normal loads; only log if it’s a real error
+  if (e && e.code !== "auth/no-auth-event") console.warn("redirect result:", e);
 });
 
-// --- Gate routes ---
-function gateProtectedPages(user) {
-  const p = (location.pathname || "").toLowerCase();
-  const protectedPages = ["quiz.html","status.html","review.html","leaderbored.html","admin.html"];
-  const isProtected = protectedPages.some(x => p.endsWith("/"+x) || p.endsWith(x));
-  if (!user && isProtected) {
-    const next = encodeURIComponent(location.pathname + location.search);
-    location.replace(`index.html?needLogin=1&next=${next}`);
-  }
-}
-
-// --- Toggle home tiles (index.html has window._icanToggleHome hook) ---
-function toggleHome(user) {
-  if (typeof window._icanToggleHome === "function") {
-    window._icanToggleHome(!!user, user?.email || "", user?.displayName || "");
-  }
-  if (badge)  badge.textContent = user ? "Signed in" : "Not signed in";
-  if (profile) profile.innerHTML = user
-    ? `<div class="small muted">${user.email||""}</div><div>${user.displayName||""}</div>`
-    : "Not signed in";
-  if (btnIn)  btnIn.style.display  = user ? "none" : "inline-flex";
-  if (btnOut) btnOut.style.display = user ? "inline-flex" : "none";
-}
-
-// --- Auth listener ---
+// ---- Auth state UI sync (used on all pages) ----
 onAuthStateChanged(auth, (user) => {
-  toggleHome(user);
-  gateProtectedPages(user);
+  const isAuthed = !!user;
+  // Save a tiny profile locally (for quiz gating & greetings)
+  try {
+    if (isAuthed) {
+      localStorage.setItem(
+        "ican_user",
+        JSON.stringify({ uid: user.uid, email: user.email || "", name: user.displayName || "" })
+      );
+    } else {
+      localStorage.removeItem("ican_user");
+    }
+  } catch {}
+
+  // Toggle header buttons / profile (index.html provides this hook)
+  if (typeof window._icanToggleHome === "function") {
+    window._icanToggleHome(isAuthed, user?.email || "", user?.displayName || "");
+  } else {
+    // Generic header fallback
+    const badge = $("signedBadge");
+    if (badge) badge.textContent = isAuthed ? "Signed in" : "Not signed in";
+    if (btnSignIn) btnSignIn.style.display = isAuthed ? "none" : "";
+    if (btnSignOut) btnSignOut.style.display = isAuthed ? "" : "none";
+  }
+
+  // ---- Hard gate quizzes: require login ----
+  const path = (location.pathname || "").toLowerCase();
+  const isQuizPage = path.endsWith("/quiz.html") || path.endsWith("quiz.html");
+  if (isQuizPage && !isAuthed) {
+    // Send them home to sign in
+    const home = "index.html?v=auth";
+    try { history.replaceState({}, "", home); } catch {}
+    location.href = home;
+    return;
+  }
 });
 
-// --- Show notice if redirected back requiring login ---
-(function notifyIfNeeded() {
-  const ps = new URLSearchParams(location.search);
-  if (ps.get("needLogin") === "1" && notice) {
-    notice.textContent = "Please sign in with Google to unlock quizzes and save progress.";
-    notice.style.display = "block";
-  }
-})();
+// ---- Optional: small guard so other pages can check auth quickly ----
+window.icanGetUser = () => {
+  try {
+    const raw = localStorage.getItem("ican_user");
+    return raw ? JSON.parse(raw) : null;
+  } catch { return null; }
+};
 
-// Expose (optional)
-window.ICAN_AUTH = { auth, startGoogleRedirect };
+// Make db available for future leaderboard / cloud sync features
+window.icanDb = db;
