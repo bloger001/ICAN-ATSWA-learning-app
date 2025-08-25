@@ -1,2602 +1,2596 @@
 [
   {
     "id": "BA-AT1-Q001",
-    "topic": "Accounting Concepts",
-    "subtopic": "Concepts",
-    "stem": "Which of the following best describes the going concern assumption?",
+    "topic": "History of Bookkeeping",
+    "subtopic": "Origin",
+    "stem": "Who is regarded as the father of double-entry bookkeeping?",
     "options": [
-      "The entity will continue operations for the foreseeable future",
-      "The entity will be liquidated within a year",
-      "Assets equal equity plus liabilities",
-      "Revenue is recognised only when cash is received"
+      "Luca Pacioli",
+      "Adam Smith",
+      "Robert Owen",
+      "Joseph Juran"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q002",
-    "topic": "Accounting Concepts",
-    "subtopic": "Qualitative Characteristics",
-    "stem": "Which of the following best describes the going concern assumption?",
+    "topic": "History of Bookkeeping",
+    "subtopic": "Origin",
+    "stem": "Bookkeeping first developed in which country?",
     "options": [
-      "The entity will continue operations for the foreseeable future",
-      "The entity will be liquidated within a year",
-      "Assets equal equity plus liabilities",
-      "Revenue is recognised only when cash is received"
+      "Italy",
+      "England",
+      "France",
+      "Egypt"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q003",
-    "topic": "Accounting Concepts",
-    "subtopic": "Accounting Equation",
-    "stem": "Materiality in accounting primarily influences which of the following?",
+    "topic": "History of Bookkeeping",
+    "subtopic": "Origin",
+    "stem": "Single-entry bookkeeping records transactions in:",
     "options": [
-      "The format of the financial statements",
-      "Which items are disclosed or aggregated",
-      "The number of ledger accounts kept",
-      "The choice between FIFO and LIFO"
+      "One sided manner",
+      "Two sided manner",
+      "Ledger only",
+      "Journal only"
     ],
-    "answer_index": 1
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q004",
-    "topic": "Double Entry",
-    "subtopic": "Posting & Ledgers",
-    "stem": "A credit sale to K. Musa should be posted to:",
+    "topic": "History of Bookkeeping",
+    "subtopic": "Origin",
+    "stem": "Which system ensures dual effect of every transaction?",
     "options": [
-      "Debit Sales, Credit K. Musa",
-      "Debit K. Musa, Credit Sales",
-      "Debit Purchases, Credit K. Musa",
-      "Debit K. Musa, Credit Purchases"
+      "Double entry",
+      "Single entry",
+      "Cash basis",
+      "Accrual basis"
     ],
-    "answer_index": 1
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q005",
-    "topic": "Double Entry",
-    "subtopic": "Control Accounts",
-    "stem": "A payment to a supplier by bank transfer is recorded as:",
+    "topic": "History of Bookkeeping",
+    "subtopic": "Origin",
+    "stem": "Bookkeeping provides the basis for:",
     "options": [
-      "Debit Payables, Credit Bank",
-      "Debit Bank, Credit Payables",
-      "Debit Purchases, Credit Bank",
-      "Debit Cash, Credit Sales"
+      "Accounting",
+      "Auditing",
+      "Taxation",
+      "Marketing"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q006",
-    "topic": "Double Entry",
-    "subtopic": "Books of Prime Entry",
-    "stem": "Which book is a book of original entry?",
+    "topic": "Double Entry Principle",
+    "subtopic": "Purchases",
+    "stem": "Goods were purchased for cash \u20a61000. What is the correct double entry?",
     "options": [
-      "Sales Day Book",
-      "Receivables Ledger",
-      "General Ledger",
-      "Trial Balance"
+      "Dr Purchases, Cr Cash",
+      "Dr Cash, Cr Purchases",
+      "Dr Sales, Cr Cash",
+      "Dr Cash, Cr Sales"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q007",
-    "topic": "Trial Balance",
-    "subtopic": "TB Purpose",
-    "stem": "Which error will NOT be revealed by a trial balance?",
+    "topic": "Double Entry Principle",
+    "subtopic": "Purchases",
+    "stem": "Goods were purchased for cash \u20a62000. What is the correct double entry?",
     "options": [
-      "Error of omission",
-      "Casting error",
-      "Single-sided posting",
-      "Reversal of entries detected by difference"
+      "Dr Purchases, Cr Cash",
+      "Dr Cash, Cr Purchases",
+      "Dr Sales, Cr Cash",
+      "Dr Cash, Cr Sales"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q008",
-    "topic": "Trial Balance",
-    "subtopic": "Error Types",
-    "stem": "A suspense account is opened to:",
+    "topic": "Double Entry Principle",
+    "subtopic": "Purchases",
+    "stem": "Goods were purchased for cash \u20a63000. What is the correct double entry?",
     "options": [
-      "Correct errors that prevent the trial balance from agreeing",
-      "Record cash transactions only",
-      "Replace the capital account",
-      "Prepare the statement of cash flows"
+      "Dr Purchases, Cr Cash",
+      "Dr Cash, Cr Purchases",
+      "Dr Sales, Cr Cash",
+      "Dr Cash, Cr Sales"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q009",
-    "topic": "Trial Balance",
-    "subtopic": "Suspense Account",
-    "stem": "Which error will NOT be revealed by a trial balance?",
+    "topic": "Double Entry Principle",
+    "subtopic": "Purchases",
+    "stem": "Goods were purchased for cash \u20a64000. What is the correct double entry?",
     "options": [
-      "Error of omission",
-      "Casting error",
-      "Single-sided posting",
-      "Reversal of entries detected by difference"
+      "Dr Purchases, Cr Cash",
+      "Dr Cash, Cr Purchases",
+      "Dr Sales, Cr Cash",
+      "Dr Cash, Cr Sales"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q010",
-    "topic": "Financial Statements",
-    "subtopic": "SPL",
-    "stem": "Prepaid insurance at year end is:",
+    "topic": "Double Entry Principle",
+    "subtopic": "Purchases",
+    "stem": "Goods were purchased for cash \u20a65000. What is the correct double entry?",
     "options": [
-      "A liability in the SFP",
-      "An expense in the SPL",
-      "An asset in the SFP",
-      "An item ignored until next year"
+      "Dr Purchases, Cr Cash",
+      "Dr Cash, Cr Purchases",
+      "Dr Sales, Cr Cash",
+      "Dr Cash, Cr Sales"
     ],
-    "answer_index": 2
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q011",
-    "topic": "Financial Statements",
-    "subtopic": "SFP",
-    "stem": "Prepaid insurance at year end is:",
+    "topic": "Double Entry Principle",
+    "subtopic": "Purchases",
+    "stem": "Goods were purchased for cash \u20a66000. What is the correct double entry?",
     "options": [
-      "A liability in the SFP",
-      "An expense in the SPL",
-      "An asset in the SFP",
-      "An item ignored until next year"
+      "Dr Purchases, Cr Cash",
+      "Dr Cash, Cr Purchases",
+      "Dr Sales, Cr Cash",
+      "Dr Cash, Cr Sales"
     ],
-    "answer_index": 2
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q012",
-    "topic": "Financial Statements",
-    "subtopic": "Adjustments",
-    "stem": "Which item is presented in the Statement of Profit or Loss?",
+    "topic": "Double Entry Principle",
+    "subtopic": "Purchases",
+    "stem": "Goods were purchased for cash \u20a67000. What is the correct double entry?",
     "options": [
-      "Gross profit",
-      "Bank balance",
-      "Trade receivables (closing)",
-      "Capital introduced"
+      "Dr Purchases, Cr Cash",
+      "Dr Cash, Cr Purchases",
+      "Dr Sales, Cr Cash",
+      "Dr Cash, Cr Sales"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q013",
-    "topic": "Cash Book",
-    "subtopic": "Petty Cash",
-    "stem": "A cheque issued but not yet presented will:",
+    "topic": "Double Entry Principle",
+    "subtopic": "Purchases",
+    "stem": "Goods were purchased for cash \u20a68000. What is the correct double entry?",
     "options": [
-      "Decrease the bank balance in the cash book but not yet the bank statement",
-      "Increase the bank balance in both records",
-      "Lead to a bank overdraft immediately",
-      "Be recorded as a contra entry"
+      "Dr Purchases, Cr Cash",
+      "Dr Cash, Cr Purchases",
+      "Dr Sales, Cr Cash",
+      "Dr Cash, Cr Sales"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q014",
-    "topic": "Cash Book",
-    "subtopic": "Bank Reconciliation",
-    "stem": "A petty cash system operated on the imprest basis means:",
+    "topic": "Double Entry Principle",
+    "subtopic": "Purchases",
+    "stem": "Goods were purchased for cash \u20a69000. What is the correct double entry?",
     "options": [
-      "The petty cashier receives a fixed float and is reimbursed to restore the float",
-      "All receipts are banked daily",
-      "Only small cash receipts are recorded",
-      "Cash discounts are recorded as petty cash"
+      "Dr Purchases, Cr Cash",
+      "Dr Cash, Cr Purchases",
+      "Dr Sales, Cr Cash",
+      "Dr Cash, Cr Sales"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q015",
-    "topic": "Cash Book",
-    "subtopic": "Cash/Bank Columns",
-    "stem": "Which of the following appears on a bank statement but not yet in the cash book?",
+    "topic": "Double Entry Principle",
+    "subtopic": "Purchases",
+    "stem": "Goods were purchased for cash \u20a610000. What is the correct double entry?",
     "options": [
-      "Unpresented cheques",
-      "Outstanding lodgements",
-      "Bank charges debited by bank",
-      "Dishonoured cheques recorded already"
+      "Dr Purchases, Cr Cash",
+      "Dr Cash, Cr Purchases",
+      "Dr Sales, Cr Cash",
+      "Dr Cash, Cr Sales"
     ],
-    "answer_index": 2
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q016",
-    "topic": "Accounting Concepts",
-    "subtopic": "Concepts",
-    "stem": "Materiality in accounting primarily influences which of the following?",
+    "topic": "Double Entry Principle",
+    "subtopic": "Drawings",
+    "stem": "Owner withdrew \u20a6500 for personal use. What is the correct double entry?",
     "options": [
-      "The format of the financial statements",
-      "Which items are disclosed or aggregated",
-      "The number of ledger accounts kept",
-      "The choice between FIFO and LIFO"
+      "Dr Drawings, Cr Cash",
+      "Dr Cash, Cr Drawings",
+      "Dr Capital, Cr Cash",
+      "Dr Cash, Cr Capital"
     ],
-    "answer_index": 1
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q017",
-    "topic": "Accounting Concepts",
-    "subtopic": "Qualitative Characteristics",
-    "stem": "Which qualitative characteristic is enhanced when entities use consistent policies?",
+    "topic": "Double Entry Principle",
+    "subtopic": "Drawings",
+    "stem": "Owner withdrew \u20a61000 for personal use. What is the correct double entry?",
     "options": [
-      "Relevance",
-      "Comparability",
-      "Faithful representation",
-      "Timeliness"
+      "Dr Drawings, Cr Cash",
+      "Dr Cash, Cr Drawings",
+      "Dr Capital, Cr Cash",
+      "Dr Cash, Cr Capital"
     ],
-    "answer_index": 1
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q018",
-    "topic": "Accounting Concepts",
-    "subtopic": "Accounting Equation",
-    "stem": "Materiality in accounting primarily influences which of the following?",
+    "topic": "Double Entry Principle",
+    "subtopic": "Drawings",
+    "stem": "Owner withdrew \u20a61500 for personal use. What is the correct double entry?",
     "options": [
-      "The format of the financial statements",
-      "Which items are disclosed or aggregated",
-      "The number of ledger accounts kept",
-      "The choice between FIFO and LIFO"
+      "Dr Drawings, Cr Cash",
+      "Dr Cash, Cr Drawings",
+      "Dr Capital, Cr Cash",
+      "Dr Cash, Cr Capital"
     ],
-    "answer_index": 1
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q019",
-    "topic": "Double Entry",
-    "subtopic": "Posting & Ledgers",
-    "stem": "Which book is a book of original entry?",
+    "topic": "Double Entry Principle",
+    "subtopic": "Drawings",
+    "stem": "Owner withdrew \u20a62000 for personal use. What is the correct double entry?",
     "options": [
-      "Sales Day Book",
-      "Receivables Ledger",
-      "General Ledger",
-      "Trial Balance"
+      "Dr Drawings, Cr Cash",
+      "Dr Cash, Cr Drawings",
+      "Dr Capital, Cr Cash",
+      "Dr Cash, Cr Capital"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q020",
-    "topic": "Double Entry",
-    "subtopic": "Control Accounts",
-    "stem": "A credit sale to K. Musa should be posted to:",
+    "topic": "Double Entry Principle",
+    "subtopic": "Drawings",
+    "stem": "Owner withdrew \u20a62500 for personal use. What is the correct double entry?",
     "options": [
-      "Debit Sales, Credit K. Musa",
-      "Debit K. Musa, Credit Sales",
-      "Debit Purchases, Credit K. Musa",
-      "Debit K. Musa, Credit Purchases"
+      "Dr Drawings, Cr Cash",
+      "Dr Cash, Cr Drawings",
+      "Dr Capital, Cr Cash",
+      "Dr Cash, Cr Capital"
     ],
-    "answer_index": 1
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q021",
-    "topic": "Double Entry",
-    "subtopic": "Books of Prime Entry",
-    "stem": "A payment to a supplier by bank transfer is recorded as:",
+    "topic": "Double Entry Principle",
+    "subtopic": "Drawings",
+    "stem": "Owner withdrew \u20a63000 for personal use. What is the correct double entry?",
     "options": [
-      "Debit Payables, Credit Bank",
-      "Debit Bank, Credit Payables",
-      "Debit Purchases, Credit Bank",
-      "Debit Cash, Credit Sales"
+      "Dr Drawings, Cr Cash",
+      "Dr Cash, Cr Drawings",
+      "Dr Capital, Cr Cash",
+      "Dr Cash, Cr Capital"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q022",
-    "topic": "Trial Balance",
-    "subtopic": "TB Purpose",
-    "stem": "A suspense account is opened to:",
+    "topic": "Double Entry Principle",
+    "subtopic": "Drawings",
+    "stem": "Owner withdrew \u20a63500 for personal use. What is the correct double entry?",
     "options": [
-      "Correct errors that prevent the trial balance from agreeing",
-      "Record cash transactions only",
-      "Replace the capital account",
-      "Prepare the statement of cash flows"
+      "Dr Drawings, Cr Cash",
+      "Dr Cash, Cr Drawings",
+      "Dr Capital, Cr Cash",
+      "Dr Cash, Cr Capital"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q023",
-    "topic": "Trial Balance",
-    "subtopic": "Error Types",
-    "stem": "A trial balance that agrees guarantees which of the following?",
+    "topic": "Double Entry Principle",
+    "subtopic": "Drawings",
+    "stem": "Owner withdrew \u20a64000 for personal use. What is the correct double entry?",
     "options": [
-      "All entries are complete and correct",
-      "No errors exist in the books",
-      "The arithmetical accuracy of postings",
-      "All assets are correctly valued"
+      "Dr Drawings, Cr Cash",
+      "Dr Cash, Cr Drawings",
+      "Dr Capital, Cr Cash",
+      "Dr Cash, Cr Capital"
     ],
-    "answer_index": 2
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q024",
-    "topic": "Trial Balance",
-    "subtopic": "Suspense Account",
-    "stem": "A suspense account is opened to:",
+    "topic": "Double Entry Principle",
+    "subtopic": "Drawings",
+    "stem": "Owner withdrew \u20a64500 for personal use. What is the correct double entry?",
     "options": [
-      "Correct errors that prevent the trial balance from agreeing",
-      "Record cash transactions only",
-      "Replace the capital account",
-      "Prepare the statement of cash flows"
+      "Dr Drawings, Cr Cash",
+      "Dr Cash, Cr Drawings",
+      "Dr Capital, Cr Cash",
+      "Dr Cash, Cr Capital"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q025",
-    "topic": "Financial Statements",
-    "subtopic": "SPL",
-    "stem": "Which item is presented in the Statement of Profit or Loss?",
+    "topic": "Double Entry Principle",
+    "subtopic": "Drawings",
+    "stem": "Owner withdrew \u20a65000 for personal use. What is the correct double entry?",
     "options": [
-      "Gross profit",
-      "Bank balance",
-      "Trade receivables (closing)",
-      "Capital introduced"
+      "Dr Drawings, Cr Cash",
+      "Dr Cash, Cr Drawings",
+      "Dr Capital, Cr Cash",
+      "Dr Cash, Cr Capital"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q026",
-    "topic": "Financial Statements",
-    "subtopic": "SFP",
-    "stem": "Prepaid insurance at year end is:",
+    "topic": "Double Entry Principle",
+    "subtopic": "Capital",
+    "stem": "Capital introduced \u20a62000 into the business. Correct entry?",
     "options": [
-      "A liability in the SFP",
-      "An expense in the SPL",
-      "An asset in the SFP",
-      "An item ignored until next year"
+      "Dr Cash, Cr Capital",
+      "Dr Capital, Cr Cash",
+      "Dr Revenue, Cr Cash",
+      "Dr Cash, Cr Drawings"
     ],
-    "answer_index": 2
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q027",
-    "topic": "Financial Statements",
-    "subtopic": "Adjustments",
-    "stem": "Depreciation is best described as:",
+    "topic": "Double Entry Principle",
+    "subtopic": "Capital",
+    "stem": "Capital introduced \u20a64000 into the business. Correct entry?",
     "options": [
-      "Allocation of the cost of a non-current asset over its useful life",
-      "A fund set aside to replace the asset",
-      "An impairment loss only",
-      "Cash outflow each year equal to asset cost/years"
+      "Dr Cash, Cr Capital",
+      "Dr Capital, Cr Cash",
+      "Dr Revenue, Cr Cash",
+      "Dr Cash, Cr Drawings"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q028",
-    "topic": "Cash Book",
-    "subtopic": "Petty Cash",
-    "stem": "Which of the following appears on a bank statement but not yet in the cash book?",
+    "topic": "Double Entry Principle",
+    "subtopic": "Capital",
+    "stem": "Capital introduced \u20a66000 into the business. Correct entry?",
     "options": [
-      "Unpresented cheques",
-      "Outstanding lodgements",
-      "Bank charges debited by bank",
-      "Dishonoured cheques recorded already"
+      "Dr Cash, Cr Capital",
+      "Dr Capital, Cr Cash",
+      "Dr Revenue, Cr Cash",
+      "Dr Cash, Cr Drawings"
     ],
-    "answer_index": 2
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q029",
-    "topic": "Cash Book",
-    "subtopic": "Bank Reconciliation",
-    "stem": "A petty cash system operated on the imprest basis means:",
+    "topic": "Double Entry Principle",
+    "subtopic": "Capital",
+    "stem": "Capital introduced \u20a68000 into the business. Correct entry?",
     "options": [
-      "The petty cashier receives a fixed float and is reimbursed to restore the float",
-      "All receipts are banked daily",
-      "Only small cash receipts are recorded",
-      "Cash discounts are recorded as petty cash"
+      "Dr Cash, Cr Capital",
+      "Dr Capital, Cr Cash",
+      "Dr Revenue, Cr Cash",
+      "Dr Cash, Cr Drawings"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q030",
-    "topic": "Cash Book",
-    "subtopic": "Cash/Bank Columns",
-    "stem": "A cheque issued but not yet presented will:",
+    "topic": "Double Entry Principle",
+    "subtopic": "Capital",
+    "stem": "Capital introduced \u20a610000 into the business. Correct entry?",
     "options": [
-      "Decrease the bank balance in the cash book but not yet the bank statement",
-      "Increase the bank balance in both records",
-      "Lead to a bank overdraft immediately",
-      "Be recorded as a contra entry"
+      "Dr Cash, Cr Capital",
+      "Dr Capital, Cr Cash",
+      "Dr Revenue, Cr Cash",
+      "Dr Cash, Cr Drawings"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q031",
-    "topic": "Accounting Concepts",
-    "subtopic": "Concepts",
-    "stem": "Which of the following best describes the going concern assumption?",
+    "topic": "Double Entry Principle",
+    "subtopic": "Capital",
+    "stem": "Capital introduced \u20a612000 into the business. Correct entry?",
     "options": [
-      "The entity will continue operations for the foreseeable future",
-      "The entity will be liquidated within a year",
-      "Assets equal equity plus liabilities",
-      "Revenue is recognised only when cash is received"
+      "Dr Cash, Cr Capital",
+      "Dr Capital, Cr Cash",
+      "Dr Revenue, Cr Cash",
+      "Dr Cash, Cr Drawings"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q032",
-    "topic": "Accounting Concepts",
-    "subtopic": "Qualitative Characteristics",
-    "stem": "Which of the following best describes the going concern assumption?",
+    "topic": "Double Entry Principle",
+    "subtopic": "Capital",
+    "stem": "Capital introduced \u20a614000 into the business. Correct entry?",
     "options": [
-      "The entity will continue operations for the foreseeable future",
-      "The entity will be liquidated within a year",
-      "Assets equal equity plus liabilities",
-      "Revenue is recognised only when cash is received"
+      "Dr Cash, Cr Capital",
+      "Dr Capital, Cr Cash",
+      "Dr Revenue, Cr Cash",
+      "Dr Cash, Cr Drawings"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q033",
-    "topic": "Accounting Concepts",
-    "subtopic": "Accounting Equation",
-    "stem": "Materiality in accounting primarily influences which of the following?",
+    "topic": "Double Entry Principle",
+    "subtopic": "Capital",
+    "stem": "Capital introduced \u20a616000 into the business. Correct entry?",
     "options": [
-      "The format of the financial statements",
-      "Which items are disclosed or aggregated",
-      "The number of ledger accounts kept",
-      "The choice between FIFO and LIFO"
+      "Dr Cash, Cr Capital",
+      "Dr Capital, Cr Cash",
+      "Dr Revenue, Cr Cash",
+      "Dr Cash, Cr Drawings"
     ],
-    "answer_index": 1
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q034",
-    "topic": "Double Entry",
-    "subtopic": "Posting & Ledgers",
-    "stem": "A credit sale to K. Musa should be posted to:",
+    "topic": "Double Entry Principle",
+    "subtopic": "Capital",
+    "stem": "Capital introduced \u20a618000 into the business. Correct entry?",
     "options": [
-      "Debit Sales, Credit K. Musa",
-      "Debit K. Musa, Credit Sales",
-      "Debit Purchases, Credit K. Musa",
-      "Debit K. Musa, Credit Purchases"
+      "Dr Cash, Cr Capital",
+      "Dr Capital, Cr Cash",
+      "Dr Revenue, Cr Cash",
+      "Dr Cash, Cr Drawings"
     ],
-    "answer_index": 1
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q035",
-    "topic": "Double Entry",
-    "subtopic": "Control Accounts",
-    "stem": "A payment to a supplier by bank transfer is recorded as:",
+    "topic": "Double Entry Principle",
+    "subtopic": "Capital",
+    "stem": "Capital introduced \u20a620000 into the business. Correct entry?",
     "options": [
-      "Debit Payables, Credit Bank",
-      "Debit Bank, Credit Payables",
-      "Debit Purchases, Credit Bank",
-      "Debit Cash, Credit Sales"
+      "Dr Cash, Cr Capital",
+      "Dr Capital, Cr Cash",
+      "Dr Revenue, Cr Cash",
+      "Dr Cash, Cr Drawings"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q036",
-    "topic": "Double Entry",
-    "subtopic": "Books of Prime Entry",
-    "stem": "Which book is a book of original entry?",
+    "topic": "Ethics of Accounting",
+    "subtopic": "Principles",
+    "stem": "Which of these is NOT a fundamental principle of ICAN ethics?",
     "options": [
-      "Sales Day Book",
-      "Receivables Ledger",
-      "General Ledger",
-      "Trial Balance"
+      "Integrity",
+      "Objectivity",
+      "Maximization of profit",
+      "Confidentiality"
     ],
-    "answer_index": 0
+    "answer_index": 2
   },
   {
     "id": "BA-AT1-Q037",
-    "topic": "Trial Balance",
-    "subtopic": "TB Purpose",
-    "stem": "A trial balance that agrees guarantees which of the following?",
+    "topic": "Ethics of Accounting",
+    "subtopic": "Principles",
+    "stem": "Professional accountants must maintain:",
     "options": [
-      "All entries are complete and correct",
-      "No errors exist in the books",
-      "The arithmetical accuracy of postings",
-      "All assets are correctly valued"
-    ],
-    "answer_index": 2
-  },
-  {
-    "id": "BA-AT1-Q038",
-    "topic": "Trial Balance",
-    "subtopic": "Error Types",
-    "stem": "A trial balance that agrees guarantees which of the following?",
-    "options": [
-      "All entries are complete and correct",
-      "No errors exist in the books",
-      "The arithmetical accuracy of postings",
-      "All assets are correctly valued"
-    ],
-    "answer_index": 2
-  },
-  {
-    "id": "BA-AT1-Q039",
-    "topic": "Trial Balance",
-    "subtopic": "Suspense Account",
-    "stem": "A trial balance that agrees guarantees which of the following?",
-    "options": [
-      "All entries are complete and correct",
-      "No errors exist in the books",
-      "The arithmetical accuracy of postings",
-      "All assets are correctly valued"
-    ],
-    "answer_index": 2
-  },
-  {
-    "id": "BA-AT1-Q040",
-    "topic": "Financial Statements",
-    "subtopic": "SPL",
-    "stem": "Prepaid insurance at year end is:",
-    "options": [
-      "A liability in the SFP",
-      "An expense in the SPL",
-      "An asset in the SFP",
-      "An item ignored until next year"
-    ],
-    "answer_index": 2
-  },
-  {
-    "id": "BA-AT1-Q041",
-    "topic": "Financial Statements",
-    "subtopic": "SFP",
-    "stem": "Depreciation is best described as:",
-    "options": [
-      "Allocation of the cost of a non-current asset over its useful life",
-      "A fund set aside to replace the asset",
-      "An impairment loss only",
-      "Cash outflow each year equal to asset cost/years"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "BA-AT1-Q042",
-    "topic": "Financial Statements",
-    "subtopic": "Adjustments",
-    "stem": "Which item is presented in the Statement of Profit or Loss?",
-    "options": [
-      "Gross profit",
-      "Bank balance",
-      "Trade receivables (closing)",
-      "Capital introduced"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "BA-AT1-Q043",
-    "topic": "Cash Book",
-    "subtopic": "Petty Cash",
-    "stem": "Which of the following appears on a bank statement but not yet in the cash book?",
-    "options": [
-      "Unpresented cheques",
-      "Outstanding lodgements",
-      "Bank charges debited by bank",
-      "Dishonoured cheques recorded already"
-    ],
-    "answer_index": 2
-  },
-  {
-    "id": "BA-AT1-Q044",
-    "topic": "Cash Book",
-    "subtopic": "Bank Reconciliation",
-    "stem": "A petty cash system operated on the imprest basis means:",
-    "options": [
-      "The petty cashier receives a fixed float and is reimbursed to restore the float",
-      "All receipts are banked daily",
-      "Only small cash receipts are recorded",
-      "Cash discounts are recorded as petty cash"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "BA-AT1-Q045",
-    "topic": "Cash Book",
-    "subtopic": "Cash/Bank Columns",
-    "stem": "A cheque issued but not yet presented will:",
-    "options": [
-      "Decrease the bank balance in the cash book but not yet the bank statement",
-      "Increase the bank balance in both records",
-      "Lead to a bank overdraft immediately",
-      "Be recorded as a contra entry"
-    ],
-    "answer_index": 0
-  },
-  {
-    "id": "BA-AT1-Q046",
-    "topic": "Accounting Concepts",
-    "subtopic": "Concepts",
-    "stem": "Which qualitative characteristic is enhanced when entities use consistent policies?",
-    "options": [
-      "Relevance",
-      "Comparability",
-      "Faithful representation",
-      "Timeliness"
+      "Bias",
+      "Professional competence",
+      "Personal interest",
+      "Partiality"
     ],
     "answer_index": 1
   },
   {
-    "id": "BA-AT1-Q047",
-    "topic": "Accounting Concepts",
-    "subtopic": "Qualitative Characteristics",
-    "stem": "Materiality in accounting primarily influences which of the following?",
+    "id": "BA-AT1-Q038",
+    "topic": "Ethics of Accounting",
+    "subtopic": "Principles",
+    "stem": "Which principle requires accountants to be honest?",
     "options": [
-      "The format of the financial statements",
-      "Which items are disclosed or aggregated",
-      "The number of ledger accounts kept",
-      "The choice between FIFO and LIFO"
+      "Integrity",
+      "Objectivity",
+      "Professional behavior",
+      "Confidentiality"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "BA-AT1-Q039",
+    "topic": "Ethics of Accounting",
+    "subtopic": "Principles",
+    "stem": "Which principle requires avoidance of undue influence?",
+    "options": [
+      "Objectivity",
+      "Integrity",
+      "Professional competence",
+      "Confidentiality"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "BA-AT1-Q040",
+    "topic": "Ethics of Accounting",
+    "subtopic": "Principles",
+    "stem": "Confidentiality means:",
+    "options": [
+      "Do not disclose client information without permission",
+      "Share info with competitors",
+      "Publish all accounts publicly",
+      "Never keep records"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "BA-AT1-Q041",
+    "topic": "Ethics of Accounting",
+    "subtopic": "Principles",
+    "stem": "Which is a core ethical principle in accounting (1)?",
+    "options": [
+      "Integrity",
+      "Objectivity",
+      "Professional competence",
+      "All of the above"
+    ],
+    "answer_index": 3
+  },
+  {
+    "id": "BA-AT1-Q042",
+    "topic": "Ethics of Accounting",
+    "subtopic": "Principles",
+    "stem": "Which is a core ethical principle in accounting (2)?",
+    "options": [
+      "Integrity",
+      "Objectivity",
+      "Professional competence",
+      "All of the above"
+    ],
+    "answer_index": 3
+  },
+  {
+    "id": "BA-AT1-Q043",
+    "topic": "Ethics of Accounting",
+    "subtopic": "Principles",
+    "stem": "Which is a core ethical principle in accounting (3)?",
+    "options": [
+      "Integrity",
+      "Objectivity",
+      "Professional competence",
+      "All of the above"
+    ],
+    "answer_index": 3
+  },
+  {
+    "id": "BA-AT1-Q044",
+    "topic": "Ethics of Accounting",
+    "subtopic": "Principles",
+    "stem": "Which is a core ethical principle in accounting (4)?",
+    "options": [
+      "Integrity",
+      "Objectivity",
+      "Professional competence",
+      "All of the above"
+    ],
+    "answer_index": 3
+  },
+  {
+    "id": "BA-AT1-Q045",
+    "topic": "Ethics of Accounting",
+    "subtopic": "Principles",
+    "stem": "Which is a core ethical principle in accounting (5)?",
+    "options": [
+      "Integrity",
+      "Objectivity",
+      "Professional competence",
+      "All of the above"
+    ],
+    "answer_index": 3
+  },
+  {
+    "id": "BA-AT1-Q046",
+    "topic": "Accounting Equation",
+    "subtopic": "Fundamentals",
+    "stem": "The accounting equation is:",
+    "options": [
+      "Assets=Liabilities+Capital",
+      "Capital=Assets+Liabilities",
+      "Assets=Capital-Liabilities",
+      "Liabilities=Assets+Capital"
+    ],
+    "answer_index": 0
+  },
+  {
+    "id": "BA-AT1-Q047",
+    "topic": "Accounting Equation",
+    "subtopic": "Fundamentals",
+    "stem": "If assets=\u20a650,000 and liabilities=\u20a620,000, capital= ?",
+    "options": [
+      "\u20a670,000",
+      "\u20a630,000",
+      "\u20a620,000",
+      "\u20a650,000"
     ],
     "answer_index": 1
   },
   {
     "id": "BA-AT1-Q048",
-    "topic": "Accounting Concepts",
-    "subtopic": "Accounting Equation",
-    "stem": "Which of the following best describes the going concern assumption?",
+    "topic": "Accounting Equation",
+    "subtopic": "Application",
+    "stem": "If Assets=\u20a650000 and Liabilities=\u20a620000, Capital=?",
     "options": [
-      "The entity will continue operations for the foreseeable future",
-      "The entity will be liquidated within a year",
-      "Assets equal equity plus liabilities",
-      "Revenue is recognised only when cash is received"
+      "\u20a670000",
+      "\u20a630000",
+      "\u20a620000",
+      "\u20a650000"
     ],
-    "answer_index": 0
+    "answer_index": 1
   },
   {
     "id": "BA-AT1-Q049",
-    "topic": "Double Entry",
-    "subtopic": "Posting & Ledgers",
-    "stem": "Which book is a book of original entry?",
+    "topic": "Accounting Equation",
+    "subtopic": "Application",
+    "stem": "If Assets=\u20a651000 and Liabilities=\u20a620500, Capital=?",
     "options": [
-      "Sales Day Book",
-      "Receivables Ledger",
-      "General Ledger",
-      "Trial Balance"
+      "\u20a671500",
+      "\u20a630500",
+      "\u20a620500",
+      "\u20a651000"
     ],
-    "answer_index": 0
+    "answer_index": 1
   },
   {
     "id": "BA-AT1-Q050",
-    "topic": "Double Entry",
-    "subtopic": "Control Accounts",
-    "stem": "A credit sale to K. Musa should be posted to:",
+    "topic": "Accounting Equation",
+    "subtopic": "Application",
+    "stem": "If Assets=\u20a652000 and Liabilities=\u20a621000, Capital=?",
     "options": [
-      "Debit Sales, Credit K. Musa",
-      "Debit K. Musa, Credit Sales",
-      "Debit Purchases, Credit K. Musa",
-      "Debit K. Musa, Credit Purchases"
+      "\u20a673000",
+      "\u20a631000",
+      "\u20a621000",
+      "\u20a652000"
     ],
     "answer_index": 1
   },
   {
     "id": "BA-AT1-Q051",
-    "topic": "Double Entry",
-    "subtopic": "Books of Prime Entry",
-    "stem": "Which book is a book of original entry?",
+    "topic": "Accounting Equation",
+    "subtopic": "Application",
+    "stem": "If Assets=\u20a653000 and Liabilities=\u20a621500, Capital=?",
     "options": [
-      "Sales Day Book",
-      "Receivables Ledger",
-      "General Ledger",
-      "Trial Balance"
+      "\u20a674500",
+      "\u20a631500",
+      "\u20a621500",
+      "\u20a653000"
     ],
-    "answer_index": 0
+    "answer_index": 1
   },
   {
     "id": "BA-AT1-Q052",
-    "topic": "Trial Balance",
-    "subtopic": "TB Purpose",
-    "stem": "Which error will NOT be revealed by a trial balance?",
+    "topic": "Accounting Equation",
+    "subtopic": "Application",
+    "stem": "If Assets=\u20a654000 and Liabilities=\u20a622000, Capital=?",
     "options": [
-      "Error of omission",
-      "Casting error",
-      "Single-sided posting",
-      "Reversal of entries detected by difference"
+      "\u20a676000",
+      "\u20a632000",
+      "\u20a622000",
+      "\u20a654000"
     ],
-    "answer_index": 0
+    "answer_index": 1
   },
   {
     "id": "BA-AT1-Q053",
-    "topic": "Trial Balance",
-    "subtopic": "Error Types",
-    "stem": "A suspense account is opened to:",
+    "topic": "Accounting Equation",
+    "subtopic": "Application",
+    "stem": "If Assets=\u20a655000 and Liabilities=\u20a622500, Capital=?",
     "options": [
-      "Correct errors that prevent the trial balance from agreeing",
-      "Record cash transactions only",
-      "Replace the capital account",
-      "Prepare the statement of cash flows"
+      "\u20a677500",
+      "\u20a632500",
+      "\u20a622500",
+      "\u20a655000"
     ],
-    "answer_index": 0
+    "answer_index": 1
   },
   {
     "id": "BA-AT1-Q054",
-    "topic": "Trial Balance",
-    "subtopic": "Suspense Account",
-    "stem": "A suspense account is opened to:",
+    "topic": "Accounting Equation",
+    "subtopic": "Application",
+    "stem": "If Assets=\u20a656000 and Liabilities=\u20a623000, Capital=?",
     "options": [
-      "Correct errors that prevent the trial balance from agreeing",
-      "Record cash transactions only",
-      "Replace the capital account",
-      "Prepare the statement of cash flows"
+      "\u20a679000",
+      "\u20a633000",
+      "\u20a623000",
+      "\u20a656000"
     ],
-    "answer_index": 0
+    "answer_index": 1
   },
   {
     "id": "BA-AT1-Q055",
-    "topic": "Financial Statements",
-    "subtopic": "SPL",
-    "stem": "Which item is presented in the Statement of Profit or Loss?",
+    "topic": "Accounting Equation",
+    "subtopic": "Application",
+    "stem": "If Assets=\u20a657000 and Liabilities=\u20a623500, Capital=?",
     "options": [
-      "Gross profit",
-      "Bank balance",
-      "Trade receivables (closing)",
-      "Capital introduced"
+      "\u20a680500",
+      "\u20a633500",
+      "\u20a623500",
+      "\u20a657000"
     ],
-    "answer_index": 0
+    "answer_index": 1
   },
   {
     "id": "BA-AT1-Q056",
-    "topic": "Financial Statements",
-    "subtopic": "SFP",
-    "stem": "Depreciation is best described as:",
+    "topic": "Books of Prime Entry",
+    "subtopic": "Day Books",
+    "stem": "Sales day book is used to record:",
     "options": [
-      "Allocation of the cost of a non-current asset over its useful life",
-      "A fund set aside to replace the asset",
-      "An impairment loss only",
-      "Cash outflow each year equal to asset cost/years"
+      "Credit sales",
+      "Cash sales",
+      "Purchases",
+      "Discounts"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q057",
-    "topic": "Financial Statements",
-    "subtopic": "Adjustments",
-    "stem": "Which item is presented in the Statement of Profit or Loss?",
+    "topic": "Books of Prime Entry",
+    "subtopic": "Day Books",
+    "stem": "Purchases return book records:",
     "options": [
-      "Gross profit",
-      "Bank balance",
-      "Trade receivables (closing)",
-      "Capital introduced"
+      "Goods returned to suppliers",
+      "Goods returned by customers",
+      "Cash purchases",
+      "Fixed assets"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q058",
-    "topic": "Cash Book",
-    "subtopic": "Petty Cash",
-    "stem": "A cheque issued but not yet presented will:",
+    "topic": "Books of Prime Entry",
+    "subtopic": "Day Books",
+    "stem": "Cash book records:",
     "options": [
-      "Decrease the bank balance in the cash book but not yet the bank statement",
-      "Increase the bank balance in both records",
-      "Lead to a bank overdraft immediately",
-      "Be recorded as a contra entry"
+      "Cash receipts and payments",
+      "Credit purchases",
+      "Credit sales",
+      "Returns"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q059",
-    "topic": "Cash Book",
-    "subtopic": "Bank Reconciliation",
-    "stem": "A cheque issued but not yet presented will:",
+    "topic": "Books of Prime Entry",
+    "subtopic": "Examples",
+    "stem": "Which is a book of prime entry? (example 1)",
     "options": [
-      "Decrease the bank balance in the cash book but not yet the bank statement",
-      "Increase the bank balance in both records",
-      "Lead to a bank overdraft immediately",
-      "Be recorded as a contra entry"
+      "Sales day book",
+      "Ledger",
+      "Statement of affairs",
+      "Balance sheet"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q060",
-    "topic": "Cash Book",
-    "subtopic": "Cash/Bank Columns",
-    "stem": "Which of the following appears on a bank statement but not yet in the cash book?",
+    "topic": "Books of Prime Entry",
+    "subtopic": "Examples",
+    "stem": "Which is a book of prime entry? (example 2)",
     "options": [
-      "Unpresented cheques",
-      "Outstanding lodgements",
-      "Bank charges debited by bank",
-      "Dishonoured cheques recorded already"
+      "Sales day book",
+      "Ledger",
+      "Statement of affairs",
+      "Balance sheet"
     ],
-    "answer_index": 2
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q061",
-    "topic": "Accounting Concepts",
-    "subtopic": "Concepts",
-    "stem": "Materiality in accounting primarily influences which of the following?",
+    "topic": "Books of Prime Entry",
+    "subtopic": "Examples",
+    "stem": "Which is a book of prime entry? (example 3)",
     "options": [
-      "The format of the financial statements",
-      "Which items are disclosed or aggregated",
-      "The number of ledger accounts kept",
-      "The choice between FIFO and LIFO"
+      "Sales day book",
+      "Ledger",
+      "Statement of affairs",
+      "Balance sheet"
     ],
-    "answer_index": 1
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q062",
-    "topic": "Accounting Concepts",
-    "subtopic": "Qualitative Characteristics",
-    "stem": "Which qualitative characteristic is enhanced when entities use consistent policies?",
+    "topic": "Books of Prime Entry",
+    "subtopic": "Examples",
+    "stem": "Which is a book of prime entry? (example 4)",
     "options": [
-      "Relevance",
-      "Comparability",
-      "Faithful representation",
-      "Timeliness"
+      "Sales day book",
+      "Ledger",
+      "Statement of affairs",
+      "Balance sheet"
     ],
-    "answer_index": 1
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q063",
-    "topic": "Accounting Concepts",
-    "subtopic": "Accounting Equation",
-    "stem": "Which qualitative characteristic is enhanced when entities use consistent policies?",
+    "topic": "Books of Prime Entry",
+    "subtopic": "Examples",
+    "stem": "Which is a book of prime entry? (example 5)",
     "options": [
-      "Relevance",
-      "Comparability",
-      "Faithful representation",
-      "Timeliness"
+      "Sales day book",
+      "Ledger",
+      "Statement of affairs",
+      "Balance sheet"
     ],
-    "answer_index": 1
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q064",
-    "topic": "Double Entry",
-    "subtopic": "Posting & Ledgers",
-    "stem": "Which book is a book of original entry?",
+    "topic": "Books of Prime Entry",
+    "subtopic": "Examples",
+    "stem": "Which is a book of prime entry? (example 6)",
     "options": [
-      "Sales Day Book",
-      "Receivables Ledger",
-      "General Ledger",
-      "Trial Balance"
+      "Sales day book",
+      "Ledger",
+      "Statement of affairs",
+      "Balance sheet"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q065",
-    "topic": "Double Entry",
-    "subtopic": "Control Accounts",
-    "stem": "A credit sale to K. Musa should be posted to:",
+    "topic": "Books of Prime Entry",
+    "subtopic": "Examples",
+    "stem": "Which is a book of prime entry? (example 7)",
     "options": [
-      "Debit Sales, Credit K. Musa",
-      "Debit K. Musa, Credit Sales",
-      "Debit Purchases, Credit K. Musa",
-      "Debit K. Musa, Credit Purchases"
+      "Sales day book",
+      "Ledger",
+      "Statement of affairs",
+      "Balance sheet"
     ],
-    "answer_index": 1
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q066",
-    "topic": "Double Entry",
-    "subtopic": "Books of Prime Entry",
-    "stem": "Which book is a book of original entry?",
+    "topic": "Books of Prime Entry",
+    "subtopic": "Examples",
+    "stem": "Which is a book of prime entry? (example 8)",
     "options": [
-      "Sales Day Book",
-      "Receivables Ledger",
-      "General Ledger",
-      "Trial Balance"
+      "Sales day book",
+      "Ledger",
+      "Statement of affairs",
+      "Balance sheet"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q067",
-    "topic": "Trial Balance",
-    "subtopic": "TB Purpose",
-    "stem": "A suspense account is opened to:",
+    "topic": "Books of Prime Entry",
+    "subtopic": "Examples",
+    "stem": "Which is a book of prime entry? (example 9)",
     "options": [
-      "Correct errors that prevent the trial balance from agreeing",
-      "Record cash transactions only",
-      "Replace the capital account",
-      "Prepare the statement of cash flows"
+      "Sales day book",
+      "Ledger",
+      "Statement of affairs",
+      "Balance sheet"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q068",
-    "topic": "Trial Balance",
-    "subtopic": "Error Types",
-    "stem": "A suspense account is opened to:",
+    "topic": "Books of Prime Entry",
+    "subtopic": "Examples",
+    "stem": "Which is a book of prime entry? (example 10)",
     "options": [
-      "Correct errors that prevent the trial balance from agreeing",
-      "Record cash transactions only",
-      "Replace the capital account",
-      "Prepare the statement of cash flows"
+      "Sales day book",
+      "Ledger",
+      "Statement of affairs",
+      "Balance sheet"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q069",
-    "topic": "Trial Balance",
-    "subtopic": "Suspense Account",
-    "stem": "A trial balance that agrees guarantees which of the following?",
+    "topic": "Books of Prime Entry",
+    "subtopic": "Examples",
+    "stem": "Which is a book of prime entry? (example 11)",
     "options": [
-      "All entries are complete and correct",
-      "No errors exist in the books",
-      "The arithmetical accuracy of postings",
-      "All assets are correctly valued"
+      "Sales day book",
+      "Ledger",
+      "Statement of affairs",
+      "Balance sheet"
     ],
-    "answer_index": 2
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q070",
-    "topic": "Financial Statements",
-    "subtopic": "SPL",
-    "stem": "Prepaid insurance at year end is:",
+    "topic": "Books of Prime Entry",
+    "subtopic": "Examples",
+    "stem": "Which is a book of prime entry? (example 12)",
     "options": [
-      "A liability in the SFP",
-      "An expense in the SPL",
-      "An asset in the SFP",
-      "An item ignored until next year"
+      "Sales day book",
+      "Ledger",
+      "Statement of affairs",
+      "Balance sheet"
     ],
-    "answer_index": 2
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q071",
-    "topic": "Financial Statements",
-    "subtopic": "SFP",
-    "stem": "Prepaid insurance at year end is:",
+    "topic": "Books of Principal Entry",
+    "subtopic": "Ledger",
+    "stem": "Which of the following is a book of principal entry? (q1)",
     "options": [
-      "A liability in the SFP",
-      "An expense in the SPL",
-      "An asset in the SFP",
-      "An item ignored until next year"
+      "Ledger",
+      "Invoice",
+      "Credit Note",
+      "Purchase Order"
     ],
-    "answer_index": 2
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q072",
-    "topic": "Financial Statements",
-    "subtopic": "Adjustments",
-    "stem": "Depreciation is best described as:",
+    "topic": "Books of Principal Entry",
+    "subtopic": "Ledger",
+    "stem": "Which of the following is a book of principal entry? (q2)",
     "options": [
-      "Allocation of the cost of a non-current asset over its useful life",
-      "A fund set aside to replace the asset",
-      "An impairment loss only",
-      "Cash outflow each year equal to asset cost/years"
+      "Ledger",
+      "Invoice",
+      "Credit Note",
+      "Purchase Order"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q073",
-    "topic": "Cash Book",
-    "subtopic": "Petty Cash",
-    "stem": "A petty cash system operated on the imprest basis means:",
+    "topic": "Books of Principal Entry",
+    "subtopic": "Ledger",
+    "stem": "Which of the following is a book of principal entry? (q3)",
     "options": [
-      "The petty cashier receives a fixed float and is reimbursed to restore the float",
-      "All receipts are banked daily",
-      "Only small cash receipts are recorded",
-      "Cash discounts are recorded as petty cash"
+      "Ledger",
+      "Invoice",
+      "Credit Note",
+      "Purchase Order"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q074",
-    "topic": "Cash Book",
-    "subtopic": "Bank Reconciliation",
-    "stem": "A petty cash system operated on the imprest basis means:",
+    "topic": "Books of Principal Entry",
+    "subtopic": "Ledger",
+    "stem": "Which of the following is a book of principal entry? (q4)",
     "options": [
-      "The petty cashier receives a fixed float and is reimbursed to restore the float",
-      "All receipts are banked daily",
-      "Only small cash receipts are recorded",
-      "Cash discounts are recorded as petty cash"
+      "Ledger",
+      "Invoice",
+      "Credit Note",
+      "Purchase Order"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q075",
-    "topic": "Cash Book",
-    "subtopic": "Cash/Bank Columns",
-    "stem": "Which of the following appears on a bank statement but not yet in the cash book?",
+    "topic": "Books of Principal Entry",
+    "subtopic": "Ledger",
+    "stem": "Which of the following is a book of principal entry? (q5)",
     "options": [
-      "Unpresented cheques",
-      "Outstanding lodgements",
-      "Bank charges debited by bank",
-      "Dishonoured cheques recorded already"
+      "Ledger",
+      "Invoice",
+      "Credit Note",
+      "Purchase Order"
     ],
-    "answer_index": 2
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q076",
-    "topic": "Accounting Concepts",
-    "subtopic": "Concepts",
-    "stem": "Which qualitative characteristic is enhanced when entities use consistent policies?",
+    "topic": "Books of Principal Entry",
+    "subtopic": "Ledger",
+    "stem": "Which of the following is a book of principal entry? (q6)",
     "options": [
-      "Relevance",
-      "Comparability",
-      "Faithful representation",
-      "Timeliness"
+      "Ledger",
+      "Invoice",
+      "Credit Note",
+      "Purchase Order"
     ],
-    "answer_index": 1
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q077",
-    "topic": "Accounting Concepts",
-    "subtopic": "Qualitative Characteristics",
-    "stem": "Which of the following best describes the going concern assumption?",
+    "topic": "Books of Principal Entry",
+    "subtopic": "Ledger",
+    "stem": "Which of the following is a book of principal entry? (q7)",
     "options": [
-      "The entity will continue operations for the foreseeable future",
-      "The entity will be liquidated within a year",
-      "Assets equal equity plus liabilities",
-      "Revenue is recognised only when cash is received"
+      "Ledger",
+      "Invoice",
+      "Credit Note",
+      "Purchase Order"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q078",
-    "topic": "Accounting Concepts",
-    "subtopic": "Accounting Equation",
-    "stem": "Materiality in accounting primarily influences which of the following?",
+    "topic": "Books of Principal Entry",
+    "subtopic": "Ledger",
+    "stem": "Which of the following is a book of principal entry? (q8)",
     "options": [
-      "The format of the financial statements",
-      "Which items are disclosed or aggregated",
-      "The number of ledger accounts kept",
-      "The choice between FIFO and LIFO"
+      "Ledger",
+      "Invoice",
+      "Credit Note",
+      "Purchase Order"
     ],
-    "answer_index": 1
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q079",
-    "topic": "Double Entry",
-    "subtopic": "Posting & Ledgers",
-    "stem": "A payment to a supplier by bank transfer is recorded as:",
+    "topic": "Books of Principal Entry",
+    "subtopic": "Ledger",
+    "stem": "Which of the following is a book of principal entry? (q9)",
     "options": [
-      "Debit Payables, Credit Bank",
-      "Debit Bank, Credit Payables",
-      "Debit Purchases, Credit Bank",
-      "Debit Cash, Credit Sales"
+      "Ledger",
+      "Invoice",
+      "Credit Note",
+      "Purchase Order"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q080",
-    "topic": "Double Entry",
-    "subtopic": "Control Accounts",
-    "stem": "A credit sale to K. Musa should be posted to:",
+    "topic": "Books of Principal Entry",
+    "subtopic": "Ledger",
+    "stem": "Which of the following is a book of principal entry? (q10)",
     "options": [
-      "Debit Sales, Credit K. Musa",
-      "Debit K. Musa, Credit Sales",
-      "Debit Purchases, Credit K. Musa",
-      "Debit K. Musa, Credit Purchases"
+      "Ledger",
+      "Invoice",
+      "Credit Note",
+      "Purchase Order"
     ],
-    "answer_index": 1
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q081",
-    "topic": "Double Entry",
-    "subtopic": "Books of Prime Entry",
-    "stem": "A payment to a supplier by bank transfer is recorded as:",
+    "topic": "Books of Principal Entry",
+    "subtopic": "Ledger",
+    "stem": "Which of the following is a book of principal entry? (q11)",
     "options": [
-      "Debit Payables, Credit Bank",
-      "Debit Bank, Credit Payables",
-      "Debit Purchases, Credit Bank",
-      "Debit Cash, Credit Sales"
+      "Ledger",
+      "Invoice",
+      "Credit Note",
+      "Purchase Order"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q082",
-    "topic": "Trial Balance",
-    "subtopic": "TB Purpose",
-    "stem": "A suspense account is opened to:",
+    "topic": "Books of Principal Entry",
+    "subtopic": "Ledger",
+    "stem": "Which of the following is a book of principal entry? (q12)",
     "options": [
-      "Correct errors that prevent the trial balance from agreeing",
-      "Record cash transactions only",
-      "Replace the capital account",
-      "Prepare the statement of cash flows"
+      "Ledger",
+      "Invoice",
+      "Credit Note",
+      "Purchase Order"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q083",
-    "topic": "Trial Balance",
-    "subtopic": "Error Types",
-    "stem": "A suspense account is opened to:",
+    "topic": "Books of Principal Entry",
+    "subtopic": "Ledger",
+    "stem": "Which of the following is a book of principal entry? (q13)",
     "options": [
-      "Correct errors that prevent the trial balance from agreeing",
-      "Record cash transactions only",
-      "Replace the capital account",
-      "Prepare the statement of cash flows"
+      "Ledger",
+      "Invoice",
+      "Credit Note",
+      "Purchase Order"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q084",
-    "topic": "Trial Balance",
-    "subtopic": "Suspense Account",
-    "stem": "Which error will NOT be revealed by a trial balance?",
+    "topic": "Books of Principal Entry",
+    "subtopic": "Ledger",
+    "stem": "Which of the following is a book of principal entry? (q14)",
     "options": [
-      "Error of omission",
-      "Casting error",
-      "Single-sided posting",
-      "Reversal of entries detected by difference"
+      "Ledger",
+      "Invoice",
+      "Credit Note",
+      "Purchase Order"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q085",
-    "topic": "Financial Statements",
-    "subtopic": "SPL",
-    "stem": "Which item is presented in the Statement of Profit or Loss?",
+    "topic": "Books of Principal Entry",
+    "subtopic": "Ledger",
+    "stem": "Which of the following is a book of principal entry? (q15)",
     "options": [
-      "Gross profit",
-      "Bank balance",
-      "Trade receivables (closing)",
-      "Capital introduced"
+      "Ledger",
+      "Invoice",
+      "Credit Note",
+      "Purchase Order"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q086",
-    "topic": "Financial Statements",
-    "subtopic": "SFP",
-    "stem": "Which item is presented in the Statement of Profit or Loss?",
+    "topic": "Cash Book & Petty Cash",
+    "subtopic": "Cash Book",
+    "stem": "Which column of a three\u2011column cash book records bank charges? (q1)",
     "options": [
-      "Gross profit",
-      "Bank balance",
-      "Trade receivables (closing)",
-      "Capital introduced"
+      "Bank column credit side",
+      "Cash column debit side",
+      "Discount allowed",
+      "Petty cash"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q087",
-    "topic": "Financial Statements",
-    "subtopic": "Adjustments",
-    "stem": "Which item is presented in the Statement of Profit or Loss?",
+    "topic": "Cash Book & Petty Cash",
+    "subtopic": "Cash Book",
+    "stem": "Which column of a three\u2011column cash book records bank charges? (q2)",
     "options": [
-      "Gross profit",
-      "Bank balance",
-      "Trade receivables (closing)",
-      "Capital introduced"
+      "Bank column credit side",
+      "Cash column debit side",
+      "Discount allowed",
+      "Petty cash"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q088",
-    "topic": "Cash Book",
-    "subtopic": "Petty Cash",
-    "stem": "A cheque issued but not yet presented will:",
+    "topic": "Cash Book & Petty Cash",
+    "subtopic": "Cash Book",
+    "stem": "Which column of a three\u2011column cash book records bank charges? (q3)",
     "options": [
-      "Decrease the bank balance in the cash book but not yet the bank statement",
-      "Increase the bank balance in both records",
-      "Lead to a bank overdraft immediately",
-      "Be recorded as a contra entry"
+      "Bank column credit side",
+      "Cash column debit side",
+      "Discount allowed",
+      "Petty cash"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q089",
-    "topic": "Cash Book",
-    "subtopic": "Bank Reconciliation",
-    "stem": "A cheque issued but not yet presented will:",
+    "topic": "Cash Book & Petty Cash",
+    "subtopic": "Cash Book",
+    "stem": "Which column of a three\u2011column cash book records bank charges? (q4)",
     "options": [
-      "Decrease the bank balance in the cash book but not yet the bank statement",
-      "Increase the bank balance in both records",
-      "Lead to a bank overdraft immediately",
-      "Be recorded as a contra entry"
+      "Bank column credit side",
+      "Cash column debit side",
+      "Discount allowed",
+      "Petty cash"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q090",
-    "topic": "Cash Book",
-    "subtopic": "Cash/Bank Columns",
-    "stem": "A petty cash system operated on the imprest basis means:",
+    "topic": "Cash Book & Petty Cash",
+    "subtopic": "Cash Book",
+    "stem": "Which column of a three\u2011column cash book records bank charges? (q5)",
     "options": [
-      "The petty cashier receives a fixed float and is reimbursed to restore the float",
-      "All receipts are banked daily",
-      "Only small cash receipts are recorded",
-      "Cash discounts are recorded as petty cash"
+      "Bank column credit side",
+      "Cash column debit side",
+      "Discount allowed",
+      "Petty cash"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q091",
-    "topic": "Accounting Concepts",
-    "subtopic": "Concepts",
-    "stem": "Which qualitative characteristic is enhanced when entities use consistent policies?",
+    "topic": "Cash Book & Petty Cash",
+    "subtopic": "Cash Book",
+    "stem": "Which column of a three\u2011column cash book records bank charges? (q6)",
     "options": [
-      "Relevance",
-      "Comparability",
-      "Faithful representation",
-      "Timeliness"
+      "Bank column credit side",
+      "Cash column debit side",
+      "Discount allowed",
+      "Petty cash"
     ],
-    "answer_index": 1
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q092",
-    "topic": "Accounting Concepts",
-    "subtopic": "Qualitative Characteristics",
-    "stem": "Which of the following best describes the going concern assumption?",
+    "topic": "Cash Book & Petty Cash",
+    "subtopic": "Cash Book",
+    "stem": "Which column of a three\u2011column cash book records bank charges? (q7)",
     "options": [
-      "The entity will continue operations for the foreseeable future",
-      "The entity will be liquidated within a year",
-      "Assets equal equity plus liabilities",
-      "Revenue is recognised only when cash is received"
+      "Bank column credit side",
+      "Cash column debit side",
+      "Discount allowed",
+      "Petty cash"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q093",
-    "topic": "Accounting Concepts",
-    "subtopic": "Accounting Equation",
-    "stem": "Which qualitative characteristic is enhanced when entities use consistent policies?",
+    "topic": "Cash Book & Petty Cash",
+    "subtopic": "Cash Book",
+    "stem": "Which column of a three\u2011column cash book records bank charges? (q8)",
     "options": [
-      "Relevance",
-      "Comparability",
-      "Faithful representation",
-      "Timeliness"
+      "Bank column credit side",
+      "Cash column debit side",
+      "Discount allowed",
+      "Petty cash"
     ],
-    "answer_index": 1
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q094",
-    "topic": "Double Entry",
-    "subtopic": "Posting & Ledgers",
-    "stem": "A payment to a supplier by bank transfer is recorded as:",
+    "topic": "Cash Book & Petty Cash",
+    "subtopic": "Cash Book",
+    "stem": "Which column of a three\u2011column cash book records bank charges? (q9)",
     "options": [
-      "Debit Payables, Credit Bank",
-      "Debit Bank, Credit Payables",
-      "Debit Purchases, Credit Bank",
-      "Debit Cash, Credit Sales"
+      "Bank column credit side",
+      "Cash column debit side",
+      "Discount allowed",
+      "Petty cash"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q095",
-    "topic": "Double Entry",
-    "subtopic": "Control Accounts",
-    "stem": "A credit sale to K. Musa should be posted to:",
+    "topic": "Cash Book & Petty Cash",
+    "subtopic": "Cash Book",
+    "stem": "Which column of a three\u2011column cash book records bank charges? (q10)",
     "options": [
-      "Debit Sales, Credit K. Musa",
-      "Debit K. Musa, Credit Sales",
-      "Debit Purchases, Credit K. Musa",
-      "Debit K. Musa, Credit Purchases"
+      "Bank column credit side",
+      "Cash column debit side",
+      "Discount allowed",
+      "Petty cash"
     ],
-    "answer_index": 1
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q096",
-    "topic": "Double Entry",
-    "subtopic": "Books of Prime Entry",
-    "stem": "Which book is a book of original entry?",
+    "topic": "Cash Book & Petty Cash",
+    "subtopic": "Petty Cash",
+    "stem": "Imprest system ensures what in petty cash? (q1)",
     "options": [
-      "Sales Day Book",
-      "Receivables Ledger",
-      "General Ledger",
-      "Trial Balance"
+      "Float is restored",
+      "Unlimited spending",
+      "Expenses not recorded",
+      "Balance ignored"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q097",
-    "topic": "Trial Balance",
-    "subtopic": "TB Purpose",
-    "stem": "Which error will NOT be revealed by a trial balance?",
+    "topic": "Cash Book & Petty Cash",
+    "subtopic": "Petty Cash",
+    "stem": "Imprest system ensures what in petty cash? (q2)",
     "options": [
-      "Error of omission",
-      "Casting error",
-      "Single-sided posting",
-      "Reversal of entries detected by difference"
+      "Float is restored",
+      "Unlimited spending",
+      "Expenses not recorded",
+      "Balance ignored"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q098",
-    "topic": "Trial Balance",
-    "subtopic": "Error Types",
-    "stem": "A suspense account is opened to:",
+    "topic": "Cash Book & Petty Cash",
+    "subtopic": "Petty Cash",
+    "stem": "Imprest system ensures what in petty cash? (q3)",
     "options": [
-      "Correct errors that prevent the trial balance from agreeing",
-      "Record cash transactions only",
-      "Replace the capital account",
-      "Prepare the statement of cash flows"
+      "Float is restored",
+      "Unlimited spending",
+      "Expenses not recorded",
+      "Balance ignored"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q099",
-    "topic": "Trial Balance",
-    "subtopic": "Suspense Account",
-    "stem": "Which error will NOT be revealed by a trial balance?",
+    "topic": "Cash Book & Petty Cash",
+    "subtopic": "Petty Cash",
+    "stem": "Imprest system ensures what in petty cash? (q4)",
     "options": [
-      "Error of omission",
-      "Casting error",
-      "Single-sided posting",
-      "Reversal of entries detected by difference"
+      "Float is restored",
+      "Unlimited spending",
+      "Expenses not recorded",
+      "Balance ignored"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q100",
-    "topic": "Financial Statements",
-    "subtopic": "SPL",
-    "stem": "Depreciation is best described as:",
+    "topic": "Cash Book & Petty Cash",
+    "subtopic": "Petty Cash",
+    "stem": "Imprest system ensures what in petty cash? (q5)",
     "options": [
-      "Allocation of the cost of a non-current asset over its useful life",
-      "A fund set aside to replace the asset",
-      "An impairment loss only",
-      "Cash outflow each year equal to asset cost/years"
+      "Float is restored",
+      "Unlimited spending",
+      "Expenses not recorded",
+      "Balance ignored"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q101",
-    "topic": "Financial Statements",
-    "subtopic": "SFP",
-    "stem": "Depreciation is best described as:",
+    "topic": "Ledger Account Posting",
+    "subtopic": "Basics",
+    "stem": "When rent is paid by cheque, posting is: (q1)",
     "options": [
-      "Allocation of the cost of a non-current asset over its useful life",
-      "A fund set aside to replace the asset",
-      "An impairment loss only",
-      "Cash outflow each year equal to asset cost/years"
+      "Dr Rent, Cr Bank",
+      "Dr Bank, Cr Rent",
+      "Dr Cash, Cr Rent",
+      "Dr Rent, Cr Cash"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q102",
-    "topic": "Financial Statements",
-    "subtopic": "Adjustments",
-    "stem": "Depreciation is best described as:",
+    "topic": "Ledger Account Posting",
+    "subtopic": "Basics",
+    "stem": "When rent is paid by cheque, posting is: (q2)",
     "options": [
-      "Allocation of the cost of a non-current asset over its useful life",
-      "A fund set aside to replace the asset",
-      "An impairment loss only",
-      "Cash outflow each year equal to asset cost/years"
+      "Dr Rent, Cr Bank",
+      "Dr Bank, Cr Rent",
+      "Dr Cash, Cr Rent",
+      "Dr Rent, Cr Cash"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q103",
-    "topic": "Cash Book",
-    "subtopic": "Petty Cash",
-    "stem": "A petty cash system operated on the imprest basis means:",
+    "topic": "Ledger Account Posting",
+    "subtopic": "Basics",
+    "stem": "When rent is paid by cheque, posting is: (q3)",
     "options": [
-      "The petty cashier receives a fixed float and is reimbursed to restore the float",
-      "All receipts are banked daily",
-      "Only small cash receipts are recorded",
-      "Cash discounts are recorded as petty cash"
+      "Dr Rent, Cr Bank",
+      "Dr Bank, Cr Rent",
+      "Dr Cash, Cr Rent",
+      "Dr Rent, Cr Cash"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q104",
-    "topic": "Cash Book",
-    "subtopic": "Bank Reconciliation",
-    "stem": "A petty cash system operated on the imprest basis means:",
+    "topic": "Ledger Account Posting",
+    "subtopic": "Basics",
+    "stem": "When rent is paid by cheque, posting is: (q4)",
     "options": [
-      "The petty cashier receives a fixed float and is reimbursed to restore the float",
-      "All receipts are banked daily",
-      "Only small cash receipts are recorded",
-      "Cash discounts are recorded as petty cash"
+      "Dr Rent, Cr Bank",
+      "Dr Bank, Cr Rent",
+      "Dr Cash, Cr Rent",
+      "Dr Rent, Cr Cash"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q105",
-    "topic": "Cash Book",
-    "subtopic": "Cash/Bank Columns",
-    "stem": "Which of the following appears on a bank statement but not yet in the cash book?",
+    "topic": "Ledger Account Posting",
+    "subtopic": "Basics",
+    "stem": "When rent is paid by cheque, posting is: (q5)",
     "options": [
-      "Unpresented cheques",
-      "Outstanding lodgements",
-      "Bank charges debited by bank",
-      "Dishonoured cheques recorded already"
+      "Dr Rent, Cr Bank",
+      "Dr Bank, Cr Rent",
+      "Dr Cash, Cr Rent",
+      "Dr Rent, Cr Cash"
     ],
-    "answer_index": 2
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q106",
-    "topic": "Accounting Concepts",
-    "subtopic": "Concepts",
-    "stem": "Materiality in accounting primarily influences which of the following?",
+    "topic": "Ledger Account Posting",
+    "subtopic": "Basics",
+    "stem": "When rent is paid by cheque, posting is: (q6)",
     "options": [
-      "The format of the financial statements",
-      "Which items are disclosed or aggregated",
-      "The number of ledger accounts kept",
-      "The choice between FIFO and LIFO"
+      "Dr Rent, Cr Bank",
+      "Dr Bank, Cr Rent",
+      "Dr Cash, Cr Rent",
+      "Dr Rent, Cr Cash"
     ],
-    "answer_index": 1
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q107",
-    "topic": "Accounting Concepts",
-    "subtopic": "Qualitative Characteristics",
-    "stem": "Which qualitative characteristic is enhanced when entities use consistent policies?",
+    "topic": "Ledger Account Posting",
+    "subtopic": "Basics",
+    "stem": "When rent is paid by cheque, posting is: (q7)",
     "options": [
-      "Relevance",
-      "Comparability",
-      "Faithful representation",
-      "Timeliness"
+      "Dr Rent, Cr Bank",
+      "Dr Bank, Cr Rent",
+      "Dr Cash, Cr Rent",
+      "Dr Rent, Cr Cash"
     ],
-    "answer_index": 1
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q108",
-    "topic": "Accounting Concepts",
-    "subtopic": "Accounting Equation",
-    "stem": "Which qualitative characteristic is enhanced when entities use consistent policies?",
+    "topic": "Ledger Account Posting",
+    "subtopic": "Basics",
+    "stem": "When rent is paid by cheque, posting is: (q8)",
     "options": [
-      "Relevance",
-      "Comparability",
-      "Faithful representation",
-      "Timeliness"
+      "Dr Rent, Cr Bank",
+      "Dr Bank, Cr Rent",
+      "Dr Cash, Cr Rent",
+      "Dr Rent, Cr Cash"
     ],
-    "answer_index": 1
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q109",
-    "topic": "Double Entry",
-    "subtopic": "Posting & Ledgers",
-    "stem": "Which book is a book of original entry?",
+    "topic": "Ledger Account Posting",
+    "subtopic": "Basics",
+    "stem": "When rent is paid by cheque, posting is: (q9)",
     "options": [
-      "Sales Day Book",
-      "Receivables Ledger",
-      "General Ledger",
-      "Trial Balance"
+      "Dr Rent, Cr Bank",
+      "Dr Bank, Cr Rent",
+      "Dr Cash, Cr Rent",
+      "Dr Rent, Cr Cash"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q110",
-    "topic": "Double Entry",
-    "subtopic": "Control Accounts",
-    "stem": "A payment to a supplier by bank transfer is recorded as:",
+    "topic": "Ledger Account Posting",
+    "subtopic": "Basics",
+    "stem": "When rent is paid by cheque, posting is: (q10)",
     "options": [
-      "Debit Payables, Credit Bank",
-      "Debit Bank, Credit Payables",
-      "Debit Purchases, Credit Bank",
-      "Debit Cash, Credit Sales"
+      "Dr Rent, Cr Bank",
+      "Dr Bank, Cr Rent",
+      "Dr Cash, Cr Rent",
+      "Dr Rent, Cr Cash"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q111",
-    "topic": "Double Entry",
-    "subtopic": "Books of Prime Entry",
-    "stem": "A credit sale to K. Musa should be posted to:",
+    "topic": "Trial Balance",
+    "subtopic": "Purpose",
+    "stem": "What is the primary purpose of preparing a trial balance? (q1)",
     "options": [
-      "Debit Sales, Credit K. Musa",
-      "Debit K. Musa, Credit Sales",
-      "Debit Purchases, Credit K. Musa",
-      "Debit K. Musa, Credit Purchases"
+      "To prove arithmetical accuracy",
+      "To prepare balance sheet",
+      "To detect fraud",
+      "To record transactions"
     ],
-    "answer_index": 1
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q112",
     "topic": "Trial Balance",
-    "subtopic": "TB Purpose",
-    "stem": "Which error will NOT be revealed by a trial balance?",
+    "subtopic": "Purpose",
+    "stem": "What is the primary purpose of preparing a trial balance? (q2)",
     "options": [
-      "Error of omission",
-      "Casting error",
-      "Single-sided posting",
-      "Reversal of entries detected by difference"
+      "To prove arithmetical accuracy",
+      "To prepare balance sheet",
+      "To detect fraud",
+      "To record transactions"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q113",
     "topic": "Trial Balance",
-    "subtopic": "Error Types",
-    "stem": "Which error will NOT be revealed by a trial balance?",
+    "subtopic": "Purpose",
+    "stem": "What is the primary purpose of preparing a trial balance? (q3)",
     "options": [
-      "Error of omission",
-      "Casting error",
-      "Single-sided posting",
-      "Reversal of entries detected by difference"
+      "To prove arithmetical accuracy",
+      "To prepare balance sheet",
+      "To detect fraud",
+      "To record transactions"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q114",
     "topic": "Trial Balance",
-    "subtopic": "Suspense Account",
-    "stem": "A suspense account is opened to:",
+    "subtopic": "Purpose",
+    "stem": "What is the primary purpose of preparing a trial balance? (q4)",
     "options": [
-      "Correct errors that prevent the trial balance from agreeing",
-      "Record cash transactions only",
-      "Replace the capital account",
-      "Prepare the statement of cash flows"
+      "To prove arithmetical accuracy",
+      "To prepare balance sheet",
+      "To detect fraud",
+      "To record transactions"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q115",
-    "topic": "Financial Statements",
-    "subtopic": "SPL",
-    "stem": "Depreciation is best described as:",
+    "topic": "Trial Balance",
+    "subtopic": "Purpose",
+    "stem": "What is the primary purpose of preparing a trial balance? (q5)",
     "options": [
-      "Allocation of the cost of a non-current asset over its useful life",
-      "A fund set aside to replace the asset",
-      "An impairment loss only",
-      "Cash outflow each year equal to asset cost/years"
+      "To prove arithmetical accuracy",
+      "To prepare balance sheet",
+      "To detect fraud",
+      "To record transactions"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q116",
-    "topic": "Financial Statements",
-    "subtopic": "SFP",
-    "stem": "Which item is presented in the Statement of Profit or Loss?",
+    "topic": "Trial Balance",
+    "subtopic": "Purpose",
+    "stem": "What is the primary purpose of preparing a trial balance? (q6)",
     "options": [
-      "Gross profit",
-      "Bank balance",
-      "Trade receivables (closing)",
-      "Capital introduced"
+      "To prove arithmetical accuracy",
+      "To prepare balance sheet",
+      "To detect fraud",
+      "To record transactions"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q117",
-    "topic": "Financial Statements",
-    "subtopic": "Adjustments",
-    "stem": "Prepaid insurance at year end is:",
+    "topic": "Trial Balance",
+    "subtopic": "Purpose",
+    "stem": "What is the primary purpose of preparing a trial balance? (q7)",
     "options": [
-      "A liability in the SFP",
-      "An expense in the SPL",
-      "An asset in the SFP",
-      "An item ignored until next year"
+      "To prove arithmetical accuracy",
+      "To prepare balance sheet",
+      "To detect fraud",
+      "To record transactions"
     ],
-    "answer_index": 2
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q118",
-    "topic": "Cash Book",
-    "subtopic": "Petty Cash",
-    "stem": "A cheque issued but not yet presented will:",
+    "topic": "Trial Balance",
+    "subtopic": "Purpose",
+    "stem": "What is the primary purpose of preparing a trial balance? (q8)",
     "options": [
-      "Decrease the bank balance in the cash book but not yet the bank statement",
-      "Increase the bank balance in both records",
-      "Lead to a bank overdraft immediately",
-      "Be recorded as a contra entry"
+      "To prove arithmetical accuracy",
+      "To prepare balance sheet",
+      "To detect fraud",
+      "To record transactions"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q119",
-    "topic": "Cash Book",
-    "subtopic": "Bank Reconciliation",
-    "stem": "A petty cash system operated on the imprest basis means:",
+    "topic": "Trial Balance",
+    "subtopic": "Purpose",
+    "stem": "What is the primary purpose of preparing a trial balance? (q9)",
     "options": [
-      "The petty cashier receives a fixed float and is reimbursed to restore the float",
-      "All receipts are banked daily",
-      "Only small cash receipts are recorded",
-      "Cash discounts are recorded as petty cash"
+      "To prove arithmetical accuracy",
+      "To prepare balance sheet",
+      "To detect fraud",
+      "To record transactions"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q120",
-    "topic": "Cash Book",
-    "subtopic": "Cash/Bank Columns",
-    "stem": "Which of the following appears on a bank statement but not yet in the cash book?",
+    "topic": "Trial Balance",
+    "subtopic": "Purpose",
+    "stem": "What is the primary purpose of preparing a trial balance? (q10)",
     "options": [
-      "Unpresented cheques",
-      "Outstanding lodgements",
-      "Bank charges debited by bank",
-      "Dishonoured cheques recorded already"
+      "To prove arithmetical accuracy",
+      "To prepare balance sheet",
+      "To detect fraud",
+      "To record transactions"
     ],
-    "answer_index": 2
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q121",
-    "topic": "Accounting Concepts",
-    "subtopic": "Concepts",
-    "stem": "Materiality in accounting primarily influences which of the following?",
+    "topic": "Trial Balance",
+    "subtopic": "Purpose",
+    "stem": "What is the primary purpose of preparing a trial balance? (q11)",
     "options": [
-      "The format of the financial statements",
-      "Which items are disclosed or aggregated",
-      "The number of ledger accounts kept",
-      "The choice between FIFO and LIFO"
+      "To prove arithmetical accuracy",
+      "To prepare balance sheet",
+      "To detect fraud",
+      "To record transactions"
     ],
-    "answer_index": 1
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q122",
-    "topic": "Accounting Concepts",
-    "subtopic": "Qualitative Characteristics",
-    "stem": "Materiality in accounting primarily influences which of the following?",
+    "topic": "Trial Balance",
+    "subtopic": "Purpose",
+    "stem": "What is the primary purpose of preparing a trial balance? (q12)",
     "options": [
-      "The format of the financial statements",
-      "Which items are disclosed or aggregated",
-      "The number of ledger accounts kept",
-      "The choice between FIFO and LIFO"
+      "To prove arithmetical accuracy",
+      "To prepare balance sheet",
+      "To detect fraud",
+      "To record transactions"
     ],
-    "answer_index": 1
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q123",
-    "topic": "Accounting Concepts",
-    "subtopic": "Accounting Equation",
-    "stem": "Which qualitative characteristic is enhanced when entities use consistent policies?",
+    "topic": "Trial Balance",
+    "subtopic": "Purpose",
+    "stem": "What is the primary purpose of preparing a trial balance? (q13)",
     "options": [
-      "Relevance",
-      "Comparability",
-      "Faithful representation",
-      "Timeliness"
+      "To prove arithmetical accuracy",
+      "To prepare balance sheet",
+      "To detect fraud",
+      "To record transactions"
     ],
-    "answer_index": 1
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q124",
-    "topic": "Double Entry",
-    "subtopic": "Posting & Ledgers",
-    "stem": "A credit sale to K. Musa should be posted to:",
+    "topic": "Trial Balance",
+    "subtopic": "Purpose",
+    "stem": "What is the primary purpose of preparing a trial balance? (q14)",
     "options": [
-      "Debit Sales, Credit K. Musa",
-      "Debit K. Musa, Credit Sales",
-      "Debit Purchases, Credit K. Musa",
-      "Debit K. Musa, Credit Purchases"
+      "To prove arithmetical accuracy",
+      "To prepare balance sheet",
+      "To detect fraud",
+      "To record transactions"
     ],
-    "answer_index": 1
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q125",
-    "topic": "Double Entry",
-    "subtopic": "Control Accounts",
-    "stem": "A credit sale to K. Musa should be posted to:",
+    "topic": "Trial Balance",
+    "subtopic": "Purpose",
+    "stem": "What is the primary purpose of preparing a trial balance? (q15)",
     "options": [
-      "Debit Sales, Credit K. Musa",
-      "Debit K. Musa, Credit Sales",
-      "Debit Purchases, Credit K. Musa",
-      "Debit K. Musa, Credit Purchases"
+      "To prove arithmetical accuracy",
+      "To prepare balance sheet",
+      "To detect fraud",
+      "To record transactions"
     ],
-    "answer_index": 1
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q126",
-    "topic": "Double Entry",
-    "subtopic": "Books of Prime Entry",
-    "stem": "Which book is a book of original entry?",
+    "topic": "Correction of Errors & Suspense Account",
+    "subtopic": "Errors",
+    "stem": "Which error will not affect trial balance agreement? (q1)",
     "options": [
-      "Sales Day Book",
-      "Receivables Ledger",
-      "General Ledger",
-      "Trial Balance"
+      "Error of omission",
+      "Error of transposition",
+      "Error of casting",
+      "Error of posting one side only"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q127",
-    "topic": "Trial Balance",
-    "subtopic": "TB Purpose",
-    "stem": "A suspense account is opened to:",
+    "topic": "Correction of Errors & Suspense Account",
+    "subtopic": "Errors",
+    "stem": "Which error will not affect trial balance agreement? (q2)",
     "options": [
-      "Correct errors that prevent the trial balance from agreeing",
-      "Record cash transactions only",
-      "Replace the capital account",
-      "Prepare the statement of cash flows"
+      "Error of omission",
+      "Error of transposition",
+      "Error of casting",
+      "Error of posting one side only"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q128",
-    "topic": "Trial Balance",
-    "subtopic": "Error Types",
-    "stem": "Which error will NOT be revealed by a trial balance?",
+    "topic": "Correction of Errors & Suspense Account",
+    "subtopic": "Errors",
+    "stem": "Which error will not affect trial balance agreement? (q3)",
     "options": [
       "Error of omission",
-      "Casting error",
-      "Single-sided posting",
-      "Reversal of entries detected by difference"
+      "Error of transposition",
+      "Error of casting",
+      "Error of posting one side only"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q129",
-    "topic": "Trial Balance",
-    "subtopic": "Suspense Account",
-    "stem": "A trial balance that agrees guarantees which of the following?",
+    "topic": "Correction of Errors & Suspense Account",
+    "subtopic": "Errors",
+    "stem": "Which error will not affect trial balance agreement? (q4)",
     "options": [
-      "All entries are complete and correct",
-      "No errors exist in the books",
-      "The arithmetical accuracy of postings",
-      "All assets are correctly valued"
+      "Error of omission",
+      "Error of transposition",
+      "Error of casting",
+      "Error of posting one side only"
     ],
-    "answer_index": 2
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q130",
-    "topic": "Financial Statements",
-    "subtopic": "SPL",
-    "stem": "Depreciation is best described as:",
+    "topic": "Correction of Errors & Suspense Account",
+    "subtopic": "Errors",
+    "stem": "Which error will not affect trial balance agreement? (q5)",
     "options": [
-      "Allocation of the cost of a non-current asset over its useful life",
-      "A fund set aside to replace the asset",
-      "An impairment loss only",
-      "Cash outflow each year equal to asset cost/years"
+      "Error of omission",
+      "Error of transposition",
+      "Error of casting",
+      "Error of posting one side only"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q131",
-    "topic": "Financial Statements",
-    "subtopic": "SFP",
-    "stem": "Prepaid insurance at year end is:",
+    "topic": "Correction of Errors & Suspense Account",
+    "subtopic": "Errors",
+    "stem": "Which error will not affect trial balance agreement? (q6)",
     "options": [
-      "A liability in the SFP",
-      "An expense in the SPL",
-      "An asset in the SFP",
-      "An item ignored until next year"
+      "Error of omission",
+      "Error of transposition",
+      "Error of casting",
+      "Error of posting one side only"
     ],
-    "answer_index": 2
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q132",
-    "topic": "Financial Statements",
-    "subtopic": "Adjustments",
-    "stem": "Depreciation is best described as:",
+    "topic": "Correction of Errors & Suspense Account",
+    "subtopic": "Errors",
+    "stem": "Which error will not affect trial balance agreement? (q7)",
     "options": [
-      "Allocation of the cost of a non-current asset over its useful life",
-      "A fund set aside to replace the asset",
-      "An impairment loss only",
-      "Cash outflow each year equal to asset cost/years"
+      "Error of omission",
+      "Error of transposition",
+      "Error of casting",
+      "Error of posting one side only"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q133",
-    "topic": "Cash Book",
-    "subtopic": "Petty Cash",
-    "stem": "Which of the following appears on a bank statement but not yet in the cash book?",
+    "topic": "Correction of Errors & Suspense Account",
+    "subtopic": "Errors",
+    "stem": "Which error will not affect trial balance agreement? (q8)",
     "options": [
-      "Unpresented cheques",
-      "Outstanding lodgements",
-      "Bank charges debited by bank",
-      "Dishonoured cheques recorded already"
+      "Error of omission",
+      "Error of transposition",
+      "Error of casting",
+      "Error of posting one side only"
     ],
-    "answer_index": 2
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q134",
-    "topic": "Cash Book",
-    "subtopic": "Bank Reconciliation",
-    "stem": "A petty cash system operated on the imprest basis means:",
+    "topic": "Correction of Errors & Suspense Account",
+    "subtopic": "Errors",
+    "stem": "Which error will not affect trial balance agreement? (q9)",
     "options": [
-      "The petty cashier receives a fixed float and is reimbursed to restore the float",
-      "All receipts are banked daily",
-      "Only small cash receipts are recorded",
-      "Cash discounts are recorded as petty cash"
+      "Error of omission",
+      "Error of transposition",
+      "Error of casting",
+      "Error of posting one side only"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q135",
-    "topic": "Cash Book",
-    "subtopic": "Cash/Bank Columns",
-    "stem": "Which of the following appears on a bank statement but not yet in the cash book?",
+    "topic": "Correction of Errors & Suspense Account",
+    "subtopic": "Errors",
+    "stem": "Which error will not affect trial balance agreement? (q10)",
     "options": [
-      "Unpresented cheques",
-      "Outstanding lodgements",
-      "Bank charges debited by bank",
-      "Dishonoured cheques recorded already"
+      "Error of omission",
+      "Error of transposition",
+      "Error of casting",
+      "Error of posting one side only"
     ],
-    "answer_index": 2
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q136",
-    "topic": "Accounting Concepts",
-    "subtopic": "Concepts",
-    "stem": "Which qualitative characteristic is enhanced when entities use consistent policies?",
+    "topic": "Correction of Errors & Suspense Account",
+    "subtopic": "Errors",
+    "stem": "Which error will not affect trial balance agreement? (q11)",
     "options": [
-      "Relevance",
-      "Comparability",
-      "Faithful representation",
-      "Timeliness"
+      "Error of omission",
+      "Error of transposition",
+      "Error of casting",
+      "Error of posting one side only"
     ],
-    "answer_index": 1
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q137",
-    "topic": "Accounting Concepts",
-    "subtopic": "Qualitative Characteristics",
-    "stem": "Which of the following best describes the going concern assumption?",
+    "topic": "Correction of Errors & Suspense Account",
+    "subtopic": "Errors",
+    "stem": "Which error will not affect trial balance agreement? (q12)",
     "options": [
-      "The entity will continue operations for the foreseeable future",
-      "The entity will be liquidated within a year",
-      "Assets equal equity plus liabilities",
-      "Revenue is recognised only when cash is received"
+      "Error of omission",
+      "Error of transposition",
+      "Error of casting",
+      "Error of posting one side only"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q138",
-    "topic": "Accounting Concepts",
-    "subtopic": "Accounting Equation",
-    "stem": "Materiality in accounting primarily influences which of the following?",
+    "topic": "Correction of Errors & Suspense Account",
+    "subtopic": "Errors",
+    "stem": "Which error will not affect trial balance agreement? (q13)",
     "options": [
-      "The format of the financial statements",
-      "Which items are disclosed or aggregated",
-      "The number of ledger accounts kept",
-      "The choice between FIFO and LIFO"
+      "Error of omission",
+      "Error of transposition",
+      "Error of casting",
+      "Error of posting one side only"
     ],
-    "answer_index": 1
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q139",
-    "topic": "Double Entry",
-    "subtopic": "Posting & Ledgers",
-    "stem": "A credit sale to K. Musa should be posted to:",
+    "topic": "Correction of Errors & Suspense Account",
+    "subtopic": "Errors",
+    "stem": "Which error will not affect trial balance agreement? (q14)",
     "options": [
-      "Debit Sales, Credit K. Musa",
-      "Debit K. Musa, Credit Sales",
-      "Debit Purchases, Credit K. Musa",
-      "Debit K. Musa, Credit Purchases"
+      "Error of omission",
+      "Error of transposition",
+      "Error of casting",
+      "Error of posting one side only"
     ],
-    "answer_index": 1
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q140",
-    "topic": "Double Entry",
-    "subtopic": "Control Accounts",
-    "stem": "A payment to a supplier by bank transfer is recorded as:",
+    "topic": "Correction of Errors & Suspense Account",
+    "subtopic": "Errors",
+    "stem": "Which error will not affect trial balance agreement? (q15)",
     "options": [
-      "Debit Payables, Credit Bank",
-      "Debit Bank, Credit Payables",
-      "Debit Purchases, Credit Bank",
-      "Debit Cash, Credit Sales"
+      "Error of omission",
+      "Error of transposition",
+      "Error of casting",
+      "Error of posting one side only"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q141",
-    "topic": "Double Entry",
-    "subtopic": "Books of Prime Entry",
-    "stem": "A payment to a supplier by bank transfer is recorded as:",
+    "topic": "Journal Proper",
+    "subtopic": "Uses",
+    "stem": "Which transaction is recorded in journal proper? (q1)",
     "options": [
-      "Debit Payables, Credit Bank",
-      "Debit Bank, Credit Payables",
-      "Debit Purchases, Credit Bank",
-      "Debit Cash, Credit Sales"
+      "Correction of errors",
+      "Cash purchases",
+      "Credit sales",
+      "Bank deposits"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q142",
-    "topic": "Trial Balance",
-    "subtopic": "TB Purpose",
-    "stem": "Which error will NOT be revealed by a trial balance?",
+    "topic": "Journal Proper",
+    "subtopic": "Uses",
+    "stem": "Which transaction is recorded in journal proper? (q2)",
     "options": [
-      "Error of omission",
-      "Casting error",
-      "Single-sided posting",
-      "Reversal of entries detected by difference"
+      "Correction of errors",
+      "Cash purchases",
+      "Credit sales",
+      "Bank deposits"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q143",
-    "topic": "Trial Balance",
-    "subtopic": "Error Types",
-    "stem": "A trial balance that agrees guarantees which of the following?",
+    "topic": "Journal Proper",
+    "subtopic": "Uses",
+    "stem": "Which transaction is recorded in journal proper? (q3)",
     "options": [
-      "All entries are complete and correct",
-      "No errors exist in the books",
-      "The arithmetical accuracy of postings",
-      "All assets are correctly valued"
+      "Correction of errors",
+      "Cash purchases",
+      "Credit sales",
+      "Bank deposits"
     ],
-    "answer_index": 2
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q144",
-    "topic": "Trial Balance",
-    "subtopic": "Suspense Account",
-    "stem": "A suspense account is opened to:",
+    "topic": "Journal Proper",
+    "subtopic": "Uses",
+    "stem": "Which transaction is recorded in journal proper? (q4)",
     "options": [
-      "Correct errors that prevent the trial balance from agreeing",
-      "Record cash transactions only",
-      "Replace the capital account",
-      "Prepare the statement of cash flows"
+      "Correction of errors",
+      "Cash purchases",
+      "Credit sales",
+      "Bank deposits"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q145",
-    "topic": "Financial Statements",
-    "subtopic": "SPL",
-    "stem": "Which item is presented in the Statement of Profit or Loss?",
+    "topic": "Journal Proper",
+    "subtopic": "Uses",
+    "stem": "Which transaction is recorded in journal proper? (q5)",
     "options": [
-      "Gross profit",
-      "Bank balance",
-      "Trade receivables (closing)",
-      "Capital introduced"
+      "Correction of errors",
+      "Cash purchases",
+      "Credit sales",
+      "Bank deposits"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q146",
-    "topic": "Financial Statements",
-    "subtopic": "SFP",
-    "stem": "Depreciation is best described as:",
+    "topic": "Income Statement",
+    "subtopic": "Purpose",
+    "stem": "The income statement is prepared to show: (q1)",
     "options": [
-      "Allocation of the cost of a non-current asset over its useful life",
-      "A fund set aside to replace the asset",
-      "An impairment loss only",
-      "Cash outflow each year equal to asset cost/years"
+      "Profit or loss for a period",
+      "Financial position at a point",
+      "Owner's equity only",
+      "Cash inflows"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q147",
-    "topic": "Financial Statements",
-    "subtopic": "Adjustments",
-    "stem": "Prepaid insurance at year end is:",
+    "topic": "Income Statement",
+    "subtopic": "Purpose",
+    "stem": "The income statement is prepared to show: (q2)",
     "options": [
-      "A liability in the SFP",
-      "An expense in the SPL",
-      "An asset in the SFP",
-      "An item ignored until next year"
+      "Profit or loss for a period",
+      "Financial position at a point",
+      "Owner's equity only",
+      "Cash inflows"
     ],
-    "answer_index": 2
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q148",
-    "topic": "Cash Book",
-    "subtopic": "Petty Cash",
-    "stem": "A petty cash system operated on the imprest basis means:",
+    "topic": "Income Statement",
+    "subtopic": "Purpose",
+    "stem": "The income statement is prepared to show: (q3)",
     "options": [
-      "The petty cashier receives a fixed float and is reimbursed to restore the float",
-      "All receipts are banked daily",
-      "Only small cash receipts are recorded",
-      "Cash discounts are recorded as petty cash"
+      "Profit or loss for a period",
+      "Financial position at a point",
+      "Owner's equity only",
+      "Cash inflows"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q149",
-    "topic": "Cash Book",
-    "subtopic": "Bank Reconciliation",
-    "stem": "A petty cash system operated on the imprest basis means:",
+    "topic": "Income Statement",
+    "subtopic": "Purpose",
+    "stem": "The income statement is prepared to show: (q4)",
     "options": [
-      "The petty cashier receives a fixed float and is reimbursed to restore the float",
-      "All receipts are banked daily",
-      "Only small cash receipts are recorded",
-      "Cash discounts are recorded as petty cash"
+      "Profit or loss for a period",
+      "Financial position at a point",
+      "Owner's equity only",
+      "Cash inflows"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q150",
-    "topic": "Cash Book",
-    "subtopic": "Cash/Bank Columns",
-    "stem": "A petty cash system operated on the imprest basis means:",
+    "topic": "Income Statement",
+    "subtopic": "Purpose",
+    "stem": "The income statement is prepared to show: (q5)",
     "options": [
-      "The petty cashier receives a fixed float and is reimbursed to restore the float",
-      "All receipts are banked daily",
-      "Only small cash receipts are recorded",
-      "Cash discounts are recorded as petty cash"
+      "Profit or loss for a period",
+      "Financial position at a point",
+      "Owner's equity only",
+      "Cash inflows"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q151",
-    "topic": "Accounting Concepts",
-    "subtopic": "Concepts",
-    "stem": "Which qualitative characteristic is enhanced when entities use consistent policies?",
+    "topic": "Income Statement",
+    "subtopic": "Purpose",
+    "stem": "The income statement is prepared to show: (q6)",
     "options": [
-      "Relevance",
-      "Comparability",
-      "Faithful representation",
-      "Timeliness"
+      "Profit or loss for a period",
+      "Financial position at a point",
+      "Owner's equity only",
+      "Cash inflows"
     ],
-    "answer_index": 1
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q152",
-    "topic": "Accounting Concepts",
-    "subtopic": "Qualitative Characteristics",
-    "stem": "Which of the following best describes the going concern assumption?",
+    "topic": "Income Statement",
+    "subtopic": "Purpose",
+    "stem": "The income statement is prepared to show: (q7)",
     "options": [
-      "The entity will continue operations for the foreseeable future",
-      "The entity will be liquidated within a year",
-      "Assets equal equity plus liabilities",
-      "Revenue is recognised only when cash is received"
+      "Profit or loss for a period",
+      "Financial position at a point",
+      "Owner's equity only",
+      "Cash inflows"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q153",
-    "topic": "Accounting Concepts",
-    "subtopic": "Accounting Equation",
-    "stem": "Which of the following best describes the going concern assumption?",
+    "topic": "Income Statement",
+    "subtopic": "Purpose",
+    "stem": "The income statement is prepared to show: (q8)",
     "options": [
-      "The entity will continue operations for the foreseeable future",
-      "The entity will be liquidated within a year",
-      "Assets equal equity plus liabilities",
-      "Revenue is recognised only when cash is received"
+      "Profit or loss for a period",
+      "Financial position at a point",
+      "Owner's equity only",
+      "Cash inflows"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q154",
-    "topic": "Double Entry",
-    "subtopic": "Posting & Ledgers",
-    "stem": "A payment to a supplier by bank transfer is recorded as:",
+    "topic": "Income Statement",
+    "subtopic": "Purpose",
+    "stem": "The income statement is prepared to show: (q9)",
     "options": [
-      "Debit Payables, Credit Bank",
-      "Debit Bank, Credit Payables",
-      "Debit Purchases, Credit Bank",
-      "Debit Cash, Credit Sales"
+      "Profit or loss for a period",
+      "Financial position at a point",
+      "Owner's equity only",
+      "Cash inflows"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q155",
-    "topic": "Double Entry",
-    "subtopic": "Control Accounts",
-    "stem": "A payment to a supplier by bank transfer is recorded as:",
+    "topic": "Income Statement",
+    "subtopic": "Purpose",
+    "stem": "The income statement is prepared to show: (q10)",
     "options": [
-      "Debit Payables, Credit Bank",
-      "Debit Bank, Credit Payables",
-      "Debit Purchases, Credit Bank",
-      "Debit Cash, Credit Sales"
+      "Profit or loss for a period",
+      "Financial position at a point",
+      "Owner's equity only",
+      "Cash inflows"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q156",
-    "topic": "Double Entry",
-    "subtopic": "Books of Prime Entry",
-    "stem": "A credit sale to K. Musa should be posted to:",
+    "topic": "Income Statement",
+    "subtopic": "Purpose",
+    "stem": "The income statement is prepared to show: (q11)",
     "options": [
-      "Debit Sales, Credit K. Musa",
-      "Debit K. Musa, Credit Sales",
-      "Debit Purchases, Credit K. Musa",
-      "Debit K. Musa, Credit Purchases"
+      "Profit or loss for a period",
+      "Financial position at a point",
+      "Owner's equity only",
+      "Cash inflows"
     ],
-    "answer_index": 1
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q157",
-    "topic": "Trial Balance",
-    "subtopic": "TB Purpose",
-    "stem": "Which error will NOT be revealed by a trial balance?",
+    "topic": "Income Statement",
+    "subtopic": "Purpose",
+    "stem": "The income statement is prepared to show: (q12)",
     "options": [
-      "Error of omission",
-      "Casting error",
-      "Single-sided posting",
-      "Reversal of entries detected by difference"
+      "Profit or loss for a period",
+      "Financial position at a point",
+      "Owner's equity only",
+      "Cash inflows"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q158",
-    "topic": "Trial Balance",
-    "subtopic": "Error Types",
-    "stem": "Which error will NOT be revealed by a trial balance?",
+    "topic": "Income Statement",
+    "subtopic": "Purpose",
+    "stem": "The income statement is prepared to show: (q13)",
     "options": [
-      "Error of omission",
-      "Casting error",
-      "Single-sided posting",
-      "Reversal of entries detected by difference"
+      "Profit or loss for a period",
+      "Financial position at a point",
+      "Owner's equity only",
+      "Cash inflows"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q159",
-    "topic": "Trial Balance",
-    "subtopic": "Suspense Account",
-    "stem": "Which error will NOT be revealed by a trial balance?",
+    "topic": "Income Statement",
+    "subtopic": "Purpose",
+    "stem": "The income statement is prepared to show: (q14)",
     "options": [
-      "Error of omission",
-      "Casting error",
-      "Single-sided posting",
-      "Reversal of entries detected by difference"
+      "Profit or loss for a period",
+      "Financial position at a point",
+      "Owner's equity only",
+      "Cash inflows"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q160",
-    "topic": "Financial Statements",
-    "subtopic": "SPL",
-    "stem": "Which item is presented in the Statement of Profit or Loss?",
+    "topic": "Income Statement",
+    "subtopic": "Purpose",
+    "stem": "The income statement is prepared to show: (q15)",
     "options": [
-      "Gross profit",
-      "Bank balance",
-      "Trade receivables (closing)",
-      "Capital introduced"
+      "Profit or loss for a period",
+      "Financial position at a point",
+      "Owner's equity only",
+      "Cash inflows"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q161",
-    "topic": "Financial Statements",
-    "subtopic": "SFP",
-    "stem": "Which item is presented in the Statement of Profit or Loss?",
+    "topic": "Statement of Financial Position",
+    "subtopic": "Structure",
+    "stem": "Which of the following is a non-current asset? (q1)",
     "options": [
-      "Gross profit",
-      "Bank balance",
-      "Trade receivables (closing)",
-      "Capital introduced"
+      "Plant and machinery",
+      "Inventory",
+      "Cash",
+      "Trade receivable"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q162",
-    "topic": "Financial Statements",
-    "subtopic": "Adjustments",
-    "stem": "Depreciation is best described as:",
+    "topic": "Statement of Financial Position",
+    "subtopic": "Structure",
+    "stem": "Which of the following is a non-current asset? (q2)",
     "options": [
-      "Allocation of the cost of a non-current asset over its useful life",
-      "A fund set aside to replace the asset",
-      "An impairment loss only",
-      "Cash outflow each year equal to asset cost/years"
+      "Plant and machinery",
+      "Inventory",
+      "Cash",
+      "Trade receivable"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q163",
-    "topic": "Cash Book",
-    "subtopic": "Petty Cash",
-    "stem": "Which of the following appears on a bank statement but not yet in the cash book?",
+    "topic": "Statement of Financial Position",
+    "subtopic": "Structure",
+    "stem": "Which of the following is a non-current asset? (q3)",
     "options": [
-      "Unpresented cheques",
-      "Outstanding lodgements",
-      "Bank charges debited by bank",
-      "Dishonoured cheques recorded already"
+      "Plant and machinery",
+      "Inventory",
+      "Cash",
+      "Trade receivable"
     ],
-    "answer_index": 2
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q164",
-    "topic": "Cash Book",
-    "subtopic": "Bank Reconciliation",
-    "stem": "A cheque issued but not yet presented will:",
+    "topic": "Statement of Financial Position",
+    "subtopic": "Structure",
+    "stem": "Which of the following is a non-current asset? (q4)",
     "options": [
-      "Decrease the bank balance in the cash book but not yet the bank statement",
-      "Increase the bank balance in both records",
-      "Lead to a bank overdraft immediately",
-      "Be recorded as a contra entry"
+      "Plant and machinery",
+      "Inventory",
+      "Cash",
+      "Trade receivable"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q165",
-    "topic": "Cash Book",
-    "subtopic": "Cash/Bank Columns",
-    "stem": "Which of the following appears on a bank statement but not yet in the cash book?",
+    "topic": "Statement of Financial Position",
+    "subtopic": "Structure",
+    "stem": "Which of the following is a non-current asset? (q5)",
     "options": [
-      "Unpresented cheques",
-      "Outstanding lodgements",
-      "Bank charges debited by bank",
-      "Dishonoured cheques recorded already"
+      "Plant and machinery",
+      "Inventory",
+      "Cash",
+      "Trade receivable"
     ],
-    "answer_index": 2
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q166",
-    "topic": "Accounting Concepts",
-    "subtopic": "Concepts",
-    "stem": "Which qualitative characteristic is enhanced when entities use consistent policies?",
+    "topic": "Statement of Financial Position",
+    "subtopic": "Structure",
+    "stem": "Which of the following is a non-current asset? (q6)",
     "options": [
-      "Relevance",
-      "Comparability",
-      "Faithful representation",
-      "Timeliness"
+      "Plant and machinery",
+      "Inventory",
+      "Cash",
+      "Trade receivable"
     ],
-    "answer_index": 1
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q167",
-    "topic": "Accounting Concepts",
-    "subtopic": "Qualitative Characteristics",
-    "stem": "Which qualitative characteristic is enhanced when entities use consistent policies?",
+    "topic": "Statement of Financial Position",
+    "subtopic": "Structure",
+    "stem": "Which of the following is a non-current asset? (q7)",
     "options": [
-      "Relevance",
-      "Comparability",
-      "Faithful representation",
-      "Timeliness"
+      "Plant and machinery",
+      "Inventory",
+      "Cash",
+      "Trade receivable"
     ],
-    "answer_index": 1
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q168",
-    "topic": "Accounting Concepts",
-    "subtopic": "Accounting Equation",
-    "stem": "Materiality in accounting primarily influences which of the following?",
+    "topic": "Statement of Financial Position",
+    "subtopic": "Structure",
+    "stem": "Which of the following is a non-current asset? (q8)",
     "options": [
-      "The format of the financial statements",
-      "Which items are disclosed or aggregated",
-      "The number of ledger accounts kept",
-      "The choice between FIFO and LIFO"
+      "Plant and machinery",
+      "Inventory",
+      "Cash",
+      "Trade receivable"
     ],
-    "answer_index": 1
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q169",
-    "topic": "Double Entry",
-    "subtopic": "Posting & Ledgers",
-    "stem": "A payment to a supplier by bank transfer is recorded as:",
+    "topic": "Statement of Financial Position",
+    "subtopic": "Structure",
+    "stem": "Which of the following is a non-current asset? (q9)",
     "options": [
-      "Debit Payables, Credit Bank",
-      "Debit Bank, Credit Payables",
-      "Debit Purchases, Credit Bank",
-      "Debit Cash, Credit Sales"
+      "Plant and machinery",
+      "Inventory",
+      "Cash",
+      "Trade receivable"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q170",
-    "topic": "Double Entry",
-    "subtopic": "Control Accounts",
-    "stem": "A credit sale to K. Musa should be posted to:",
+    "topic": "Statement of Financial Position",
+    "subtopic": "Structure",
+    "stem": "Which of the following is a non-current asset? (q10)",
     "options": [
-      "Debit Sales, Credit K. Musa",
-      "Debit K. Musa, Credit Sales",
-      "Debit Purchases, Credit K. Musa",
-      "Debit K. Musa, Credit Purchases"
+      "Plant and machinery",
+      "Inventory",
+      "Cash",
+      "Trade receivable"
     ],
-    "answer_index": 1
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q171",
-    "topic": "Double Entry",
-    "subtopic": "Books of Prime Entry",
-    "stem": "A payment to a supplier by bank transfer is recorded as:",
+    "topic": "Statement of Financial Position",
+    "subtopic": "Structure",
+    "stem": "Which of the following is a non-current asset? (q11)",
     "options": [
-      "Debit Payables, Credit Bank",
-      "Debit Bank, Credit Payables",
-      "Debit Purchases, Credit Bank",
-      "Debit Cash, Credit Sales"
+      "Plant and machinery",
+      "Inventory",
+      "Cash",
+      "Trade receivable"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q172",
-    "topic": "Trial Balance",
-    "subtopic": "TB Purpose",
-    "stem": "A suspense account is opened to:",
+    "topic": "Statement of Financial Position",
+    "subtopic": "Structure",
+    "stem": "Which of the following is a non-current asset? (q12)",
     "options": [
-      "Correct errors that prevent the trial balance from agreeing",
-      "Record cash transactions only",
-      "Replace the capital account",
-      "Prepare the statement of cash flows"
+      "Plant and machinery",
+      "Inventory",
+      "Cash",
+      "Trade receivable"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q173",
-    "topic": "Trial Balance",
-    "subtopic": "Error Types",
-    "stem": "Which error will NOT be revealed by a trial balance?",
+    "topic": "Statement of Financial Position",
+    "subtopic": "Structure",
+    "stem": "Which of the following is a non-current asset? (q13)",
     "options": [
-      "Error of omission",
-      "Casting error",
-      "Single-sided posting",
-      "Reversal of entries detected by difference"
+      "Plant and machinery",
+      "Inventory",
+      "Cash",
+      "Trade receivable"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q174",
-    "topic": "Trial Balance",
-    "subtopic": "Suspense Account",
-    "stem": "A trial balance that agrees guarantees which of the following?",
+    "topic": "Statement of Financial Position",
+    "subtopic": "Structure",
+    "stem": "Which of the following is a non-current asset? (q14)",
     "options": [
-      "All entries are complete and correct",
-      "No errors exist in the books",
-      "The arithmetical accuracy of postings",
-      "All assets are correctly valued"
+      "Plant and machinery",
+      "Inventory",
+      "Cash",
+      "Trade receivable"
     ],
-    "answer_index": 2
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q175",
-    "topic": "Financial Statements",
-    "subtopic": "SPL",
-    "stem": "Which item is presented in the Statement of Profit or Loss?",
+    "topic": "Statement of Financial Position",
+    "subtopic": "Structure",
+    "stem": "Which of the following is a non-current asset? (q15)",
     "options": [
-      "Gross profit",
-      "Bank balance",
-      "Trade receivables (closing)",
-      "Capital introduced"
+      "Plant and machinery",
+      "Inventory",
+      "Cash",
+      "Trade receivable"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q176",
-    "topic": "Financial Statements",
-    "subtopic": "SFP",
-    "stem": "Which item is presented in the Statement of Profit or Loss?",
+    "topic": "Payroll Accounting",
+    "subtopic": "Deductions",
+    "stem": "Which of the following is a statutory deduction from payroll? (q1)",
     "options": [
-      "Gross profit",
-      "Bank balance",
-      "Trade receivables (closing)",
-      "Capital introduced"
+      "Pension contribution",
+      "Transport allowance",
+      "Housing benefit",
+      "Meal subsidy"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q177",
-    "topic": "Financial Statements",
-    "subtopic": "Adjustments",
-    "stem": "Prepaid insurance at year end is:",
+    "topic": "Payroll Accounting",
+    "subtopic": "Deductions",
+    "stem": "Which of the following is a statutory deduction from payroll? (q2)",
     "options": [
-      "A liability in the SFP",
-      "An expense in the SPL",
-      "An asset in the SFP",
-      "An item ignored until next year"
+      "Pension contribution",
+      "Transport allowance",
+      "Housing benefit",
+      "Meal subsidy"
     ],
-    "answer_index": 2
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q178",
-    "topic": "Cash Book",
-    "subtopic": "Petty Cash",
-    "stem": "A cheque issued but not yet presented will:",
+    "topic": "Payroll Accounting",
+    "subtopic": "Deductions",
+    "stem": "Which of the following is a statutory deduction from payroll? (q3)",
     "options": [
-      "Decrease the bank balance in the cash book but not yet the bank statement",
-      "Increase the bank balance in both records",
-      "Lead to a bank overdraft immediately",
-      "Be recorded as a contra entry"
+      "Pension contribution",
+      "Transport allowance",
+      "Housing benefit",
+      "Meal subsidy"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q179",
-    "topic": "Cash Book",
-    "subtopic": "Bank Reconciliation",
-    "stem": "Which of the following appears on a bank statement but not yet in the cash book?",
+    "topic": "Payroll Accounting",
+    "subtopic": "Deductions",
+    "stem": "Which of the following is a statutory deduction from payroll? (q4)",
     "options": [
-      "Unpresented cheques",
-      "Outstanding lodgements",
-      "Bank charges debited by bank",
-      "Dishonoured cheques recorded already"
+      "Pension contribution",
+      "Transport allowance",
+      "Housing benefit",
+      "Meal subsidy"
     ],
-    "answer_index": 2
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q180",
-    "topic": "Cash Book",
-    "subtopic": "Cash/Bank Columns",
-    "stem": "A petty cash system operated on the imprest basis means:",
+    "topic": "Payroll Accounting",
+    "subtopic": "Deductions",
+    "stem": "Which of the following is a statutory deduction from payroll? (q5)",
     "options": [
-      "The petty cashier receives a fixed float and is reimbursed to restore the float",
-      "All receipts are banked daily",
-      "Only small cash receipts are recorded",
-      "Cash discounts are recorded as petty cash"
+      "Pension contribution",
+      "Transport allowance",
+      "Housing benefit",
+      "Meal subsidy"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q181",
-    "topic": "Accounting Concepts",
-    "subtopic": "Concepts",
-    "stem": "Which of the following best describes the going concern assumption?",
+    "topic": "Payroll Accounting",
+    "subtopic": "Deductions",
+    "stem": "Which of the following is a statutory deduction from payroll? (q6)",
     "options": [
-      "The entity will continue operations for the foreseeable future",
-      "The entity will be liquidated within a year",
-      "Assets equal equity plus liabilities",
-      "Revenue is recognised only when cash is received"
+      "Pension contribution",
+      "Transport allowance",
+      "Housing benefit",
+      "Meal subsidy"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q182",
-    "topic": "Accounting Concepts",
-    "subtopic": "Qualitative Characteristics",
-    "stem": "Which of the following best describes the going concern assumption?",
+    "topic": "Payroll Accounting",
+    "subtopic": "Deductions",
+    "stem": "Which of the following is a statutory deduction from payroll? (q7)",
     "options": [
-      "The entity will continue operations for the foreseeable future",
-      "The entity will be liquidated within a year",
-      "Assets equal equity plus liabilities",
-      "Revenue is recognised only when cash is received"
+      "Pension contribution",
+      "Transport allowance",
+      "Housing benefit",
+      "Meal subsidy"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q183",
-    "topic": "Accounting Concepts",
-    "subtopic": "Accounting Equation",
-    "stem": "Which of the following best describes the going concern assumption?",
+    "topic": "Payroll Accounting",
+    "subtopic": "Deductions",
+    "stem": "Which of the following is a statutory deduction from payroll? (q8)",
     "options": [
-      "The entity will continue operations for the foreseeable future",
-      "The entity will be liquidated within a year",
-      "Assets equal equity plus liabilities",
-      "Revenue is recognised only when cash is received"
+      "Pension contribution",
+      "Transport allowance",
+      "Housing benefit",
+      "Meal subsidy"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q184",
-    "topic": "Double Entry",
-    "subtopic": "Posting & Ledgers",
-    "stem": "A credit sale to K. Musa should be posted to:",
+    "topic": "Payroll Accounting",
+    "subtopic": "Deductions",
+    "stem": "Which of the following is a statutory deduction from payroll? (q9)",
     "options": [
-      "Debit Sales, Credit K. Musa",
-      "Debit K. Musa, Credit Sales",
-      "Debit Purchases, Credit K. Musa",
-      "Debit K. Musa, Credit Purchases"
+      "Pension contribution",
+      "Transport allowance",
+      "Housing benefit",
+      "Meal subsidy"
     ],
-    "answer_index": 1
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q185",
-    "topic": "Double Entry",
-    "subtopic": "Control Accounts",
-    "stem": "A credit sale to K. Musa should be posted to:",
+    "topic": "Payroll Accounting",
+    "subtopic": "Deductions",
+    "stem": "Which of the following is a statutory deduction from payroll? (q10)",
     "options": [
-      "Debit Sales, Credit K. Musa",
-      "Debit K. Musa, Credit Sales",
-      "Debit Purchases, Credit K. Musa",
-      "Debit K. Musa, Credit Purchases"
+      "Pension contribution",
+      "Transport allowance",
+      "Housing benefit",
+      "Meal subsidy"
     ],
-    "answer_index": 1
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q186",
-    "topic": "Double Entry",
-    "subtopic": "Books of Prime Entry",
-    "stem": "A credit sale to K. Musa should be posted to:",
+    "topic": "Control Accounts",
+    "subtopic": "Purpose",
+    "stem": "Which statement is true of control accounts? (q1)",
     "options": [
-      "Debit Sales, Credit K. Musa",
-      "Debit K. Musa, Credit Sales",
-      "Debit Purchases, Credit K. Musa",
-      "Debit K. Musa, Credit Purchases"
+      "They reconcile ledger totals",
+      "They are part of financial statements",
+      "They record petty cash",
+      "They replace journals"
     ],
-    "answer_index": 1
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q187",
-    "topic": "Trial Balance",
-    "subtopic": "TB Purpose",
-    "stem": "Which error will NOT be revealed by a trial balance?",
+    "topic": "Control Accounts",
+    "subtopic": "Purpose",
+    "stem": "Which statement is true of control accounts? (q2)",
     "options": [
-      "Error of omission",
-      "Casting error",
-      "Single-sided posting",
-      "Reversal of entries detected by difference"
+      "They reconcile ledger totals",
+      "They are part of financial statements",
+      "They record petty cash",
+      "They replace journals"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q188",
-    "topic": "Trial Balance",
-    "subtopic": "Error Types",
-    "stem": "Which error will NOT be revealed by a trial balance?",
+    "topic": "Control Accounts",
+    "subtopic": "Purpose",
+    "stem": "Which statement is true of control accounts? (q3)",
     "options": [
-      "Error of omission",
-      "Casting error",
-      "Single-sided posting",
-      "Reversal of entries detected by difference"
+      "They reconcile ledger totals",
+      "They are part of financial statements",
+      "They record petty cash",
+      "They replace journals"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q189",
-    "topic": "Trial Balance",
-    "subtopic": "Suspense Account",
-    "stem": "Which error will NOT be revealed by a trial balance?",
+    "topic": "Control Accounts",
+    "subtopic": "Purpose",
+    "stem": "Which statement is true of control accounts? (q4)",
     "options": [
-      "Error of omission",
-      "Casting error",
-      "Single-sided posting",
-      "Reversal of entries detected by difference"
+      "They reconcile ledger totals",
+      "They are part of financial statements",
+      "They record petty cash",
+      "They replace journals"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q190",
-    "topic": "Financial Statements",
-    "subtopic": "SPL",
-    "stem": "Prepaid insurance at year end is:",
+    "topic": "Control Accounts",
+    "subtopic": "Purpose",
+    "stem": "Which statement is true of control accounts? (q5)",
     "options": [
-      "A liability in the SFP",
-      "An expense in the SPL",
-      "An asset in the SFP",
-      "An item ignored until next year"
+      "They reconcile ledger totals",
+      "They are part of financial statements",
+      "They record petty cash",
+      "They replace journals"
     ],
-    "answer_index": 2
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q191",
-    "topic": "Financial Statements",
-    "subtopic": "SFP",
-    "stem": "Prepaid insurance at year end is:",
+    "topic": "Control Accounts",
+    "subtopic": "Purpose",
+    "stem": "Which statement is true of control accounts? (q6)",
     "options": [
-      "A liability in the SFP",
-      "An expense in the SPL",
-      "An asset in the SFP",
-      "An item ignored until next year"
+      "They reconcile ledger totals",
+      "They are part of financial statements",
+      "They record petty cash",
+      "They replace journals"
     ],
-    "answer_index": 2
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q192",
-    "topic": "Financial Statements",
-    "subtopic": "Adjustments",
-    "stem": "Prepaid insurance at year end is:",
+    "topic": "Control Accounts",
+    "subtopic": "Purpose",
+    "stem": "Which statement is true of control accounts? (q7)",
     "options": [
-      "A liability in the SFP",
-      "An expense in the SPL",
-      "An asset in the SFP",
-      "An item ignored until next year"
+      "They reconcile ledger totals",
+      "They are part of financial statements",
+      "They record petty cash",
+      "They replace journals"
     ],
-    "answer_index": 2
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q193",
-    "topic": "Cash Book",
-    "subtopic": "Petty Cash",
-    "stem": "A petty cash system operated on the imprest basis means:",
+    "topic": "Control Accounts",
+    "subtopic": "Purpose",
+    "stem": "Which statement is true of control accounts? (q8)",
     "options": [
-      "The petty cashier receives a fixed float and is reimbursed to restore the float",
-      "All receipts are banked daily",
-      "Only small cash receipts are recorded",
-      "Cash discounts are recorded as petty cash"
+      "They reconcile ledger totals",
+      "They are part of financial statements",
+      "They record petty cash",
+      "They replace journals"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q194",
-    "topic": "Cash Book",
-    "subtopic": "Bank Reconciliation",
-    "stem": "Which of the following appears on a bank statement but not yet in the cash book?",
+    "topic": "Control Accounts",
+    "subtopic": "Purpose",
+    "stem": "Which statement is true of control accounts? (q9)",
     "options": [
-      "Unpresented cheques",
-      "Outstanding lodgements",
-      "Bank charges debited by bank",
-      "Dishonoured cheques recorded already"
+      "They reconcile ledger totals",
+      "They are part of financial statements",
+      "They record petty cash",
+      "They replace journals"
     ],
-    "answer_index": 2
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q195",
-    "topic": "Cash Book",
-    "subtopic": "Cash/Bank Columns",
-    "stem": "Which of the following appears on a bank statement but not yet in the cash book?",
+    "topic": "Control Accounts",
+    "subtopic": "Purpose",
+    "stem": "Which statement is true of control accounts? (q10)",
     "options": [
-      "Unpresented cheques",
-      "Outstanding lodgements",
-      "Bank charges debited by bank",
-      "Dishonoured cheques recorded already"
+      "They reconcile ledger totals",
+      "They are part of financial statements",
+      "They record petty cash",
+      "They replace journals"
     ],
-    "answer_index": 2
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q196",
-    "topic": "Accounting Concepts",
-    "subtopic": "Concepts",
-    "stem": "Materiality in accounting primarily influences which of the following?",
+    "topic": "Statement of Affairs",
+    "subtopic": "Purpose",
+    "stem": "A statement of affairs is prepared to ascertain: (q1)",
     "options": [
-      "The format of the financial statements",
-      "Which items are disclosed or aggregated",
-      "The number of ledger accounts kept",
-      "The choice between FIFO and LIFO"
+      "Capital in incomplete records",
+      "Profit and loss",
+      "Depreciation",
+      "Petty cash balance"
     ],
-    "answer_index": 1
+    "answer_index": 0
   },
   {
     "id": "BA-AT1-Q197",
-    "topic": "Accounting Concepts",
-    "subtopic": "Qualitative Characteristics",
-    "stem": "Which of the following best describes the going concern assumption?",
+    "topic": "Statement of Affairs",
+    "subtopic": "Purpose",
+    "stem": "A statement of affairs is prepared to ascertain: (q2)",
     "options": [
-      "The entity will continue operations for the foreseeable future",
-      "The entity will be liquidated within a year",
-      "Assets equal equity plus liabilities",
-      "Revenue is recognised only when cash is received"
+      "Capital in incomplete records",
+      "Profit and loss",
+      "Depreciation",
+      "Petty cash balance"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q198",
-    "topic": "Accounting Concepts",
-    "subtopic": "Accounting Equation",
-    "stem": "Which of the following best describes the going concern assumption?",
+    "topic": "Statement of Affairs",
+    "subtopic": "Purpose",
+    "stem": "A statement of affairs is prepared to ascertain: (q3)",
     "options": [
-      "The entity will continue operations for the foreseeable future",
-      "The entity will be liquidated within a year",
-      "Assets equal equity plus liabilities",
-      "Revenue is recognised only when cash is received"
+      "Capital in incomplete records",
+      "Profit and loss",
+      "Depreciation",
+      "Petty cash balance"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q199",
-    "topic": "Double Entry",
-    "subtopic": "Posting & Ledgers",
-    "stem": "A payment to a supplier by bank transfer is recorded as:",
+    "topic": "Statement of Affairs",
+    "subtopic": "Purpose",
+    "stem": "A statement of affairs is prepared to ascertain: (q4)",
     "options": [
-      "Debit Payables, Credit Bank",
-      "Debit Bank, Credit Payables",
-      "Debit Purchases, Credit Bank",
-      "Debit Cash, Credit Sales"
+      "Capital in incomplete records",
+      "Profit and loss",
+      "Depreciation",
+      "Petty cash balance"
     ],
     "answer_index": 0
   },
   {
     "id": "BA-AT1-Q200",
-    "topic": "Double Entry",
-    "subtopic": "Control Accounts",
-    "stem": "A payment to a supplier by bank transfer is recorded as:",
+    "topic": "Statement of Affairs",
+    "subtopic": "Purpose",
+    "stem": "A statement of affairs is prepared to ascertain: (q5)",
     "options": [
-      "Debit Payables, Credit Bank",
-      "Debit Bank, Credit Payables",
-      "Debit Purchases, Credit Bank",
-      "Debit Cash, Credit Sales"
-    ],
-    "answer_index": 0
-  }
-]
+      "Capital in incomplete records",
+    
