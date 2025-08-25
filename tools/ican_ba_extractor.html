@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ICAN BA Extractor (INSIGHT PDFs → JSON)</title>
+<style>
+  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;background:#0b0d10;color:#e9eef3;margin:0}
+  .wrap{max-width:1000px;margin:0 auto;padding:20px}
+  .card{border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:16px;margin:12px 0;background:#12151a}
+  .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+  .pill{background:#1e2630;border-radius:999px;padding:6px 10px;font-family:ui-monospace,Consolas,Monaco,monospace}
+  button{cursor:pointer;border:none;border-radius:8px;padding:10px 14px;background:#3a7bfd;color:#fff}
+  button.secondary{background:#273043}
+  .mono{font-family:ui-monospace,Consolas,Monaco,monospace}
+  .small{font-size:.9rem;color:#9fb0c3}
+  pre{white-space:pre-wrap;background:#0f1318;padding:10px;border-radius:8px;max-height:260px;overflow:auto}
+  input[type="file"]{padding:8px;background:#0f1318;border-radius:8px}
+  a.btn{display:inline-block;text-decoration:none;background:#3a7bfd;color:#fff;padding:8px 12px;border-radius:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>INSIGHT → Basic Accounting JSON</h1>
+  <p class="small">Select your INSIGHT Part I PDFs (2019 → 2025). This runs in your browser only. It will extract only Basic Accounting questions that have a clear stem, options A–D, and a matching answer from the solutions. Everything else is skipped.</p>
+
+  <div class="card">
+    <div class="row">
+      <input id="fileInput" type="file" accept="application/pdf" multiple />
+      <button id="runBtn">Extract</button>
+      <a id="downloadBtn" class="btn" style="display:none">Download JSON</a>
+      <span id="counts" class="pill mono">Ready</span>
+    </div>
+    <div class="small">Tip: you can select all 8 PDFs at once.</div>
+  </div>
+
+  <div class="card">
+    <h3>Log</h3>
+    <pre id="log"></pre>
+  </div>
+</div>
+
+<!-- PDF.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.5.136/pdf.min.js" integrity="sha512-ZI3wmd9zroU9j6Z1A2O7kGvD1u3Mk3p9jgnl2hmwkQ1XJY8A0rnqUAG8P8ANp7t26GkR/sR8WfYbJ4V+M1d0qg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+const logEl = document.getElementById('log');
+const countsEl = document.getElementById('counts');
+const runBtn = document.getElementById('runBtn');
+const fileInput = document.getElementById('fileInput');
+const downloadBtn = document.getElementById('downloadBtn');
+
+function log(txt){ logEl.textContent += txt + "\\n"; logEl.scrollTop = logEl.scrollHeight; }
+function norm(s){ return (s||'').replace(/\\s+/g,' ').trim(); }
+function looksLikeBAHeader(t){ return /basic\\s+accounting/i.test(t); }
+function looksLikeSolutionsHeader(t){ return /(suggested\\s+solutions|answers?\\s*:\\s*section)/i.test(t); }
+
+// Extract all text from a PDF (cheap, heuristic)
+async function pdfToText(file){
+  const buf = await file.arrayBuffer();
+  const pdf = await pdfjsLib.getDocument({data: buf}).promise;
+  let pages = [];
+  for(let p=1; p<=pdf.numPages; p++){
+    const page = await pdf.getPage(p);
+    const content = await page.getTextContent();
+    const text = content.items.map(i => i.str).join(' ');
+    pages.push(norm(text));
+  }
+  return {pages, numPages: pdf.numPages, name: file.name};
+}
+
+// Slice BA section (very heuristic: detect BA header → until next subject header or solutions)
+function sliceBA(pages){
+  let start = -1, end = pages.length;
+  for (let i=0;i<pages.length;i++){
+    if (looksLikeBAHeader(pages[i])) { start = i; break; }
+  }
+  if (start === -1) return null;
+  for (let j=start+1;j<pages.length;j++){
+    if (/economics|business\\s+law|communication\\s+skills/i.test(pages[j]) || looksLikeSolutionsHeader(pages[j])) {
+      end = j; break;
+    }
+  }
+  return pages.slice(start, end).join(' ');
+}
+
+// Slice solutions section (from solutions header → end)
+function sliceSolutions(pages){
+  let start = -1;
+  for (let i=0;i<pages.length;i++){
+    if (looksLikeSolutionsHeader(pages[i])) { start = i; break; }
+  }
+  if (start === -1) return null;
+  return pages.slice(start).join(' ');
+}
+
+// Parse 50 MCQs: 1. stem A. ... B. ... C. ... D. ...
+function parseMCQs(text){
+  // split by question numbers 1. 2. 3. ... 50.
+  const blocks = [];
+  const reQ = /(\\b\\d{1,2})\\.\\s*/g;
+  let m, idxs = [];
+  while ((m = reQ.exec(text)) !== null){ idxs.push({n: parseInt(m[1],10), i: m.index}); }
+  for (let k=0;k<idxs.length;k++){
+    const cur = idxs[k], next = idxs[k+1] ? idxs[k+1].i : text.length;
+    const chunk = text.slice(cur.i, next);
+    if (cur.n >= 1 && cur.n <= 100) blocks.push(chunk);
+  }
+  // turn blocks into {n, stem, options[4]}
+  const items=[];
+  for (const b of blocks){
+    // remove leading "n."
+    const cleaned = b.replace(/^\\d+\\.\\s*/, '');
+    // split options A. B. C. D.
+    const parts = cleaned.split(/\\s[A-D]\\.\\s/);
+    if (parts.length < 2) continue;
+    const stem = norm(parts[0]);
+    // find the actual option texts
+    const optMatches = cleaned.match(/[A-D]\\.\\s[^A-D]+/g);
+    if (!optMatches || optMatches.length < 4) continue;
+    const opts = optMatches.slice(0,4).map(s => norm(s.replace(/^[A-D]\\.\\s/,'').trim()));
+    if (stem.length < 6 || opts.some(o=>!o || o.length<1)) continue;
+    items.push({ stem, options: opts });
+  }
+  return items;
+}
+
+// Parse answers like: 1. C 2. A 3. D ...
+function parseAnswers(text){
+  const map = new Map();
+  // collapse to tokens like "1. A"
+  const re = /(\\d{1,2})\\s*\\.\\s*([A-D])/g;
+  let m;
+  while ((m = re.exec(text)) !== null){
+    const n = parseInt(m[1],10);
+    const letter = m[2];
+    if (n>=1 && n<=100) map.set(n, letter);
+  }
+  return map; // Map<number, 'A'|'B'|'C'|'D'>
+}
+
+function letterToIndex(ch){ return {A:0,B:1,C:2,D:3}[ch] ?? -1; }
+
+// Dedup by stem + options signature
+function sig(item){ return norm(item.stem) + '|' + item.options.map(norm).join('|'); }
+
+runBtn.onclick = async ()=>{
+  const files = [...(fileInput.files||[])];
+  if (!files.length){ alert('Select your INSIGHT PDFs first'); return; }
+  logEl.textContent = ''; downloadBtn.style.display='none';
+  log('Reading ' + files.length + ' file(s)...');
+
+  const out = [];
+  const seen = new Set();
+  let totalParsed = 0, totalMatched = 0;
+
+  for (const f of files){
+    try{
+      log('--- ' + f.name + ' ---');
+      const {pages} = await pdfToText(f);
+      const baText = sliceBA(pages);
+      const solText = sliceSolutions(pages);
+      if (!baText){ log('No Basic Accounting section found, skipping.'); continue; }
+      if (!solText){ log('No Solutions section found, skipping file.'); continue; }
+
+      const qs = parseMCQs(baText);
+      const ansMap = parseAnswers(solText);
+      log('Found MCQs: ' + qs.length + ' | Answers detected: ' + ansMap.size);
+
+      // Try to map by position (1..50) with answers
+      let mapped = 0;
+      qs.forEach((q, idx) => {
+        const num = idx+1;
+        const letter = ansMap.get(num);
+        if (!letter) return;
+        const ai = letterToIndex(letter);
+        if (ai < 0 || ai > 3) return;
+        const item = {
+          id: `BA-${f.name.replace(/\\W+/g,'_')}-Q${String(num).padStart(2,'0')}`,
+          topic: guessTopic(q.stem),
+          subtopic: '',
+          stem: q.stem,
+          options: q.options,
+          answer_index: ai
+        };
+        const s = sig(item);
+        if (!seen.has(s)){
+          seen.add(s);
+          out.push(item);
+          mapped++;
+        }
+      });
+
+      totalParsed += qs.length;
+      totalMatched += mapped;
+      log(`Kept (clean): ${mapped}`);
+    }catch(e){
+      log('Error: ' + (e?.message||e));
+    }
+  }
+
+  countsEl.textContent = `Parsed: ${totalParsed} • Kept (clean): ${totalMatched}`;
+  if (!out.length){ alert('No clean BA questions found. Try a different set or check the log.'); return; }
+
+  const blob = new Blob([JSON.stringify(out, null, 2)], {type:'application/json'});
+  const url = URL.createObjectURL(blob);
+  downloadBtn.href = url;
+  downloadBtn.download = 'atswa1_basic_accounting.json';
+  downloadBtn.style.display = 'inline-block';
+};
+
+function guessTopic(stem){
+  const s = stem.toLowerCase();
+  if (/(double entry|debit|credit|ledger|day book|prime entry|control account)/.test(s)) return 'Double Entry';
+  if (/(trial balance|suspense|error)/.test(s)) return 'Trial Balance';
+  if (/(cash book|petty cash|bank reconciliation|lodgement|unpresented cheque)/.test(s)) return 'Cash Book';
+  if (/(income statement|profit or loss|financial position|inventory|depreciation|provision|prepaid|accrued)/.test(s)) return 'Financial Statements';
+  if (/(concept|principle|qualitative characteristic|going concern|accrual|prudence|materiality|entity)/.test(s)) return 'Accounting Concepts';
+  return 'Basic Accounting';
+}
+</script>
+</body>
+</html>
