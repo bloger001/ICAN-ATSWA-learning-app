@@ -1,4 +1,3 @@
-[
   {
     "id": "BA-AT1-Q001",
     "topic": "History of Bookkeeping",
@@ -2593,4 +2592,10 @@
     "stem": "A statement of affairs is prepared to ascertain: (q5)",
     "options": [
       "Capital in incomplete records",
-    
+      "Profit and loss",
+      "Depreciation",
+      "Petty cash balance"
+    ],
+    "answer_index": 0
+  }
+]
