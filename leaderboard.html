@@ -2,24 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Leaderboard — ICAN Prep</title>
-  <link rel="stylesheet" href="./assets/app.css?v=50"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Leaderboard — ICAN ATSWA</title>
+  <link rel="stylesheet" href="./assets/app.css?v=2025-08-26a"/>
 </head>
 <body>
   <div class="wrap">
     <header class="space-between" style="align-items:center">
       <h1>Leaderboard</h1>
-      <a class="btn" href="index.html">← Home</a>
+      <a class="btn" href="./index.html">← Home</a>
     </header>
+
     <section class="card">
-      <div id="lbInfo" class="muted small">Showing recent top scores (cloud sync).</div>
-      <div id="lbError" class="error" style="display:none"></div>
-      <div id="lbList" class="small" style="margin-top:10px"></div>
+      <div class="muted small">Showing recent top scores (cloud sync).</div>
+      <div id="boardMsg" class="muted" style="margin:8px 0"></div>
+      <div id="board"></div>
     </section>
   </div>
 
-  <script src="./assets/firebase.js?v=50"></script>
-  <script type="module" src="./assets/leaderboard.js?v=50"></script>
+  <script src="./assets/firebase.js?v=2025-08-26a"></script>
+  <script src="./assets/app.js?v=2025-08-26a"></script>
+  <script src="./assets/leaderboard.js?v=2025-08-26a"></script>
 </body>
 </html>
