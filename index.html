@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>ICAN ATSWA Prep</title>
-  <link rel="stylesheet" href="./assets/app.css?v=42"/>
+  <link rel="stylesheet" href="./assets/app.css?v=44"/>
   <style>
     .grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
     .hero{padding:16px;border-radius:12px;background:#101316;color:#fff;margin:12px 0}
@@ -25,11 +25,13 @@
       <h1>ICAN ATSWA Prep</h1>
       <div class="row">
         <span id="signedBadge" class="muted small">Not signed in</span>
-        <button id="btnSignIn"  class="btn">Continue with Google</button>
+        <!-- Button ALWAYS works via fallback handler defined below -->
+        <button id="btnSignIn" class="btn" onclick="window.__fallbackSignIn && window.__fallbackSignIn()">Continue with Google</button>
         <button id="btnSignOut" class="btn ghost" style="display:none">Sign out</button>
       </div>
     </header>
 
+    <!-- Author attribution -->
     <section class="hero">
       <p class="muted small">
         Built by fellow accounting student <strong>Silva Brutus (NSUK)</strong>.
@@ -39,33 +41,58 @@
       <div id="profileBox" class="muted small">Not signed in</div>
     </section>
 
+    <!-- Guest message -->
     <section id="guestCard" class="card">
       <h2>Welcome</h2>
       <p class="muted">Please sign in to unlock quizzes, leaderboard and your personalized status.</p>
     </section>
 
+    <!-- Signed-in tools (hidden until auth) -->
     <section id="authedSection" style="display:none">
       <h2 style="margin:14px 0 6px">Your tools</h2>
       <div class="grid" style="margin-bottom:12px">
-        <a class="tile" href="./status.html?v=42"><div class="muted small">Your Data</div><div>View Status</div></a>
-        <a class="tile" href="./leaderbored.html?v=42"><div class="muted small">Community</div><div>Leaderboard</div></a>
-        <a class="tile" href="./admin.html?v=42"><div class="muted small">Owner</div><div>Admin Panel</div></a>
+        <a class="tile" href="./status.html?v=44"><div class="muted small">Your Data</div><div>View Status</div></a>
+        <a class="tile" href="./leaderbored.html?v=44"><div class="muted small">Community</div><div>Leaderboard</div></a>
+        <a class="tile" href="./admin.html?v=44"><div class="muted small">Owner</div><div>Admin Panel</div></a>
       </div>
+
       <h2 style="margin:14px 0 6px">ATSWA I Subjects</h2>
       <div class="grid">
-        <a class="tile" href="./quiz.html?level=ATSWA1&subject=Basic%20Accounting&mode=practice&v=42"><div class="muted small">ATSWA I</div><div>Basic Accounting</div></a>
-        <a class="tile" href="./quiz.html?level=ATSWA1&subject=Business%20Law&mode=practice&v=42"><div class="muted small">ATSWA I</div><div>Business Law</div></a>
-        <a class="tile" href="./quiz.html?level=ATSWA1&subject=Economics&mode=practice&v=42"><div class="muted small">ATSWA I</div><div>Economics</div></a>
-        <a class="tile" href="./quiz.html?level=ATSWA1&subject=Communication%20Skills&mode=practice&v=42"><div class="muted small">ATSWA I</div><div>Communication Skills</div></a>
+        <a class="tile" href="./quiz.html?level=ATSWA1&subject=Basic%20Accounting&mode=practice&v=44"><div class="muted small">ATSWA I</div><div>Basic Accounting</div></a>
+        <a class="tile" href="./quiz.html?level=ATSWA1&subject=Business%20Law&mode=practice&v=44"><div class="muted small">ATSWA I</div><div>Business Law</div></a>
+        <a class="tile" href="./quiz.html?level=ATSWA1&subject=Economics&mode=practice&v=44"><div class="muted small">ATSWA I</div><div>Economics</div></a>
+        <a class="tile" href="./quiz.html?level=ATSWA1&subject=Communication%20Skills&mode=practice&v=44"><div class="muted small">ATSWA I</div><div>Communication Skills</div></a>
       </div>
     </section>
 
+    <!-- Error box (auto-filled if any script fails) -->
+    <div id="authError" style="display:none;margin:10px 0;padding:10px;border-radius:8px;background:#2a1111;color:#ffdddd;border:1px solid #662222;"></div>
   </div>
 
-  <!-- Load order matters: firebase.js BEFORE app.js -->
-  <script type="module" src="./assets/firebase.js?v=42"></script>
+  <!-- Load order: firebase.js BEFORE app.js -->
+  <script type="module" src="./assets/firebase.js?v=44"></script>
+
+  <!-- Fallback Google redirect so the button ALWAYS works -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+    import { getAuth, GoogleAuthProvider, signInWithRedirect } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
+    const cfg = window.firebaseConfig;
+    try {
+      const app = initializeApp(cfg, "fallback-" + Math.random());
+      const auth = getAuth(app);
+      const provider = new GoogleAuthProvider();
+      provider.setCustomParameters({ prompt: "select_account" });
+      window.__fallbackSignIn = () => signInWithRedirect(auth, provider);
+    } catch (e) {
+      const box = document.getElementById("authError");
+      box.textContent = "Auth bootstrap failed: " + (e?.message || e);
+      box.style.display = "block";
+      console.error("Auth fallback error", e);
+    }
+  </script>
+
+  <!-- Hook used by app.js to toggle tiles on home -->
   <script>
-    // called by app.js to show/hide tiles
     window._icanToggleHome = function(isAuthed, email, name){
       const authed = document.getElementById('authedSection');
       const guest  = document.getElementById('guestCard');
@@ -75,7 +102,15 @@
       const profile = document.getElementById('profileBox');
       if (profile) profile.innerHTML = isAuthed ? `<div class="small muted">${email||''}</div><div>${name||''}</div>` : 'Not signed in';
     };
+    // Show any script errors clearly
+    window.addEventListener('error', e => {
+      const box = document.getElementById('authError');
+      box.textContent = 'Script error: ' + (e.message || e.filename || e.type);
+      box.style.display = "block";
+    }, true);
   </script>
-  <script type="module" src="./assets/app.js?v=42"></script>
+
+  <!-- Your main app logic (auth listener, gating, etc.) -->
+  <script type="module" src="./assets/app.js?v=44"></script>
 </body>
 </html>
