@@ -1,86 +1,83 @@
-// assets/admin.js  v50
-import { getAuth, signInWithPopup, GoogleAuthProvider, signOut } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-
-const ADMIN_EMAIL = "offixcialbloger@gmail.com";
-const ADMIN_CODE  = "FT24ACC245";
-
-const cfg = window.firebaseConfig;
-const app  = initializeApp(cfg);
-const auth = getAuth(app);
-const db   = getFirestore(app);
-const provider = new GoogleAuthProvider();
-
-const $ = (id)=>document.getElementById(id);
-const out = $('diagOut');
-
-function logLocal(text){
-  const prev = $('errLog');
-  try {
-    const arr = JSON.parse(localStorage.getItem('ican_error_log')||"[]");
-    prev.textContent = arr.map(e=>`${new Date(e.t).toLocaleString()} — ${e.msg}`).join("\n");
-  } catch { prev.textContent = "(none)"; }
-}
-
-function msg(txt){ const m=$('adminMsg'); m.style.display='block'; m.textContent=txt; }
-
-function gate(){
-  const u = auth.currentUser;
-  $('adminSigned').textContent = u ? `Signed in — ${u.email||""}` : "Not signed in";
-  const ok = !!u && u.email === ADMIN_EMAIL;
-  $('diagCard').style.display = ok ? '' : 'none';
-}
-
-$('btnAdminSignIn').onclick = ()=> signInWithPopup(auth, provider).then(gate);
-$('btnAdminSignOut').onclick = ()=> signOut(auth).then(gate);
-
-$('btnVerify').onclick = ()=>{
-  const u = auth.currentUser;
-  if (!u){ msg("Please sign in with the admin Google account first."); return; }
-  if (u.email !== ADMIN_EMAIL){ msg("This Google account is not allowed."); return; }
-  if (($('adminCode').value||"").trim() !== ADMIN_CODE){ msg("Invalid access code."); return; }
-  $('adminMsg').style.display='none';
-  $('btnAdminSignOut').style.display='';
-  gate();
-};
-
-$('btnRun').onclick = async ()=>{
-  const lines = [];
-  function ok(s){ lines.push('✅ '+s); }
-  function warn(s){ lines.push('⚠️ '+s); }
-  function err(s){ lines.push('❌ '+s); }
-
-  // Config
-  if (cfg && cfg.apiKey) ok("firebaseConfig present");
-  else err("firebaseConfig missing");
-
-  // Assets
-  const assets = [
-    "./assets/app.js","./assets/firebase.js","./assets/app.css",
-    "./data/atswa1_basic_accounting.json",
-    "./data/atswa1_business_law.json",
-    "./data/atswa1_economics.json",
-    "./data/atswa1_comm_skills.json"
+(function(){
+  const $ = (q,el=document)=>el.querySelector(q);
+  const REQUIRED = [
+    './assets/app.js','./assets/firebase.js','./assets/app.css',
+    './data/atswa1_basic_accounting.json',
+    './data/atswa1_business_law.json',
+    './data/atswa1_economics.json',
+    './data/atswa1_comm_skills.json',
+    './leaderboard.html','./quiz.html','./status.html','./review.html'
   ];
-  for (const url of assets){
-    try {
-      const r = await fetch(url, {cache:"no-store"});
-      if (r.ok) ok(`200 ${url}`);
-      else warn(`${r.status} ${url}`);
-    } catch(e){ err(`fetch failed ${url}: ${e}`); }
+  const ADMIN_EMAIL = 'offixcialbloger@gmail.com';
+  const ACCESS_CODE = 'FT24ACC245';
+
+  const { auth, signIn, signOut, db } = window.ICAN.firebase;
+
+  const code = $('#adminCode');
+  const stateEl = $('#adminState');
+  const diagCard = $('#diagCard');
+
+  function setState(msg){ stateEl.textContent = msg; }
+
+  $('#btnAdminSignIn').onclick = ()=>signIn().catch(e=>alert(e.message||e));
+  $('#btnAdminSignOut').onclick = ()=>signOut().catch(()=>{});
+
+  $('#btnVerify').onclick = ()=>{
+    const ok = code.value.trim()===ACCESS_CODE;
+    if (!ok) { alert('Wrong code'); return; }
+    diagCard.style.display = 'block';
+  };
+
+  auth.onAuthStateChanged(user=>{
+    const isAdmin = !!user && user.email===ADMIN_EMAIL;
+    setState(user ? `Signed in — ${user.email}` : 'Not signed in');
+    $('#btnAdminSignOut').style.display = user ? 'inline-flex' : 'none';
+    $('#btnAdminSignIn').style.display = user ? 'none' : 'inline-flex';
+    if (!isAdmin) diagCard.style.display = 'none';
+  });
+
+  async function headOk(u){
+    try{ const r = await fetch(u,{method:'GET',cache:'no-store'}); return r.ok; }
+    catch{ return false; }
   }
 
-  // Firestore read test (may be denied by rules; report either way)
-  try {
-    const snap = await getDoc(doc(db, "meta", "version"));
-    if (snap.exists()) ok("Firestore read ok: meta/version found");
-    else warn("Firestore connected but meta/version not found (ok if not set)");
-  } catch(e){ warn(`Firestore read failed (rules or network): ${e.code||e}`); }
+  $('#btnRunHealth').onclick = async ()=>{
+    const out = [];
+    const ok = (x)=>`✅ ${x}`;
+    const bad = (x)=>`⚠️ ${x}`;
+    out.push(ok('firebaseConfig present'));
 
-  out.textContent = lines.join("\n");
-};
+    // files
+    for (const u of REQUIRED){
+      out.push( (await headOk(u)) ? ok(`200 ${u}`) : bad(`missing ${u}`) );
+    }
 
-$('btnClearLog').onclick = ()=>{ localStorage.removeItem('ican_error_log'); logLocal("(cleared)"); };
-logLocal();
-gate();
+    // firestore read test
+    try{
+      await db.collection('leaderboard').limit(1).get();
+      out.push(ok('Firestore read ok'));
+    }catch(e){
+      out.push(bad(`Firestore read failed (rules or network): ${e.code||e.message}`));
+    }
+
+    // cache info
+    out.push(ok('Diagnostics complete'));
+    $('#diagLog').textContent = out.join('\n');
+
+    // show local error log
+    $('#localLog').textContent = localStorage.getItem('ican_last_error') || '(empty)';
+  };
+
+  $('#btnClearLocal').onclick = ()=>{
+    localStorage.removeItem('ican_last_error');
+    $('#localLog').textContent = '(empty)';
+  };
+
+  $('#btnForceUpdate').onclick = async ()=>{
+    if ('serviceWorker' in navigator){
+      const r = await navigator.serviceWorker.getRegistration();
+      if (r) { await r.update(); alert('Update requested. Page will reload if new SW activates.'); }
+      else { alert('No service worker registration found.'); }
+    } else alert('Service worker not supported.');
+  };
+})();
