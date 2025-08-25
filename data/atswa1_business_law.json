@@ -1,1082 +1,6 @@
+[
   {
-    "question": "Which of the following is a primary source of law in Nigeria?",
-    "options": [
-      "Case law (judicial precedent)",
-      "Company policy",
-      "Newspaper reports",
-      "Customs of foreign states"
-    ],
-    "answer": "Case law (judicial precedent)",
-    "topic": "Nigerian Legal System & Sources of Law \u2022 Sources"
-  },
-  {
-    "question": "The doctrine of stare decisis relates to:",
-    "options": [
-      "Binding precedent",
-      "Law reform",
-      "Criminal procedure",
-      "Equity of redemption"
-    ],
-    "answer": "Binding precedent",
-    "topic": "Nigerian Legal System & Sources of Law \u2022 Sources"
-  },
-  {
-    "question": "The supreme law of Nigeria is the:",
-    "options": [
-      "Constitution",
-      "Acts of the National Assembly",
-      "Common law",
-      "Customary law"
-    ],
-    "answer": "Constitution",
-    "topic": "Nigerian Legal System & Sources of Law \u2022 Constitution"
-  },
-  {
-    "question": "Subsidiary legislation is made by:",
-    "options": [
-      "Authorities under powers delegated by an enabling Act",
-      "Only the judiciary",
-      "Only the President",
-      "Foreign embassies"
-    ],
-    "answer": "Authorities under powers delegated by an enabling Act",
-    "topic": "Nigerian Legal System & Sources of Law \u2022 Legislation"
-  },
-  {
-    "question": "A valid custom must be:",
-    "options": [
-      "Certain, reasonable and not contrary to public policy",
-      "Known only to elders",
-      "In writing",
-      "Approved by the Attorney\u2011General"
-    ],
-    "answer": "Certain, reasonable and not contrary to public policy",
-    "topic": "Nigerian Legal System & Sources of Law \u2022 Customary"
-  },
-  {
-    "question": "Equity developed to:",
-    "options": [
-      "Mitigate the rigidity of common law",
-      "Replace statute law",
-      "Repeal customs",
-      "Try criminal cases"
-    ],
-    "answer": "Mitigate the rigidity of common law",
-    "topic": "Nigerian Legal System & Sources of Law \u2022 Equity"
-  },
-  {
-    "question": "An Act comes into force:",
-    "options": [
-      "On the commencement date stated in the Act",
-      "On the day of Royal assent in the UK",
-      "When published in newspapers",
-      "Only after court approval"
-    ],
-    "answer": "On the commencement date stated in the Act",
-    "topic": "Nigerian Legal System & Sources of Law \u2022 Interpretation"
-  },
-  {
-    "question": "A bill becomes law after:",
-    "options": [
-      "Passage by the legislature and assent by the President/Governor",
-      "Approval by the judiciary",
-      "Approval by the bar association",
-      "Signature by the Attorney\u2011General"
-    ],
-    "answer": "Passage by the legislature and assent by the President/Governor",
-    "topic": "Nigerian Legal System & Sources of Law \u2022 Legislation"
-  },
-  {
-    "question": "A decision of the Supreme Court is:",
-    "options": [
-      "Binding on all lower courts",
-      "Persuasive only",
-      "Binding on foreign courts",
-      "Not binding on Court of Appeal"
-    ],
-    "answer": "Binding on all lower courts",
-    "topic": "Nigerian Legal System & Sources of Law \u2022 Precedent"
-  },
-  {
-    "question": "The long title of an Act helps in:",
-    "options": [
-      "Determining the purpose of the legislation",
-      "Numbering the sections",
-      "Identifying courts",
-      "Setting penalties"
-    ],
-    "answer": "Determining the purpose of the legislation",
-    "topic": "Nigerian Legal System & Sources of Law \u2022 Interpretation"
-  },
-  {
-    "question": "Repugnancy test is used to:",
-    "options": [
-      "Strike down customs contrary to natural justice, equity and good conscience",
-      "Punish offenders",
-      "Interpret statutes",
-      "Grant injunctions"
-    ],
-    "answer": "Strike down customs contrary to natural justice, equity and good conscience",
-    "topic": "Nigerian Legal System & Sources of Law \u2022 Customary"
-  },
-  {
-    "question": "Which pair are superior courts of record in Nigeria?",
-    "options": [
-      "Supreme Court and Court of Appeal",
-      "Magistrate Court and Customary Court",
-      "Sharia Court and Area Court",
-      "Election Tribunal and Juvenile Court"
-    ],
-    "answer": "Supreme Court and Court of Appeal",
-    "topic": "Nigerian Legal System & Sources of Law \u2022 Legal System"
-  },
-  {
-    "question": "The highest court in Nigeria is the:",
-    "options": [
-      "Supreme Court",
-      "Court of Appeal",
-      "High Court",
-      "Federal High Court"
-    ],
-    "answer": "Supreme Court",
-    "topic": "Court Structure & ADR \u2022 Courts"
-  },
-  {
-    "question": "The Federal High Court mainly has jurisdiction over:",
-    "options": [
-      "Revenue, customs, banking, companies and maritime matters",
-      "Landlord and tenant",
-      "Divorce under customary law",
-      "Criminal trials generally"
-    ],
-    "answer": "Revenue, customs, banking, companies and maritime matters",
-    "topic": "Court Structure & ADR \u2022 Jurisdiction"
-  },
-  {
-    "question": "Mediation involves:",
-    "options": [
-      "A neutral facilitating settlement without imposing a decision",
-      "A neutral giving a binding decision",
-      "Parties voting",
-      "Court imposing sanctions"
-    ],
-    "answer": "A neutral facilitating settlement without imposing a decision",
-    "topic": "Court Structure & ADR \u2022 ADR"
-  },
-  {
-    "question": "An arbitrator\u2019s award is:",
-    "options": [
-      "Binding subject to limited court review",
-      "Non\u2011binding",
-      "Automatically criminal",
-      "A form of legislation"
-    ],
-    "answer": "Binding subject to limited court review",
-    "topic": "Court Structure & ADR \u2022 ADR"
-  },
-  {
-    "question": "Election petitions are heard by:",
-    "options": [
-      "Election Tribunals",
-      "Magistrate Courts",
-      "Sharia Courts",
-      "Area Courts"
-    ],
-    "answer": "Election Tribunals",
-    "topic": "Court Structure & ADR \u2022 Tribunals"
-  },
-  {
-    "question": "Which court is a court of first instance for most civil claims above lower thresholds?",
-    "options": [
-      "High Court",
-      "Supreme Court",
-      "Court of Appeal",
-      "Customary Court"
-    ],
-    "answer": "High Court",
-    "topic": "Court Structure & ADR \u2022 Courts"
-  },
-  {
-    "question": "Advantages of ADR include:",
-    "options": [
-      "Speed and confidentiality",
-      "Guaranteed appeal on merits",
-      "Publicity",
-      "Higher costs"
-    ],
-    "answer": "Speed and confidentiality",
-    "topic": "Court Structure & ADR \u2022 ADR"
-  },
-  {
-    "question": "Appeals from the Court of Appeal lie to:",
-    "options": [
-      "The Supreme Court",
-      "The High Court",
-      "Magistrate Court",
-      "Election Tribunal"
-    ],
-    "answer": "The Supreme Court",
-    "topic": "Court Structure & ADR \u2022 Appeals"
-  },
-  {
-    "question": "Which court hears fundamental rights enforcement primarily?",
-    "options": [
-      "High Court",
-      "Magistrate Court",
-      "Customary Court",
-      "Area Court"
-    ],
-    "answer": "High Court",
-    "topic": "Court Structure & ADR \u2022 Jurisdiction"
-  },
-  {
-    "question": "Conciliation is similar to mediation but the neutral may:",
-    "options": [
-      "Propose terms of settlement",
-      "Deliver binding judgment",
-      "Impose fines",
-      "Issue warrants"
-    ],
-    "answer": "Propose terms of settlement",
-    "topic": "Court Structure & ADR \u2022 ADR"
-  },
-  {
-    "question": "An offer is:",
-    "options": [
-      "A definite promise to be bound on acceptance",
-      "An invitation to treat",
-      "A mere enquiry",
-      "A counter\u2011offer"
-    ],
-    "answer": "A definite promise to be bound on acceptance",
-    "topic": "Law of Contract: Formation \u2022 Offer"
-  },
-  {
-    "question": "Which is an invitation to treat?",
-    "options": [
-      "Display of goods with price tags",
-      "Written offer with fixed terms",
-      "Signed acceptance",
-      "Payment of consideration"
-    ],
-    "answer": "Display of goods with price tags",
-    "topic": "Law of Contract: Formation \u2022 Invitation"
-  },
-  {
-    "question": "Acceptance must be:",
-    "options": [
-      "Unqualified and communicated",
-      "Conditional",
-      "Silent",
-      "By counter\u2011offer"
-    ],
-    "answer": "Unqualified and communicated",
-    "topic": "Law of Contract: Formation \u2022 Acceptance"
-  },
-  {
-    "question": "Under the postal rule, acceptance is effective when:",
-    "options": [
-      "Posted",
-      "Received",
-      "Read",
-      "Notified by phone"
-    ],
-    "answer": "Posted",
-    "topic": "Law of Contract: Formation \u2022 Postal rule"
-  },
-  {
-    "question": "Consideration must be:",
-    "options": [
-      "Something of value moving from the promisee",
-      "Adequate monetary amount",
-      "From a third party",
-      "Always in cash"
-    ],
-    "answer": "Something of value moving from the promisee",
-    "topic": "Law of Contract: Formation \u2022 Consideration"
-  },
-  {
-    "question": "Past consideration is:",
-    "options": [
-      "Generally not good consideration",
-      "Always sufficient",
-      "Better than present",
-      "Required in all contracts"
-    ],
-    "answer": "Generally not good consideration",
-    "topic": "Law of Contract: Formation \u2022 Consideration"
-  },
-  {
-    "question": "Social/domestic agreements are presumed:",
-    "options": [
-      "Not intended to create legal relations",
-      "To be legally binding",
-      "To be illegal",
-      "To be voidable"
-    ],
-    "answer": "Not intended to create legal relations",
-    "topic": "Law of Contract: Formation \u2022 Intention"
-  },
-  {
-    "question": "A minor\u2019s contract for necessaries is:",
-    "options": [
-      "Binding but at a reasonable price",
-      "Void ab initio",
-      "Illegal",
-      "Unenforceable against the supplier"
-    ],
-    "answer": "Binding but at a reasonable price",
-    "topic": "Law of Contract: Formation \u2022 Capacity"
-  },
-  {
-    "question": "The doctrine of privity means:",
-    "options": [
-      "Only parties to a contract can sue on it",
-      "Anyone can sue",
-      "Courts can add parties",
-      "Third parties always benefit"
-    ],
-    "answer": "Only parties to a contract can sue on it",
-    "topic": "Law of Contract: Formation \u2022 Privity"
-  },
-  {
-    "question": "A counter\u2011offer:",
-    "options": [
-      "Rejects and destroys the original offer",
-      "Leaves the original offer intact",
-      "Is the same as acceptance",
-      "Creates a collateral contract"
-    ],
-    "answer": "Rejects and destroys the original offer",
-    "topic": "Law of Contract: Formation \u2022 Counter\u2011offer"
-  },
-  {
-    "question": "An offer may be terminated by:",
-    "options": [
-      "Lapse of time",
-      "Acceptance",
-      "Performance",
-      "Consideration"
-    ],
-    "answer": "Lapse of time",
-    "topic": "Law of Contract: Formation \u2022 Termination"
-  },
-  {
-    "question": "Silence generally amounts to:",
-    "options": [
-      "No acceptance",
-      "Acceptance",
-      "Consideration",
-      "Offer"
-    ],
-    "answer": "No acceptance",
-    "topic": "Law of Contract: Formation \u2022 Communication"
-  },
-  {
-    "question": "A advert invites tenders; placing goods on shelves at \u20a6500 each is best described as:",
-    "options": [
-      "Invitation to treat",
-      "Offer",
-      "Acceptance",
-      "Consideration"
-    ],
-    "answer": "Invitation to treat",
-    "topic": "Law of Contract: Formation \u2022 Scenarios"
-  },
-  {
-    "question": "A advert invites tenders; placing goods on shelves at \u20a6510 each is best described as:",
-    "options": [
-      "Invitation to treat",
-      "Offer",
-      "Acceptance",
-      "Consideration"
-    ],
-    "answer": "Invitation to treat",
-    "topic": "Law of Contract: Formation \u2022 Scenarios"
-  },
-  {
-    "question": "A advert invites tenders; placing goods on shelves at \u20a6520 each is best described as:",
-    "options": [
-      "Invitation to treat",
-      "Offer",
-      "Acceptance",
-      "Consideration"
-    ],
-    "answer": "Invitation to treat",
-    "topic": "Law of Contract: Formation \u2022 Scenarios"
-  },
-  {
-    "question": "A advert invites tenders; placing goods on shelves at \u20a6530 each is best described as:",
-    "options": [
-      "Invitation to treat",
-      "Offer",
-      "Acceptance",
-      "Consideration"
-    ],
-    "answer": "Invitation to treat",
-    "topic": "Law of Contract: Formation \u2022 Scenarios"
-  },
-  {
-    "question": "A advert invites tenders; placing goods on shelves at \u20a6540 each is best described as:",
-    "options": [
-      "Invitation to treat",
-      "Offer",
-      "Acceptance",
-      "Consideration"
-    ],
-    "answer": "Invitation to treat",
-    "topic": "Law of Contract: Formation \u2022 Scenarios"
-  },
-  {
-    "question": "A advert invites tenders; placing goods on shelves at \u20a6550 each is best described as:",
-    "options": [
-      "Invitation to treat",
-      "Offer",
-      "Acceptance",
-      "Consideration"
-    ],
-    "answer": "Invitation to treat",
-    "topic": "Law of Contract: Formation \u2022 Scenarios"
-  },
-  {
-    "question": "A advert invites tenders; placing goods on shelves at \u20a6560 each is best described as:",
-    "options": [
-      "Invitation to treat",
-      "Offer",
-      "Acceptance",
-      "Consideration"
-    ],
-    "answer": "Invitation to treat",
-    "topic": "Law of Contract: Formation \u2022 Scenarios"
-  },
-  {
-    "question": "A advert invites tenders; placing goods on shelves at \u20a6570 each is best described as:",
-    "options": [
-      "Invitation to treat",
-      "Offer",
-      "Acceptance",
-      "Consideration"
-    ],
-    "answer": "Invitation to treat",
-    "topic": "Law of Contract: Formation \u2022 Scenarios"
-  },
-  {
-    "question": "A advert invites tenders; placing goods on shelves at \u20a6580 each is best described as:",
-    "options": [
-      "Invitation to treat",
-      "Offer",
-      "Acceptance",
-      "Consideration"
-    ],
-    "answer": "Invitation to treat",
-    "topic": "Law of Contract: Formation \u2022 Scenarios"
-  },
-  {
-    "question": "A advert invites tenders; placing goods on shelves at \u20a6590 each is best described as:",
-    "options": [
-      "Invitation to treat",
-      "Offer",
-      "Acceptance",
-      "Consideration"
-    ],
-    "answer": "Invitation to treat",
-    "topic": "Law of Contract: Formation \u2022 Scenarios"
-  },
-  {
-    "question": "A condition is:",
-    "options": [
-      "A major term going to the root of the contract",
-      "A minor warranty",
-      "A representation only",
-      "An exclusion clause"
-    ],
-    "answer": "A major term going to the root of the contract",
-    "topic": "Law of Contract: Terms & Vitiating Factors \u2022 Terms"
-  },
-  {
-    "question": "Fraudulent misrepresentation is:",
-    "options": [
-      "A false statement made knowingly or recklessly",
-      "An honest mistake",
-      "A mere opinion",
-      "Silence always"
-    ],
-    "answer": "A false statement made knowingly or recklessly",
-    "topic": "Law of Contract: Terms & Vitiating Factors \u2022 Misrep"
-  },
-  {
-    "question": "Common mistake occurs when:",
-    "options": [
-      "Both parties share the same fundamental mistake",
-      "Only one party is mistaken",
-      "A third party is mistaken",
-      "The judge is mistaken"
-    ],
-    "answer": "Both parties share the same fundamental mistake",
-    "topic": "Law of Contract: Terms & Vitiating Factors \u2022 Mistake"
-  },
-  {
-    "question": "Economic duress involves:",
-    "options": [
-      "Illegitimate pressure vitiating consent",
-      "Hard bargaining",
-      "Lawful persuasion",
-      "Public interest"
-    ],
-    "answer": "Illegitimate pressure vitiating consent",
-    "topic": "Law of Contract: Terms & Vitiating Factors \u2022 Duress"
-  },
-  {
-    "question": "Undue influence arises where:",
-    "options": [
-      "One party dominates the will of another",
-      "Both are merchants",
-      "There is consideration",
-      "The contract is written"
-    ],
-    "answer": "One party dominates the will of another",
-    "topic": "Law of Contract: Terms & Vitiating Factors \u2022 Undue influence"
-  },
-  {
-    "question": "An exclusion clause is construed:",
-    "options": [
-      "Contra proferentem (against the party relying on it)",
-      "Always in favour of business",
-      "Neutrally regardless of wording",
-      "As a penalty"
-    ],
-    "answer": "Contra proferentem (against the party relying on it)",
-    "topic": "Law of Contract: Terms & Vitiating Factors \u2022 Exemption"
-  },
-  {
-    "question": "An illegal contract is:",
-    "options": [
-      "Void and unenforceable",
-      "Voidable at the option of one party",
-      "Valid but unenforceable",
-      "Always criminal"
-    ],
-    "answer": "Void and unenforceable",
-    "topic": "Law of Contract: Terms & Vitiating Factors \u2022 Illegality"
-  },
-  {
-    "question": "The parol evidence rule generally:",
-    "options": [
-      "Excludes extrinsic evidence to vary a written contract",
-      "Allows oral evidence freely",
-      "Applies only to tort",
-      "Applies only to land"
-    ],
-    "answer": "Excludes extrinsic evidence to vary a written contract",
-    "topic": "Law of Contract: Terms & Vitiating Factors \u2022 Parol"
-  },
-  {
-    "question": "A minor breach of a warranty entitles the innocent party to: (example 1)",
-    "options": [
-      "Damages only",
-      "Repudiate the contract",
-      "Specific performance automatically",
-      "Criminal sanctions"
-    ],
-    "answer": "Damages only",
-    "topic": "Law of Contract: Terms & Vitiating Factors \u2022 Examples"
-  },
-  {
-    "question": "A minor breach of a warranty entitles the innocent party to: (example 2)",
-    "options": [
-      "Damages only",
-      "Repudiate the contract",
-      "Specific performance automatically",
-      "Criminal sanctions"
-    ],
-    "answer": "Damages only",
-    "topic": "Law of Contract: Terms & Vitiating Factors \u2022 Examples"
-  },
-  {
-    "question": "A minor breach of a warranty entitles the innocent party to: (example 3)",
-    "options": [
-      "Damages only",
-      "Repudiate the contract",
-      "Specific performance automatically",
-      "Criminal sanctions"
-    ],
-    "answer": "Damages only",
-    "topic": "Law of Contract: Terms & Vitiating Factors \u2022 Examples"
-  },
-  {
-    "question": "A minor breach of a warranty entitles the innocent party to: (example 4)",
-    "options": [
-      "Damages only",
-      "Repudiate the contract",
-      "Specific performance automatically",
-      "Criminal sanctions"
-    ],
-    "answer": "Damages only",
-    "topic": "Law of Contract: Terms & Vitiating Factors \u2022 Examples"
-  },
-  {
-    "question": "A minor breach of a warranty entitles the innocent party to: (example 5)",
-    "options": [
-      "Damages only",
-      "Repudiate the contract",
-      "Specific performance automatically",
-      "Criminal sanctions"
-    ],
-    "answer": "Damages only",
-    "topic": "Law of Contract: Terms & Vitiating Factors \u2022 Examples"
-  },
-  {
-    "question": "A minor breach of a warranty entitles the innocent party to: (example 6)",
-    "options": [
-      "Damages only",
-      "Repudiate the contract",
-      "Specific performance automatically",
-      "Criminal sanctions"
-    ],
-    "answer": "Damages only",
-    "topic": "Law of Contract: Terms & Vitiating Factors \u2022 Examples"
-  },
-  {
-    "question": "A minor breach of a warranty entitles the innocent party to: (example 7)",
-    "options": [
-      "Damages only",
-      "Repudiate the contract",
-      "Specific performance automatically",
-      "Criminal sanctions"
-    ],
-    "answer": "Damages only",
-    "topic": "Law of Contract: Terms & Vitiating Factors \u2022 Examples"
-  },
-  {
-    "question": "A minor breach of a warranty entitles the innocent party to: (example 8)",
-    "options": [
-      "Damages only",
-      "Repudiate the contract",
-      "Specific performance automatically",
-      "Criminal sanctions"
-    ],
-    "answer": "Damages only",
-    "topic": "Law of Contract: Terms & Vitiating Factors \u2022 Examples"
-  },
-  {
-    "question": "A minor breach of a warranty entitles the innocent party to: (example 9)",
-    "options": [
-      "Damages only",
-      "Repudiate the contract",
-      "Specific performance automatically",
-      "Criminal sanctions"
-    ],
-    "answer": "Damages only",
-    "topic": "Law of Contract: Terms & Vitiating Factors \u2022 Examples"
-  },
-  {
-    "question": "A minor breach of a warranty entitles the innocent party to: (example 10)",
-    "options": [
-      "Damages only",
-      "Repudiate the contract",
-      "Specific performance automatically",
-      "Criminal sanctions"
-    ],
-    "answer": "Damages only",
-    "topic": "Law of Contract: Terms & Vitiating Factors \u2022 Examples"
-  },
-  {
-    "question": "A minor breach of a warranty entitles the innocent party to: (example 11)",
-    "options": [
-      "Damages only",
-      "Repudiate the contract",
-      "Specific performance automatically",
-      "Criminal sanctions"
-    ],
-    "answer": "Damages only",
-    "topic": "Law of Contract: Terms & Vitiating Factors \u2022 Examples"
-  },
-  {
-    "question": "A minor breach of a warranty entitles the innocent party to: (example 12)",
-    "options": [
-      "Damages only",
-      "Repudiate the contract",
-      "Specific performance automatically",
-      "Criminal sanctions"
-    ],
-    "answer": "Damages only",
-    "topic": "Law of Contract: Terms & Vitiating Factors \u2022 Examples"
-  },
-  {
-    "question": "A contract may be discharged by:",
-    "options": [
-      "Performance",
-      "Misrepresentation alone",
-      "Silence",
-      "Privity"
-    ],
-    "answer": "Performance",
-    "topic": "Law of Contract: Discharge & Remedies \u2022 Discharge"
-  },
-  {
-    "question": "Frustration occurs when:",
-    "options": [
-      "An unforeseen event makes performance impossible",
-      "A party changes mind",
-      "Price rises slightly",
-      "A mistake is discovered"
-    ],
-    "answer": "An unforeseen event makes performance impossible",
-    "topic": "Law of Contract: Discharge & Remedies \u2022 Frustration"
-  },
-  {
-    "question": "Repudiatory breach entitles the innocent party to:",
-    "options": [
-      "Terminate and claim damages",
-      "Terminate only",
-      "Damages only",
-      "Do nothing"
-    ],
-    "answer": "Terminate and claim damages",
-    "topic": "Law of Contract: Discharge & Remedies \u2022 Breach"
-  },
-  {
-    "question": "The main aim of damages is to:",
-    "options": [
-      "Put the claimant in the position as if the contract had been performed",
-      "Punish the defendant",
-      "Reward the claimant",
-      "Deter future breaches"
-    ],
-    "answer": "Put the claimant in the position as if the contract had been performed",
-    "topic": "Law of Contract: Discharge & Remedies \u2022 Damages"
-  },
-  {
-    "question": "Specific performance is:",
-    "options": [
-      "An equitable remedy compelling performance",
-      "A legal remedy in all contracts",
-      "A criminal sanction",
-      "A penalty clause"
-    ],
-    "answer": "An equitable remedy compelling performance",
-    "topic": "Law of Contract: Discharge & Remedies \u2022 Remedies"
-  },
-  {
-    "question": "An injured party must:",
-    "options": [
-      "Mitigate their loss",
-      "Exaggerate losses",
-      "Ignore alternatives",
-      "Refuse substitute performance"
-    ],
-    "answer": "Mitigate their loss",
-    "topic": "Law of Contract: Discharge & Remedies \u2022 Mitigation"
-  },
-  {
-    "question": "An injured party must:",
-    "options": [
-      "Mitigate their loss",
-      "Exaggerate losses",
-      "Ignore alternatives",
-      "Refuse substitute performance"
-    ],
-    "answer": "Mitigate their loss",
-    "topic": "Law of Contract: Discharge & Remedies \u2022 Mitigation"
-  },
-  {
-    "question": "An injured party must:",
-    "options": [
-      "Mitigate their loss",
-      "Exaggerate losses",
-      "Ignore alternatives",
-      "Refuse substitute performance"
-    ],
-    "answer": "Mitigate their loss",
-    "topic": "Law of Contract: Discharge & Remedies \u2022 Mitigation"
-  },
-  {
-    "question": "An injured party must:",
-    "options": [
-      "Mitigate their loss",
-      "Exaggerate losses",
-      "Ignore alternatives",
-      "Refuse substitute performance"
-    ],
-    "answer": "Mitigate their loss",
-    "topic": "Law of Contract: Discharge & Remedies \u2022 Mitigation"
-  },
-  {
-    "question": "An injured party must:",
-    "options": [
-      "Mitigate their loss",
-      "Exaggerate losses",
-      "Ignore alternatives",
-      "Refuse substitute performance"
-    ],
-    "answer": "Mitigate their loss",
-    "topic": "Law of Contract: Discharge & Remedies \u2022 Mitigation"
-  },
-  {
-    "question": "An injured party must:",
-    "options": [
-      "Mitigate their loss",
-      "Exaggerate losses",
-      "Ignore alternatives",
-      "Refuse substitute performance"
-    ],
-    "answer": "Mitigate their loss",
-    "topic": "Law of Contract: Discharge & Remedies \u2022 Mitigation"
-  },
-  {
-    "question": "An injured party must:",
-    "options": [
-      "Mitigate their loss",
-      "Exaggerate losses",
-      "Ignore alternatives",
-      "Refuse substitute performance"
-    ],
-    "answer": "Mitigate their loss",
-    "topic": "Law of Contract: Discharge & Remedies \u2022 Mitigation"
-  },
-  {
-    "question": "An injured party must:",
-    "options": [
-      "Mitigate their loss",
-      "Exaggerate losses",
-      "Ignore alternatives",
-      "Refuse substitute performance"
-    ],
-    "answer": "Mitigate their loss",
-    "topic": "Law of Contract: Discharge & Remedies \u2022 Mitigation"
-  },
-  {
-    "question": "An injured party must:",
-    "options": [
-      "Mitigate their loss",
-      "Exaggerate losses",
-      "Ignore alternatives",
-      "Refuse substitute performance"
-    ],
-    "answer": "Mitigate their loss",
-    "topic": "Law of Contract: Discharge & Remedies \u2022 Mitigation"
-  },
-  {
-    "question": "Agency may be created by:",
-    "options": [
-      "Agreement, ratification or necessity",
-      "Marriage",
-      "Illegality",
-      "Minority alone"
-    ],
-    "answer": "Agreement, ratification or necessity",
-    "topic": "Agency \u2022 Creation"
-  },
-  {
-    "question": "Apparent (ostensible) authority arises where:",
-    "options": [
-      "The principal\u2019s conduct leads third parties to believe the agent is authorised",
-      "The agent believes he is authorised",
-      "The court appoints the agent",
-      "The agent appoints himself"
-    ],
-    "answer": "The principal\u2019s conduct leads third parties to believe the agent is authorised",
-    "topic": "Agency \u2022 Authority"
-  },
-  {
-    "question": "An agent owes a duty to:",
-    "options": [
-      "Avoid secret profit",
-      "Destroy records",
-      "Disclose all trade secrets publicly",
-      "Act for both sides without consent"
-    ],
-    "answer": "Avoid secret profit",
-    "topic": "Agency \u2022 Duties"
-  },
-  {
-    "question": "Where the agent acts for an undisclosed principal:",
-    "options": [
-      "The principal may sue and be sued",
-      "Only the agent is liable",
-      "Only the third party is liable",
-      "No one is liable"
-    ],
-    "answer": "The principal may sue and be sued",
-    "topic": "Agency \u2022 Liability"
-  },
-  {
-    "question": "Agency terminates by:",
-    "options": [
-      "Revocation, renunciation or death/insanity",
-      "Performance only",
-      "Breach by third party",
-      "Litigation"
-    ],
-    "answer": "Revocation, renunciation or death/insanity",
-    "topic": "Agency \u2022 Termination"
-  },
-  {
-    "question": "An agent is entitled to commission:",
-    "options": [
-      "According to the contract or custom",
-      "Only if he is a partner",
-      "Only if he is a company director",
-      "Never"
-    ],
-    "answer": "According to the contract or custom",
-    "topic": "Agency \u2022 Remuneration"
-  },
-  {
-    "question": "An agent is entitled to commission:",
-    "options": [
-      "According to the contract or custom",
-      "Only if he is a partner",
-      "Only if he is a company director",
-      "Never"
-    ],
-    "answer": "According to the contract or custom",
-    "topic": "Agency \u2022 Remuneration"
-  },
-  {
-    "question": "An agent is entitled to commission:",
-    "options": [
-      "According to the contract or custom",
-      "Only if he is a partner",
-      "Only if he is a company director",
-      "Never"
-    ],
-    "answer": "According to the contract or custom",
-    "topic": "Agency \u2022 Remuneration"
-  },
-  {
-    "question": "An agent is entitled to commission:",
-    "options": [
-      "According to the contract or custom",
-      "Only if he is a partner",
-      "Only if he is a company director",
-      "Never"
-    ],
-    "answer": "According to the contract or custom",
-    "topic": "Agency \u2022 Remuneration"
-  },
-  {
-    "question": "An agent is entitled to commission:",
-    "options": [
-      "According to the contract or custom",
-      "Only if he is a partner",
-      "Only if he is a company director",
-      "Never"
-    ],
-    "answer": "According to the contract or custom",
-    "topic": "Agency \u2022 Remuneration"
-  },
-  {
-    "question": "An agent is entitled to commission:",
-    "options": [
-      "According to the contract or custom",
-      "Only if he is a partner",
-      "Only if he is a company director",
-      "Never"
-    ],
-    "answer": "According to the contract or custom",
-    "topic": "Agency \u2022 Remuneration"
-  },
-  {
-    "question": "An agent is entitled to commission:",
-    "options": [
-      "According to the contract or custom",
-      "Only if he is a partner",
-      "Only if he is a company director",
-      "Never"
-    ],
-    "answer": "According to the contract or custom",
-    "topic": "Agency \u2022 Remuneration"
-  },
-  {
-    "question": "An agent is entitled to commission:",
-    "options": [
-      "According to the contract or custom",
-      "Only if he is a partner",
-      "Only if he is a company director",
-      "Never"
-    ],
-    "answer": "According to the contract or custom",
-    "topic": "Agency \u2022 Remuneration"
-  },
-  {
-    "question": "An agent is entitled to commission:",
-    "options": [
-      "According to the contract or custom",
-      "Only if he is a partner",
-      "Only if he is a company director",
-      "Never"
-    ],
-    "answer": "According to the contract or custom",
-    "topic": "Agency \u2022 Remuneration"
-  },
-  {
-    "question": "\u2018Goods\u2019 under the Sale of Goods law means:",
-    "options": [
-      "All chattels personal other than things in action and money",
-      "Land and buildings",
-      "Services",
-      "Choses in action only"
-    ],
-    "answer": "All chattels personal other than things in action and money",
-    "topic": "Sale of Goods \u2022 Definition"
-  },
-  {
-    "question": "Property in unascertained goods passes:",
-    "options": [
-      "When the goods are ascertained and appropriated to the contract",
-      "On payment of price",
-      "On delivery to carrier always",
-      "On signing the contract"
-    ],
-    "answer": "When the goods are ascertained and appropriated to the contract",
-    "topic": "Sale of Goods \u2022 Transfer"
-  },
-  {
-    "question": "Implied condition as to title means:",
-    "options": [
-      "Seller has the right to sell the goods",
-      "Goods are free from minor defects",
-      "Goods are fit for all purposes",
-      "Price is fixed"
-    ],
-    "answer": "Seller has the right to sell the goods",
-    "topic": "Sale of Goods \u2022 Conditions"
-  },
-  {
-    "question": "Implied condition of merchantable quality applies where:",
-    "options": [
-      "Goods are bought by description from a seller who deals in goods of that description",
-      "Price exceeds \u20a61m only",
-      "Goods are second\u2011hand",
-      "Buyer examines the goods fully"
-    ],
-    "answer": "Goods are bought by description from a seller who deals in goods of that description",
-    "topic": "Sale of Goods \u2022 Merchantable"
-  },
-  {
-    "question": "Where sale is by description, goods must:",
-    "options": [
-      "Correspond with the description",
-      "Correspond with the sample only",
-      "Be cheapest",
-      "Be newest"
-    ],
-    "answer": "Correspond with the description",
-    "topic": "Sale of Goods \u2022 Sale by description"
-  },
-  {
-    "question": "Unless otherwise agreed, risk passes:",
-    "options": [
-      "With property/ownership",
-      "On payment",
-      "On invoice",
-      "On order placement"
-    ],
-    "answer": "With property/ownership",
-    "topic": "Sale of Goods \u2022 Risk"
-  },
-  {
+    "id": 1,
     "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 1)",
     "options": [
       "Sue for damages",
@@ -1085,526 +9,46 @@
       "Charge criminal fine"
     ],
     "answer": "Sue for damages",
-    "topic": "Sale of Goods \u2022 Remedies"
+    "topic": "Sale of Goods • Remedies"
   },
   {
-    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 2)",
+    "id": 2,
+    "question": "A minor breach of a warranty entitles the innocent party to: (example 1)",
     "options": [
-      "Sue for damages",
-      "Imprison the buyer",
-      "Rescind all sales ever made",
-      "Charge criminal fine"
+      "Damages only",
+      "Repudiate the contract",
+      "Specific performance automatically",
+      "Criminal sanctions"
     ],
-    "answer": "Sue for damages",
-    "topic": "Sale of Goods \u2022 Remedies"
+    "answer": "Damages only",
+    "topic": "Law of Contract: Terms & Vitiating Factors • Examples"
   },
   {
-    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 3)",
+    "id": 3,
+    "question": "The memorandum/articles of association primarily: (item 1)",
     "options": [
-      "Sue for damages",
-      "Imprison the buyer",
-      "Rescind all sales ever made",
-      "Charge criminal fine"
+      "Regulate the company’s internal management and objects",
+      "Serve as tax returns",
+      "Create criminal offences",
+      "Replace board resolutions"
     ],
-    "answer": "Sue for damages",
-    "topic": "Sale of Goods \u2022 Remedies"
+    "answer": "Regulate the company’s internal management and objects",
+    "topic": "Company Law (Basics) • Corporate acts"
   },
   {
-    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 4)",
+    "id": 4,
+    "question": "A advert invites tenders; placing goods on shelves at ₦500 each is best described as:",
     "options": [
-      "Sue for damages",
-      "Imprison the buyer",
-      "Rescind all sales ever made",
-      "Charge criminal fine"
+      "Invitation to treat",
+      "Offer",
+      "Acceptance",
+      "Consideration"
     ],
-    "answer": "Sue for damages",
-    "topic": "Sale of Goods \u2022 Remedies"
+    "answer": "Invitation to treat",
+    "topic": "Law of Contract: Formation • Scenarios"
   },
   {
-    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 5)",
-    "options": [
-      "Sue for damages",
-      "Imprison the buyer",
-      "Rescind all sales ever made",
-      "Charge criminal fine"
-    ],
-    "answer": "Sue for damages",
-    "topic": "Sale of Goods \u2022 Remedies"
-  },
-  {
-    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 6)",
-    "options": [
-      "Sue for damages",
-      "Imprison the buyer",
-      "Rescind all sales ever made",
-      "Charge criminal fine"
-    ],
-    "answer": "Sue for damages",
-    "topic": "Sale of Goods \u2022 Remedies"
-  },
-  {
-    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 7)",
-    "options": [
-      "Sue for damages",
-      "Imprison the buyer",
-      "Rescind all sales ever made",
-      "Charge criminal fine"
-    ],
-    "answer": "Sue for damages",
-    "topic": "Sale of Goods \u2022 Remedies"
-  },
-  {
-    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 8)",
-    "options": [
-      "Sue for damages",
-      "Imprison the buyer",
-      "Rescind all sales ever made",
-      "Charge criminal fine"
-    ],
-    "answer": "Sue for damages",
-    "topic": "Sale of Goods \u2022 Remedies"
-  },
-  {
-    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 9)",
-    "options": [
-      "Sue for damages",
-      "Imprison the buyer",
-      "Rescind all sales ever made",
-      "Charge criminal fine"
-    ],
-    "answer": "Sue for damages",
-    "topic": "Sale of Goods \u2022 Remedies"
-  },
-  {
-    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 10)",
-    "options": [
-      "Sue for damages",
-      "Imprison the buyer",
-      "Rescind all sales ever made",
-      "Charge criminal fine"
-    ],
-    "answer": "Sue for damages",
-    "topic": "Sale of Goods \u2022 Remedies"
-  },
-  {
-    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 11)",
-    "options": [
-      "Sue for damages",
-      "Imprison the buyer",
-      "Rescind all sales ever made",
-      "Charge criminal fine"
-    ],
-    "answer": "Sue for damages",
-    "topic": "Sale of Goods \u2022 Remedies"
-  },
-  {
-    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 12)",
-    "options": [
-      "Sue for damages",
-      "Imprison the buyer",
-      "Rescind all sales ever made",
-      "Charge criminal fine"
-    ],
-    "answer": "Sue for damages",
-    "topic": "Sale of Goods \u2022 Remedies"
-  },
-  {
-    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 13)",
-    "options": [
-      "Sue for damages",
-      "Imprison the buyer",
-      "Rescind all sales ever made",
-      "Charge criminal fine"
-    ],
-    "answer": "Sue for damages",
-    "topic": "Sale of Goods \u2022 Remedies"
-  },
-  {
-    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 14)",
-    "options": [
-      "Sue for damages",
-      "Imprison the buyer",
-      "Rescind all sales ever made",
-      "Charge criminal fine"
-    ],
-    "answer": "Sue for damages",
-    "topic": "Sale of Goods \u2022 Remedies"
-  },
-  {
-    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 15)",
-    "options": [
-      "Sue for damages",
-      "Imprison the buyer",
-      "Rescind all sales ever made",
-      "Charge criminal fine"
-    ],
-    "answer": "Sue for damages",
-    "topic": "Sale of Goods \u2022 Remedies"
-  },
-  {
-    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 16)",
-    "options": [
-      "Sue for damages",
-      "Imprison the buyer",
-      "Rescind all sales ever made",
-      "Charge criminal fine"
-    ],
-    "answer": "Sue for damages",
-    "topic": "Sale of Goods \u2022 Remedies"
-  },
-  {
-    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 17)",
-    "options": [
-      "Sue for damages",
-      "Imprison the buyer",
-      "Rescind all sales ever made",
-      "Charge criminal fine"
-    ],
-    "answer": "Sue for damages",
-    "topic": "Sale of Goods \u2022 Remedies"
-  },
-  {
-    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 18)",
-    "options": [
-      "Sue for damages",
-      "Imprison the buyer",
-      "Rescind all sales ever made",
-      "Charge criminal fine"
-    ],
-    "answer": "Sue for damages",
-    "topic": "Sale of Goods \u2022 Remedies"
-  },
-  {
-    "question": "In hire purchase, ownership passes:",
-    "options": [
-      "On payment of the last instalment (or exercise of option to purchase)",
-      "On first payment",
-      "On delivery",
-      "On signing the form regardless"
-    ],
-    "answer": "On payment of the last instalment (or exercise of option to purchase)",
-    "topic": "Hire Purchase \u2022 Nature"
-  },
-  {
-    "question": "A hirer who has paid the statutory proportion may:",
-    "options": [
-      "Return goods and end the agreement",
-      "Be sued for theft",
-      "Be jailed without trial",
-      "Lose all payments automatically"
-    ],
-    "answer": "Return goods and end the agreement",
-    "topic": "Hire Purchase \u2022 Rights"
-  },
-  {
-    "question": "HP law protects consumers by:",
-    "options": [
-      "Requiring key information and limiting repossession",
-      "Banning instalments",
-      "Fixing interest by court",
-      "Forcing cash sales"
-    ],
-    "answer": "Requiring key information and limiting repossession",
-    "topic": "Hire Purchase \u2022 Protection"
-  },
-  {
-    "question": "On hirer\u2019s default before statutory proportion is paid, the owner may: (item 1)",
-    "options": [
-      "Recover goods peacefully and sue for damages",
-      "Jail the hirer",
-      "Confiscate unrelated property",
-      "Report to company registry"
-    ],
-    "answer": "Recover goods peacefully and sue for damages",
-    "topic": "Hire Purchase \u2022 Default"
-  },
-  {
-    "question": "On hirer\u2019s default before statutory proportion is paid, the owner may: (item 2)",
-    "options": [
-      "Recover goods peacefully and sue for damages",
-      "Jail the hirer",
-      "Confiscate unrelated property",
-      "Report to company registry"
-    ],
-    "answer": "Recover goods peacefully and sue for damages",
-    "topic": "Hire Purchase \u2022 Default"
-  },
-  {
-    "question": "On hirer\u2019s default before statutory proportion is paid, the owner may: (item 3)",
-    "options": [
-      "Recover goods peacefully and sue for damages",
-      "Jail the hirer",
-      "Confiscate unrelated property",
-      "Report to company registry"
-    ],
-    "answer": "Recover goods peacefully and sue for damages",
-    "topic": "Hire Purchase \u2022 Default"
-  },
-  {
-    "question": "On hirer\u2019s default before statutory proportion is paid, the owner may: (item 4)",
-    "options": [
-      "Recover goods peacefully and sue for damages",
-      "Jail the hirer",
-      "Confiscate unrelated property",
-      "Report to company registry"
-    ],
-    "answer": "Recover goods peacefully and sue for damages",
-    "topic": "Hire Purchase \u2022 Default"
-  },
-  {
-    "question": "On hirer\u2019s default before statutory proportion is paid, the owner may: (item 5)",
-    "options": [
-      "Recover goods peacefully and sue for damages",
-      "Jail the hirer",
-      "Confiscate unrelated property",
-      "Report to company registry"
-    ],
-    "answer": "Recover goods peacefully and sue for damages",
-    "topic": "Hire Purchase \u2022 Default"
-  },
-  {
-    "question": "On hirer\u2019s default before statutory proportion is paid, the owner may: (item 6)",
-    "options": [
-      "Recover goods peacefully and sue for damages",
-      "Jail the hirer",
-      "Confiscate unrelated property",
-      "Report to company registry"
-    ],
-    "answer": "Recover goods peacefully and sue for damages",
-    "topic": "Hire Purchase \u2022 Default"
-  },
-  {
-    "question": "On hirer\u2019s default before statutory proportion is paid, the owner may: (item 7)",
-    "options": [
-      "Recover goods peacefully and sue for damages",
-      "Jail the hirer",
-      "Confiscate unrelated property",
-      "Report to company registry"
-    ],
-    "answer": "Recover goods peacefully and sue for damages",
-    "topic": "Hire Purchase \u2022 Default"
-  },
-  {
-    "question": "On hirer\u2019s default before statutory proportion is paid, the owner may: (item 8)",
-    "options": [
-      "Recover goods peacefully and sue for damages",
-      "Jail the hirer",
-      "Confiscate unrelated property",
-      "Report to company registry"
-    ],
-    "answer": "Recover goods peacefully and sue for damages",
-    "topic": "Hire Purchase \u2022 Default"
-  },
-  {
-    "question": "On hirer\u2019s default before statutory proportion is paid, the owner may: (item 9)",
-    "options": [
-      "Recover goods peacefully and sue for damages",
-      "Jail the hirer",
-      "Confiscate unrelated property",
-      "Report to company registry"
-    ],
-    "answer": "Recover goods peacefully and sue for damages",
-    "topic": "Hire Purchase \u2022 Default"
-  },
-  {
-    "question": "A negotiable instrument is one which:",
-    "options": [
-      "Is freely transferable and the transferee can acquire a better title",
-      "Cannot be transferred",
-      "Must be registered to transfer",
-      "Is always non\u2011cashable"
-    ],
-    "answer": "Is freely transferable and the transferee can acquire a better title",
-    "topic": "Negotiable Instruments \u2022 Definition"
-  },
-  {
-    "question": "A bill of exchange is:",
-    "options": [
-      "An unconditional order in writing to pay a sum certain",
-      "An unconditional promise to pay",
-      "A receipt",
-      "A credit note"
-    ],
-    "answer": "An unconditional order in writing to pay a sum certain",
-    "topic": "Negotiable Instruments \u2022 Bills"
-  },
-  {
-    "question": "A cheque is drawn on:",
-    "options": [
-      "A banker",
-      "A customer",
-      "A court",
-      "A broker"
-    ],
-    "answer": "A banker",
-    "topic": "Negotiable Instruments \u2022 Cheques"
-  },
-  {
-    "question": "A holder in due course takes:",
-    "options": [
-      "Free from many defects in title",
-      "Subject to all equities",
-      "Only with drawer\u2019s consent",
-      "Only after court order"
-    ],
-    "answer": "Free from many defects in title",
-    "topic": "Negotiable Instruments \u2022 Holder in due course"
-  },
-  {
-    "question": "Blank endorsement makes the instrument:",
-    "options": [
-      "Payable to bearer",
-      "Payable to order",
-      "Not negotiable",
-      "Illegal"
-    ],
-    "answer": "Payable to bearer",
-    "topic": "Negotiable Instruments \u2022 Endorsement"
-  },
-  {
-    "question": "General crossing of a cheque consists of: (item 1)",
-    "options": [
-      "Two parallel lines with or without words",
-      "Drawer\u2019s full signature only",
-      "Stamp duty",
-      "Revenue stamp only"
-    ],
-    "answer": "Two parallel lines with or without words",
-    "topic": "Negotiable Instruments \u2022 Crossing"
-  },
-  {
-    "question": "General crossing of a cheque consists of: (item 2)",
-    "options": [
-      "Two parallel lines with or without words",
-      "Drawer\u2019s full signature only",
-      "Stamp duty",
-      "Revenue stamp only"
-    ],
-    "answer": "Two parallel lines with or without words",
-    "topic": "Negotiable Instruments \u2022 Crossing"
-  },
-  {
-    "question": "General crossing of a cheque consists of: (item 3)",
-    "options": [
-      "Two parallel lines with or without words",
-      "Drawer\u2019s full signature only",
-      "Stamp duty",
-      "Revenue stamp only"
-    ],
-    "answer": "Two parallel lines with or without words",
-    "topic": "Negotiable Instruments \u2022 Crossing"
-  },
-  {
-    "question": "General crossing of a cheque consists of: (item 4)",
-    "options": [
-      "Two parallel lines with or without words",
-      "Drawer\u2019s full signature only",
-      "Stamp duty",
-      "Revenue stamp only"
-    ],
-    "answer": "Two parallel lines with or without words",
-    "topic": "Negotiable Instruments \u2022 Crossing"
-  },
-  {
-    "question": "General crossing of a cheque consists of: (item 5)",
-    "options": [
-      "Two parallel lines with or without words",
-      "Drawer\u2019s full signature only",
-      "Stamp duty",
-      "Revenue stamp only"
-    ],
-    "answer": "Two parallel lines with or without words",
-    "topic": "Negotiable Instruments \u2022 Crossing"
-  },
-  {
-    "question": "General crossing of a cheque consists of: (item 6)",
-    "options": [
-      "Two parallel lines with or without words",
-      "Drawer\u2019s full signature only",
-      "Stamp duty",
-      "Revenue stamp only"
-    ],
-    "answer": "Two parallel lines with or without words",
-    "topic": "Negotiable Instruments \u2022 Crossing"
-  },
-  {
-    "question": "General crossing of a cheque consists of: (item 7)",
-    "options": [
-      "Two parallel lines with or without words",
-      "Drawer\u2019s full signature only",
-      "Stamp duty",
-      "Revenue stamp only"
-    ],
-    "answer": "Two parallel lines with or without words",
-    "topic": "Negotiable Instruments \u2022 Crossing"
-  },
-  {
-    "question": "General crossing of a cheque consists of: (item 8)",
-    "options": [
-      "Two parallel lines with or without words",
-      "Drawer\u2019s full signature only",
-      "Stamp duty",
-      "Revenue stamp only"
-    ],
-    "answer": "Two parallel lines with or without words",
-    "topic": "Negotiable Instruments \u2022 Crossing"
-  },
-  {
-    "question": "General crossing of a cheque consists of: (item 9)",
-    "options": [
-      "Two parallel lines with or without words",
-      "Drawer\u2019s full signature only",
-      "Stamp duty",
-      "Revenue stamp only"
-    ],
-    "answer": "Two parallel lines with or without words",
-    "topic": "Negotiable Instruments \u2022 Crossing"
-  },
-  {
-    "question": "To succeed in negligence, claimant must prove:",
-    "options": [
-      "Duty, breach, causation and damage",
-      "Contract, breach, intention",
-      "Crime, duty, loss",
-      "Intention, malice, motive"
-    ],
-    "answer": "Duty, breach, causation and damage",
-    "topic": "Law of Tort (Negligence & Others) \u2022 Negligence"
-  },
-  {
-    "question": "Damages in tort aim to:",
-    "options": [
-      "Put claimant in position before the tort",
-      "Punish the defendant",
-      "Award profits",
-      "Confiscate property"
-    ],
-    "answer": "Put claimant in position before the tort",
-    "topic": "Law of Tort (Negligence & Others) \u2022 Remedies"
-  },
-  {
-    "question": "Defence of volenti means:",
-    "options": [
-      "Willing assumption of risk",
-      "Inevitable accident",
-      "Act of God",
-      "Contributory negligence"
-    ],
-    "answer": "Willing assumption of risk",
-    "topic": "Law of Tort (Negligence & Others) \u2022 Defences"
-  },
-  {
-    "question": "Private nuisance protects:",
-    "options": [
-      "Use and enjoyment of land",
-      "Reputation",
-      "Freedom of movement",
-      "Trade marks"
-    ],
-    "answer": "Use and enjoyment of land",
-    "topic": "Law of Tort (Negligence & Others) \u2022 Nuisance"
-  },
-  {
+    "id": 5,
     "question": "An employer is vicariously liable for torts of an employee committed: (item 1)",
     "options": [
       "In the course of employment",
@@ -1613,141 +57,34 @@
       "Only with criminal intent"
     ],
     "answer": "In the course of employment",
-    "topic": "Law of Tort (Negligence & Others) \u2022 Vicarious liability"
+    "topic": "Law of Tort (Negligence & Others) • Vicarious liability"
   },
   {
-    "question": "An employer is vicariously liable for torts of an employee committed: (item 2)",
+    "id": 6,
+    "question": "On hirer’s default before statutory proportion is paid, the owner may: (item 1)",
     "options": [
-      "In the course of employment",
-      "Outside all employment",
-      "As an independent contractor",
-      "Only with criminal intent"
+      "Recover goods peacefully and sue for damages",
+      "Jail the hirer",
+      "Confiscate unrelated property",
+      "Report to company registry"
     ],
-    "answer": "In the course of employment",
-    "topic": "Law of Tort (Negligence & Others) \u2022 Vicarious liability"
+    "answer": "Recover goods peacefully and sue for damages",
+    "topic": "Hire Purchase • Default"
   },
   {
-    "question": "An employer is vicariously liable for torts of an employee committed: (item 3)",
+    "id": 7,
+    "question": "General crossing of a cheque consists of: (item 1)",
     "options": [
-      "In the course of employment",
-      "Outside all employment",
-      "As an independent contractor",
-      "Only with criminal intent"
+      "Two parallel lines with or without words",
+      "Drawer’s full signature only",
+      "Stamp duty",
+      "Revenue stamp only"
     ],
-    "answer": "In the course of employment",
-    "topic": "Law of Tort (Negligence & Others) \u2022 Vicarious liability"
+    "answer": "Two parallel lines with or without words",
+    "topic": "Negotiable Instruments • Crossing"
   },
   {
-    "question": "An employer is vicariously liable for torts of an employee committed: (item 4)",
-    "options": [
-      "In the course of employment",
-      "Outside all employment",
-      "As an independent contractor",
-      "Only with criminal intent"
-    ],
-    "answer": "In the course of employment",
-    "topic": "Law of Tort (Negligence & Others) \u2022 Vicarious liability"
-  },
-  {
-    "question": "An employer is vicariously liable for torts of an employee committed: (item 5)",
-    "options": [
-      "In the course of employment",
-      "Outside all employment",
-      "As an independent contractor",
-      "Only with criminal intent"
-    ],
-    "answer": "In the course of employment",
-    "topic": "Law of Tort (Negligence & Others) \u2022 Vicarious liability"
-  },
-  {
-    "question": "An employer is vicariously liable for torts of an employee committed: (item 6)",
-    "options": [
-      "In the course of employment",
-      "Outside all employment",
-      "As an independent contractor",
-      "Only with criminal intent"
-    ],
-    "answer": "In the course of employment",
-    "topic": "Law of Tort (Negligence & Others) \u2022 Vicarious liability"
-  },
-  {
-    "question": "An employer is vicariously liable for torts of an employee committed: (item 7)",
-    "options": [
-      "In the course of employment",
-      "Outside all employment",
-      "As an independent contractor",
-      "Only with criminal intent"
-    ],
-    "answer": "In the course of employment",
-    "topic": "Law of Tort (Negligence & Others) \u2022 Vicarious liability"
-  },
-  {
-    "question": "An employer is vicariously liable for torts of an employee committed: (item 8)",
-    "options": [
-      "In the course of employment",
-      "Outside all employment",
-      "As an independent contractor",
-      "Only with criminal intent"
-    ],
-    "answer": "In the course of employment",
-    "topic": "Law of Tort (Negligence & Others) \u2022 Vicarious liability"
-  },
-  {
-    "question": "An employer is vicariously liable for torts of an employee committed: (item 9)",
-    "options": [
-      "In the course of employment",
-      "Outside all employment",
-      "As an independent contractor",
-      "Only with criminal intent"
-    ],
-    "answer": "In the course of employment",
-    "topic": "Law of Tort (Negligence & Others) \u2022 Vicarious liability"
-  },
-  {
-    "question": "An employer is vicariously liable for torts of an employee committed: (item 10)",
-    "options": [
-      "In the course of employment",
-      "Outside all employment",
-      "As an independent contractor",
-      "Only with criminal intent"
-    ],
-    "answer": "In the course of employment",
-    "topic": "Law of Tort (Negligence & Others) \u2022 Vicarious liability"
-  },
-  {
-    "question": "Partnership is a relation between persons carrying on business:",
-    "options": [
-      "In common with a view of profit",
-      "As a charity",
-      "As employees only",
-      "Under incorporation"
-    ],
-    "answer": "In common with a view of profit",
-    "topic": "Partnership \u2022 Nature"
-  },
-  {
-    "question": "A partner\u2019s implied authority allows:",
-    "options": [
-      "Ordinary transactions of the firm\u2019s business",
-      "All acts including selling the firm\u2019s building",
-      "Borrowing unlimited sums always",
-      "Criminal acts"
-    ],
-    "answer": "Ordinary transactions of the firm\u2019s business",
-    "topic": "Partnership \u2022 Authority"
-  },
-  {
-    "question": "Partners are:",
-    "options": [
-      "Jointly and severally liable for firm debts",
-      "Not liable",
-      "Criminally liable by default",
-      "Only liable up to capital"
-    ],
-    "answer": "Jointly and severally liable for firm debts",
-    "topic": "Partnership \u2022 Liability"
-  },
-  {
+    "id": 8,
     "question": "On admission of a new partner, liability for prior debts is: (item 1)",
     "options": [
       "Generally not imposed unless agreed (novation)",
@@ -1756,317 +93,10 @@
       "Transferred to bankers"
     ],
     "answer": "Generally not imposed unless agreed (novation)",
-    "topic": "Partnership \u2022 Admission/Retirement"
+    "topic": "Partnership • Admission/Retirement"
   },
   {
-    "question": "On admission of a new partner, liability for prior debts is: (item 2)",
-    "options": [
-      "Generally not imposed unless agreed (novation)",
-      "Automatic and unlimited",
-      "Criminal",
-      "Transferred to bankers"
-    ],
-    "answer": "Generally not imposed unless agreed (novation)",
-    "topic": "Partnership \u2022 Admission/Retirement"
-  },
-  {
-    "question": "On admission of a new partner, liability for prior debts is: (item 3)",
-    "options": [
-      "Generally not imposed unless agreed (novation)",
-      "Automatic and unlimited",
-      "Criminal",
-      "Transferred to bankers"
-    ],
-    "answer": "Generally not imposed unless agreed (novation)",
-    "topic": "Partnership \u2022 Admission/Retirement"
-  },
-  {
-    "question": "On admission of a new partner, liability for prior debts is: (item 4)",
-    "options": [
-      "Generally not imposed unless agreed (novation)",
-      "Automatic and unlimited",
-      "Criminal",
-      "Transferred to bankers"
-    ],
-    "answer": "Generally not imposed unless agreed (novation)",
-    "topic": "Partnership \u2022 Admission/Retirement"
-  },
-  {
-    "question": "On admission of a new partner, liability for prior debts is: (item 5)",
-    "options": [
-      "Generally not imposed unless agreed (novation)",
-      "Automatic and unlimited",
-      "Criminal",
-      "Transferred to bankers"
-    ],
-    "answer": "Generally not imposed unless agreed (novation)",
-    "topic": "Partnership \u2022 Admission/Retirement"
-  },
-  {
-    "question": "On admission of a new partner, liability for prior debts is: (item 6)",
-    "options": [
-      "Generally not imposed unless agreed (novation)",
-      "Automatic and unlimited",
-      "Criminal",
-      "Transferred to bankers"
-    ],
-    "answer": "Generally not imposed unless agreed (novation)",
-    "topic": "Partnership \u2022 Admission/Retirement"
-  },
-  {
-    "question": "On admission of a new partner, liability for prior debts is: (item 7)",
-    "options": [
-      "Generally not imposed unless agreed (novation)",
-      "Automatic and unlimited",
-      "Criminal",
-      "Transferred to bankers"
-    ],
-    "answer": "Generally not imposed unless agreed (novation)",
-    "topic": "Partnership \u2022 Admission/Retirement"
-  },
-  {
-    "question": "On admission of a new partner, liability for prior debts is: (item 8)",
-    "options": [
-      "Generally not imposed unless agreed (novation)",
-      "Automatic and unlimited",
-      "Criminal",
-      "Transferred to bankers"
-    ],
-    "answer": "Generally not imposed unless agreed (novation)",
-    "topic": "Partnership \u2022 Admission/Retirement"
-  },
-  {
-    "question": "On admission of a new partner, liability for prior debts is: (item 9)",
-    "options": [
-      "Generally not imposed unless agreed (novation)",
-      "Automatic and unlimited",
-      "Criminal",
-      "Transferred to bankers"
-    ],
-    "answer": "Generally not imposed unless agreed (novation)",
-    "topic": "Partnership \u2022 Admission/Retirement"
-  },
-  {
-    "question": "A company is incorporated by:",
-    "options": [
-      "Registration under CAMA with CAC",
-      "Royal charter",
-      "Customary appointment",
-      "Court declaration"
-    ],
-    "answer": "Registration under CAMA with CAC",
-    "topic": "Company Law (Basics) \u2022 Formation"
-  },
-  {
-    "question": "A company on incorporation becomes:",
-    "options": [
-      "A separate legal person",
-      "An agency of shareholders",
-      "A partnership",
-      "A government department"
-    ],
-    "answer": "A separate legal person",
-    "topic": "Company Law (Basics) \u2022 Personality"
-  },
-  {
-    "question": "Directors owe duties of:",
-    "options": [
-      "Care, skill, diligence and fiduciary loyalty",
-      "Only to employees",
-      "Only to themselves",
-      "None"
-    ],
-    "answer": "Care, skill, diligence and fiduciary loyalty",
-    "topic": "Company Law (Basics) \u2022 Directors"
-  },
-  {
-    "question": "Ordinary business of an AGM includes:",
-    "options": [
-      "Presentation of financial statements and declaration of dividend",
-      "Appointment of judges",
-      "Criminal trials",
-      "Approval of police budget"
-    ],
-    "answer": "Presentation of financial statements and declaration of dividend",
-    "topic": "Company Law (Basics) \u2022 Meetings"
-  },
-  {
-    "question": "Share capital is:",
-    "options": [
-      "The equity contributed by members",
-      "Total assets",
-      "Bank balance",
-      "Net profit"
-    ],
-    "answer": "The equity contributed by members",
-    "topic": "Company Law (Basics) \u2022 Capital"
-  },
-  {
-    "question": "The memorandum/articles of association primarily: (item 1)",
-    "options": [
-      "Regulate the company\u2019s internal management and objects",
-      "Serve as tax returns",
-      "Create criminal offences",
-      "Replace board resolutions"
-    ],
-    "answer": "Regulate the company\u2019s internal management and objects",
-    "topic": "Company Law (Basics) \u2022 Corporate acts"
-  },
-  {
-    "question": "The memorandum/articles of association primarily: (item 2)",
-    "options": [
-      "Regulate the company\u2019s internal management and objects",
-      "Serve as tax returns",
-      "Create criminal offences",
-      "Replace board resolutions"
-    ],
-    "answer": "Regulate the company\u2019s internal management and objects",
-    "topic": "Company Law (Basics) \u2022 Corporate acts"
-  },
-  {
-    "question": "The memorandum/articles of association primarily: (item 3)",
-    "options": [
-      "Regulate the company\u2019s internal management and objects",
-      "Serve as tax returns",
-      "Create criminal offences",
-      "Replace board resolutions"
-    ],
-    "answer": "Regulate the company\u2019s internal management and objects",
-    "topic": "Company Law (Basics) \u2022 Corporate acts"
-  },
-  {
-    "question": "The memorandum/articles of association primarily: (item 4)",
-    "options": [
-      "Regulate the company\u2019s internal management and objects",
-      "Serve as tax returns",
-      "Create criminal offences",
-      "Replace board resolutions"
-    ],
-    "answer": "Regulate the company\u2019s internal management and objects",
-    "topic": "Company Law (Basics) \u2022 Corporate acts"
-  },
-  {
-    "question": "The memorandum/articles of association primarily: (item 5)",
-    "options": [
-      "Regulate the company\u2019s internal management and objects",
-      "Serve as tax returns",
-      "Create criminal offences",
-      "Replace board resolutions"
-    ],
-    "answer": "Regulate the company\u2019s internal management and objects",
-    "topic": "Company Law (Basics) \u2022 Corporate acts"
-  },
-  {
-    "question": "The memorandum/articles of association primarily: (item 6)",
-    "options": [
-      "Regulate the company\u2019s internal management and objects",
-      "Serve as tax returns",
-      "Create criminal offences",
-      "Replace board resolutions"
-    ],
-    "answer": "Regulate the company\u2019s internal management and objects",
-    "topic": "Company Law (Basics) \u2022 Corporate acts"
-  },
-  {
-    "question": "The memorandum/articles of association primarily: (item 7)",
-    "options": [
-      "Regulate the company\u2019s internal management and objects",
-      "Serve as tax returns",
-      "Create criminal offences",
-      "Replace board resolutions"
-    ],
-    "answer": "Regulate the company\u2019s internal management and objects",
-    "topic": "Company Law (Basics) \u2022 Corporate acts"
-  },
-  {
-    "question": "The memorandum/articles of association primarily: (item 8)",
-    "options": [
-      "Regulate the company\u2019s internal management and objects",
-      "Serve as tax returns",
-      "Create criminal offences",
-      "Replace board resolutions"
-    ],
-    "answer": "Regulate the company\u2019s internal management and objects",
-    "topic": "Company Law (Basics) \u2022 Corporate acts"
-  },
-  {
-    "question": "The memorandum/articles of association primarily: (item 9)",
-    "options": [
-      "Regulate the company\u2019s internal management and objects",
-      "Serve as tax returns",
-      "Create criminal offences",
-      "Replace board resolutions"
-    ],
-    "answer": "Regulate the company\u2019s internal management and objects",
-    "topic": "Company Law (Basics) \u2022 Corporate acts"
-  },
-  {
-    "question": "The memorandum/articles of association primarily: (item 10)",
-    "options": [
-      "Regulate the company\u2019s internal management and objects",
-      "Serve as tax returns",
-      "Create criminal offences",
-      "Replace board resolutions"
-    ],
-    "answer": "Regulate the company\u2019s internal management and objects",
-    "topic": "Company Law (Basics) \u2022 Corporate acts"
-  },
-  {
-    "question": "The memorandum/articles of association primarily: (item 11)",
-    "options": [
-      "Regulate the company\u2019s internal management and objects",
-      "Serve as tax returns",
-      "Create criminal offences",
-      "Replace board resolutions"
-    ],
-    "answer": "Regulate the company\u2019s internal management and objects",
-    "topic": "Company Law (Basics) \u2022 Corporate acts"
-  },
-  {
-    "question": "A contract of employment is:",
-    "options": [
-      "A contract of service between employer and employee",
-      "A contract for services with independent contractor",
-      "A deed poll",
-      "A criminal bond"
-    ],
-    "answer": "A contract of service between employer and employee",
-    "topic": "Employment/Labour \u2022 Contract"
-  },
-  {
-    "question": "Wrongful dismissal occurs where:",
-    "options": [
-      "Termination breaches the employment contract",
-      "Employee resigns voluntarily",
-      "Employer pays salary",
-      "A crime is alleged"
-    ],
-    "answer": "Termination breaches the employment contract",
-    "topic": "Employment/Labour \u2022 Termination"
-  },
-  {
-    "question": "Statutory deductions often include:",
-    "options": [
-      "PAYE and pension contributions",
-      "Union donations",
-      "Voluntary tips",
-      "Transport allowance"
-    ],
-    "answer": "PAYE and pension contributions",
-    "topic": "Employment/Labour \u2022 Wages"
-  },
-  {
-    "question": "Employers owe a duty to:",
-    "options": [
-      "Provide safe system of work",
-      "Guarantee profits",
-      "Provide free lunch",
-      "Provide housing"
-    ],
-    "answer": "Provide safe system of work",
-    "topic": "Employment/Labour \u2022 Health & Safety"
-  },
-  {
+    "id": 9,
     "question": "Which is typically a statutory employment right in Nigeria? (item 1)",
     "options": [
       "Annual leave/holiday pay under labour laws",
@@ -2075,64 +105,922 @@
       "Overtime bonus for all roles"
     ],
     "answer": "Annual leave/holiday pay under labour laws",
-    "topic": "Employment/Labour \u2022 Leave/Benefits"
+    "topic": "Employment/Labour • Leave/Benefits"
   },
   {
-    "question": "Which is typically a statutory employment right in Nigeria? (item 2)",
+    "id": 10,
+    "question": "After indemnifying the insured, the insurer’s right to sue the wrongdoer is called: (item 1)",
     "options": [
-      "Annual leave/holiday pay under labour laws",
-      "Company car for all staff",
-      "Stock options",
-      "Overtime bonus for all roles"
+      "Subrogation",
+      "Contribution",
+      "Assignment",
+      "Novation"
     ],
-    "answer": "Annual leave/holiday pay under labour laws",
-    "topic": "Employment/Labour \u2022 Leave/Benefits"
+    "answer": "Subrogation",
+    "topic": "Insurance • Subrogation/Contribution"
   },
   {
-    "question": "Which is typically a statutory employment right in Nigeria? (item 3)",
+    "id": 11,
+    "question": "Which claim ranks first on liquidation distributions? (item 1)",
     "options": [
-      "Annual leave/holiday pay under labour laws",
-      "Company car for all staff",
-      "Stock options",
-      "Overtime bonus for all roles"
+      "Secured creditors (subject to fixed charges and costs)",
+      "Ordinary shareholders",
+      "Trade creditors always",
+      "Directors’ bonuses"
     ],
-    "answer": "Annual leave/holiday pay under labour laws",
-    "topic": "Employment/Labour \u2022 Leave/Benefits"
+    "answer": "Secured creditors (subject to fixed charges and costs)",
+    "topic": "Insolvency/Bankruptcy • Priority"
   },
   {
-    "question": "Which is typically a statutory employment right in Nigeria? (item 4)",
+    "id": 12,
+    "question": "Mediation involves:",
     "options": [
-      "Annual leave/holiday pay under labour laws",
-      "Company car for all staff",
-      "Stock options",
-      "Overtime bonus for all roles"
+      "A neutral facilitating settlement without imposing a decision",
+      "A neutral giving a binding decision",
+      "Parties voting",
+      "Court imposing sanctions"
     ],
-    "answer": "Annual leave/holiday pay under labour laws",
-    "topic": "Employment/Labour \u2022 Leave/Benefits"
+    "answer": "A neutral facilitating settlement without imposing a decision",
+    "topic": "Court Structure & ADR • ADR"
   },
   {
-    "question": "Which is typically a statutory employment right in Nigeria? (item 5)",
+    "id": 13,
+    "question": "Which of the following is a primary source of law in Nigeria?",
     "options": [
-      "Annual leave/holiday pay under labour laws",
-      "Company car for all staff",
-      "Stock options",
-      "Overtime bonus for all roles"
+      "Case law (judicial precedent)",
+      "Company policy",
+      "Newspaper reports",
+      "Customs of foreign states"
     ],
-    "answer": "Annual leave/holiday pay under labour laws",
-    "topic": "Employment/Labour \u2022 Leave/Benefits"
+    "answer": "Case law (judicial precedent)",
+    "topic": "Nigerian Legal System & Sources of Law • Sources"
   },
   {
-    "question": "Which is typically a statutory employment right in Nigeria? (item 6)",
+    "id": 14,
+    "question": "Subsidiary legislation is made by:",
     "options": [
-      "Annual leave/holiday pay under labour laws",
-      "Company car for all staff",
-      "Stock options",
-      "Overtime bonus for all roles"
+      "Authorities under powers delegated by an enabling Act",
+      "Only the judiciary",
+      "Only the President",
+      "Foreign embassies"
     ],
-    "answer": "Annual leave/holiday pay under labour laws",
-    "topic": "Employment/Labour \u2022 Leave/Benefits"
+    "answer": "Authorities under powers delegated by an enabling Act",
+    "topic": "Nigerian Legal System & Sources of Law • Legislation"
   },
   {
+    "id": 15,
+    "question": "A valid custom must be:",
+    "options": [
+      "Certain, reasonable and not contrary to public policy",
+      "Known only to elders",
+      "In writing",
+      "Approved by the Attorney‑General"
+    ],
+    "answer": "Certain, reasonable and not contrary to public policy",
+    "topic": "Nigerian Legal System & Sources of Law • Customary"
+  },
+  {
+    "id": 16,
+    "question": "An Act comes into force:",
+    "options": [
+      "On the commencement date stated in the Act",
+      "On the day of Royal assent in the UK",
+      "When published in newspapers",
+      "Only after court approval"
+    ],
+    "answer": "On the commencement date stated in the Act",
+    "topic": "Nigerian Legal System & Sources of Law • Interpretation"
+  },
+  {
+    "id": 17,
+    "question": "The highest court in Nigeria is the:",
+    "options": [
+      "Supreme Court",
+      "Court of Appeal",
+      "High Court",
+      "Federal High Court"
+    ],
+    "answer": "Supreme Court",
+    "topic": "Court Structure & ADR • Courts"
+  },
+  {
+    "id": 18,
+    "question": "The Federal High Court mainly has jurisdiction over:",
+    "options": [
+      "Revenue, customs, banking, companies and maritime matters",
+      "Landlord and tenant",
+      "Divorce under customary law",
+      "Criminal trials generally"
+    ],
+    "answer": "Revenue, customs, banking, companies and maritime matters",
+    "topic": "Court Structure & ADR • Jurisdiction"
+  },
+  {
+    "id": 19,
+    "question": "Consideration must be:",
+    "options": [
+      "Something of value moving from the promisee",
+      "Adequate monetary amount",
+      "From a third party",
+      "Always in cash"
+    ],
+    "answer": "Something of value moving from the promisee",
+    "topic": "Law of Contract: Formation • Consideration"
+  },
+  {
+    "id": 20,
+    "question": "The supreme law of Nigeria is the:",
+    "options": [
+      "Constitution",
+      "Acts of the National Assembly",
+      "Common law",
+      "Customary law"
+    ],
+    "answer": "Constitution",
+    "topic": "Nigerian Legal System & Sources of Law • Constitution"
+  },
+  {
+    "id": 21,
+    "question": "Equity developed to:",
+    "options": [
+      "Mitigate the rigidity of common law",
+      "Replace statute law",
+      "Repeal customs",
+      "Try criminal cases"
+    ],
+    "answer": "Mitigate the rigidity of common law",
+    "topic": "Nigerian Legal System & Sources of Law • Equity"
+  },
+  {
+    "id": 22,
+    "question": "A decision of the Supreme Court is:",
+    "options": [
+      "Binding on all lower courts",
+      "Persuasive only",
+      "Binding on foreign courts",
+      "Not binding on Court of Appeal"
+    ],
+    "answer": "Binding on all lower courts",
+    "topic": "Nigerian Legal System & Sources of Law • Precedent"
+  },
+  {
+    "id": 23,
+    "question": "Which pair are superior courts of record in Nigeria?",
+    "options": [
+      "Supreme Court and Court of Appeal",
+      "Magistrate Court and Customary Court",
+      "Sharia Court and Area Court",
+      "Election Tribunal and Juvenile Court"
+    ],
+    "answer": "Supreme Court and Court of Appeal",
+    "topic": "Nigerian Legal System & Sources of Law • Legal System"
+  },
+  {
+    "id": 24,
+    "question": "Election petitions are heard by:",
+    "options": [
+      "Election Tribunals",
+      "Magistrate Courts",
+      "Sharia Courts",
+      "Area Courts"
+    ],
+    "answer": "Election Tribunals",
+    "topic": "Court Structure & ADR • Tribunals"
+  },
+  {
+    "id": 25,
+    "question": "Appeals from the Court of Appeal lie to:",
+    "options": [
+      "The Supreme Court",
+      "The High Court",
+      "Magistrate Court",
+      "Election Tribunal"
+    ],
+    "answer": "The Supreme Court",
+    "topic": "Court Structure & ADR • Appeals"
+  },
+  {
+    "id": 26,
+    "question": "An offer is:",
+    "options": [
+      "A definite promise to be bound on acceptance",
+      "An invitation to treat",
+      "A mere enquiry",
+      "A counter‑offer"
+    ],
+    "answer": "A definite promise to be bound on acceptance",
+    "topic": "Law of Contract: Formation • Offer"
+  },
+  {
+    "id": 27,
+    "question": "Which is an invitation to treat?",
+    "options": [
+      "Display of goods with price tags",
+      "Written offer with fixed terms",
+      "Signed acceptance",
+      "Payment of consideration"
+    ],
+    "answer": "Display of goods with price tags",
+    "topic": "Law of Contract: Formation • Invitation"
+  },
+  {
+    "id": 28,
+    "question": "Acceptance must be:",
+    "options": [
+      "Unqualified and communicated",
+      "Conditional",
+      "Silent",
+      "By counter‑offer"
+    ],
+    "answer": "Unqualified and communicated",
+    "topic": "Law of Contract: Formation • Acceptance"
+  },
+  {
+    "id": 29,
+    "question": "Under the postal rule, acceptance is effective when:",
+    "options": [
+      "Posted",
+      "Received",
+      "Read",
+      "Notified by phone"
+    ],
+    "answer": "Posted",
+    "topic": "Law of Contract: Formation • Postal rule"
+  },
+  {
+    "id": 30,
+    "question": "Social/domestic agreements are presumed:",
+    "options": [
+      "Not intended to create legal relations",
+      "To be legally binding",
+      "To be illegal",
+      "To be voidable"
+    ],
+    "answer": "Not intended to create legal relations",
+    "topic": "Law of Contract: Formation • Intention"
+  },
+  {
+    "id": 31,
+    "question": "A minor’s contract for necessaries is:",
+    "options": [
+      "Binding but at a reasonable price",
+      "Void ab initio",
+      "Illegal",
+      "Unenforceable against the supplier"
+    ],
+    "answer": "Binding but at a reasonable price",
+    "topic": "Law of Contract: Formation • Capacity"
+  },
+  {
+    "id": 32,
+    "question": "The doctrine of privity means:",
+    "options": [
+      "Only parties to a contract can sue on it",
+      "Anyone can sue",
+      "Courts can add parties",
+      "Third parties always benefit"
+    ],
+    "answer": "Only parties to a contract can sue on it",
+    "topic": "Law of Contract: Formation • Privity"
+  },
+  {
+    "id": 33,
+    "question": "A counter‑offer:",
+    "options": [
+      "Rejects and destroys the original offer",
+      "Leaves the original offer intact",
+      "Is the same as acceptance",
+      "Creates a collateral contract"
+    ],
+    "answer": "Rejects and destroys the original offer",
+    "topic": "Law of Contract: Formation • Counter‑offer"
+  },
+  {
+    "id": 34,
+    "question": "An offer may be terminated by:",
+    "options": [
+      "Lapse of time",
+      "Acceptance",
+      "Performance",
+      "Consideration"
+    ],
+    "answer": "Lapse of time",
+    "topic": "Law of Contract: Formation • Termination"
+  },
+  {
+    "id": 35,
+    "question": "Silence generally amounts to:",
+    "options": [
+      "No acceptance",
+      "Acceptance",
+      "Consideration",
+      "Offer"
+    ],
+    "answer": "No acceptance",
+    "topic": "Law of Contract: Formation • Communication"
+  },
+  {
+    "id": 36,
+    "question": "A condition is:",
+    "options": [
+      "A major term going to the root of the contract",
+      "A minor warranty",
+      "A representation only",
+      "An exclusion clause"
+    ],
+    "answer": "A major term going to the root of the contract",
+    "topic": "Law of Contract: Terms & Vitiating Factors • Terms"
+  },
+  {
+    "id": 37,
+    "question": "Fraudulent misrepresentation is:",
+    "options": [
+      "A false statement made knowingly or recklessly",
+      "An honest mistake",
+      "A mere opinion",
+      "Silence always"
+    ],
+    "answer": "A false statement made knowingly or recklessly",
+    "topic": "Law of Contract: Terms & Vitiating Factors • Misrep"
+  },
+  {
+    "id": 38,
+    "question": "Common mistake occurs when:",
+    "options": [
+      "Both parties share the same fundamental mistake",
+      "Only one party is mistaken",
+      "A third party is mistaken",
+      "The judge is mistaken"
+    ],
+    "answer": "Both parties share the same fundamental mistake",
+    "topic": "Law of Contract: Terms & Vitiating Factors • Mistake"
+  },
+  {
+    "id": 39,
+    "question": "Economic duress involves:",
+    "options": [
+      "Illegitimate pressure vitiating consent",
+      "Hard bargaining",
+      "Lawful persuasion",
+      "Public interest"
+    ],
+    "answer": "Illegitimate pressure vitiating consent",
+    "topic": "Law of Contract: Terms & Vitiating Factors • Duress"
+  },
+  {
+    "id": 40,
+    "question": "Undue influence arises where:",
+    "options": [
+      "One party dominates the will of another",
+      "Both are merchants",
+      "There is consideration",
+      "The contract is written"
+    ],
+    "answer": "One party dominates the will of another",
+    "topic": "Law of Contract: Terms & Vitiating Factors • Undue influence"
+  },
+  {
+    "id": 41,
+    "question": "An exclusion clause is construed:",
+    "options": [
+      "Contra proferentem (against the party relying on it)",
+      "Always in favour of business",
+      "Neutrally regardless of wording",
+      "As a penalty"
+    ],
+    "answer": "Contra proferentem (against the party relying on it)",
+    "topic": "Law of Contract: Terms & Vitiating Factors • Exemption"
+  },
+  {
+    "id": 42,
+    "question": "An illegal contract is:",
+    "options": [
+      "Void and unenforceable",
+      "Voidable at the option of one party",
+      "Valid but unenforceable",
+      "Always criminal"
+    ],
+    "answer": "Void and unenforceable",
+    "topic": "Law of Contract: Terms & Vitiating Factors • Illegality"
+  },
+  {
+    "id": 43,
+    "question": "The parol evidence rule generally:",
+    "options": [
+      "Excludes extrinsic evidence to vary a written contract",
+      "Allows oral evidence freely",
+      "Applies only to tort",
+      "Applies only to land"
+    ],
+    "answer": "Excludes extrinsic evidence to vary a written contract",
+    "topic": "Law of Contract: Terms & Vitiating Factors • Parol"
+  },
+  {
+    "id": 44,
+    "question": "A contract may be discharged by:",
+    "options": [
+      "Performance",
+      "Misrepresentation alone",
+      "Silence",
+      "Privity"
+    ],
+    "answer": "Performance",
+    "topic": "Law of Contract: Discharge & Remedies • Discharge"
+  },
+  {
+    "id": 45,
+    "question": "Frustration occurs when:",
+    "options": [
+      "An unforeseen event makes performance impossible",
+      "A party changes mind",
+      "Price rises slightly",
+      "A mistake is discovered"
+    ],
+    "answer": "An unforeseen event makes performance impossible",
+    "topic": "Law of Contract: Discharge & Remedies • Frustration"
+  },
+  {
+    "id": 46,
+    "question": "Repudiatory breach entitles the innocent party to:",
+    "options": [
+      "Terminate and claim damages",
+      "Terminate only",
+      "Damages only",
+      "Do nothing"
+    ],
+    "answer": "Terminate and claim damages",
+    "topic": "Law of Contract: Discharge & Remedies • Breach"
+  },
+  {
+    "id": 47,
+    "question": "The main aim of damages is to:",
+    "options": [
+      "Put the claimant in the position as if the contract had been performed",
+      "Punish the defendant",
+      "Reward the claimant",
+      "Deter future breaches"
+    ],
+    "answer": "Put the claimant in the position as if the contract had been performed",
+    "topic": "Law of Contract: Discharge & Remedies • Damages"
+  },
+  {
+    "id": 48,
+    "question": "Specific performance is:",
+    "options": [
+      "An equitable remedy compelling performance",
+      "A legal remedy in all contracts",
+      "A criminal sanction",
+      "A penalty clause"
+    ],
+    "answer": "An equitable remedy compelling performance",
+    "topic": "Law of Contract: Discharge & Remedies • Remedies"
+  },
+  {
+    "id": 49,
+    "question": "An injured party must:",
+    "options": [
+      "Mitigate their loss",
+      "Exaggerate losses",
+      "Ignore alternatives",
+      "Refuse substitute performance"
+    ],
+    "answer": "Mitigate their loss",
+    "topic": "Law of Contract: Discharge & Remedies • Mitigation"
+  },
+  {
+    "id": 50,
+    "question": "Agency may be created by:",
+    "options": [
+      "Agreement, ratification or necessity",
+      "Marriage",
+      "Illegality",
+      "Minority alone"
+    ],
+    "answer": "Agreement, ratification or necessity",
+    "topic": "Agency • Creation"
+  },
+  {
+    "id": 51,
+    "question": "Apparent (ostensible) authority arises where:",
+    "options": [
+      "The principal’s conduct leads third parties to believe the agent is authorised",
+      "The agent believes he is authorised",
+      "The court appoints the agent",
+      "The agent appoints himself"
+    ],
+    "answer": "The principal’s conduct leads third parties to believe the agent is authorised",
+    "topic": "Agency • Authority"
+  },
+  {
+    "id": 52,
+    "question": "An agent owes a duty to:",
+    "options": [
+      "Avoid secret profit",
+      "Destroy records",
+      "Disclose all trade secrets publicly",
+      "Act for both sides without consent"
+    ],
+    "answer": "Avoid secret profit",
+    "topic": "Agency • Duties"
+  },
+  {
+    "id": 53,
+    "question": "Where the agent acts for an undisclosed principal:",
+    "options": [
+      "The principal may sue and be sued",
+      "Only the agent is liable",
+      "Only the third party is liable",
+      "No one is liable"
+    ],
+    "answer": "The principal may sue and be sued",
+    "topic": "Agency • Liability"
+  },
+  {
+    "id": 54,
+    "question": "Agency terminates by:",
+    "options": [
+      "Revocation, renunciation or death/insanity",
+      "Performance only",
+      "Breach by third party",
+      "Litigation"
+    ],
+    "answer": "Revocation, renunciation or death/insanity",
+    "topic": "Agency • Termination"
+  },
+  {
+    "id": 55,
+    "question": "An agent is entitled to commission:",
+    "options": [
+      "According to the contract or custom",
+      "Only if he is a partner",
+      "Only if he is a company director",
+      "Never"
+    ],
+    "answer": "According to the contract or custom",
+    "topic": "Agency • Remuneration"
+  },
+  {
+    "id": 56,
+    "question": "‘Goods’ under the Sale of Goods law means:",
+    "options": [
+      "All chattels personal other than things in action and money",
+      "Land and buildings",
+      "Services",
+      "Choses in action only"
+    ],
+    "answer": "All chattels personal other than things in action and money",
+    "topic": "Sale of Goods • Definition"
+  },
+  {
+    "id": 57,
+    "question": "Property in unascertained goods passes:",
+    "options": [
+      "When the goods are ascertained and appropriated to the contract",
+      "On payment of price",
+      "On delivery to carrier always",
+      "On signing the contract"
+    ],
+    "answer": "When the goods are ascertained and appropriated to the contract",
+    "topic": "Sale of Goods • Transfer"
+  },
+  {
+    "id": 58,
+    "question": "Implied condition as to title means:",
+    "options": [
+      "Seller has the right to sell the goods",
+      "Goods are free from minor defects",
+      "Goods are fit for all purposes",
+      "Price is fixed"
+    ],
+    "answer": "Seller has the right to sell the goods",
+    "topic": "Sale of Goods • Conditions"
+  },
+  {
+    "id": 59,
+    "question": "Implied condition of merchantable quality applies where:",
+    "options": [
+      "Goods are bought by description from a seller who deals in goods of that description",
+      "Price exceeds ₦1m only",
+      "Goods are second‑hand",
+      "Buyer examines the goods fully"
+    ],
+    "answer": "Goods are bought by description from a seller who deals in goods of that description",
+    "topic": "Sale of Goods • Merchantable"
+  },
+  {
+    "id": 60,
+    "question": "Where sale is by description, goods must:",
+    "options": [
+      "Correspond with the description",
+      "Correspond with the sample only",
+      "Be cheapest",
+      "Be newest"
+    ],
+    "answer": "Correspond with the description",
+    "topic": "Sale of Goods • Sale by description"
+  },
+  {
+    "id": 61,
+    "question": "Unless otherwise agreed, risk passes:",
+    "options": [
+      "With property/ownership",
+      "On payment",
+      "On invoice",
+      "On order placement"
+    ],
+    "answer": "With property/ownership",
+    "topic": "Sale of Goods • Risk"
+  },
+  {
+    "id": 62,
+    "question": "In hire purchase, ownership passes:",
+    "options": [
+      "On payment of the last instalment (or exercise of option to purchase)",
+      "On first payment",
+      "On delivery",
+      "On signing the form regardless"
+    ],
+    "answer": "On payment of the last instalment (or exercise of option to purchase)",
+    "topic": "Hire Purchase • Nature"
+  },
+  {
+    "id": 63,
+    "question": "A hirer who has paid the statutory proportion may:",
+    "options": [
+      "Return goods and end the agreement",
+      "Be sued for theft",
+      "Be jailed without trial",
+      "Lose all payments automatically"
+    ],
+    "answer": "Return goods and end the agreement",
+    "topic": "Hire Purchase • Rights"
+  },
+  {
+    "id": 64,
+    "question": "HP law protects consumers by:",
+    "options": [
+      "Requiring key information and limiting repossession",
+      "Banning instalments",
+      "Fixing interest by court",
+      "Forcing cash sales"
+    ],
+    "answer": "Requiring key information and limiting repossession",
+    "topic": "Hire Purchase • Protection"
+  },
+  {
+    "id": 65,
+    "question": "A negotiable instrument is one which:",
+    "options": [
+      "Is freely transferable and the transferee can acquire a better title",
+      "Cannot be transferred",
+      "Must be registered to transfer",
+      "Is always non‑cashable"
+    ],
+    "answer": "Is freely transferable and the transferee can acquire a better title",
+    "topic": "Negotiable Instruments • Definition"
+  },
+  {
+    "id": 66,
+    "question": "A bill of exchange is:",
+    "options": [
+      "An unconditional order in writing to pay a sum certain",
+      "An unconditional promise to pay",
+      "A receipt",
+      "A credit note"
+    ],
+    "answer": "An unconditional order in writing to pay a sum certain",
+    "topic": "Negotiable Instruments • Bills"
+  },
+  {
+    "id": 67,
+    "question": "A cheque is drawn on:",
+    "options": [
+      "A banker",
+      "A customer",
+      "A court",
+      "A broker"
+    ],
+    "answer": "A banker",
+    "topic": "Negotiable Instruments • Cheques"
+  },
+  {
+    "id": 68,
+    "question": "A holder in due course takes:",
+    "options": [
+      "Free from many defects in title",
+      "Subject to all equities",
+      "Only with drawer’s consent",
+      "Only after court order"
+    ],
+    "answer": "Free from many defects in title",
+    "topic": "Negotiable Instruments • Holder in due course"
+  },
+  {
+    "id": 69,
+    "question": "Blank endorsement makes the instrument:",
+    "options": [
+      "Payable to bearer",
+      "Payable to order",
+      "Not negotiable",
+      "Illegal"
+    ],
+    "answer": "Payable to bearer",
+    "topic": "Negotiable Instruments • Endorsement"
+  },
+  {
+    "id": 70,
+    "question": "To succeed in negligence, claimant must prove:",
+    "options": [
+      "Duty, breach, causation and damage",
+      "Contract, breach, intention",
+      "Crime, duty, loss",
+      "Intention, malice, motive"
+    ],
+    "answer": "Duty, breach, causation and damage",
+    "topic": "Law of Tort (Negligence & Others) • Negligence"
+  },
+  {
+    "id": 71,
+    "question": "Damages in tort aim to:",
+    "options": [
+      "Put claimant in position before the tort",
+      "Punish the defendant",
+      "Award profits",
+      "Confiscate property"
+    ],
+    "answer": "Put claimant in position before the tort",
+    "topic": "Law of Tort (Negligence & Others) • Remedies"
+  },
+  {
+    "id": 72,
+    "question": "Defence of volenti means:",
+    "options": [
+      "Willing assumption of risk",
+      "Inevitable accident",
+      "Act of God",
+      "Contributory negligence"
+    ],
+    "answer": "Willing assumption of risk",
+    "topic": "Law of Tort (Negligence & Others) • Defences"
+  },
+  {
+    "id": 73,
+    "question": "Private nuisance protects:",
+    "options": [
+      "Use and enjoyment of land",
+      "Reputation",
+      "Freedom of movement",
+      "Trade marks"
+    ],
+    "answer": "Use and enjoyment of land",
+    "topic": "Law of Tort (Negligence & Others) • Nuisance"
+  },
+  {
+    "id": 74,
+    "question": "Partnership is a relation between persons carrying on business:",
+    "options": [
+      "In common with a view of profit",
+      "As a charity",
+      "As employees only",
+      "Under incorporation"
+    ],
+    "answer": "In common with a view of profit",
+    "topic": "Partnership • Nature"
+  },
+  {
+    "id": 75,
+    "question": "A partner’s implied authority allows:",
+    "options": [
+      "Ordinary transactions of the firm’s business",
+      "All acts including selling the firm’s building",
+      "Borrowing unlimited sums always",
+      "Criminal acts"
+    ],
+    "answer": "Ordinary transactions of the firm’s business",
+    "topic": "Partnership • Authority"
+  },
+  {
+    "id": 76,
+    "question": "Partners are:",
+    "options": [
+      "Jointly and severally liable for firm debts",
+      "Not liable",
+      "Criminally liable by default",
+      "Only liable up to capital"
+    ],
+    "answer": "Jointly and severally liable for firm debts",
+    "topic": "Partnership • Liability"
+  },
+  {
+    "id": 77,
+    "question": "A company is incorporated by:",
+    "options": [
+      "Registration under CAMA with CAC",
+      "Royal charter",
+      "Customary appointment",
+      "Court declaration"
+    ],
+    "answer": "Registration under CAMA with CAC",
+    "topic": "Company Law (Basics) • Formation"
+  },
+  {
+    "id": 78,
+    "question": "A company on incorporation becomes:",
+    "options": [
+      "A separate legal person",
+      "An agency of shareholders",
+      "A partnership",
+      "A government department"
+    ],
+    "answer": "A separate legal person",
+    "topic": "Company Law (Basics) • Personality"
+  },
+  {
+    "id": 79,
+    "question": "Directors owe duties of:",
+    "options": [
+      "Care, skill, diligence and fiduciary loyalty",
+      "Only to employees",
+      "Only to themselves",
+      "None"
+    ],
+    "answer": "Care, skill, diligence and fiduciary loyalty",
+    "topic": "Company Law (Basics) • Directors"
+  },
+  {
+    "id": 80,
+    "question": "Ordinary business of an AGM includes:",
+    "options": [
+      "Presentation of financial statements and declaration of dividend",
+      "Appointment of judges",
+      "Criminal trials",
+      "Approval of police budget"
+    ],
+    "answer": "Presentation of financial statements and declaration of dividend",
+    "topic": "Company Law (Basics) • Meetings"
+  },
+  {
+    "id": 81,
+    "question": "Share capital is:",
+    "options": [
+      "The equity contributed by members",
+      "Total assets",
+      "Bank balance",
+      "Net profit"
+    ],
+    "answer": "The equity contributed by members",
+    "topic": "Company Law (Basics) • Capital"
+  },
+  {
+    "id": 82,
+    "question": "A contract of employment is:",
+    "options": [
+      "A contract of service between employer and employee",
+      "A contract for services with independent contractor",
+      "A deed poll",
+      "A criminal bond"
+    ],
+    "answer": "A contract of service between employer and employee",
+    "topic": "Employment/Labour • Contract"
+  },
+  {
+    "id": 83,
+    "question": "Wrongful dismissal occurs where:",
+    "options": [
+      "Termination breaches the employment contract",
+      "Employee resigns voluntarily",
+      "Employer pays salary",
+      "A crime is alleged"
+    ],
+    "answer": "Termination breaches the employment contract",
+    "topic": "Employment/Labour • Termination"
+  },
+  {
+    "id": 84,
+    "question": "Statutory deductions often include:",
+    "options": [
+      "PAYE and pension contributions",
+      "Union donations",
+      "Voluntary tips",
+      "Transport allowance"
+    ],
+    "answer": "PAYE and pension contributions",
+    "topic": "Employment/Labour • Wages"
+  },
+  {
+    "id": 85,
+    "question": "Employers owe a duty to:",
+    "options": [
+      "Provide safe system of work",
+      "Guarantee profits",
+      "Provide free lunch",
+      "Provide housing"
+    ],
+    "answer": "Provide safe system of work",
+    "topic": "Employment/Labour • Health & Safety"
+  },
+  {
+    "id": 86,
     "question": "Utmost good faith (uberrimae fidei) requires:",
     "options": [
       "Full disclosure of material facts",
@@ -2141,9 +1029,10 @@
       "Disclosure by insurer only"
     ],
     "answer": "Full disclosure of material facts",
-    "topic": "Insurance \u2022 Principles"
+    "topic": "Insurance • Principles"
   },
   {
+    "id": 87,
     "question": "To insure, a party must have:",
     "options": [
       "Insurable interest in the subject matter",
@@ -2152,75 +1041,22 @@
       "A court order"
     ],
     "answer": "Insurable interest in the subject matter",
-    "topic": "Insurance \u2022 Insurable interest"
+    "topic": "Insurance • Insurable interest"
   },
   {
+    "id": 88,
     "question": "Principle of indemnity means:",
     "options": [
-      "Restoration to pre\u2011loss position",
+      "Restoration to pre‑loss position",
       "Profit from loss",
       "Punitive damages",
       "Fixed payout always"
     ],
-    "answer": "Restoration to pre\u2011loss position",
-    "topic": "Insurance \u2022 Indemnity"
+    "answer": "Restoration to pre‑loss position",
+    "topic": "Insurance • Indemnity"
   },
   {
-    "question": "After indemnifying the insured, the insurer\u2019s right to sue the wrongdoer is called: (item 1)",
-    "options": [
-      "Subrogation",
-      "Contribution",
-      "Assignment",
-      "Novation"
-    ],
-    "answer": "Subrogation",
-    "topic": "Insurance \u2022 Subrogation/Contribution"
-  },
-  {
-    "question": "After indemnifying the insured, the insurer\u2019s right to sue the wrongdoer is called: (item 2)",
-    "options": [
-      "Subrogation",
-      "Contribution",
-      "Assignment",
-      "Novation"
-    ],
-    "answer": "Subrogation",
-    "topic": "Insurance \u2022 Subrogation/Contribution"
-  },
-  {
-    "question": "After indemnifying the insured, the insurer\u2019s right to sue the wrongdoer is called: (item 3)",
-    "options": [
-      "Subrogation",
-      "Contribution",
-      "Assignment",
-      "Novation"
-    ],
-    "answer": "Subrogation",
-    "topic": "Insurance \u2022 Subrogation/Contribution"
-  },
-  {
-    "question": "After indemnifying the insured, the insurer\u2019s right to sue the wrongdoer is called: (item 4)",
-    "options": [
-      "Subrogation",
-      "Contribution",
-      "Assignment",
-      "Novation"
-    ],
-    "answer": "Subrogation",
-    "topic": "Insurance \u2022 Subrogation/Contribution"
-  },
-  {
-    "question": "After indemnifying the insured, the insurer\u2019s right to sue the wrongdoer is called: (item 5)",
-    "options": [
-      "Subrogation",
-      "Contribution",
-      "Assignment",
-      "Novation"
-    ],
-    "answer": "Subrogation",
-    "topic": "Insurance \u2022 Subrogation/Contribution"
-  },
-  {
+    "id": 89,
     "question": "A debtor may be adjudged bankrupt when:",
     "options": [
       "Unable to pay debts as they fall due under the law",
@@ -2229,9 +1065,10 @@
       "Taxes increase"
     ],
     "answer": "Unable to pay debts as they fall due under the law",
-    "topic": "Insolvency/Bankruptcy \u2022 Bankruptcy"
+    "topic": "Insolvency/Bankruptcy • Bankruptcy"
   },
   {
+    "id": 90,
     "question": "A company may be wound up by:",
     "options": [
       "The court, voluntarily by members/creditors, or under supervision",
@@ -2240,10 +1077,11 @@
       "Police"
     ],
     "answer": "The court, voluntarily by members/creditors, or under supervision",
-    "topic": "Insolvency/Bankruptcy \u2022 Winding up"
+    "topic": "Insolvency/Bankruptcy • Winding up"
   },
   {
-    "question": "A liquidator\u2019s duty is to:",
+    "id": 91,
+    "question": "A liquidator’s duty is to:",
     "options": [
       "Collect and realise assets and distribute to creditors",
       "Prosecute criminals",
@@ -2251,61 +1089,1314 @@
       "Appoint judges"
     ],
     "answer": "Collect and realise assets and distribute to creditors",
-    "topic": "Insolvency/Bankruptcy \u2022 Liquidator"
+    "topic": "Insolvency/Bankruptcy • Liquidator"
   },
   {
-    "question": "Which claim ranks first on liquidation distributions? (item 1)",
+    "id": 92,
+    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 2)",
     "options": [
-      "Secured creditors (subject to fixed charges and costs)",
-      "Ordinary shareholders",
-      "Trade creditors always",
-      "Directors\u2019 bonuses"
+      "Sue for damages",
+      "Imprison the buyer",
+      "Rescind all sales ever made",
+      "Charge criminal fine"
     ],
-    "answer": "Secured creditors (subject to fixed charges and costs)",
-    "topic": "Insolvency/Bankruptcy \u2022 Priority"
+    "answer": "Sue for damages",
+    "topic": "Sale of Goods • Remedies"
   },
   {
+    "id": 93,
+    "question": "A minor breach of a warranty entitles the innocent party to: (example 2)",
+    "options": [
+      "Damages only",
+      "Repudiate the contract",
+      "Specific performance automatically",
+      "Criminal sanctions"
+    ],
+    "answer": "Damages only",
+    "topic": "Law of Contract: Terms & Vitiating Factors • Examples"
+  },
+  {
+    "id": 94,
+    "question": "The memorandum/articles of association primarily: (item 2)",
+    "options": [
+      "Regulate the company’s internal management and objects",
+      "Serve as tax returns",
+      "Create criminal offences",
+      "Replace board resolutions"
+    ],
+    "answer": "Regulate the company’s internal management and objects",
+    "topic": "Company Law (Basics) • Corporate acts"
+  },
+  {
+    "id": 95,
+    "question": "A advert invites tenders; placing goods on shelves at ₦510 each is best described as:",
+    "options": [
+      "Invitation to treat",
+      "Offer",
+      "Acceptance",
+      "Consideration"
+    ],
+    "answer": "Invitation to treat",
+    "topic": "Law of Contract: Formation • Scenarios"
+  },
+  {
+    "id": 96,
+    "question": "An employer is vicariously liable for torts of an employee committed: (item 2)",
+    "options": [
+      "In the course of employment",
+      "Outside all employment",
+      "As an independent contractor",
+      "Only with criminal intent"
+    ],
+    "answer": "In the course of employment",
+    "topic": "Law of Tort (Negligence & Others) • Vicarious liability"
+  },
+  {
+    "id": 97,
+    "question": "On hirer’s default before statutory proportion is paid, the owner may: (item 2)",
+    "options": [
+      "Recover goods peacefully and sue for damages",
+      "Jail the hirer",
+      "Confiscate unrelated property",
+      "Report to company registry"
+    ],
+    "answer": "Recover goods peacefully and sue for damages",
+    "topic": "Hire Purchase • Default"
+  },
+  {
+    "id": 98,
+    "question": "General crossing of a cheque consists of: (item 2)",
+    "options": [
+      "Two parallel lines with or without words",
+      "Drawer’s full signature only",
+      "Stamp duty",
+      "Revenue stamp only"
+    ],
+    "answer": "Two parallel lines with or without words",
+    "topic": "Negotiable Instruments • Crossing"
+  },
+  {
+    "id": 99,
+    "question": "On admission of a new partner, liability for prior debts is: (item 2)",
+    "options": [
+      "Generally not imposed unless agreed (novation)",
+      "Automatic and unlimited",
+      "Criminal",
+      "Transferred to bankers"
+    ],
+    "answer": "Generally not imposed unless agreed (novation)",
+    "topic": "Partnership • Admission/Retirement"
+  },
+  {
+    "id": 100,
+    "question": "Which is typically a statutory employment right in Nigeria? (item 2)",
+    "options": [
+      "Annual leave/holiday pay under labour laws",
+      "Company car for all staff",
+      "Stock options",
+      "Overtime bonus for all roles"
+    ],
+    "answer": "Annual leave/holiday pay under labour laws",
+    "topic": "Employment/Labour • Leave/Benefits"
+  },
+  {
+    "id": 101,
+    "question": "After indemnifying the insured, the insurer’s right to sue the wrongdoer is called: (item 2)",
+    "options": [
+      "Subrogation",
+      "Contribution",
+      "Assignment",
+      "Novation"
+    ],
+    "answer": "Subrogation",
+    "topic": "Insurance • Subrogation/Contribution"
+  },
+  {
+    "id": 102,
     "question": "Which claim ranks first on liquidation distributions? (item 2)",
     "options": [
       "Secured creditors (subject to fixed charges and costs)",
       "Ordinary shareholders",
       "Trade creditors always",
-      "Directors\u2019 bonuses"
+      "Directors’ bonuses"
     ],
     "answer": "Secured creditors (subject to fixed charges and costs)",
-    "topic": "Insolvency/Bankruptcy \u2022 Priority"
+    "topic": "Insolvency/Bankruptcy • Priority"
   },
   {
+    "id": 103,
+    "question": "An arbitrator’s award is:",
+    "options": [
+      "Binding subject to limited court review",
+      "Non‑binding",
+      "Automatically criminal",
+      "A form of legislation"
+    ],
+    "answer": "Binding subject to limited court review",
+    "topic": "Court Structure & ADR • ADR"
+  },
+  {
+    "id": 104,
+    "question": "The doctrine of stare decisis relates to:",
+    "options": [
+      "Binding precedent",
+      "Law reform",
+      "Criminal procedure",
+      "Equity of redemption"
+    ],
+    "answer": "Binding precedent",
+    "topic": "Nigerian Legal System & Sources of Law • Sources"
+  },
+  {
+    "id": 105,
+    "question": "A bill becomes law after:",
+    "options": [
+      "Passage by the legislature and assent by the President/Governor",
+      "Approval by the judiciary",
+      "Approval by the bar association",
+      "Signature by the Attorney‑General"
+    ],
+    "answer": "Passage by the legislature and assent by the President/Governor",
+    "topic": "Nigerian Legal System & Sources of Law • Legislation"
+  },
+  {
+    "id": 106,
+    "question": "Repugnancy test is used to:",
+    "options": [
+      "Strike down customs contrary to natural justice, equity and good conscience",
+      "Punish offenders",
+      "Interpret statutes",
+      "Grant injunctions"
+    ],
+    "answer": "Strike down customs contrary to natural justice, equity and good conscience",
+    "topic": "Nigerian Legal System & Sources of Law • Customary"
+  },
+  {
+    "id": 107,
+    "question": "The long title of an Act helps in:",
+    "options": [
+      "Determining the purpose of the legislation",
+      "Numbering the sections",
+      "Identifying courts",
+      "Setting penalties"
+    ],
+    "answer": "Determining the purpose of the legislation",
+    "topic": "Nigerian Legal System & Sources of Law • Interpretation"
+  },
+  {
+    "id": 108,
+    "question": "Which court is a court of first instance for most civil claims above lower thresholds?",
+    "options": [
+      "High Court",
+      "Supreme Court",
+      "Court of Appeal",
+      "Customary Court"
+    ],
+    "answer": "High Court",
+    "topic": "Court Structure & ADR • Courts"
+  },
+  {
+    "id": 109,
+    "question": "Which court hears fundamental rights enforcement primarily?",
+    "options": [
+      "High Court",
+      "Magistrate Court",
+      "Customary Court",
+      "Area Court"
+    ],
+    "answer": "High Court",
+    "topic": "Court Structure & ADR • Jurisdiction"
+  },
+  {
+    "id": 110,
+    "question": "Past consideration is:",
+    "options": [
+      "Generally not good consideration",
+      "Always sufficient",
+      "Better than present",
+      "Required in all contracts"
+    ],
+    "answer": "Generally not good consideration",
+    "topic": "Law of Contract: Formation • Consideration"
+  },
+  {
+    "id": 111,
+    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 3)",
+    "options": [
+      "Sue for damages",
+      "Imprison the buyer",
+      "Rescind all sales ever made",
+      "Charge criminal fine"
+    ],
+    "answer": "Sue for damages",
+    "topic": "Sale of Goods • Remedies"
+  },
+  {
+    "id": 112,
+    "question": "A minor breach of a warranty entitles the innocent party to: (example 3)",
+    "options": [
+      "Damages only",
+      "Repudiate the contract",
+      "Specific performance automatically",
+      "Criminal sanctions"
+    ],
+    "answer": "Damages only",
+    "topic": "Law of Contract: Terms & Vitiating Factors • Examples"
+  },
+  {
+    "id": 113,
+    "question": "The memorandum/articles of association primarily: (item 3)",
+    "options": [
+      "Regulate the company’s internal management and objects",
+      "Serve as tax returns",
+      "Create criminal offences",
+      "Replace board resolutions"
+    ],
+    "answer": "Regulate the company’s internal management and objects",
+    "topic": "Company Law (Basics) • Corporate acts"
+  },
+  {
+    "id": 114,
+    "question": "A advert invites tenders; placing goods on shelves at ₦520 each is best described as:",
+    "options": [
+      "Invitation to treat",
+      "Offer",
+      "Acceptance",
+      "Consideration"
+    ],
+    "answer": "Invitation to treat",
+    "topic": "Law of Contract: Formation • Scenarios"
+  },
+  {
+    "id": 115,
+    "question": "An employer is vicariously liable for torts of an employee committed: (item 3)",
+    "options": [
+      "In the course of employment",
+      "Outside all employment",
+      "As an independent contractor",
+      "Only with criminal intent"
+    ],
+    "answer": "In the course of employment",
+    "topic": "Law of Tort (Negligence & Others) • Vicarious liability"
+  },
+  {
+    "id": 116,
+    "question": "On hirer’s default before statutory proportion is paid, the owner may: (item 3)",
+    "options": [
+      "Recover goods peacefully and sue for damages",
+      "Jail the hirer",
+      "Confiscate unrelated property",
+      "Report to company registry"
+    ],
+    "answer": "Recover goods peacefully and sue for damages",
+    "topic": "Hire Purchase • Default"
+  },
+  {
+    "id": 117,
+    "question": "General crossing of a cheque consists of: (item 3)",
+    "options": [
+      "Two parallel lines with or without words",
+      "Drawer’s full signature only",
+      "Stamp duty",
+      "Revenue stamp only"
+    ],
+    "answer": "Two parallel lines with or without words",
+    "topic": "Negotiable Instruments • Crossing"
+  },
+  {
+    "id": 118,
+    "question": "On admission of a new partner, liability for prior debts is: (item 3)",
+    "options": [
+      "Generally not imposed unless agreed (novation)",
+      "Automatic and unlimited",
+      "Criminal",
+      "Transferred to bankers"
+    ],
+    "answer": "Generally not imposed unless agreed (novation)",
+    "topic": "Partnership • Admission/Retirement"
+  },
+  {
+    "id": 119,
+    "question": "Which is typically a statutory employment right in Nigeria? (item 3)",
+    "options": [
+      "Annual leave/holiday pay under labour laws",
+      "Company car for all staff",
+      "Stock options",
+      "Overtime bonus for all roles"
+    ],
+    "answer": "Annual leave/holiday pay under labour laws",
+    "topic": "Employment/Labour • Leave/Benefits"
+  },
+  {
+    "id": 120,
+    "question": "After indemnifying the insured, the insurer’s right to sue the wrongdoer is called: (item 3)",
+    "options": [
+      "Subrogation",
+      "Contribution",
+      "Assignment",
+      "Novation"
+    ],
+    "answer": "Subrogation",
+    "topic": "Insurance • Subrogation/Contribution"
+  },
+  {
+    "id": 121,
     "question": "Which claim ranks first on liquidation distributions? (item 3)",
     "options": [
       "Secured creditors (subject to fixed charges and costs)",
       "Ordinary shareholders",
       "Trade creditors always",
-      "Directors\u2019 bonuses"
+      "Directors’ bonuses"
     ],
     "answer": "Secured creditors (subject to fixed charges and costs)",
-    "topic": "Insolvency/Bankruptcy \u2022 Priority"
+    "topic": "Insolvency/Bankruptcy • Priority"
   },
   {
+    "id": 122,
+    "question": "Advantages of ADR include:",
+    "options": [
+      "Speed and confidentiality",
+      "Guaranteed appeal on merits",
+      "Publicity",
+      "Higher costs"
+    ],
+    "answer": "Speed and confidentiality",
+    "topic": "Court Structure & ADR • ADR"
+  },
+  {
+    "id": 123,
+    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 4)",
+    "options": [
+      "Sue for damages",
+      "Imprison the buyer",
+      "Rescind all sales ever made",
+      "Charge criminal fine"
+    ],
+    "answer": "Sue for damages",
+    "topic": "Sale of Goods • Remedies"
+  },
+  {
+    "id": 124,
+    "question": "A minor breach of a warranty entitles the innocent party to: (example 4)",
+    "options": [
+      "Damages only",
+      "Repudiate the contract",
+      "Specific performance automatically",
+      "Criminal sanctions"
+    ],
+    "answer": "Damages only",
+    "topic": "Law of Contract: Terms & Vitiating Factors • Examples"
+  },
+  {
+    "id": 125,
+    "question": "The memorandum/articles of association primarily: (item 4)",
+    "options": [
+      "Regulate the company’s internal management and objects",
+      "Serve as tax returns",
+      "Create criminal offences",
+      "Replace board resolutions"
+    ],
+    "answer": "Regulate the company’s internal management and objects",
+    "topic": "Company Law (Basics) • Corporate acts"
+  },
+  {
+    "id": 126,
+    "question": "A advert invites tenders; placing goods on shelves at ₦530 each is best described as:",
+    "options": [
+      "Invitation to treat",
+      "Offer",
+      "Acceptance",
+      "Consideration"
+    ],
+    "answer": "Invitation to treat",
+    "topic": "Law of Contract: Formation • Scenarios"
+  },
+  {
+    "id": 127,
+    "question": "An employer is vicariously liable for torts of an employee committed: (item 4)",
+    "options": [
+      "In the course of employment",
+      "Outside all employment",
+      "As an independent contractor",
+      "Only with criminal intent"
+    ],
+    "answer": "In the course of employment",
+    "topic": "Law of Tort (Negligence & Others) • Vicarious liability"
+  },
+  {
+    "id": 128,
+    "question": "On hirer’s default before statutory proportion is paid, the owner may: (item 4)",
+    "options": [
+      "Recover goods peacefully and sue for damages",
+      "Jail the hirer",
+      "Confiscate unrelated property",
+      "Report to company registry"
+    ],
+    "answer": "Recover goods peacefully and sue for damages",
+    "topic": "Hire Purchase • Default"
+  },
+  {
+    "id": 129,
+    "question": "General crossing of a cheque consists of: (item 4)",
+    "options": [
+      "Two parallel lines with or without words",
+      "Drawer’s full signature only",
+      "Stamp duty",
+      "Revenue stamp only"
+    ],
+    "answer": "Two parallel lines with or without words",
+    "topic": "Negotiable Instruments • Crossing"
+  },
+  {
+    "id": 130,
+    "question": "On admission of a new partner, liability for prior debts is: (item 4)",
+    "options": [
+      "Generally not imposed unless agreed (novation)",
+      "Automatic and unlimited",
+      "Criminal",
+      "Transferred to bankers"
+    ],
+    "answer": "Generally not imposed unless agreed (novation)",
+    "topic": "Partnership • Admission/Retirement"
+  },
+  {
+    "id": 131,
+    "question": "Which is typically a statutory employment right in Nigeria? (item 4)",
+    "options": [
+      "Annual leave/holiday pay under labour laws",
+      "Company car for all staff",
+      "Stock options",
+      "Overtime bonus for all roles"
+    ],
+    "answer": "Annual leave/holiday pay under labour laws",
+    "topic": "Employment/Labour • Leave/Benefits"
+  },
+  {
+    "id": 132,
+    "question": "After indemnifying the insured, the insurer’s right to sue the wrongdoer is called: (item 4)",
+    "options": [
+      "Subrogation",
+      "Contribution",
+      "Assignment",
+      "Novation"
+    ],
+    "answer": "Subrogation",
+    "topic": "Insurance • Subrogation/Contribution"
+  },
+  {
+    "id": 133,
     "question": "Which claim ranks first on liquidation distributions? (item 4)",
     "options": [
       "Secured creditors (subject to fixed charges and costs)",
       "Ordinary shareholders",
       "Trade creditors always",
-      "Directors\u2019 bonuses"
+      "Directors’ bonuses"
     ],
     "answer": "Secured creditors (subject to fixed charges and costs)",
-    "topic": "Insolvency/Bankruptcy \u2022 Priority"
+    "topic": "Insolvency/Bankruptcy • Priority"
   },
   {
+    "id": 134,
+    "question": "Conciliation is similar to mediation but the neutral may:",
+    "options": [
+      "Propose terms of settlement",
+      "Deliver binding judgment",
+      "Impose fines",
+      "Issue warrants"
+    ],
+    "answer": "Propose terms of settlement",
+    "topic": "Court Structure & ADR • ADR"
+  },
+  {
+    "id": 135,
+    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 5)",
+    "options": [
+      "Sue for damages",
+      "Imprison the buyer",
+      "Rescind all sales ever made",
+      "Charge criminal fine"
+    ],
+    "answer": "Sue for damages",
+    "topic": "Sale of Goods • Remedies"
+  },
+  {
+    "id": 136,
+    "question": "A minor breach of a warranty entitles the innocent party to: (example 5)",
+    "options": [
+      "Damages only",
+      "Repudiate the contract",
+      "Specific performance automatically",
+      "Criminal sanctions"
+    ],
+    "answer": "Damages only",
+    "topic": "Law of Contract: Terms & Vitiating Factors • Examples"
+  },
+  {
+    "id": 137,
+    "question": "The memorandum/articles of association primarily: (item 5)",
+    "options": [
+      "Regulate the company’s internal management and objects",
+      "Serve as tax returns",
+      "Create criminal offences",
+      "Replace board resolutions"
+    ],
+    "answer": "Regulate the company’s internal management and objects",
+    "topic": "Company Law (Basics) • Corporate acts"
+  },
+  {
+    "id": 138,
+    "question": "A advert invites tenders; placing goods on shelves at ₦540 each is best described as:",
+    "options": [
+      "Invitation to treat",
+      "Offer",
+      "Acceptance",
+      "Consideration"
+    ],
+    "answer": "Invitation to treat",
+    "topic": "Law of Contract: Formation • Scenarios"
+  },
+  {
+    "id": 139,
+    "question": "An employer is vicariously liable for torts of an employee committed: (item 5)",
+    "options": [
+      "In the course of employment",
+      "Outside all employment",
+      "As an independent contractor",
+      "Only with criminal intent"
+    ],
+    "answer": "In the course of employment",
+    "topic": "Law of Tort (Negligence & Others) • Vicarious liability"
+  },
+  {
+    "id": 140,
+    "question": "On hirer’s default before statutory proportion is paid, the owner may: (item 5)",
+    "options": [
+      "Recover goods peacefully and sue for damages",
+      "Jail the hirer",
+      "Confiscate unrelated property",
+      "Report to company registry"
+    ],
+    "answer": "Recover goods peacefully and sue for damages",
+    "topic": "Hire Purchase • Default"
+  },
+  {
+    "id": 141,
+    "question": "General crossing of a cheque consists of: (item 5)",
+    "options": [
+      "Two parallel lines with or without words",
+      "Drawer’s full signature only",
+      "Stamp duty",
+      "Revenue stamp only"
+    ],
+    "answer": "Two parallel lines with or without words",
+    "topic": "Negotiable Instruments • Crossing"
+  },
+  {
+    "id": 142,
+    "question": "On admission of a new partner, liability for prior debts is: (item 5)",
+    "options": [
+      "Generally not imposed unless agreed (novation)",
+      "Automatic and unlimited",
+      "Criminal",
+      "Transferred to bankers"
+    ],
+    "answer": "Generally not imposed unless agreed (novation)",
+    "topic": "Partnership • Admission/Retirement"
+  },
+  {
+    "id": 143,
+    "question": "Which is typically a statutory employment right in Nigeria? (item 5)",
+    "options": [
+      "Annual leave/holiday pay under labour laws",
+      "Company car for all staff",
+      "Stock options",
+      "Overtime bonus for all roles"
+    ],
+    "answer": "Annual leave/holiday pay under labour laws",
+    "topic": "Employment/Labour • Leave/Benefits"
+  },
+  {
+    "id": 144,
+    "question": "After indemnifying the insured, the insurer’s right to sue the wrongdoer is called: (item 5)",
+    "options": [
+      "Subrogation",
+      "Contribution",
+      "Assignment",
+      "Novation"
+    ],
+    "answer": "Subrogation",
+    "topic": "Insurance • Subrogation/Contribution"
+  },
+  {
+    "id": 145,
     "question": "Which claim ranks first on liquidation distributions? (item 5)",
     "options": [
       "Secured creditors (subject to fixed charges and costs)",
       "Ordinary shareholders",
       "Trade creditors always",
-      "Directors\u2019 bonuses"
+      "Directors’ bonuses"
     ],
     "answer": "Secured creditors (subject to fixed charges and costs)",
-    "topic": "Insolvency/Bankruptcy \u2022 Priority"
+    "topic": "Insolvency/Bankruptcy • Priority"
+  },
+  {
+    "id": 146,
+    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 6)",
+    "options": [
+      "Sue for damages",
+      "Imprison the buyer",
+      "Rescind all sales ever made",
+      "Charge criminal fine"
+    ],
+    "answer": "Sue for damages",
+    "topic": "Sale of Goods • Remedies"
+  },
+  {
+    "id": 147,
+    "question": "A minor breach of a warranty entitles the innocent party to: (example 6)",
+    "options": [
+      "Damages only",
+      "Repudiate the contract",
+      "Specific performance automatically",
+      "Criminal sanctions"
+    ],
+    "answer": "Damages only",
+    "topic": "Law of Contract: Terms & Vitiating Factors • Examples"
+  },
+  {
+    "id": 148,
+    "question": "The memorandum/articles of association primarily: (item 6)",
+    "options": [
+      "Regulate the company’s internal management and objects",
+      "Serve as tax returns",
+      "Create criminal offences",
+      "Replace board resolutions"
+    ],
+    "answer": "Regulate the company’s internal management and objects",
+    "topic": "Company Law (Basics) • Corporate acts"
+  },
+  {
+    "id": 149,
+    "question": "A advert invites tenders; placing goods on shelves at ₦550 each is best described as:",
+    "options": [
+      "Invitation to treat",
+      "Offer",
+      "Acceptance",
+      "Consideration"
+    ],
+    "answer": "Invitation to treat",
+    "topic": "Law of Contract: Formation • Scenarios"
+  },
+  {
+    "id": 150,
+    "question": "An employer is vicariously liable for torts of an employee committed: (item 6)",
+    "options": [
+      "In the course of employment",
+      "Outside all employment",
+      "As an independent contractor",
+      "Only with criminal intent"
+    ],
+    "answer": "In the course of employment",
+    "topic": "Law of Tort (Negligence & Others) • Vicarious liability"
+  },
+  {
+    "id": 151,
+    "question": "On hirer’s default before statutory proportion is paid, the owner may: (item 6)",
+    "options": [
+      "Recover goods peacefully and sue for damages",
+      "Jail the hirer",
+      "Confiscate unrelated property",
+      "Report to company registry"
+    ],
+    "answer": "Recover goods peacefully and sue for damages",
+    "topic": "Hire Purchase • Default"
+  },
+  {
+    "id": 152,
+    "question": "General crossing of a cheque consists of: (item 6)",
+    "options": [
+      "Two parallel lines with or without words",
+      "Drawer’s full signature only",
+      "Stamp duty",
+      "Revenue stamp only"
+    ],
+    "answer": "Two parallel lines with or without words",
+    "topic": "Negotiable Instruments • Crossing"
+  },
+  {
+    "id": 153,
+    "question": "On admission of a new partner, liability for prior debts is: (item 6)",
+    "options": [
+      "Generally not imposed unless agreed (novation)",
+      "Automatic and unlimited",
+      "Criminal",
+      "Transferred to bankers"
+    ],
+    "answer": "Generally not imposed unless agreed (novation)",
+    "topic": "Partnership • Admission/Retirement"
+  },
+  {
+    "id": 154,
+    "question": "Which is typically a statutory employment right in Nigeria? (item 6)",
+    "options": [
+      "Annual leave/holiday pay under labour laws",
+      "Company car for all staff",
+      "Stock options",
+      "Overtime bonus for all roles"
+    ],
+    "answer": "Annual leave/holiday pay under labour laws",
+    "topic": "Employment/Labour • Leave/Benefits"
+  },
+  {
+    "id": 155,
+    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 7)",
+    "options": [
+      "Sue for damages",
+      "Imprison the buyer",
+      "Rescind all sales ever made",
+      "Charge criminal fine"
+    ],
+    "answer": "Sue for damages",
+    "topic": "Sale of Goods • Remedies"
+  },
+  {
+    "id": 156,
+    "question": "A minor breach of a warranty entitles the innocent party to: (example 7)",
+    "options": [
+      "Damages only",
+      "Repudiate the contract",
+      "Specific performance automatically",
+      "Criminal sanctions"
+    ],
+    "answer": "Damages only",
+    "topic": "Law of Contract: Terms & Vitiating Factors • Examples"
+  },
+  {
+    "id": 157,
+    "question": "The memorandum/articles of association primarily: (item 7)",
+    "options": [
+      "Regulate the company’s internal management and objects",
+      "Serve as tax returns",
+      "Create criminal offences",
+      "Replace board resolutions"
+    ],
+    "answer": "Regulate the company’s internal management and objects",
+    "topic": "Company Law (Basics) • Corporate acts"
+  },
+  {
+    "id": 158,
+    "question": "A advert invites tenders; placing goods on shelves at ₦560 each is best described as:",
+    "options": [
+      "Invitation to treat",
+      "Offer",
+      "Acceptance",
+      "Consideration"
+    ],
+    "answer": "Invitation to treat",
+    "topic": "Law of Contract: Formation • Scenarios"
+  },
+  {
+    "id": 159,
+    "question": "An employer is vicariously liable for torts of an employee committed: (item 7)",
+    "options": [
+      "In the course of employment",
+      "Outside all employment",
+      "As an independent contractor",
+      "Only with criminal intent"
+    ],
+    "answer": "In the course of employment",
+    "topic": "Law of Tort (Negligence & Others) • Vicarious liability"
+  },
+  {
+    "id": 160,
+    "question": "On hirer’s default before statutory proportion is paid, the owner may: (item 7)",
+    "options": [
+      "Recover goods peacefully and sue for damages",
+      "Jail the hirer",
+      "Confiscate unrelated property",
+      "Report to company registry"
+    ],
+    "answer": "Recover goods peacefully and sue for damages",
+    "topic": "Hire Purchase • Default"
+  },
+  {
+    "id": 161,
+    "question": "General crossing of a cheque consists of: (item 7)",
+    "options": [
+      "Two parallel lines with or without words",
+      "Drawer’s full signature only",
+      "Stamp duty",
+      "Revenue stamp only"
+    ],
+    "answer": "Two parallel lines with or without words",
+    "topic": "Negotiable Instruments • Crossing"
+  },
+  {
+    "id": 162,
+    "question": "On admission of a new partner, liability for prior debts is: (item 7)",
+    "options": [
+      "Generally not imposed unless agreed (novation)",
+      "Automatic and unlimited",
+      "Criminal",
+      "Transferred to bankers"
+    ],
+    "answer": "Generally not imposed unless agreed (novation)",
+    "topic": "Partnership • Admission/Retirement"
+  },
+  {
+    "id": 163,
+    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 8)",
+    "options": [
+      "Sue for damages",
+      "Imprison the buyer",
+      "Rescind all sales ever made",
+      "Charge criminal fine"
+    ],
+    "answer": "Sue for damages",
+    "topic": "Sale of Goods • Remedies"
+  },
+  {
+    "id": 164,
+    "question": "A minor breach of a warranty entitles the innocent party to: (example 8)",
+    "options": [
+      "Damages only",
+      "Repudiate the contract",
+      "Specific performance automatically",
+      "Criminal sanctions"
+    ],
+    "answer": "Damages only",
+    "topic": "Law of Contract: Terms & Vitiating Factors • Examples"
+  },
+  {
+    "id": 165,
+    "question": "The memorandum/articles of association primarily: (item 8)",
+    "options": [
+      "Regulate the company’s internal management and objects",
+      "Serve as tax returns",
+      "Create criminal offences",
+      "Replace board resolutions"
+    ],
+    "answer": "Regulate the company’s internal management and objects",
+    "topic": "Company Law (Basics) • Corporate acts"
+  },
+  {
+    "id": 166,
+    "question": "A advert invites tenders; placing goods on shelves at ₦570 each is best described as:",
+    "options": [
+      "Invitation to treat",
+      "Offer",
+      "Acceptance",
+      "Consideration"
+    ],
+    "answer": "Invitation to treat",
+    "topic": "Law of Contract: Formation • Scenarios"
+  },
+  {
+    "id": 167,
+    "question": "An employer is vicariously liable for torts of an employee committed: (item 8)",
+    "options": [
+      "In the course of employment",
+      "Outside all employment",
+      "As an independent contractor",
+      "Only with criminal intent"
+    ],
+    "answer": "In the course of employment",
+    "topic": "Law of Tort (Negligence & Others) • Vicarious liability"
+  },
+  {
+    "id": 168,
+    "question": "On hirer’s default before statutory proportion is paid, the owner may: (item 8)",
+    "options": [
+      "Recover goods peacefully and sue for damages",
+      "Jail the hirer",
+      "Confiscate unrelated property",
+      "Report to company registry"
+    ],
+    "answer": "Recover goods peacefully and sue for damages",
+    "topic": "Hire Purchase • Default"
+  },
+  {
+    "id": 169,
+    "question": "General crossing of a cheque consists of: (item 8)",
+    "options": [
+      "Two parallel lines with or without words",
+      "Drawer’s full signature only",
+      "Stamp duty",
+      "Revenue stamp only"
+    ],
+    "answer": "Two parallel lines with or without words",
+    "topic": "Negotiable Instruments • Crossing"
+  },
+  {
+    "id": 170,
+    "question": "On admission of a new partner, liability for prior debts is: (item 8)",
+    "options": [
+      "Generally not imposed unless agreed (novation)",
+      "Automatic and unlimited",
+      "Criminal",
+      "Transferred to bankers"
+    ],
+    "answer": "Generally not imposed unless agreed (novation)",
+    "topic": "Partnership • Admission/Retirement"
+  },
+  {
+    "id": 171,
+    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 9)",
+    "options": [
+      "Sue for damages",
+      "Imprison the buyer",
+      "Rescind all sales ever made",
+      "Charge criminal fine"
+    ],
+    "answer": "Sue for damages",
+    "topic": "Sale of Goods • Remedies"
+  },
+  {
+    "id": 172,
+    "question": "A minor breach of a warranty entitles the innocent party to: (example 9)",
+    "options": [
+      "Damages only",
+      "Repudiate the contract",
+      "Specific performance automatically",
+      "Criminal sanctions"
+    ],
+    "answer": "Damages only",
+    "topic": "Law of Contract: Terms & Vitiating Factors • Examples"
+  },
+  {
+    "id": 173,
+    "question": "The memorandum/articles of association primarily: (item 9)",
+    "options": [
+      "Regulate the company’s internal management and objects",
+      "Serve as tax returns",
+      "Create criminal offences",
+      "Replace board resolutions"
+    ],
+    "answer": "Regulate the company’s internal management and objects",
+    "topic": "Company Law (Basics) • Corporate acts"
+  },
+  {
+    "id": 174,
+    "question": "A advert invites tenders; placing goods on shelves at ₦580 each is best described as:",
+    "options": [
+      "Invitation to treat",
+      "Offer",
+      "Acceptance",
+      "Consideration"
+    ],
+    "answer": "Invitation to treat",
+    "topic": "Law of Contract: Formation • Scenarios"
+  },
+  {
+    "id": 175,
+    "question": "An employer is vicariously liable for torts of an employee committed: (item 9)",
+    "options": [
+      "In the course of employment",
+      "Outside all employment",
+      "As an independent contractor",
+      "Only with criminal intent"
+    ],
+    "answer": "In the course of employment",
+    "topic": "Law of Tort (Negligence & Others) • Vicarious liability"
+  },
+  {
+    "id": 176,
+    "question": "On hirer’s default before statutory proportion is paid, the owner may: (item 9)",
+    "options": [
+      "Recover goods peacefully and sue for damages",
+      "Jail the hirer",
+      "Confiscate unrelated property",
+      "Report to company registry"
+    ],
+    "answer": "Recover goods peacefully and sue for damages",
+    "topic": "Hire Purchase • Default"
+  },
+  {
+    "id": 177,
+    "question": "General crossing of a cheque consists of: (item 9)",
+    "options": [
+      "Two parallel lines with or without words",
+      "Drawer’s full signature only",
+      "Stamp duty",
+      "Revenue stamp only"
+    ],
+    "answer": "Two parallel lines with or without words",
+    "topic": "Negotiable Instruments • Crossing"
+  },
+  {
+    "id": 178,
+    "question": "On admission of a new partner, liability for prior debts is: (item 9)",
+    "options": [
+      "Generally not imposed unless agreed (novation)",
+      "Automatic and unlimited",
+      "Criminal",
+      "Transferred to bankers"
+    ],
+    "answer": "Generally not imposed unless agreed (novation)",
+    "topic": "Partnership • Admission/Retirement"
+  },
+  {
+    "id": 179,
+    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 10)",
+    "options": [
+      "Sue for damages",
+      "Imprison the buyer",
+      "Rescind all sales ever made",
+      "Charge criminal fine"
+    ],
+    "answer": "Sue for damages",
+    "topic": "Sale of Goods • Remedies"
+  },
+  {
+    "id": 180,
+    "question": "A minor breach of a warranty entitles the innocent party to: (example 10)",
+    "options": [
+      "Damages only",
+      "Repudiate the contract",
+      "Specific performance automatically",
+      "Criminal sanctions"
+    ],
+    "answer": "Damages only",
+    "topic": "Law of Contract: Terms & Vitiating Factors • Examples"
+  },
+  {
+    "id": 181,
+    "question": "The memorandum/articles of association primarily: (item 10)",
+    "options": [
+      "Regulate the company’s internal management and objects",
+      "Serve as tax returns",
+      "Create criminal offences",
+      "Replace board resolutions"
+    ],
+    "answer": "Regulate the company’s internal management and objects",
+    "topic": "Company Law (Basics) • Corporate acts"
+  },
+  {
+    "id": 182,
+    "question": "A advert invites tenders; placing goods on shelves at ₦590 each is best described as:",
+    "options": [
+      "Invitation to treat",
+      "Offer",
+      "Acceptance",
+      "Consideration"
+    ],
+    "answer": "Invitation to treat",
+    "topic": "Law of Contract: Formation • Scenarios"
+  },
+  {
+    "id": 183,
+    "question": "An employer is vicariously liable for torts of an employee committed: (item 10)",
+    "options": [
+      "In the course of employment",
+      "Outside all employment",
+      "As an independent contractor",
+      "Only with criminal intent"
+    ],
+    "answer": "In the course of employment",
+    "topic": "Law of Tort (Negligence & Others) • Vicarious liability"
+  },
+  {
+    "id": 184,
+    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 11)",
+    "options": [
+      "Sue for damages",
+      "Imprison the buyer",
+      "Rescind all sales ever made",
+      "Charge criminal fine"
+    ],
+    "answer": "Sue for damages",
+    "topic": "Sale of Goods • Remedies"
+  },
+  {
+    "id": 185,
+    "question": "A minor breach of a warranty entitles the innocent party to: (example 11)",
+    "options": [
+      "Damages only",
+      "Repudiate the contract",
+      "Specific performance automatically",
+      "Criminal sanctions"
+    ],
+    "answer": "Damages only",
+    "topic": "Law of Contract: Terms & Vitiating Factors • Examples"
+  },
+  {
+    "id": 186,
+    "question": "The memorandum/articles of association primarily: (item 11)",
+    "options": [
+      "Regulate the company’s internal management and objects",
+      "Serve as tax returns",
+      "Create criminal offences",
+      "Replace board resolutions"
+    ],
+    "answer": "Regulate the company’s internal management and objects",
+    "topic": "Company Law (Basics) • Corporate acts"
+  },
+  {
+    "id": 187,
+    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 12)",
+    "options": [
+      "Sue for damages",
+      "Imprison the buyer",
+      "Rescind all sales ever made",
+      "Charge criminal fine"
+    ],
+    "answer": "Sue for damages",
+    "topic": "Sale of Goods • Remedies"
+  },
+  {
+    "id": 188,
+    "question": "A minor breach of a warranty entitles the innocent party to: (example 12)",
+    "options": [
+      "Damages only",
+      "Repudiate the contract",
+      "Specific performance automatically",
+      "Criminal sanctions"
+    ],
+    "answer": "Damages only",
+    "topic": "Law of Contract: Terms & Vitiating Factors • Examples"
+  },
+  {
+    "id": 189,
+    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 13)",
+    "options": [
+      "Sue for damages",
+      "Imprison the buyer",
+      "Rescind all sales ever made",
+      "Charge criminal fine"
+    ],
+    "answer": "Sue for damages",
+    "topic": "Sale of Goods • Remedies"
+  },
+  {
+    "id": 190,
+    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 14)",
+    "options": [
+      "Sue for damages",
+      "Imprison the buyer",
+      "Rescind all sales ever made",
+      "Charge criminal fine"
+    ],
+    "answer": "Sue for damages",
+    "topic": "Sale of Goods • Remedies"
+  },
+  {
+    "id": 191,
+    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 15)",
+    "options": [
+      "Sue for damages",
+      "Imprison the buyer",
+      "Rescind all sales ever made",
+      "Charge criminal fine"
+    ],
+    "answer": "Sue for damages",
+    "topic": "Sale of Goods • Remedies"
+  },
+  {
+    "id": 192,
+    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 16)",
+    "options": [
+      "Sue for damages",
+      "Imprison the buyer",
+      "Rescind all sales ever made",
+      "Charge criminal fine"
+    ],
+    "answer": "Sue for damages",
+    "topic": "Sale of Goods • Remedies"
+  },
+  {
+    "id": 193,
+    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 17)",
+    "options": [
+      "Sue for damages",
+      "Imprison the buyer",
+      "Rescind all sales ever made",
+      "Charge criminal fine"
+    ],
+    "answer": "Sue for damages",
+    "topic": "Sale of Goods • Remedies"
+  },
+  {
+    "id": 194,
+    "question": "If the buyer wrongfully refuses to accept goods, the seller may: (item 18)",
+    "options": [
+      "Sue for damages",
+      "Imprison the buyer",
+      "Rescind all sales ever made",
+      "Charge criminal fine"
+    ],
+    "answer": "Sue for damages",
+    "topic": "Sale of Goods • Remedies"
+  },
+  {
+    "id": 195,
+    "question": "A statement in a contract that goods will match a specific sample is primarily a:",
+    "options": [
+      "Condition",
+      "Warranty",
+      "Representation",
+      "Exemption clause"
+    ],
+    "answer": "Condition",
+    "topic": "Sale of Goods • Sale by sample"
+  },
+  {
+    "id": 196,
+    "question": "Damages that arise naturally, i.e., according to the usual course of things, are:",
+    "options": [
+      "General (ordinary) damages",
+      "Special damages",
+      "Nominal damages",
+      "Exemplary damages"
+    ],
+    "answer": "General (ordinary) damages",
+    "topic": "Law of Contract: Discharge & Remedies • Damages"
+  },
+  {
+    "id": 197,
+    "question": "In tort, spoken defamatory words are generally called:",
+    "options": [
+      "Slander",
+      "Libel",
+      "Innuendo",
+      "Malice"
+    ],
+    "answer": "Slander",
+    "topic": "Law of Tort (Negligence & Others) • Defamation"
+  },
+  {
+    "id": 198,
+    "question": "Under company law, ultra vires acts are acts:",
+    "options": [
+      "Beyond the company’s capacity or objects",
+      "Within the powers of directors",
+      "Done by shareholders only",
+      "Validated automatically by auditors"
+    ],
+    "answer": "Beyond the company’s capacity or objects",
+    "topic": "Company Law (Basics) • Capacity/Objects"
+  },
+  {
+    "id": 199,
+    "question": "A negotiable instrument payable ‘to order’ becomes payable to bearer when:",
+    "options": [
+      "It is endorsed in blank",
+      "It is crossed generally",
+      "It is marked ‘A/C payee’",
+      "It is dishonoured"
+    ],
+    "answer": "It is endorsed in blank",
+    "topic": "Negotiable Instruments • Endorsement"
+  },
+  {
+    "id": 200,
+    "question": "Which of the following is a duty of the employer under employment law?",
+    "options": [
+      "To provide a safe place and system of work",
+      "To guarantee promotion",
+      "To pay bonuses every year",
+      "To insure employee’s personal property"
+    ],
+    "answer": "To provide a safe place and system of work",
+    "topic": "Employment/Labour • Health & Safety"
   }
 ]
