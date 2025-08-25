@@ -3,53 +3,81 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>ICAN Prep — Home</title>
-  <link rel="stylesheet" href="./assets/app.css?v=25"/>
+  <title>ICAN ATSWA Prep</title>
+  <link rel="stylesheet" href="./assets/app.css?v=33"/>
+  <style>
+    .grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
+    .hero{padding:16px;border-radius:12px;background:#101316;color:#fff;margin:12px 0}
+    .muted{opacity:.85}
+    .tile{display:block;padding:16px;border-radius:12px;background:#151a1f;border:1px solid #20252b;color:#e9eef6;text-decoration:none}
+    .tile:hover{border-color:#2a6cff}
+    .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:#2a6cff;color:#fff;text-decoration:none;border:0;cursor:pointer}
+    .btn.ghost{background:#222}
+    .small{font-size:.9rem}
+    header{display:flex;justify-content:space-between;align-items:center;margin:10px 0 6px}
+  </style>
 </head>
 <body>
   <div class="wrap">
-    <header class="space-between" style="align-items:center">
-      <h1>ICAN Prep</h1>
-      <div class="row" style="gap:8px">
-        <button id="loginBtn" class="btn primary">Continue with Google</button>
-        <button id="logoutBtn" class="btn" style="display:none">Logout</button>
-        <div id="profile"></div>
+    <header>
+      <h1>ICAN ATSWA Prep</h1>
+      <div class="row">
+        <span id="userChip" class="muted small">Not signed in</span>
+        <button class="btn guest-only" onclick="doGoogleSignIn()">Continue with Google</button>
+        <button class="btn ghost auth-only" onclick="doSignOut()">Sign out</button>
       </div>
     </header>
 
-    <section class="card">
+    <!-- Author attribution (always visible) -->
+    <section class="hero">
+      <p class="muted small">
+        Built by fellow accounting student <strong>Silva Brutus (NSUK)</strong>.  
+        Contact: <a href="mailto:offixcialbloger@gmail.com" style="color:#9ec4ff">offixcialbloger@gmail.com</a>
+      </p>
+      <p class="muted small">Practice is aligned to ATSWA Part I syllabus. Use <strong>Status → Weak Topics</strong> to target your study and “Read this” for topic notes.</p>
+    </section>
+
+    <!-- Guest message (no quizzes until login) -->
+    <section class="card guest-only">
       <h2>Welcome</h2>
-      <p class="muted small">Practice ATSWA & ICAN exams. Login saves your progress & syncs to leaderboard.</p>
+      <p class="muted">Please sign in to unlock quizzes, leaderboard and your personalized status.</p>
     </section>
 
-    <!-- tiles for quiz subjects -->
-    <section class="grid">
-      <a class="tile" href="quiz.html?level=ATSWA1&subject=Basic%20Accounting&mode=practice">
-        <div class="muted small">ATSWA I</div>
-        <div>Basic Accounting</div>
-      </a>
-      <a class="tile" href="quiz.html?level=ATSWA1&subject=Economics&mode=practice">
-        <div class="muted small">ATSWA I</div>
-        <div>Economics</div>
-      </a>
-      <a class="tile" href="quiz.html?level=ATSWA1&subject=Business%20Law&mode=practice">
-        <div class="muted small">ATSWA I</div>
-        <div>Business Law</div>
-      </a>
-      <a class="tile" href="quiz.html?level=ATSWA1&subject=Communication%20Skills&mode=practice">
-        <div class="muted small">ATSWA I</div>
-        <div>Communication Skills</div>
-      </a>
-    </section>
+    <!-- Signed-in tiles -->
+    <section class="auth-only">
+      <h2 style="margin:14px 0 6px">Your tools</h2>
+      <div class="grid" style="margin-bottom:12px">
+        <a class="tile" href="./status.html?v=33">
+          <div class="muted small">Your Data</div><div>View Status</div>
+        </a>
+        <a class="tile" href="./leaderbored.html?v=33">
+          <div class="muted small">Community</div><div>Leaderboard</div>
+        </a>
+        <a class="tile admin-only" href="./admin.html?v=33">
+          <div class="muted small">Owner</div><div>Admin Panel</div>
+        </a>
+      </div>
 
-    <section class="card">
-      <a class="btn" href="status.html">View Status</a>
-      <a class="btn" href="resources.html">Study Resources</a>
-      <a class="btn" href="leaderboard.html">Leaderboard</a>
+      <h2 style="margin:14px 0 6px">ATSWA I Subjects</h2>
+      <div class="grid">
+        <a class="tile" href="./quiz.html?level=ATSWA1&subject=Basic%20Accounting&mode=practice&v=33">
+          <div class="muted small">ATSWA I</div><div>Basic Accounting</div>
+        </a>
+        <a class="tile" href="./quiz.html?level=ATSWA1&subject=Business%20Law&mode=practice&v=33">
+          <div class="muted small">ATSWA I</div><div>Business Law</div>
+        </a>
+        <a class="tile" href="./quiz.html?level=ATSWA1&subject=Economics&mode=practice&v=33">
+          <div class="muted small">ATSWA I</div><div>Economics</div>
+        </a>
+        <a class="tile" href="./quiz.html?level=ATSWA1&subject=Communication%20Skills&mode=practice&v=33">
+          <div class="muted small">ATSWA I</div><div>Communication Skills</div>
+        </a>
+      </div>
     </section>
   </div>
 
-  <script type="module" src="./assets/firebase.js?v=25"></script>
-  <script type="module" src="./assets/app.js?v=25"></script>
+  <!-- Login gating & UI toggles -->
+  <script type="module" src="./assets/app.js?v=33"></script>
 </body>
 </html>
