@@ -2,21 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Status — ICAN Prep</title>
-  <link rel="stylesheet" href="./assets/app.css?v=19"/>
+  <link rel="stylesheet" href="./assets/app.css"/>
 </head>
 <body>
   <div class="wrap">
     <header class="space-between" style="align-items:center">
       <h1>My Status</h1>
-      <a class="btn" href="index.html">← Home</a>
+      <a class="btn" href="./index.html">← Home</a>
     </header>
 
-    <section class="card" style="margin:12px 0; text-align:center">
+    <section class="card" style="margin:12px 0; text-align:left">
       <h2>Need focused practice?</h2>
-      <p class="muted small">See the questions you missed and the correct answers.</p>
-      <a class="btn primary" href="review.html?v=19">Review mistakes</a>
+      <p class="muted small">See the questions you missed recently.</p>
+      <a class="btn primary" href="./review.html">Review mistakes</a>
     </section>
 
     <section class="card">
@@ -30,6 +30,7 @@
     </section>
   </div>
 
-  <script type="module" src="./assets/status.js?v=19"></script>
+  <script src="./assets/firebase.js"></script>
+  <script src="./assets/status.js"></script>
 </body>
 </html>
