@@ -9,7 +9,7 @@ html,body{margin:0;background:var(--bg);color:var(--txt);font:14px/1.45 system-u
 .top{display:flex;align-items:end;justify-content:space-between;margin-bottom:10px}
 h1{margin:0 0 6px}
 .muted{color:var(--txt2)}
-.mono{font-family:ui-monospace, SFMono-Regular, Menlo, monospace}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
 .tiny{font-size:12px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin:12px 0}
 .card-head{display:flex;align-items:center;justify-content:space-between}
@@ -23,6 +23,8 @@ h3{margin:0 0 8px}
 
 .chip{display:inline-flex;align-items:center;border:1px solid var(--line);padding:4px 8px;border-radius:999px;margin-left:6px}
 .chip.bad{background:rgba(239,68,68,.15);color:var(--bad);border-color:rgba(239,68,68,.35)}
+
+.lab-title{padding:6px 12px;border-radius:8px;font-weight:700;background:rgba(239,68,68,.15);color:#ef4444;border:1px solid rgba(239,68,68,.35);font-size:18px}
 
 .overall{display:flex;gap:10px;border-left:6px solid var(--ok);border:1px solid var(--line);padding:10px;border-radius:10px;margin:12px 0;background:#0d1218}
 .overall .dot{width:10px;height:10px;border-radius:999px;background:var(--ok);margin-top:7px}
