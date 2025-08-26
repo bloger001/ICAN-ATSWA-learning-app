@@ -1,48 +1,46 @@
-// Firebase bootstrap (compat) + helpers.
-// Put your config here (we’ll also read window.firebaseConfig if you keep it elsewhere).
-window.firebaseConfig = window.firebaseConfig || {
-  apiKey: "AIzaSyBRGM431CHZ3UMUHIc4Q-S1aGDMfrbu7Gs",
-  authDomain: "ican-kit-prep.firebaseapp.com",
-  projectId: "ican-kit-prep",
-  storageBucket: "ican-kit-prep.firebasestorage.app",
-  messagingSenderId: "354385037521",
-  appId: "1:354385037521:web:f3a7265f66983942581df0",
-  measurementId: "G-LN8E2R4B7X"
-};
+<script>
+// Tiny Firebase bootstrap that works on GitHub Pages (no bundler).
+// It loads the v10 modular SDKs and exposes a simple API on window.firebaseApi
 
-(function(){
-  const CDN = "https://www.gstatic.com/firebasejs/10.12.3";
-  const load = (src)=>new Promise((res,rej)=>{const s=document.createElement('script');s.src=src;s.onload=res;s.onerror=()=>rej(new Error('load '+src));document.head.appendChild(s);});
-  const scripts = [
-    `${CDN}/firebase-app-compat.js`,
-    `${CDN}/firebase-auth-compat.js`,
-    `${CDN}/firebase-firestore-compat.js`
-  ];
-  (async()=>{
-    for(const s of scripts) await load(s);
-    const fb = firebase.initializeApp(window.firebaseConfig);
-    const auth = firebase.auth();
-    const db = firebase.firestore();
-    const provider = new firebase.auth.GoogleAuthProvider();
+(function () {
+  const cfg = window.firebaseConfig; // set in index.html before this file loads
+  if (!cfg) {
+    console.error("firebaseConfig missing on window.");
+    return;
+  }
 
-    // Try to complete redirect result silently.
-    auth.getRedirectResult().catch(()=>{});
+  // Single ready promise so other scripts can await it
+  const ready = (async () => {
+    const [{ initializeApp }, { getAuth, GoogleAuthProvider, signInWithPopup, onAuthStateChanged, signOut },
+           { getFirestore, collection, addDoc, getDocs, query, orderBy, limit }] = await Promise.all([
+      import('https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js'),
+      import('https://www.gstatic.com/firebasejs/10.12.4/firebase-auth.js'),
+      import('https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore.js')
+    ]);
 
-    async function signIn() {
-      try { await auth.signInWithPopup(provider); }
-      catch (e) {
-        if (e && (e.code === 'auth/popup-blocked' || e.code === 'auth/cancelled-popup-request')) {
-          await auth.signInWithRedirect(provider);
-        } else { throw e; }
-      }
+    const app = initializeApp(cfg);
+    const auth = getAuth(app);
+    const provider = new GoogleAuthProvider();
+    const db = getFirestore(app);
+
+    async function signInWithGoogle() {
+      return signInWithPopup(auth, provider);
     }
-    async function signOut(){ await auth.signOut(); }
+    async function signOutUser() {
+      return signOut(auth);
+    }
 
-    window.ICAN = window.ICAN || {};
-    window.ICAN.firebase = { fb, auth, db, provider, signIn, signOut };
-    document.dispatchEvent(new Event('ican:firebaseReady'));
-  })().catch(err=>{
-    console.error(err);
-    localStorage.setItem('ican_last_error', String(err && err.stack || err));
-  });
+    // expose minimal API
+    window.firebaseApi = {
+      app, auth, db,
+      onAuthStateChanged,
+      signInWithGoogle,
+      signOutUser,
+      // firestore helpers used by leaderboard/status
+      collection, addDoc, getDocs, query, orderBy, limit
+    };
+  })();
+
+  window.firebaseReady = ready;
 })();
+</script>
