@@ -1,69 +1,151 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Admin — ICAN ATSWA</title>
-  <link rel="stylesheet" href="./assets/app.css"/>
-  <style>
-    .k {color:#9db5ae}
-    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.9rem}
-    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
-    @media (max-width:720px){.grid{grid-template-columns:1fr}}
-    .pill{padding:.35rem .7rem;border-radius:999px;background:#23302c;color:#cfe8df}
-    .ok{color:#6ee7a6}.bad{color:#f87171}
-    .row{padding:.35rem 0;border-bottom:1px solid #26302d}
-    .btn.small{padding:.45rem .7rem;font-size:.9rem}
-  </style>
+  <title>ICAN ATSWA • Admin Lab</title>
+
+  <!-- Firebase COMPAT CDNs FIRST -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+
+  <!-- Your Firebase init (must call firebase.initializeApp) -->
+  <script src="./assets/firebase.js" defer></script>
+
+  <link rel="stylesheet" href="./assets/admin-lab.css"/>
 </head>
 <body>
-  <div class="wrap">
-    <header class="space-between" style="align-items:center">
-      <h1>Admin</h1>
-      <a class="btn" href="./index.html">← Home</a>
-    </header>
+<main class="wrap">
+  <header class="top">
+    <h1>Admin • Health Lab</h1>
+    <div class="meta">
+      <span id="appVer" class="chip">v—</span>
+      <span id="authState" class="chip bad">Auth not available</span>
+      <span id="roleState" class="chip">Role: guest</span>
+    </div>
+  </header>
 
-    <section class="card">
-      <div class="space-between" style="align-items:center">
-        <div>
-          <div><span class="k">Auth:</span> <span id="authLine" class="pill">checking…</span></div>
-          <div style="margin-top:6px"><span class="k">Role:</span> <span id="roleLine">guest</span></div>
-        </div>
-        <div>
-          <button id="btnSignOut" class="btn small" style="display:none">Sign out</button>
-        </div>
+  <!-- OVERALL -->
+  <section id="overall" class="overall good">
+    <span class="dot"></span>
+    <div>
+      <h2 id="overallTitle">All Good</h2>
+      <p id="overallSub" class="muted">No blocking issues detected.</p>
+    </div>
+  </section>
+
+  <!-- CONTROLS -->
+  <section class="card">
+    <h3>Controls</h3>
+    <div class="grid">
+      <button id="btnFullSuite" class="btn primary">Run full test suite</button>
+      <button id="btnClearLocalErr" class="btn">Clear local error log</button>
+      <button id="btnHardRefresh" class="btn warn">Hard refresh (clear caches)</button>
+      <button id="btnExportSnapshot" class="btn">Export full snapshot</button>
+    </div>
+  </section>
+
+  <!-- AUTH -->
+  <section class="card">
+    <div class="card-head"><h3>Auth / Google</h3></div>
+    <div class="grid">
+      <button id="btnAuthPing" class="btn">Auth ping</button>
+      <button id="btnGoogleSignIn" class="btn">Continue with Google (popup)</button>
+      <button id="btnGoogleRedirect" class="btn">Continue with Google (redirect)</button>
+      <button id="btnSignOut" class="btn">Sign out</button>
+    </div>
+    <div id="authResult" class="mono tiny muted"></div>
+  </section>
+
+  <!-- FIRESTORE -->
+  <section class="card">
+    <div class="card-head"><h3>Firestore</h3></div>
+    <div class="grid">
+      <button id="btnFSRead" class="btn">Test Firestore read</button>
+      <button id="btnFSWrite" class="btn">Test Firestore write (diagnostics/health_probe)</button>
+      <button id="btnFSRules" class="btn">Rules sanity (admin-only write)</button>
+    </div>
+    <div id="fsResult" class="mono tiny muted"></div>
+  </section>
+
+  <!-- LEADERBOARD -->
+  <section class="card">
+    <div class="card-head"><h3>Leaderboard</h3></div>
+    <div class="grid">
+      <button id="btnLBWriteProbe" class="btn">Write test score</button>
+      <button id="btnLBReadTop" class="btn">Read top scores</button>
+      <button id="btnLBCleanProbes" class="btn warn">Clean test probes</button>
+    </div>
+    <div id="lbResult" class="mono tiny muted"></div>
+  </section>
+
+  <!-- QUESTION BANK -->
+  <section class="card">
+    <div class="card-head">
+      <h3>Question Bank</h3>
+    </div>
+    <div class="grid">
+      <input id="fileBank" class="file" type="file" accept=".json"/>
+      <button id="btnBankUseLocal" class="btn">Use bank from localStorage</button>
+      <button id="btnBankPaste" class="btn">Paste JSON bank</button>
+      <button id="btnBankAudit" class="btn primary">Audit: duplicates & structure</button>
+      <button id="btnBankShuffleTest" class="btn">Shuffle + no-repeat sample</button>
+    </div>
+    <div id="bankResult" class="mono tiny muted"></div>
+  </section>
+
+  <!-- STATUS / ANALYTICS -->
+  <section class="card">
+    <div class="card-head"><h3>Status / Analytics</h3></div>
+    <div class="grid">
+      <button id="btnStatusFromLocal" class="btn">Compute from local results</button>
+      <button id="btnStatusMock" class="btn">Compute on mock dataset</button>
+      <button id="btnStatusExport" class="btn">Export status JSON</button>
+    </div>
+    <div id="statusResult" class="mono tiny muted"></div>
+  </section>
+
+  <!-- HUB / INDEX HANDSHAKE -->
+  <section class="card">
+    <div class="card-head"><h3>Hub / Index Handshake (“file bridge”)</h3></div>
+    <div class="grid">
+      <button id="btnHubPing" class="btn">Ping index.html</button>
+      <button id="btnHubSendBank" class="btn">Send bank → index</button>
+      <button id="btnHubAskModules" class="btn">Ask loaded modules</button>
+    </div>
+    <div id="hubResult" class="mono tiny muted"></div>
+  </section>
+
+  <!-- ENV / STORAGE / SW -->
+  <section class="card">
+    <div class="card-head"><h3>Environment, Storage & Cache</h3></div>
+    <div class="grid">
+      <button id="btnEnvProbe" class="btn">Environment probe</button>
+      <button id="btnStorageProbe" class="btn">Storage estimate</button>
+      <button id="btnCachesList" class="btn">List cache keys</button>
+      <button id="btnClearCaches" class="btn warn">Clear caches (SW + CacheStorage)</button>
+    </div>
+    <div id="envResult" class="mono tiny muted"></div>
+  </section>
+
+  <!-- RESULTS TABLE -->
+  <section class="card">
+    <h3>Checks</h3>
+    <div class="table">
+      <div class="row head">
+        <div>Check</div><div>Status</div><div>Detail</div><div>When</div>
       </div>
-    </section>
+      <div id="rows"></div>
+    </div>
 
-    <section class="card">
-      <h2>Controls</h2>
-      <div class="grid">
-        <button id="btnHealth" class="btn">Run health checks</button>
-        <button id="btnClear" class="btn outline">Clear local error log</button>
-        <button id="btnHardReload" class="btn outline">Hard refresh (clear caches)</button>
-        <button id="btnAuthPing" class="btn outline">Auth ping</button>
-        <button id="btnDbRead" class="btn outline">Test Firestore read</button>
-        <button id="btnDbWrite" class="btn outline">Test Firestore write</button>
-      </div>
-    </section>
+    <details class="snapshot">
+      <summary>Snapshot</summary>
+      <pre id="snapshot" class="mono">{}</pre>
+    </details>
+  </section>
+</main>
 
-    <section class="card">
-      <h2>Snapshot</h2>
-      <div class="mono" id="healthDump">(no snapshot yet)</div>
-    </section>
-
-    <section class="card">
-      <h2>Local Error Log</h2>
-      <div id="errBox" class="mono">(empty)</div>
-    </section>
-
-    <section class="card">
-      <h2>Live messages</h2>
-      <div id="live" class="mono"></div>
-    </section>
-  </div>
-
-  <script src="./assets/firebase.js"></script>
-  <script src="./assets/admin.js"></script>
+<script src="./assets/admin-lab.js" defer></script>
 </body>
 </html>
