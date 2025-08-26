@@ -12,8 +12,8 @@
   <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics-compat.js"></script>
 
-  <!-- Project initializer (cache-busted) -->
-  <script src="./assets/firebase.js?v=104"></script>
+  <!-- Project initializer (cache-busted so you always get the latest) -->
+  <script src="./assets/firebase.js?v=106"></script>
 
   <style>
     :root { --card:#141a19; --line:#26302d; --ink:#e7f4f0; --sub:#9db5ae; --chip:#23302c; }
@@ -97,68 +97,8 @@
     </div>
   </div>
 
-  <!-- Your app scripts (do NOT re-init Firebase here) -->
-  <script src="./assets/app.js"></script>
-
-  <!-- Auth wiring -->
-  <script>
-  (function(){
-    const ADMIN_EMAIL = "offixcialbloger@gmail.com";
-
-    const statusEl   = document.getElementById("userStatus");
-    const googleBtn  = document.getElementById("btnGoogle");
-    const signOutBtn = document.getElementById("signOutBtn");
-    const authTiles  = Array.from(document.querySelectorAll(".requires-auth"));
-    const adminTile  = document.getElementById("adminTile");
-
-    function lockAuthTiles(lock){
-      authTiles.forEach(t=>{
-        const b=t.querySelector(".locked");
-        if(lock){ t.classList.add("disabled"); if(b) b.style.display="inline-block"; }
-        else     { t.classList.remove("disabled"); if(b) b.style.display="none"; }
-      });
-    }
-    function lockAdmin(lock){
-      const b=adminTile.querySelector(".locked");
-      if(lock){ adminTile.classList.add("disabled"); adminTile.href="#"; if(b) b.style.display="inline-block"; }
-      else    { adminTile.classList.remove("disabled"); adminTile.href="./admin.html"; if(b) b.style.display="none"; }
-    }
-    function enableGoogle(){ googleBtn.setAttribute("aria-disabled","false"); }
-    function disableGoogle(){ googleBtn.setAttribute("aria-disabled","true"); }
-
-    lockAuthTiles(true); lockAdmin(true); disableGoogle();
-
-    googleBtn.addEventListener("click", function(e){
-      e.preventDefault();
-      if (googleBtn.getAttribute("aria-disabled")==="true") return;
-      const provider = new firebase.auth.GoogleAuthProvider();
-      firebase.auth().signInWithPopup(provider).catch(console.error);
-    });
-
-    signOutBtn.addEventListener("click", function(e){
-      e.preventDefault();
-      firebase.auth().signOut().catch(console.error);
-    });
-
-    firebase.auth().onAuthStateChanged(function(user){
-      if (user) {
-        statusEl.textContent = "Signed in as " + (user.email || "");
-        googleBtn.style.display = "none";
-        signOutBtn.style.display = "inline-block";
-        enableGoogle();
-        lockAuthTiles(false);
-        lockAdmin(!(user.email && user.email.toLowerCase() === ADMIN_EMAIL.toLowerCase()));
-      } else {
-        statusEl.textContent = "Not signed in";
-        googleBtn.style.display = "inline-block";
-        signOutBtn.style.display = "none";
-        enableGoogle();
-        lockAuthTiles(true);
-        lockAdmin(true);
-      }
-    });
-  })();
-  </script>
+  <!-- App logic (cache-busted). Handles auth UI safely; no duplicate inline wiring needed. -->
+  <script src="./assets/app.js?v=106"></script>
 
   <!-- Hub bridge for Admin diagnostics -->
   <script>
