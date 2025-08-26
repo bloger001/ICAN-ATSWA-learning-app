@@ -4,94 +4,77 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>ICAN ATSWA Prep</title>
-  <link rel="stylesheet" href="./assets/app.css?v=2025-08-26b"/>
+  <link rel="stylesheet" href="./assets/app.css"/>
 </head>
 <body>
   <div class="wrap">
-
-    <header class="space-between" style="align-items:center; gap:12px;">
+    <header class="space-between" style="align-items:center">
       <h1>ICAN ATSWA Prep</h1>
-      <div class="row" style="gap:8px; align-items:center;">
-        <span id="authBadge" class="muted small">Not signed in</span>
-        <button id="googleBtn" class="btn primary" data-when="signed-out">Continue with Google</button>
-        <button id="signOutBtn" class="btn" data-when="signed-in" style="display:none">Sign out</button>
+      <div>
+        <span id="userStatus" class="muted small">Not signed in</span>
+        <button id="googleSignIn" class="btn primary" style="margin-left:8px">Continue with Google</button>
+        <button id="googleSignOut" class="btn" style="display:none;margin-left:8px">Sign out</button>
       </div>
     </header>
 
     <section class="card">
       <p class="muted">
-        Built by fellow accounting student <strong>Silva Brutus (NSUK)</strong>.
+        Built by fellow accounting student <strong>Silva Brutus</strong> (NSUK).
         Contact: <a href="mailto:offixcialbloger@gmail.com">offixcialbloger@gmail.com</a>
       </p>
-      <div data-when="signed-out">
-        <h2>Welcome</h2>
-        <p>Please sign in to unlock quizzes, leaderboard and your personalized status.</p>
-      </div>
+      <h2>Welcome</h2>
+      <p>Please sign in to unlock quizzes, leaderboard and your personalized status.</p>
     </section>
 
-    <!-- STUDY -->
-    <h3 class="muted">Study</h3>
-    <div class="tiles">
-      <a class="tile" href="./resources.html">
-        <div class="muted small">Study</div>
-        <div>Resources</div>
-      </a>
-      <a class="tile" href="./status.html" data-when="signed-in" style="display:none">
-        <div class="muted small">Progress</div>
-        <div>Status</div>
-      </a>
-      <a class="tile" href="./leaderboard.html" data-when="signed-in" style="display:none">
-        <div class="muted small">Community</div>
-        <div>Leaderboard</div>
-      </a>
-    </div>
+    <h3 class="muted" style="margin-top:24px">Study</h3>
+    <a class="tile" href="./resources.html">
+      <div class="muted small">Study</div>
+      <div>Resources</div>
+    </a>
 
-    <!-- ATSWA 1 SUBJECTS -->
-    <h3 class="muted">ATSWA 1</h3>
-    <div class="tiles" data-when="signed-in" style="display:none">
-      <a class="tile" href="./quiz.html?level=atswa1&subject=basic_accounting&mode=practice">
-        <div class="muted small">ATSWA 1</div>
-        <div>Basic Accounting</div>
-      </a>
-      <a class="tile" href="./quiz.html?level=atswa1&subject=business_law&mode=practice">
-        <div class="muted small">ATSWA 1</div>
-        <div>Business Law</div>
-      </a>
-      <a class="tile" href="./quiz.html?level=atswa1&subject=economics&mode=practice">
-        <div class="muted small">ATSWA 1</div>
-        <div>Economics</div>
-      </a>
-      <a class="tile" href="./quiz.html?level=atswa1&subject=comm_skills&mode=practice">
-        <div class="muted small">ATSWA 1</div>
-        <div>Communication Skills</div>
-      </a>
-    </div>
+    <h3 class="muted" style="margin-top:24px">Track</h3>
+    <a class="tile" href="./status.html">
+      <div class="muted small">Progress</div>
+      <div>Status</div>
+    </a>
 
-    <!-- ADMIN -->
-    <div class="tiles" style="margin-top:16px;">
-      <a class="tile" href="./admin.html">
-        <div class="muted small">Admin</div>
-        <div>Dashboard</div>
-      </a>
-    </div>
+    <h3 class="muted" style="margin-top:24px">Community</h3>
+    <a class="tile" href="./leaderboard.html">
+      <div class="muted small">Community</div>
+      <div>Leaderboard</div>
+    </a>
 
+    <h3 style="margin-top:24px">ATSWA 1</h3>
+    <a class="tile require-auth" href="./quiz.html?level=atswa1&subject=basic_accounting&mode=practice">
+      <div class="muted small">ATSWA 1</div>
+      <div>Basic Accounting</div>
+    </a>
+    <a class="tile require-auth" href="./quiz.html?level=atswa1&subject=business_law&mode=practice">
+      <div class="muted small">ATSWA 1</div>
+      <div>Business Law</div>
+    </a>
+    <a class="tile require-auth" href="./quiz.html?level=atswa1&subject=economics&mode=practice">
+      <div class="muted small">ATSWA 1</div>
+      <div>Economics</div>
+    </a>
+    <a class="tile require-auth" href="./quiz.html?level=atswa1&subject=comm_skills&mode=practice">
+      <div class="muted small">ATSWA 1</div>
+      <div>Communication Skills</div>
+    </a>
+
+    <h3 class="muted" style="margin-top:24px">Admin</h3>
+    <a class="tile" href="./admin.html">
+      <div class="muted small">Admin</div>
+      <div>Dashboard</div>
+    </a>
   </div>
 
-  <!-- 1) Put your Firebase config here so /assets/firebase.js can see it -->
-  <script>
-    window.firebaseConfig = {
-      apiKey: "AIzaSyBRGM431CHZ3UMUHIc4Q-S1aGDMfrbu7Gs",
-      authDomain: "ican-kit-prep.firebaseapp.com",
-      projectId: "ican-kit-prep",
-      storageBucket: "ican-kit-prep.firebasestorage.app",
-      messagingSenderId: "354385037521",
-      appId: "1:354385037521:web:f3a7265f66983942581df0",
-      measurementId: "G-LN8E2R4B7X"
-    };
-  </script>
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
 
-  <!-- 2) App scripts (order matters) -->
-  <script src="./assets/firebase.js?v=2025-08-26b"></script>
-  <script src="./assets/app.js?v=2025-08-26b"></script>
+  <script src="./assets/firebase.js"></script>
+  <script src="./assets/app.js"></script>
 </body>
 </html>
