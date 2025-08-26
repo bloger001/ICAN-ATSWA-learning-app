@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Test Firebase Login</title>
+<style>
+  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;background:#0f1615;color:#e7f4f0;padding:20px}
+  .ok{color:#8cf3c1} .bad{color:#ff8a8a} code{background:#17211f;padding:2px 6px;border-radius:6px}
+  button{padding:.6rem .9rem;border-radius:.6rem;border:1px solid #374842;background:#24312d;color:#fff}
+  .row{margin:.5rem 0}
+</style>
+</head>
+<body>
+<h2>Firebase Auth quick test</h2>
+
+<div class="row">Host: <code id="host"></code></div>
+<div class="row" id="sdk"></div>
+<div class="row" id="config"></div>
+<div class="row" id="init"></div>
+<div class="row" id="state"></div>
+
+<div class="row">
+  <button id="btn">Login with Google</button>
+</div>
+
+<div class="row">
+  <div id="log"></div>
+</div>
+
+<!-- 1) Official v8 SDKs (CDN) -->
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+
+<script>
+(function(){
+  const $ = id => document.getElementById(id);
+  const log = (msg, ok=true) => {
+    const d = document.createElement('div');
+    d.className = ok ? 'ok' : 'bad';
+    d.textContent = (ok ? '✓ ' : '✗ ') + msg;
+    $('log').prepend(d);
+  };
+
+  $('host').textContent = location.origin;
+
+  // 2) SDK presence
+  if (window.firebase && firebase.initializeApp) {
+    $('sdk').innerHTML = 'SDK: <span class="ok">loaded</span>';
+  } else {
+    $('sdk').innerHTML = 'SDK: <span class="bad">NOT LOADED</span>';
+    log('Firebase SDK missing (firebase-app.js / firebase-auth.js)', false);
+    return;
+  }
+
+  // 3) Use your config (inline for the test)
+  const firebaseConfig = {
+    apiKey: "AIzaSyBRGM431CHZ3UMUHIc4Q-S1aGDMfrbu7Gs",
+    authDomain: "ican-kit-prep.firebaseapp.com",
+    projectId: "ican-kit-prep",
+    storageBucket: "ican-kit-prep.firebasestorage.app",
+    messagingSenderId: "354385037521",
+    appId: "1:354385037521:web:f3a7265f66983942581df0",
+    measurementId: "G-LN8E2R4B7X"
+  };
+  $('config').innerHTML = 'Config: <span class="ok">present</span>';
+
+  // 4) Initialize
+  try {
+    const app = firebase.apps.length ? firebase.app() : firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+    auth.useDeviceLanguage && auth.useDeviceLanguage();
+    $('init').innerHTML = 'Init: <span class="ok">success</span>';
+
+    // Show state live
+    auth.onAuthStateChanged(u=>{
+      $('state').innerHTML = 'Auth state: ' + (u ? `<span class="ok">signed in (${u.email})</span>` :
+                                                     '<span class="bad">signed out</span>');
+    });
+
+    // 5) Try login
+    const provider = new firebase.auth.GoogleAuthProvider();
+    $('btn').onclick = async ()=>{
+      try {
+        await auth.signInWithPopup(provider);
+        log('Popup success');
+      } catch (e) {
+        log('Popup failed: ' + (e.message || e), false);
+        try {
+          await auth.signInWithRedirect(provider);
+          log('Redirect attempted (watch for redirect).');
+        } catch (e2) {
+          log('Redirect failed: ' + (e2.message || e2), false);
+        }
+      }
+    };
+
+  } catch (e) {
+    $('init').innerHTML = 'Init: <span class="bad">failed</span>';
+    log('Init error: ' + (e.message || e), false);
+  }
+})();
+</script>
+</body>
+</html>
