@@ -178,5 +178,30 @@
     });
   })();
   </script>
+  <script>
+  (function(){
+    const ch = new BroadcastChannel('aihub');
+    const modules = [];
+    // If your index exposes modules, push names here when loaded:
+    if (window.firebase) modules.push('firebase');
+    if (window.quizEngine) modules.push('quizEngine');
+    if (window.leaderboard) modules.push('leaderboard');
+    if (window.statusPage) modules.push('status');
+
+    ch.addEventListener('message', (ev)=>{
+      const msg = ev.data||{};
+      if (msg.type==='ping'){
+        ch.postMessage({type:'pong', from:'index.html', pingId: msg.pingId});
+      }
+      if (msg.type==='modules.request'){
+        ch.postMessage({type:'modules.info', modules});
+      }
+      if (msg.type==='bank.push' && typeof msg.len==='number'){
+        // you can react here e.g. refresh bank from localStorage
+        // (Admin already saved bank into localStorage)
+      }
+    });
+  })();
+</script>
 </body>
 </html>
