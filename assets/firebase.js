@@ -1,66 +1,73 @@
-<script>
-// assets/firebase.js  — robust, self-loading Firebase (compat) for GitHub Pages
-(() => {
-  // ---- helpers -------------------------------------------------------------
-  const loadScript = (src) => new Promise((res, rej) => {
-    const s = document.createElement('script');
-    s.src = src; s.async = true; s.onload = res; s.onerror = () => rej(new Error('Failed '+src));
-    document.head.appendChild(s);
-  });
+// assets/firebase.js — robust Firebase Auth bootstrap (compat, safe for GitHub Pages)
 
-  // Expose a promise others can await
-  let _resolveReady;
-  const ready = new Promise(r => (_resolveReady = r));
-  // Make it globally awaitable (index.html button can wait on this)
-  window.__fbReady = ready;
+(function () {
+  const CDN_APP  = "https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js";
+  const CDN_AUTH = "https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js";
+
+  function load(src){
+    return new Promise((res, rej) => {
+      const s = document.createElement("script");
+      s.src = src; s.async = true;
+      s.onload = res; s.onerror = () => rej(new Error("Failed to load " + src));
+      document.head.appendChild(s);
+    });
+  }
+
+  async function ensureSdk() {
+    if (window.firebase && window.firebase.apps) return;
+    await load(CDN_APP);
+    await load(CDN_AUTH);
+  }
 
   async function boot() {
-    // 1) Require config (you already set window.firebaseConfig in index.html)
-    if (!window.firebaseConfig) {
-      throw new Error('firebaseConfig missing on window');
+    // REQUIRE: index.html must set window.firebaseConfig BEFORE including this file.
+    if (!window.firebaseConfig || !window.firebaseConfig.apiKey) {
+      throw new Error("firebaseConfig missing on window");
     }
 
-    // 2) If Firebase compat is not on the page, load it
-    if (!window.firebase || !window.firebase.app) {
-      // Compat SDK keeps your existing code working
-      await loadScript('https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js');
-      await loadScript('https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js');
-    }
+    await ensureSdk();
 
-    // 3) Init (idempotent)
-    const app = (window.firebase.apps && window.firebase.apps.length)
+    const app = window.firebase.apps && window.firebase.apps.length
       ? window.firebase.app()
       : window.firebase.initializeApp(window.firebaseConfig);
 
     const auth = window.firebase.auth();
     const provider = new window.firebase.auth.GoogleAuthProvider();
 
-    // 4) Export globals your pages expect
-    window.firebaseApp = app;
-    window.firebaseAuth = auth;
-    window.googleProvider = provider;
-
-    // Preferred names used by the new index.html
+    // Expose the globals the rest of the app expects
     window.AppAuth = auth;
     window.AppGoogleProvider = provider;
     window.AppOnAuthChanged = auth.onAuthStateChanged.bind(auth);
     window.AppSignIn = async () => {
       try { return await auth.signInWithPopup(provider); }
-      catch { return auth.signInWithRedirect(provider); }
+      catch (e) { return auth.signInWithRedirect(provider); } // iOS / popup blocked fallback
     };
     window.AppSignOut = () => auth.signOut();
 
+    // Legacy aliases (back-compat with older pages)
+    window.firebaseApp = app;
+    window.firebaseAuth = auth;
+    window.googleProvider = provider;
+    window.signInWithPopup = (prov) => auth.signInWithPopup(prov || provider);
+    window.signOutFirebase = () => auth.signOut();
+    window.firebaseOnAuthStateChanged = (/*ignored*/, cb) => auth.onAuthStateChanged(cb);
+
+    // Let pages wait for readiness
+    if (!window.__fbReady) window.__fbReady = Promise.resolve(true);
     window.__firebase_bootstrapped__ = true;
-    window.__fbVersion = '9.22.2-compat';
-    _resolveReady(true);
+    document.dispatchEvent(new Event("firebase-ready"));
+    console.log("[firebase.js] ready");
   }
 
+  // Kick off
   boot().catch(err => {
-    console.error('[firebase.js] bootstrap failed:', err);
-    // Make the ready promise settle so callers don’t hang
-    _resolveReady(false);
-    // Surface a small toast for visibility (optional)
-    try { alert('Firebase failed to load: ' + err.message); } catch {}
+    console.error("[firebase.js] bootstrap failed:", err);
+    if (!window.__fbReady) window.__fbReady = Promise.resolve(false);
+    try {
+      const k="ican:error:log";
+      const arr = JSON.parse(localStorage.getItem(k) || "[]");
+      arr.unshift({t:new Date().toISOString(), kind:"firebase-boot", msg:String(err?.message||err)});
+      localStorage.setItem(k, JSON.stringify(arr.slice(0,50)));
+    } catch {}
   });
 })();
-</script>
