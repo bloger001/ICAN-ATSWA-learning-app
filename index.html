@@ -10,13 +10,11 @@
   <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
-  <!-- Optional: analytics compat (safe to include; will only run if configured) -->
   <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics-compat.js"></script>
 
-  <!-- Your Firebase init (config + initializeApp) -->
-  <script src="./assets/firebase.js"></script>
+  <!-- Project initializer (cache-busted) -->
+  <script src="./assets/firebase.js?v=104"></script>
 
-  <!-- Page-scoped styles (safe) -->
   <style>
     :root { --card:#141a19; --line:#26302d; --ink:#e7f4f0; --sub:#9db5ae; --chip:#23302c; }
     body{color:var(--ink)}
@@ -32,17 +30,11 @@
     h2.section{font-size:1.05rem;letter-spacing:.03em;color:#a9c3bb;margin:26px 6px 8px}
     .tile-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
     @media (min-width:740px){.tile-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
-    .tile{
-      position:relative; display:block; text-decoration:none; color:var(--ink);
-      background:#0f1715; border:1px solid #27322f; border-radius:14px; padding:14px 16px; min-height:64px;
-    }
+    .tile{position:relative;display:block;text-decoration:none;color:var(--ink);background:#0f1715;border:1px solid #27322f;border-radius:14px;padding:14px 16px;min-height:64px}
     .tile .muted{color:var(--sub);font-size:.82rem;margin-bottom:4px}
     .tile .title{font-size:1.02rem}
-    .tile.disabled{opacity:.55; pointer-events:none}
-    .tile .locked{
-      position:absolute; right:10px; top:10px; font-size:.82rem; color:#b6c9c3; background:#1c2724;
-      border:1px solid #2b3834; padding:.15rem .45rem; border-radius:999px; display:none;
-    }
+    .tile.disabled{opacity:.55;pointer-events:none}
+    .tile .locked{position:absolute;right:10px;top:10px;font-size:.82rem;color:#b6c9c3;background:#1c2724;border:1px solid #2b3834;padding:.15rem .45rem;border-radius:999px;display:none}
     .stack{display:flex;gap:10px;align-items:center}
   </style>
 </head>
@@ -52,7 +44,6 @@
       <h1>ICAN ATSWA Prep</h1>
       <div class="stack">
         <span id="userStatus" class="pill">Not signed in</span>
-        <!-- Starts disabled; enabled after Firebase auth is ready -->
         <a class="btn primary" id="btnGoogle" href="#" aria-disabled="true">Continue with Google</a>
         <a id="signOutBtn" class="btn outline" href="#" style="display:none">Sign out</a>
       </div>
@@ -106,10 +97,10 @@
     </div>
   </div>
 
-  <!-- Your app scripts (no duplicate Firebase init here) -->
+  <!-- Your app scripts (do NOT re-init Firebase here) -->
   <script src="./assets/app.js"></script>
 
-  <!-- Home bootstrap (waits for auth, then enables UI) -->
+  <!-- Auth wiring -->
   <script>
   (function(){
     const ADMIN_EMAIL = "offixcialbloger@gmail.com";
@@ -137,7 +128,6 @@
 
     lockAuthTiles(true); lockAdmin(true); disableGoogle();
 
-    // Bind sign-in after Firebase is present
     googleBtn.addEventListener("click", function(e){
       e.preventDefault();
       if (googleBtn.getAttribute("aria-disabled")==="true") return;
@@ -150,7 +140,6 @@
       firebase.auth().signOut().catch(console.error);
     });
 
-    // Auth observer controls the whole page state
     firebase.auth().onAuthStateChanged(function(user){
       if (user) {
         statusEl.textContent = "Signed in as " + (user.email || "");
@@ -163,7 +152,7 @@
         statusEl.textContent = "Not signed in";
         googleBtn.style.display = "inline-block";
         signOutBtn.style.display = "none";
-        enableGoogle();            // allow user to click and start sign-in
+        enableGoogle();
         lockAuthTiles(true);
         lockAdmin(true);
       }
@@ -171,14 +160,12 @@
   })();
   </script>
 
-  <!-- Hub bridge: responds to Admin diagnostics page via BroadcastChannel -->
+  <!-- Hub bridge for Admin diagnostics -->
   <script>
   (function(){
     const ch = new BroadcastChannel('aihub');
     const modules = [];
-
     if (window.firebase) modules.push('firebase');
-    // If you expose modules later, keep these names so Admin can see them:
     if (window.quizEngine) modules.push('quizEngine');
     if (window.leaderboard) modules.push('leaderboard');
     if (window.statusPage) modules.push('status');
@@ -192,7 +179,6 @@
         ch.postMessage({type:'modules.info', modules});
       }
       if (msg.type==='bank.push' && typeof msg.len==='number'){
-        // Optional: reload bank from localStorage.quiz.bankJSON here
         console.log('[index bridge] bank pushed, len=', msg.len);
       }
     });
