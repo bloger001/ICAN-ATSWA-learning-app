@@ -5,75 +5,123 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>ICAN ATSWA Prep</title>
   <link rel="stylesheet" href="./assets/app.css"/>
+  <!-- Page-local styles only for home layout -->
+  <style>
+    .wrap{max-width:980px;margin:0 auto;padding:20px}
+    header.space-between{display:flex;justify-content:space-between;align-items:center;gap:12px}
+    .pill{padding:.45rem .8rem;border-radius:999px;background:#23302c;color:#cfe8df;font-size:.9rem}
+    .btn{display:inline-block;padding:.6rem .9rem;border-radius:.6rem;background:#24312d;color:#e7f4f0;text-decoration:none}
+    .btn.primary{background:#2ecc71;color:#112; font-weight:600}
+    .btn.outline{background:transparent;border:1px solid #3a4a45}
+    .card{background:#141a19;border:1px solid #26302d;border-radius:14px;padding:16px 18px;margin:14px 0}
+    h1{margin:0 0 8px 0;font-size:2.2rem}
+    h2.section{font-size:1.05rem;letter-spacing:.03em;color:#a9c3bb;margin:26px 6px 8px}
+    .tile-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+    @media (min-width:740px){.tile-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+    .tile{
+      position:relative; display:block; text-decoration:none; color:#e7f4f0;
+      background:#0f1715; border:1px solid #27322f; border-radius:14px; padding:14px 16px;
+      min-height:64px;
+    }
+    .tile .muted{color:#9db5ae;font-size:.82rem;margin-bottom:4px}
+    .tile .title{font-size:1.02rem}
+    .tile.disabled{opacity:.55; pointer-events:none}
+    .tile .locked{
+      position:absolute; right:10px; top:10px; font-size:.82rem; color:#b6c9c3; background:#1c2724;
+      border:1px solid #2b3834; padding:.15rem .45rem; border-radius:999px;
+    }
+    /* Small helper spacing */
+    .stack{display:flex;gap:10px;align-items:center}
+  </style>
 </head>
 <body>
   <div class="wrap">
-    <header class="space-between" style="align-items:center">
+
+    <!-- Header -->
+    <header class="space-between">
       <h1>ICAN ATSWA Prep</h1>
-      <div>
-        <span id="userStatus" class="muted small">Not signed in</span>
-        <button id="googleSignIn" class="btn primary" style="margin-left:8px">Continue with Google</button>
-        <button id="googleSignOut" class="btn" style="display:none;margin-left:8px">Sign out</button>
+      <div class="stack">
+        <span id="userStatus" class="pill">Not signed in</span>
+        <a id="googleBtn" class="btn primary" href="javascript:void(0)">Continue with Google</a>
+        <a id="signOutBtn" class="btn outline" href="javascript:void(0)" style="display:none">Sign out</a>
       </div>
     </header>
 
-    <section class="card">
-      <p class="muted">
-        Built by fellow accounting student <strong>Silva Brutus</strong> (NSUK).
-        Contact: <a href="mailto:offixcialbloger@gmail.com">offixcialbloger@gmail.com</a>
-      </p>
+    <!-- About / Welcome -->
+    <section class="card" id="welcomeCard">
+      <p class="muted">Built by fellow accounting student <strong>Silva Brutus (NSUK)</strong>.
+        Contact: <a href="mailto:offixcialbloger@gmail.com">offixcialbloger@gmail.com</a></p>
       <h2>Welcome</h2>
       <p>Please sign in to unlock quizzes, leaderboard and your personalized status.</p>
     </section>
 
-    <h3 class="muted" style="margin-top:24px">Study</h3>
-    <a class="tile" href="./resources.html">
-      <div class="muted small">Study</div>
-      <div>Resources</div>
-    </a>
+    <!-- Study -->
+    <h2 class="section">Study</h2>
+    <div class="tile-grid">
+      <a class="tile" href="./resources.html">
+        <div class="muted">Study</div>
+        <div class="title">Resources</div>
+      </a>
+    </div>
 
-    <h3 class="muted" style="margin-top:24px">Track</h3>
-    <a class="tile" href="./status.html">
-      <div class="muted small">Progress</div>
-      <div>Status</div>
-    </a>
+    <!-- Track -->
+    <h2 class="section">Track</h2>
+    <div class="tile-grid">
+      <a class="tile" href="./status.html">
+        <div class="muted">Progress</div>
+        <div class="title">Status</div>
+      </a>
+    </div>
 
-    <h3 class="muted" style="margin-top:24px">Community</h3>
-    <a class="tile" href="./leaderboard.html">
-      <div class="muted small">Community</div>
-      <div>Leaderboard</div>
-    </a>
+    <!-- Community -->
+    <h2 class="section">Community</h2>
+    <div class="tile-grid">
+      <a class="tile" href="./leaderboard.html">
+        <div class="muted">Community</div>
+        <div class="title">Leaderboard</div>
+      </a>
+    </div>
 
-    <h3 style="margin-top:24px">ATSWA 1</h3>
-    <a class="tile require-auth" href="./quiz.html?level=atswa1&subject=basic_accounting&mode=practice">
-      <div class="muted small">ATSWA 1</div>
-      <div>Basic Accounting</div>
-    </a>
-    <a class="tile require-auth" href="./quiz.html?level=atswa1&subject=business_law&mode=practice">
-      <div class="muted small">ATSWA 1</div>
-      <div>Business Law</div>
-    </a>
-    <a class="tile require-auth" href="./quiz.html?level=atswa1&subject=economics&mode=practice">
-      <div class="muted small">ATSWA 1</div>
-      <div>Economics</div>
-    </a>
-    <a class="tile require-auth" href="./quiz.html?level=atswa1&subject=comm_skills&mode=practice">
-      <div class="muted small">ATSWA 1</div>
-      <div>Communication Skills</div>
-    </a>
+    <!-- ATSWA 1 subjects (locked until sign-in) -->
+    <h2 class="section">ATSWA 1</h2>
+    <div class="tile-grid">
+      <a class="tile requires-auth" href="./quiz.html?level=atswa1&subject=basic_accounting">
+        <div class="muted">ATSWA 1</div>
+        <div class="title">Basic Accounting</div>
+        <div class="locked">🔒 Sign in</div>
+      </a>
 
-    <h3 class="muted" style="margin-top:24px">Admin</h3>
-    <a class="tile" href="./admin.html">
-      <div class="muted small">Admin</div>
-      <div>Dashboard</div>
-    </a>
+      <a class="tile requires-auth" href="./quiz.html?level=atswa1&subject=business_law">
+        <div class="muted">ATSWA 1</div>
+        <div class="title">Business Law</div>
+        <div class="locked">🔒 Sign in</div>
+      </a>
+
+      <a class="tile requires-auth" href="./quiz.html?level=atswa1&subject=economics">
+        <div class="muted">ATSWA 1</div>
+        <div class="title">Economics</div>
+        <div class="locked">🔒 Sign in</div>
+      </a>
+
+      <a class="tile requires-auth" href="./quiz.html?level=atswa1&subject=comm_skills">
+        <div class="muted">ATSWA 1</div>
+        <div class="title">Communication Skills</div>
+        <div class="locked">🔒 Sign in</div>
+      </a>
+    </div>
+
+    <!-- Admin -->
+    <h2 class="section">Admin</h2>
+    <div class="tile-grid">
+      <a class="tile" href="./admin.html">
+        <div class="muted">Admin</div>
+        <div class="title">Dashboard</div>
+      </a>
+    </div>
+
   </div>
 
-  <!-- Firebase SDKs -->
-  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
-
+  <!-- scripts -->
   <script src="./assets/firebase.js"></script>
   <script src="./assets/app.js"></script>
 </body>
