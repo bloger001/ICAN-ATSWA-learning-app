@@ -2,24 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Leaderboard — ICAN ATSWA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Leaderboard • ICAN ATSWA</title>
   <link rel="stylesheet" href="./assets/app.css"/>
+  <style>
+    .wrap{max-width:900px;margin:0 auto;padding:20px}
+    table{width:100%;border-collapse:collapse}
+    th,td{border-bottom:1px solid #26302d;padding:10px;text-align:left}
+    th{color:#9db5ae;font-weight:600}
+    .empty{color:#9db5ae;padding:16px}
+  </style>
+
+  <!-- Firebase compat + init -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+  <script src="./assets/firebase.js?v=106"></script>
 </head>
 <body>
   <div class="wrap">
-    <header class="space-between" style="align-items:center">
-      <h1>Leaderboard</h1>
-      <a class="btn" href="./index.html">← Home</a>
-    </header>
-
-    <section class="card">
-      <div id="boardMsg" class="muted small">Showing recent top scores (cloud sync).</div>
-      <div id="board"></div>
-    </section>
+    <h1>Leaderboard</h1>
+    <p class="muted">Top scores across all subjects.</p>
+    <div id="board"></div>
   </div>
 
-  <script src="./assets/firebase.js"></script>
-  <script src="./assets/leaderboard.js"></script>
+  <script src="./assets/leaderboard.js?v=106"></script>
 </body>
 </html>
