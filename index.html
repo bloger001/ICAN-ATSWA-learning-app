@@ -4,35 +4,31 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>ICAN ATSWA Prep</title>
-  <link rel="stylesheet" href="./assets/app.css?v=2025-08-26a"/>
+  <link rel="stylesheet" href="./assets/app.css?v=build-restore"/>
 </head>
 <body>
   <div class="wrap">
 
-    <!-- Top bar -->
+    <!-- HEADER -->
     <header class="space-between" style="align-items:center">
       <h1>ICAN ATSWA Prep</h1>
-
-      <!-- auth status + sign-in button -->
       <div>
-        <span id="authStatus" class="muted small">Not signed in</span>
-        <button id="googleBtn" class="btn primary" style="margin-left:12px">Continue with Google</button>
+        <span id="authBadge" class="muted small">Not signed in</span>
+        <button id="googleBtn" class="btn primary" style="margin-left:8px">Continue with Google</button>
       </div>
     </header>
 
-    <!-- credit / welcome card -->
+    <!-- ABOUT / CREDIT -->
     <section class="card">
-      <p class="muted">
-        Built by fellow accounting student <strong>Silva Brutus</strong> (NSUK).
+      <p>
+        Built by fellow accounting student <strong>Silva Brutus (NSUK)</strong>.
         Contact: <a href="mailto:offixcialbloger@gmail.com">offixcialbloger@gmail.com</a>
       </p>
-
-      <h2>Welcome</h2>
-      <p>Please sign in to unlock quizzes, leaderboard and your personalized status.</p>
+      <p id="signedState" class="muted">Not signed in</p>
     </section>
 
-    <!-- quick links (resources / status / leaderboard) -->
-    <section class="tiles">
+    <!-- STUDY -->
+    <section class="grid">
       <a class="tile" href="./resources.html">
         <div class="muted small">Study</div>
         <div>Resources</div>
@@ -47,38 +43,71 @@
         <div class="muted small">Community</div>
         <div>Leaderboard</div>
       </a>
+    </section>
 
-      <!-- Subjects (ATSWA 1) -->
-      <a class="tile" href="./quiz.html?level=ATSWA1&subject=Basic%20Accounting&dataset=atswa1_basic_accounting">
+    <!-- ATSWA 1 -->
+    <h3 class="muted" style="margin-top:24px">ATSWA 1</h3>
+    <section class="grid">
+      <a class="tile req-auth"
+         href="./quiz.html?level=atswa1&subject=basic_accounting&mode=practice">
         <div class="muted small">ATSWA 1</div>
         <div>Basic Accounting</div>
       </a>
 
-      <a class="tile" href="./quiz.html?level=ATSWA1&subject=Business%20Law&dataset=atswa1_business_law">
+      <a class="tile req-auth"
+         href="./quiz.html?level=atswa1&subject=business_law&mode=practice">
         <div class="muted small">ATSWA 1</div>
         <div>Business Law</div>
       </a>
 
-      <a class="tile" href="./quiz.html?level=ATSWA1&subject=Economics&dataset=atswa1_economics">
+      <a class="tile req-auth"
+         href="./quiz.html?level=atswa1&subject=economics&mode=practice">
         <div class="muted small">ATSWA 1</div>
         <div>Economics</div>
       </a>
 
-      <a class="tile" href="./quiz.html?level=ATSWA1&subject=Communication%20Skills&dataset=atswa1_comm_skills">
+      <a class="tile req-auth"
+         href="./quiz.html?level=atswa1&subject=comm_skills&mode=practice">
         <div class="muted small">ATSWA 1</div>
         <div>Communication Skills</div>
       </a>
     </section>
 
-    <!-- small admin access -->
-    <div style="margin-top:20px">
-      <a class="btn" href="./admin.html">Admin</a>
-    </div>
+    <!-- ADMIN -->
+    <section class="grid" style="margin-top:24px">
+      <a class="tile" href="./admin.html">
+        <div class="muted small">Admin</div>
+        <div>Dashboard</div>
+      </a>
+    </section>
 
   </div>
 
-  <!-- scripts (order matters) -->
-  <script src="./assets/firebase.js?v=2025-08-26a"></script>
-  <script src="./assets/app.js?v=2025-08-26a"></script>
+  <!-- Scripts (order matters) -->
+  <script src="./assets/firebase.js?v=build-restore"></script>
+  <script src="./assets/app.js?v=build-restore"></script>
+
+  <!-- Tiny helper: keep badge text in sync if app.js exposes auth state -->
+  <script>
+    // If app.js exposes a global hook, use it to reflect sign-in status.
+    (function () {
+      const badge = document.getElementById('authBadge');
+      const state = document.getElementById('signedState');
+      // Fallback click binding in case app.js looks for #googleBtn:
+      const btn = document.getElementById('googleBtn');
+
+      // App code should attach its own listener, but ensure the button is focusable
+      btn.type = 'button';
+
+      // If app.js exposes a simple event bus, listen; otherwise app.js will update these itself.
+      window.__setAuthUI = function (isAuthed, email) {
+        const label = isAuthed ? `Signed in — ${email}` : 'Not signed in';
+        badge.textContent = label;
+        state.textContent = label;
+        // Hide sign-in button when authed
+        btn.style.display = isAuthed ? 'none' : '';
+      };
+    })();
+  </script>
 </body>
 </html>
