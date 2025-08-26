@@ -40,7 +40,7 @@
       <h1>ICAN ATSWA Prep</h1>
       <div class="stack">
         <span id="userStatus" class="pill">Not signed in</span>
-        <!-- Starts disabled; JS enables & binds when Firebase is ready -->
+        <!-- Starts disabled; JS enables after Firebase is ready -->
         <a class="btn primary" id="btnGoogle" href="#" aria-disabled="true" style="opacity:.6;pointer-events:none;">
           Continue with Google
         </a>
@@ -96,6 +96,19 @@
     </div>
   </div>
 
+  <!-- ✅ Firebase config must be here before firebase.js -->
+  <script>
+    window.firebaseConfig = {
+      apiKey: "AIzaSyBRGM431CHZ3UMUHIc4Q-S1aGDMfrbu7Gs",
+      authDomain: "ican-kit-prep.firebaseapp.com",
+      projectId: "ican-kit-prep",
+      storageBucket: "ican-kit-prep.firebasestorage.app",
+      messagingSenderId: "354385037521",
+      appId: "1:354385037521:web:f3a7265f66983942581df0",
+      measurementId: "G-LN8E2R4B7X"
+    };
+  </script>
+
   <!-- Core scripts -->
   <script src="./assets/firebase.js"></script>
   <script src="./assets/app.js"></script>
@@ -103,7 +116,7 @@
   <!-- Home bootstrap -->
   <script>
   (function(){
-    const APP_VERSION = "home-2025-08-26d";
+    const APP_VERSION = "home-2025-08-26e";
     const ADMIN_EMAIL = "offixcialbloger@gmail.com";
 
     const statusEl   = document.getElementById("userStatus");
@@ -112,19 +125,8 @@
     const authTiles  = Array.from(document.querySelectorAll(".requires-auth"));
     const adminTile  = document.getElementById("adminTile");
 
-    // tiny error log
-    const ERR_KEY = "ican:error:log";
-    function log(kind,msg,extra){ try{
-      const arr = JSON.parse(localStorage.getItem(ERR_KEY)||"[]");
-      arr.unshift({t:new Date().toISOString(),kind,msg:String(msg||""),extra:extra||null});
-      if(arr.length>50) arr.length=50;
-      localStorage.setItem(ERR_KEY, JSON.stringify(arr));
-    }catch{}}
+    function log(kind,msg){ console.warn("[home]",kind,msg); }
 
-    window.addEventListener("error", e=>log("onerror", e.message, {src:e.filename,line:e.lineno}));
-    window.addEventListener("unhandledrejection", e=>log("unhandledrejection", String(e.reason?.message||e.reason)));
-
-    // helpers
     function lockAuthTiles(lock){
       authTiles.forEach(t=>{
         const b=t.querySelector(".locked");
@@ -137,83 +139,44 @@
       if(lock){ adminTile.classList.add("disabled"); adminTile.href="#"; if(b) b.style.display="inline-block"; }
       else    { adminTile.classList.remove("disabled"); adminTile.href="./admin.html"; if(b) b.style.display="none"; }
     }
-    function enableBtn(){
-      googleBtn.style.opacity=''; googleBtn.style.pointerEvents=''; googleBtn.setAttribute('aria-disabled','false');
-    }
-    function disableBtn(){
-      googleBtn.style.opacity='.6'; googleBtn.style.pointerEvents='none'; googleBtn.setAttribute('aria-disabled','true');
-    }
 
-    lockAuthTiles(true); lockAdmin(true); disableBtn();
+    lockAuthTiles(true); lockAdmin(true);
 
-    // wait for firebase.js to finish
-    async function waitForFirebase(){
-      try{
-        if (window.__fbReady) { await window.__fbReady; }
-      }catch(_) {}
-    }
     function authReady(){
-      return !!(window.AppSignIn && window.AppSignOut && window.AppOnAuthChanged && (window.AppAuth || window.firebaseAuth));
+      return !!(window.AppSignIn && window.AppOnAuthChanged && (window.AppAuth||window.firebaseAuth));
     }
-    async function waitForAuth(timeoutMs=12000){
-      await waitForFirebase();
-      if (authReady()) return;
-      await new Promise((resolve, reject)=>{
-        let done=false;
-        const tick=setInterval(()=>{ if(!done && authReady()){ done=true; clearInterval(tick); clearTimeout(to); resolve(); } },150);
-        const to=setTimeout(()=>{ if(!done){ done=true; clearInterval(tick); reject(new Error("auth-timeout")); } },timeoutMs);
+    function waitForAuth(){
+      return new Promise((res,rej)=>{
+        let tries=0;
+        const i=setInterval(()=>{
+          if(authReady()){clearInterval(i);res();}
+          else if(++tries>80){clearInterval(i);rej(new Error("auth-timeout")); }
+        },150);
       });
     }
 
-    // health snapshot
-    const HEALTH_KEY="ican:health:home";
-    function writeHealth(part){ try{
-      const prev = JSON.parse(localStorage.getItem(HEALTH_KEY)||"{}");
-      localStorage.setItem(HEALTH_KEY, JSON.stringify(Object.assign({},prev,{ts:new Date().toISOString(),version:APP_VERSION},part||{})));
-    }catch{}}
-    (async ()=>{
-      const targets=[
-        "./assets/app.js","./assets/firebase.js","./assets/app.css",
-        "./quiz.html","./leaderboard.html","./status.html","./review.html","./admin.html",
-        "./data/atswa1_basic_accounting.json","./data/atswa1_business_law.json","./data/atswa1_economics.json","./data/atswa1_comm_skills.json"
-      ];
-      const results = await Promise.all(targets.map(p=>fetch(p,{cache:"no-store"}).then(r=>({p,ok:r.ok})).catch(()=>({p,ok:false}))));
-      writeHealth({files:Object.fromEntries(results.map(r=>[r.p,r.ok]))});
-    })();
-
-    // main boot
     waitForAuth().then(()=>{
-      const auth = window.AppAuth || window.firebaseAuth;
+      const auth = window.AppAuth||window.firebaseAuth;
       const onAuthChanged = window.AppOnAuthChanged;
 
-      // wire after ready
-      enableBtn();
-      googleBtn.onclick = (e)=>{ e.preventDefault(); window.AppSignIn().catch(er=>log("signin", er.message)); };
-      signOutBtn.onclick = ()=> window.AppSignOut().catch(er=>log("signout", er.message));
+      googleBtn.style.opacity=''; googleBtn.style.pointerEvents='';
+      googleBtn.onclick = (e)=>{ e.preventDefault(); window.AppSignIn().catch(er=>log("signin",er.message)); };
+      signOutBtn.onclick= ()=> window.AppSignOut().catch(er=>log("signout",er.message));
 
-      onAuthChanged(auth, (user)=>{
-        try{
-          const email = user?.email || null;
-          if(user){
-            statusEl.textContent = `Signed in as ${email}`;
-            googleBtn.style.display="none";
-            signOutBtn.style.display="inline-block";
-            lockAuthTiles(false);
-            lockAdmin(!email || email.toLowerCase()!==ADMIN_EMAIL.toLowerCase());
-          }else{
-            statusEl.textContent = "Not signed in";
-            googleBtn.style.display="inline-block";
-            signOutBtn.style.display="none";
-            lockAuthTiles(true); lockAdmin(true);
-          }
-          writeHealth({user: email||null});
-        }catch(e){ log("auth-state", e.message); }
+      onAuthChanged(auth,(user)=>{
+        const email=user?.email||null;
+        if(user){
+          statusEl.textContent=`Signed in as ${email}`;
+          googleBtn.style.display="none"; signOutBtn.style.display="inline-block";
+          lockAuthTiles(false);
+          lockAdmin(!email||email.toLowerCase()!==ADMIN_EMAIL.toLowerCase());
+        }else{
+          statusEl.textContent="Not signed in";
+          googleBtn.style.display="inline-block"; signOutBtn.style.display="none";
+          lockAuthTiles(true); lockAdmin(true);
+        }
       });
-    }).catch(e=>{
-      log("auth-bootstrap", e.message||e);
-      writeHealth({authError:String(e.message||e)});
-      // leave button disabled on failure
-    });
+    }).catch(e=>log("bootstrap",e.message));
   })();
   </script>
 </body>
