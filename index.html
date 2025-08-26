@@ -5,39 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>ICAN ATSWA Prep</title>
   <link rel="stylesheet" href="./assets/app.css"/>
-  <!-- Page-local styles only for home layout -->
+
+  <!-- Home-only safe styles (scoped) -->
   <style>
+    :root { --card:#141a19; --line:#26302d; --ink:#e7f4f0; --sub:#9db5ae; --chip:#23302c; }
+    body{color:var(--ink)}
     .wrap{max-width:980px;margin:0 auto;padding:20px}
     header.space-between{display:flex;justify-content:space-between;align-items:center;gap:12px}
-    .pill{padding:.45rem .8rem;border-radius:999px;background:#23302c;color:#cfe8df;font-size:.9rem}
-    .btn{display:inline-block;padding:.6rem .9rem;border-radius:.6rem;background:#24312d;color:#e7f4f0;text-decoration:none}
-    .btn.primary{background:#2ecc71;color:#112; font-weight:600}
+    .pill{padding:.45rem .8rem;border-radius:999px;background:var(--chip);color:#cfe8df;font-size:.9rem}
+    .btn{display:inline-block;padding:.6rem .9rem;border-radius:.6rem;background:#24312d;color:var(--ink);text-decoration:none}
+    .btn.primary{background:#2e7cf0;color:#fff;font-weight:600}
     .btn.outline{background:transparent;border:1px solid #3a4a45}
-    .card{background:#141a19;border:1px solid #26302d;border-radius:14px;padding:16px 18px;margin:14px 0}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:14px 0}
     h1{margin:0 0 8px 0;font-size:2.2rem}
     h2.section{font-size:1.05rem;letter-spacing:.03em;color:#a9c3bb;margin:26px 6px 8px}
     .tile-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
     @media (min-width:740px){.tile-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
     .tile{
-      position:relative; display:block; text-decoration:none; color:#e7f4f0;
-      background:#0f1715; border:1px solid #27322f; border-radius:14px; padding:14px 16px;
-      min-height:64px;
+      position:relative; display:block; text-decoration:none; color:var(--ink);
+      background:#0f1715; border:1px solid #27322f; border-radius:14px; padding:14px 16px; min-height:64px;
     }
-    .tile .muted{color:#9db5ae;font-size:.82rem;margin-bottom:4px}
+    .tile .muted{color:var(--sub);font-size:.82rem;margin-bottom:4px}
     .tile .title{font-size:1.02rem}
     .tile.disabled{opacity:.55; pointer-events:none}
     .tile .locked{
       position:absolute; right:10px; top:10px; font-size:.82rem; color:#b6c9c3; background:#1c2724;
-      border:1px solid #2b3834; padding:.15rem .45rem; border-radius:999px;
+      border:1px solid #2b3834; padding:.15rem .45rem; border-radius:999px; display:none;
     }
-    /* Small helper spacing */
     .stack{display:flex;gap:10px;align-items:center}
   </style>
 </head>
 <body>
   <div class="wrap">
-
-    <!-- Header -->
     <header class="space-between">
       <h1>ICAN ATSWA Prep</h1>
       <div class="stack">
@@ -47,82 +46,170 @@
       </div>
     </header>
 
-    <!-- About / Welcome -->
-    <section class="card" id="welcomeCard">
+    <section class="card">
       <p class="muted">Built by fellow accounting student <strong>Silva Brutus (NSUK)</strong>.
         Contact: <a href="mailto:offixcialbloger@gmail.com">offixcialbloger@gmail.com</a></p>
       <h2>Welcome</h2>
       <p>Please sign in to unlock quizzes, leaderboard and your personalized status.</p>
     </section>
 
-    <!-- Study -->
     <h2 class="section">Study</h2>
     <div class="tile-grid">
       <a class="tile" href="./resources.html">
-        <div class="muted">Study</div>
-        <div class="title">Resources</div>
+        <div class="muted">Study</div><div class="title">Resources</div>
       </a>
     </div>
 
-    <!-- Track -->
     <h2 class="section">Track</h2>
     <div class="tile-grid">
       <a class="tile" href="./status.html">
-        <div class="muted">Progress</div>
-        <div class="title">Status</div>
+        <div class="muted">Progress</div><div class="title">Status</div>
       </a>
-    </div>
-
-    <!-- Community -->
-    <h2 class="section">Community</h2>
-    <div class="tile-grid">
       <a class="tile" href="./leaderboard.html">
-        <div class="muted">Community</div>
-        <div class="title">Leaderboard</div>
+        <div class="muted">Community</div><div class="title">Leaderboard</div>
       </a>
     </div>
 
-    <!-- ATSWA 1 subjects (locked until sign-in) -->
     <h2 class="section">ATSWA 1</h2>
     <div class="tile-grid">
       <a class="tile requires-auth" href="./quiz.html?level=atswa1&subject=basic_accounting">
-        <div class="muted">ATSWA 1</div>
-        <div class="title">Basic Accounting</div>
-        <div class="locked">🔒 Sign in</div>
+        <div class="muted">ATSWA 1</div><div class="title">Basic Accounting</div><div class="locked">🔒 Sign in</div>
       </a>
-
       <a class="tile requires-auth" href="./quiz.html?level=atswa1&subject=business_law">
-        <div class="muted">ATSWA 1</div>
-        <div class="title">Business Law</div>
-        <div class="locked">🔒 Sign in</div>
+        <div class="muted">ATSWA 1</div><div class="title">Business Law</div><div class="locked">🔒 Sign in</div>
       </a>
-
       <a class="tile requires-auth" href="./quiz.html?level=atswa1&subject=economics">
-        <div class="muted">ATSWA 1</div>
-        <div class="title">Economics</div>
-        <div class="locked">🔒 Sign in</div>
+        <div class="muted">ATSWA 1</div><div class="title">Economics</div><div class="locked">🔒 Sign in</div>
       </a>
-
       <a class="tile requires-auth" href="./quiz.html?level=atswa1&subject=comm_skills">
-        <div class="muted">ATSWA 1</div>
-        <div class="title">Communication Skills</div>
-        <div class="locked">🔒 Sign in</div>
+        <div class="muted">ATSWA 1</div><div class="title">Communication Skills</div><div class="locked">🔒 Sign in</div>
       </a>
     </div>
 
-    <!-- Admin -->
     <h2 class="section">Admin</h2>
     <div class="tile-grid">
-      <a class="tile" href="./admin.html">
-        <div class="muted">Admin</div>
-        <div class="title">Dashboard</div>
+      <a id="adminTile" class="tile" href="./admin.html">
+        <div class="muted">Admin</div><div class="title">Dashboard</div><div class="locked">🔒 Admin only</div>
       </a>
     </div>
-
   </div>
 
-  <!-- scripts -->
+  <!-- Core scripts (keep these names) -->
   <script src="./assets/firebase.js"></script>
   <script src="./assets/app.js"></script>
+
+  <!-- Home bootstrap: robust auth wiring + self diagnostics -->
+  <script>
+  (function(){
+    const APP_VERSION = "home-2025-08-26";
+    const ADMIN_EMAIL = "offixcialbloger@gmail.com";
+    const statusEl = document.getElementById("userStatus");
+    const googleBtn = document.getElementById("googleBtn");
+    const signOutBtn = document.getElementById("signOutBtn");
+    const authTiles = Array.from(document.querySelectorAll(".requires-auth"));
+    const adminTile = document.getElementById("adminTile");
+
+    // ====== Error capture -> localStorage (readable in /admin.html) ======
+    const ERR_KEY = "ican:error:log";
+    function pushError(kind, msg, extra){
+      try{
+        const now = new Date().toISOString();
+        const arr = JSON.parse(localStorage.getItem(ERR_KEY) || "[]");
+        arr.unshift({t:now, kind, msg: String(msg||""), extra: extra||null});
+        if(arr.length>50) arr.length = 50;
+        localStorage.setItem(ERR_KEY, JSON.stringify(arr));
+      }catch(e){}
+    }
+    window.addEventListener("error", e=>pushError("onerror", e.message, {src:e.filename, line:e.lineno}));
+    window.addEventListener("unhandledrejection", e=>pushError("unhandledrejection", e.reason?.message||String(e.reason)));
+
+    // ====== UI helpers ======
+    function lockAuthTiles(lock){
+      authTiles.forEach(t=>{
+        const badge=t.querySelector(".locked");
+        if(lock){ t.classList.add("disabled"); if(badge) badge.style.display="inline-block"; }
+        else     { t.classList.remove("disabled"); if(badge) badge.style.display="none"; }
+      });
+    }
+    function lockAdmin(lock){
+      const badge=adminTile.querySelector(".locked");
+      if(lock){ adminTile.classList.add("disabled"); adminTile.href="#"; if(badge) badge.style.display="inline-block"; }
+      else    { adminTile.classList.remove("disabled"); adminTile.href="./admin.html"; if(badge) badge.style.display="none"; }
+    }
+
+    // Start locked until we know auth
+    lockAuthTiles(true); lockAdmin(true);
+
+    // ====== Flexible bindings (works with or without app.js helpers) ======
+    const auth = window.AppAuth || window.firebaseAuth || null;
+    const provider = window.AppGoogleProvider || window.googleProvider || null;
+    const onAuthChanged = window.AppOnAuthChanged || window.firebaseOnAuthStateChanged || function(){};
+    const signIn   = window.AppSignIn || (auth && provider && window.signInWithPopup ? ()=>window.signInWithPopup(auth,provider) : null);
+    const signOut  = window.AppSignOut || (auth && window.signOutFirebase ? ()=>window.signOutFirebase(auth) : null);
+
+    if(googleBtn && signIn){ googleBtn.addEventListener("click", ()=>signIn().catch(err=>pushError("signin", err.message))); }
+    if(signOutBtn && signOut){ signOutBtn.addEventListener("click", ()=>signOut().catch(err=>pushError("signout", err.message))); }
+
+    // React to auth state (will no-op if not available)
+    try{
+      if(onAuthChanged && auth){
+        onAuthChanged(auth, (user)=>{
+          try{
+            const email = user?.email || null;
+            if(user){
+              statusEl.textContent = `Signed in as ${email}`;
+              googleBtn.style.display="none"; signOutBtn.style.display="inline-block";
+              lockAuthTiles(false);
+              lockAdmin(email && email.toLowerCase()!==ADMIN_EMAIL.toLowerCase());
+            }else{
+              statusEl.textContent = "Not signed in";
+              googleBtn.style.display="inline-block"; signOutBtn.style.display="none";
+              lockAuthTiles(true); lockAdmin(true);
+            }
+            // also capture to health snapshot
+            writeHealth({user: email||null});
+          }catch(e){ pushError("auth-state", e.message); }
+        });
+      } else {
+        pushError("bootstrap","Auth not initialized on home page");
+      }
+    }catch(e){ pushError("bootstrap", e.message); }
+
+    // ====== Health snapshot for Admin diagnostics ======
+    const HEALTH_KEY = "ican:health:home";
+    async function checkUrl(path){
+      try{
+        const res = await fetch(path, {cache:"no-store"});
+        return {path, ok:res.ok, status:res.status};
+      }catch(e){ return {path, ok:false, status:"ERR"}; }
+    }
+    async function runHealthChecks(){
+      const targets = [
+        "./assets/app.js","./assets/firebase.js","./assets/app.css",
+        "./quiz.html","./leaderboard.html","./status.html","./review.html","./admin.html",
+        "./data/atswa1_basic_accounting.json",
+        "./data/atswa1_business_law.json",
+        "./data/atswa1_economics.json",
+        "./data/atswa1_comm_skills.json"
+      ];
+      const results = await Promise.all(targets.map(checkUrl));
+      const summary = Object.fromEntries(results.map(r=>[r.path, r.ok]));
+      writeHealth({files:summary});
+    }
+    function writeHealth(partial){
+      try{
+        const prev = JSON.parse(localStorage.getItem(HEALTH_KEY) || "{}");
+        const payload = Object.assign({}, prev, {
+          ts: new Date().toISOString(),
+          version: APP_VERSION
+        }, partial||{});
+        localStorage.setItem(HEALTH_KEY, JSON.stringify(payload));
+      }catch(e){}
+    }
+    // initial health stamp + async checks
+    writeHealth({loaded:true});
+    runHealthChecks();
+  })();
+  </script>
 </body>
 </html>
