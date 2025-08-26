@@ -1,24 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>ICAN ATSWA • Admin Lab</title>
 
-  <!-- Firebase COMPAT CDNs FIRST -->
+  <!-- Firebase COMPAT SDKs (ORDER MATTERS) -->
   <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics-compat.js"></script>
 
-  <!-- Your Firebase init (must call firebase.initializeApp) -->
-  <script src="./assets/firebase.js" defer></script>
+  <!-- Your Firebase init -->
+  <script src="./assets/firebase.js"></script>
 
   <link rel="stylesheet" href="./assets/admin-lab.css"/>
 </head>
 <body>
 <main class="wrap">
   <header class="top">
-    <h1>Admin • Health Lab</h1>
+    <h1><span class="lab-title">Admin Labs</span></h1>
     <div class="meta">
       <span id="appVer" class="chip">v—</span>
       <span id="authState" class="chip bad">Auth not available</span>
@@ -26,7 +27,6 @@
     </div>
   </header>
 
-  <!-- OVERALL -->
   <section id="overall" class="overall good">
     <span class="dot"></span>
     <div>
@@ -35,7 +35,6 @@
     </div>
   </section>
 
-  <!-- CONTROLS -->
   <section class="card">
     <h3>Controls</h3>
     <div class="grid">
@@ -46,7 +45,6 @@
     </div>
   </section>
 
-  <!-- AUTH -->
   <section class="card">
     <div class="card-head"><h3>Auth / Google</h3></div>
     <div class="grid">
@@ -58,7 +56,6 @@
     <div id="authResult" class="mono tiny muted"></div>
   </section>
 
-  <!-- FIRESTORE -->
   <section class="card">
     <div class="card-head"><h3>Firestore</h3></div>
     <div class="grid">
@@ -69,7 +66,6 @@
     <div id="fsResult" class="mono tiny muted"></div>
   </section>
 
-  <!-- LEADERBOARD -->
   <section class="card">
     <div class="card-head"><h3>Leaderboard</h3></div>
     <div class="grid">
@@ -80,11 +76,8 @@
     <div id="lbResult" class="mono tiny muted"></div>
   </section>
 
-  <!-- QUESTION BANK -->
   <section class="card">
-    <div class="card-head">
-      <h3>Question Bank</h3>
-    </div>
+    <div class="card-head"><h3>Question Bank</h3></div>
     <div class="grid">
       <input id="fileBank" class="file" type="file" accept=".json"/>
       <button id="btnBankUseLocal" class="btn">Use bank from localStorage</button>
@@ -95,7 +88,6 @@
     <div id="bankResult" class="mono tiny muted"></div>
   </section>
 
-  <!-- STATUS / ANALYTICS -->
   <section class="card">
     <div class="card-head"><h3>Status / Analytics</h3></div>
     <div class="grid">
@@ -106,7 +98,6 @@
     <div id="statusResult" class="mono tiny muted"></div>
   </section>
 
-  <!-- HUB / INDEX HANDSHAKE -->
   <section class="card">
     <div class="card-head"><h3>Hub / Index Handshake (“file bridge”)</h3></div>
     <div class="grid">
@@ -117,7 +108,6 @@
     <div id="hubResult" class="mono tiny muted"></div>
   </section>
 
-  <!-- ENV / STORAGE / SW -->
   <section class="card">
     <div class="card-head"><h3>Environment, Storage & Cache</h3></div>
     <div class="grid">
@@ -129,16 +119,12 @@
     <div id="envResult" class="mono tiny muted"></div>
   </section>
 
-  <!-- RESULTS TABLE -->
   <section class="card">
     <h3>Checks</h3>
     <div class="table">
-      <div class="row head">
-        <div>Check</div><div>Status</div><div>Detail</div><div>When</div>
-      </div>
+      <div class="row head"><div>Check</div><div>Status</div><div>Detail</div><div>When</div></div>
       <div id="rows"></div>
     </div>
-
     <details class="snapshot">
       <summary>Snapshot</summary>
       <pre id="snapshot" class="mono">{}</pre>
