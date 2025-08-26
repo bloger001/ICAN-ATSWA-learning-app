@@ -1,113 +1,8 @@
-<script>
-  window.firebaseConfig = {
-    apiKey: "AIzaSyBRGM431CHZ3UMUHIc4Q-S1aGDMfrbu7Gs",
-    authDomain: "ican-kit-prep.firebaseapp.com",
-    projectId: "ican-kit-prep",
-    storageBucket: "ican-kit-prep.firebasestorage.app",
-    messagingSenderId: "354385037521",
-    appId: "1:354385037521:web:f3a7265f66983942581df0",
-    measurementId: "G-LN8E2R4B7X"
-  };
-</script>
 <!doctype html>
-<html lang="en">
+<html>
 <head>
   <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>ICAN ATSWA Prep</title>
-  <link rel="stylesheet" href="./assets/app.css"/>
-
-  <style>
-    :root { --card:#141a19; --line:#26302d; --ink:#e7f4f0; --sub:#9db5ae; --chip:#23302c; }
-    body{color:var(--ink)}
-    .wrap{max-width:980px;margin:0 auto;padding:20px}
-    header.space-between{display:flex;justify-content:space-between;align-items:center;gap:12px}
-    .pill{padding:.45rem .8rem;border-radius:999px;background:var(--chip);color:#cfe8df;font-size:.9rem}
-    .btn{display:inline-block;padding:.6rem .9rem;border-radius:.6rem;background:#24312d;color:var(--ink);text-decoration:none}
-    .btn.primary{background:#2e7cf0;color:#fff;font-weight:600}
-    .btn.outline{background:transparent;border:1px solid #3a4a45}
-    .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:14px 0}
-    h1{margin:0 0 8px 0;font-size:2.2rem}
-    h2.section{font-size:1.05rem;letter-spacing:.03em;color:#a9c3bb;margin:26px 6px 8px}
-    .tile-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-    @media (min-width:740px){.tile-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
-    .tile{
-      position:relative; display:block; text-decoration:none; color:var(--ink);
-      background:#0f1715; border:1px solid #27322f; border-radius:14px; padding:14px 16px; min-height:64px;
-    }
-    .tile .muted{color:var(--sub);font-size:.82rem;margin-bottom:4px}
-    .tile .title{font-size:1.02rem}
-    .tile.disabled{opacity:.55; pointer-events:none}
-    .tile .locked{
-      position:absolute; right:10px; top:10px; font-size:.82rem; color:#b6c9c3; background:#1c2724;
-      border:1px solid #2b3834; padding:.15rem .45rem; border-radius:999px; display:none;
-    }
-    .stack{display:flex;gap:10px;align-items:center}
-  </style>
-</head>
-<body>
-  <div class="wrap">
-    <header class="space-between">
-      <h1>ICAN ATSWA Prep</h1>
-      <div class="stack">
-        <span id="userStatus" class="pill">Not signed in</span>
-        <!-- Starts disabled; JS enables after Firebase is ready -->
-        <a class="btn primary" id="btnGoogle" href="#" aria-disabled="true" style="opacity:.6;pointer-events:none;">
-          Continue with Google
-        </a>
-        <a id="signOutBtn" class="btn outline" href="javascript:void(0)" style="display:none">Sign out</a>
-      </div>
-    </header>
-
-    <section class="card">
-      <p class="muted">Built by fellow accounting student <strong>Silva Brutus (NSUK)</strong>.
-        Contact: <a href="mailto:offixcialbloger@gmail.com">offixcialbloger@gmail.com</a></p>
-      <h2>Welcome</h2>
-      <p>Please sign in to unlock quizzes, leaderboard and your personalized status.</p>
-    </section>
-
-    <h2 class="section">Study</h2>
-    <div class="tile-grid">
-      <a class="tile" href="./resources.html">
-        <div class="muted">Study</div><div class="title">Resources</div>
-      </a>
-    </div>
-
-    <h2 class="section">Track</h2>
-    <div class="tile-grid">
-      <a class="tile" href="./status.html">
-        <div class="muted">Progress</div><div class="title">Status</div>
-      </a>
-      <a class="tile" href="./leaderboard.html">
-        <div class="muted">Community</div><div class="title">Leaderboard</div>
-      </a>
-    </div>
-
-    <h2 class="section">ATSWA 1</h2>
-    <div class="tile-grid">
-      <a class="tile requires-auth" href="./quiz.html?level=atswa1&subject=basic_accounting">
-        <div class="muted">ATSWA 1</div><div class="title">Basic Accounting</div><div class="locked">🔒 Sign in</div>
-      </a>
-      <a class="tile requires-auth" href="./quiz.html?level=atswa1&subject=business_law">
-        <div class="muted">ATSWA 1</div><div class="title">Business Law</div><div class="locked">🔒 Sign in</div>
-      </a>
-      <a class="tile requires-auth" href="./quiz.html?level=atswa1&subject=economics">
-        <div class="muted">ATSWA 1</div><div class="title">Economics</div><div class="locked">🔒 Sign in</div>
-      </a>
-      <a class="tile requires-auth" href="./quiz.html?level=atswa1&subject=comm_skills">
-        <div class="muted">ATSWA 1</div><div class="title">Communication Skills</div><div class="locked">🔒 Sign in</div>
-      </a>
-    </div>
-
-    <h2 class="section">Admin</h2>
-    <div class="tile-grid">
-      <a id="adminTile" class="tile" href="./admin.html">
-        <div class="muted">Admin</div><div class="title">Dashboard</div><div class="locked">🔒 Admin only</div>
-      </a>
-    </div>
-  </div>
-
-  <!-- ✅ Firebase config must be here before firebase.js -->
+  <title>Test Firebase Login</title>
   <script>
     window.firebaseConfig = {
       apiKey: "AIzaSyBRGM431CHZ3UMUHIc4Q-S1aGDMfrbu7Gs",
@@ -119,76 +14,39 @@
       measurementId: "G-LN8E2R4B7X"
     };
   </script>
-
-  <!-- Core scripts -->
   <script src="./assets/firebase.js"></script>
-  <script src="./assets/app.js"></script>
+</head>
+<body>
+  <button id="btnGoogle">Login with Google</button>
+  <div id="status">Not signed in</div>
 
-  <!-- Home bootstrap -->
   <script>
-  (function(){
-    const APP_VERSION = "home-2025-08-26e";
-    const ADMIN_EMAIL = "offixcialbloger@gmail.com";
+    (async () => {
+      const btn = document.getElementById("btnGoogle");
+      const status = document.getElementById("status");
 
-    const statusEl   = document.getElementById("userStatus");
-    const googleBtn  = document.getElementById("btnGoogle");
-    const signOutBtn = document.getElementById("signOutBtn");
-    const authTiles  = Array.from(document.querySelectorAll(".requires-auth"));
-    const adminTile  = document.getElementById("adminTile");
+      // wait for firebase bootstrap
+      let tries=0;
+      while (!window.AppSignIn && tries<30) {
+        await new Promise(r=>setTimeout(r,200));
+        tries++;
+      }
 
-    function log(kind,msg){ console.warn("[home]",kind,msg); }
+      if (!window.AppSignIn) {
+        status.textContent = "Auth never initialized";
+        return;
+      }
 
-    function lockAuthTiles(lock){
-      authTiles.forEach(t=>{
-        const b=t.querySelector(".locked");
-        if(lock){ t.classList.add("disabled"); if(b) b.style.display="inline-block"; }
-        else     { t.classList.remove("disabled"); if(b) b.style.display="none"; }
+      btn.onclick = () => {
+        window.AppSignIn()
+          .then(u => console.log("Signed in:", u))
+          .catch(e => console.error("Error:", e));
+      };
+
+      window.AppOnAuthChanged(window.AppAuth, user=>{
+        status.textContent = user ? `Signed in as ${user.email}` : "Not signed in";
       });
-    }
-    function lockAdmin(lock){
-      const b=adminTile.querySelector(".locked");
-      if(lock){ adminTile.classList.add("disabled"); adminTile.href="#"; if(b) b.style.display="inline-block"; }
-      else    { adminTile.classList.remove("disabled"); adminTile.href="./admin.html"; if(b) b.style.display="none"; }
-    }
-
-    lockAuthTiles(true); lockAdmin(true);
-
-    function authReady(){
-      return !!(window.AppSignIn && window.AppOnAuthChanged && (window.AppAuth||window.firebaseAuth));
-    }
-    function waitForAuth(){
-      return new Promise((res,rej)=>{
-        let tries=0;
-        const i=setInterval(()=>{
-          if(authReady()){clearInterval(i);res();}
-          else if(++tries>80){clearInterval(i);rej(new Error("auth-timeout")); }
-        },150);
-      });
-    }
-
-    waitForAuth().then(()=>{
-      const auth = window.AppAuth||window.firebaseAuth;
-      const onAuthChanged = window.AppOnAuthChanged;
-
-      googleBtn.style.opacity=''; googleBtn.style.pointerEvents='';
-      googleBtn.onclick = (e)=>{ e.preventDefault(); window.AppSignIn().catch(er=>log("signin",er.message)); };
-      signOutBtn.onclick= ()=> window.AppSignOut().catch(er=>log("signout",er.message));
-
-      onAuthChanged(auth,(user)=>{
-        const email=user?.email||null;
-        if(user){
-          statusEl.textContent=`Signed in as ${email}`;
-          googleBtn.style.display="none"; signOutBtn.style.display="inline-block";
-          lockAuthTiles(false);
-          lockAdmin(!email||email.toLowerCase()!==ADMIN_EMAIL.toLowerCase());
-        }else{
-          statusEl.textContent="Not signed in";
-          googleBtn.style.display="inline-block"; signOutBtn.style.display="none";
-          lockAuthTiles(true); lockAdmin(true);
-        }
-      });
-    }).catch(e=>log("bootstrap",e.message));
-  })();
+    })();
   </script>
 </body>
 </html>
