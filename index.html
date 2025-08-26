@@ -6,19 +6,7 @@
   <title>ICAN ATSWA Prep</title>
   <link rel="stylesheet" href="./assets/app.css"/>
 
-  <!-- Firebase config must be defined BEFORE firebase.js -->
-  <script>
-    window.firebaseConfig = {
-      apiKey: "AIzaSyBRGM431CHZ3UMUHIc4Q-S1aGDMfrbu7Gs",
-      authDomain: "ican-kit-prep.firebaseapp.com",
-      projectId: "ican-kit-prep",
-      storageBucket: "ican-kit-prep.firebasestorage.app",
-      messagingSenderId: "354385037521",
-      appId: "1:354385037521:web:f3a7265f66983942581df0",
-      measurementId: "G-LN8E2R4B7X"
-    };
-  </script>
-
+  <!-- Page-scoped styles (safe) -->
   <style>
     :root { --card:#141a19; --line:#26302d; --ink:#e7f4f0; --sub:#9db5ae; --chip:#23302c; }
     body{color:var(--ink)}
@@ -28,6 +16,7 @@
     .btn{display:inline-block;padding:.6rem .9rem;border-radius:.6rem;background:#24312d;color:var(--ink);text-decoration:none}
     .btn.primary{background:#2e7cf0;color:#fff;font-weight:600}
     .btn.outline{background:transparent;border:1px solid #3a4a45}
+    .btn[aria-disabled="true"]{opacity:.6;pointer-events:none}
     .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:14px 0}
     h1{margin:0 0 8px 0;font-size:2.2rem}
     h2.section{font-size:1.05rem;letter-spacing:.03em;color:#a9c3bb;margin:26px 6px 8px}
@@ -53,9 +42,9 @@
       <h1>ICAN ATSWA Prep</h1>
       <div class="stack">
         <span id="userStatus" class="pill">Not signed in</span>
-        <!-- Always enabled; JS binds directly to AppSignIn() -->
-        <a class="btn primary" id="btnGoogle" href="javascript:void(0)">Continue with Google</a>
-        <a id="signOutBtn" class="btn outline" href="javascript:void(0)" style="display:none">Sign out</a>
+        <!-- Starts disabled; enabled after Firebase auth is ready -->
+        <a class="btn primary" id="btnGoogle" href="#" aria-disabled="true">Continue with Google</a>
+        <a id="signOutBtn" class="btn outline" href="#" style="display:none">Sign out</a>
       </div>
     </header>
 
@@ -107,28 +96,37 @@
     </div>
   </div>
 
-  <!-- Core scripts (firebase.js defines AppSignIn/AppSignOut/AppOnAuthChanged) -->
+  <!-- ---------------- Firebase (same model as your working auth-test) ---------------- -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <script>
+    // Your project config
+    window.firebaseConfig = {
+      apiKey: "AIzaSyBRGM431CHZ3UMUHIc4Q-S1aGDMfrbu7Gs",
+      authDomain: "ican-kit-prep.firebaseapp.com",
+      projectId: "ican-kit-prep",
+      storageBucket: "ican-kit-prep.firebasestorage.app",
+      messagingSenderId: "354385037521",
+      appId: "1:354385037521:web:f3a7265f66983942581df0",
+      measurementId: "G-LN8E2R4B7X"
+    };
+    firebase.initializeApp(window.firebaseConfig);
+  </script>
+
+  <!-- Your existing app scripts (kept) -->
   <script src="./assets/firebase.js"></script>
   <script src="./assets/app.js"></script>
 
-  <!-- Home bootstrap (simple + robust) -->
+  <!-- ---------------- Home bootstrap (waits for auth, then enables UI) ---------------- -->
   <script>
   (function(){
     const ADMIN_EMAIL = "offixcialbloger@gmail.com";
+
     const statusEl   = document.getElementById("userStatus");
     const googleBtn  = document.getElementById("btnGoogle");
     const signOutBtn = document.getElementById("signOutBtn");
     const authTiles  = Array.from(document.querySelectorAll(".requires-auth"));
     const adminTile  = document.getElementById("adminTile");
-
-    // small error log for admin page
-    const ERR_KEY = "ican:error:log";
-    function log(kind,msg,extra){try{
-      const arr = JSON.parse(localStorage.getItem(ERR_KEY)||"[]");
-      arr.unshift({t:new Date().toISOString(),kind,msg:String(msg||""),extra:extra||null});
-      if(arr.length>50) arr.length=50;
-      localStorage.setItem(ERR_KEY, JSON.stringify(arr));
-    }catch{}}
 
     function lockAuthTiles(lock){
       authTiles.forEach(t=>{
@@ -142,44 +140,42 @@
       if(lock){ adminTile.classList.add("disabled"); adminTile.href="#"; if(b) b.style.display="inline-block"; }
       else    { adminTile.classList.remove("disabled"); adminTile.href="./admin.html"; if(b) b.style.display="none"; }
     }
-    lockAuthTiles(true); lockAdmin(true);
+    function enableGoogle(){ googleBtn.setAttribute("aria-disabled","false"); }
+    function disableGoogle(){ googleBtn.setAttribute("aria-disabled","true"); }
 
-    // ✅ bind button directly to the working Firebase sign-in helpers
-    googleBtn.onclick = (e)=>{
+    lockAuthTiles(true); lockAdmin(true); disableGoogle();
+
+    // Bind the click AFTER we know Firebase is present.
+    googleBtn.addEventListener("click", function(e){
       e.preventDefault();
-      if (window.AppSignIn) {
-        window.AppSignIn().catch(err=>{ log("signin",err.message); alert("Sign-in error"); });
-      } else {
-        alert("Auth not ready — refresh");
-      }
-    };
-    signOutBtn.onclick = ()=> window.AppSignOut && window.AppSignOut().catch(err=>log("signout",err.message));
+      if (googleBtn.getAttribute("aria-disabled")==="true") return;
+      const provider = new firebase.auth.GoogleAuthProvider();
+      firebase.auth().signInWithPopup(provider).catch(console.error);
+    });
 
-    // reflect auth state
-    const auth = window.AppAuth || window.firebaseAuth;
-    const onAuthChanged = window.AppOnAuthChanged;
-    if (auth && onAuthChanged){
-      onAuthChanged(auth, (user)=>{
-        try{
-          const email = user?.email || null;
-          if (user){
-            statusEl.textContent = `Signed in as ${email}`;
-            googleBtn.style.display="none";
-            signOutBtn.style.display="inline-block";
-            lockAuthTiles(false);
-            lockAdmin(!email || email.toLowerCase() !== ADMIN_EMAIL.toLowerCase());
-          } else {
-            statusEl.textContent = "Not signed in";
-            googleBtn.style.display="inline-block";
-            signOutBtn.style.display="none";
-            lockAuthTiles(true); lockAdmin(true);
-          }
-        }catch(e){ log("auth-state", e.message); }
-      });
-    } else {
-      // If the helpers aren't defined yet, the button still works (it calls alert above)
-      log("bootstrap","Auth helpers not found at load time");
-    }
+    signOutBtn.addEventListener("click", function(e){
+      e.preventDefault();
+      firebase.auth().signOut().catch(console.error);
+    });
+
+    // Auth observer controls the whole page state
+    firebase.auth().onAuthStateChanged(function(user){
+      if (user) {
+        statusEl.textContent = "Signed in as " + (user.email || "");
+        googleBtn.style.display = "none";
+        signOutBtn.style.display = "inline-block";
+        enableGoogle();
+        lockAuthTiles(false);
+        lockAdmin(!(user.email && user.email.toLowerCase() === ADMIN_EMAIL.toLowerCase()));
+      } else {
+        statusEl.textContent = "Not signed in";
+        googleBtn.style.display = "inline-block";
+        signOutBtn.style.display = "none";
+        enableGoogle();            // allow user to click and start sign-in
+        lockAuthTiles(true);
+        lockAdmin(true);
+      }
+    });
   })();
   </script>
 </body>
