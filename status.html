@@ -5,32 +5,30 @@
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Status — ICAN Prep</title>
   <link rel="stylesheet" href="./assets/app.css"/>
+
+  <!-- Firebase compat SDKs (REQUIRED before firebase.js) -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics-compat.js"></script>
+
+  <!-- Project initializer -->
+  <script src="./assets/firebase.js?v=106"></script>
+
+  <style>
+    .wrap{max-width:900px;margin:0 auto;padding:20px}
+    .btn{display:inline-block;padding:.6rem .9rem;border-radius:.6rem;background:transparent;border:1px solid #3a4a45;color:#e7f4f0;text-decoration:none}
+  </style>
 </head>
 <body>
   <div class="wrap">
-    <header class="space-between" style="align-items:center">
-      <h1>My Status</h1>
-      <a class="btn" href="./index.html">← Home</a>
-    </header>
-
-    <section class="card" style="margin:12px 0; text-align:left">
-      <h2>Need focused practice?</h2>
-      <p class="muted small">See the questions you missed recently.</p>
-      <a class="btn primary" href="./review.html">Review mistakes</a>
-    </section>
-
-    <section class="card">
-      <h2>Your Analytics</h2>
-      <div id="summary"></div>
-    </section>
-
-    <section class="card">
-      <h2>Weak Topics</h2>
-      <div id="topics"></div>
-    </section>
+    <p><a class="btn" href="./index.html">← Home</a></p>
+    <h1>My Status</h1>
+    <!-- your existing status UI markup below -->
+    <div id="statusRoot"></div>
   </div>
 
-  <script src="./assets/firebase.js"></script>
-  <script src="./assets/status.js"></script>
+  <!-- keep your existing status logic file -->
+  <script src="./assets/status.js?v=106"></script>
 </body>
 </html>
