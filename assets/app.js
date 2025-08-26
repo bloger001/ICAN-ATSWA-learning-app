@@ -1,68 +1,50 @@
-// app.js — auth wiring + helpers used across pages
-let currentUser = null;
+// assets/app.js
+firebase.auth().onAuthStateChanged(user => {
+  const statusBox = document.querySelector('.card');
+  const signInBtn = document.getElementById('googleBtn');
+  const signOutBtn = document.getElementById('signOutBtn');
+  const quizTiles = document.querySelectorAll('.tile');
+  
+  if (user) {
+    // Show signed in state
+    document.getElementById('userStatus').innerText = `Signed in as ${user.email}`;
+    signInBtn.style.display = 'none';
+    signOutBtn.style.display = 'inline-block';
 
-function setText(el, text) { if (el) el.textContent = text; }
-function show(el, vis) { if (el) el.style.display = vis ? "" : "none"; }
-
-// Require auth on “locked” links/buttons
-window.requireAuth = function () {
-  if (!currentUser) {
-    window.location.href = "./index.html#signin-required";
-    return false;
-  }
-  return true;
-};
-
-// Get query params
-window.qp = new Proxy(new URLSearchParams(location.search), {
-  get: (sp, key) => sp.get(key)
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  const statusEl = document.getElementById("userStatus");
-  const signInBtn = document.getElementById("googleSignIn");
-  const signOutBtn = document.getElementById("googleSignOut");
-
-  firebaseReady.then(() => {
-    // Auth state
-    firebaseAuth.onAuthStateChanged((user) => {
-      currentUser = user || null;
-
-      if (currentUser) {
-        setText(statusEl, `Signed in as ${currentUser.email}`);
-        show(signInBtn, false);
-        show(signOutBtn, true);
-        localStorage.setItem("ican_user", JSON.stringify({
-          uid: currentUser.uid, email: currentUser.email, name: currentUser.displayName || ""
-        }));
-      } else {
-        setText(statusEl, "Not signed in");
-        show(signInBtn, true);
-        show(signOutBtn, false);
-        localStorage.removeItem("ican_user");
-      }
-
-      // Toggle auth-required tiles
-      document.querySelectorAll(".require-auth").forEach(a => {
-        a.classList.toggle("disabled", !currentUser);
-      });
+    // Unlock quizzes
+    quizTiles.forEach(tile => {
+      tile.classList.remove('disabled');
+      tile.querySelector('.locked')?.remove();
     });
 
-    // Sign in
-    if (signInBtn) {
-      signInBtn.addEventListener("click", () => {
-        const provider = new firebase.auth.GoogleAuthProvider();
-        firebaseAuth.signInWithPopup(provider).catch(err => {
-          alert("Sign-in failed: " + err.message);
-        });
-      });
-    }
+    // Fix welcome box
+    statusBox.innerHTML = `
+      <h2>Welcome</h2>
+      <p>You are signed in, ${user.email}. Quizzes, leaderboard, and resources are unlocked ✅.</p>
+    `;
+  } else {
+    // Show logged out state
+    document.getElementById('userStatus').innerText = 'Not signed in';
+    signInBtn.style.display = 'inline-block';
+    signOutBtn.style.display = 'none';
 
-    // Sign out
-    if (signOutBtn) {
-      signOutBtn.addEventListener("click", () => {
-        firebaseAuth.signOut().catch(err => alert("Sign-out failed: " + err.message));
-      });
-    }
-  });
+    // Lock quizzes
+    quizTiles.forEach(tile => {
+      if (!tile.classList.contains('disabled')) {
+        tile.classList.add('disabled');
+        if (!tile.querySelector('.locked')) {
+          const lock = document.createElement('div');
+          lock.className = 'locked';
+          lock.innerText = '🔒 Sign in required';
+          tile.appendChild(lock);
+        }
+      }
+    });
+
+    // Reset welcome box
+    statusBox.innerHTML = `
+      <h2>Welcome</h2>
+      <p>Please sign in to unlock quizzes, leaderboard and your personalized status.</p>
+    `;
+  }
 });
