@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Leaderboard — ICAN ATSWA</title>
-  <link rel="stylesheet" href="./assets/app.css?v=2025-08-26a"/>
+  <link rel="stylesheet" href="./assets/app.css"/>
 </head>
 <body>
   <div class="wrap">
@@ -14,14 +14,16 @@
     </header>
 
     <section class="card">
-      <div class="muted small">Showing recent top scores (cloud sync).</div>
-      <div id="boardMsg" class="muted" style="margin:8px 0"></div>
+      <div id="boardMsg" class="muted small">Showing recent top scores (cloud sync).</div>
       <div id="board"></div>
     </section>
   </div>
 
-  <script src="./assets/firebase.js?v=2025-08-26a"></script>
-  <script src="./assets/app.js?v=2025-08-26a"></script>
-  <script src="./assets/leaderboard.js?v=2025-08-26a"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+
+  <script src="./assets/firebase.js"></script>
+  <script src="./assets/leaderboard.js"></script>
 </body>
 </html>
