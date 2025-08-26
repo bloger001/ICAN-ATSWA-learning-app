@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Quiz</title>
-  <link rel="stylesheet" href="./assets/app.css?v=2025-08-26b"/>
+  <link rel="stylesheet" href="./assets/app.css"/>
 </head>
 <body>
   <div class="wrap">
@@ -13,109 +13,23 @@
       <a class="btn" href="./index.html">← Home</a>
     </header>
 
-    <section class="card" id="panel">
-      <div id="hdr" class="muted small">Loading...</div>
-      <div id="msg" style="margin-top:8px">Preparing questions...</div>
-
-      <div id="qArea" style="display:none; margin-top:16px">
-        <div id="qMeta" class="muted small"></div>
-        <h2 id="qText" style="margin-top:10px"></h2>
-        <div id="choices" style="margin-top:10px"></div>
-        <div class="space-between" style="margin-top:14px">
-          <a class="btn" href="./index.html">← Home</a>
-          <div>
-            <button class="btn" id="nextBtn">Next</button>
-            <button class="btn primary" id="submitBtn">Submit</button>
-          </div>
-        </div>
+    <div id="quizCard" class="card">
+      <div id="quizMeta" class="muted small"></div>
+      <div id="quizBody">Loading…</div>
+      <div style="margin-top:12px">
+        <button id="btnPrev" class="btn">← Back</button>
+        <button id="btnNext" class="btn">Next</button>
+        <button id="btnSubmit" class="btn primary">Submit</button>
       </div>
-    </section>
+    </div>
   </div>
 
-  <script src="./assets/firebase.js?v=2025-08-26b"></script>
-  <script src="./assets/app.js?v=2025-08-26b"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
 
-  <script>
-  (async function () {
-    const panel = document.getElementById('panel');
-    const hdr   = document.getElementById('hdr');
-    const msg   = document.getElementById('msg');
-
-    function fail(text) {
-      msg.textContent = text;
-      panel.classList.add('danger');
-    }
-
-    try {
-      // 1) Wait for Firebase to be ready (from assets/firebase.js)
-      if (window.waitForAuthReady) await window.waitForAuthReady();
-
-      // 2) Require login
-      const user = (window.firebaseAuth && window.firebaseAuth.currentUser) || null;
-      if (!user) {
-        hdr.textContent = 'Sign-in required';
-        fail('Please sign in on the home page to unlock quizzes.');
-        return;
-      }
-
-      // 3) Resolve dataset file
-      const params   = new URLSearchParams(location.search);
-      const subject  = params.get('subject') || '';
-      const dataset  = params.get('dataset');  // preferred
-      const map = {
-        'Basic Accounting'     : 'atswa1_basic_accounting',
-        'Business Law'         : 'atswa1_business_law',
-        'Economics'            : 'atswa1_economics',
-        'Communication Skills' : 'atswa1_comm_skills'
-      };
-      const fileKey = dataset || map[subject];
-      if (!fileKey) {
-        fail('Missing dataset/subject. Open this quiz from the dashboard tiles.');
-        return;
-      }
-      const dataUrl = `./data/${fileKey}.json?v=2025-08-26b`;
-
-      // 4) Fetch questions
-      hdr.textContent = `Level: ATSWA1 — Subject: ${subject || '—'} — Mode: practice`;
-      msg.textContent = 'Loading questions…';
-
-      const res = await fetch(dataUrl, { cache: 'no-store' });
-      if (!res.ok) throw new Error(`Fetch ${res.status}: ${dataUrl}`);
-      const payload = await res.json();
-
-      if (!payload || !Array.isArray(payload.questions) || payload.questions.length === 0) {
-        throw new Error('No questions in dataset');
-      }
-
-      // 5) Hand off to existing quiz engine if present
-      //    Your original quiz.js reads from window.__QUIZ_DATA__. Keep that contract.
-      window.__QUIZ_DATA__ = {
-        subject: subject || '',
-        dataset: fileKey,
-        questions: payload.questions
-      };
-
-      // Minimal UI kick: quiz.js should take over from here
-      msg.textContent = 'Starting…';
-
-      // Lazy-load your existing quiz engine
-      const s = document.createElement('script');
-      s.src = './assets/quiz.js?v=2025-08-26b';
-      s.onload = () => {
-        // If your engine exposes a start() we call it; otherwise it will auto-start.
-        if (window.startQuiz) window.startQuiz();
-      };
-      s.onerror = () => fail('Could not load quiz engine (assets/quiz.js).');
-      document.body.appendChild(s);
-
-      // Show area for engines that expect #qArea/#choices etc.
-      document.getElementById('qArea').style.display = 'block';
-
-    } catch (e) {
-      console.error(e);
-      fail(`Load error: ${e.message}`);
-    }
-  })();
-  </script>
+  <script src="./assets/firebase.js"></script>
+  <script src="./assets/app.js"></script>
+  <script src="./assets/quiz.js"></script>
 </body>
 </html>
