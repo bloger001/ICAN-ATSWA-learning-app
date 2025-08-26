@@ -1,52 +1,45 @@
-const diag = document.getElementById("diag");
-const localLog = document.getElementById("localLog");
-const files = [
-  "./assets/app.js",
-  "./assets/firebase.js",
-  "./assets/app.css",
-  "./data/atswa1_basic_accounting.json",
-  "./data/atswa1_business_law.json",
-  "./data/atswa1_economics.json",
-  "./data/atswa1_comm_skills.json",
-  "./leaderboard.html",
-  "./quiz.html",
-  "./status.html",
-  "./review.html"
-];
+<script>
+// --- admin.js (drop-in) ---
+(() => {
+  const ADMIN_EMAIL = "offixcialbloger@gmail.com";
+  const healthEl = document.querySelector("#healthDump");
+  const errorsEl = document.querySelector("#errorDump");
+  const gateEl = document.querySelector("#gateMsg");
 
-function log(s){ diag.textContent += s + "\n"; }
-
-document.getElementById("checkHealth").addEventListener("click", async ()=>{
-  diag.textContent = "";
-  log("✅ firebaseConfig present");
-
-  for (const f of files){
-    try{
-      const r = await fetch(f, {cache:"no-store"});
-      log(`${r.ok ? "✅" : "❌"} ${r.status} ${f}`);
-    }catch(e){
-      log(`❌ ERR ${f} ${e.message}`);
-    }
+  function readLS(key, fallback="{}") {
+    try { return JSON.parse(localStorage.getItem(key) || fallback); }
+    catch { return JSON.parse(fallback); }
   }
 
-  try{
-    const snap = await firebaseDB.collection("leaderboard").limit(1).get();
-    log(snap ? "✅ Firestore read ok" : "❌ Firestore read failed");
-  }catch(e){
-    log(`❌ Firestore read failed: ${e.code || e.message}`);
+  function renderDiagnostics() {
+    const health = readLS("ican:health:home", "{}");
+    const errs = readLS("ican:error:log", "[]");
+
+    if (healthEl) healthEl.textContent = JSON.stringify(health, null, 2);
+    if (errorsEl) errorsEl.textContent = JSON.stringify(errs, null, 2);
   }
 
-  log("✅ Diagnostics complete");
-});
+  function lock(reason) {
+    if (gateEl) gateEl.textContent = reason || "Not authorized";
+    document.body.classList.add("locked");
+  }
 
-document.getElementById("clearLog").addEventListener("click", ()=>{
-  localStorage.removeItem("ican_error_log");
-  localLog.textContent = "(empty)";
-});
+  // Require auth + admin email
+  const onAuthChanged = window.AppOnAuthChanged || function(){};
+  const auth = window.AppAuth || null;
+  if (!auth || !onAuthChanged) {
+    lock("Auth not initialized.");
+    renderDiagnostics();
+    return;
+  }
 
-// Show saved local errors (if any)
-localLog.textContent = localStorage.getItem("ican_error_log") || "(empty)";
-window.addEventListener("error", e=>{
-  const prev = localStorage.getItem("ican_error_log") || "";
-  localStorage.setItem("ican_error_log", (prev + "\n" + e.message).trim());
-});
+  onAuthChanged((user) => {
+    if (!user) { lock("Please sign in."); return; }
+    const ok = (user.email || "").toLowerCase() === ADMIN_EMAIL.toLowerCase();
+    if (!ok) { lock("Admin only."); return; }
+    // Authorized — show tools
+    document.body.classList.remove("locked");
+    renderDiagnostics();
+  });
+})();
+</script>
