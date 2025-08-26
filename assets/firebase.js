@@ -1,46 +1,33 @@
-<script>
-// Tiny Firebase bootstrap that works on GitHub Pages (no bundler).
-// It loads the v10 modular SDKs and exposes a simple API on window.firebaseApi
-
+// firebase.js — one-time bootstrap shared by all pages
 (function () {
-  const cfg = window.firebaseConfig; // set in index.html before this file loads
-  if (!cfg) {
-    console.error("firebaseConfig missing on window.");
+  // Your project config (from your message)
+  window.firebaseConfig = {
+    apiKey: "AIzaSyBRGM431CHZ3UMUHIc4Q-S1aGDMfrbu7Gs",
+    authDomain: "ican-kit-prep.firebaseapp.com",
+    projectId: "ican-kit-prep",
+    storageBucket: "ican-kit-prep.firebasestorage.app",
+    messagingSenderId: "354385037521",
+    appId: "1:354385037521:web:f3a7265f66983942581df0",
+    measurementId: "G-LN8E2R4B7X"
+  };
+
+  if (!firebase || !window.firebaseConfig) {
+    console.error("Firebase SDK or config missing");
     return;
   }
 
-  // Single ready promise so other scripts can await it
-  const ready = (async () => {
-    const [{ initializeApp }, { getAuth, GoogleAuthProvider, signInWithPopup, onAuthStateChanged, signOut },
-           { getFirestore, collection, addDoc, getDocs, query, orderBy, limit }] = await Promise.all([
-      import('https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js'),
-      import('https://www.gstatic.com/firebasejs/10.12.4/firebase-auth.js'),
-      import('https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore.js')
-    ]);
+  const app = firebase.apps.length
+    ? firebase.app()
+    : firebase.initializeApp(window.firebaseConfig);
 
-    const app = initializeApp(cfg);
-    const auth = getAuth(app);
-    const provider = new GoogleAuthProvider();
-    const db = getFirestore(app);
+  const auth = firebase.auth();
+  const db = firebase.firestore();
 
-    async function signInWithGoogle() {
-      return signInWithPopup(auth, provider);
-    }
-    async function signOutUser() {
-      return signOut(auth);
-    }
+  // Expose globals
+  window.firebaseApp = app;
+  window.firebaseAuth = auth;
+  window.firebaseDB = db;
 
-    // expose minimal API
-    window.firebaseApi = {
-      app, auth, db,
-      onAuthStateChanged,
-      signInWithGoogle,
-      signOutUser,
-      // firestore helpers used by leaderboard/status
-      collection, addDoc, getDocs, query, orderBy, limit
-    };
-  })();
-
-  window.firebaseReady = ready;
+  // Simple ready promise used by other scripts
+  window.firebaseReady = Promise.resolve(true);
 })();
-</script>
