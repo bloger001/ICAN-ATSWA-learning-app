@@ -1,158 +1,126 @@
-(function(){
+// assets/app.js — index page auth wiring + UI state (safe, complete)
+(function () {
+  if (!window.firebase || !firebase.auth) {
+    console.warn("[app.js] Firebase Auth not available; UI will stay in signed-out state.");
+    return;
+  }
+
   const ADMIN_EMAIL = "offixcialbloger@gmail.com";
-  const HEALTH_KEY  = "ican:health:home";
-  const ERR_KEY     = "ican:error:log";
 
-  const authLine = document.getElementById("authLine");
-  const roleLine = document.getElementById("roleLine");
-  const errBox   = document.getElementById("errBox");
-  const healthDump = document.getElementById("healthDump");
-  const liveBox  = document.getElementById("live");
+  const $  = (sel) => document.querySelector(sel);
+  const $$ = (sel) => Array.from(document.querySelectorAll(sel));
 
-  const btnSignOut   = document.getElementById("btnSignOut");
-  const btnHealth    = document.getElementById("btnHealth");
-  const btnClear     = document.getElementById("btnClear");
-  const btnHardReload= document.getElementById("btnHardReload");
-  const btnAuthPing  = document.getElementById("btnAuthPing");
-  const btnDbRead    = document.getElementById("btnDbRead");
-  const btnDbWrite   = document.getElementById("btnDbWrite");
+  // Elements
+  const statusPill  = $("#userStatus");
+  const signInBtn   = $("#btnGoogle");
+  const signOutBtn  = $("#signOutBtn");
+  const statusCard  = document.querySelector(".card");          // welcome card (first)
+  const authTiles   = $$(".requires-auth");                     // tiles that need auth
+  const adminTile   = $("#adminTile");                          // Admin dashboard tile
 
-  function logLive(msg){ liveBox.innerText = `[${new Date().toLocaleTimeString()}] ${msg}\n` + liveBox.innerText; }
+  // helpers
+  const setText = (el, text) => { if (el) el.textContent = text; };
+  const show    = (el, disp="inline-block") => { if (el) el.style.display = disp; };
+  const hide    = (el) => { if (el) el.style.display = "none"; };
+  const setAria = (el, v) => { if (el) el.setAttribute("aria-disabled", String(v)); };
 
-  // --- helpers ---
-  function readErrors(){
-    try{ return JSON.parse(localStorage.getItem(ERR_KEY) || "[]"); }catch{ return []; }
-  }
-  function renderErrors(){
-    const rows = readErrors();
-    if (!rows.length){ errBox.innerText = "(empty)"; return; }
-    errBox.innerHTML = rows.map(r=>`${r.t} • ${r.kind} • ${r.msg}`).join("\n");
-  }
-  function renderHealth(){
-    try{
-      const obj = JSON.parse(localStorage.getItem(HEALTH_KEY) || "{}");
-      if (!obj || !Object.keys(obj).length){ healthDump.innerText="(no snapshot yet)"; return; }
-      healthDump.innerText = JSON.stringify(obj, null, 2);
-    }catch{
-      healthDump.innerText = "(could not parse)";
-    }
-  }
-  function hardReload(){
-    try{
-      caches?.keys?.().then(keys=>keys.forEach(k=>caches.delete(k)));
-    }catch{}
-    sessionStorage.clear(); localStorage.removeItem(HEALTH_KEY);
-    location.reload(true);
-  }
-  async function runHealthChecks(){
-    const targets = [
-      "./assets/app.js","./assets/firebase.js","./assets/app.css",
-      "./quiz.html","./leaderboard.html","./status.html","./review.html","./admin.html",
-      "./data/atswa1_basic_accounting.json",
-      "./data/atswa1_business_law.json",
-      "./data/atswa1_economics.json",
-      "./data/atswa1_comm_skills.json"
-    ];
-    const out = {};
-    await Promise.all(targets.map(async p=>{
-      try{ const r = await fetch(p,{cache:"no-store"}); out[p]=r.ok; }
-      catch{ out[p]=false; }
-    }));
-    // persist so Home can read it too if desired
-    const stamp = { ts:new Date().toISOString(), from:"admin", files: out };
-    try{
-      const prev = JSON.parse(localStorage.getItem(HEALTH_KEY) || "{}");
-      localStorage.setItem(HEALTH_KEY, JSON.stringify(Object.assign({},prev, stamp)));
-    }catch{}
-    renderHealth();
-    logLive("Health checks complete");
-  }
-
-  // --- auth boot ---
-  async function bootAuth(){
-    if (window.__fbReady) { await window.__fbReady; }
-    const auth = window.AppAuth || window.firebaseAuth;
-    const db   = window.AppDB   || window.firebaseDB;
-
-    if (!auth){
-      authLine.innerText = "Auth not available"; authLine.className="pill bad";
-      roleLine.innerText = "guest";
-      return {auth:null, db};
-    }
-
-    btnSignOut.onclick = ()=> auth.signOut().catch(e=>alert(e.message));
-
-    auth.onAuthStateChanged(u=>{
-      if (u){
-        authLine.innerText = `Signed in as ${u.email||"(no email)"}`;
-        authLine.className = "pill";
-        btnSignOut.style.display = "inline-block";
-        const isAdmin = (u.email||"").toLowerCase() === ADMIN_EMAIL.toLowerCase();
-        roleLine.innerText = isAdmin ? "admin ✅" : "user";
-        if (!isAdmin){
-          // soft lock: show but block dangerous buttons
-          btnDbWrite.disabled = true;
+  function lockAuthRequiredTiles(lock) {
+    authTiles.forEach((tile) => {
+      if (lock) {
+        tile.classList.add("disabled");
+        let badge = tile.querySelector(".locked");
+        if (!badge) {
+          badge = document.createElement("div");
+          badge.className = "locked";
+          badge.textContent = "🔒 Sign in";
+          tile.appendChild(badge);
         }
-      }else{
-        authLine.innerText = "Not signed in";
-        authLine.className = "pill";
-        roleLine.innerText = "guest";
-        btnSignOut.style.display = "none";
-        btnDbWrite.disabled = true;
+        badge.style.display = "inline-block";
+      } else {
+        tile.classList.remove("disabled");
+        const badge = tile.querySelector(".locked");
+        if (badge) badge.style.display = "none";
       }
     });
-
-    return {auth, db};
   }
 
-  // --- DB diagnostics ---
-  async function testRead(db){
-    if (!db){ alert("Firestore not ready"); return; }
-    try{
-      const snap = await db.collection("leaderboard").orderBy("ts","desc").limit(1).get();
-      if (snap.empty){ alert("Read OK (no docs found)"); }
-      else { alert("Read OK (1+ doc)"); }
-      logLive("DB read OK");
-    }catch(e){ alert("Read failed: "+e.message); logLive("DB read failed: "+e.message); }
-  }
-  async function testWrite(auth, db){
-    if (!auth || !db){ alert("Need auth + Firestore"); return; }
-    const u = auth.currentUser;
-    if (!u){ alert("Sign in first"); return; }
-    if ((u.email||"").toLowerCase() !== ADMIN_EMAIL.toLowerCase()){
-      alert("Only admin can write test docs"); return;
+  function lockAdminTile(lock) {
+    if (!adminTile) return;
+    const badge = adminTile.querySelector(".locked") || (function(){
+      const b = document.createElement("div");
+      b.className = "locked";
+      b.textContent = "🔒 Admin only";
+      adminTile.appendChild(b);
+      return b;
+    })();
+
+    if (lock) {
+      adminTile.classList.add("disabled");
+      adminTile.setAttribute("href", "#");
+      badge.style.display = "inline-block";
+    } else {
+      adminTile.classList.remove("disabled");
+      adminTile.setAttribute("href", "./admin.html");
+      badge.style.display = "none";
     }
-    try{
-      await db.collection("diag").add({
-        t: new Date(),
-        who: { uid: u.uid, email: u.email||"" },
-        note: "admin-panel write test"
-      });
-      alert("Write OK");
-      logLive("DB write OK");
-    }catch(e){ alert("Write failed: "+e.message); logLive("DB write failed: "+e.message); }
   }
 
-  // --- wire buttons + initial render ---
-  (async ()=>{
-    const {auth, db} = await bootAuth();
-
-    btnHealth.onclick = runHealthChecks;
-    btnClear.onclick  = ()=>{ localStorage.removeItem(ERR_KEY); renderErrors(); };
-    btnHardReload.onclick = hardReload;
-    btnAuthPing.onclick = ()=> alert(auth ? (auth.currentUser ? `Signed in: ${auth.currentUser.email}` : "Signed out") : "Auth not available");
-    btnDbRead.onclick = ()=> testRead(db);
-    btnDbWrite.onclick= ()=> testWrite(auth, db);
-
-    renderHealth();
-    renderErrors();
-
-    // auto-refresh snapshot area if another tab updates it
-    window.addEventListener("storage", e=>{
-      if (e.key === HEALTH_KEY) renderHealth();
-      if (e.key === ERR_KEY) renderErrors();
+  // attach button handlers (this was missing before)
+  if (signInBtn) {
+    signInBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      if (signInBtn.getAttribute("aria-disabled") === "true") return;
+      const provider = new firebase.auth.GoogleAuthProvider();
+      firebase.auth().signInWithPopup(provider).catch((err) => {
+        console.error("[app.js] signInWithPopup:", err);
+        alert("Google sign-in failed: " + (err?.message || err));
+      });
     });
+  }
+  if (signOutBtn) {
+    signOutBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      firebase.auth().signOut().catch((err) => {
+        console.error("[app.js] signOut:", err);
+        alert("Sign-out failed: " + (err?.message || err));
+      });
+    });
+  }
 
-    logLive("Admin ready");
-  })();
+  // reflect auth state into the index UI
+  firebase.auth().onAuthStateChanged((user) => {
+    if (user) {
+      setText(statusPill, `Signed in as ${user.email || ""}`);
+      hide(signInBtn); show(signOutBtn);
+      setAria(signInBtn, false);
+
+      lockAuthRequiredTiles(false);
+      lockAdminTile(!(user.email && user.email.toLowerCase() === ADMIN_EMAIL.toLowerCase()) ? true : false);
+
+      if (statusCard) {
+        statusCard.innerHTML = `
+          <p class="muted">Built by fellow accounting student <strong>Silva Brutus (NSUK)</strong>.
+            Contact: <a href="mailto:offixcialbloger@gmail.com">offixcialbloger@gmail.com</a></p>
+          <h2>Welcome</h2>
+          <p>You are signed in, ${user.email || "user"}. Quizzes, leaderboard, and resources are unlocked ✅.</p>
+        `;
+      }
+    } else {
+      setText(statusPill, "Not signed in");
+      show(signInBtn); hide(signOutBtn);
+      setAria(signInBtn, false);        // ensure button is clickable
+
+      lockAuthRequiredTiles(true);
+      lockAdminTile(true);
+
+      if (statusCard) {
+        statusCard.innerHTML = `
+          <p class="muted">Built by fellow accounting student <strong>Silva Brutus (NSUK)</strong>.
+            Contact: <a href="mailto:offixcialbloger@gmail.com">offixcialbloger@gmail.com</a></p>
+          <h2>Welcome</h2>
+          <p>Please sign in to unlock quizzes, leaderboard and your personalized status.</p>
+        `;
+      }
+    }
+  });
 })();
