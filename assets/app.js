@@ -1,7 +1,5 @@
 // assets/app.js — resilient UI state wiring for auth changes
-
 (function () {
-  // Guard in case Firebase didn't load for some reason
   if (!window.firebase || !firebase.auth) {
     console.warn("[app.js] Firebase Auth not available; UI will stay in signed-out state.");
     return;
@@ -10,12 +8,11 @@
   const $  = (sel) => document.querySelector(sel);
   const $$ = (sel) => Array.from(document.querySelectorAll(sel));
 
-  // Elements (may be null; we guard every use)
-  const statusPill  = $("#userStatus");          // top-right pill
-  const signInBtn   = $("#btnGoogle");           // correct id (was googleBtn before)
+  const statusPill  = $("#userStatus");
+  const signInBtn   = $("#btnGoogle");       // correct id in your HTML
   const signOutBtn  = $("#signOutBtn");
-  const statusCard  = document.querySelector(".card"); // first welcome card
-  const authTiles   = $$(".requires-auth");      // only tiles that need auth
+  const statusCard  = document.querySelector(".card"); // welcome card
+  const authTiles   = $$(".requires-auth");
 
   function setText(el, text) { if (el) el.textContent = text; }
   function show(el)         { if (el) el.style.display = "inline-block"; }
@@ -26,30 +23,22 @@
     authTiles.forEach((tile) => {
       if (lock) {
         tile.classList.add("disabled");
-        let lockBadge = tile.querySelector(".locked");
-        if (!lockBadge) {
-          lockBadge = document.createElement("div");
-          lockBadge.className = "locked";
-          lockBadge.textContent = "🔒 Sign in";
-          tile.appendChild(lockBadge);
-        }
-        lockBadge.style.display = "inline-block";
+        let badge = tile.querySelector(".locked");
+        if (!badge) { badge = document.createElement("div"); badge.className = "locked"; badge.textContent = "🔒 Sign in"; tile.appendChild(badge); }
+        badge.style.display = "inline-block";
       } else {
         tile.classList.remove("disabled");
-        const lockBadge = tile.querySelector(".locked");
-        if (lockBadge) lockBadge.style.display = "none";
+        const badge = tile.querySelector(".locked");
+        if (badge) badge.style.display = "none";
       }
     });
   }
 
-  // Reflect auth state into UI
   firebase.auth().onAuthStateChanged((user) => {
     if (user) {
       setText(statusPill, `Signed in as ${user.email || ""}`);
-      hide(signInBtn);
-      show(signOutBtn);
+      hide(signInBtn); show(signOutBtn);
       lockAuthRequiredTiles(false);
-
       if (statusCard) {
         statusCard.innerHTML = `
           <p class="muted">Built by fellow accounting student <strong>Silva Brutus (NSUK)</strong>.
@@ -60,10 +49,8 @@
       }
     } else {
       setText(statusPill, "Not signed in");
-      show(signInBtn);
-      hide(signOutBtn);
+      show(signInBtn); hide(signOutBtn);
       lockAuthRequiredTiles(true);
-
       if (statusCard) {
         statusCard.innerHTML = `
           <p class="muted">Built by fellow accounting student <strong>Silva Brutus (NSUK)</strong>.
@@ -73,8 +60,6 @@
         `;
       }
     }
-
-    // Make sure the sign-in button isn't stuck "disabled" visually
     setAriaDisabled(signInBtn, false);
   });
 })();
