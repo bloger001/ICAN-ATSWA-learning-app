@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>ICAN ATSWA • Admin Lab</title>
 
-  <!-- Firebase COMPAT SDKs (ORDER MATTERS) -->
+  <!-- Firebase COMPAT SDKs -->
   <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics-compat.js"></script>
 
   <!-- Project initializer -->
-  <script src="./assets/firebase.js?v=107"></script>
+  <script src="./assets/firebase.js?v=106"></script>
 
   <link rel="stylesheet" href="./assets/admin-lab.css"/>
 </head>
@@ -29,59 +29,27 @@
 
   <!-- Admin gate -->
   <script>
-    (function(){
-      const ADMIN = "offixcialbloger@gmail.com".toLowerCase();
-      firebase.auth().onAuthStateChanged(function(user){
-        const ok = user && user.email && user.email.toLowerCase() === ADMIN;
-        if (!ok) {
-          document.documentElement.innerHTML =
-            '<!doctype html><title>403 — Admin only</title>' +
-            '<style>body{font:16px system-ui;background:#0b0f0e;color:#e7f4f0;display:grid;place-items:center;height:100vh;margin:0}a{color:#7fc8ff}</style>' +
-            '<body><div><h1>403 — Admin only</h1><p>Please sign in with the admin account.</p><p><a href="./index.html">← Back to home</a></p></div></body>';
-        }
-      });
-    })();
+  (function(){
+    const ADMIN = "offixcialbloger@gmail.com".toLowerCase();
+    firebase.auth().onAuthStateChanged(function(user){
+      const ok = user && user.email && user.email.toLowerCase()===ADMIN;
+      if(!ok){
+        document.documentElement.innerHTML='<!doctype html><title>403 — Admin only</title><style>body{font:16px system-ui;background:#0b0f0e;color:#e7f4f0;display:grid;place-items:center;height:100vh;margin:0}a{color:#7fc8ff}</style><body><div><h1>403 — Admin only</h1><p>Please sign in with the admin account.</p><p><a href="./index.html">← Back to home</a></p></div></body>';
+      }
+    });
+  })();
   </script>
 
-  <!-- (rest of your admin UI unchanged) -->
+  <!-- Your existing admin cards/buttons go here unchanged -->
   <section id="overall" class="overall good">
-    <span class="dot"></span>
-    <div>
-      <h2 id="overallTitle">All Good</h2>
-      <p id="overallSub" class="muted">No blocking issues detected.</p>
-    </div>
+    <span class="dot"></span><div><h2 id="overallTitle">All Good</h2><p id="overallSub" class="muted">No blocking issues detected.</p></div>
   </section>
 
-  <section class="card">
-    <h3>Controls</h3>
-    <div class="grid">
-      <button id="btnFullSuite" class="btn primary">Run full test suite</button>
-      <button id="btnClearLocalErr" class="btn">Clear local error log</button>
-      <button id="btnHardRefresh" class="btn warn">Hard refresh (clear caches)</button>
-      <button id="btnExportSnapshot" class="btn">Export full snapshot</button>
-    </div>
-  </section>
+  <!-- Controls/Auth/Firestore/Leaderboard/Bank/Status/Hub/Env/Checks -->
+  <!-- (same markup you already have) -->
 
-  <section class="card">
-    <div class="card-head"><h3>Auth / Google</h3></div>
-    <div class="grid">
-      <button id="btnAuthPing" class="btn">Auth ping</button>
-      <button id="btnGoogleSignIn" class="btn">Continue with Google (popup)</button>
-      <button id="btnGoogleRedirect" class="btn">Continue with Google (redirect)</button>
-      <button id="btnSignOut" class="btn">Sign out</button>
-    </div>
-    <div id="authResult" class="mono tiny muted"></div>
-  </section>
+</main>
 
-  <section class="card">
-    <div class="card-head"><h3>Firestore</h3></div>
-    <div class="grid">
-      <button id="btnFSRead" class="btn">Test Firestore read</button>
-      <button id="btnFSWrite" class="btn">Test Firestore write (diagnostics/health_probe)</button>
-      <button id="btnFSRules" class="btn">Rules sanity (admin-only write)</button>
-    </div>
-    <div id="fsResult" class="mono tiny muted"></div>
-  </section>
-
-  <section class="card">
-    <div class="card-head"><h3>
+<script src="./assets/admin-lab.js?v=106" defer></script>
+</body>
+</html>
