@@ -5,31 +5,192 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Quiz</title>
   <link rel="stylesheet" href="./assets/app.css"/>
+
+  <style>
+    :root { --card:#141a19; --line:#26302d; --ink:#e7f4f0; --sub:#9db5ae; --chip:#23302c; }
+    body{color:var(--ink)}
+    .wrap{max-width:980px;margin:0 auto;padding:20px}
+    header.space-between{display:flex;justify-content:space-between;align-items:center;gap:12px}
+    .btn{display:inline-block;padding:.6rem .9rem;border-radius:.6rem;background:#24312d;color:var(--ink);text-decoration:none}
+    .btn.primary{background:#2e7cf0;color:#fff;font-weight:600}
+    .btn.muted{background:#1b2422;color:#cfe8df}
+    .card{background:#121917;border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:14px 0}
+    .muted{color:var(--sub)}
+    .question{font-size:1.05rem;margin:8px 0 10px}
+    .option{display:block;margin:8px 0;padding:8px 10px;border:1px solid #2a3632;border-radius:10px;cursor:pointer}
+    .option input{margin-right:10px}
+    .stack{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+  </style>
 </head>
 <body>
   <div class="wrap">
-    <header class="space-between" style="align-items:center">
+    <header class="space-between">
       <h1>Quiz</h1>
-      <a class="btn" href="./index.html">← Home</a>
+      <a class="btn muted" href="./index.html">← Home</a>
     </header>
 
-    <div id="quizCard" class="card">
-      <div id="quizMeta" class="muted small"></div>
-      <div id="quizBody">Loading…</div>
-      <div style="margin-top:12px">
-        <button id="btnPrev" class="btn">← Back</button>
-        <button id="btnNext" class="btn">Next</button>
-        <button id="btnSubmit" class="btn primary">Submit</button>
+    <section class="card" id="quizCard">
+      <div id="quizMsg" class="muted">Loading…</div>
+
+      <div id="quizBody" style="display:none">
+        <div id="meta" class="muted" style="margin-bottom:6px"></div>
+        <div id="qnum" class="muted" style="margin-bottom:8px"></div>
+        <div id="qstem" class="question"></div>
+        <div id="opts"></div>
+
+        <div class="stack" style="margin-top:14px">
+          <button id="backBtn"   class="btn muted">← Back</button>
+          <button id="nextBtn"   class="btn muted">Next →</button>
+          <button id="submitBtn" class="btn primary">Submit</button>
+        </div>
       </div>
-    </div>
+    </section>
   </div>
 
-  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
-
+  <!-- Core scripts (as in index.html) -->
   <script src="./assets/firebase.js"></script>
   <script src="./assets/app.js"></script>
-  <script src="./assets/quiz.js"></script>
+
+  <script>
+  (function(){
+    const log = (...a)=>console.log("%c[QUIZ]", "color:#6cf", ...a);
+    const err = (...a)=>console.error("[QUIZ]", ...a);
+
+    // -------- Read params --------
+    const params = new URLSearchParams(location.search);
+    const level   = (params.get("level")   || "").toLowerCase();       // e.g. atswa1
+    const subject = (params.get("subject") || "").toLowerCase();       // e.g. basic_accounting
+    const dataUrl = `./data/${level}_${subject}.json`;
+
+    const msgEl   = document.getElementById("quizMsg");
+    const cardEl  = document.getElementById("quizCard");
+    const bodyEl  = document.getElementById("quizBody");
+    const metaEl  = document.getElementById("meta");
+    const qnumEl  = document.getElementById("qnum");
+    const stemEl  = document.getElementById("qstem");
+    const optsEl  = document.getElementById("opts");
+    const backBtn = document.getElementById("backBtn");
+    const nextBtn = document.getElementById("nextBtn");
+    const submitBtn = document.getElementById("submitBtn");
+
+    // -------- Auth gate (if available) --------
+    // If auth helpers exist, require sign-in; if not, still allow quiz to load (no hard block).
+    function waitAuthIfAvailable(){
+      return new Promise((resolve)=>{
+        const onAuthChanged = window.AppOnAuthChanged;
+        const auth = window.AppAuth || window.firebaseAuth;
+        if (onAuthChanged && auth){
+          onAuthChanged(auth, (user)=>{
+            if(!user){
+              msgEl.innerHTML = "<strong>Sign-in required</strong><br/><span class='muted'>Please sign in on the home page to unlock quizzes.</span>";
+              bodyEl.style.display="none";
+            }else{
+              resolve();
+            }
+          });
+        } else {
+          // No auth layer loaded; proceed anyway
+          resolve();
+        }
+      });
+    }
+
+    // -------- Data loader with diagnostics --------
+    let items = [];
+    let idx = 0;
+    const answers = new Map(); // qid -> choice index
+
+    async function fetchData(){
+      log("Fetching", dataUrl);
+      msgEl.textContent = "Preparing questions…";
+      try{
+        const res = await fetch(dataUrl, { cache:"no-store" });
+        log("Response", res.status, res.ok);
+        if(!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+        if(!Array.isArray(data)) throw new Error("Data is not an array");
+        log("Loaded", data.length, "items");
+        items = data;
+        if(items.length === 0) throw new Error("No questions in file");
+        msgEl.style.display = "none";
+        bodyEl.style.display = "block";
+        metaEl.textContent = `${level.toUpperCase()} — ${subject.replace(/_/g," ")}`;
+        render();
+      }catch(e){
+        err("Error loading data", e);
+        msgEl.innerHTML = "❌ Could not load questions.<br/><span class='muted'>Open console for details.</span>";
+        bodyEl.style.display = "none";
+      }
+    }
+
+    // -------- Rendering --------
+    function render(){
+      const q = items[idx];
+      qnumEl.textContent = `Question ${idx+1} of ${items.length}`;
+      stemEl.textContent = q.stem || q.question || "";
+      optsEl.innerHTML = "";
+
+      (q.options || []).forEach((opt, i)=>{
+        const id = `opt_${idx}_${i}`;
+        const label = document.createElement("label");
+        label.className = "option";
+        label.htmlFor = id;
+        label.innerHTML = `<input type="radio" name="q_${idx}" id="${id}" value="${i}"/> ${opt}`;
+        if (answers.get(q.id) === i) label.querySelector("input").checked = true;
+        label.addEventListener("click", ()=>{
+          answers.set(q.id, i);
+        });
+        optsEl.appendChild(label);
+      });
+
+      backBtn.disabled = idx === 0;
+      nextBtn.disabled = idx === items.length - 1;
+    }
+
+    // -------- Navigation --------
+    backBtn.addEventListener("click", ()=>{ if(idx>0){ idx--; render(); }});
+    nextBtn.addEventListener("click", ()=>{ if(idx<items.length-1){ idx++; render(); }});
+    submitBtn.addEventListener("click", ()=>{
+      let correct = 0;
+      items.forEach(q=>{
+        const chosen = answers.get(q.id);
+        if (typeof chosen === "number" && chosen === q.answer_index) correct++;
+      });
+      const score = Math.round((correct / items.length) * 100);
+      // Simple result view
+      cardEl.innerHTML = `
+        <div class="muted" style="margin-bottom:8px">${level.toUpperCase()} — ${subject.replace(/_/g," ")}</div>
+        <h2 style="margin:6px 0 12px">Your Score: ${score}%</h2>
+        <p class="muted">Correct: ${correct} / ${items.length}</p>
+        <div class="stack" style="margin-top:16px">
+          <a href="./index.html" class="btn muted">← Home</a>
+          <a href="./quiz.html?level=${encodeURIComponent(level)}&subject=${encodeURIComponent(subject)}" class="btn primary">Retry</a>
+        </div>
+      `;
+      log("Submitted — score", score, "correct", correct, "of", items.length);
+    });
+
+    // -------- Boot sequence --------
+    (async function boot(){
+      // Quick param sanity
+      if(!level || !subject){
+        msgEl.innerHTML = "❌ Missing <code>level</code> or <code>subject</code> in the URL.";
+        return;
+      }
+
+      // If auth present, wait for user; otherwise proceed
+      await waitAuthIfAvailable();
+
+      // If a sign-in gate message is already shown, skip loading
+      if (bodyEl.style.display === "none" && msgEl.textContent.includes("Sign-in")) {
+        log("Blocked by sign-in gate");
+        return;
+      }
+
+      // Load questions
+      fetchData();
+    })();
+  })();
+  </script>
 </body>
 </html>
