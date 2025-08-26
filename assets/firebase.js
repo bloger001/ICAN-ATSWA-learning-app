@@ -1,75 +1,66 @@
-// assets/firebase.js  — robust compat bootstrap for GitHub Pages
-(function () {
-  const ERR = (m) => { console.error("[firebase.js]", m); };
+<script>
+// assets/firebase.js  — robust, self-loading Firebase (compat) for GitHub Pages
+(() => {
+  // ---- helpers -------------------------------------------------------------
+  const loadScript = (src) => new Promise((res, rej) => {
+    const s = document.createElement('script');
+    s.src = src; s.async = true; s.onload = res; s.onerror = () => rej(new Error('Failed '+src));
+    document.head.appendChild(s);
+  });
 
-  // --- 1) Require config (you set this in index.html before loading this file)
-  if (!window.firebaseConfig) {
-    throw new Error("firebaseConfig missing — set window.firebaseConfig on the page before loading assets/firebase.js");
-  }
+  // Expose a promise others can await
+  let _resolveReady;
+  const ready = new Promise(r => (_resolveReady = r));
+  // Make it globally awaitable (index.html button can wait on this)
+  window.__fbReady = ready;
 
-  // --- 2) Load Firebase compat SDKs if needed (works on GitHub Pages)
-  function loadScript(src) {
-    return new Promise((resolve, reject) => {
-      const s = document.createElement("script");
-      s.src = src;
-      s.async = false;            // keep order
-      s.onload = resolve;
-      s.onerror = () => reject(new Error("Failed to load " + src));
-      document.head.appendChild(s);
-    });
-  }
-
-  async function ensureCompat() {
-    if (window.firebase?.apps?.length) return; // already loaded
-    // Use a stable recent version of the compat build
-    const base = "https://www.gstatic.com/firebasejs/10.12.2";
-    await loadScript(`${base}/firebase-app-compat.js`);
-    await loadScript(`${base}/firebase-auth-compat.js`);
-  }
-
-  // --- 3) Init + export globals expected by the app
   async function boot() {
-    await ensureCompat();
+    // 1) Require config (you already set window.firebaseConfig in index.html)
+    if (!window.firebaseConfig) {
+      throw new Error('firebaseConfig missing on window');
+    }
 
-    // Initialize (idempotent)
-    const app = window.firebase.apps?.length
+    // 2) If Firebase compat is not on the page, load it
+    if (!window.firebase || !window.firebase.app) {
+      // Compat SDK keeps your existing code working
+      await loadScript('https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js');
+      await loadScript('https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js');
+    }
+
+    // 3) Init (idempotent)
+    const app = (window.firebase.apps && window.firebase.apps.length)
       ? window.firebase.app()
       : window.firebase.initializeApp(window.firebaseConfig);
 
     const auth = window.firebase.auth();
     const provider = new window.firebase.auth.GoogleAuthProvider();
 
-    // Expose friendly, app-level helpers (used by index.html)
-    window.AppAuth = auth;
-    window.AppGoogleProvider = provider;
-
-    // onAuthChanged signature the home page uses
-    window.AppOnAuthChanged = (/* authInstanceIgnored */, cb) => auth.onAuthStateChanged(cb);
-
-    // Sign in: try popup first, then redirect (iOS fallback)
-    window.AppSignIn = async () => {
-      try { return await auth.signInWithPopup(provider); }
-      catch (e) { return auth.signInWithRedirect(provider); }
-    };
-
-    window.AppSignOut = () => auth.signOut();
-
-    // Legacy aliases kept for older pages/components
+    // 4) Export globals your pages expect
     window.firebaseApp = app;
     window.firebaseAuth = auth;
     window.googleProvider = provider;
-    window.signInWithPopup = (prov) => auth.signInWithPopup(prov || provider);
-    window.signOutFirebase = () => auth.signOut();
-    window.firebaseOnAuthStateChanged = (/*authIgnored*/, cb) => auth.onAuthStateChanged(cb);
 
-    // Small readiness flag + event for diagnostics/UI
+    // Preferred names used by the new index.html
+    window.AppAuth = auth;
+    window.AppGoogleProvider = provider;
+    window.AppOnAuthChanged = auth.onAuthStateChanged.bind(auth);
+    window.AppSignIn = async () => {
+      try { return await auth.signInWithPopup(provider); }
+      catch { return auth.signInWithRedirect(provider); }
+    };
+    window.AppSignOut = () => auth.signOut();
+
     window.__firebase_bootstrapped__ = true;
-    document.dispatchEvent(new Event("firebase-ready"));
+    window.__fbVersion = '9.22.2-compat';
+    _resolveReady(true);
   }
 
-  boot().catch((e) => {
-    ERR(e && e.message ? e.message : e);
-    // surface a minimal, user-visible hint (also logged by index diagnostics)
-    try { alert("Auth bootstrap failed. Please refresh."); } catch (_) {}
+  boot().catch(err => {
+    console.error('[firebase.js] bootstrap failed:', err);
+    // Make the ready promise settle so callers don’t hang
+    _resolveReady(false);
+    // Surface a small toast for visibility (optional)
+    try { alert('Firebase failed to load: ' + err.message); } catch {}
   });
 })();
+</script>
