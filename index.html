@@ -13,7 +13,7 @@
   <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics-compat.js"></script>
 
   <!-- Project initializer -->
-  <script src="./assets/firebase.js?v=106"></script>
+  <script src="./assets/firebase.js?v=107"></script>
 
   <style>
     :root { --card:#141a19; --line:#26302d; --ink:#e7f4f0; --sub:#9db5ae; --chip:#23302c; }
@@ -24,7 +24,6 @@
     .btn{display:inline-block;padding:.6rem .9rem;border-radius:.6rem;background:#24312d;color:var(--ink);text-decoration:none}
     .btn.primary{background:#2e7cf0;color:#fff;font-weight:600}
     .btn.outline{background:transparent;border:1px solid #3a4a45}
-    .btn[aria-disabled="true"]{opacity:.6;pointer-events:none}
     .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:14px 0}
     h1{margin:0 0 8px 0;font-size:2.2rem}
     h2.section{font-size:1.05rem;letter-spacing:.03em;color:#a9c3bb;margin:26px 6px 8px}
@@ -76,7 +75,7 @@
 
     <h2 class="section">ATSWA 1</h2>
     <div class="tile-grid">
-      <!-- disabled by default; unlocked by app.js after sign-in -->
+      <!-- locked by default; unlocked after sign-in -->
       <a class="tile requires-auth disabled" href="#"><div class="muted">ATSWA 1</div><div class="title">Basic Accounting</div><div class="locked">🔒 Sign in</div></a>
       <a class="tile requires-auth disabled" href="#"><div class="muted">ATSWA 1</div><div class="title">Business Law</div><div class="locked">🔒 Sign in</div></a>
       <a class="tile requires-auth disabled" href="#"><div class="muted">ATSWA 1</div><div class="title">Economics</div><div class="locked">🔒 Sign in</div></a>
@@ -90,7 +89,7 @@
     </div>
   </div>
 
-  <!-- Index logic (click handlers, admin gate for tile, unlock quiz links) -->
+  <!-- Index logic -->
   <script src="./assets/app.js?v=107"></script>
 
   <!-- Hub bridge for Admin diagnostics -->
@@ -105,12 +104,8 @@
 
     ch.addEventListener('message', (ev)=>{
       const msg = ev.data||{};
-      if (msg.type==='ping'){
-        ch.postMessage({type:'pong', from:'index.html', pingId: msg.pingId});
-      }
-      if (msg.type==='modules.request'){
-        ch.postMessage({type:'modules.info', modules});
-      }
+      if (msg.type==='ping') ch.postMessage({type:'pong', from:'index.html', pingId: msg.pingId});
+      if (msg.type==='modules.request') ch.postMessage({type:'modules.info', modules});
       if (msg.type==='bank.push' && typeof msg.len==='number'){
         console.log('[index bridge] bank pushed, len=', msg.len);
       }
