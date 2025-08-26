@@ -1,128 +1,168 @@
-/* quiz.js — robust loader with diagnostics */
-(function () {
-  const ui = {
-    msg: document.getElementById("quizMsg") || document.getElementById("boardMsg") || null,
-    box: document.getElementById("quizBox") || document.getElementById("board") || null
-  };
+(function(){
+  const msg = document.querySelector('[data-quiz-msg]') || document.querySelector('.card');
+  const host = document.querySelector('[data-quiz-host]') || document.body;
+  const btnNext = document.getElementById('btnNext');
+  const btnBack = document.getElementById('btnBack');
+  const btnSubmit = document.getElementById('btnSubmit');
 
-  function say(txt) {
-    if (ui.msg) ui.msg.textContent = txt;
-    console.log("[QUIZ]", txt);
+  // ---- helpers ----
+  function getUserSlim(){
+    try{
+      const u = (window.AppAuth && window.AppAuth.currentUser) || null;
+      if (!u) return null;
+      return { uid: u.uid, email: u.email || "", name: u.displayName || "" };
+    }catch{ return null; }
   }
-  function panic(title, detail) {
-    const msg = `${title}${detail ? " — " + detail : ""}`;
-    say(msg);
-    if (ui.box) {
-      ui.box.innerHTML = `<div class="muted" style="margin-top:8px">
-        <div style="font-weight:600;color:#ffb4b4">⚠️ ${title}</div>
-        <div style="opacity:.9">${detail || ""}</div>
-      </div>`;
+  function localKey(){
+    const u = getUserSlim();
+    return `ican.results:${(u && u.uid) || 'guest'}`;
+  }
+  function saveAttempt(row){
+    try{
+      const KEY = localKey();
+      const rows = JSON.parse(localStorage.getItem(KEY) || "[]");
+      rows.unshift(row);
+      if (rows.length > 50) rows.length = 50;
+      localStorage.setItem(KEY, JSON.stringify(rows));
+    }catch{}
+  }
+  function shuffle(arr){
+    for (let i=arr.length-1;i>0;i--){
+      const j = Math.floor(Math.random()*(i+1));
+      [arr[i],arr[j]]=[arr[j],arr[i]];
     }
-  }
-
-  // ---- read params
-  const params = new URLSearchParams(location.search);
-  const level = (params.get("level") || "atswa1").toLowerCase();
-  const subject = (params.get("subject") || "").toLowerCase();
-
-  if (!subject) {
-    return panic("Missing subject", "URL must include ?level=atswa1&subject=basic_accounting (for example).");
-  }
-
-  // ---- map subject -> data file
-  // Keep these exactly matching your /data filenames
-  const fileMap = {
-    "basic_accounting": `./data/${level}_basic_accounting.json`,
-    "business_law":     `./data/${level}_business_law.json`,
-    "economics":        `./data/${level}_economics.json`,
-    "comm_skills":      `./data/${level}_comm_skills.json`
-  };
-
-  const dataPath = fileMap[subject];
-  if (!dataPath) {
-    return panic("Unknown subject", `No mapping for subject "${subject}".`);
+    return arr;
   }
 
-  // ---- fetch with timeout + no-cache
-  async function fetchWithTimeout(url, ms = 12000) {
-    const ctl = new AbortController();
-    const t = setTimeout(() => ctl.abort(), ms);
-    try {
-      const res = await fetch(`${url}?v=${Date.now()}`, { cache: "no-store", signal: ctl.signal });
-      clearTimeout(t);
-      return res;
-    } catch (e) {
-      clearTimeout(t);
-      throw e;
-    }
-  }
+  // ---- load data ----
+  const url = new URL(location.href);
+  const level   = url.searchParams.get('level') || 'atswa1';
+  const subject = url.searchParams.get('subject') || 'basic_accounting';
+  const dataPath = `./data/${level}_${subject}.json`;
 
-  async function loadQuestions() {
-    say("Preparing questions…");
-    let res;
-    try {
-      res = await fetchWithTimeout(dataPath);
-    } catch (e) {
-      return panic("Network error", `Could not reach ${dataPath}. ${e.name === "AbortError" ? "Request timed out." : e.message}`);
-    }
-    if (!res.ok) {
-      return panic("Could not load questions", `${dataPath} → HTTP ${res.status}`);
-    }
+  let QUESTIONS = [];
+  let PAGE = 0;
+  const ANSWERS = new Map(); // idx -> chosen_index
 
-    let data;
-    try {
-      data = await res.json();
-    } catch (e) {
-      return panic("Invalid JSON", `Failed to parse ${dataPath}. ${e.message}`);
-    }
+  function renderCurrent(){
+    if (!QUESTIONS.length){ return; }
+    const q = QUESTIONS[PAGE];
+    const choices = q.options.map((o, idx) => {
+      const chosen = ANSWERS.get(PAGE) === idx ? ' style="outline:2px solid #2e7cf0;border-radius:8px;padding:6px"' : '';
+      return `<div class="row" data-idx="${idx}"${chosen}>${o}</div>`;
+    }).join("");
 
-    if (!Array.isArray(data) || data.length === 0) {
-      return panic("Empty question set", `${dataPath} returned 0 items.`);
-    }
+    host.innerHTML = `
+      <section class="card">
+        <div class="muted small">${level.toUpperCase()} • ${subject.replace('_',' ')}</div>
+        <h2 style="margin:.35rem 0">${PAGE+1}. ${q.stem || q.question}</h2>
+        <div id="choices">${choices}</div>
+      </section>
+    `;
 
-    // Normalize questions (adds ids if missing)
-    const questions = data.map((q, i) => ({
-      id: q.id || `${subject}-${i + 1}`,
-      question: q.question || q.q || "",
-      options: q.options || q.choices || [],
-      answer: q.answer,
-      topic: q.topic || null
-    }));
-
-    // Minimal render (keeps your old styles/structure)
-    if (ui.box) {
-      ui.box.innerHTML = "";
-      const wrap = document.createElement("div");
-      wrap.style.display = "grid";
-      wrap.style.gap = "12px";
-
-      questions.forEach((q, idx) => {
-        const card = document.createElement("div");
-        card.className = "card";
-        card.innerHTML = `
-          <div class="muted small" style="margin-bottom:6px">Q${idx + 1}${q.topic ? ` · <span>${q.topic}</span>` : ""}</div>
-          <div style="margin-bottom:8px">${q.question}</div>
-          <div>
-            ${q.options.map((opt, oi) => `
-              <label style="display:block;margin:.25rem 0">
-                <input type="radio" name="q_${idx}" value="${oi}"> ${opt}
-              </label>
-            `).join("")}
-          </div>
-        `;
-        wrap.appendChild(card);
+    document.querySelectorAll('#choices .row').forEach(el=>{
+      el.addEventListener('click', ()=>{
+        const idx = Number(el.getAttribute('data-idx'));
+        ANSWERS.set(PAGE, idx);
+        renderCurrent();
       });
-      ui.box.appendChild(wrap);
-      say(`Loaded ${questions.length} questions`);
-    } else {
-      say(`Loaded ${questions.length} questions (no container found to render).`);
+    });
+
+    btnBack.disabled = (PAGE===0);
+    btnNext.disabled = (PAGE===QUESTIONS.length-1);
+  }
+
+  async function start(){
+    try{
+      const res = await fetch(dataPath, {cache:'no-store'});
+      const raw = await res.json();
+
+      // normalize & dedupe by id+stem
+      const seen = new Set();
+      QUESTIONS = raw.filter(item=>{
+        const id = (item.id || item.qid || '') + '|' + (item.stem || item.question || '');
+        if (seen.has(id)) return false;
+        seen.add(id);
+        return true;
+      }).map(x=>({
+        id: x.id || x.qid || '',
+        topic: x.topic || '',
+        subtopic: x.subtopic || '',
+        stem: x.stem || x.question || '',
+        options: x.options || x.choices || [],
+        answer_index: (typeof x.answer_index==='number') ? x.answer_index :
+                      (typeof x.correctIndex==='number') ? x.correctIndex : 0
+      }));
+
+      shuffle(QUESTIONS);               // shuffle
+      QUESTIONS = QUESTIONS.slice(0,40); // cap (optional)
+
+      msg && (msg.textContent = "");    // clear "Loading…"
+      renderCurrent();
+    }catch(e){
+      console.error(e);
+      msg && (msg.textContent = "Failed to load questions.");
     }
   }
 
-  // Kick off
-  try {
-    loadQuestions();
-  } catch (e) {
-    panic("Loader crashed", e.message);
+  btnNext?.addEventListener('click', ()=>{ if (PAGE<QUESTIONS.length-1){ PAGE++; renderCurrent(); }});
+  btnBack?.addEventListener('click', ()=>{ if (PAGE>0){ PAGE--; renderCurrent(); }});
+  btnSubmit?.addEventListener('click', submit);
+
+  async function submit(){
+    if (!QUESTIONS.length) return;
+
+    let correct = 0;
+    const mistakes = [];
+    QUESTIONS.forEach((q, idx)=>{
+      const chosen = ANSWERS.get(idx);
+      if (chosen === q.answer_index) correct++;
+      else {
+        mistakes.push({
+          topic: q.topic, subtopic: q.subtopic,
+          stem: q.stem, options: q.options,
+          answer_index: q.answer_index, chosen_index: (typeof chosen==='number'?chosen:-1)
+        });
+      }
+    });
+    const total = QUESTIONS.length;
+    const pct = Math.round((correct*100)/total);
+    const attempt = {
+      ts: new Date().toISOString(),
+      level, subject, correct, total, pct,
+      mistakes
+    };
+    saveAttempt(attempt);
+
+    // Try to send to Firestore for leaderboard
+    try{
+      if (window.__fbReady) await window.__fbReady;
+      const db = window.AppDB || window.firebaseDB;
+      const auth = window.AppAuth || window.firebaseAuth;
+      const u = auth && auth.currentUser;
+      if (db && u){
+        await db.collection('leaderboard').add({
+          uid: u.uid,
+          user: { email: u.email || "", name: u.displayName || "" },
+          level, subject, correct, total, pct,
+          ts: window.firebase?.firestore?.FieldValue?.serverTimestamp?.() || new Date()
+        });
+      }
+    }catch(e){ console.warn("Could not post to leaderboard:", e); }
+
+    // results banner
+    host.innerHTML = `
+      <section class="card">
+        <h2>Result</h2>
+        <p><strong>${pct}%</strong> (${correct}/${total})</p>
+        <div style="margin-top:10px">
+          <a class="btn" href="./index.html">← Home</a>
+          <a class="btn" href="./status.html" style="margin-left:6px">Status</a>
+          <a class="btn primary" href="./review.html" style="margin-left:6px">Review mistakes</a>
+        </div>
+      </section>
+    `;
   }
+
+  document.addEventListener('DOMContentLoaded', start);
 })();
