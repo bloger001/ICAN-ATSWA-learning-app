@@ -2,54 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>ICAN ATSWA Prep</title>
   <link rel="stylesheet" href="./assets/app.css?v=2025-08-26a"/>
 </head>
 <body>
   <div class="wrap">
     <header class="space-between" style="align-items:center">
-      <h1>ICAN ATSWA</h1>
-      <div class="muted small" id="signStatus">Not signed in</div>
+      <h1>ICAN ATSWA Prep</h1>
+      <a class="btn" href="./admin.html">Admin</a>
     </header>
 
-    <section class="card">
-      <p>Built by fellow accounting student <b>Silva Brutus</b> (NSUK).
-        Contact: <a href="mailto:offixcialbloger@gmail.com">offixcialbloger@gmail.com</a></p>
-      <div style="margin-top:10px">
-        <button id="googleSignIn" class="btn primary">Continue with Google</button>
-        <button id="googleSignOut" class="btn" style="display:none">Sign out</button>
-      </div>
+    <!-- ✅ Updated Tiles Section -->
+    <section class="grid">
+      <a class="tile" href="./resources.html">
+        <div class="muted small">Study</div>
+        <div>Resources</div>
+      </a>
+
+      <a class="tile" href="./status.html">
+        <div class="muted small">Track</div>
+        <div>Status</div>
+      </a>
+
+      <a class="tile" href="./leaderboard.html">
+        <div class="muted small">Community</div>
+        <div>Leaderboard</div>
+      </a>
+
+      <!-- Subjects -->
+      <a class="tile" href="./quiz.html?level=ATSWA1&subject=Basic%20Accounting&dataset=atswa1_basic_accounting">
+        <div class="muted small">ATSWA 1</div>
+        <div>Basic Accounting</div>
+      </a>
+
+      <a class="tile" href="./quiz.html?level=ATSWA1&subject=Business%20Law&dataset=atswa1_business_law">
+        <div class="muted small">ATSWA 1</div>
+        <div>Business Law</div>
+      </a>
+
+      <a class="tile" href="./quiz.html?level=ATSWA1&subject=Economics&dataset=atswa1_economics">
+        <div class="muted small">ATSWA 1</div>
+        <div>Economics</div>
+      </a>
+
+      <a class="tile" href="./quiz.html?level=ATSWA1&subject=Communication%20Skills&dataset=atswa1_comm_skills">
+        <div class="muted small">ATSWA 1</div>
+        <div>Communication Skills</div>
+      </a>
     </section>
-
-    <section class="card">
-      <h2>Welcome</h2>
-      <p>Please sign in to unlock quizzes, leaderboard and your personalized status.</p>
-    </section>
-
-    <h2 style="margin-top:20px">Study</h2>
-    <div class="tiles">
-      <a class="tile lockable" data-locked href="./resources.html">Resources</a>
-      <a class="tile lockable" data-locked href="./status.html">Status</a>
-      <a class="tile lockable" data-locked href="./leaderboard.html">Leaderboard</a>
-    </div>
-
-    <h2 style="margin-top:20px">Quizzes (ATSWA 1)</h2>
-    <div class="tiles">
-      <a class="tile lockable" data-locked href="./quiz.html?level=ATSWA1&subject=Basic%20Accounting">Basic Accounting</a>
-      <a class="tile lockable" data-locked href="./quiz.html?level=ATSWA1&subject=Business%20Law">Business Law</a>
-      <a class="tile lockable" data-locked href="./quiz.html?level=ATSWA1&subject=Economics">Economics</a>
-      <a class="tile lockable" data-locked href="./quiz.html?level=ATSWA1&subject=Communication%20Skills">Communication Skills</a>
-    </div>
-
-    <h2 style="margin-top:20px">Admin</h2>
-    <div class="tiles">
-      <a class="tile" href="./admin.html">Dashboard</a>
-    </div>
   </div>
 
-  <!-- Core scripts -->
-  <script src="./assets/firebase.js?v=2025-08-26a"></script>
-  <script src="./assets/app.js?v=2025-08-26a"></script>
+  <script type="module" src="./assets/firebase.js?v=2025-08-26a"></script>
+  <script type="module" src="./assets/app.js?v=2025-08-26a"></script>
 </body>
 </html>
