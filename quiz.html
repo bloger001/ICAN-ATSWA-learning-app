@@ -54,14 +54,16 @@
   <script>
   (function(){
     const log = (...a)=>console.log("%c[QUIZ]", "color:#6cf", ...a);
+    const warn = (...a)=>console.warn("[QUIZ]", ...a);
     const err = (...a)=>console.error("[QUIZ]", ...a);
 
-    // -------- Read params --------
+    // ---------------- Params ----------------
     const params = new URLSearchParams(location.search);
-    const level   = (params.get("level")   || "").toLowerCase();       // e.g. atswa1
-    const subject = (params.get("subject") || "").toLowerCase();       // e.g. basic_accounting
+    const level   = (params.get("level")   || "").toLowerCase();
+    const subject = (params.get("subject") || "").toLowerCase();
     const dataUrl = `./data/${level}_${subject}.json`;
 
+    // ---------------- DOM ----------------
     const msgEl   = document.getElementById("quizMsg");
     const cardEl  = document.getElementById("quizCard");
     const bodyEl  = document.getElementById("quizBody");
@@ -73,8 +75,44 @@
     const nextBtn = document.getElementById("nextBtn");
     const submitBtn = document.getElementById("submitBtn");
 
-    // -------- Auth gate (if available) --------
-    // If auth helpers exist, require sign-in; if not, still allow quiz to load (no hard block).
+    // ---------------- State ----------------
+    let items = [];
+    let idx = 0;
+    const answers = new Map(); // qid -> choice index
+
+    // ---------------- Utils ----------------
+    const shuffleInPlace = (arr)=>{
+      for(let i=arr.length-1;i>0;i--){
+        const j = Math.floor(Math.random()*(i+1));
+        [arr[i],arr[j]]=[arr[j],arr[i]];
+      }
+      return arr;
+    };
+
+    const dedupeById = (arr)=>{
+      const seen = new Set();
+      const out = [];
+      for(const q of arr){
+        const id = q.id || q.qid || q.question_id || JSON.stringify(q).slice(0,60);
+        if(!seen.has(id)){
+          seen.add(id);
+          // normalize id field
+          out.push(Object.assign({id}, q));
+        }
+      }
+      return out;
+    };
+
+    // shuffle options while tracking correct index
+    const withShuffledOptions = (q)=>{
+      const indices = q.options.map((_,i)=>i);
+      shuffleInPlace(indices);
+      const newOptions = indices.map(i=>q.options[i]);
+      const newAnswerIndex = indices.indexOf(q.answer_index);
+      return Object.assign({}, q, { options:newOptions, answer_index:newAnswerIndex });
+    };
+
+    // ---------------- Auth (optional) ----------------
     function waitAuthIfAvailable(){
       return new Promise((resolve)=>{
         const onAuthChanged = window.AppOnAuthChanged;
@@ -89,33 +127,34 @@
             }
           });
         } else {
-          // No auth layer loaded; proceed anyway
+          // Proceed even if auth layer isn't loaded (so we can still practice / debug)
           resolve();
         }
       });
     }
 
-    // -------- Data loader with diagnostics --------
-    let items = [];
-    let idx = 0;
-    const answers = new Map(); // qid -> choice index
-
+    // ---------------- Data loader ----------------
     async function fetchData(){
       log("Fetching", dataUrl);
       msgEl.textContent = "Preparing questions…";
       try{
         const res = await fetch(dataUrl, { cache:"no-store" });
-        log("Response", res.status, res.ok);
         if(!res.ok) throw new Error(`HTTP ${res.status}`);
-        const data = await res.json();
+        let data = await res.json();
         if(!Array.isArray(data)) throw new Error("Data is not an array");
-        log("Loaded", data.length, "items");
+
+        // De-duplicate, shuffle questions, shuffle options
+        data = dedupeById(data);
+        shuffleInPlace(data);
+        data = data.map(withShuffledOptions);
+
         items = data;
         if(items.length === 0) throw new Error("No questions in file");
         msgEl.style.display = "none";
         bodyEl.style.display = "block";
         metaEl.textContent = `${level.toUpperCase()} — ${subject.replace(/_/g," ")}`;
         render();
+        log(`Loaded ${items.length} items (deduped & shuffled)`);
       }catch(e){
         err("Error loading data", e);
         msgEl.innerHTML = "❌ Could not load questions.<br/><span class='muted'>Open console for details.</span>";
@@ -123,7 +162,7 @@
       }
     }
 
-    // -------- Rendering --------
+    // ---------------- Render ----------------
     function render(){
       const q = items[idx];
       qnumEl.textContent = `Question ${idx+1} of ${items.length}`;
@@ -147,47 +186,90 @@
       nextBtn.disabled = idx === items.length - 1;
     }
 
-    // -------- Navigation --------
+    // ---------------- Nav ----------------
     backBtn.addEventListener("click", ()=>{ if(idx>0){ idx--; render(); }});
     nextBtn.addEventListener("click", ()=>{ if(idx<items.length-1){ idx++; render(); }});
-    submitBtn.addEventListener("click", ()=>{
+
+    // ---------------- Results + persistence ----------------
+    function computeScore(){
       let correct = 0;
       items.forEach(q=>{
         const chosen = answers.get(q.id);
         if (typeof chosen === "number" && chosen === q.answer_index) correct++;
       });
-      const score = Math.round((correct / items.length) * 100);
-      // Simple result view
+      const total = items.length;
+      const score = Math.round((correct/total)*100);
+      return {correct,total,score};
+    }
+
+    function updateLocalStatus({score,correct,total}){
+      try{
+        const key = "ican:status";
+        const prev = JSON.parse(localStorage.getItem(key)||"{}");
+        prev[level] = prev[level] || {};
+        const sKey = subject;
+        const now = new Date().toISOString();
+        const old = prev[level][sKey] || { attempts:0 };
+        prev[level][sKey] = {
+          attempts: (old.attempts||0)+1,
+          lastScore: score,
+          lastCorrect: correct,
+          lastTotal: total,
+          lastAt: now
+        };
+        localStorage.setItem(key, JSON.stringify(prev));
+      }catch(e){ warn("local status save failed", e); }
+    }
+
+    async function postToCloud({score,correct,total}){
+      try{
+        const user = (window.AppAuth || window.firebaseAuth)?.currentUser || null;
+        const fs = window.firebase?.firestore ? window.firebase.firestore() : null;
+        if(!user || !fs){ return; } // not signed in or Firestore unavailable
+
+        const payload = {
+          uid: user.uid,
+          email: user.email || null,
+          level, subject, score, correct, total,
+          ts: new Date().toISOString()
+        };
+
+        // Primary collection (use what your leaderboard reads; trying common names)
+        await fs.collection("scores").add(payload).catch(()=>{});
+        await fs.collection("leaderboard").add(payload).catch(()=>{});
+      }catch(e){
+        warn("cloud post failed", e);
+      }
+    }
+
+    submitBtn.addEventListener("click", async ()=>{
+      const result = computeScore();
+      updateLocalStatus(result);
+      await postToCloud(result);
+
+      const {score,correct,total} = result;
       cardEl.innerHTML = `
         <div class="muted" style="margin-bottom:8px">${level.toUpperCase()} — ${subject.replace(/_/g," ")}</div>
         <h2 style="margin:6px 0 12px">Your Score: ${score}%</h2>
-        <p class="muted">Correct: ${correct} / ${items.length}</p>
+        <p class="muted">Correct: ${correct} / ${total}</p>
         <div class="stack" style="margin-top:16px">
           <a href="./index.html" class="btn muted">← Home</a>
           <a href="./quiz.html?level=${encodeURIComponent(level)}&subject=${encodeURIComponent(subject)}" class="btn primary">Retry</a>
+          <a href="./leaderboard.html" class="btn muted">Leaderboard</a>
+          <a href="./status.html" class="btn muted">Status</a>
         </div>
       `;
-      log("Submitted — score", score, "correct", correct, "of", items.length);
+      log("Submitted — score", score, "correct", correct, "of", total);
     });
 
-    // -------- Boot sequence --------
+    // ---------------- Boot ----------------
     (async function boot(){
-      // Quick param sanity
       if(!level || !subject){
         msgEl.innerHTML = "❌ Missing <code>level</code> or <code>subject</code> in the URL.";
         return;
       }
-
-      // If auth present, wait for user; otherwise proceed
       await waitAuthIfAvailable();
-
-      // If a sign-in gate message is already shown, skip loading
-      if (bodyEl.style.display === "none" && msgEl.textContent.includes("Sign-in")) {
-        log("Blocked by sign-in gate");
-        return;
-      }
-
-      // Load questions
+      if (bodyEl.style.display === "none" && msgEl.textContent.includes("Sign-in")) return;
       fetchData();
     })();
   })();
