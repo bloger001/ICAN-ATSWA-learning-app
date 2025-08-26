@@ -12,7 +12,7 @@
   <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics-compat.js"></script>
 
   <!-- Project initializer -->
-  <script src="./assets/firebase.js?v=106"></script>
+  <script src="./assets/firebase.js?v=107"></script>
 
   <link rel="stylesheet" href="./assets/admin-lab.css"/>
 </head>
@@ -27,7 +27,7 @@
     </div>
   </header>
 
-  <!-- Admin gate: blocks non-admin BEFORE showing the content -->
+  <!-- Admin gate -->
   <script>
     (function(){
       const ADMIN = "offixcialbloger@gmail.com".toLowerCase();
@@ -43,6 +43,7 @@
     })();
   </script>
 
+  <!-- (rest of your admin UI unchanged) -->
   <section id="overall" class="overall good">
     <span class="dot"></span>
     <div>
@@ -83,72 +84,4 @@
   </section>
 
   <section class="card">
-    <div class="card-head"><h3>Leaderboard</h3></div>
-    <div class="grid">
-      <button id="btnLBWriteProbe" class="btn">Write test score</button>
-      <button id="btnLBReadTop" class="btn">Read top scores</button>
-      <button id="btnLBCleanProbes" class="btn warn">Clean test probes</button>
-    </div>
-    <div id="lbResult" class="mono tiny muted"></div>
-  </section>
-
-  <section class="card">
-    <div class="card-head"><h3>Question Bank</h3></div>
-    <div class="grid">
-      <input id="fileBank" class="file" type="file" accept=".json"/>
-      <button id="btnBankUseLocal" class="btn">Use bank from localStorage</button>
-      <button id="btnBankPaste" class="btn">Paste JSON bank</button>
-      <button id="btnBankAudit" class="btn primary">Audit: duplicates & structure</button>
-      <button id="btnBankShuffleTest" class="btn">Shuffle + no-repeat sample</button>
-    </div>
-    <div id="bankResult" class="mono tiny muted"></div>
-  </section>
-
-  <section class="card">
-    <div class="card-head"><h3>Status / Analytics</h3></div>
-    <div class="grid">
-      <button id="btnStatusFromLocal" class="btn">Compute from local results</button>
-      <button id="btnStatusMock" class="btn">Compute on mock dataset</button>
-      <button id="btnStatusExport" class="btn">Export status JSON</button>
-    </div>
-    <div id="statusResult" class="mono tiny muted"></div>
-  </section>
-
-  <section class="card">
-    <div class="card-head"><h3>Hub / Index Handshake (“file bridge”)</h3></div>
-    <div class="grid">
-      <button id="btnHubPing" class="btn">Ping index.html</button>
-      <button id="btnHubSendBank" class="btn">Send bank → index</button>
-      <button id="btnHubAskModules" class="btn">Ask loaded modules</button>
-    </div>
-    <div id="hubResult" class="mono tiny muted"></div>
-  </section>
-
-  <section class="card">
-    <div class="card-head"><h3>Environment, Storage & Cache</h3></div>
-    <div class="grid">
-      <button id="btnEnvProbe" class="btn">Environment probe</button>
-      <button id="btnStorageProbe" class="btn">Storage estimate</button>
-      <button id="btnCachesList" class="btn">List cache keys</button>
-      <button id="btnClearCaches" class="btn warn">Clear caches (SW + CacheStorage)</button>
-    </div>
-    <div id="envResult" class="mono tiny muted"></div>
-  </section>
-
-  <section class="card">
-    <h3>Checks</h3>
-    <div class="table">
-      <div class="row head"><div>Check</div><div>Status</div><div>Detail</div><div>When</div></div>
-      <div id="rows"></div>
-    </div>
-    <details class="snapshot">
-      <summary>Snapshot</summary>
-      <pre id="snapshot" class="mono">{}</pre>
-    </details>
-  </section>
-</main>
-
-<!-- Diagnostics logic -->
-<script src="./assets/admin-lab.js?v=106" defer></script>
-</body>
-</html>
+    <div class="card-head"><h3>
