@@ -13,7 +13,7 @@
   <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics-compat.js"></script>
 
   <!-- Project initializer -->
-  <script src="./assets/firebase.js?v=107"></script>
+  <script src="./assets/firebase.js?v=106"></script>
 
   <style>
     :root { --card:#141a19; --line:#26302d; --ink:#e7f4f0; --sub:#9db5ae; --chip:#23302c; }
@@ -58,24 +58,17 @@
 
     <h2 class="section">Study</h2>
     <div class="tile-grid">
-      <a class="tile" href="./resources.html">
-        <div class="muted">Study</div><div class="title">Resources</div>
-      </a>
+      <a class="tile" href="./resources.html"><div class="muted">Study</div><div class="title">Resources</div></a>
     </div>
 
     <h2 class="section">Track</h2>
     <div class="tile-grid">
-      <a class="tile" href="./status.html">
-        <div class="muted">Progress</div><div class="title">Status</div>
-      </a>
-      <a class="tile" href="./leaderboard.html">
-        <div class="muted">Community</div><div class="title">Leaderboard</div>
-      </a>
+      <a class="tile" href="./status.html"><div class="muted">Progress</div><div class="title">Status</div></a>
+      <a class="tile" href="./leaderboard.html"><div class="muted">Community</div><div class="title">Leaderboard</div></a>
     </div>
 
     <h2 class="section">ATSWA 1</h2>
     <div class="tile-grid">
-      <!-- locked by default; unlocked after sign-in -->
       <a class="tile requires-auth disabled" href="#"><div class="muted">ATSWA 1</div><div class="title">Basic Accounting</div><div class="locked">🔒 Sign in</div></a>
       <a class="tile requires-auth disabled" href="#"><div class="muted">ATSWA 1</div><div class="title">Business Law</div><div class="locked">🔒 Sign in</div></a>
       <a class="tile requires-auth disabled" href="#"><div class="muted">ATSWA 1</div><div class="title">Economics</div><div class="locked">🔒 Sign in</div></a>
@@ -84,24 +77,18 @@
 
     <h2 class="section">Admin</h2>
     <div class="tile-grid">
-      <!-- locked by default; unlocked only for admin email -->
       <a id="adminTile" class="tile disabled" href="#"><div class="muted">Admin</div><div class="title">Dashboard</div><div class="locked">🔒 Admin only</div></a>
     </div>
   </div>
 
-  <!-- Index logic -->
   <script src="./assets/app.js?v=107"></script>
 
-  <!-- Hub bridge for Admin diagnostics -->
+  <!-- Hub bridge for admin diagnostics -->
   <script>
   (function(){
     const ch = new BroadcastChannel('aihub');
     const modules = [];
     if (window.firebase) modules.push('firebase');
-    if (window.quizEngine) modules.push('quizEngine');
-    if (window.leaderboard) modules.push('leaderboard');
-    if (window.statusPage) modules.push('status');
-
     ch.addEventListener('message', (ev)=>{
       const msg = ev.data||{};
       if (msg.type==='ping') ch.postMessage({type:'pong', from:'index.html', pingId: msg.pingId});
