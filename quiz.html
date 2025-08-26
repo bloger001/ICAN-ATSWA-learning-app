@@ -6,20 +6,19 @@
   <title>Quiz • ICAN ATSWA</title>
   <link rel="stylesheet" href="./assets/app.css"/>
 
-  <!-- Firebase COMPAT SDKs -->
+  <!-- Firebase compat + init -->
   <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics-compat.js"></script>
-
-  <!-- Project initializer -->
   <script src="./assets/firebase.js?v=106"></script>
 
-  <!-- Hooks for saving results + mistakes -->
+  <!-- Hooks to save results & mistakes -->
   <script src="./assets/quiz-hooks.js?v=106"></script>
 
   <style>
-    .wrap{max-width:800px;margin:0 auto;padding:20px}
+    .wrap{max-width:900px;margin:0 auto;padding:20px}
+    .btn{display:inline-block;padding:.6rem .9rem;border-radius:.6rem;background:transparent;border:1px solid #3a4a45;color:#e7f4f0;text-decoration:none}
     .question{margin:20px 0;padding:16px;border:1px solid #26302d;border-radius:10px;background:#141a19}
     .options button{display:block;width:100%;margin:6px 0;padding:10px;border-radius:8px;border:none;text-align:left}
     .options button.correct{background:#1a3d2c;color:#fff}
@@ -29,47 +28,71 @@
 </head>
 <body>
   <div class="wrap">
+    <p><a class="btn" href="./index.html">← Home</a></p>
     <h1 id="quizTitle">Quiz</h1>
     <div id="quizBox"></div>
     <div id="resultBox"></div>
   </div>
 
 <script>
-(function(){
-  const db = firebase.firestore();
-  const user = () => firebase.auth().currentUser;
-
-  // --- Setup ---
+(async function(){
   const params = new URLSearchParams(location.search);
   const level   = params.get("level")   || "atswa1";
   const subject = params.get("subject") || "basic_accounting";
+  const pretty  = (s)=> (s||"").replace(/_/g," ");
+  document.getElementById("quizTitle").textContent = `Quiz: ${pretty(subject)}`;
 
-  document.getElementById("quizTitle").textContent =
-    `Quiz: ${subject.replace(/_/g," ")}`;
+  // Map subjects to your data files in /data
+  const fileMap = {
+    "atswa1:basic_accounting": "atswa1_basic_accounting.json",
+    "atswa1:business_law":     "atswa1_business_law.json",
+    "atswa1:economics":        "atswa1_economics.json",
+    "atswa1:comm_skills":      "atswa1_comm_skills.json"
+  };
+  const key  = `${level}:${subject}`;
+  const path = fileMap[key] ? `./data/${fileMap[key]}` : null;
 
-  // --- Dummy question bank (replace with your loader) ---
-  const questions = [
-    { id:"q1", text:"What is double entry?", options:["One record","Two records","Three records","None"], answer:"Two records" },
-    { id:"q2", text:"Which is an asset?", options:["Cash","Loan","Expense","Liability"], answer:"Cash" }
-  ];
+  let questions = [];
+  try {
+    if (!path) throw new Error(`No bank mapped for ${key}`);
+    const res = await fetch(path, { cache: 'no-store' });
+    if (!res.ok) throw new Error(`Fetch failed ${res.status}`);
+    questions = await res.json();
+  } catch (e) {
+    console.error("Bank load error:", e);
+    questions = [
+      { id:"demo1", text:"What is double entry?", options:["One record","Two records","Three records","None"], answer:"Two records" },
+      { id:"demo2", text:"Which is an asset?", options:["Cash","Loan","Expense","Liability"], answer:"Cash" }
+    ];
+  }
 
-  let current = 0;
-  let score   = 0;
-  let total   = questions.length;
+  // normalize, dedupe, shuffle
+  questions = questions.map((q,i)=>{
+    const id = q.id || q.qid || `q${i+1}`;
+    const text = q.text || q.question || "";
+    const opts = q.options || q.choices || [];
+    const ans  = q.answer || q.correct;
+    return { id, text, options: opts, answer: ans };
+  });
+  const seen = new Set();
+  questions = questions.filter(q => { if (seen.has(q.id)) return false; seen.add(q.id); return true; });
+  for (let i=questions.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [questions[i],questions[j]]=[questions[j],questions[i]]; }
 
-  const quizBox   = document.getElementById("quizBox");
+  const LIMIT = Math.min(questions.length, 20);
+  questions = questions.slice(0, LIMIT);
+
+  const quizBox = document.getElementById("quizBox");
   const resultBox = document.getElementById("resultBox");
+  let idx=0, score=0, total=questions.length;
 
-  // --- Render a question ---
   function renderQuestion(q){
     quizBox.innerHTML = `
       <div class="question">
-        <p><b>Q${current+1}:</b> ${q.text}</p>
+        <p><b>Q${idx+1}:</b> ${q.text}</p>
         <div class="options"></div>
-      </div>
-    `;
+      </div>`;
     const optBox = quizBox.querySelector(".options");
-    q.options.forEach(opt=>{
+    (q.options||[]).forEach(opt=>{
       const btn = document.createElement("button");
       btn.textContent = opt;
       btn.onclick = () => handleAnswer(q,opt,btn);
@@ -77,56 +100,29 @@
     });
   }
 
-  // --- Handle answer ---
   async function handleAnswer(q, chosen, btn){
     const buttons = quizBox.querySelectorAll("button");
     buttons.forEach(b=>b.disabled=true);
 
-    if (chosen === q.answer){
-      score++;
-      btn.classList.add("correct");
-    } else {
+    if (chosen === q.answer){ score++; btn.classList.add("correct"); }
+    else {
       btn.classList.add("wrong");
-      // 🔹 Save mistake
-      try {
-        await window.quizStorage.saveMistake({
-          qid: q.id, subject, chosen, correct:q.answer
-        });
-      } catch(e){ console.warn("mistake save failed",e); }
+      try { await window.quizStorage.saveMistake({ qid:q.id, subject, chosen, correct:q.answer }); } catch(e){ console.warn("mistake save failed", e); }
     }
-
-    // show correct
-    buttons.forEach(b=>{
-      if (b.textContent===q.answer) b.classList.add("correct");
-    });
-
-    setTimeout(nextQuestion,1000);
+    buttons.forEach(b=>{ if (b.textContent===q.answer) b.classList.add("correct"); });
+    setTimeout(()=>{ idx++; (idx<total)?renderQuestion(questions[idx]):finish(); }, 400);
   }
 
-  // --- Next question or finish ---
-  async function nextQuestion(){
-    current++;
-    if (current < total){
-      renderQuestion(questions[current]);
-    } else {
-      quizBox.innerHTML = "";
-      resultBox.style.display="block";
-      resultBox.innerHTML = `<h2>Finished!</h2>
-        <p>Score: ${score}/${total}</p>`;
-
-      // 🔹 Save final result
-      try {
-        await window.quizStorage.saveQuizResult({ level, subject, score, total });
-        resultBox.innerHTML += `<p>Result saved ✅</p>`;
-      } catch(e){
-        resultBox.innerHTML += `<p style="color:red">Result save failed ❌</p>`;
-        console.error("saveQuizResult failed",e);
-      }
-    }
+  async function finish(){
+    quizBox.innerHTML = "";
+    resultBox.style.display="block";
+    resultBox.innerHTML = `<h2>Finished!</h2><p>Score: ${score}/${total}</p>`;
+    try { await window.quizStorage.saveQuizResult({ level, subject, score, total }); resultBox.innerHTML += `<p>Result saved ✅</p>`; }
+    catch(e){ resultBox.innerHTML += `<p style="color:#ff8a8a">Result save failed ❌</p>`; console.error("saveQuizResult failed", e); }
   }
 
-  // --- Start quiz ---
-  renderQuestion(questions[current]);
+  if (total===0){ quizBox.innerHTML = `<p style="color:#9db5ae">No questions available for ${pretty(subject)}.</p>`; }
+  else { renderQuestion(questions[0]); }
 })();
 </script>
 </body>
