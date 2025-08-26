@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Quiz Data Test</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial;color:#e7f4f0;background:#0c1412;margin:0}
+    .wrap{max-width:860px;margin:28px auto;padding:0 16px}
+    .card{background:#141a19;border:1px solid #26302d;border-radius:12px;padding:16px}
+    code{background:#0f1715;border:1px solid #27322f;border-radius:6px;padding:2px 6px}
+    .ok{color:#9bf3c4}.bad{color:#ffb4b4}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Quiz Data Test</h1>
+  <div id="out" class="card">Checking…</div>
+</div>
+<script>
+(async function(){
+  const out = document.getElementById('out');
+  const p = new URLSearchParams(location.search);
+  const level = (p.get('level')||'atswa1').toLowerCase();
+  const subject = (p.get('subject')||'').toLowerCase();
+
+  const map = {
+    "basic_accounting": `./data/${level}_basic_accounting.json`,
+    "business_law":     `./data/${level}_business_law.json`,
+    "economics":        `./data/${level}_economics.json`,
+    "comm_skills":      `./data/${level}_comm_skills.json`
+  };
+
+  if(!map[subject]){
+    out.innerHTML = `<div class="bad">Unknown subject: <code>${subject}</code></div>`;
+    return;
+  }
+
+  const url = map[subject] + `?v=${Date.now()}`;
+  out.innerHTML = `Fetching <code>${url}</code>…`;
+
+  try{
+    const res = await fetch(url, {cache:'no-store'});
+    if(!res.ok){
+      out.innerHTML = `<div class="bad">HTTP ${res.status}</div><div>Path: <code>${url}</code></div>`;
+      return;
+    }
+    const data = await res.json();
+    if(!Array.isArray(data)){
+      out.innerHTML = `<div class="bad">JSON is not an array</div>`;
+      return;
+    }
+    out.innerHTML = `<div class="ok">OK — ${data.length} items</div>
+      <div>First item preview:</div>
+      <pre style="white-space:pre-wrap">${JSON.stringify(data[0], null, 2)}</pre>`;
+  }catch(e){
+    out.innerHTML = `<div class="bad">Fetch/Parse error: ${e.message}</div><div>Path: <code>${url}</code></div>`;
+  }
+})();
+</script>
+</body>
+</html>
