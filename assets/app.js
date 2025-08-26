@@ -1,77 +1,68 @@
-<script>
-// App glue: binds the Google button, reflects auth state, and gates quiz access.
+// app.js — auth wiring + helpers used across pages
+let currentUser = null;
 
-(function () {
-  const $ = (sel) => document.querySelector(sel);
+function setText(el, text) { if (el) el.textContent = text; }
+function show(el, vis) { if (el) el.style.display = vis ? "" : "none"; }
 
-  // UI elements that may or may not exist on the current page
-  const googleBtn = $('#googleBtn');
-  const signOutBtn = $('#signOutBtn');
-  const authBadge  = $('#authBadge'); // small "Not signed in" / email text
-  const authedBlocks = document.querySelectorAll('[data-when="signed-in"]');
-  const guestBlocks  = document.querySelectorAll('[data-when="signed-out"]');
-
-  function showSignedIn(email) {
-    if (authBadge) authBadge.textContent = email;
-    authedBlocks.forEach(el => el.style.display = '');
-    guestBlocks.forEach(el => el.style.display = 'none');
+// Require auth on “locked” links/buttons
+window.requireAuth = function () {
+  if (!currentUser) {
+    window.location.href = "./index.html#signin-required";
+    return false;
   }
-  function showSignedOut() {
-    if (authBadge) authBadge.textContent = 'Not signed in';
-    authedBlocks.forEach(el => el.style.display = 'none');
-    guestBlocks.forEach(el => el.style.display = '');
-  }
+  return true;
+};
 
-  // Wait until Firebase is ready, then wire listeners
-  (async function init() {
-    if (!window.firebaseReady) {
-      console.error('firebaseReady missing'); return;
-    }
-    await window.firebaseReady;
+// Get query params
+window.qp = new Proxy(new URLSearchParams(location.search), {
+  get: (sp, key) => sp.get(key)
+});
 
-    const { auth, onAuthStateChanged, signInWithGoogle, signOutUser } = window.firebaseApi;
+document.addEventListener("DOMContentLoaded", () => {
+  const statusEl = document.getElementById("userStatus");
+  const signInBtn = document.getElementById("googleSignIn");
+  const signOutBtn = document.getElementById("googleSignOut");
 
-    // Button handlers (guard with existence so we can reuse this on all pages)
-    if (googleBtn) {
-      googleBtn.addEventListener('click', async (e) => {
-        e.preventDefault();
-        googleBtn.disabled = true;
-        try { await signInWithGoogle(); }
-        catch (err) { alert('Sign-in failed: ' + err.message); }
-        finally { googleBtn.disabled = false; }
-      }, { passive: false });
-    }
+  firebaseReady.then(() => {
+    // Auth state
+    firebaseAuth.onAuthStateChanged((user) => {
+      currentUser = user || null;
 
-    if (signOutBtn) {
-      signOutBtn.addEventListener('click', async () => {
-        try { await signOutUser(); } catch {}
+      if (currentUser) {
+        setText(statusEl, `Signed in as ${currentUser.email}`);
+        show(signInBtn, false);
+        show(signOutBtn, true);
+        localStorage.setItem("ican_user", JSON.stringify({
+          uid: currentUser.uid, email: currentUser.email, name: currentUser.displayName || ""
+        }));
+      } else {
+        setText(statusEl, "Not signed in");
+        show(signInBtn, true);
+        show(signOutBtn, false);
+        localStorage.removeItem("ican_user");
+      }
+
+      // Toggle auth-required tiles
+      document.querySelectorAll(".require-auth").forEach(a => {
+        a.classList.toggle("disabled", !currentUser);
+      });
+    });
+
+    // Sign in
+    if (signInBtn) {
+      signInBtn.addEventListener("click", () => {
+        const provider = new firebase.auth.GoogleAuthProvider();
+        firebaseAuth.signInWithPopup(provider).catch(err => {
+          alert("Sign-in failed: " + err.message);
+        });
       });
     }
 
-    // Reflect auth state in UI
-    onAuthStateChanged(auth, (user) => {
-      if (user && user.email) {
-        showSignedIn(user.email);
-        localStorage.setItem('ican_user', JSON.stringify({ uid: user.uid, email: user.email }));
-      } else {
-        showSignedOut();
-        localStorage.removeItem('ican_user');
-      }
-    });
-
-    // If we're on quiz.html, hard-gate access until signed in
-    const quizGate = $('#quizGate'); // the black card that shows “Sign-in required”
-    if (quizGate) {
-      const enableQuiz = () => {
-        quizGate.style.display = 'none';
-        document.body.classList.add('quiz-unlocked');
-      };
-      const requireSignIn = () => {
-        quizGate.style.display = '';
-        document.body.classList.remove('quiz-unlocked');
-      };
-      onAuthStateChanged(auth, (user) => user ? enableQuiz() : requireSignIn());
+    // Sign out
+    if (signOutBtn) {
+      signOutBtn.addEventListener("click", () => {
+        firebaseAuth.signOut().catch(err => alert("Sign-out failed: " + err.message));
+      });
     }
-  })();
-})();
-</script>
+  });
+});
