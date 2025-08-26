@@ -41,7 +41,11 @@
       <h1>ICAN ATSWA Prep</h1>
       <div class="stack">
         <span id="userStatus" class="pill">Not signed in</span>
-        <a id="googleBtn" class="btn primary" href="javascript:void(0)">Continue with Google</a>
+        <!-- 🔥 FIXED GOOGLE BUTTON -->
+        <a class="btn primary" id="btnGoogle" href="#"
+           onclick="try{ return window.AppSignIn ? (window.AppSignIn(), false) : (alert('Auth not ready — please refresh'), false);}catch(e){ alert('Sign-in error'); console.error(e); return false; }">
+          Continue with Google
+        </a>
         <a id="signOutBtn" class="btn outline" href="javascript:void(0)" style="display:none">Sign out</a>
       </div>
     </header>
@@ -104,7 +108,6 @@
     const APP_VERSION = "home-2025-08-26";
     const ADMIN_EMAIL = "offixcialbloger@gmail.com";
     const statusEl = document.getElementById("userStatus");
-    const googleBtn = document.getElementById("googleBtn");
     const signOutBtn = document.getElementById("signOutBtn");
     const authTiles = Array.from(document.querySelectorAll(".requires-auth"));
     const adminTile = document.getElementById("adminTile");
@@ -142,15 +145,12 @@
 
     // ====== Flexible bindings (works with or without app.js helpers) ======
     const auth = window.AppAuth || window.firebaseAuth || null;
-    const provider = window.AppGoogleProvider || window.googleProvider || null;
     const onAuthChanged = window.AppOnAuthChanged || window.firebaseOnAuthStateChanged || function(){};
-    const signIn   = window.AppSignIn || (auth && provider && window.signInWithPopup ? ()=>window.signInWithPopup(auth,provider) : null);
     const signOut  = window.AppSignOut || (auth && window.signOutFirebase ? ()=>window.signOutFirebase(auth) : null);
 
-    if(googleBtn && signIn){ googleBtn.addEventListener("click", ()=>signIn().catch(err=>pushError("signin", err.message))); }
     if(signOutBtn && signOut){ signOutBtn.addEventListener("click", ()=>signOut().catch(err=>pushError("signout", err.message))); }
 
-    // React to auth state (will no-op if not available)
+    // React to auth state
     try{
       if(onAuthChanged && auth){
         onAuthChanged(auth, (user)=>{
@@ -158,15 +158,16 @@
             const email = user?.email || null;
             if(user){
               statusEl.textContent = `Signed in as ${email}`;
-              googleBtn.style.display="none"; signOutBtn.style.display="inline-block";
+              document.getElementById("btnGoogle").style.display="none";
+              signOutBtn.style.display="inline-block";
               lockAuthTiles(false);
               lockAdmin(email && email.toLowerCase()!==ADMIN_EMAIL.toLowerCase());
             }else{
               statusEl.textContent = "Not signed in";
-              googleBtn.style.display="inline-block"; signOutBtn.style.display="none";
+              document.getElementById("btnGoogle").style.display="inline-block";
+              signOutBtn.style.display="none";
               lockAuthTiles(true); lockAdmin(true);
             }
-            // also capture to health snapshot
             writeHealth({user: email||null});
           }catch(e){ pushError("auth-state", e.message); }
         });
@@ -206,7 +207,6 @@
         localStorage.setItem(HEALTH_KEY, JSON.stringify(payload));
       }catch(e){}
     }
-    // initial health stamp + async checks
     writeHealth({loaded:true});
     runHealthChecks();
   })();
