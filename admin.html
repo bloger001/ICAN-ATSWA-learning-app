@@ -11,8 +11,8 @@
   <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics-compat.js"></script>
 
-  <!-- Your Firebase init -->
-  <script src="./assets/firebase.js"></script>
+  <!-- Your Firebase init (cache-busted) -->
+  <script src="./assets/firebase.js?v=104"></script>
 
   <link rel="stylesheet" href="./assets/admin-lab.css"/>
 </head>
@@ -132,6 +132,7 @@
   </section>
 </main>
 
-<script src="./assets/admin-lab.js" defer></script>
+<!-- Diagnostics logic -->
+<script src="./assets/admin-lab.js?v=104" defer></script>
 </body>
 </html>
