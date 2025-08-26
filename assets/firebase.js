@@ -16,7 +16,6 @@
     window.__FIREBASE_BOOT_ERROR__ = "SDKs not loaded";
     return;
   }
-
   try {
     if (firebase.apps.length === 0) {
       firebase.initializeApp(firebaseConfig);
