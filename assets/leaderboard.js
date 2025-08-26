@@ -1,4 +1,4 @@
-// assets/leaderboard.js
+// assets/leaderboard.js — no composite index required
 (function(){
   if (!window.firebase || !firebase.firestore) {
     document.getElementById('board').innerHTML = '<p class="empty">Firestore not available.</p>';
@@ -30,11 +30,17 @@
 
   db.collection("leaderboard")
     .orderBy("score", "desc")
-    .orderBy("ts", "desc")
     .limit(50)
     .onSnapshot((snap)=>{
       const rows = [];
       snap.forEach(d=>rows.push(d.data()));
+      // tie-break by ts (client-side)
+      rows.sort((a,b)=>{
+        if ((b.score??0)!==(a.score??0)) return (b.score??0)-(a.score??0);
+        const tb = b.ts?.toMillis ? b.ts.toMillis() : (b.ts?+new Date(b.ts):0);
+        const ta = a.ts?.toMillis ? a.ts.toMillis() : (a.ts?+new Date(a.ts):0);
+        return tb - ta;
+      });
       render(rows);
     }, (err)=>{
       console.error("leaderboard read:", err);
