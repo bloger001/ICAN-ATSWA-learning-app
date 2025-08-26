@@ -11,7 +11,7 @@
   <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics-compat.js"></script>
 
-  <!-- Your Firebase init (cache-busted) -->
+  <!-- Project initializer -->
   <script src="./assets/firebase.js?v=106"></script>
 
   <link rel="stylesheet" href="./assets/admin-lab.css"/>
@@ -26,6 +26,22 @@
       <span id="roleState" class="chip">Role: guest</span>
     </div>
   </header>
+
+  <!-- Admin gate: blocks non-admin BEFORE showing the content -->
+  <script>
+    (function(){
+      const ADMIN = "offixcialbloger@gmail.com".toLowerCase();
+      firebase.auth().onAuthStateChanged(function(user){
+        const ok = user && user.email && user.email.toLowerCase() === ADMIN;
+        if (!ok) {
+          document.documentElement.innerHTML =
+            '<!doctype html><title>403 — Admin only</title>' +
+            '<style>body{font:16px system-ui;background:#0b0f0e;color:#e7f4f0;display:grid;place-items:center;height:100vh;margin:0}a{color:#7fc8ff}</style>' +
+            '<body><div><h1>403 — Admin only</h1><p>Please sign in with the admin account.</p><p><a href="./index.html">← Back to home</a></p></div></body>';
+        }
+      });
+    })();
+  </script>
 
   <section id="overall" class="overall good">
     <span class="dot"></span>
@@ -132,7 +148,7 @@
   </section>
 </main>
 
-<!-- Diagnostics logic (cache-busted) -->
+<!-- Diagnostics logic -->
 <script src="./assets/admin-lab.js?v=106" defer></script>
 </body>
 </html>
