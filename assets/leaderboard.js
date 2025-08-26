@@ -1,37 +1,43 @@
-// Simple Firestore reader for recent attempts
-const msg  = document.getElementById("boardMsg");
-const host = document.getElementById("board");
+// assets/leaderboard.js
+(function(){
+  if (!window.firebase || !firebase.firestore) {
+    document.getElementById('board').innerHTML = '<p class="empty">Firestore not available.</p>';
+    return;
+  }
+  const db = firebase.firestore();
+  const el = document.getElementById('board');
 
-function row(r){
-  const d = r.ts?.toDate ? r.ts.toDate() : new Date();
-  const when = d.toLocaleString();
-  const who = (r.user?.name || r.user?.email || "Anonymous");
-  const pct = (typeof r.pct === "number") ? r.pct : Math.round((r.correct||0)*100/(r.total||1));
-  return `
-    <div class="row" style="padding:.4rem 0;border-bottom:1px solid #26302d">
-      <div><strong>${who}</strong></div>
-      <div class="muted small">${when} · ${r.level?.toUpperCase()} → ${r.subject||"-"}</div>
-      <div><strong>${pct}%</strong> (${r.correct}/${r.total})</div>
-    </div>`;
-}
-
-document.addEventListener("DOMContentLoaded", async () => {
-  try{
-    // wait for firebase ready (our firebase.js sets this)
-    if (window.__fbReady) { await window.__fbReady; }
-    const db = window.AppDB || window.firebaseDB; // compat
-    if (!db){ throw new Error("Firestore not ready"); }
-
-    const snap = await db.collection("leaderboard")
-      .orderBy("ts","desc").limit(50).get();
-
-    if (snap.empty){
-      host.innerHTML = `<p class="muted">No scores yet.</p>`;
+  function render(rows){
+    if (!rows.length){
+      el.innerHTML = '<p class="empty">No scores yet. Be the first to take a quiz!</p>';
       return;
     }
-    host.innerHTML = Array.from(snap.docs).map(d=>row(d.data())).join("");
-  }catch(e){
-    console.error(e);
-    msg.textContent = `Could not load leaderboard (rules or network): ${e.message||e}`;
+    const trs = rows.map((r,i)=>`
+      <tr>
+        <td>${i+1}</td>
+        <td>${r.email ? r.email.split('@')[0] : 'anon'}</td>
+        <td>${r.level || '-'}</td>
+        <td>${r.subject || '-'}</td>
+        <td>${r.score ?? '-'}/${r.total ?? '-'}</td>
+        <td>${r.ts ? new Date(r.ts.toDate ? r.ts.toDate() : r.ts).toLocaleString() : '-'}</td>
+      </tr>`).join('');
+    el.innerHTML = `
+      <table>
+        <thead><tr><th>#</th><th>User</th><th>Level</th><th>Subject</th><th>Score</th><th>When</th></tr></thead>
+        <tbody>${trs}</tbody>
+      </table>`;
   }
-});
+
+  db.collection("leaderboard")
+    .orderBy("score", "desc")
+    .orderBy("ts", "desc")
+    .limit(50)
+    .onSnapshot((snap)=>{
+      const rows = [];
+      snap.forEach(d=>rows.push(d.data()));
+      render(rows);
+    }, (err)=>{
+      console.error("leaderboard read:", err);
+      el.innerHTML = `<p class="empty">Error loading leaderboard: ${err.message||err}</p>`;
+    });
+})();
